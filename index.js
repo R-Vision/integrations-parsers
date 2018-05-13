@@ -1,0 +1,472 @@
+'use strict';
+
+const XmlStream = require('xml-stream');
+
+const url = require('url');
+const _ = require('lodash');
+const ip = require('ip');
+
+/**
+ * Получает имя домена из строки
+ * @see RVN-4024
+ * @param {String} value - строка с именем домена
+ * @returns {String}
+ */
+function getDomainName(value) {
+  if (!value || ip.isV4Format(value) || ip.isV6Format(value)) return null;
+
+  let domain = String(value).split('.');
+  const l = domain.length;
+
+  if (l === 1) return null;
+
+  if (l > 2) {
+    domain = domain.splice(l - 2, l);
+  }
+
+  return domain.join('.');
+};
+
+const blockedSoftware = [
+  'Microsoft Windows',
+  'Microsoft Updates',
+  'Microsoft Active Directory',
+  'Microsoft DNS Server',
+  'OpenSSH Server',
+  'Network Configuration',
+  'Samba',
+  'Linux Kernel',
+  'debian kernel',
+  'Ubuntu Kernel',
+  'Operating System',
+  'OpenSSL',
+  'Juniper JUNOS',
+  'Oracle Database',
+];
+
+function parseReferenceLinks(links) {
+  // TODO: I should probably refactor this mess :/
+  return links.reduce((reference, link) => {
+    const uri = url.parse(link);
+
+    const cve = link.match(/(CVE-\d+-\d+)/gmi);
+    const rhsa = link.match(/(RHSA-\d+-\d+)/gmi);
+    const ms = link.match(/(ms\d+-\d+)/gmi);
+    const bid = link.match(/(bid\/\d+)/gmi);
+    const xfdb = link.match(/(xfdb\/\d+)/gmi);
+    const dsa = link.match(/(dsa-\d+)/gmi);
+    const usn = link.match(/(usn-\d+-\d+)/gmi);
+    const mdksa = link.match(/(MDKSA-\d+:\d+)/gmi);
+    const asa = link.match(/(ASA-\d+-\d+)/gmi);
+    const glsa = link.match(/(glsa-\d+-\d+)/gmi);
+    const esx = link.match(/(esx-\d+)/gmi);
+    const rpl = link.match(/(RPL-\d+)/gmi);
+    const vmsa = link.match(/(VMSA-\d+-\d+)/gmi);
+    const jsa = link.match(/(JSA\d+)/gmi);
+    const swg = link.match(/(swg\d+)/gmi);
+    const st1 = link.match(/securitytracker\.com\/id\?(\d+)/mi);
+    const st2 = link.match(/securitytracker\.com\/.+\/(\d+)\.html/mi);
+    const osvdb = link.match(/osvdb.org\/(\d+)/mi);
+
+    if (uri.host) {
+      if (cve) {
+        reference.push({
+          ref_id: cve.toString().toUpperCase(),
+          source: 'CVE',
+          ref_url: link,
+        });
+      } else if (rhsa) {
+        reference.push({
+          ref_id: rhsa.toString().toUpperCase(),
+          source: 'RedHat',
+          ref_url: link,
+        });
+      } else if (ms) {
+        reference.push({
+          ref_id: ms.toString().toUpperCase(),
+          source: 'Microsoft',
+          ref_url: link,
+        });
+      } else if (bid) {
+        reference.push({
+          ref_id: bid.toString().toUpperCase(),
+          source: 'SecurityFocus',
+          ref_url: link,
+        });
+      } else if (xfdb) {
+        reference.push({
+          ref_id: xfdb.toString().toUpperCase(),
+          source: 'X-Force',
+          ref_url: link,
+        });
+      } else if (dsa) {
+        reference.push({
+          ref_id: dsa.toString().toUpperCase(),
+          source: 'Debian',
+          ref_url: link,
+        });
+      } else if (usn) {
+        reference.push({
+          ref_id: usn.toString().toUpperCase(),
+          source: 'Ubuntu',
+          ref_url: link,
+        });
+      } else if (mdksa) {
+        reference.push({
+          ref_id: mdksa.toString().toUpperCase(),
+          source: 'Mandriva',
+          ref_url: link,
+        });
+      } else if (asa) {
+        reference.push({
+          ref_id: asa.toString().toUpperCase(),
+          source: 'Avaya',
+          ref_url: link,
+        });
+      } else if (glsa) {
+        reference.push({
+          ref_id: glsa.toString().toUpperCase(),
+          source: 'Gentoo',
+          ref_url: link,
+        });
+      } else if (esx) {
+        reference.push({
+          ref_id: esx.toString().toUpperCase(),
+          source: 'VMware',
+          ref_url: link,
+        });
+      } else if (rpl) {
+        reference.push({
+          ref_id: rpl.toString().toUpperCase(),
+          source: 'Rpath',
+          ref_url: link,
+        });
+      } else if (vmsa) {
+        reference.push({
+          ref_id: vmsa.toString().toUpperCase(),
+          source: 'VMware',
+          ref_url: link,
+        });
+      } else if (jsa) {
+        reference.push({
+          ref_id: jsa.toString().toUpperCase(),
+          source: 'Juniper',
+          ref_url: link,
+        });
+      } else if (swg) {
+        reference.push({
+          ref_id: swg.toString().toUpperCase(),
+          source: 'IBM',
+          ref_url: link,
+        });
+      } else if (st1) {
+        reference.push({
+          ref_id: `ST-${st1[1]}`,
+          source: 'SecurityTracker',
+          ref_url: link,
+        });
+      } else if (st2) {
+        reference.push({
+          ref_id: `ST-${st2[1]}`,
+          source: 'SecurityTracker',
+          ref_url: link,
+        });
+      } else if (osvdb) {
+        // игнорируем, т.к. эта база уязвимостей больше не работает
+      } else {
+        reference.push({
+          ref_id: link,
+          source: uri.host,
+          ref_url: link,
+        });
+      }
+    }
+    return reference;
+  }, []);
+}
+
+function parseInterfaces(vuln) {
+  const ifsItem = {
+    name: vuln.param,
+    address: [],
+  };
+
+  const ipAndMaskRegExp = /(\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}) \((\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})\)/;
+  const newIpAndMaskRegExp = /(\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})\(\/(\d{1,2})\)/;
+  const ciscoIpAndMaskRegExp = /(\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})\/(\d{1,2})/;
+
+  vuln.param_list.forEach((param) => {
+    param.table.forEach((table) => {
+      const tableName = table.$.name;
+      table.body.forEach((body) => {
+        body.row.forEach((row) => {
+          if (tableName === 'GennetConnNew') {
+            // linux-сервер
+            if (row.field[0].$text === 'MAC:') {
+              ifsItem.mac = row.field[1].$text;
+            }
+
+            if (row.field[0].$text === 'Address:') {
+              const match = String(row.field[1].$text).match(newIpAndMaskRegExp);
+
+              if (match) {
+                ifsItem.address.push({
+                  ip: match[1],
+                  mask: ip.fromPrefixLen(match[2]),
+                  family: 'ipv4',
+                });
+              }
+            }
+          } else if (tableName === 'Gen') {
+            // cisco
+            row.field.forEach((field) => {
+              const id = parseInt(field.$.id, 10);
+              if (id === 5) {
+                ifsItem.mac = field.$text.replace(/(.{2})/g, '$1:').slice(0, -1);
+              }
+
+              if (id === 2) {
+                const match = String(field.$text).match(ciscoIpAndMaskRegExp);
+
+                if (match) {
+                  ifsItem.address.push({
+                    ip: match[1],
+                    mask: ip.fromPrefixLen(match[2]),
+                    family: 'ipv4',
+                  });
+                }
+              }
+            });
+          } else {
+            const rowLength = row.length;
+            row.field.forEach((field) => {
+              const idOffset = rowLength > 9 ? 1 : 0;
+              const id = parseInt(field.$.id, 10);
+
+              if (id === (4 + idOffset)) {
+                ifsItem.mac = field.$text;
+              }
+
+              if (id === (6 + idOffset)) {
+                const match = String(field.$text).match(ipAndMaskRegExp);
+
+                if (match) {
+                  ifsItem.address.push({
+                    ip: match[1],
+                    mask: match[2],
+                    family: 'ipv4',
+                  });
+                }
+              }
+            });
+          }
+        });
+      });
+    });
+  });
+
+  return ifsItem;
+}
+
+function parseUsers(vuln) {
+  const userItem = {
+    login: vuln.$.param,
+  };
+
+  vuln.param_list.forEach((param) => {
+    param.table.forEach((table) => {
+      table.body.forEach((body) => {
+        body.row.forEach((row) => {
+          row.field.forEach((field) => {
+            const id = parseInt(field.$.id, 10);
+
+            if (id === 2) {
+              userItem.fio = field.text;
+            }
+          });
+        });
+      });
+    });
+  });
+
+  return userItem;
+}
+
+module.exports = function (stream, lastRun, cb) {
+  const hosts = [];
+  const vulnerabilitiesDesc = [];
+
+  const xml = new XmlStream(stream);
+
+  xml.collect('scan_objects > soft > vulners > vulner');
+  xml.collect('scan_objects > soft > vulners > vulner > param_list');
+  xml.collect('scan_objects > soft > vulners > vulner > param_list > table');
+  xml.collect('scan_objects > soft > vulners > vulner > param_list > table > body');
+  xml.collect('scan_objects > soft > vulners > vulner > param_list > table > body > row');
+  xml.collect('scan_objects > soft > vulners > vulner > param_list > table > body > row > field');
+
+  xml.collect('content > vulners > vulner');
+
+  // undocumented feature, second parameter preserves whitespaces
+  xml.preserve('content > vulners > vulner > description', true);
+
+  const software = {};
+  const interfaces = [];
+  const ports = [];
+  const users = [];
+  const vulnerabilities = [];
+  const host = {};
+
+  xml.on('startElement: host', () => {
+    software = {};
+    interfaces = [];
+    ports = [];
+    users = [];
+    vulnerabilities = [];
+    host = {};
+  });
+
+  xml.on('endElement: scan_objects > soft', (soft) => {
+    // Программное обеспечение
+    const name = soft.name;
+    const version = soft.version;
+
+    if (!_.isEmpty(name) && !_.isEmpty(version) && blockedSoftware.indexOf(name) === -1) {
+      software[name + version] = {
+        name,
+        version,
+      };
+    }
+
+    const port = soft.$.port && parseInt(soft.$.port, 10);
+    const protocol = soft.$.protocol && parseInt(soft.$.protocol, 10);
+
+    // Список открытых портов
+    if (port > 0 && protocol > 0) {
+      if (protocol === 6) {
+        protocol = 'tcp';
+      } else if (protocol === 17) {
+        protocol = 'udp';
+      }
+
+      ports.push({
+        port,
+        protocol,
+      });
+    }
+  });
+
+  xml.on('endElement: scan_objects > soft > vulners > vulner', (vulner) => {
+    const id = parseInt(vulner.$.id, 10);
+    const level = parseInt(vulner.$.level, 10);
+
+    if (id) {
+      // Уязвимости
+      vulnerabilities.push({
+        id,
+        level,
+      });
+
+      // MAC-адреса
+      if (id === 180245 && !host.mac) {
+        host.mac = vulner.param.toLowerCase();
+      }
+
+      // Сетевые интерфейсы
+      if (id === 4424673 || id === 425336) {
+        const ifsItem = parseInterfaces(vulner);
+        if (ifsItem.address.length > 0) {
+          interfaces.push(ifsItem);
+        }
+      }
+
+      // Пользователи
+      if (id === 425318) {
+        users.push(parseUsers(vulner));
+      }
+    }
+  });
+
+  xml.on('endElement: host', (node) => {
+    const stop = Number(new Date(node.$.stop_time));
+    if (stop && lastRun && stop < lastRun) return true;
+
+    host = {
+      address: node.$.ip,
+      ip: node.$.ip,
+      name: node.$.netbios || node.$.fqdn,
+      start_time: node.$.start_time,
+      stop_time: node.$.stop_time,
+      updated_at: new Date(node.$.stop_time).toUTCString(),
+      domain_workgroup: getDomainName(node.$.fqdn),
+    };
+
+
+    if (interfaces.length > 0) {
+      host.ifs = interfaces;
+    }
+
+    if (ports.length > 0) {
+      host.ports = _.values(_.indexBy(ports, 'port'));
+    }
+
+    if (vulnerabilities.length > 0) {
+      host.vulnerabilities = vulnerabilities;
+    }
+
+    if (!_.isEmpty(software)) {
+      host.software = _.values(software);
+    }
+
+    if (users.length > 0) {
+      host.users = users;
+    }
+
+    hosts.push(host);
+  });
+
+  xml.on('endElement: content > vulners > vulner', (el) => {
+    const description = el.description.$text || el.short_description.$text || '';
+    const vuln = {
+      description: description.replace(/  +/g, ' '),
+      name: el.title,
+      remediation: el.how_to_fix,
+      uid: el.$.id,
+      reference: parseReferenceLinks(el.links.replace(/[\n\t\r]/g, ' ').split(' ')),
+    };
+
+    if (vuln.uid) {
+      vulnerabilitiesDesc[vuln.uid] = vuln;
+    }
+  });
+
+  xml.on('error', (err) => {
+    console.dir(err, { depth: null, colors: true });
+    cb(err);
+  });
+
+  xml.on('end', () => {
+    hosts.forEach((host) => {
+      if (host.vulnerabilities) {
+        const result = [];
+
+        host.vulnerabilities.forEach((vuln) => {
+          const id = vuln.id;
+          const level = vuln.level;
+
+          if (level !== 0 && vulnerabilitiesDesc.hasOwnProperty(id)) {
+            const item = vulnerabilitiesDesc[id];
+
+            item.level_id = (level < 5) ? ++level : level;
+
+            result.push(item);
+          }
+        });
+
+        host.vulnerabilities = result;
+      }
+    });
+
+    cb(null, hosts);
+  });
+};

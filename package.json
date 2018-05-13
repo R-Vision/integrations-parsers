@@ -1,0 +1,24 @@
+{
+  "name": "maxpatrol-parser",
+  "version": "1.0.0",
+  "description": "Maxpatrol report parser",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/R-Vision/maxpatrol-parser.git"
+  },
+  "author": "Vladinir Luss, Sergey Zmeevsky, Leonid Korolev",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/R-Vision/maxpatrol-parser/issues"
+  },
+  "homepage": "https://github.com/R-Vision/maxpatrol-parser#readme",
+  "dependencies": {
+    "ip": "^1.1.4",
+    "lodash": "^3.10.1",
+    "xml-stream": "^0.4.5"
+  }
+}

@@ -25,7 +25,7 @@ function getDomainName(value) {
   }
 
   return domain.join('.');
-};
+}
 
 const blockedSoftware = [
   'Microsoft Windows',
@@ -310,12 +310,12 @@ module.exports = function (stream, lastRun, cb) {
   // undocumented feature, second parameter preserves whitespaces
   xml.preserve('content > vulners > vulner > description', true);
 
-  const software = {};
-  const interfaces = [];
-  const ports = [];
-  const users = [];
-  const vulnerabilities = [];
-  const host = {};
+  let software = {};
+  let interfaces = [];
+  let ports = [];
+  let users = [];
+  let vulnerabilities = [];
+  let host = {};
 
   xml.on('startElement: host', () => {
     software = {};
@@ -339,7 +339,7 @@ module.exports = function (stream, lastRun, cb) {
     }
 
     const port = soft.$.port && parseInt(soft.$.port, 10);
-    const protocol = soft.$.protocol && parseInt(soft.$.protocol, 10);
+    let protocol = soft.$.protocol && parseInt(soft.$.protocol, 10);
 
     // Список открытых портов
     if (port > 0 && protocol > 0) {
@@ -452,7 +452,7 @@ module.exports = function (stream, lastRun, cb) {
 
         host.vulnerabilities.forEach((vuln) => {
           const id = vuln.id;
-          const level = vuln.level;
+          let { level } = vuln;
 
           if (level !== 0 && vulnerabilitiesDesc.hasOwnProperty(id)) {
             const item = vulnerabilitiesDesc[id];

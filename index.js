@@ -44,6 +44,12 @@ const blockedSoftware = [
   'Oracle Database',
 ];
 
+
+/**
+ * По ссылке на уязвимость получает название БД с уязвимостями
+ * @param {String[]} links - массив ссылок на  уязвимость
+ * @returns {String[]}
+ */
 function parseReferenceLinks(links) {
   // TODO: I should probably refactor this mess :/
   return links.reduce((reference, link) => {
@@ -185,6 +191,11 @@ function parseReferenceLinks(links) {
   }, []);
 }
 
+/**
+ * Парсит параметры интерфейсов из xml отчета
+ * @param {Object} vuln - часть отчета из xml-stream
+ * @returns {Object}
+ */
 function parseInterfaces(vuln) {
   const ifsItem = {
     name: vuln.param,
@@ -268,6 +279,11 @@ function parseInterfaces(vuln) {
   return ifsItem;
 }
 
+/**
+ * Парсит пользователей из xml отчета
+ * @param {Object} vuln - часть отчета из xml-stream
+ * @returns {Object}
+ */
 function parseUsers(vuln) {
   const userItem = {
     login: vuln.$.param,
@@ -292,6 +308,12 @@ function parseUsers(vuln) {
   return userItem;
 }
 
+/**
+ * Парсит xml отчет из MaxPatrol
+ * @param {Stream} stream - readable поток с отчетом
+ * @param {Date} lastRun - дата последнего запуска
+ * @param {Function} cb - callback. вызывается после завершения работы функции
+ */
 module.exports = function (stream, lastRun, cb) {
   const hosts = [];
   const vulnerabilitiesDesc = [];

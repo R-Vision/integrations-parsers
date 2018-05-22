@@ -249,7 +249,7 @@ function parseInterfaces(vuln) {
               }
             });
           } else {
-            const rowLength = row.length;
+            const rowLength = row.field.length;
             row.field.forEach((field) => {
               const idOffset = rowLength > 9 ? 1 : 0;
               const id = parseInt(field.$.id, 10);

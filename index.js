@@ -309,6 +309,57 @@ function parseUsers(vuln) {
 }
 
 /**
+ * Парсит уязвимости
+ * @see RVN-4043
+ * @param {Object[]} vulners - Массив уязвимостей из отчета
+ * @param {Object} host
+ * @param {Number} port
+ * @param {String} protocol
+ * @return {Object}
+ */
+function parseVulners(vulners, host, port, protocol) {
+  const vulnerabilities = [];
+  const users = [];
+  const interfaces = [];
+  let mac;
+
+  vulners.forEach((vulner) => {
+    const id = Number(vulner.$.id);
+    const level = Number(vulner.$.level);
+
+    if (id) {
+      // Уязвимости
+      let vuln = { id, level };
+      if (port > 0) {
+        vuln = Object.assign(vuln, { port, protocol, isNetworkVulnerability: true });
+      }
+
+      vulnerabilities.push(vuln);
+
+      // MAC-адреса
+      if (id === 180245 && !host.mac) {
+        mac = vulner.param.toLowerCase();
+      }
+
+      // Сетевые интерфейсы
+      if (id === 4424673 || id === 425336) {
+        const ifsItem = parseInterfaces(vulner);
+        if (ifsItem.address.length > 0) {
+          interfaces.push(ifsItem);
+        }
+      }
+
+      // Пользователи
+      if (id === 425318) {
+        users.push(parseUsers(vulner));
+      }
+    }
+  });
+
+  return { users, vulnerabilities, interfaces, mac };
+}
+
+/**
  * Парсит xml отчет из MaxPatrol
  * @param {Stream} stream - readable поток с отчетом
  * @param {Date} lastRun - дата последнего запуска
@@ -316,7 +367,7 @@ function parseUsers(vuln) {
  */
 module.exports = function (stream, lastRun, cb) {
   const hosts = [];
-  const vulnerabilitiesDesc = [];
+  const vulnerabilitiesDesc = {};
 
   const xml = new XmlStream(stream);
 
@@ -352,14 +403,6 @@ module.exports = function (stream, lastRun, cb) {
     // Программное обеспечение
     const name = soft.name;
     const version = soft.version;
-
-    if (!_.isEmpty(name) && !_.isEmpty(version) && blockedSoftware.indexOf(name) === -1) {
-      software[name + version] = {
-        name,
-        version,
-      };
-    }
-
     const port = soft.$.port && parseInt(soft.$.port, 10);
     let protocol = soft.$.protocol && parseInt(soft.$.protocol, 10);
 
@@ -370,42 +413,25 @@ module.exports = function (stream, lastRun, cb) {
       } else if (protocol === 17) {
         protocol = 'udp';
       }
-
-      ports.push({
-        port,
-        protocol,
-      });
     }
-  });
 
-  xml.on('endElement: scan_objects > soft > vulners > vulner', (vulner) => {
-    const id = parseInt(vulner.$.id, 10);
-    const level = parseInt(vulner.$.level, 10);
+    if (!_.isEmpty(name) && !_.isEmpty(version) && blockedSoftware.indexOf(name) === -1) {
+      software[name + version] = { name, version };
+    }
 
-    if (id) {
-      // Уязвимости
-      vulnerabilities.push({
-        id,
-        level,
-      });
+    if (soft.vulners && soft.vulners.vulner) {
+      const data = parseVulners(soft.vulners.vulner, host, port, protocol);
 
-      // MAC-адреса
-      if (id === 180245 && !host.mac) {
-        host.mac = vulner.param.toLowerCase();
+      interfaces.push(...data.interfaces);
+      vulnerabilities.push(...data.vulnerabilities);
+      users.push(...data.users);
+      if (data.mac) {
+        host.mac = data.mac;
       }
+    }
 
-      // Сетевые интерфейсы
-      if (id === 4424673 || id === 425336) {
-        const ifsItem = parseInterfaces(vulner);
-        if (ifsItem.address.length > 0) {
-          interfaces.push(ifsItem);
-        }
-      }
-
-      // Пользователи
-      if (id === 425318) {
-        users.push(parseUsers(vulner));
-      }
+    if (port > 0) {
+      ports.push({ port, protocol });
     }
   });
 
@@ -433,7 +459,7 @@ module.exports = function (stream, lastRun, cb) {
     }
 
     if (vulnerabilities.length > 0) {
-      host.vulnerabilities = vulnerabilities;
+      host.vulnerabilities = vulnerabilities.slice(0);
     }
 
     if (!_.isEmpty(software)) {
@@ -476,10 +502,16 @@ module.exports = function (stream, lastRun, cb) {
           const id = vuln.id;
           let { level } = vuln;
 
-          if (level !== 0 && vulnerabilitiesDesc.hasOwnProperty(id)) {
+          if (level !== 0 && vulnerabilitiesDesc[id]) {
             const item = vulnerabilitiesDesc[id];
 
             item.level_id = (level < 5) ? ++level : level;
+
+            if (vuln.isNetworkVulnerability) {
+              item.isNetworkVulnerability = true;
+              item.port = vuln.port;
+              item.protocol = vuln.protocol;
+            }
 
             result.push(item);
           }

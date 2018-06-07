@@ -1,2 +1,2 @@
-# maxpatrol-parser
-Maxpatrol report parser
+# integrations-parsers
+Integrations report parsers

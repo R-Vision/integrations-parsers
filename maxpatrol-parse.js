@@ -44,7 +44,6 @@ const blockedSoftware = [
   'Oracle Database',
 ];
 
-
 /**
  * По ссылке на уязвимость получает название БД с уязвимостями
  * @param {String[]} links - массив ссылок на  уязвимость
@@ -55,24 +54,24 @@ function parseReferenceLinks(links) {
   return links.reduce((reference, link) => {
     const uri = url.parse(link);
 
-    const cve = link.match(/(CVE-\d+-\d+)/gmi);
-    const rhsa = link.match(/(RHSA-\d+-\d+)/gmi);
-    const ms = link.match(/(ms\d+-\d+)/gmi);
-    const bid = link.match(/(bid\/\d+)/gmi);
-    const xfdb = link.match(/(xfdb\/\d+)/gmi);
-    const dsa = link.match(/(dsa-\d+)/gmi);
-    const usn = link.match(/(usn-\d+-\d+)/gmi);
-    const mdksa = link.match(/(MDKSA-\d+:\d+)/gmi);
-    const asa = link.match(/(ASA-\d+-\d+)/gmi);
-    const glsa = link.match(/(glsa-\d+-\d+)/gmi);
-    const esx = link.match(/(esx-\d+)/gmi);
-    const rpl = link.match(/(RPL-\d+)/gmi);
-    const vmsa = link.match(/(VMSA-\d+-\d+)/gmi);
-    const jsa = link.match(/(JSA\d+)/gmi);
-    const swg = link.match(/(swg\d+)/gmi);
-    const st1 = link.match(/securitytracker\.com\/id\?(\d+)/mi);
-    const st2 = link.match(/securitytracker\.com\/.+\/(\d+)\.html/mi);
-    const osvdb = link.match(/osvdb.org\/(\d+)/mi);
+    const cve = link.match(/(CVE-\d+-\d+)/gim);
+    const rhsa = link.match(/(RHSA-\d+-\d+)/gim);
+    const ms = link.match(/(ms\d+-\d+)/gim);
+    const bid = link.match(/(bid\/\d+)/gim);
+    const xfdb = link.match(/(xfdb\/\d+)/gim);
+    const dsa = link.match(/(dsa-\d+)/gim);
+    const usn = link.match(/(usn-\d+-\d+)/gim);
+    const mdksa = link.match(/(MDKSA-\d+:\d+)/gim);
+    const asa = link.match(/(ASA-\d+-\d+)/gim);
+    const glsa = link.match(/(glsa-\d+-\d+)/gim);
+    const esx = link.match(/(esx-\d+)/gim);
+    const rpl = link.match(/(RPL-\d+)/gim);
+    const vmsa = link.match(/(VMSA-\d+-\d+)/gim);
+    const jsa = link.match(/(JSA\d+)/gim);
+    const swg = link.match(/(swg\d+)/gim);
+    const st1 = link.match(/securitytracker\.com\/id\?(\d+)/im);
+    const st2 = link.match(/securitytracker\.com\/.+\/(\d+)\.html/im);
+    const osvdb = link.match(/osvdb.org\/(\d+)/im);
 
     if (uri.host) {
       if (cve) {
@@ -254,11 +253,11 @@ function parseInterfaces(vuln) {
               const idOffset = rowLength > 9 ? 1 : 0;
               const id = parseInt(field.$.id, 10);
 
-              if (id === (4 + idOffset)) {
+              if (id === 4 + idOffset) {
                 ifsItem.mac = field.$text;
               }
 
-              if (id === (6 + idOffset)) {
+              if (id === 6 + idOffset) {
                 const match = String(field.$text).match(ipAndMaskRegExp);
 
                 if (match) {
@@ -309,14 +308,65 @@ function parseUsers(vuln) {
 }
 
 /**
+ * Парсит уязвимости
+ * @see RVN-4043
+ * @param {Object[]} vulners - Массив уязвимостей из отчета
+ * @param {Object} host
+ * @param {Number} port
+ * @param {String} protocol
+ * @return {Object}
+ */
+function parseVulners(vulners, host, port, protocol) {
+  const vulnerabilities = [];
+  const users = [];
+  const interfaces = [];
+  let mac;
+
+  vulners.forEach((vulner) => {
+    const id = Number(vulner.$.id);
+    const level = Number(vulner.$.level);
+
+    if (id) {
+      // Уязвимости
+      let vuln = { id, level };
+      if (port > 0) {
+        vuln = Object.assign(vuln, { port, protocol, isNetworkVulnerability: true });
+      }
+
+      vulnerabilities.push(vuln);
+
+      // MAC-адреса
+      if (id === 180245 && !host.mac) {
+        mac = vulner.param.toLowerCase();
+      }
+
+      // Сетевые интерфейсы
+      if (id === 4424673 || id === 425336) {
+        const ifsItem = parseInterfaces(vulner);
+        if (ifsItem.address.length > 0) {
+          interfaces.push(ifsItem);
+        }
+      }
+
+      // Пользователи
+      if (id === 425318) {
+        users.push(parseUsers(vulner));
+      }
+    }
+  });
+
+  return { users, vulnerabilities, interfaces, mac };
+}
+
+/**
  * Парсит xml отчет из MaxPatrol
  * @param {Stream} stream - readable поток с отчетом
  * @param {Date} lastRun - дата последнего запуска
  * @param {Function} cb - callback. вызывается после завершения работы функции
  */
-module.exports = function maxPatrolParse(stream, lastRun, cb) {
+module.exports = function(stream, lastRun, cb) {
   const hosts = [];
-  const vulnerabilitiesDesc = [];
+  const vulnerabilitiesDesc = {};
 
   const xml = new XmlStream(stream);
 
@@ -352,14 +402,6 @@ module.exports = function maxPatrolParse(stream, lastRun, cb) {
     // Программное обеспечение
     const name = soft.name;
     const version = soft.version;
-
-    if (!_.isEmpty(name) && !_.isEmpty(version) && blockedSoftware.indexOf(name) === -1) {
-      software[name + version] = {
-        name,
-        version,
-      };
-    }
-
     const port = soft.$.port && parseInt(soft.$.port, 10);
     let protocol = soft.$.protocol && parseInt(soft.$.protocol, 10);
 
@@ -370,42 +412,25 @@ module.exports = function maxPatrolParse(stream, lastRun, cb) {
       } else if (protocol === 17) {
         protocol = 'udp';
       }
-
-      ports.push({
-        port,
-        protocol,
-      });
     }
-  });
 
-  xml.on('endElement: scan_objects > soft > vulners > vulner', (vulner) => {
-    const id = parseInt(vulner.$.id, 10);
-    const level = parseInt(vulner.$.level, 10);
+    if (!_.isEmpty(name) && !_.isEmpty(version) && blockedSoftware.indexOf(name) === -1) {
+      software[name + version] = { name, version };
+    }
 
-    if (id) {
-      // Уязвимости
-      vulnerabilities.push({
-        id,
-        level,
-      });
+    if (soft.vulners && soft.vulners.vulner) {
+      const data = parseVulners(soft.vulners.vulner, host, port, protocol);
 
-      // MAC-адреса
-      if (id === 180245 && !host.mac) {
-        host.mac = vulner.param.toLowerCase();
+      interfaces.push(...data.interfaces);
+      vulnerabilities.push(...data.vulnerabilities);
+      users.push(...data.users);
+      if (data.mac) {
+        host.mac = data.mac;
       }
+    }
 
-      // Сетевые интерфейсы
-      if (id === 4424673 || id === 425336) {
-        const ifsItem = parseInterfaces(vulner);
-        if (ifsItem.address.length > 0) {
-          interfaces.push(ifsItem);
-        }
-      }
-
-      // Пользователи
-      if (id === 425318) {
-        users.push(parseUsers(vulner));
-      }
+    if (port > 0) {
+      ports.push({ port, protocol });
     }
   });
 
@@ -423,7 +448,6 @@ module.exports = function maxPatrolParse(stream, lastRun, cb) {
       domain_workgroup: getDomainName(node.$.fqdn),
     };
 
-
     if (interfaces.length > 0) {
       host.ifs = interfaces;
     }
@@ -433,7 +457,7 @@ module.exports = function maxPatrolParse(stream, lastRun, cb) {
     }
 
     if (vulnerabilities.length > 0) {
-      host.vulnerabilities = vulnerabilities;
+      host.vulnerabilities = vulnerabilities.slice(0);
     }
 
     if (!_.isEmpty(software)) {
@@ -476,10 +500,16 @@ module.exports = function maxPatrolParse(stream, lastRun, cb) {
           const id = vuln.id;
           let { level } = vuln;
 
-          if (level !== 0 && vulnerabilitiesDesc.hasOwnProperty(id)) {
+          if (level !== 0 && vulnerabilitiesDesc[id]) {
             const item = vulnerabilitiesDesc[id];
 
-            item.level_id = (level < 5) ? ++level : level;
+            item.level_id = level < 5 ? ++level : level;
+
+            if (vuln.isNetworkVulnerability) {
+              item.isNetworkVulnerability = true;
+              item.port = vuln.port;
+              item.protocol = vuln.protocol;
+            }
 
             result.push(item);
           }

@@ -1,22 +1,23 @@
 {
-  "name": "maxpatrol-parser",
-  "version": "1.0.0",
-  "description": "Maxpatrol report parser",
+  "name": "integrations-parsers",
+  "version": "2.0.0",
+  "description": "Ingegrations report parsers",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/R-Vision/maxpatrol-parser.git"
+    "url": "git+https://github.com/R-Vision/integrations-parsers.git"
   },
-  "author": "Vladinir Luss, Sergey Zmeevsky, Leonid Korolev",
+  "author": "Vladimir Luss, Sergey Zmeevsky, Leonid Korolev",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/R-Vision/maxpatrol-parser/issues"
+    "url": "https://github.com/R-Vision/integrations-parsers/issues"
   },
-  "homepage": "https://github.com/R-Vision/maxpatrol-parser#readme",
+  "homepage": "https://github.com/R-Vision/integrations-parsers#readme",
   "dependencies": {
+    "csv-parse": "^2.4.1",
     "ip": "^1.1.4",
     "lodash": "^3.10.1",
     "xml-stream": "^0.4.5"

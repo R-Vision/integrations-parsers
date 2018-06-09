@@ -38,8 +38,7 @@ module.exports = function nessusParse(stream, cb) {
   const hosts = {};
 
   const parser = csvParse({
-    columns: () => {
-    }
+    columns: () => {}
   });
 
   stream.pipe(parser);
@@ -94,7 +93,7 @@ module.exports = function nessusParse(stream, cb) {
       };
     }
 
-    if (!hosts[address].vulnerabilities[pluginId]) {
+    if (!hosts[address].vulnerabilities[`${pluginId}-${port}-${protocol}`]) {
       let reference = [];
 
       if (seeAlso) {
@@ -143,9 +142,9 @@ module.exports = function nessusParse(stream, cb) {
         item.reference = reference;
       }
 
-      hosts[address].vulnerabilities[pluginId] = item;
+      hosts[address].vulnerabilities[`${pluginId}-${port}-${protocol}`] = item;
     } else if (cve) {
-      hosts[address].vulnerabilities[pluginId].reference.push({
+      hosts[address].vulnerabilities[`${pluginId}-${port}-${protocol}`].reference.push({
         ref_id: cve,
         source: 'NVD',
         ref_url: `http://cve.mitre.org/cgi-bin/cvename.cgi?name=${cve}`,

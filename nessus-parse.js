@@ -43,6 +43,10 @@ module.exports = function nessusParse(stream, cb) {
 
   stream.pipe(parser);
 
+  parser.on('error', (err) => {
+    cb(err);
+  });
+
   parser.on('readable', () => {
     let record;
 

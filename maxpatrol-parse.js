@@ -501,7 +501,7 @@ module.exports = function(stream, lastRun, cb) {
           let { level } = vuln;
 
           if (level !== 0 && vulnerabilitiesDesc[id]) {
-            const item = vulnerabilitiesDesc[id];
+            const item = Object.assign({}, vulnerabilitiesDesc[id]);
 
             item.level_id = level < 5 ? ++level : level;
 

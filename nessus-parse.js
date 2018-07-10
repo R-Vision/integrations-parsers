@@ -122,7 +122,8 @@ module.exports = function nessusParse(stream, cb) {
         });
       }
 
-      let level = 0;
+      // default level is 1
+      let level = 1;
 
       if (cvss) {
         level = getLevel(parseInt(cvss, 10));

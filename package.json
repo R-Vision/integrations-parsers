@@ -1,6 +1,6 @@
 {
   "name": "integrations-parsers",
-  "version": "2.0.4",
+  "version": "2.0.5",
   "description": "Ingegrations report parsers",
   "main": "index.js",
   "scripts": {

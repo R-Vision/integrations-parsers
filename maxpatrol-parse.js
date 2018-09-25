@@ -230,6 +230,7 @@ function parseInterfaces(vuln) {
           } else if (tableName === 'Gen') {
             // cisco
             row.field.forEach((field) => {
+              if (typeof field.$text !== 'string') return;
               const id = parseInt(field.$.id, 10);
               if (id === 5) {
                 ifsItem.mac = field.$text.replace(/(.{2})/g, '$1:').slice(0, -1);

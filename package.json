@@ -1,7 +1,7 @@
 {
   "name": "integrations-parsers",
-  "version": "2.0.6",
-  "description": "Ingegrations report parsers",
+  "version": "2.1.0",
+  "description": "Integrations report parsers",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -17,9 +17,16 @@
   },
   "homepage": "https://github.com/R-Vision/integrations-parsers#readme",
   "dependencies": {
-    "csv-parse": "^2.4.1",
-    "ip": "^1.1.4",
-    "lodash": "^3.10.1",
-    "xml-stream": "^0.4.5"
+    "csv-parse": "2.4.1",
+    "ip": "1.1.5",
+    "lodash": "3.10.1",
+    "xml-stream": "0.4.5"
+  },
+  "devDependencies": {
+    "eslint": "4.19.1",
+    "eslint-config-airbnb": "16.1.0",
+    "eslint-plugin-import": "2.12.0",
+    "eslint-plugin-jsx-a11y": "6.0.3",
+    "eslint-plugin-react": "7.8.2"
   }
 }

@@ -1,10 +1,11 @@
+/* es-lint-disable no-plusplus */
+
 'use strict';
 
 const XmlStream = require('xml-stream');
-
 const url = require('url');
 const _ = require('lodash');
-const ip = require('ip');
+const ipUtils = require('ip');
 
 /**
  * Получает имя домена из строки
@@ -13,7 +14,7 @@ const ip = require('ip');
  * @returns {String}
  */
 function getDomainName(value) {
-  if (!value || ip.isV4Format(value) || ip.isV6Format(value)) return null;
+  if (!value || ipUtils.isV4Format(value) || ipUtils.isV6Format(value)) return null;
 
   let domain = String(value).split('.');
   const l = domain.length;
@@ -222,7 +223,7 @@ function parseInterfaces(vuln) {
               if (match) {
                 ifsItem.address.push({
                   ip: match[1],
-                  mask: ip.fromPrefixLen(match[2]),
+                  mask: ipUtils.fromPrefixLen(match[2]),
                   family: 'ipv4',
                 });
               }
@@ -242,7 +243,7 @@ function parseInterfaces(vuln) {
                 if (match) {
                   ifsItem.address.push({
                     ip: match[1],
-                    mask: ip.fromPrefixLen(match[2]),
+                    mask: ipUtils.fromPrefixLen(match[2]),
                     family: 'ipv4',
                   });
                 }
@@ -252,7 +253,7 @@ function parseInterfaces(vuln) {
             const rowLength = row.field.length;
             row.field.forEach((field) => {
               const idOffset = rowLength > 9 ? 1 : 0;
-              const id = parseInt(field.$.id, 10);
+              const id = Number(field.$.id);
 
               if (id === 4 + idOffset) {
                 ifsItem.mac = field.$text;
@@ -356,20 +357,134 @@ function parseVulners(vulners, host, port, protocol) {
     }
   });
 
-  return { users, vulnerabilities, interfaces, mac };
+  return {
+    users, vulnerabilities, interfaces, mac,
+  };
 }
+
+function parseNetworkDeviceSoft(data) {
+  function getNetworkDeviceInterfacesRaw(vulns) {
+    const interfacesTable = vulns.reduce((accumulator, item) => {
+      const el = _.get(item, 'param_list[0].table[0].body');
+      if (el && item.$.id === '425336') {
+        accumulator.push(el);
+      }
+
+      return accumulator;
+    }, []);
+
+    const deviceIfs = [];
+    for (const ifs of interfacesTable) {
+      for (const ifsRow of ifs) {
+        const ifsRaw = {};
+
+        for (const [index, field] of ifsRow.row[0].field.entries()) {
+          const text = field.$text;
+          if (text) {
+            switch (index) {
+              case 1:
+                ifsRaw.address = text;
+                break;
+              case 4:
+                ifsRaw.mac = text;
+                break;
+            }
+          }
+        }
+
+        if (ifsRaw) {
+          deviceIfs.push(ifsRaw);
+        }
+      }
+    }
+
+    return deviceIfs;
+  }
+
+  function formatCiscoInterfaces(ifs) {
+    return ifs.reduce((accumulator, item) => {
+      if (item.address) {
+        const [ip, mask] = item.address.split('/');
+
+        if (ipUtils.isV4Format(ip) && !['127.0.0.1', '::1'].includes(ip)) {
+          accumulator.push({
+            mac: item.mac.match(/\w{1,2}/g).join(':'),
+            address: [{
+              ip,
+              mask: ipUtils.fromPrefixLen(mask),
+              family: 'ipv4',
+            }],
+          });
+        }
+      }
+
+      return accumulator;
+    }, []);
+  }
+
+  function getNetworkDeviceUsers(vulns) {
+    return vulns.reduce((accumulator, item) => {
+      if (item.$.id === '411402') {
+        accumulator.push(item.param);
+      }
+
+      return accumulator;
+    }, []);
+  }
+
+  function getNetworkDeviceFirmware(vulns) {
+    const firmwareVuln = vulns.find(item => (item.$.id === '411401'));
+    const firmwareName = _.get(firmwareVuln, 'param_list[0].table[0].body[0].row[0].field[0].$text');
+    const firmwareVersion = _.get(firmwareVuln, 'param_list[0].table[0].body[0].row[0].field[1].$text');
+
+    if (firmwareName || firmwareVersion) {
+      return {
+        name: firmwareName,
+        version: firmwareVersion,
+      };
+    }
+    return undefined;
+  }
+
+  const { name, version, vulners } = data;
+  const networkDeviceData = vulners.vulner;
+
+  if (!networkDeviceData || networkDeviceData.length === 0) {
+    return [['parseNetworkDeviceData: Empty data!']];
+  }
+
+  const ifsRaw = getNetworkDeviceInterfacesRaw(networkDeviceData);
+  const ifs = formatCiscoInterfaces(ifsRaw);
+  if (!ifs) {
+    return {};
+  }
+
+  const users = getNetworkDeviceUsers(networkDeviceData);
+  const firmware = getNetworkDeviceFirmware(networkDeviceData);
+
+  return [
+    [],
+    {
+      os: name,
+      ifs,
+      users,
+      firmware,
+    },
+  ];
+}
+
 
 /**
  * Парсит xml отчет из MaxPatrol
- * @param {Stream} stream - readable поток с отчетом
+ * @param {Stream} inputStream - readable поток с отчетом
  * @param {Date} lastRun - дата последнего запуска
- * @param {Function} cb - callback. вызывается после завершения работы функции
+ * @param {Stream} outputStream - выходной поток
  */
-module.exports = function(stream, lastRun, cb) {
+module.exports = function (inputStream, lastRun, outputStream) {
   const hosts = [];
   const vulnerabilitiesDesc = {};
 
-  const xml = new XmlStream(stream);
+  const xml = new XmlStream(inputStream);
 
   xml.collect('scan_objects > soft > vulners > vulner');
   xml.collect('scan_objects > soft > vulners > vulner > param_list');
@@ -377,6 +492,9 @@ module.exports = function(stream, lastRun, cb) {
   xml.collect('scan_objects > soft > vulners > vulner > param_list > table > body');
   xml.collect('scan_objects > soft > vulners > vulner > param_list > table > body > row');
   xml.collect('scan_objects > soft > vulners > vulner > param_list > table > body > row > field');
+
+  xml.collect('hardware > device');
+  xml.collect('hardware > device > param_list > table > body > row > field');
 
   xml.collect('content > vulners > vulner');
 
@@ -399,12 +517,34 @@ module.exports = function(stream, lastRun, cb) {
     host = {};
   });
 
+  xml.on('endElement: hardware', (node) => {
+    // получаем серийный номер материнской платы
+    const serialNode = node.device.find(item => item.$.id === '425302');
+    host.hardware = {
+      serial: _.get(serialNode, 'param_list.table.body.row.field[0].$text'),
+    };
+  });
+
   xml.on('endElement: scan_objects > soft', (soft) => {
     // Программное обеспечение
-    const name = soft.name;
-    const version = soft.version;
-    const port = soft.$.port && parseInt(soft.$.port, 10);
-    let protocol = soft.$.protocol && parseInt(soft.$.protocol, 10);
+    const { name, version } = soft;
+    const port = soft.$.port && Number(soft.$.port);
+    let protocol = soft.$.protocol && Number(soft.$.protocol);
+
+    // если хост является сетевым оборудованием
+    if (['Cisco IOS', 'Juniper JUNOS', 'Cisco ASA'].includes(name)) {
+      const [errors, softData] = parseNetworkDeviceSoft(soft);
+      if (errors.length) {
+        // TODO: handle errors
+      }
+
+      host = { ...host, ...softData };
+      return;
+    }
+
+    if (name === 'Operating System') {
+      host.os = version;
+    }
 
     // Список открытых портов
     if (port > 0 && protocol > 0) {
@@ -413,6 +553,9 @@ module.exports = function(stream, lastRun, cb) {
       } else if (protocol === 17) {
         protocol = 'udp';
       }
+
+      // TODO: проверить результат
+      ports.push({ port, protocol });
     }
 
     if (!_.isEmpty(name) && !_.isEmpty(version) && blockedSoftware.indexOf(name) === -1) {
@@ -429,29 +572,22 @@ module.exports = function(stream, lastRun, cb) {
         host.mac = data.mac;
       }
     }
-
-    if (port > 0) {
-      ports.push({ port, protocol });
-    }
   });
 
   xml.on('endElement: host', (node) => {
     const stop = Number(new Date(node.$.stop_time));
-    if (stop && lastRun && stop < lastRun) return true;
+    if ((stop && lastRun && stop < lastRun) || !host.ifs || host.ifs.length === 0) return true;
+
 
     host = {
-      address: node.$.ip,
-      ip: node.$.ip,
-      name: node.$.netbios || node.$.fqdn,
+      name: node.$.fqdn || node.$.netbios,
       start_time: node.$.start_time,
       stop_time: node.$.stop_time,
       updated_at: new Date(node.$.stop_time).toUTCString(),
       domain_workgroup: getDomainName(node.$.fqdn),
-    };
 
-    if (interfaces.length > 0) {
-      host.ifs = interfaces;
-    }
+      // hardware,
+    };
 
     if (ports.length > 0) {
       host.ports = _.values(_.indexBy(ports, 'port'));
@@ -489,7 +625,6 @@ module.exports = function(stream, lastRun, cb) {
 
   xml.on('error', (err) => {
     console.dir(err, { depth: null, colors: true });
-    cb(err);
   });
 
   xml.on('end', () => {
@@ -498,8 +633,7 @@ module.exports = function(stream, lastRun, cb) {
         const result = [];
 
         host.vulnerabilities.forEach((vuln) => {
-          const id = vuln.id;
-          let { level } = vuln;
+          let { level, id } = vuln;
 
           if (level !== 0 && vulnerabilitiesDesc[id]) {
             const item = Object.assign({}, vulnerabilitiesDesc[id]);
@@ -518,8 +652,8 @@ module.exports = function(stream, lastRun, cb) {
 
         host.vulnerabilities = result;
       }
-    });
 
-    cb(null, hosts);
+      outputStream.push(host);
+    });
   });
 };

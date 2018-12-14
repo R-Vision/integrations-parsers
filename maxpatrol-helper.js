@@ -10,6 +10,12 @@ const ipAndMaskRegExp = /(\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}) \((\d{1,3}\.\d{1,3
 const newIpAndMaskRegExp = /(\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})\(\/(\d{1,2})\)/;
 const macAddressRegExp = /[a-fA-F0-9:]{17}|[a-fA-F0-9]{12}/;
 
+/**
+ * Конвертируем данные из xml-таблицы в объект если в каждом field только одно значение.
+ * @param {Object} paramList - корень таблицы
+ * @param {Boolean} returnFirstItem - в зависимости от флага возвращаем массив или объект
+ * @returns {*}
+ */
 function formatSingleDimensionParamListTable(paramList, returnFirstItem) {
   const result = [];
   const body = _.get(paramList, '[0].table[0].body[0].row');
@@ -35,6 +41,12 @@ function formatSingleDimensionParamListTable(paramList, returnFirstItem) {
   return result;
 }
 
+/**
+ * Конвертируем данные из xml-таблицы в объект если в каждом field несколько значений.
+ * @param {Object} paramList - корень таблицы
+ * @param {Number} valueId - указывает field, в котором интересующие значения
+ * @returns {*}
+ */
 function formatTwoDimensionParamListTable(paramList, valueId) {
   const body = _.get(paramList, '[0].table[0].body[0].row');
   const item = {};
@@ -181,8 +193,8 @@ function parseReferenceLinks(links) {
 // Сетевые адаптеры
 /**
  * Получаем данные сетевого адаптера Windows
- * @param vuln
- * @returns {{address: Array, name: boolean}}
+ * @param {Object} vuln
+ * @returns {Object}
  */
 function getWindowsNetworkAdapterData(vuln) {
   const networkInterface = {
@@ -220,6 +232,11 @@ function getWindowsNetworkAdapterData(vuln) {
   return networkInterface;
 }
 
+/**
+ * Получаем данные сетевого адаптера Linux
+ * @param {Object} vuln
+ * @returns {*}
+ */
 function getLinuxNetworkAdapterData(vuln) {
   const ADDRESS_KEY = 4;
   const MAC_KEY = 5;
@@ -243,6 +260,11 @@ function getLinuxNetworkAdapterData(vuln) {
   return undefined;
 }
 
+/**
+ * Получаем данные сетевого адаптера сетевого устройства
+ * @param {Object} vuln
+ * @returns {*}
+ */
 function getNetworkDeviceNetworkAdapterData(vuln) {
   const ADDRESS_AND_MASK_KEY = 2;
   const MAC_KEY = 5;
@@ -266,6 +288,11 @@ function getNetworkDeviceNetworkAdapterData(vuln) {
   };
 }
 
+/**
+ * В зависимости от названия таблицы получаем данные сетевого адаптера
+ * @param {Object} vuln
+ * @returns {Object}
+ */
 function getNetworkInterfaceData(vuln) {
   const tableName = _.get(vuln, 'param_list[0].table[0].$.name');
 
@@ -275,6 +302,11 @@ function getNetworkInterfaceData(vuln) {
 }
 
 // Софт
+/**
+ * Получаем данные софта Windows
+ * @param {Object} vuln
+ * @returns {{name: String, version: String}}
+ */
 function getWindowsSoftwareData(vuln) {
   const VERSION_KEY = 1;
   const softData = formatSingleDimensionParamListTable(vuln.param_list, true);
@@ -285,6 +317,11 @@ function getWindowsSoftwareData(vuln) {
   };
 }
 
+/**
+ * Получаем данные софта Linux в массиве
+ * @param {Object} vuln
+ * @returns {[{ name:string, version:String }]}
+ */
 function getLinuxSoftwareData(vuln) {
   const NAME_KEY = 1;
   const VERSION_KEY = 2;
@@ -297,18 +334,26 @@ function getLinuxSoftwareData(vuln) {
 }
 
 // Пользователи
+/**
+ * Получаем данные пользователей Windows
+ * @param {Object} vuln
+ * @returns {{name: String, login: String}}
+ */
 function getWindowsUserData(vuln) {
   const LOGIN_KEY = 1;
-  const SID_KEY = 4;
   const userData = formatSingleDimensionParamListTable(vuln.param_list, true);
 
   return {
     login: userData[LOGIN_KEY],
     name: userData[LOGIN_KEY],
-    sid: userData[SID_KEY],
   };
 }
 
+/**
+ * Получаем данные пользователей Linux или сетевого оборудования
+ * @param {Object} vuln
+ * @returns {{name: String, login: String}}
+ */
 function getNetworkDeviceOrLinuxUserData(vuln) {
   return {
     name: vuln.param,
@@ -317,6 +362,11 @@ function getNetworkDeviceOrLinuxUserData(vuln) {
 }
 
 // Прочее
+/**
+ * Получаем данные прошивки сетевого устройства
+ * @param {Object} vuln
+ * @returns {{name: String, version: String}}
+ */
 function getNetworkDeviceFirmwareData(vuln) {
   const FIRMWARE_NAME_KEY = 1;
   const FIRMWARE_VERSION_KEY = 2;
@@ -328,6 +378,11 @@ function getNetworkDeviceFirmwareData(vuln) {
   };
 }
 
+/**
+ * Получаем серийные номера сетевого устройства
+ * @param {Object} node
+ * @returns {{modelNumber: String, sn: String}}
+ */
 function getSerialNumbers(node) {
   const MOTHERBOARD_SERIAL_KEY = 9;
   const MODEL_NUMBER_KEY = 12;
@@ -341,6 +396,11 @@ function getSerialNumbers(node) {
 }
 
 // SNMP
+/**
+ * Получаем сетевые адреса из данных SNMP
+ * @param {Object} vuln
+ * @returns {*}
+ */
 function getSNMPNetworkAddresses(vuln) {
   const IP_KEY = 1;
   const INTERFACE_ID_KEY = 2;
@@ -359,6 +419,11 @@ function getSNMPNetworkAddresses(vuln) {
   return undefined;
 }
 
+/**
+ * Получаем сетевые интерфейсы из данных SNMP
+ * @param {Object} vuln
+ * @returns {*}
+ */
 function getSNMPNetworkInterfaces(vuln) {
   const ID_KEY = 1;
   const MAC_KEY = 6;
@@ -375,6 +440,11 @@ function getSNMPNetworkInterfaces(vuln) {
   return undefined;
 }
 
+/**
+ * Получаем системную информацию из данных SNMP
+ * @param {Object} vuln
+ * @returns {{ name: String }}
+ */
 function getSNMPSystemInformation(vuln) {
   const NAME_KEY = 4;
 
@@ -383,6 +453,12 @@ function getSNMPSystemInformation(vuln) {
   return { name: info[NAME_KEY] };
 }
 
+/**
+ * Маппим сетевые интерфейсы с адрессами
+ * @param {Array} addresses
+ * @param {Array} interfaces
+ * @returns {Array}
+ */
 function formatSNMPInterfaces(addresses, interfaces) {
   const result = [];
 
@@ -391,6 +467,7 @@ function formatSNMPInterfaces(addresses, interfaces) {
 
     if (networkInterface) {
       delete address.interfaceId;
+      address.family = 'ipv4';
 
       result.push({
         mac: networkInterface.mac,

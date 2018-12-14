@@ -68,7 +68,8 @@ module.exports = function nessusParse(stream, cb) {
       result.push(item);
     }
 
-    cb(null, result);
+    // errors пока не используются, но нужно чтобы совпадал формат с результатом парсинга MP
+    cb(null, { hosts: result, errors: [] });
   });
 
   function processRecord(record) {

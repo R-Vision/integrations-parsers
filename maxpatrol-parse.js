@@ -23,6 +23,18 @@ const {
 } = require('./maxpatrol-helper');
 
 
+/**
+ * Парсим данные о софте хоста
+ * @param {Array} data
+ * @returns {{
+ * software: Array,
+ * ifs: Array,
+ * vulns: Object,
+ * ports: Array,
+ * firmware: Object,
+ * users: Array
+ * }}
+ */
 function parseHostSoft(data) {
   const ifs = [];
   const users = [];
@@ -108,6 +120,11 @@ function parseHostSoft(data) {
   };
 }
 
+/**
+ * Парсим данные сканирования по SNMP
+ * @param {Array} data
+ * @returns {{ifs: Array, name: string}}
+ */
 function parseSNMPData(data) {
   let addresses = [];
   let interfaces = [];
@@ -133,6 +150,11 @@ function parseSNMPData(data) {
   };
 }
 
+/**
+ * Парсим данные о hardware хоста
+ * @param {Array} data
+ * @returns {{ serial: String }}
+ */
 function parseHardwareData(data) {
   let serial = {};
 
@@ -147,42 +169,60 @@ function parseHardwareData(data) {
   };
 }
 
-function parseSoftData(data) {
-  function formatSoftData(softData) {
-    const ports = [];
-    const formattedSoft = [];
+/**
+ * Форматируем данные о софте хоста
+ * @param {Array} softData
+ * @returns {{formattedSoft: Array, ports: Array}}
+ */
+function formatSoftData(softData) {
+  const ports = [];
+  const formattedSoft = [];
 
-    for (const item of softData) {
-      const port = item.$.port && Number(item.$.port);
-      let protocol = item.$.protocol && Number(item.$.protocol);
+  for (const item of softData) {
+    const port = item.$.port && Number(item.$.port);
+    let protocol = item.$.protocol && Number(item.$.protocol);
 
-      switch (protocol) {
-        case 6:
-          protocol = 'tcp';
-          break;
-        case 17:
-          protocol = 'udp';
-          break;
-      }
-
-      formattedSoft.push({
-        ...item,
-        port,
-        protocol,
-      });
-
-      // Список открытых портов
-      if (port > 0) {
-        ports.push(port);
-      }
+    switch (protocol) {
+      case 6:
+        protocol = 'tcp';
+        break;
+      case 17:
+        protocol = 'udp';
+        break;
     }
 
-    return {
-      formattedSoft,
-      ports,
-    };
+    formattedSoft.push({
+      ...item,
+      port,
+      protocol,
+    });
+
+    // Список открытых портов
+    if (port > 0) {
+      ports.push(port);
+    }
   }
 
+  return {
+    formattedSoft,
+    ports,
+  };
+}
+
+/**
+ * Форматируем данные о софте и получаем из них необходимые данные
+ * @param {Array} data
+ * @returns {{
+ *  software: Array,
+ *  os: String,
+ *  ifs: Array,
+ *  vulns: Object,
+ *  ports: Array,
+ *  firmware: Object,
+ *  users: Array
+ * }}
+ */
+function parseSoftData(data) {
   const { formattedSoft, ports } = formatSoftData(data);
   const snmpData = formattedSoft.find(item => item.name === 'SNMP');
   const osData = formattedSoft.find(item => item.name === 'Operating System');
@@ -199,7 +239,12 @@ function parseSoftData(data) {
   return { ...result, ports, os };
 }
 
-function filterNetworkinterfaces(interfaces) {
+/**
+ * Фильтруем сетевые интерфейсы - отбрасываем локальные адреса и все адреса, непохожие на IPV4
+ * @param {Array} interfaces
+ * @returns {Array}
+ */
+function filterNetworkInterfaces(interfaces) {
   const formattedInterfaces = [];
 
   for (const ifs of interfaces) {
@@ -220,9 +265,10 @@ function filterNetworkinterfaces(interfaces) {
  * @param {Object} options
  * @param {Function} cb - колбэк, который должен быть вызван по завершении парсинга
  */
-module.exports = function (inputStream, options, cb) {
+module.exports = function (inputStream, options = {}, cb) {
   const errors = [];
-  const { lastRun } = options;
+  const { last_run: lastRun } = options;
+
   const xml = new XmlStream(inputStream);
 
   xml.collect('scan_objects > soft');
@@ -251,6 +297,7 @@ module.exports = function (inputStream, options, cb) {
   let hosts = [];
 
   xml.on('endElement: host', (node) => {
+    // парсим данные хоста - тут все самое интересное
     const {
       fqdn,
       netbios,
@@ -264,11 +311,11 @@ module.exports = function (inputStream, options, cb) {
     }
 
     try {
-      const softData = node.scan_objects && node.scan_objects.soft ?
+      const softData = typeof node.scan_objects === 'object' && node.scan_objects.soft ?
         parseSoftData(node.scan_objects.soft, options) :
         {};
 
-      const ifs = filterNetworkinterfaces(softData.ifs);
+      const ifs = filterNetworkInterfaces(softData.ifs || []);
       if (!ifs || ifs.length === 0) {
         return true;
       }
@@ -284,7 +331,9 @@ module.exports = function (inputStream, options, cb) {
         ...hardware,
         maxpatrolUid,
         ifs,
-        name: fqdn || netbios || softData.name,
+        software: options.import_software ? softData.software : [],
+        users: options.import_users ? softData.users : [],
+        name: fqdn || netbios || softData.name || ifs[0].address[0].ip,
         updated_at: scanFinished,
         vuln_discovery_date: scanFinished,
         vuln_elimination_date: scanFinished,
@@ -311,19 +360,23 @@ module.exports = function (inputStream, options, cb) {
       return;
     }
 
-    const level = Math.round(Number(cvss.$.base_score) / 2);
-    const vulnDescription = description.$text || shortDescription.$text || '';
-    const vuln = {
-      description: vulnDescription.replace(/  +/g, ' '),
-      name: title,
-      remediation,
-      uid: $.id,
-      reference: parseReferenceLinks(links),
-      level: level === 0 ? 1 : level,
-    };
+    try {
+      const level = Math.round(Number(cvss.$.base_score) / 2);
+      const vulnDescription = description.$text || shortDescription.$text || '';
+      const vuln = {
+        description: vulnDescription.replace(/  +/g, ' '),
+        name: title,
+        remediation,
+        uid: $.id,
+        reference: parseReferenceLinks(links),
+        level_id: level === 0 ? 1 : level,
+      };
 
-    if (vuln.uid) {
-      uniqueVulns[vuln.uid] = vuln;
+      if (vuln.uid) {
+        uniqueVulns[vuln.uid] = vuln;
+      }
+    } catch (e) {
+      errors.push(new Error(`Error: vulner id ${globalId} - ${e.message}`));
     }
   });
 
@@ -365,6 +418,6 @@ module.exports = function (inputStream, options, cb) {
       };
     });
 
-    cb(errors.length ? errors : null, hosts);
+    cb(null, { hosts, errors });
   });
 };

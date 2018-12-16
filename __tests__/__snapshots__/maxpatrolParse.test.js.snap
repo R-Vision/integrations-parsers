@@ -1,0 +1,2364 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`parse HP host data matches snapshot 1`] = `
+Object {
+  "errors": Array [],
+  "hosts": Array [
+    Object {
+      "firmware": Object {
+        "name": "C3750E-UNIVERSALK9-M",
+        "version": "12.2(55)SE3",
+      },
+      "ifs": Array [
+        Object {
+          "address": Array [
+            Object {
+              "family": "ipv4",
+              "ip": "10.10.150.1",
+              "mask": "255.255.255.0",
+            },
+          ],
+          "mac": "d4:8c:b5:fd:73:c0",
+        },
+        Object {
+          "address": Array [
+            Object {
+              "family": "ipv4",
+              "ip": "10.10.101.1",
+              "mask": "255.255.255.0",
+            },
+          ],
+          "mac": "d4:8c:b5:fd:73:c1",
+        },
+        Object {
+          "address": Array [
+            Object {
+              "family": "ipv4",
+              "ip": "10.10.1.1",
+              "mask": "255.255.255.0",
+            },
+          ],
+          "mac": "d4:8c:b5:fd:73:c2",
+        },
+      ],
+      "name": "10.10.150.1",
+      "os": "",
+      "ports": Array [],
+      "serial": Object {
+        "modelNumber": "WS-C3750X-24",
+        "sn": "FDO162523ZH",
+      },
+      "software": Array [],
+      "updated_at": "2018-04-19T16:20:05+03:00",
+      "users": Array [],
+      "vuln_discovery_date": "2018-04-19T16:20:05+03:00",
+      "vuln_elimination_date": "2018-04-19T16:20:05+03:00",
+      "vulnerabilities": Array [
+        Object {
+          "description": "Уязвимость в реализации клиента Smart Install для Cisco IOS и IOS XE позволяет злоумышленникам, действующим удаленно, вызвать отказ в обслуживании (перезагрузку устройства), используя специально сформированные параметры списка образов в пакете Smart Install.",
+          "level_id": 4,
+          "name": "Отказ в обслуживании",
+          "reference": Array [
+            Object {
+              "ref_id": "CVE-2016-1349",
+              "ref_url": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2016-1349",
+              "source": "CVE",
+            },
+            Object {
+              "ref_id": "http://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20160323-smi",
+              "ref_url": "http://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20160323-smi",
+              "source": "tools.cisco.com",
+            },
+          ],
+          "remediation": "Используйте рекомендации производителя: https://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20160323-smi",
+          "uid": "186068",
+        },
+        Object {
+          "description": "Утечка памяти в реализации клиента Smart Install для Cisco IOS и IOS XE позволяет злоумышленникам, действующим удаленно, вызвать отказ в обслуживании (чрезмерное потребление ресурсов памяти), используя специально сформированные параметры списка образов.",
+          "level_id": 4,
+          "name": "Утечка памяти",
+          "reference": Array [
+            Object {
+              "ref_id": "CVE-2016-6385",
+              "ref_url": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2016-6385",
+              "source": "CVE",
+            },
+            Object {
+              "ref_id": "http://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20160928-smi",
+              "ref_url": "http://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20160928-smi",
+              "source": "tools.cisco.com",
+            },
+          ],
+          "remediation": "Используйте рекомендации производителя: https://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20160928-smi",
+          "uid": "187308",
+        },
+        Object {
+          "description": "Уязвимость в клиенте Smart Install в Cisco IOS коммутаторов Catalyst позволяет злоумышленникам, действующим удаленно, вызвать отказ в обслуживании (перезагрузку устройства) при помощи специально сформированных параметров списка образов в пакетах Smart Install.",
+          "level_id": 4,
+          "name": "Отказ в обслуживании",
+          "reference": Array [
+            Object {
+              "ref_id": "CVE-2013-1146",
+              "ref_url": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-1146",
+              "source": "CVE",
+            },
+            Object {
+              "ref_id": "http://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20130327-smartinstall",
+              "ref_url": "http://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20130327-smartinstall",
+              "source": "tools.cisco.com",
+            },
+          ],
+          "remediation": "Используйте рекомендации производителя: http://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20130327-smartinstall",
+          "uid": "188498",
+        },
+      ],
+    },
+    Object {
+      "firmware": Object {
+        "name": "C3750E-UNIVERSALK9-M",
+        "version": "12.2(55)SE3",
+      },
+      "ifs": Array [
+        Object {
+          "address": Array [
+            Object {
+              "family": "ipv4",
+              "ip": "10.10.120.1",
+              "mask": "255.255.255.0",
+            },
+          ],
+          "mac": "30:f7:0d:33:2c:c0",
+        },
+        Object {
+          "address": Array [
+            Object {
+              "family": "ipv4",
+              "ip": "10.10.102.1",
+              "mask": "255.255.255.0",
+            },
+          ],
+          "mac": "30:f7:0d:33:2c:c1",
+        },
+      ],
+      "name": "10.10.120.1",
+      "os": "",
+      "ports": Array [],
+      "serial": Object {
+        "modelNumber": "WS-C3750X-24",
+        "sn": "FDO162621HH",
+      },
+      "software": Array [],
+      "updated_at": "2018-04-19T16:20:05+03:00",
+      "users": Array [],
+      "vuln_discovery_date": "2018-04-19T16:20:05+03:00",
+      "vuln_elimination_date": "2018-04-19T16:20:05+03:00",
+      "vulnerabilities": Array [
+        Object {
+          "description": "Уязвимость в реализации клиента Smart Install для Cisco IOS и IOS XE позволяет злоумышленникам, действующим удаленно, вызвать отказ в обслуживании (перезагрузку устройства), используя специально сформированные параметры списка образов в пакете Smart Install.",
+          "level_id": 4,
+          "name": "Отказ в обслуживании",
+          "reference": Array [
+            Object {
+              "ref_id": "CVE-2016-1349",
+              "ref_url": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2016-1349",
+              "source": "CVE",
+            },
+            Object {
+              "ref_id": "http://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20160323-smi",
+              "ref_url": "http://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20160323-smi",
+              "source": "tools.cisco.com",
+            },
+          ],
+          "remediation": "Используйте рекомендации производителя: https://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20160323-smi",
+          "uid": "186068",
+        },
+        Object {
+          "description": "Утечка памяти в реализации клиента Smart Install для Cisco IOS и IOS XE позволяет злоумышленникам, действующим удаленно, вызвать отказ в обслуживании (чрезмерное потребление ресурсов памяти), используя специально сформированные параметры списка образов.",
+          "level_id": 4,
+          "name": "Утечка памяти",
+          "reference": Array [
+            Object {
+              "ref_id": "CVE-2016-6385",
+              "ref_url": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2016-6385",
+              "source": "CVE",
+            },
+            Object {
+              "ref_id": "http://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20160928-smi",
+              "ref_url": "http://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20160928-smi",
+              "source": "tools.cisco.com",
+            },
+          ],
+          "remediation": "Используйте рекомендации производителя: https://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20160928-smi",
+          "uid": "187308",
+        },
+        Object {
+          "description": "Уязвимость в клиенте Smart Install в Cisco IOS коммутаторов Catalyst позволяет злоумышленникам, действующим удаленно, вызвать отказ в обслуживании (перезагрузку устройства) при помощи специально сформированных параметров списка образов в пакетах Smart Install.",
+          "level_id": 4,
+          "name": "Отказ в обслуживании",
+          "reference": Array [
+            Object {
+              "ref_id": "CVE-2013-1146",
+              "ref_url": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-1146",
+              "source": "CVE",
+            },
+            Object {
+              "ref_id": "http://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20130327-smartinstall",
+              "ref_url": "http://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20130327-smartinstall",
+              "source": "tools.cisco.com",
+            },
+          ],
+          "remediation": "Используйте рекомендации производителя: http://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20130327-smartinstall",
+          "uid": "188498",
+        },
+      ],
+    },
+    Object {
+      "firmware": Object {
+        "name": "C3750E-UNIVERSALK9-M",
+        "version": "12.2(55)SE3",
+      },
+      "ifs": Array [
+        Object {
+          "address": Array [
+            Object {
+              "family": "ipv4",
+              "ip": "10.10.103.1",
+              "mask": "255.255.255.0",
+            },
+          ],
+          "mac": "d4:8c:b5:f1:2c:c1",
+        },
+      ],
+      "name": "10.10.103.1",
+      "os": "",
+      "ports": Array [],
+      "serial": Object {
+        "modelNumber": "WS-C3750X-24",
+        "sn": "FDO162523ZY",
+      },
+      "software": Array [],
+      "updated_at": "2018-04-19T16:20:05+03:00",
+      "users": Array [],
+      "vuln_discovery_date": "2018-04-19T16:20:05+03:00",
+      "vuln_elimination_date": "2018-04-19T16:20:05+03:00",
+      "vulnerabilities": Array [
+        Object {
+          "description": "Уязвимость в реализации клиента Smart Install для Cisco IOS и IOS XE позволяет злоумышленникам, действующим удаленно, вызвать отказ в обслуживании (перезагрузку устройства), используя специально сформированные параметры списка образов в пакете Smart Install.",
+          "level_id": 4,
+          "name": "Отказ в обслуживании",
+          "reference": Array [
+            Object {
+              "ref_id": "CVE-2016-1349",
+              "ref_url": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2016-1349",
+              "source": "CVE",
+            },
+            Object {
+              "ref_id": "http://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20160323-smi",
+              "ref_url": "http://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20160323-smi",
+              "source": "tools.cisco.com",
+            },
+          ],
+          "remediation": "Используйте рекомендации производителя: https://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20160323-smi",
+          "uid": "186068",
+        },
+        Object {
+          "description": "Утечка памяти в реализации клиента Smart Install для Cisco IOS и IOS XE позволяет злоумышленникам, действующим удаленно, вызвать отказ в обслуживании (чрезмерное потребление ресурсов памяти), используя специально сформированные параметры списка образов.",
+          "level_id": 4,
+          "name": "Утечка памяти",
+          "reference": Array [
+            Object {
+              "ref_id": "CVE-2016-6385",
+              "ref_url": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2016-6385",
+              "source": "CVE",
+            },
+            Object {
+              "ref_id": "http://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20160928-smi",
+              "ref_url": "http://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20160928-smi",
+              "source": "tools.cisco.com",
+            },
+          ],
+          "remediation": "Используйте рекомендации производителя: https://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20160928-smi",
+          "uid": "187308",
+        },
+        Object {
+          "description": "Уязвимость в клиенте Smart Install в Cisco IOS коммутаторов Catalyst позволяет злоумышленникам, действующим удаленно, вызвать отказ в обслуживании (перезагрузку устройства) при помощи специально сформированных параметров списка образов в пакетах Smart Install.",
+          "level_id": 4,
+          "name": "Отказ в обслуживании",
+          "reference": Array [
+            Object {
+              "ref_id": "CVE-2013-1146",
+              "ref_url": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-1146",
+              "source": "CVE",
+            },
+            Object {
+              "ref_id": "http://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20130327-smartinstall",
+              "ref_url": "http://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20130327-smartinstall",
+              "source": "tools.cisco.com",
+            },
+          ],
+          "remediation": "Используйте рекомендации производителя: http://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20130327-smartinstall",
+          "uid": "188498",
+        },
+      ],
+    },
+    Object {
+      "firmware": Object {
+        "name": "C3750E-UNIVERSALK9-M",
+        "version": "12.2(55)SE3",
+      },
+      "ifs": Array [
+        Object {
+          "address": Array [
+            Object {
+              "family": "ipv4",
+              "ip": "10.10.140.1",
+              "mask": "255.255.255.0",
+            },
+          ],
+          "mac": "30:f7:0d:33:1b:40",
+        },
+        Object {
+          "address": Array [
+            Object {
+              "family": "ipv4",
+              "ip": "10.10.104.1",
+              "mask": "255.255.255.0",
+            },
+          ],
+          "mac": "30:f7:0d:33:1b:41",
+        },
+      ],
+      "name": "10.10.140.1",
+      "os": "",
+      "ports": Array [],
+      "serial": Object {
+        "modelNumber": "WS-C3750X-24",
+        "sn": "FDO162621NJ",
+      },
+      "software": Array [],
+      "updated_at": "2018-04-19T16:20:05+03:00",
+      "users": Array [],
+      "vuln_discovery_date": "2018-04-19T16:20:05+03:00",
+      "vuln_elimination_date": "2018-04-19T16:20:05+03:00",
+      "vulnerabilities": Array [
+        Object {
+          "description": "Уязвимость в реализации клиента Smart Install для Cisco IOS и IOS XE позволяет злоумышленникам, действующим удаленно, вызвать отказ в обслуживании (перезагрузку устройства), используя специально сформированные параметры списка образов в пакете Smart Install.",
+          "level_id": 4,
+          "name": "Отказ в обслуживании",
+          "reference": Array [
+            Object {
+              "ref_id": "CVE-2016-1349",
+              "ref_url": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2016-1349",
+              "source": "CVE",
+            },
+            Object {
+              "ref_id": "http://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20160323-smi",
+              "ref_url": "http://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20160323-smi",
+              "source": "tools.cisco.com",
+            },
+          ],
+          "remediation": "Используйте рекомендации производителя: https://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20160323-smi",
+          "uid": "186068",
+        },
+        Object {
+          "description": "Утечка памяти в реализации клиента Smart Install для Cisco IOS и IOS XE позволяет злоумышленникам, действующим удаленно, вызвать отказ в обслуживании (чрезмерное потребление ресурсов памяти), используя специально сформированные параметры списка образов.",
+          "level_id": 4,
+          "name": "Утечка памяти",
+          "reference": Array [
+            Object {
+              "ref_id": "CVE-2016-6385",
+              "ref_url": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2016-6385",
+              "source": "CVE",
+            },
+            Object {
+              "ref_id": "http://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20160928-smi",
+              "ref_url": "http://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20160928-smi",
+              "source": "tools.cisco.com",
+            },
+          ],
+          "remediation": "Используйте рекомендации производителя: https://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20160928-smi",
+          "uid": "187308",
+        },
+        Object {
+          "description": "Уязвимость в клиенте Smart Install в Cisco IOS коммутаторов Catalyst позволяет злоумышленникам, действующим удаленно, вызвать отказ в обслуживании (перезагрузку устройства) при помощи специально сформированных параметров списка образов в пакетах Smart Install.",
+          "level_id": 4,
+          "name": "Отказ в обслуживании",
+          "reference": Array [
+            Object {
+              "ref_id": "CVE-2013-1146",
+              "ref_url": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-1146",
+              "source": "CVE",
+            },
+            Object {
+              "ref_id": "http://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20130327-smartinstall",
+              "ref_url": "http://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20130327-smartinstall",
+              "source": "tools.cisco.com",
+            },
+          ],
+          "remediation": "Используйте рекомендации производителя: http://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20130327-smartinstall",
+          "uid": "188498",
+        },
+      ],
+    },
+    Object {
+      "firmware": Object {
+        "name": "C3750E-UNIVERSALK9-M",
+        "version": "12.2(55)SE3",
+      },
+      "ifs": Array [
+        Object {
+          "address": Array [
+            Object {
+              "family": "ipv4",
+              "ip": "10.10.150.1",
+              "mask": "255.255.255.0",
+            },
+          ],
+          "mac": "30:f7:0d:9e:32:40",
+        },
+        Object {
+          "address": Array [
+            Object {
+              "family": "ipv4",
+              "ip": "10.10.105.1",
+              "mask": "255.255.255.0",
+            },
+          ],
+          "mac": "30:f7:0d:9e:32:41",
+        },
+      ],
+      "name": "10.10.150.1",
+      "os": "",
+      "ports": Array [],
+      "serial": Object {
+        "modelNumber": "WS-C3750X-24",
+        "sn": "FDO16280QCT",
+      },
+      "software": Array [],
+      "updated_at": "2018-04-19T16:20:05+03:00",
+      "users": Array [],
+      "vuln_discovery_date": "2018-04-19T16:20:05+03:00",
+      "vuln_elimination_date": "2018-04-19T16:20:05+03:00",
+      "vulnerabilities": Array [
+        Object {
+          "description": "Уязвимость в реализации клиента Smart Install для Cisco IOS и IOS XE позволяет злоумышленникам, действующим удаленно, вызвать отказ в обслуживании (перезагрузку устройства), используя специально сформированные параметры списка образов в пакете Smart Install.",
+          "level_id": 4,
+          "name": "Отказ в обслуживании",
+          "reference": Array [
+            Object {
+              "ref_id": "CVE-2016-1349",
+              "ref_url": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2016-1349",
+              "source": "CVE",
+            },
+            Object {
+              "ref_id": "http://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20160323-smi",
+              "ref_url": "http://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20160323-smi",
+              "source": "tools.cisco.com",
+            },
+          ],
+          "remediation": "Используйте рекомендации производителя: https://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20160323-smi",
+          "uid": "186068",
+        },
+        Object {
+          "description": "Утечка памяти в реализации клиента Smart Install для Cisco IOS и IOS XE позволяет злоумышленникам, действующим удаленно, вызвать отказ в обслуживании (чрезмерное потребление ресурсов памяти), используя специально сформированные параметры списка образов.",
+          "level_id": 4,
+          "name": "Утечка памяти",
+          "reference": Array [
+            Object {
+              "ref_id": "CVE-2016-6385",
+              "ref_url": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2016-6385",
+              "source": "CVE",
+            },
+            Object {
+              "ref_id": "http://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20160928-smi",
+              "ref_url": "http://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20160928-smi",
+              "source": "tools.cisco.com",
+            },
+          ],
+          "remediation": "Используйте рекомендации производителя: https://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20160928-smi",
+          "uid": "187308",
+        },
+        Object {
+          "description": "Уязвимость в клиенте Smart Install в Cisco IOS коммутаторов Catalyst позволяет злоумышленникам, действующим удаленно, вызвать отказ в обслуживании (перезагрузку устройства) при помощи специально сформированных параметров списка образов в пакетах Smart Install.",
+          "level_id": 4,
+          "name": "Отказ в обслуживании",
+          "reference": Array [
+            Object {
+              "ref_id": "CVE-2013-1146",
+              "ref_url": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-1146",
+              "source": "CVE",
+            },
+            Object {
+              "ref_id": "http://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20130327-smartinstall",
+              "ref_url": "http://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20130327-smartinstall",
+              "source": "tools.cisco.com",
+            },
+          ],
+          "remediation": "Используйте рекомендации производителя: http://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20130327-smartinstall",
+          "uid": "188498",
+        },
+      ],
+    },
+    Object {
+      "firmware": Object {
+        "name": "C3750E-UNIVERSALK9-M",
+        "version": "12.2(55)SE10",
+      },
+      "ifs": Array [
+        Object {
+          "address": Array [
+            Object {
+              "family": "ipv4",
+              "ip": "10.11.17.1",
+              "mask": "255.255.255.0",
+            },
+          ],
+          "mac": "44:03:a7:2e:8b:c1",
+        },
+      ],
+      "name": "10.11.17.1",
+      "os": "",
+      "ports": Array [],
+      "serial": Object {
+        "modelNumber": "WS-C3750X-24",
+        "sn": "FDO16481BFX",
+      },
+      "software": Array [],
+      "updated_at": "2018-04-19T16:20:05+03:00",
+      "users": Array [],
+      "vuln_discovery_date": "2018-04-19T16:20:05+03:00",
+      "vuln_elimination_date": "2018-04-19T16:20:05+03:00",
+      "vulnerabilities": Array [
+        Object {
+          "description": "Уязвимость в реализации клиента Smart Install для Cisco IOS и IOS XE позволяет злоумышленникам, действующим удаленно, вызвать отказ в обслуживании (перезагрузку устройства), используя специально сформированные параметры списка образов в пакете Smart Install.",
+          "level_id": 4,
+          "name": "Отказ в обслуживании",
+          "reference": Array [
+            Object {
+              "ref_id": "CVE-2016-1349",
+              "ref_url": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2016-1349",
+              "source": "CVE",
+            },
+            Object {
+              "ref_id": "http://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20160323-smi",
+              "ref_url": "http://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20160323-smi",
+              "source": "tools.cisco.com",
+            },
+          ],
+          "remediation": "Используйте рекомендации производителя: https://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20160323-smi",
+          "uid": "186068",
+        },
+        Object {
+          "description": "Утечка памяти в реализации клиента Smart Install для Cisco IOS и IOS XE позволяет злоумышленникам, действующим удаленно, вызвать отказ в обслуживании (чрезмерное потребление ресурсов памяти), используя специально сформированные параметры списка образов.",
+          "level_id": 4,
+          "name": "Утечка памяти",
+          "reference": Array [
+            Object {
+              "ref_id": "CVE-2016-6385",
+              "ref_url": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2016-6385",
+              "source": "CVE",
+            },
+            Object {
+              "ref_id": "http://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20160928-smi",
+              "ref_url": "http://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20160928-smi",
+              "source": "tools.cisco.com",
+            },
+          ],
+          "remediation": "Используйте рекомендации производителя: https://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20160928-smi",
+          "uid": "187308",
+        },
+      ],
+    },
+    Object {
+      "firmware": Object {
+        "name": "C3750E-UNIVERSALK9-M",
+        "version": "12.2(55)SE10",
+      },
+      "ifs": Array [
+        Object {
+          "address": Array [
+            Object {
+              "family": "ipv4",
+              "ip": "10.11.18.1",
+              "mask": "255.255.255.0",
+            },
+          ],
+          "mac": "e0:2f:6d:2e:51:c1",
+        },
+      ],
+      "name": "10.11.18.1",
+      "os": "",
+      "ports": Array [],
+      "serial": Object {
+        "modelNumber": "WS-C3750X-24",
+        "sn": "FDO16450XSP",
+      },
+      "software": Array [],
+      "updated_at": "2018-04-19T16:20:05+03:00",
+      "users": Array [],
+      "vuln_discovery_date": "2018-04-19T16:20:05+03:00",
+      "vuln_elimination_date": "2018-04-19T16:20:05+03:00",
+      "vulnerabilities": Array [
+        Object {
+          "description": "Уязвимость в реализации клиента Smart Install для Cisco IOS и IOS XE позволяет злоумышленникам, действующим удаленно, вызвать отказ в обслуживании (перезагрузку устройства), используя специально сформированные параметры списка образов в пакете Smart Install.",
+          "level_id": 4,
+          "name": "Отказ в обслуживании",
+          "reference": Array [
+            Object {
+              "ref_id": "CVE-2016-1349",
+              "ref_url": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2016-1349",
+              "source": "CVE",
+            },
+            Object {
+              "ref_id": "http://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20160323-smi",
+              "ref_url": "http://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20160323-smi",
+              "source": "tools.cisco.com",
+            },
+          ],
+          "remediation": "Используйте рекомендации производителя: https://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20160323-smi",
+          "uid": "186068",
+        },
+        Object {
+          "description": "Утечка памяти в реализации клиента Smart Install для Cisco IOS и IOS XE позволяет злоумышленникам, действующим удаленно, вызвать отказ в обслуживании (чрезмерное потребление ресурсов памяти), используя специально сформированные параметры списка образов.",
+          "level_id": 4,
+          "name": "Утечка памяти",
+          "reference": Array [
+            Object {
+              "ref_id": "CVE-2016-6385",
+              "ref_url": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2016-6385",
+              "source": "CVE",
+            },
+            Object {
+              "ref_id": "http://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20160928-smi",
+              "ref_url": "http://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20160928-smi",
+              "source": "tools.cisco.com",
+            },
+          ],
+          "remediation": "Используйте рекомендации производителя: https://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20160928-smi",
+          "uid": "187308",
+        },
+      ],
+    },
+    Object {
+      "firmware": Object {
+        "name": "C3750E-UNIVERSALK9-M",
+        "version": "12.2(55)SE10",
+      },
+      "ifs": Array [
+        Object {
+          "address": Array [
+            Object {
+              "family": "ipv4",
+              "ip": "192.168.0.1",
+              "mask": "255.255.255.0",
+            },
+          ],
+          "mac": "e0:2f:6d:2e:2d:37",
+        },
+        Object {
+          "address": Array [
+            Object {
+              "family": "ipv4",
+              "ip": "10.11.19.1",
+              "mask": "255.255.255.0",
+            },
+          ],
+          "mac": "44:03:a7:3e:9b:41",
+        },
+        Object {
+          "address": Array [
+            Object {
+              "family": "ipv4",
+              "ip": "10.11.4.1",
+              "mask": "255.255.255.0",
+            },
+          ],
+          "mac": "44:03:a7:3e:9b:42",
+        },
+      ],
+      "name": "192.168.0.1",
+      "os": "",
+      "ports": Array [],
+      "serial": Object {
+        "modelNumber": "WS-C3750X-24",
+        "sn": "FDO16481B8Y",
+      },
+      "software": Array [],
+      "updated_at": "2018-04-19T16:20:05+03:00",
+      "users": Array [],
+      "vuln_discovery_date": "2018-04-19T16:20:05+03:00",
+      "vuln_elimination_date": "2018-04-19T16:20:05+03:00",
+      "vulnerabilities": Array [
+        Object {
+          "description": "Уязвимость в реализации клиента Smart Install для Cisco IOS и IOS XE позволяет злоумышленникам, действующим удаленно, вызвать отказ в обслуживании (перезагрузку устройства), используя специально сформированные параметры списка образов в пакете Smart Install.",
+          "level_id": 4,
+          "name": "Отказ в обслуживании",
+          "reference": Array [
+            Object {
+              "ref_id": "CVE-2016-1349",
+              "ref_url": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2016-1349",
+              "source": "CVE",
+            },
+            Object {
+              "ref_id": "http://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20160323-smi",
+              "ref_url": "http://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20160323-smi",
+              "source": "tools.cisco.com",
+            },
+          ],
+          "remediation": "Используйте рекомендации производителя: https://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20160323-smi",
+          "uid": "186068",
+        },
+        Object {
+          "description": "Утечка памяти в реализации клиента Smart Install для Cisco IOS и IOS XE позволяет злоумышленникам, действующим удаленно, вызвать отказ в обслуживании (чрезмерное потребление ресурсов памяти), используя специально сформированные параметры списка образов.",
+          "level_id": 4,
+          "name": "Утечка памяти",
+          "reference": Array [
+            Object {
+              "ref_id": "CVE-2016-6385",
+              "ref_url": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2016-6385",
+              "source": "CVE",
+            },
+            Object {
+              "ref_id": "http://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20160928-smi",
+              "ref_url": "http://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20160928-smi",
+              "source": "tools.cisco.com",
+            },
+          ],
+          "remediation": "Используйте рекомендации производителя: https://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20160928-smi",
+          "uid": "187308",
+        },
+      ],
+    },
+    Object {
+      "firmware": Object {
+        "name": "C3750E-UNIVERSALK9-M",
+        "version": "12.2(55)SE5",
+      },
+      "ifs": Array [
+        Object {
+          "address": Array [
+            Object {
+              "family": "ipv4",
+              "ip": "10.11.20.1",
+              "mask": "255.255.255.0",
+            },
+          ],
+          "mac": "e0:2f:6d:83:92:41",
+        },
+      ],
+      "name": "10.11.20.1",
+      "os": "",
+      "ports": Array [],
+      "serial": Object {
+        "modelNumber": "WS-C3750X-24",
+        "sn": "FDO164529J0",
+      },
+      "software": Array [],
+      "updated_at": "2018-04-19T16:20:05+03:00",
+      "users": Array [],
+      "vuln_discovery_date": "2018-04-19T16:20:05+03:00",
+      "vuln_elimination_date": "2018-04-19T16:20:05+03:00",
+      "vulnerabilities": Array [
+        Object {
+          "description": "Уязвимость в реализации клиента Smart Install для Cisco IOS и IOS XE позволяет злоумышленникам, действующим удаленно, вызвать отказ в обслуживании (перезагрузку устройства), используя специально сформированные параметры списка образов в пакете Smart Install.",
+          "level_id": 4,
+          "name": "Отказ в обслуживании",
+          "reference": Array [
+            Object {
+              "ref_id": "CVE-2016-1349",
+              "ref_url": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2016-1349",
+              "source": "CVE",
+            },
+            Object {
+              "ref_id": "http://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20160323-smi",
+              "ref_url": "http://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20160323-smi",
+              "source": "tools.cisco.com",
+            },
+          ],
+          "remediation": "Используйте рекомендации производителя: https://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20160323-smi",
+          "uid": "186068",
+        },
+        Object {
+          "description": "Утечка памяти в реализации клиента Smart Install для Cisco IOS и IOS XE позволяет злоумышленникам, действующим удаленно, вызвать отказ в обслуживании (чрезмерное потребление ресурсов памяти), используя специально сформированные параметры списка образов.",
+          "level_id": 4,
+          "name": "Утечка памяти",
+          "reference": Array [
+            Object {
+              "ref_id": "CVE-2016-6385",
+              "ref_url": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2016-6385",
+              "source": "CVE",
+            },
+            Object {
+              "ref_id": "http://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20160928-smi",
+              "ref_url": "http://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20160928-smi",
+              "source": "tools.cisco.com",
+            },
+          ],
+          "remediation": "Используйте рекомендации производителя: https://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20160928-smi",
+          "uid": "187308",
+        },
+        Object {
+          "description": "Уязвимости в модуле EnergyWise из Cisco IOS и Cisco IOS XE позволяют злоумышленникам, действующим удаленно, вызвать отказ в обслуживании (переполнение буфера и перезагрузку устройства), отправив специально сформированные пакеты EnergyWise уязвимому устройству. Cisco IOS и Cisco IOS XE поддерживают EnergyWise только для IPv4, поэтому IPv6-пакеты не могут быть использованы для эксплуатации уязвимостей.",
+          "level_id": 4,
+          "name": "Отказ в обслуживании",
+          "reference": Array [
+            Object {
+              "ref_id": "CVE-2017-3862",
+              "ref_url": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2017-3862",
+              "source": "CVE",
+            },
+            Object {
+              "ref_id": "https://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20170419-energywise",
+              "ref_url": "https://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20170419-energywise",
+              "source": "tools.cisco.com",
+            },
+          ],
+          "remediation": "Используйте рекомендации производителя: https://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20170419-energywise",
+          "uid": "188407",
+        },
+        Object {
+          "description": "Уязвимости в модуле EnergyWise из Cisco IOS и Cisco IOS XE позволяют злоумышленникам, действующим удаленно, вызвать отказ в обслуживании (переполнение буфера и перезагрузку устройства), отправив специально сформированные пакеты EnergyWise уязвимому устройству. Cisco IOS и Cisco IOS XE поддерживают EnergyWise только для IPv4, поэтому IPv6-пакеты не могут быть использованы для эксплуатации уязвимостей.",
+          "level_id": 4,
+          "name": "Отказ в обслуживании",
+          "reference": Array [
+            Object {
+              "ref_id": "CVE-2017-3863",
+              "ref_url": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2017-3863",
+              "source": "CVE",
+            },
+            Object {
+              "ref_id": "https://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20170419-energywise",
+              "ref_url": "https://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20170419-energywise",
+              "source": "tools.cisco.com",
+            },
+          ],
+          "remediation": "Используйте рекомендации производителя: https://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20170419-energywise",
+          "uid": "188408",
+        },
+        Object {
+          "description": "Уязвимости в модуле EnergyWise из Cisco IOS и Cisco IOS XE позволяют злоумышленникам, действующим удаленно, вызвать отказ в обслуживании (переполнение буфера и перезагрузку устройства), отправив специально сформированные пакеты EnergyWise уязвимому устройству. Cisco IOS и Cisco IOS XE поддерживают EnergyWise только для IPv4, поэтому IPv6-пакеты не могут быть использованы для эксплуатации уязвимостей.",
+          "level_id": 4,
+          "name": "Отказ в обслуживании",
+          "reference": Array [
+            Object {
+              "ref_id": "CVE-2017-3860",
+              "ref_url": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2017-3860",
+              "source": "CVE",
+            },
+            Object {
+              "ref_id": "https://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20170419-energywise",
+              "ref_url": "https://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20170419-energywise",
+              "source": "tools.cisco.com",
+            },
+          ],
+          "remediation": "Используйте рекомендации производителя: https://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20170419-energywise",
+          "uid": "188409",
+        },
+        Object {
+          "description": "Уязвимости в модуле EnergyWise из Cisco IOS и Cisco IOS XE позволяют злоумышленникам, действующим удаленно, вызвать отказ в обслуживании (переполнение буфера и перезагрузку устройства), отправив специально сформированные пакеты EnergyWise уязвимому устройству. Cisco IOS и Cisco IOS XE поддерживают EnergyWise только для IPv4, поэтому IPv6-пакеты не могут быть использованы для эксплуатации уязвимостей.",
+          "level_id": 4,
+          "name": "Отказ в обслуживании",
+          "reference": Array [
+            Object {
+              "ref_id": "CVE-2017-3861",
+              "ref_url": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2017-3861",
+              "source": "CVE",
+            },
+            Object {
+              "ref_id": "https://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20170419-energywise",
+              "ref_url": "https://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20170419-energywise",
+              "source": "tools.cisco.com",
+            },
+          ],
+          "remediation": "Используйте рекомендации производителя: https://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20170419-energywise",
+          "uid": "188410",
+        },
+        Object {
+          "description": "Уязвимость в клиенте Smart Install в Cisco IOS коммутаторов Catalyst позволяет злоумышленникам, действующим удаленно, вызвать отказ в обслуживании (перезагрузку устройства) при помощи специально сформированных параметров списка образов в пакетах Smart Install.",
+          "level_id": 4,
+          "name": "Отказ в обслуживании",
+          "reference": Array [
+            Object {
+              "ref_id": "CVE-2013-1146",
+              "ref_url": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-1146",
+              "source": "CVE",
+            },
+            Object {
+              "ref_id": "http://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20130327-smartinstall",
+              "ref_url": "http://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20130327-smartinstall",
+              "source": "tools.cisco.com",
+            },
+          ],
+          "remediation": "Используйте рекомендации производителя: http://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20130327-smartinstall",
+          "uid": "188498",
+        },
+      ],
+    },
+    Object {
+      "firmware": Object {
+        "name": "C3750E-UNIVERSALK9-M",
+        "version": "12.2(55)SE5",
+      },
+      "ifs": Array [
+        Object {
+          "address": Array [
+            Object {
+              "family": "ipv4",
+              "ip": "10.11.21.1",
+              "mask": "255.255.255.0",
+            },
+          ],
+          "mac": "44:03:a7:35:b6:e5",
+        },
+        Object {
+          "address": Array [
+            Object {
+              "family": "ipv4",
+              "ip": "10.11.108.201",
+              "mask": "255.255.255.0",
+            },
+          ],
+          "mac": "44:03:a7:35:b6:dd",
+        },
+      ],
+      "name": "10.11.21.1",
+      "os": "",
+      "ports": Array [],
+      "serial": Object {
+        "modelNumber": "WS-C3750X-24",
+        "sn": "FDO16481BDB",
+      },
+      "software": Array [],
+      "updated_at": "2018-04-19T16:20:05+03:00",
+      "users": Array [],
+      "vuln_discovery_date": "2018-04-19T16:20:05+03:00",
+      "vuln_elimination_date": "2018-04-19T16:20:05+03:00",
+      "vulnerabilities": Array [
+        Object {
+          "description": "Уязвимость в реализации клиента Smart Install для Cisco IOS и IOS XE позволяет злоумышленникам, действующим удаленно, вызвать отказ в обслуживании (перезагрузку устройства), используя специально сформированные параметры списка образов в пакете Smart Install.",
+          "level_id": 4,
+          "name": "Отказ в обслуживании",
+          "reference": Array [
+            Object {
+              "ref_id": "CVE-2016-1349",
+              "ref_url": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2016-1349",
+              "source": "CVE",
+            },
+            Object {
+              "ref_id": "http://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20160323-smi",
+              "ref_url": "http://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20160323-smi",
+              "source": "tools.cisco.com",
+            },
+          ],
+          "remediation": "Используйте рекомендации производителя: https://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20160323-smi",
+          "uid": "186068",
+        },
+        Object {
+          "description": "Утечка памяти в реализации клиента Smart Install для Cisco IOS и IOS XE позволяет злоумышленникам, действующим удаленно, вызвать отказ в обслуживании (чрезмерное потребление ресурсов памяти), используя специально сформированные параметры списка образов.",
+          "level_id": 4,
+          "name": "Утечка памяти",
+          "reference": Array [
+            Object {
+              "ref_id": "CVE-2016-6385",
+              "ref_url": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2016-6385",
+              "source": "CVE",
+            },
+            Object {
+              "ref_id": "http://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20160928-smi",
+              "ref_url": "http://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20160928-smi",
+              "source": "tools.cisco.com",
+            },
+          ],
+          "remediation": "Используйте рекомендации производителя: https://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20160928-smi",
+          "uid": "187308",
+        },
+        Object {
+          "description": "Уязвимость в клиенте Smart Install в Cisco IOS коммутаторов Catalyst позволяет злоумышленникам, действующим удаленно, вызвать отказ в обслуживании (перезагрузку устройства) при помощи специально сформированных параметров списка образов в пакетах Smart Install.",
+          "level_id": 4,
+          "name": "Отказ в обслуживании",
+          "reference": Array [
+            Object {
+              "ref_id": "CVE-2013-1146",
+              "ref_url": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-1146",
+              "source": "CVE",
+            },
+            Object {
+              "ref_id": "http://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20130327-smartinstall",
+              "ref_url": "http://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20130327-smartinstall",
+              "source": "tools.cisco.com",
+            },
+          ],
+          "remediation": "Используйте рекомендации производителя: http://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20130327-smartinstall",
+          "uid": "188498",
+        },
+      ],
+    },
+    Object {
+      "firmware": Object {
+        "name": "C3750E-UNIVERSALK9-M",
+        "version": "12.2(55)SE5",
+      },
+      "ifs": Array [
+        Object {
+          "address": Array [
+            Object {
+              "family": "ipv4",
+              "ip": "10.11.23.1",
+              "mask": "255.255.255.0",
+            },
+          ],
+          "mac": "44:03:a7:2e:ec:c1",
+        },
+      ],
+      "name": "10.11.23.1",
+      "os": "",
+      "ports": Array [],
+      "serial": Object {
+        "modelNumber": "WS-C3750X-24",
+        "sn": "FDO16481B92",
+      },
+      "software": Array [],
+      "updated_at": "2018-04-19T16:20:05+03:00",
+      "users": Array [],
+      "vuln_discovery_date": "2018-04-19T16:20:05+03:00",
+      "vuln_elimination_date": "2018-04-19T16:20:05+03:00",
+      "vulnerabilities": Array [
+        Object {
+          "description": "Уязвимость в реализации клиента Smart Install для Cisco IOS и IOS XE позволяет злоумышленникам, действующим удаленно, вызвать отказ в обслуживании (перезагрузку устройства), используя специально сформированные параметры списка образов в пакете Smart Install.",
+          "level_id": 4,
+          "name": "Отказ в обслуживании",
+          "reference": Array [
+            Object {
+              "ref_id": "CVE-2016-1349",
+              "ref_url": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2016-1349",
+              "source": "CVE",
+            },
+            Object {
+              "ref_id": "http://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20160323-smi",
+              "ref_url": "http://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20160323-smi",
+              "source": "tools.cisco.com",
+            },
+          ],
+          "remediation": "Используйте рекомендации производителя: https://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20160323-smi",
+          "uid": "186068",
+        },
+        Object {
+          "description": "Утечка памяти в реализации клиента Smart Install для Cisco IOS и IOS XE позволяет злоумышленникам, действующим удаленно, вызвать отказ в обслуживании (чрезмерное потребление ресурсов памяти), используя специально сформированные параметры списка образов.",
+          "level_id": 4,
+          "name": "Утечка памяти",
+          "reference": Array [
+            Object {
+              "ref_id": "CVE-2016-6385",
+              "ref_url": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2016-6385",
+              "source": "CVE",
+            },
+            Object {
+              "ref_id": "http://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20160928-smi",
+              "ref_url": "http://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20160928-smi",
+              "source": "tools.cisco.com",
+            },
+          ],
+          "remediation": "Используйте рекомендации производителя: https://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20160928-smi",
+          "uid": "187308",
+        },
+        Object {
+          "description": "Уязвимость в клиенте Smart Install в Cisco IOS коммутаторов Catalyst позволяет злоумышленникам, действующим удаленно, вызвать отказ в обслуживании (перезагрузку устройства) при помощи специально сформированных параметров списка образов в пакетах Smart Install.",
+          "level_id": 4,
+          "name": "Отказ в обслуживании",
+          "reference": Array [
+            Object {
+              "ref_id": "CVE-2013-1146",
+              "ref_url": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-1146",
+              "source": "CVE",
+            },
+            Object {
+              "ref_id": "http://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20130327-smartinstall",
+              "ref_url": "http://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20130327-smartinstall",
+              "source": "tools.cisco.com",
+            },
+          ],
+          "remediation": "Используйте рекомендации производителя: http://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20130327-smartinstall",
+          "uid": "188498",
+        },
+      ],
+    },
+  ],
+}
+`;
+
+exports[`parse HP host data matches snapshot 2`] = `
+Object {
+  "errors": Array [],
+  "hosts": Array [
+    Object {
+      "ifs": Array [
+        Object {
+          "address": Array [
+            Object {
+              "family": "ipv4",
+              "ip": "10.10.10.10",
+              "mask": "255.255.255.0",
+            },
+          ],
+          "mac": "00:0c:29:32:07:d2",
+        },
+        Object {
+          "address": Array [
+            Object {
+              "family": "ipv4",
+              "ip": "172.16.101.30",
+              "mask": "255.255.255.0",
+            },
+          ],
+          "mac": "00:0c:29:32:07:c8",
+        },
+      ],
+      "name": "HPE",
+      "os": "HPE Comware Platform Software, Software Version 7.1.059, Release R0326 or HPE VSR1000 or Copyright (c) 2010-2017 Hewlett Packard Enterprise Development LP",
+      "ports": Array [
+        22,
+        161,
+        7547,
+      ],
+      "software": Array [],
+      "updated_at": "2018-11-10T13:48:00+03:00",
+      "users": Array [],
+      "vuln_discovery_date": "2018-11-10T13:48:00+03:00",
+      "vuln_elimination_date": "2018-11-10T13:48:00+03:00",
+      "vulnerabilities": Array [],
+    },
+  ],
+}
+`;
+
+exports[`parse Linux host data matches snapshot 1`] = `
+Object {
+  "errors": Array [],
+  "hosts": Array [
+    Object {
+      "firmware": undefined,
+      "ifs": Array [
+        Object {
+          "address": Array [
+            Object {
+              "family": "ipv4",
+              "ip": "172.16.101.201",
+              "mask": "255.255.255.0",
+            },
+          ],
+          "mac": "00:0c:29:7a:8a:2e",
+          "name": "ens33",
+        },
+      ],
+      "name": "172.16.101.201",
+      "os": "CentOS Linux release 7.5.1804 (Core)",
+      "ports": Array [
+        22,
+        25,
+        80,
+        514,
+        3001,
+        8080,
+        22,
+      ],
+      "serial": Object {},
+      "software": Array [],
+      "updated_at": "2018-11-10T15:14:13+03:00",
+      "users": Array [],
+      "vuln_discovery_date": "2018-11-10T15:14:13+03:00",
+      "vuln_elimination_date": "2018-11-10T15:14:13+03:00",
+      "vulnerabilities": Array [
+        Object {
+          "description": "Unauthorized sending of email.
+ A mail server is explicitly configured to allow SMTP mail relay, which allows abuse by spammers.",
+          "isNetworkVulnerability": true,
+          "level_id": 2,
+          "name": "Open Mail Relay",
+          "port": 25,
+          "protocol": "tcp",
+          "reference": Array [
+            Object {
+              "ref_id": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CAN-1999-0512",
+              "ref_url": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CAN-1999-0512",
+              "source": "cve.mitre.org",
+            },
+          ],
+          "remediation": "Do not allow relaying, use authentication for all SMTP Transactions.",
+          "uid": "1038",
+        },
+        Object {
+          "description": "OpenSSHD 7.2p2 and possibly other versions uses fake password hashes when authenticating non-existing users, that results in different time delays.
+ The fact is that it takes much longer to calculate SHA256/SHA512 password hashes than BLOWFISH password hashes, which are used for non-existing users. If real user passwords are hashed using SHA256/SHA512, then sending 10KB passwords will result in significantly different time delays depending on the used algorithm (i.e. BLOWFISH or SHA256/SHA512), that allows to determine whether a user name exists. Exploitation of this vulnerability allows remote attackers to enumerate valid usernames.
+ This vulnerability has no direct impact on the system but it facilitates guessing user logins.",
+          "isNetworkVulnerability": true,
+          "level_id": 3,
+          "name": "OpenSSHD User Enumeration without Authentication",
+          "port": 22,
+          "protocol": "tcp",
+          "reference": Array [
+            Object {
+              "ref_id": "http://seclists.org/fulldisclosure/2016/Jul/51",
+              "ref_url": "http://seclists.org/fulldisclosure/2016/Jul/51",
+              "source": "seclists.org",
+            },
+            Object {
+              "ref_id": "CVE-2016-6210",
+              "ref_url": "https://access.redhat.com/security/cve/cve-2016-6210",
+              "source": "CVE",
+            },
+            Object {
+              "ref_id": "CVE-2016-6210",
+              "ref_url": "https://security-tracker.debian.org/tracker/CVE-2016-6210",
+              "source": "CVE",
+            },
+            Object {
+              "ref_id": "CVE-2016-6210",
+              "ref_url": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2016-6210",
+              "source": "CVE",
+            },
+          ],
+          "remediation": "To fix the vulnerability install the latest OpenSSHD version (i.e. 7.3p1 or earlier).",
+          "uid": "8350",
+        },
+        Object {
+          "description": "The process_open function in sftp-server.c in OpenSSH before 7.6 does not properly prevent write operations in readonly mode, which allows attackers to create zero-length files.",
+          "isNetworkVulnerability": true,
+          "level_id": 3,
+          "name": "Unauthorized Write Operations",
+          "port": 22,
+          "protocol": "tcp",
+          "reference": Array [
+            Object {
+              "ref_id": "CVE-2017-15906",
+              "ref_url": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2017-15906",
+              "source": "CVE",
+            },
+            Object {
+              "ref_id": "https://www.openssh.com/txt/release-7.6",
+              "ref_url": "https://www.openssh.com/txt/release-7.6",
+              "source": "www.openssh.com",
+            },
+          ],
+          "remediation": "To fix the vulnerability update your software according to the used platform. All necessary information is available here: https://www.openssh.com/",
+          "uid": "189261",
+        },
+        Object {
+          "description": "OpenSSH through 7.7 is prone to a user enumeration vulnerability due to not delaying bailout for an invalid authenticating user until after the packet containing the request has been fully parsed, related to auth2-gss.c, auth2-hostbased.c, and auth2-pubkey.c.",
+          "isNetworkVulnerability": true,
+          "level_id": 3,
+          "name": "User Enumeration",
+          "port": 22,
+          "protocol": "tcp",
+          "reference": Array [
+            Object {
+              "ref_id": "CVE-2018-15473",
+              "ref_url": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2018-15473",
+              "source": "CVE",
+            },
+          ],
+          "remediation": "To fix the vulnerability update your software according to the used platform. All necessary information is available here: https://www.openssh.com/",
+          "uid": "190653",
+        },
+        Object {
+          "description": "Following packages are affected: kernel-headers, kernel, kernel-tools-libs-devel, perf, kernel-abi-whitelists, kernel-debug, kernel-tools-libs, kernel-devel, kernel-doc, kernel-debug-devel, python-perf, kernel-tools
+ Follow RedHat RHSA-2018-1629 for details.",
+          "level_id": 1,
+          "name": "CESA-2018:1629 CentOS Errata and Security Advisory (Important)",
+          "reference": Array [
+            Object {
+              "ref_id": "CVE-2018-3639",
+              "ref_url": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2018-3639",
+              "source": "CVE",
+            },
+            Object {
+              "ref_id": "RHSA-2018-1629",
+              "ref_url": "https://rhn.redhat.com/errata/RHSA-2018-1629.html",
+              "source": "RedHat",
+            },
+            Object {
+              "ref_id": "http://lists.centos.org/pipermail/centos-announce/2018-May/022843.html",
+              "ref_url": "http://lists.centos.org/pipermail/centos-announce/2018-May/022843.html",
+              "source": "lists.centos.org",
+            },
+          ],
+          "remediation": "Update following packages: kernel-tools-libs to version 3.10.0 or higher python-perf to version 3.10.0 or higher kernel to version 3.10.0 or higher kernel-abi-whitelists to version 3.10.0 or higher kernel-debug-devel to version 3.10.0 or higher kernel-tools to version 3.10.0 or higher perf to version 3.10.0 or higher kernel-debug to version 3.10.0 or higher kernel-doc to version 3.10.0 or higher kernel-devel to version 3.10.0 or higher kernel-tools-libs-devel to version 3.10.0 or higher kernel-headers to version 3.10.0 or higher Follow RedHat RHSA-2018-1629 for update details.",
+          "uid": "1602713",
+        },
+        Object {
+          "description": "Following packages are affected: kernel-headers, kernel, kernel-tools-libs-devel, perf, kernel-abi-whitelists, kernel-debug, kernel-tools-libs, kernel-devel, kernel-doc, kernel-debug-devel, python-perf, kernel-tools
+ Follow RedHat RHSA-2018-1318 for details.",
+          "level_id": 4,
+          "name": "CESA-2018:1318 CentOS Errata and Security Advisory (Important)",
+          "reference": Array [
+            Object {
+              "ref_id": "CVE-2018-1068",
+              "ref_url": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2018-1068",
+              "source": "CVE",
+            },
+            Object {
+              "ref_id": "CVE-2018-8897",
+              "ref_url": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2018-8897",
+              "source": "CVE",
+            },
+            Object {
+              "ref_id": "CVE-2018-1091",
+              "ref_url": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2018-1091",
+              "source": "CVE",
+            },
+            Object {
+              "ref_id": "CVE-2018-1087",
+              "ref_url": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2018-1087",
+              "source": "CVE",
+            },
+            Object {
+              "ref_id": "CVE-2017-16939",
+              "ref_url": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2017-16939",
+              "source": "CVE",
+            },
+            Object {
+              "ref_id": "CVE-2018-1000199",
+              "ref_url": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2018-1000199",
+              "source": "CVE",
+            },
+            Object {
+              "ref_id": "RHSA-2018-1318",
+              "ref_url": "https://rhn.redhat.com/errata/RHSA-2018-1318.html",
+              "source": "RedHat",
+            },
+            Object {
+              "ref_id": "http://lists.centos.org/pipermail/centos-announce/2018-May/022909.html",
+              "ref_url": "http://lists.centos.org/pipermail/centos-announce/2018-May/022909.html",
+              "source": "lists.centos.org",
+            },
+          ],
+          "remediation": "Update following packages: kernel-tools-libs to version 3.10.0 or higher python-perf to version 3.10.0 or higher kernel to version 3.10.0 or higher kernel-abi-whitelists to version 3.10.0 or higher kernel-debug-devel to version 3.10.0 or higher kernel-tools to version 3.10.0 or higher perf to version 3.10.0 or higher kernel-debug to version 3.10.0 or higher kernel-doc to version 3.10.0 or higher kernel-devel to version 3.10.0 or higher kernel-tools-libs-devel to version 3.10.0 or higher kernel-headers to version 3.10.0 or higher Follow RedHat RHSA-2018-1318 for update details.",
+          "uid": "1602721",
+        },
+        Object {
+          "description": "Following packages are affected: kernel-headers, kernel, kernel-tools-libs-devel, perf, kernel-doc, python-perf, kernel-tools-libs, kernel-devel, kernel-abi-whitelists, kernel-debug-devel, kernel-debug, kernel-tools
+ Follow RedHat RHSA-2018-1852 for details.",
+          "level_id": 1,
+          "name": "CESA-2018:1852 CentOS Errata and Security Advisory (Moderate)",
+          "reference": Array [
+            Object {
+              "ref_id": "CVE-2018-3665",
+              "ref_url": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2018-3665",
+              "source": "CVE",
+            },
+            Object {
+              "ref_id": "RHSA-2018-1852",
+              "ref_url": "https://rhn.redhat.com/errata/RHSA-2018-1852.html",
+              "source": "RedHat",
+            },
+            Object {
+              "ref_id": "http://lists.centos.org/pipermail/centos-announce/2018-June/022923.html",
+              "ref_url": "http://lists.centos.org/pipermail/centos-announce/2018-June/022923.html",
+              "source": "lists.centos.org",
+            },
+          ],
+          "remediation": "Update following packages: kernel-tools-libs to version 3.10.0 or higher kernel-debug to version 3.10.0 or higher kernel to version 3.10.0 or higher kernel-abi-whitelists to version 3.10.0 or higher kernel-debug-devel to version 3.10.0 or higher kernel-tools to version 3.10.0 or higher perf to version 3.10.0 or higher python-perf to version 3.10.0 or higher kernel-doc to version 3.10.0 or higher kernel-devel to version 3.10.0 or higher kernel-tools-libs-devel to version 3.10.0 or higher kernel-headers to version 3.10.0 or higher Follow RedHat RHSA-2018-1852 for update details.",
+          "uid": "1602751",
+        },
+        Object {
+          "description": "Following packages are affected: kernel-headers, kernel, kernel-tools-libs-devel, perf, kernel-doc, python-perf, kernel-tools-libs, kernel-devel, kernel-abi-whitelists, kernel-debug-devel, kernel-debug, kernel-tools
+ Follow RedHat RHSA-2018-1965 for details.",
+          "level_id": 3,
+          "name": "CESA-2018:1965 CentOS Errata and Security Advisory (Important)",
+          "reference": Array [
+            Object {
+              "ref_id": "CVE-2017-11600",
+              "ref_url": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2017-11600",
+              "source": "CVE",
+            },
+            Object {
+              "ref_id": "CVE-2018-3639",
+              "ref_url": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2018-3639",
+              "source": "CVE",
+            },
+            Object {
+              "ref_id": "RHSA-2018-1965",
+              "ref_url": "https://rhn.redhat.com/errata/RHSA-2018-1965.html",
+              "source": "RedHat",
+            },
+            Object {
+              "ref_id": "http://lists.centos.org/pipermail/centos-announce/2018-July/022929.html",
+              "ref_url": "http://lists.centos.org/pipermail/centos-announce/2018-July/022929.html",
+              "source": "lists.centos.org",
+            },
+          ],
+          "remediation": "Update following packages: kernel-tools-libs to version 3.10.0 or higher kernel-debug to version 3.10.0 or higher kernel to version 3.10.0 or higher kernel-abi-whitelists to version 3.10.0 or higher kernel-debug-devel to version 3.10.0 or higher kernel-tools to version 3.10.0 or higher perf to version 3.10.0 or higher python-perf to version 3.10.0 or higher kernel-doc to version 3.10.0 or higher kernel-devel to version 3.10.0 or higher kernel-tools-libs-devel to version 3.10.0 or higher kernel-headers to version 3.10.0 or higher Follow RedHat RHSA-2018-1965 for update details.",
+          "uid": "1602757",
+        },
+        Object {
+          "description": "Following packages are affected: kernel-headers, kernel, kernel-tools-libs-devel, perf, kernel-abi-whitelists, python-perf, kernel-tools-libs, kernel-devel, kernel-doc, kernel-debug-devel, kernel-debug, kernel-tools
+ Follow RedHat RHSA-2018-2384 for details.",
+          "level_id": 4,
+          "name": "CESA-2018:2384 CentOS Errata and Security Advisory (Important)",
+          "reference": Array [
+            Object {
+              "ref_id": "CVE-2018-7566",
+              "ref_url": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2018-7566",
+              "source": "CVE",
+            },
+            Object {
+              "ref_id": "CVE-2018-3620",
+              "ref_url": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2018-3620",
+              "source": "CVE",
+            },
+            Object {
+              "ref_id": "CVE-2018-3693",
+              "ref_url": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2018-3693",
+              "source": "CVE",
+            },
+            Object {
+              "ref_id": "CVE-2017-13215",
+              "ref_url": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2017-13215",
+              "source": "CVE",
+            },
+            Object {
+              "ref_id": "CVE-2018-5390",
+              "ref_url": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2018-5390",
+              "source": "CVE",
+            },
+            Object {
+              "ref_id": "CVE-2018-3646",
+              "ref_url": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2018-3646",
+              "source": "CVE",
+            },
+            Object {
+              "ref_id": "CVE-2018-10675",
+              "ref_url": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2018-10675",
+              "source": "CVE",
+            },
+            Object {
+              "ref_id": "RHSA-2018-2384",
+              "ref_url": "https://rhn.redhat.com/errata/RHSA-2018-2384.html",
+              "source": "RedHat",
+            },
+            Object {
+              "ref_id": "http://lists.centos.org/pipermail/centos-announce/2018-August/022984.html",
+              "ref_url": "http://lists.centos.org/pipermail/centos-announce/2018-August/022984.html",
+              "source": "lists.centos.org",
+            },
+          ],
+          "remediation": "Update following packages: kernel-tools-libs to version 3.10.0 or higher kernel-debug to version 3.10.0 or higher kernel to version 3.10.0 or higher kernel-abi-whitelists to version 3.10.0 or higher kernel-debug-devel to version 3.10.0 or higher kernel-tools to version 3.10.0 or higher perf to version 3.10.0 or higher python-perf to version 3.10.0 or higher kernel-doc to version 3.10.0 or higher kernel-devel to version 3.10.0 or higher kernel-tools-libs-devel to version 3.10.0 or higher kernel-headers to version 3.10.0 or higher Follow RedHat RHSA-2018-2384 for update details.",
+          "uid": "1602772",
+        },
+      ],
+    },
+  ],
+}
+`;
+
+exports[`parse Windows host data matches snapshot 1`] = `
+Object {
+  "errors": Array [],
+  "hosts": Array [
+    Object {
+      "firmware": undefined,
+      "ifs": Array [
+        Object {
+          "address": Array [
+            Object {
+              "family": "ipv4",
+              "ip": "192.168.130.14",
+              "mask": "255.255.255.0",
+            },
+          ],
+          "mac": "00:50:56:8F:68:3F",
+          "name": "External",
+        },
+        Object {
+          "address": Array [
+            Object {
+              "family": "ipv4",
+              "ip": "10.7.3.14",
+              "mask": "255.255.255.0",
+            },
+          ],
+          "mac": "00:50:56:8F:68:3E",
+          "name": "Internal",
+        },
+      ],
+      "name": "SR-VOTGES-014",
+      "os": "Windows 2012 R2 Server Standard (x64)",
+      "ports": Array [],
+      "serial": Object {},
+      "software": Array [],
+      "updated_at": "2017-01-06T11:21:36+03:00",
+      "users": Array [],
+      "vuln_discovery_date": "2017-01-06T11:21:36+03:00",
+      "vuln_elimination_date": "2017-01-06T11:21:36+03:00",
+      "vulnerabilities": Array [
+        Object {
+          "description": "Уязвимость в OpenSSL позволяет злоумышленникам, действующим удаленно, вызвать отказ в обслуживании (разыменование нулевого указателя и аварийное завершение работы приложения) при помощи специально сформированного сообщения DTLS, которое обрабатывается с использованием разных операций чтения для заголовка (header) и тела (body) при согласовании. Данная уязвимость связана с функцией dtls1_get_record в d1_pkt.c и функцией ssl3_read_n в s3_pkt.c.",
+          "level_id": 3,
+          "name": "Отказ в обслуживании",
+          "reference": Array [
+            Object {
+              "ref_id": "CVE-2014-3571",
+              "ref_url": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-3571",
+              "source": "CVE",
+            },
+            Object {
+              "ref_id": "https://www.openssl.org/news/secadv_20150108.txt",
+              "ref_url": "https://www.openssl.org/news/secadv_20150108.txt",
+              "source": "www.openssl.org",
+            },
+          ],
+          "remediation": "Для устранения уязвимости необходимо установить последнюю версию продукта, соответствующую используемой платформе. Необходимую информацию можно получить по адресу: http://www.openssl.org/",
+          "uid": "184066",
+        },
+        Object {
+          "description": "Утечка памяти в функции dtls1_buffer_record в d1_pkt.c в OpenSSL позволяет злоумышленникам, действующим удаленно, вызвать отказ в обслуживании (чрезмерное потребление ресурсов памяти) при помощи отправки большого количества одинаковых записей для следующего цикла (epoch), что приводит к сбою обнаружения повторной отправки.",
+          "level_id": 3,
+          "name": "Утечка памяти",
+          "reference": Array [
+            Object {
+              "ref_id": "https://www.openssl.org/news/secadv_20150108.txt",
+              "ref_url": "https://www.openssl.org/news/secadv_20150108.txt",
+              "source": "www.openssl.org",
+            },
+            Object {
+              "ref_id": "CVE-2015-0206",
+              "ref_url": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2015-0206",
+              "source": "CVE",
+            },
+          ],
+          "remediation": "Для устранения уязвимости необходимо установить последнюю версию продукта, соответствующую используемой платформе. Необходимую информацию можно получить по адресу: http://www.openssl.org/",
+          "uid": "184067",
+        },
+        Object {
+          "description": "Уязвимость существует в функции ssl23_get_client_hello в s23_srvr.c в OpenSSL из-за некорректной обработки неподдерживаемых протоколов. Эксплуатация данной уязвимости позволяет злоумышленникам, действующим удаленно, вызвать отказ в обслуживании (разыменование нулевого указателя и аварийное завершение работы демона), используя нестандартные данные согласования.",
+          "level_id": 3,
+          "name": "Отказ в обслуживании",
+          "reference": Array [
+            Object {
+              "ref_id": "https://www.openssl.org/news/secadv_20150108.txt",
+              "ref_url": "https://www.openssl.org/news/secadv_20150108.txt",
+              "source": "www.openssl.org",
+            },
+            Object {
+              "ref_id": "CVE-2014-3569",
+              "ref_url": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-3569",
+              "source": "CVE",
+            },
+          ],
+          "remediation": "Для устранения уязвимости необходимо установить последнюю версию продукта, соответствующую используемой платформе. Необходимую информацию можно получить по адресу: http://www.openssl.org/",
+          "uid": "184068",
+        },
+        Object {
+          "description": "Уязвимость в функции ssl3_get_key_exchange в s3_clnt.c в OpenSSL позволяет удаленным SSL-серверам провести атаку \\"на понижение\\" (с ECDHE на ECDH) и вызвать потерю прямой секретности, из-за отсутствия сообщения ServerKeyExchange.",
+          "level_id": 3,
+          "name": "Обход ограничений безопасности",
+          "reference": Array [
+            Object {
+              "ref_id": "https://www.openssl.org/news/secadv_20150108.txt",
+              "ref_url": "https://www.openssl.org/news/secadv_20150108.txt",
+              "source": "www.openssl.org",
+            },
+            Object {
+              "ref_id": "CVE-2014-3572",
+              "ref_url": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-3572",
+              "source": "CVE",
+            },
+          ],
+          "remediation": "Для устранения уязвимости необходимо установить последнюю версию продукта, соответствующую используемой платформе. Необходимую информацию можно получить по адресу: http://www.openssl.org/",
+          "uid": "184069",
+        },
+        Object {
+          "description": "Уязвимость в функции ssl3_get_key_exchange в s3_clnt.c в OpenSSL позволяет удаленным SSL-серверам провести атаку \\"на понижение\\" (с RSA на EXPORT_RSA) и упростить расшифровку методом подбора, за счет использования недостаточно надежного эфемерного RSA-ключа.",
+          "level_id": 2,
+          "name": "Обход ограничений безопасности",
+          "reference": Array [
+            Object {
+              "ref_id": "https://www.openssl.org/news/secadv_20150108.txt",
+              "ref_url": "https://www.openssl.org/news/secadv_20150108.txt",
+              "source": "www.openssl.org",
+            },
+            Object {
+              "ref_id": "CVE-2015-0204",
+              "ref_url": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2015-0204",
+              "source": "CVE",
+            },
+            Object {
+              "ref_id": "https://www.openssl.org/news/secadv_20150319.txt",
+              "ref_url": "https://www.openssl.org/news/secadv_20150319.txt",
+              "source": "www.openssl.org",
+            },
+          ],
+          "remediation": "Для устранения уязвимости необходимо установить последнюю версию продукта, соответствующую используемой платформе. Необходимую информацию можно получить по адресу: http://www.openssl.org/",
+          "uid": "184070",
+        },
+        Object {
+          "description": "Уязвимость существует в функции ssl3_get_cert_verify в s3_srvr.c в OpenSSL из-за возможности аутентификации клиентов при помощи DH-сертификатов (Диффи-Хеллмана) без запроса сообщения CertificateVerify. Эксплуатация данной уязвимости позволяет злоумышленникам, действующим удаленно, получить доступ к системе (без использования секретного ключа) при помощи специально сформированного трафика протокола согласования TLS для сервера, который признает центры сертификации с поддержкой DH.",
+          "level_id": 3,
+          "name": "Обход ограничений безопасности",
+          "reference": Array [
+            Object {
+              "ref_id": "https://www.openssl.org/news/secadv_20150108.txt",
+              "ref_url": "https://www.openssl.org/news/secadv_20150108.txt",
+              "source": "www.openssl.org",
+            },
+            Object {
+              "ref_id": "CVE-2015-0205",
+              "ref_url": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2015-0205",
+              "source": "CVE",
+            },
+          ],
+          "remediation": "Для устранения уязвимости необходимо установить последнюю версию продукта, соответствующую используемой платформе. Необходимую информацию можно получить по адресу: http://www.openssl.org/",
+          "uid": "184071",
+        },
+        Object {
+          "description": "Уязвимость существует в OpenSSL из-за отсутствия определенных ограничений на данные сертификатов. Эксплуатация данной уязвимости позволяет злоумышленникам, действующим удаленно, обойти механизм защиты на основе черных списков сертификатов по их идентификационным данным (fingerprints), включив специально сформированные данные в неподписанный раздел сертификата. Данная уязвимость связана с crypto/asn1/a_verify.c, crypto/dsa/dsa_asn1.c, crypto/ecdsa/ecs_vrf.c и crypto/x509/x_all.c.",
+          "level_id": 3,
+          "name": "Обход механизма защиты",
+          "reference": Array [
+            Object {
+              "ref_id": "https://www.openssl.org/news/secadv_20150108.txt",
+              "ref_url": "https://www.openssl.org/news/secadv_20150108.txt",
+              "source": "www.openssl.org",
+            },
+            Object {
+              "ref_id": "CVE-2014-8275",
+              "ref_url": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-8275",
+              "source": "CVE",
+            },
+          ],
+          "remediation": "Для устранения уязвимости необходимо установить последнюю версию продукта, соответствующую используемой платформе. Необходимую информацию можно получить по адресу: http://www.openssl.org/",
+          "uid": "184072",
+        },
+        Object {
+          "description": "Уязвимость существует в реализации BN_sqr для OpenSSL из-за некорректного расчета квадрата значения BIGNUM. Эксплуатация данной уязвимости позволяет злоумышленникам, действующим удаленно, обойти механизм криптографической защиты. Данная уязвимость связана с crypto/bn/asm/mips.pl, crypto/bn/asm/x86_64-gcc.c и crypto/bn/bn_asm.c.",
+          "level_id": 3,
+          "name": "Обход механизма защиты",
+          "reference": Array [
+            Object {
+              "ref_id": "https://www.openssl.org/news/secadv_20150108.txt",
+              "ref_url": "https://www.openssl.org/news/secadv_20150108.txt",
+              "source": "www.openssl.org",
+            },
+            Object {
+              "ref_id": "CVE-2014-3570",
+              "ref_url": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-3570",
+              "source": "CVE",
+            },
+          ],
+          "remediation": "Для устранения уязвимости необходимо установить последнюю версию продукта, соответствующую используемой платформе. Необходимую информацию можно получить по адресу: http://www.openssl.org/",
+          "uid": "184073",
+        },
+        Object {
+          "description": "Использование после освобождения в функции d2i_ECPrivateKey в crypto/ec/ec_asn1.c в OpenSSL позволяет злоумышленникам, действующим удаленно, вызвать отказ в обслуживании (ошибку при работе с памятью и аварийное завершение работы приложения) или оказать иное воздействие на систему при помощи некорректно сформированного файла закрытого ключа на эллиптических кривых, который некорректно обрабатывается при импорте.",
+          "level_id": 3,
+          "name": "Использование после освобождения",
+          "reference": Array [
+            Object {
+              "ref_id": "CVE-2015-0209",
+              "ref_url": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2015-0209",
+              "source": "CVE",
+            },
+            Object {
+              "ref_id": "https://www.openssl.org/news/secadv_20150319.txt",
+              "ref_url": "https://www.openssl.org/news/secadv_20150319.txt",
+              "source": "www.openssl.org",
+            },
+          ],
+          "remediation": "Для устранения уязвимости необходимо установить последнюю версию продукта, соответствующую используемой платформе. Необходимую информацию можно получить по адресу: https://www.openssl.org/",
+          "uid": "184291",
+        },
+        Object {
+          "description": "Уязвимость в функции X509_to_X509_REQ в crypto/x509/x509_req.c в OpenSSL позволяет злоумышленникам вызвать отказ в обслуживании (разыменование нулевого указателя и аварийное завершение работы приложения) при помощи недопустимого ключа сертификата.",
+          "level_id": 3,
+          "name": "Отказ в обслуживании",
+          "reference": Array [
+            Object {
+              "ref_id": "CVE-2015-0288",
+              "ref_url": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2015-0288",
+              "source": "CVE",
+            },
+            Object {
+              "ref_id": "https://www.openssl.org/news/secadv_20150319.txt",
+              "ref_url": "https://www.openssl.org/news/secadv_20150319.txt",
+              "source": "www.openssl.org",
+            },
+          ],
+          "remediation": "Для устранения уязвимости необходимо установить последнюю версию продукта, соответствующую используемой платформе. Необходимую информацию можно получить по адресу: https://www.openssl.org/",
+          "uid": "184293",
+        },
+        Object {
+          "description": "Уязвимость существует в функции ASN1_TYPE_cmp в crypto/asn1/a_type.c в OpenSSL из-за некорректного сравнения логических (булевых) типов. Эксплуатация данной уязвимости позволяет злоумышленникам, действующим удаленно, вызвать отказ в обслуживании (недопустимую операцию чтения и аварийное завершение работы приложения) при помощи специально сформированного сертификата X.509, передаваемого конечной точке, которая использует функцию проверки сертификатов.",
+          "level_id": 3,
+          "name": "Отказ в обслуживании",
+          "reference": Array [
+            Object {
+              "ref_id": "CVE-2015-0286",
+              "ref_url": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2015-0286",
+              "source": "CVE",
+            },
+            Object {
+              "ref_id": "https://www.openssl.org/news/secadv_20150319.txt",
+              "ref_url": "https://www.openssl.org/news/secadv_20150319.txt",
+              "source": "www.openssl.org",
+            },
+          ],
+          "remediation": "Для устранения уязвимости необходимо установить последнюю версию продукта, соответствующую используемой платформе. Необходимую информацию можно получить по адресу: https://www.openssl.org/",
+          "uid": "184297",
+        },
+        Object {
+          "description": "Уязвимость существует в функции ASN1_item_ex_d2i в crypto/asn1/tasn_dec.c в OpenSSL из-за отсутствия повторной инициализации структур данных CHOICE и ADB. Эксплуатация данной уязвимости позволяет злоумышленникам вызвать отказ в обслуживании (недопустимую операцию записи и повреждение памяти) при помощи приложения, которое повторно использует структуры ASN.1.",
+          "level_id": 3,
+          "name": "Отказ в обслуживании",
+          "reference": Array [
+            Object {
+              "ref_id": "CVE-2015-0287",
+              "ref_url": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2015-0287",
+              "source": "CVE",
+            },
+            Object {
+              "ref_id": "https://www.openssl.org/news/secadv_20150319.txt",
+              "ref_url": "https://www.openssl.org/news/secadv_20150319.txt",
+              "source": "www.openssl.org",
+            },
+          ],
+          "remediation": "Для устранения уязвимости необходимо установить последнюю версию продукта, соответствующую используемой платформе. Необходимую информацию можно получить по адресу: https://www.openssl.org/",
+          "uid": "184299",
+        },
+        Object {
+          "description": "Уязвимость существует в реализации PKCS#7 в OpenSSL из-за некорректной обработки отсутствия внешних данных ContentInfo. Эксплуатация данной уязвимости позволяет злоумышленникам вызвать отказ в обслуживании (разыменование нулевого указателя и аварийное завершение работы приложения) при помощи приложения, обрабатывающего произвольные данные PKCS#7, и некорректно сформированных данных, имеющих кодировку ASN.1. Данная уязвимость связана crypto/pkcs7/pk7_doit.c и crypto/pkcs7/pk7_lib.c.",
+          "level_id": 3,
+          "name": "Отказ в обслуживании",
+          "reference": Array [
+            Object {
+              "ref_id": "CVE-2015-0289",
+              "ref_url": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2015-0289",
+              "source": "CVE",
+            },
+            Object {
+              "ref_id": "https://www.openssl.org/news/secadv_20150319.txt",
+              "ref_url": "https://www.openssl.org/news/secadv_20150319.txt",
+              "source": "www.openssl.org",
+            },
+          ],
+          "remediation": "Для устранения уязвимости необходимо установить последнюю версию продукта, соответствующую используемой платформе. Необходимую информацию можно получить по адресу: https://www.openssl.org/",
+          "uid": "184300",
+        },
+        Object {
+          "description": "Уязвимость в реализации SSLv2 для OpenSSL позволяет злоумышленникам, действующим удаленно, вызвать отказ в обслуживании (ошибку утверждения s2_lib.c и завершение работы демона) при помощи специально сформированного сообщения CLIENT-MASTER-KEY.",
+          "level_id": 3,
+          "name": "Отказ в обслуживании",
+          "reference": Array [
+            Object {
+              "ref_id": "CVE-2015-0293",
+              "ref_url": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2015-0293",
+              "source": "CVE",
+            },
+            Object {
+              "ref_id": "https://www.openssl.org/news/secadv_20150319.txt",
+              "ref_url": "https://www.openssl.org/news/secadv_20150319.txt",
+              "source": "www.openssl.org",
+            },
+          ],
+          "remediation": "Для устранения уязвимости необходимо установить последнюю версию продукта, соответствующую используемой платформе. Необходимую информацию можно получить по адресу: https://www.openssl.org/",
+          "uid": "184302",
+        },
+        Object {
+          "description": "Уязвимость существует в протоколе TLS (если на сервере, не на стороне клиента, включена опция криптопакета DHE_EXPORT) из-за некорректного выбора DHE_EXPORT. Эксплуатация данной уязвимости позволяет злоумышленнику, действующему по принципу \\"человек посередине\\", провести атаку \\"на понижение\\", подменив DHE на DHE_EXPORT в сообщении ClientHello и DHE_EXPORT на DHE в сообщении ServerHello. Данная уязвимость также известна под названием Logjam.",
+          "level_id": 2,
+          "name": "Атака \\"на понижение\\" (Logjam)",
+          "reference": Array [
+            Object {
+              "ref_id": "CVE-2015-4000",
+              "ref_url": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2015-4000",
+              "source": "CVE",
+            },
+            Object {
+              "ref_id": "http://openssl.org/news/secadv_20150611.txt",
+              "ref_url": "http://openssl.org/news/secadv_20150611.txt",
+              "source": "openssl.org",
+            },
+            Object {
+              "ref_id": "https://www.mozilla.org/en-US/security/advisories/mfsa2015-70/",
+              "ref_url": "https://www.mozilla.org/en-US/security/advisories/mfsa2015-70/",
+              "source": "www.mozilla.org",
+            },
+            Object {
+              "ref_id": "http://www.oracle.com/technetwork/topics/security/cpujul2015-2367936.html",
+              "ref_url": "http://www.oracle.com/technetwork/topics/security/cpujul2015-2367936.html",
+              "source": "www.oracle.com",
+            },
+          ],
+          "remediation": "Для устранения уязвимости необходимо установить последнюю версию продукта, соответствующую используемой платформе. Необходимую информацию можно получить по адресу: https://www.openssl.org/ http://www.mozilla.org/firefox/ http://www.mozilla.org/firefox/organizations/all.html http://www.mozilla.org/thunderbird/ http://www.oracle.com/technetwork/java/javase/downloads/index.html",
+          "uid": "184617",
+        },
+        Object {
+          "description": "Уязвимость существует в функции BN_GF2m_mod_inv в crypto/bn/bn_gf2m.c в OpenSSL из-за некорректной обработки структур ECParameters, в которых кривая лежит поверх некорректно сформированного бинарного полиномиального поля. Эксплуатация данной уязвимости позволяет злоумышленникам, действующим удаленно, вызвать отказ в обслуживании, установив сессию, которая использует алгоритм на эллиптических кривых. Например, осуществляется атака на сервер, поддерживающий аутентификацию клиентов.",
+          "level_id": 2,
+          "name": "Отказ в обслуживании",
+          "reference": Array [
+            Object {
+              "ref_id": "http://openssl.org/news/secadv_20150611.txt",
+              "ref_url": "http://openssl.org/news/secadv_20150611.txt",
+              "source": "openssl.org",
+            },
+            Object {
+              "ref_id": "JSA10694",
+              "ref_url": "https://kb.juniper.net/InfoCenter/index?page=content&id=JSA10694&cat=SIRT_1&actp=LIST",
+              "source": "Juniper",
+            },
+            Object {
+              "ref_id": "CVE-2015-1788",
+              "ref_url": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2015-1788",
+              "source": "CVE",
+            },
+          ],
+          "remediation": "Для устранения уязвимости необходимо установить последнюю версию продукта, соответствующую используемой платформе. Необходимую информацию можно получить по адресу: https://www.openssl.org/",
+          "uid": "184618",
+        },
+        Object {
+          "description": "Уязвимость в функции X509_cmp_time в crypto/x509/x509_vfy.c в OpenSSL позволяет злоумышленникам, действующим удаленно, вызвать отказ в обслуживании (чтение за пределами границ и аварийное завершение работы приложения) при помощи специально сформированного поля длины в данных ASN1_TIME, как, например, в случае, когда осуществляется атака на сервер, поддерживающий аутентификацию клиентов с нестандартным подтверждением обратных вызовов.",
+          "level_id": 2,
+          "name": "Отказ в обслуживании",
+          "reference": Array [
+            Object {
+              "ref_id": "http://openssl.org/news/secadv_20150611.txt",
+              "ref_url": "http://openssl.org/news/secadv_20150611.txt",
+              "source": "openssl.org",
+            },
+            Object {
+              "ref_id": "JSA10694",
+              "ref_url": "https://kb.juniper.net/InfoCenter/index?page=content&id=JSA10694&cat=SIRT_1&actp=LIST",
+              "source": "Juniper",
+            },
+            Object {
+              "ref_id": "CVE-2015-1789",
+              "ref_url": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2015-1789",
+              "source": "CVE",
+            },
+          ],
+          "remediation": "Для устранения уязвимости необходимо установить последнюю версию продукта, соответствующую используемой платформе. Необходимую информацию можно получить по адресу: https://www.openssl.org/",
+          "uid": "184619",
+        },
+        Object {
+          "description": "Уязвимость в функции PKCS7_dataDecode в crypto/pkcs7/pk7_doit.c в OpenSSL позволяет злоумышленникам, действующим удаленно, вызвать отказ в обслуживании (разыменование нулевого указателя и аварийное завершение работы приложения) при помощи объекта PKCS#7, использующего кодировку ASN.1 и в котором отсутствуют внутренние данные EncryptedContent.",
+          "level_id": 3,
+          "name": "Отказ в обслуживании",
+          "reference": Array [
+            Object {
+              "ref_id": "http://openssl.org/news/secadv_20150611.txt",
+              "ref_url": "http://openssl.org/news/secadv_20150611.txt",
+              "source": "openssl.org",
+            },
+            Object {
+              "ref_id": "JSA10694",
+              "ref_url": "https://kb.juniper.net/InfoCenter/index?page=content&id=JSA10694&cat=SIRT_1&actp=LIST",
+              "source": "Juniper",
+            },
+            Object {
+              "ref_id": "CVE-2015-1790",
+              "ref_url": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2015-1790",
+              "source": "CVE",
+            },
+          ],
+          "remediation": "Для устранения уязвимости необходимо установить последнюю версию продукта, соответствующую используемой платформе. Необходимую информацию можно получить по адресу: https://www.openssl.org/",
+          "uid": "184620",
+        },
+        Object {
+          "description": "Уязвимость в функции do_free_upto в crypto/cms/cms_smime.c в OpenSSL позволяет злоумышленникам, действующим удаленно, вызвать отказ в обслуживании (зацикливание), используя нулевое значение структуры данных BIO. Например, может использоваться нераспознанный OID в хэш-функции.",
+          "level_id": 3,
+          "name": "Отказ в обслуживании",
+          "reference": Array [
+            Object {
+              "ref_id": "http://openssl.org/news/secadv_20150611.txt",
+              "ref_url": "http://openssl.org/news/secadv_20150611.txt",
+              "source": "openssl.org",
+            },
+            Object {
+              "ref_id": "JSA10694",
+              "ref_url": "https://kb.juniper.net/InfoCenter/index?page=content&id=JSA10694&cat=SIRT_1&actp=LIST",
+              "source": "Juniper",
+            },
+            Object {
+              "ref_id": "CVE-2015-1792",
+              "ref_url": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2015-1792",
+              "source": "CVE",
+            },
+          ],
+          "remediation": "Для устранения уязвимости необходимо установить последнюю версию продукта, соответствующую используемой платформе. Необходимую информацию можно получить по адресу: https://www.openssl.org/",
+          "uid": "184621",
+        },
+        Object {
+          "description": "Состояние гонки в функции ssl3_get_new_session_ticket в ssl/s3_clnt.c в OpenSSL при использовании многопоточного клиента позволяет злоумышленникам, действующим удаленно, вызвать отказ в обслуживании (повторное освобождение памяти и аварийное завершение работы приложения) или оказать иное воздействие на систему, используя NewSessionTicket во время попытки повторно использовать полученный ранее билет.",
+          "level_id": 3,
+          "name": "Состояние гонки",
+          "reference": Array [
+            Object {
+              "ref_id": "http://openssl.org/news/secadv_20150611.txt",
+              "ref_url": "http://openssl.org/news/secadv_20150611.txt",
+              "source": "openssl.org",
+            },
+            Object {
+              "ref_id": "JSA10694",
+              "ref_url": "https://kb.juniper.net/InfoCenter/index?page=content&id=JSA10694&cat=SIRT_1&actp=LIST",
+              "source": "Juniper",
+            },
+            Object {
+              "ref_id": "CVE-2015-1791",
+              "ref_url": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2015-1791",
+              "source": "CVE",
+            },
+          ],
+          "remediation": "Для устранения уязвимости необходимо установить последнюю версию продукта, соответствующую используемой платформе. Необходимую информацию можно получить по адресу: https://www.openssl.org/",
+          "uid": "184622",
+        },
+        Object {
+          "description": "Уязвимость в функции ssl3_get_key_exchange в ssl/s3_clnt.c в OpenSSL позволяет удаленным SSL-серверам вызвать отказ в обслуживании (ошибку сегментации), используя пустое значение p в сообщении ServerKeyExchange, зашифрованном при помощи анонимного алгоритма Диффи-Хеллмана.",
+          "level_id": 3,
+          "name": "Отказ в обслуживании",
+          "reference": Array [
+            Object {
+              "ref_id": "CVE-2015-1794",
+              "ref_url": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2015-1794",
+              "source": "CVE",
+            },
+            Object {
+              "ref_id": "http://openssl.org/news/secadv/20151203.txt",
+              "ref_url": "http://openssl.org/news/secadv/20151203.txt",
+              "source": "openssl.org",
+            },
+          ],
+          "remediation": "Для устранения уязвимости необходимо установить последнюю версию продукта, соответствующую используемой платформе. Необходимую информацию можно получить по адресу: http://www.openssl.org/",
+          "uid": "185380",
+        },
+        Object {
+          "description": "Уязвимость существует в реализации алгоритма Монтгомери, используемого функцией BN_mod_exp, в crypto/bn/asm/x86_64-mont5.pl в OpenSSL из-за некорректной обработки сигнала распространения переноса и формирования некорректных выходных данных. Эксплуатация данной уязвимости позволяет злоумышленникам, действующим удаленно, получить доступ к конфиденциальным данным о закрытых ключах при помощи атаки на криптопакеты, использующие алгоритм Диффи-Хеллмана (DH) либо эфемерный алгоритм Диффи-Хеллмана(DHE).",
+          "level_id": 3,
+          "name": "Разглашение информации",
+          "reference": Array [
+            Object {
+              "ref_id": "CVE-2015-3193",
+              "ref_url": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2015-3193",
+              "source": "CVE",
+            },
+            Object {
+              "ref_id": "http://openssl.org/news/secadv/20151203.txt",
+              "ref_url": "http://openssl.org/news/secadv/20151203.txt",
+              "source": "openssl.org",
+            },
+          ],
+          "remediation": "Для устранения уязвимости необходимо установить последнюю версию продукта, соответствующую используемой платформе. Необходимую информацию можно получить по адресу: http://www.openssl.org/",
+          "uid": "185381",
+        },
+        Object {
+          "description": "Уязвимость в crypto/rsa/rsa_ameth.c в OpenSSL позволяет злоумышленникам, действующим удаленно, вызвать отказ в обслуживании (разыменование нулевого указателя и аварийное завершение работы приложения) при помощи подписи RSA PSS ASN.1, в которой отсутствует функциональный параметр подготовки шаблонов.",
+          "level_id": 3,
+          "name": "Отказ в обслуживании",
+          "reference": Array [
+            Object {
+              "ref_id": "CVE-2015-3194",
+              "ref_url": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2015-3194",
+              "source": "CVE",
+            },
+            Object {
+              "ref_id": "http://openssl.org/news/secadv/20151203.txt",
+              "ref_url": "http://openssl.org/news/secadv/20151203.txt",
+              "source": "openssl.org",
+            },
+            Object {
+              "ref_id": "http://www.oracle.com/technetwork/topics/security/cpujan2016-2367955.html#AppendixMSQL",
+              "ref_url": "http://www.oracle.com/technetwork/topics/security/cpujan2016-2367955.html#AppendixMSQL",
+              "source": "www.oracle.com",
+            },
+          ],
+          "remediation": "Для устранения уязвимости необходимо установить последнюю версию продукта, соответствующую используемой платформе. Необходимую информацию можно получить по адресу: http://www.openssl.org/",
+          "uid": "185382",
+        },
+        Object {
+          "description": "Уязвимость существует в реализации ASN1_TFLG_COMBINE в crypto/asn1/tasn_dec.c в OpenSSLиз-за некорректной обработки ошибок, вызванных некорректно сформированными данными X509_ATTRIBUTE. Эксплуатация данной уязвимости позволяет злоумышленникам, действующим удаленно, получить доступ к конфиденциальным данным используемой памяти процесса, вызвав ошибку декодирования в приложении PKCS#7 или CMS.",
+          "level_id": 3,
+          "name": "Разглашение информации",
+          "reference": Array [
+            Object {
+              "ref_id": "CVE-2015-3195",
+              "ref_url": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2015-3195",
+              "source": "CVE",
+            },
+            Object {
+              "ref_id": "http://openssl.org/news/secadv/20151203.txt",
+              "ref_url": "http://openssl.org/news/secadv/20151203.txt",
+              "source": "openssl.org",
+            },
+          ],
+          "remediation": "Для устранения уязвимости необходимо установить последнюю версию продукта, соответствующую используемой платформе. Необходимую информацию можно получить по адресу: http://www.openssl.org/",
+          "uid": "185383",
+        },
+        Object {
+          "description": "Уязвимость существует в ssl/s3_clnt.c в OpenSSL при использовании многопоточного клиента из-за применения некорректных структур данных для записи подсказок идентичности PSK. Эксплуатация данной уязвимости позволяет удаленным SSL-серверам вызвать отказ в обслуживании (состояние гонки или повторное освобождение памяти при помощи специально сформированного сообщения ServerKeyExchange.",
+          "level_id": 2,
+          "name": "Отказ в обслуживании",
+          "reference": Array [
+            Object {
+              "ref_id": "CVE-2015-3196",
+              "ref_url": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2015-3196",
+              "source": "CVE",
+            },
+            Object {
+              "ref_id": "http://openssl.org/news/secadv/20151203.txt",
+              "ref_url": "http://openssl.org/news/secadv/20151203.txt",
+              "source": "openssl.org",
+            },
+          ],
+          "remediation": "Для устранения уязвимости необходимо установить последнюю версию продукта, соответствующую используемой платформе. Необходимую информацию можно получить по адресу: http://www.openssl.org/",
+          "uid": "185384",
+        },
+        Object {
+          "description": "Уязвимость существует в ssl/s2_srvr.c в OpenSSL из-за возможности использования отключенных шифров. Эксплуатация данной уязвимости позволяет злоумышленникам, действующим по принципу \\"человек посередине\\", обойти механизм криптографической защиты, используя трафик SSLv2. Данная уязвимость связана с функциями get_client_master_key и get_client_hello.",
+          "level_id": 3,
+          "name": "Обход механизма защиты",
+          "reference": Array [
+            Object {
+              "ref_id": "CVE-2015-3197",
+              "ref_url": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2015-3197",
+              "source": "CVE",
+            },
+            Object {
+              "ref_id": "http://openssl.org/news/secadv/20160128.txt",
+              "ref_url": "http://openssl.org/news/secadv/20160128.txt",
+              "source": "openssl.org",
+            },
+          ],
+          "remediation": "Для устранения уязвимости необходимо установить последнюю версию продукта, соответствующую используемой платформе. Необходимую информацию можно получить по адресу: http://www.openssl.org/",
+          "uid": "185749",
+        },
+        Object {
+          "description": "Уязвимость существует в функции DH_check_pub_key в crypto/dh/dh_check.c в OpenSSL из-за отсутствия проверки простых чисел на пригодность для обмена ключами по алгоритму Диффи-Хеллмана (ДХ). Эксплуатация данной уязвимости позволяет злоумышленникам, действующим удаленно, получить секретную экспоненту ДХ, проведя большое количество согласований с узлом, выбравшим неподходящее число (например, число из файла в формате X9.42).",
+          "level_id": 3,
+          "name": "Разглашение информации",
+          "reference": Array [
+            Object {
+              "ref_id": "CVE-2016-0701",
+              "ref_url": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2016-0701",
+              "source": "CVE",
+            },
+            Object {
+              "ref_id": "http://openssl.org/news/secadv/20160128.txt",
+              "ref_url": "http://openssl.org/news/secadv/20160128.txt",
+              "source": "openssl.org",
+            },
+          ],
+          "remediation": "Для устранения уязвимости необходимо установить последнюю версию продукта, соответствующую используемой платформе. Необходимую информацию можно получить по адресу: http://www.openssl.org/",
+          "uid": "185750",
+        },
+        Object {
+          "description": "Уязвимость существует в протоколе SSLv2 для OpenSSL из-за отправки сервером сообщения ServerVerify до проверки наличия у клиента определенных незашифрованных данных RSA. Эксплуатация данной уязвимости позволяет злоумышленникам, действующим удаленно, расшифровать данные, зашифрованные с использованием TLS, используя атаку с предсказанием заполнения RSA Блейхенбахера.",
+          "level_id": 3,
+          "name": "Разглашение информации",
+          "reference": Array [
+            Object {
+              "ref_id": "CVE-2016-0800",
+              "ref_url": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2016-0800",
+              "source": "CVE",
+            },
+            Object {
+              "ref_id": "http://openssl.org/news/secadv/20160301.txt",
+              "ref_url": "http://openssl.org/news/secadv/20160301.txt",
+              "source": "openssl.org",
+            },
+          ],
+          "remediation": "Для устранения уязвимости необходимо установить последнюю версию продукта, соответствующую используемой платформе. Необходимую информацию можно получить по адресу: http://www.openssl.org/",
+          "uid": "185763",
+        },
+        Object {
+          "description": "Двойное освобождение в OpenSSL позволяет злоумышленникам вызвать отказ в обслуживании (ошибку при работе с памятью), отправив специально сформированные секретные ключи DSA.",
+          "level_id": 3,
+          "name": "Двойное освобождение",
+          "reference": Array [
+            Object {
+              "ref_id": "CVE-2016-0705",
+              "ref_url": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2016-0705",
+              "source": "CVE",
+            },
+            Object {
+              "ref_id": "http://openssl.org/news/secadv/20160301.txt",
+              "ref_url": "http://openssl.org/news/secadv/20160301.txt",
+              "source": "openssl.org",
+            },
+            Object {
+              "ref_id": "http://www.oracle.com/technetwork/security-advisory/cpuapr2016v3-2985753.html#AppendixMSQL",
+              "ref_url": "http://www.oracle.com/technetwork/security-advisory/cpuapr2016v3-2985753.html#AppendixMSQL",
+              "source": "www.oracle.com",
+            },
+          ],
+          "remediation": "Для устранения уязвимости необходимо установить последнюю версию продукта, соответствующую используемой платформе. Необходимую информацию можно получить по адресу: http://www.openssl.org/",
+          "uid": "185768",
+        },
+        Object {
+          "description": "Уязвимость в методе SRP_VBASE_get_by_user в OpenSSL позволяет злоумышленникам, подключающимся с недопустимым именем пользователя, вызвать утечку памяти (примерно 300 байтов за подключение).",
+          "level_id": 2,
+          "name": "Утечка памяти",
+          "reference": Array [
+            Object {
+              "ref_id": "http://openssl.org/news/secadv/20160301.txt",
+              "ref_url": "http://openssl.org/news/secadv/20160301.txt",
+              "source": "openssl.org",
+            },
+            Object {
+              "ref_id": "CVE-2016-0798",
+              "ref_url": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2016-0798",
+              "source": "CVE",
+            },
+          ],
+          "remediation": "Для устранения уязвимости необходимо установить последнюю версию продукта, соответствующую используемой платформе. Необходимую информацию можно получить по адресу: http://www.openssl.org/",
+          "uid": "185769",
+        },
+        Object {
+          "description": "Уязвимость в функциях BN_hex2bn и BN_dec2bn в OpenSSL позволяет злоумышленникам вызвать отказ в обслуживании (разыменование нулевого указателя или ошибку при работе с динамической памятью), используя большие объемы шестнадцатеричных (hex) или десятичных (dec) данных соответственно.",
+          "level_id": 3,
+          "name": "Отказ в обслуживании",
+          "reference": Array [
+            Object {
+              "ref_id": "http://openssl.org/news/secadv/20160301.txt",
+              "ref_url": "http://openssl.org/news/secadv/20160301.txt",
+              "source": "openssl.org",
+            },
+            Object {
+              "ref_id": "CVE-2016-0797",
+              "ref_url": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2016-0797",
+              "source": "CVE",
+            },
+          ],
+          "remediation": "Для устранения уязвимости необходимо установить последнюю версию продукта, соответствующую используемой платформе. Необходимую информацию можно получить по адресу: http://www.openssl.org/",
+          "uid": "185770",
+        },
+        Object {
+          "description": "Уязвимость в функциях BIO_*printf в OpenSSL позволяет злоумышленникам получить доступ к конфиденциальной информации или вызвать отказ в обслуживании (чтение или запись за пределами границ), используя длинную форматную строку \\"%s\\".",
+          "level_id": 3,
+          "name": "Разглашение информации",
+          "reference": Array [
+            Object {
+              "ref_id": "http://openssl.org/news/secadv/20160301.txt",
+              "ref_url": "http://openssl.org/news/secadv/20160301.txt",
+              "source": "openssl.org",
+            },
+            Object {
+              "ref_id": "CVE-2016-0799",
+              "ref_url": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2016-0799",
+              "source": "CVE",
+            },
+          ],
+          "remediation": "Для устранения уязвимости необходимо установить последнюю версию продукта, соответствующую используемой платформе. Необходимую информацию можно получить по адресу: http://www.openssl.org/",
+          "uid": "185771",
+        },
+        Object {
+          "description": "Уязвимость в OpenSSL позволяет злоумышленникам восстановить ключи RSA, используя атаку по сторонним каналам.",
+          "level_id": 2,
+          "name": "Разглашение информации",
+          "reference": Array [
+            Object {
+              "ref_id": "http://openssl.org/news/secadv/20160301.txt",
+              "ref_url": "http://openssl.org/news/secadv/20160301.txt",
+              "source": "openssl.org",
+            },
+            Object {
+              "ref_id": "CVE-2016-0702",
+              "ref_url": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2016-0702",
+              "source": "CVE",
+            },
+          ],
+          "remediation": "Для устранения уязвимости необходимо установить последнюю версию продукта, соответствующую используемой платформе. Необходимую информацию можно получить по адресу: http://www.openssl.org/",
+          "uid": "185772",
+        },
+        Object {
+          "description": "Уязвимость существует в функции get_client_master_key в s2_srvr.c реализации SSLv2 в OpenSSL из-за приема ненулевых значений CLIENT-MASTER-KEY CLEAR-KEY-LENGTH для произвольных шифров. Эксплуатация данной уязвимости позволяет злоумышленникам, действующим по принципу \\"человек посередине\\", определить значение MASTER-KEY и расшифровать данные TLS-сессий, используя атаку с предсказанием заполнения RSA Блейхенбахера.",
+          "level_id": 3,
+          "name": "Разглашение информации",
+          "reference": Array [
+            Object {
+              "ref_id": "http://openssl.org/news/secadv/20160301.txt",
+              "ref_url": "http://openssl.org/news/secadv/20160301.txt",
+              "source": "openssl.org",
+            },
+            Object {
+              "ref_id": "CVE-2016-0703",
+              "ref_url": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2016-0703",
+              "source": "CVE",
+            },
+          ],
+          "remediation": "Для устранения уязвимости необходимо установить последнюю версию продукта, соответствующую используемой платформе. Необходимую информацию можно получить по адресу: http://www.openssl.org/",
+          "uid": "185773",
+        },
+        Object {
+          "description": "Уязвимость существует в защитном механизме функции get_client_master_key в s2_srvr.c реализации SSLv2 в OpenSSL из-за перезаписи некорректных байтов MASTER-KEY при использовании \\"экспортных\\" криптопакетов. Эксплуатация данной уязвимости позволяет злоумышленникам, действующим удаленно, расшифровать данные TLS-сессий, используя атаку с предсказанием заполнения RSA Блейхенбахера.",
+          "level_id": 2,
+          "name": "Разглашение информации",
+          "reference": Array [
+            Object {
+              "ref_id": "http://openssl.org/news/secadv/20160301.txt",
+              "ref_url": "http://openssl.org/news/secadv/20160301.txt",
+              "source": "openssl.org",
+            },
+            Object {
+              "ref_id": "CVE-2016-0704",
+              "ref_url": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2016-0704",
+              "source": "CVE",
+            },
+          ],
+          "remediation": "Для устранения уязвимости необходимо установить последнюю версию продукта, соответствующую используемой платформе. Необходимую информацию можно получить по адресу: http://www.openssl.org/",
+          "uid": "185774",
+        },
+        Object {
+          "description": "Уязвимость в функции doapr_outch в crypto/bio/b_print.c в OpenSSL, связанная с отсутствием проверки факта успешного выделения памяти, позволяет злоумышленникам, действующим удаленно, вызвать отказ в обслуживании (запись за пределами границ или чрезмерное потребление ресурсов памяти), а также оказать иное воздействие на систему, используя длинную строку, например, большое количество данных ASN.1.",
+          "level_id": 5,
+          "name": "Отказ в обслуживании",
+          "reference": Array [
+            Object {
+              "ref_id": "CVE-2016-2842",
+              "ref_url": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2016-2842",
+              "source": "CVE",
+            },
+          ],
+          "remediation": "Для устранения уязвимости необходимо установить последнюю версию продукта, соответствующую используемой платформе. Необходимую информацию можно получить по адресу: http://www.openssl.org/",
+          "uid": "186095",
+        },
+        Object {
+          "description": "Целочисленное переполнение в функции EVP_EncodeUpdate в crypto/evp/encode.c в OpenSSL позволяет злоумышленникам, действующим удаленно, вызвать отказ в обслуживании (ошибку при работе с динамической памятью) при помощи большого количества двоичных данных.",
+          "level_id": 3,
+          "name": "Целочисленное переполнение",
+          "reference": Array [
+            Object {
+              "ref_id": "CVE-2016-2105",
+              "ref_url": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2016-2105",
+              "source": "CVE",
+            },
+            Object {
+              "ref_id": "https://www.openssl.org/news/secadv/20160503.txt",
+              "ref_url": "https://www.openssl.org/news/secadv/20160503.txt",
+              "source": "www.openssl.org",
+            },
+            Object {
+              "ref_id": "http://www.oracle.com/technetwork/security-advisory/cpujul2016-2881720.html#AppendixMSQL",
+              "ref_url": "http://www.oracle.com/technetwork/security-advisory/cpujul2016-2881720.html#AppendixMSQL",
+              "source": "www.oracle.com",
+            },
+          ],
+          "remediation": "Для устранения уязвимости необходимо установить последнюю версию продукта, соответствующую используемой платформе. Необходимую информацию можно получить по адресу: https://www.openssl.org/",
+          "uid": "186096",
+        },
+        Object {
+          "description": "Целочисленное переполнение в функции EVP_EncryptUpdate в crypto/evp/evp_enc.c в OpenSSL позволяет злоумышленникам, действующим удаленно, вызвать отказ в обслуживании (ошибку при работе с динамической памятью) при помощи большого количества данных.",
+          "level_id": 3,
+          "name": "Целочисленное переполнение",
+          "reference": Array [
+            Object {
+              "ref_id": "CVE-2016-2106",
+              "ref_url": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2016-2106",
+              "source": "CVE",
+            },
+            Object {
+              "ref_id": "https://www.openssl.org/news/secadv/20160503.txt",
+              "ref_url": "https://www.openssl.org/news/secadv/20160503.txt",
+              "source": "www.openssl.org",
+            },
+          ],
+          "remediation": "Для устранения уязвимости необходимо установить последнюю версию продукта, соответствующую используемой платформе. Необходимую информацию можно получить по адресу: https://www.openssl.org/",
+          "uid": "186097",
+        },
+        Object {
+          "description": "Уязвимость в реализации AES-NI в OpenSSL, связанная с проверкой выделения памяти при проверке заполнения, позволяет злоумышленникам, действующим удаленно, получить незашифрованные данные, используя атаку с предсказанием заполнения для сессии сцепления блоков AES.",
+          "level_id": 2,
+          "name": "Разглашение информации",
+          "reference": Array [
+            Object {
+              "ref_id": "CVE-2016-2107",
+              "ref_url": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2016-2107",
+              "source": "CVE",
+            },
+            Object {
+              "ref_id": "https://www.openssl.org/news/secadv/20160503.txt",
+              "ref_url": "https://www.openssl.org/news/secadv/20160503.txt",
+              "source": "www.openssl.org",
+            },
+          ],
+          "remediation": "Для устранения уязвимости необходимо установить последнюю версию продукта, соответствующую используемой платформе. Необходимую информацию можно получить по адресу: https://www.openssl.org/",
+          "uid": "186098",
+        },
+        Object {
+          "description": "Уязвимость в реализации ASN.1 в OpenSSL позволяет злоумышленникам, действующим удаленно, выполнить произвольный код или вызвать отказ в обслуживании (недостаточное заполнение буфера и ошибку при работе с памятью), используя поле ANY в специально сформированных, сериализованных данных (т. н. \\"отрицательный ноль\\").",
+          "level_id": 3,
+          "name": "Выполнение произвольного кода",
+          "reference": Array [
+            Object {
+              "ref_id": "CVE-2016-2108",
+              "ref_url": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2016-2108",
+              "source": "CVE",
+            },
+            Object {
+              "ref_id": "https://www.openssl.org/news/secadv/20160503.txt",
+              "ref_url": "https://www.openssl.org/news/secadv/20160503.txt",
+              "source": "www.openssl.org",
+            },
+          ],
+          "remediation": "Для устранения уязвимости необходимо установить последнюю версию продукта, соответствующую используемой платформе. Необходимую информацию можно получить по адресу: https://www.openssl.org/",
+          "uid": "186099",
+        },
+        Object {
+          "description": "Уязвимость в функции asn1_d2i_read_bio в crypto/asn1/a_d2i_fp.c реализации ASN.1 BIO в OpenSSL позволяет злоумышленникам, действующим удаленно, вызвать отказ в обслуживании (чрезмерное потребление ресурсов памяти), используя сокращенную, недопустимую кодировку.",
+          "level_id": 2,
+          "name": "Отказ в обслуживании",
+          "reference": Array [
+            Object {
+              "ref_id": "CVE-2016-2109",
+              "ref_url": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2016-2109",
+              "source": "CVE",
+            },
+            Object {
+              "ref_id": "https://www.openssl.org/news/secadv/20160503.txt",
+              "ref_url": "https://www.openssl.org/news/secadv/20160503.txt",
+              "source": "www.openssl.org",
+            },
+          ],
+          "remediation": "Для устранения уязвимости необходимо установить последнюю версию продукта, соответствующую используемой платформе. Необходимую информацию можно получить по адресу: https://www.openssl.org/",
+          "uid": "186100",
+        },
+        Object {
+          "description": "Уязвимость в функции X509_NAME_oneline в crypto/x509/x509_obj.c в OpenSSL позволяет злоумышленникам, действующим удаленно, получить доступ к конфиденциальным данным из стековой памяти процесса или вызвать отказ в обслуживании (чтение за пределами буфера) при помощи специально сформированных данных ASN.1 EBCDIC.",
+          "level_id": 3,
+          "name": "Разглашение информации",
+          "reference": Array [
+            Object {
+              "ref_id": "CVE-2016-2176",
+              "ref_url": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2016-2176",
+              "source": "CVE",
+            },
+            Object {
+              "ref_id": "https://www.openssl.org/news/secadv/20160503.txt",
+              "ref_url": "https://www.openssl.org/news/secadv/20160503.txt",
+              "source": "www.openssl.org",
+            },
+          ],
+          "remediation": "Для устранения уязвимости необходимо установить последнюю версию продукта, соответствующую используемой платформе. Необходимую информацию можно получить по адресу: https://www.openssl.org/",
+          "uid": "186101",
+        },
+        Object {
+          "description": "Уязвимость в Microsoft Windows, связанная с обработкой обновлений групповых политик, позволяет злоумышленникам повысить уровень своих привилегий или выполнить дополнительные привилегированные действия.",
+          "level_id": 5,
+          "name": "Повышение привилегий, связанное групповой политикой",
+          "reference": Array [
+            Object {
+              "ref_id": "MS16-072",
+              "ref_url": "http://technet.microsoft.com/library/security/ms16-072",
+              "source": "Microsoft",
+            },
+            Object {
+              "ref_id": "CVE-2016-3223",
+              "ref_url": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2016-3223",
+              "source": "CVE",
+            },
+          ],
+          "remediation": "Используйте рекомендации производителя: http://technet.microsoft.com/library/security/ms16-072",
+          "uid": "414178",
+        },
+      ],
+    },
+  ],
+}
+`;

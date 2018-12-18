@@ -356,7 +356,8 @@ module.exports = function (inputStream, options = {}, cb) {
       global_id: globalId,
     } = el;
 
-    if (!globalId || globalId.length === 0) {
+    // не учитываем уязвимости, у которых нет global_id и cvss.base_score
+    if ((!globalId || globalId.length === 0) && (!cvss || !cvss.$.base_score || cvss.$.base_score === '0.0')) {
       return;
     }
 

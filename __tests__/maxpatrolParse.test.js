@@ -14,6 +14,10 @@ const parseOptions = {
   include_users: true,
 };
 
+function cb(err, result) {
+  expect(result).toMatchSnapshot();
+}
+
 async function testReport(filename) {
   const zipPath = path.join(__dirname, 'testData.zip');
   const fullFilename = `${filename}.xml`;
@@ -22,7 +26,7 @@ async function testReport(filename) {
     .pipe(unzip.Parse())
     .on('entry', (entry) => {
       if (entry.path === fullFilename) {
-        maxPatrolParse(entry, parseOptions, (err, result) => { expect(result).toMatchSnapshot(); });
+        maxPatrolParse(entry, parseOptions, cb);
       } else {
         entry.autodrain();
       }

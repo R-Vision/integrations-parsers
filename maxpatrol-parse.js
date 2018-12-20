@@ -42,11 +42,10 @@ function parseHostSoft(data) {
   const vulns = {};
   let software = [];
   let firmware;
+  const os = (data.length === 1) ? `${data[0].name} ${data[0].version}` : undefined;
 
   for (const item of data) {
     const {
-      name,
-      version,
       vulners,
       port,
       protocol,
@@ -117,6 +116,7 @@ function parseHostSoft(data) {
     ports,
     vulns,
     firmware,
+    os,
   };
 }
 
@@ -236,7 +236,11 @@ function parseSoftData(data) {
     result = parseSNMPData(snmpData);
   }
 
-  return { ...result, ports, os };
+  return {
+    ...result,
+    ports,
+    os: result.os || os,
+  };
 }
 
 /**
@@ -312,7 +316,7 @@ module.exports = function (inputStream, options = {}, cb) {
 
     try {
       const softData = typeof node.scan_objects === 'object' && node.scan_objects.soft ?
-        parseSoftData(node.scan_objects.soft, options) :
+        parseSoftData(node.scan_objects.soft) :
         {};
 
       const ifs = filterNetworkInterfaces(softData.ifs || []);

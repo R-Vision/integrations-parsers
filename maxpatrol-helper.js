@@ -431,10 +431,14 @@ function getSNMPNetworkInterfaces(vuln) {
   const interfaces = formatSingleDimensionParamListTable(vuln.param_list);
 
   if (interfaces) {
-    return interfaces.map(item => ({
-      id: item[ID_KEY],
-      mac: item[MAC_KEY],
-    }));
+    return interfaces.map((item) => {
+      const mac = String(item[MAC_KEY]).match(macAddressRegExp);
+
+      return {
+        id: item[ID_KEY],
+        mac: mac ? mac[0] : null,
+      };
+    });
   }
 
   return undefined;

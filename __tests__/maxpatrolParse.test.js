@@ -19,6 +19,8 @@ function cb(err, result) {
 }
 
 async function testReport(filename) {
+  // архив должен иметь определенный алгоритм сжатия, подходят не все
+  // например можно пользоваться https://www.files2zip.com/
   const zipPath = path.join(__dirname, 'testData.zip');
   const fullFilename = `${filename}.xml`;
 
@@ -51,6 +53,10 @@ describe('parse', () => {
 
   test('HP host data matches snapshot', async () => {
     await testReport('hp');
+  }, 10000);
+
+  test('Juniper host data matches snapshot', async () => {
+    await testReport('juniper');
   }, 10000);
 
   test('error handling data matches snapshot', async () => {

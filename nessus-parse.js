@@ -84,6 +84,7 @@ module.exports = function nessusParse(stream, cb) {
       9: description,
       10: remediation,
       11: seeAlso,
+      12: result,
     } = record;
 
     if (!address || !pluginId) {
@@ -136,6 +137,7 @@ module.exports = function nessusParse(stream, cb) {
         level_id: level,
         uid: pluginId,
         remediation,
+        result,
       };
 
       if (port > 0) {

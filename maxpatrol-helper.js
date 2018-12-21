@@ -8,7 +8,26 @@ const ipUtils = require('ip');
 
 const ipAndMaskRegExp = /(\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}) \((\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})\)/;
 const newIpAndMaskRegExp = /(\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})\(\/(\d{1,2})\)/;
-const macAddressRegExp = /[a-fA-F0-9:]{17}|[a-fA-F0-9]{12}/;
+const macAddressRegExp = /^([0-9a-fA-F]{2}[:.-]?){5}[0-9a-fA-F]{2}$/i;
+
+/**
+ * Получает имя домена из строки
+ * @see RVN-4024
+ * @param {String} value - строка с именем домена
+ * @returns {String}
+ */
+function getDomainName(value) {
+  if (!value || ipUtils.isV4Format(value) || ipUtils.isV6Format(value)) return null;
+
+  const domain = String(value).split('.');
+  const l = domain.length;
+
+  if (l > 2) {
+    return domain.splice(l - 2, l).join('.');
+  }
+
+  return null;
+}
 
 /**
  * Конвертируем данные из xml-таблицы в объект если в каждом field только одно значение.
@@ -498,4 +517,5 @@ module.exports = {
   getSNMPSystemInformation,
   formatSNMPInterfaces,
   getSerialNumbers,
+  getDomainName,
 };

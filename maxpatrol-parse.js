@@ -20,6 +20,7 @@ const {
   getSNMPSystemInformation,
   formatSNMPInterfaces,
   getSerialNumbers,
+  getDomainName,
 } = require('./maxpatrol-helper');
 
 
@@ -121,8 +122,8 @@ function parseHostSoft(data) {
 }
 
 /**
- * Парсим данные сканирования по SNMP
- * @param {Array} data
+ * Парсим данные девайса, полученные по SNMP
+ * @param {Object} data
  * @returns {{ifs: Array, name: string}}
  */
 function parseSNMPData(data) {
@@ -151,9 +152,60 @@ function parseSNMPData(data) {
 }
 
 /**
+ * Парсим данные об уязвимостях, полученные по SNMP
+ * @param {Object} data
+ * @return {Object}
+ */
+function parseSNMPVulners(data) {
+  const {
+    vulners,
+    port,
+    protocol,
+  } = data;
+
+  const vulns = {};
+
+  if (vulners && vulners.vulner) {
+    for (const vuln of vulners.vulner) {
+      vulns[vuln.$.id] = {
+        port,
+        protocol,
+      };
+    }
+  }
+
+  return vulns;
+}
+
+/**
+ * Парсим данные сканирования SNMP
+ * @param {Object} data
+ * @returns {Object}
+ */
+function parseSNMPScanData(data) {
+  let snmpData = {};
+  let vulns = {};
+
+  for (const item of data) {
+    if (item.name === 'SNMP') {
+      snmpData = parseSNMPData(item);
+    } else {
+      const itemVulns = parseSNMPVulners(item);
+
+      vulns = { ...itemVulns, ...vulns };
+    }
+  }
+
+  return {
+    ...snmpData,
+    vulns,
+  };
+}
+
+/**
  * Парсим данные о hardware хоста
  * @param {Array} data
- * @returns {{ serial: String }}
+ * @returns {Object}
  */
 function parseHardwareData(data) {
   let serial = {};
@@ -165,7 +217,7 @@ function parseHardwareData(data) {
   }
 
   return {
-    serial,
+    ...serial,
   };
 }
 
@@ -233,12 +285,12 @@ function parseSoftData(data) {
   // если данных нет, но есть данные SNMP-сканирования - используем последние
   if ((!result.ifs || result.ifs.length === 0) &&
     (snmpData && snmpData.vulners && snmpData.vulners.vulner && snmpData.vulners.vulner.length)) {
-    result = parseSNMPData(snmpData);
+    result = parseSNMPScanData(formattedSoft);
   }
 
   return {
     ...result,
-    ports,
+    ports: [...new Set(ports)],
     os: result.os || os,
   };
 }
@@ -249,18 +301,19 @@ function parseSoftData(data) {
  * @returns {Array}
  */
 function filterNetworkInterfaces(interfaces) {
-  const formattedInterfaces = [];
+  return interfaces.reduce((accumulator, ifs) => {
+    if (ifs && ifs.address && ifs.address.length) {
+      ifs.address = ifs.address
+        .filter(item => !['127.0.0.1', 'localhost'].includes(item.ip)
+          && ipUtils.isV4Format(item.ip));
 
-  for (const ifs of interfaces) {
-    ifs.address = ifs.address.filter(item => !['127.0.0.1', 'localhost'].includes(item.ip) &&
-      ipUtils.isV4Format(item.ip));
-
-    if (ifs.address.length) {
-      formattedInterfaces.push(ifs);
+      if (ifs.address.length) {
+        accumulator.push(ifs);
+      }
     }
-  }
 
-  return formattedInterfaces;
+    return accumulator;
+  }, []);
 }
 
 /**
@@ -307,6 +360,7 @@ module.exports = function (inputStream, options = {}, cb) {
       netbios,
       stop_time: stopTime,
       host_uid: maxpatrolUid,
+      ip,
     } = node.$;
 
     const stop = Number(new Date(stopTime));
@@ -320,7 +374,7 @@ module.exports = function (inputStream, options = {}, cb) {
         {};
 
       const ifs = filterNetworkInterfaces(softData.ifs || []);
-      if (!ifs || ifs.length === 0) {
+      if ((!ifs || ifs.length === 0) && !ipUtils.isV4Format(ip)) {
         return true;
       }
 
@@ -335,9 +389,11 @@ module.exports = function (inputStream, options = {}, cb) {
         ...hardware,
         maxpatrolUid,
         ifs,
+        ip,
+        domain_workgroup: getDomainName(fqdn),
         software: options.import_software ? softData.software : [],
         users: options.import_users ? softData.users : [],
-        name: fqdn || netbios || softData.name || ifs[0].address[0].ip,
+        name: fqdn || netbios || softData.name || ip || ifs[0].address[0].ip,
         updated_at: scanFinished,
         vuln_discovery_date: scanFinished,
         vuln_elimination_date: scanFinished,
@@ -416,6 +472,9 @@ module.exports = function (inputStream, options = {}, cb) {
 
       delete host.vulns;
       delete host.maxpatrolUid;
+      if (host.ifs && host.ifs.length) {
+        delete host.ip;
+      }
 
       return {
         ...host,

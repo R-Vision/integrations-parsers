@@ -1,10 +1,7 @@
-/* eslint-disable import/no-extraneous-dependencies */
-
 'use strict';
 
 const path = require('path');
 const fs = require('fs');
-const unzip = require('unzip-stream');
 
 const maxPatrolParse = require('../maxpatrol-parse');
 
@@ -19,20 +16,10 @@ function cb(err, result) {
 }
 
 async function testReport(filename) {
-  // архив должен иметь определенный алгоритм сжатия, подходят не все
-  // например можно пользоваться https://www.files2zip.com/
-  const zipPath = path.join(__dirname, 'testData.zip');
-  const fullFilename = `${filename}.xml`;
+  const testFilePath = path.join(__dirname, 'testData', `${filename}.xml`);
+  const testDataStream = fs.createReadStream(testFilePath);
 
-  fs.createReadStream(zipPath)
-    .pipe(unzip.Parse())
-    .on('entry', (entry) => {
-      if (entry.path === fullFilename) {
-        maxPatrolParse(entry, parseOptions, cb);
-      } else {
-        entry.autodrain();
-      }
-    });
+  maxPatrolParse(testDataStream, parseOptions, cb);
 
   // ждем - парсинг иногда занимает время
   await new Promise(resolve => setTimeout(resolve, 3000));
@@ -49,6 +36,10 @@ describe('parse', () => {
 
   test('Cisco host data matches snapshot', async () => {
     await testReport('cisco');
+  }, 10000);
+
+  test('Cisco ASA host data matches snapshot', async () => {
+    await testReport('cisco-asa');
   }, 10000);
 
   test('HP host data matches snapshot', async () => {

@@ -43,14 +43,20 @@ function parseHostSoft(data) {
   const vulns = {};
   let software = [];
   let firmware;
-  const os = (data.length === 1) ? `${data[0].name} ${data[0].version}` : undefined;
+  let os;
 
   for (const item of data) {
     const {
       vulners,
       port,
       protocol,
+      name,
+      version,
     } = item;
+
+    if (name === 'Cisco IOS') {
+      os = `${name} ${version}`;
+    }
 
     if (port > 0) {
       ports.push(port);
@@ -285,7 +291,11 @@ function parseSoftData(data) {
   // если данных нет, но есть данные SNMP-сканирования - используем последние
   if ((!result.ifs || result.ifs.length === 0) &&
     (snmpData && snmpData.vulners && snmpData.vulners.vulner && snmpData.vulners.vulner.length)) {
-    result = parseSNMPScanData(formattedSoft);
+    // const newresult = parseSNMPScanData(formattedSoft);
+    result = {
+      ...result,
+      ...parseSNMPScanData(formattedSoft),
+    };
   }
 
   return {
@@ -318,7 +328,7 @@ function filterNetworkInterfaces(interfaces) {
 
 /**
  * Парсит xml отчет из MaxPatrol
- * @param {Stream} inputStream - readable поток с отчетом
+ * @param {ReadStream} inputStream - readable поток с отчетом
  * @param {Object} options
  * @param {Function} cb - колбэк, который должен быть вызван по завершении парсинга
  */

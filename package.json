@@ -1,6 +1,6 @@
 {
   "name": "integrations-parsers",
-  "version": "2.1.2",
+  "version": "2.1.5",
   "description": "Integrations report parsers",
   "main": "index.js",
   "scripts": {
@@ -29,7 +29,6 @@
     "eslint-plugin-import": "2.12.0",
     "eslint-plugin-jsx-a11y": "6.0.3",
     "eslint-plugin-react": "7.8.2",
-    "jest": "23.6.0",
-    "unzip-stream": "0.3.0"
+    "jest": "23.6.0"
   }
 }

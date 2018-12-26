@@ -1,6 +1,2285 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`parse HP host data matches snapshot 1`] = `
+exports[`parse Cisco ASA host data matches snapshot 1`] = `
+Object {
+  "errors": Array [],
+  "hosts": Array [
+    Object {
+      "domain_workgroup": null,
+      "firmware": Object {
+        "name": "C3725-ADVSECURITYK9-M",
+        "version": "12.4(16)",
+      },
+      "ifs": Array [
+        Object {
+          "address": Array [
+            Object {
+              "family": "ipv4",
+              "ip": "172.16.101.25",
+              "mask": "255.255.255.0",
+            },
+          ],
+          "mac": "c2:01:18:48:00:00",
+        },
+      ],
+      "modelNumber": "3725",
+      "name": "c3725-1.rvlab.net",
+      "os": "Cisco IOS 12.4(16)",
+      "ports": Array [
+        22,
+        80,
+        161,
+        67,
+        162,
+        2887,
+        52611,
+        54560,
+      ],
+      "sn": undefined,
+      "software": Array [],
+      "updated_at": "2018-11-10T15:19:12+03:00",
+      "users": Array [],
+      "vuln_discovery_date": "2018-11-10T15:19:12+03:00",
+      "vuln_elimination_date": "2018-11-10T15:19:12+03:00",
+      "vulnerabilities": Array [
+        Object {
+          "description": "Versions 1.33 and 1.5 have insufficient cryptographic security.",
+          "isNetworkVulnerability": true,
+          "level_id": 2,
+          "name": "Weak Cryptography",
+          "port": 22,
+          "protocol": "tcp",
+          "reference": Array [],
+          "remediation": "Use protocol version 2.0.",
+          "uid": "1044",
+        },
+        Object {
+          "description": "The 'arcfour' is the Arcfour stream cipher. The Arcfour cipher is believed to be compatible with the RC4 cipher. RFC 4253 states that Arcfour (and RC4) has problems with weak keys, and should be used with caution.
+ If SSH server is configured to support Cipher Block Chaining (CBC) encryption, this may allow an attacker to recover plaintext data from the ciphertext.",
+          "isNetworkVulnerability": true,
+          "level_id": 1,
+          "name": "SSH Weak Cryptography Ciphers",
+          "port": 22,
+          "protocol": "tcp",
+          "reference": Array [
+            Object {
+              "ref_id": "https://www.ietf.org/rfc/rfc4253.txt",
+              "ref_url": "https://www.ietf.org/rfc/rfc4253.txt",
+              "source": "www.ietf.org",
+            },
+            Object {
+              "ref_id": "CVE-2008-5161",
+              "ref_url": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2008-5161",
+              "source": "CVE",
+            },
+            Object {
+              "ref_id": "http://www.openssh.com/txt/release-7.1",
+              "ref_url": "http://www.openssh.com/txt/release-7.1",
+              "source": "www.openssh.com",
+            },
+            Object {
+              "ref_id": "http://www.openssh.com/txt/release-7.6",
+              "ref_url": "http://www.openssh.com/txt/release-7.6",
+              "source": "www.openssh.com",
+            },
+          ],
+          "remediation": "Disable the listed encryption algorithms.",
+          "uid": "8365",
+        },
+        Object {
+          "description": "Multiple cross-site scripting (XSS) vulnerabilities in the HTTP server in Cisco IOS 12.4(23) allow remote attackers to inject arbitrary web script or HTML via the PATH_INFO to the default URI under (1) level/15/exec/-/ or (2) exec/, a different vulnerability than CVE-2008-3821.",
+          "level_id": 2,
+          "name": "Cross-Site Scripting",
+          "reference": Array [
+            Object {
+              "ref_id": "BID/33625",
+              "ref_url": "http://www.securityfocus.com/bid/33625",
+              "source": "SecurityFocus",
+            },
+          ],
+          "remediation": "Use vendor's advisory: http://tools.cisco.com/security/center/content/CiscoSecurityResponse/cisco-sr-20090114-http",
+          "uid": "171861",
+        },
+        Object {
+          "description": "Cross-site request forgery (CSRF) vulnerability in the HTTP server in Cisco IOS 12.4(23) allows remote attackers to execute arbitrary commands, as demonstrated by executing the hostname command with a level/15/configure/-/hostname request.",
+          "level_id": 3,
+          "name": "Cross-Site Request Forgery Vulnerability",
+          "reference": Array [],
+          "remediation": "To fix the vulnerability update your software according to used platform. All necessary information is available here: http://www.cisco.com/",
+          "uid": "171862",
+        },
+        Object {
+          "description": "The SSLVPN feature in Cisco IOS 12.3 through 12.4 allows remote attackers to cause a denial of service (device reload or hang) via a crafted HTTPS packet.",
+          "level_id": 4,
+          "name": "Denial of Service",
+          "reference": Array [
+            Object {
+              "ref_id": "XFDB/49425",
+              "ref_url": "http://xforce.iss.net/xforce/xfdb/49425",
+              "source": "X-Force",
+            },
+            Object {
+              "ref_id": "BID/34239",
+              "ref_url": "http://www.securityfocus.com/bid/34239",
+              "source": "SecurityFocus",
+            },
+            Object {
+              "ref_id": "http://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20090325-webvpn",
+              "ref_url": "http://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20090325-webvpn",
+              "source": "tools.cisco.com",
+            },
+          ],
+          "remediation": "Use vendor's advisory: http://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20090325-webvpn",
+          "uid": "171942",
+        },
+        Object {
+          "description": "The (1) Cisco Unified Communications Manager Express; (2) SIP Gateway Signaling Support Over Transport Layer Security (TLS) Transport; (3) Secure Signaling and Media Encryption; (4) Blocks Extensible Exchange Protocol (BEEP); (5) Network Admission Control HTTP Authentication Proxy; (6) Per-user URL Redirect for EAPoUDP, Dot1x, and MAC Authentication Bypass; (7) Distributed Director with HTTP Redirects; and (8) TCP DNS features in Cisco IOS 12.0 through 12.4 do not properly handle IP sockets, which allows remote attackers to cause a denial of service (outage or resource consumption) via a series of crafted TCP packets.",
+          "level_id": 4,
+          "name": "Denial of Service",
+          "reference": Array [
+            Object {
+              "ref_id": "XFDB/49418",
+              "ref_url": "http://xforce.iss.net/xforce/xfdb/49418",
+              "source": "X-Force",
+            },
+            Object {
+              "ref_id": "BID/34242",
+              "ref_url": "http://www.securityfocus.com/bid/34242",
+              "source": "SecurityFocus",
+            },
+            Object {
+              "ref_id": "http://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20090325-ip",
+              "ref_url": "http://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20090325-ip",
+              "source": "tools.cisco.com",
+            },
+          ],
+          "remediation": "Use vendor's advisory: http://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20090325-ip",
+          "uid": "171945",
+        },
+        Object {
+          "description": "Devices that are running an affected version of Cisco IOS Software and configured for Mobile IPv6 or Mobile IP NAT Traversal feature are affected by a DoS vulnerability. A successful exploitation of this vulnerability could cause an interface to stop processing traffic until the system is restarted. Offending packets need to be destined to the router for a successful exploit.",
+          "level_id": 4,
+          "name": "Denial of Service",
+          "reference": Array [
+            Object {
+              "ref_id": "XFDB/49424",
+              "ref_url": "http://xforce.iss.net/xforce/xfdb/49424",
+              "source": "X-Force",
+            },
+            Object {
+              "ref_id": "BID/34241",
+              "ref_url": "http://www.securityfocus.com/bid/34241",
+              "source": "SecurityFocus",
+            },
+            Object {
+              "ref_id": "http://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20090325-mobileip",
+              "ref_url": "http://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20090325-mobileip",
+              "source": "tools.cisco.com",
+            },
+          ],
+          "remediation": "Use vendor's advisory: http://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20090325-mobileip",
+          "uid": "171947",
+        },
+        Object {
+          "description": "Devices that are running an affected version of Cisco IOS Software and configured for Mobile IPv6 or Mobile IP NAT Traversal feature are affected by a DoS vulnerability. A successful exploitation of this vulnerability could cause an interface to stop processing traffic until the system is restarted. Offending packets need to be destined to the router for a successful exploit.",
+          "level_id": 4,
+          "name": "Denial of Service",
+          "reference": Array [
+            Object {
+              "ref_id": "XFDB/49424",
+              "ref_url": "http://xforce.iss.net/xforce/xfdb/49424",
+              "source": "X-Force",
+            },
+            Object {
+              "ref_id": "BID/34241",
+              "ref_url": "http://www.securityfocus.com/bid/34241",
+              "source": "SecurityFocus",
+            },
+          ],
+          "remediation": "Use vendor's advisory: http://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20090325-mobileip",
+          "uid": "171948",
+        },
+        Object {
+          "description": "Unspecified vulnerability in the NAT for SIP implementation in Cisco IOS 12.1 through 12.4 and 15.0 through 15.1 allows remote attackers to cause a denial of service (device reload) via transit traffic on UDP port 5060, aka Bug ID CSCtf17624.",
+          "level_id": 4,
+          "name": "Denial of Service",
+          "reference": Array [
+            Object {
+              "ref_id": "http://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20100922-nat",
+              "ref_url": "http://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20100922-nat",
+              "source": "tools.cisco.com",
+            },
+          ],
+          "remediation": "Use vendor's advisory: http://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20100922-nat",
+          "uid": "172088",
+        },
+        Object {
+          "description": "Unspecified vulnerability in the H.323 implementation in Cisco IOS 12.1 through 12.4 and 15.0 through 15.1, and IOS XE 2.5.x before 2.5.2 and 2.6.x before 2.6.1, allows remote attackers to cause a denial of service (device reload) via crafted H.323 packets, aka Bug ID CSCtc73759.",
+          "level_id": 4,
+          "name": "Denial of Service",
+          "reference": Array [
+            Object {
+              "ref_id": "http://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20100922-h323",
+              "ref_url": "http://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20100922-h323",
+              "source": "tools.cisco.com",
+            },
+          ],
+          "remediation": "Use vendor's advisory: http://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20100922-h323",
+          "uid": "172089",
+        },
+        Object {
+          "description": "The IGMPv3 implementation in Cisco IOS and IOS XE, when PIM is enabled, allows remote attackers to cause a denial of service (device reload) via a malformed IGMP packet, aka Bug ID CSCte14603.",
+          "level_id": 4,
+          "name": "Denial of Service",
+          "reference": Array [
+            Object {
+              "ref_id": "http://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20100922-igmp",
+              "ref_url": "http://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20100922-igmp",
+              "source": "tools.cisco.com",
+            },
+          ],
+          "remediation": "Use vendor's advisory: http://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20100922-igmp",
+          "uid": "172091",
+        },
+        Object {
+          "description": "Unspecified vulnerability in the NAT for H.323 implementation in Cisco IOS 12.1 through 12.4 and 15.0 through 15.1 allows remote attackers to cause a denial of service (device reload) via transit traffic, aka Bug ID CSCtf91428.",
+          "level_id": 4,
+          "name": "Denial of Service",
+          "reference": Array [
+            Object {
+              "ref_id": "http://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20100922-nat",
+              "ref_url": "http://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20100922-nat",
+              "source": "tools.cisco.com",
+            },
+          ],
+          "remediation": "Use vendor's advisory: http://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20100922-nat",
+          "uid": "172094",
+        },
+        Object {
+          "description": "Unspecified vulnerability in the NAT for H.225.0 implementation in Cisco IOS 12.1 through 12.4 and 15.0 through 15.1 allows remote attackers to cause a denial of service (device reload) via transit traffic, aka Bug ID CSCtd86472.",
+          "level_id": 4,
+          "name": "Denial of Service",
+          "reference": Array [
+            Object {
+              "ref_id": "http://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20100922-nat",
+              "ref_url": "http://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20100922-nat",
+              "source": "tools.cisco.com",
+            },
+          ],
+          "remediation": "Use vendor's advisory: http://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20100922-nat",
+          "uid": "172095",
+        },
+        Object {
+          "description": "Cisco IOS 12.2 through 12.4, when certain PMTUD, SNAT, or window-size configurations are used, allows remote attackers to cause a denial of service (infinite loop, and device reload or hang) via a TCP segment with crafted options, aka Bug ID CSCsz75186.",
+          "level_id": 4,
+          "name": "Denial of Service",
+          "reference": Array [
+            Object {
+              "ref_id": "http://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20100324-tcp",
+              "ref_url": "http://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20100324-tcp",
+              "source": "tools.cisco.com",
+            },
+          ],
+          "remediation": "Use vendor's advisory: http://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20100324-tcp",
+          "uid": "174075",
+        },
+        Object {
+          "description": "Cisco IOS and IOS XE allow remote attackers to cause a denial of service (interface queue wedge) via malformed H.323 packets.",
+          "level_id": 4,
+          "name": "Denial of Service",
+          "reference": Array [
+            Object {
+              "ref_id": "http://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20100324-h323",
+              "ref_url": "http://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20100324-h323",
+              "source": "tools.cisco.com",
+            },
+            Object {
+              "ref_id": "CVE-2010-0582",
+              "ref_url": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2010-0582",
+              "source": "CVE",
+            },
+          ],
+          "remediation": "Use vendor's advisory: http://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20100324-h323",
+          "uid": "174076",
+        },
+        Object {
+          "description": "The SIP implementation in Cisco IOS 12.3 and 12.4 allows remote attackers to cause a denial of service (device reload) via a malformed SIP message, aka Bug ID CSCtb93416, the \\"SIP Message Handling Denial of Service Vulnerability.\\"",
+          "level_id": 4,
+          "name": "Denial of Service",
+          "reference": Array [
+            Object {
+              "ref_id": "http://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20100324-sip",
+              "ref_url": "http://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20100324-sip",
+              "source": "tools.cisco.com",
+            },
+          ],
+          "remediation": "Use vendor's advisory: http://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20100324-sip",
+          "uid": "174078",
+        },
+        Object {
+          "description": "Unspecified vulnerability in Cisco IOS 12.0 through 12.4, IOS XE 2.1.x through 2.3.x before 2.3.2, and IOS XR 3.2.x through 3.4.3, when Multiprotocol Label Switching (MPLS) and Label Distribution Protocol (LDP) are enabled, allows remote attackers to cause a denial of service (device reload or process restart) via a crafted LDP packet, aka Bug IDs CSCsz45567 and CSCsj25893.",
+          "level_id": 4,
+          "name": "Denial of Service",
+          "reference": Array [
+            Object {
+              "ref_id": "http://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20100324-ldp",
+              "ref_url": "http://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20100324-ldp",
+              "source": "tools.cisco.com",
+            },
+          ],
+          "remediation": "Use vendor's advisory: http://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20100324-ldp",
+          "uid": "174081",
+        },
+        Object {
+          "description": "The IKE implementation in Cisco IOS 12.2 through 12.4 on Cisco 7200 and 7301 routers with VAM2+ allows remote attackers to cause a denial of service (device reload) via a malformed IKE packet, aka Bug ID CSCtb13491.",
+          "level_id": 4,
+          "name": "Denial of Service",
+          "reference": Array [
+            Object {
+              "ref_id": "http://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20100324-ipsec",
+              "ref_url": "http://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20100324-ipsec",
+              "source": "tools.cisco.com",
+            },
+          ],
+          "remediation": "Use vendor's advisory: http://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20100324-ipsec",
+          "uid": "174083",
+        },
+        Object {
+          "description": "Cisco IOS 12.1 through 12.4, when Cisco Unified Communications Manager Express (CME) or Cisco Unified Survivable Remote Site Telephony (SRST) is enabled, allows remote attackers to cause a denial of service (device reload) via a malformed Skinny Client Control Protocol (SCCP) message, aka Bug ID CSCsz48614, the \\"SCCP Packet Processing Denial of Service Vulnerability.\\"",
+          "level_id": 4,
+          "name": "Denial of Service",
+          "reference": Array [
+            Object {
+              "ref_id": "CVE-2010-0585",
+              "ref_url": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2010-0585",
+              "source": "CVE",
+            },
+            Object {
+              "ref_id": "http://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20100324-cucme",
+              "ref_url": "http://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20100324-cucme",
+              "source": "tools.cisco.com",
+            },
+          ],
+          "remediation": "Use vendor's advisory: http://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20100324-cucme",
+          "uid": "175303",
+        },
+        Object {
+          "description": "The NAT implementation in Cisco IOS 12.1 through 12.4 and 15.0 through 15.1, and IOS XE 3.1.xSG, allows remote attackers to cause a denial of service (device reload or hang) via malformed NetMeeting Directory (aka Internet Locator Service or ILS) LDAP traffic, aka Bug ID CSCtd10712.",
+          "level_id": 4,
+          "name": "Denial of Service",
+          "reference": Array [
+            Object {
+              "ref_id": "CVE-2011-0946",
+              "ref_url": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2011-0946",
+              "source": "CVE",
+            },
+            Object {
+              "ref_id": "http://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20110928-nat",
+              "ref_url": "http://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20110928-nat",
+              "source": "tools.cisco.com",
+            },
+          ],
+          "remediation": "Use vendor's advisory: http://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20110928-nat",
+          "uid": "176264",
+        },
+        Object {
+          "description": "Unspecified vulnerability in the NAT implementation in Cisco IOS 12.1 through 12.4 and 15.0 through 15.1, and IOS XE 3.1.xSG, allows remote attackers to cause a denial of service (device reload or hang) by sending crafted SIP packets to TCP port 5060, aka Bug ID CSCso02147.",
+          "level_id": 4,
+          "name": "Denial of Service",
+          "reference": Array [
+            Object {
+              "ref_id": "CVE-2011-3276",
+              "ref_url": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2011-3276",
+              "source": "CVE",
+            },
+            Object {
+              "ref_id": "http://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20110928-nat",
+              "ref_url": "http://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20110928-nat",
+              "source": "tools.cisco.com",
+            },
+          ],
+          "remediation": "Use vendor's advisory: http://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20110928-nat",
+          "uid": "176265",
+        },
+        Object {
+          "description": "The provider-edge MPLS NAT implementation in Cisco IOS 12.1 through 12.4 and 15.0 through 15.1, and IOS XE 3.1.xSG, allows remote attackers to cause a denial of service (device reload) via a malformed SIP packet to UDP port 5060, aka Bug ID CSCti98219.",
+          "level_id": 4,
+          "name": "Denial of Service",
+          "reference": Array [
+            Object {
+              "ref_id": "CVE-2011-3279",
+              "ref_url": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2011-3279",
+              "source": "CVE",
+            },
+            Object {
+              "ref_id": "http://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20110928-nat",
+              "ref_url": "http://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20110928-nat",
+              "source": "tools.cisco.com",
+            },
+          ],
+          "remediation": "Use vendor's advisory: http://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20110928-nat",
+          "uid": "176266",
+        },
+        Object {
+          "description": "Unspecified vulnerability in the NAT implementation in Cisco IOS 12.1 through 12.4 and 15.0 through 15.1, and IOS XE 3.1.xSG, allows remote attackers to cause a denial of service (device reload) by sending crafted SIP packets to UDP port 5060, aka Bug ID CSCti48483.",
+          "level_id": 4,
+          "name": "Denial of Service",
+          "reference": Array [
+            Object {
+              "ref_id": "CVE-2011-3278",
+              "ref_url": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2011-3278",
+              "source": "CVE",
+            },
+            Object {
+              "ref_id": "http://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20110928-nat",
+              "ref_url": "http://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20110928-nat",
+              "source": "tools.cisco.com",
+            },
+          ],
+          "remediation": "Use vendor's advisory: http://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20110928-nat",
+          "uid": "176267",
+        },
+        Object {
+          "description": "Memory leak in the NAT implementation in Cisco IOS 12.1 through 12.4 and 15.0 through 15.1, and IOS XE 3.1.xSG, allows remote attackers to cause a denial of service (memory consumption or device reload) by sending crafted SIP packets to UDP port 5060, aka Bug ID CSCtj04672.",
+          "level_id": 4,
+          "name": "Denial of Service",
+          "reference": Array [
+            Object {
+              "ref_id": "CVE-2011-3280",
+              "ref_url": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2011-3280",
+              "source": "CVE",
+            },
+            Object {
+              "ref_id": "http://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20110928-nat",
+              "ref_url": "http://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20110928-nat",
+              "source": "tools.cisco.com",
+            },
+          ],
+          "remediation": "Use vendor's advisory: http://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20110928-nat",
+          "uid": "176268",
+        },
+        Object {
+          "description": "Unspecified vulnerability in the NAT implementation in Cisco IOS 12.1 through 12.4 and 15.0 through 15.1, and IOS XE 3.1.xSG, allows remote attackers to cause a denial of service (device reload) by sending crafted H.323 packets to TCP port 1720, aka Bug ID CSCth11006.",
+          "level_id": 4,
+          "name": "Denial of Service",
+          "reference": Array [
+            Object {
+              "ref_id": "CVE-2011-3277",
+              "ref_url": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2011-3277",
+              "source": "CVE",
+            },
+            Object {
+              "ref_id": "http://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20110928-nat",
+              "ref_url": "http://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20110928-nat",
+              "source": "tools.cisco.com",
+            },
+          ],
+          "remediation": "Use vendor's advisory: http://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20110928-nat",
+          "uid": "176269",
+        },
+        Object {
+          "description": "Memory leak in the Data-link switching (aka DLSw) feature in Cisco IOS 12.1 through 12.4 and 15.0 through 15.1, and IOS XE 3.1.xS before 3.1.3S and 3.2.xS before 3.2.1S, when implemented over Fast Sequence Transport (FST), allows remote attackers to cause a denial of service (memory consumption and device reload or hang) via a crafted IP protocol 91 packet, aka Bug ID CSCth69364.",
+          "level_id": 4,
+          "name": "Denial of Service",
+          "reference": Array [
+            Object {
+              "ref_id": "CVE-2011-0945",
+              "ref_url": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2011-0945",
+              "source": "CVE",
+            },
+            Object {
+              "ref_id": "http://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20110928-dlsw",
+              "ref_url": "http://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20110928-dlsw",
+              "source": "tools.cisco.com",
+            },
+          ],
+          "remediation": "Use vendor's advisory: http://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20110928-dlsw",
+          "uid": "176274",
+        },
+        Object {
+          "description": "The IKEv1 implementation in Cisco IOS 12.2 through 12.4 and 15.0 through 15.2 and IOS XE 2.1.x through 2.6.x and 3.1.xS through 3.4.xS before 3.4.2S, 3.5.xS before 3.5.1S, and 3.2.xSG before 3.2.2SG allows remote attackers to cause a denial of service (device reload) by sending IKE UDP packets over (1) IPv4 or (2) IPv6, aka Bug ID CSCts38429.",
+          "level_id": 4,
+          "name": "Denial of Service",
+          "reference": Array [
+            Object {
+              "ref_id": "CVE-2012-0381",
+              "ref_url": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2012-0381",
+              "source": "CVE",
+            },
+            Object {
+              "ref_id": "http://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20120328-ike",
+              "ref_url": "http://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20120328-ike",
+              "source": "tools.cisco.com",
+            },
+          ],
+          "remediation": "Use vendor's advisory: http://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20120328-ike",
+          "uid": "178380",
+        },
+        Object {
+          "description": "The Multicast Source Discovery Protocol (MSDP) implementation in Cisco IOS 12.0, 12.2 through 12.4, and 15.0 through 15.2 and IOS XE 2.1.x through 2.6.x and 3.1.xS through 3.4.xS before 3.4.1S and 3.1.xSG and 3.2.xSG before 3.2.2SG allows remote attackers to cause a denial of service (device reload) via encapsulated IGMP data in an MSDP packet, aka Bug ID CSCtr28857.",
+          "level_id": 4,
+          "name": "Denial of Service",
+          "reference": Array [
+            Object {
+              "ref_id": "CVE-2012-0382",
+              "ref_url": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2012-0382",
+              "source": "CVE",
+            },
+            Object {
+              "ref_id": "http://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20120328-msdp",
+              "ref_url": "http://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20120328-msdp",
+              "source": "tools.cisco.com",
+            },
+          ],
+          "remediation": "Use vendor's advisory: http://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20120328-msdp",
+          "uid": "178384",
+        },
+        Object {
+          "description": "Cisco IOS 12.2 through 12.4 and 15.0 through 15.2 and IOS XE 2.1.x through 2.6.x and 3.1.xS before 3.1.2S, 3.2.xS through 3.4.xS before 3.4.2S, 3.5.xS before 3.5.1S, and 3.1.xSG and 3.2.xSG before 3.2.2SG, when AAA authorization is enabled, allow remote authenticated users to bypass intended access restrictions and execute commands via a (1) HTTP or (2) HTTPS session, aka Bug ID CSCtr91106.",
+          "level_id": 4,
+          "name": "Access Restrictions Bypassing",
+          "reference": Array [
+            Object {
+              "ref_id": "CVE-2012-0384",
+              "ref_url": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2012-0384",
+              "source": "CVE",
+            },
+            Object {
+              "ref_id": "http://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20120328-pai",
+              "ref_url": "http://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20120328-pai",
+              "source": "tools.cisco.com",
+            },
+          ],
+          "remediation": "To fix the vulnerability update your software according to used platform. All necessary information is available here: http://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20120328-pai",
+          "uid": "178386",
+        },
+        Object {
+          "description": "The DHCPv6 server in Cisco IOS 12.2 through 12.4 and 15.0 through 15.2 and IOS XE 2.1.x through 2.6.x, 3.1.xS before 3.1.4S, 3.1.xSG and 3.2.xSG before 3.2.5SG, 3.2.xS, 3.2.xXO, 3.3.xS, and 3.3.xSG before 3.3.1SG allows remote attackers to cause a denial of service (device reload) via a malformed DHCPv6 packet, aka Bug ID CSCto57723.",
+          "level_id": 4,
+          "name": "Denial of Service",
+          "reference": Array [
+            Object {
+              "ref_id": "CVE-2012-4623",
+              "ref_url": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2012-4623",
+              "source": "CVE",
+            },
+            Object {
+              "ref_id": "http://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20120926-dhcpv6",
+              "ref_url": "http://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20120926-dhcpv6",
+              "source": "tools.cisco.com",
+            },
+          ],
+          "remediation": "Use vendor's advisory: http://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20120926-dhcpv6",
+          "uid": "180491",
+        },
+        Object {
+          "description": "The SIP implementation in Cisco Unified Communications Manager (CUCM) 6.x and 7.x before 7.1(5b)su5, 8.x before 8.5(1)su4, and 8.6 before 8.6(2a)su1; Cisco IOS 12.2 through 12.4 and 15.0 through 15.2; and Cisco IOS XE 3.3.xSG before 3.3.1SG, 3.4.xS, and 3.5.xS allows remote attackers to cause a denial of service (service crash or device reload) via a crafted SIP message containing an SDP session description, aka Bug IDs CSCtw66721, CSCtj33003, and CSCtw84664.",
+          "level_id": 4,
+          "name": "Denial of Service",
+          "reference": Array [
+            Object {
+              "ref_id": "CVE-2012-3949",
+              "ref_url": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2012-3949",
+              "source": "CVE",
+            },
+            Object {
+              "ref_id": "http://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20120926-sip",
+              "ref_url": "http://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20120926-sip",
+              "source": "tools.cisco.com",
+            },
+            Object {
+              "ref_id": "http://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20120926-cucm",
+              "ref_url": "http://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20120926-cucm",
+              "source": "tools.cisco.com",
+            },
+          ],
+          "remediation": "Use vendor's advisory: http://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20120926-sip http://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20120926-cucm",
+          "uid": "180494",
+        },
+        Object {
+          "description": "The Protocol Translation (PT) functionality in Cisco IOS 12.3 through 12.4 and 15.0 through 15.3, when one-step port-23 translation or a Telnet-to-PAD ruleset is configured, does not properly validate TCP connection information, which allows remote attackers to cause a denial of service (device reload) via an attempted connection to a PT resource, aka Bug ID CSCtz35999.",
+          "level_id": 4,
+          "name": "Denial of Service",
+          "reference": Array [
+            Object {
+              "ref_id": "CVE-2013-1147",
+              "ref_url": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-1147",
+              "source": "CVE",
+            },
+            Object {
+              "ref_id": "http://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20130327-pt",
+              "ref_url": "http://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20130327-pt",
+              "source": "tools.cisco.com",
+            },
+          ],
+          "remediation": "Use vendor's advisory: http://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20130327-pt",
+          "uid": "181417",
+        },
+        Object {
+          "description": "Race condition in the VRF-aware NAT feature in Cisco IOS 12.2 through 12.4 and 15.0 through 15.2 allows remote attackers to cause a denial of service (memory consumption) via IPv4 packets, aka Bug IDs CSCtg47129 and CSCtz96745.",
+          "level_id": 4,
+          "name": "Race condition",
+          "reference": Array [
+            Object {
+              "ref_id": "CVE-2013-1142",
+              "ref_url": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-1142",
+              "source": "CVE",
+            },
+            Object {
+              "ref_id": "http://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20130327-nat",
+              "ref_url": "http://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20130327-nat",
+              "source": "tools.cisco.com",
+            },
+            Object {
+              "ref_id": "CVE-2013-1142",
+              "ref_url": "http://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/Cisco-SA-20130327-CVE-2013-1142",
+              "source": "CVE",
+            },
+          ],
+          "remediation": "Use vendor's advisory: http://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20130327-nat http://tools.cisco.com/security/center/content/CiscoSecurityNotice/CVE-2013-1142",
+          "uid": "181419",
+        },
+        Object {
+          "description": "The OSPF implementation in Cisco IOS, IOS-XE, ASA and PIX, FWSM, NX-OS, and StarOS does not properly validate Link State Advertisement (LSA) type 1 packets before performing operations on the LSA database, which allows remote attackers to cause a denial of service (routing disruption) or obtain sensitive packet information via a (1) unicast or (2) multicast packet, aka Bug IDs CSCug34485, CSCug34469, CSCug39762, CSCug63304, and CSCug39795.",
+          "level_id": 3,
+          "name": "Information Disclosure",
+          "reference": Array [
+            Object {
+              "ref_id": "CVE-2013-0149",
+              "ref_url": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-0149",
+              "source": "CVE",
+            },
+            Object {
+              "ref_id": "http://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20130801-lsaospf",
+              "ref_url": "http://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20130801-lsaospf",
+              "source": "tools.cisco.com",
+            },
+          ],
+          "remediation": "Use vendor's advisory: http://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20130801-lsaospf",
+          "uid": "181997",
+        },
+        Object {
+          "description": "Cisco IOS and IOS XE allows remote attackers to cause a denial of service (device reload) via crafted DHCP packets that are processed locally by a (1) server or (2) relay agent, aka Bug ID CSCug31561.",
+          "level_id": 4,
+          "name": "Denial of Service",
+          "reference": Array [
+            Object {
+              "ref_id": "CVE-2013-5475",
+              "ref_url": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-5475",
+              "source": "CVE",
+            },
+            Object {
+              "ref_id": "http://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20130925-dhcp",
+              "ref_url": "http://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20130925-dhcp",
+              "source": "tools.cisco.com",
+            },
+          ],
+          "remediation": "Use vendor's advisory: http://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20130925-dhcp",
+          "uid": "182436",
+        },
+        Object {
+          "description": "Race condition in the IPv6 virtual fragmentation reassembly (VFR) implementation in Cisco IOS 12.2 through 12.4 and 15.0 through 15.3 allows remote attackers to cause a denial of service (device reload or hang) via fragmented IPv6 packets, aka Bug ID CSCud64812.",
+          "level_id": 4,
+          "name": "Race condition",
+          "reference": Array [
+            Object {
+              "ref_id": "CVE-2013-5474",
+              "ref_url": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-5474",
+              "source": "CVE",
+            },
+            Object {
+              "ref_id": "http://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20130925-ipv6vfr",
+              "ref_url": "http://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20130925-ipv6vfr",
+              "source": "tools.cisco.com",
+            },
+          ],
+          "remediation": "Use vendor's advisory: http://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20130925-ipv6vfr",
+          "uid": "182437",
+        },
+        Object {
+          "description": "The Application Layer Gateway (ALG) module in Cisco IOS 12.2 through 12.4 and 15.0 through 15.4, when NAT is used, allows remote attackers to cause a denial of service (device reload) via crafted DNS packets, aka Bug ID CSCue00996.",
+          "level_id": 4,
+          "name": "Denial of Service",
+          "reference": Array [
+            Object {
+              "ref_id": "CVE-2014-2111",
+              "ref_url": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-2111",
+              "source": "CVE",
+            },
+            Object {
+              "ref_id": "http://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20140326-nat",
+              "ref_url": "http://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20140326-nat",
+              "source": "tools.cisco.com",
+            },
+          ],
+          "remediation": "Use vendor's advisory: http://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20140326-nat",
+          "uid": "183503",
+        },
+        Object {
+          "description": "The TCP Input module in Cisco IOS 12.2 through 12.4 and 15.0 through 15.4, when NAT is used, allows remote attackers to cause a denial of service (memory consumption or device reload) via crafted TCP packets, aka Bug IDs CSCuh33843 and CSCuj41494.",
+          "level_id": 4,
+          "name": "Denial of Service",
+          "reference": Array [
+            Object {
+              "ref_id": "CVE-2014-2109",
+              "ref_url": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-2109",
+              "source": "CVE",
+            },
+            Object {
+              "ref_id": "http://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20140326-nat",
+              "ref_url": "http://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20140326-nat",
+              "source": "tools.cisco.com",
+            },
+          ],
+          "remediation": "Use vendor's advisory: http://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20140326-nat",
+          "uid": "183504",
+        },
+        Object {
+          "description": "Memory leak in the TCP input module in Cisco and IOS XE allows remote attackers to cause a denial of service (memory consumption or device reload) by sending crafted TCP packets over (1) IPv4 or (2) IPv6, aka Bug ID CSCum94811.",
+          "level_id": 4,
+          "name": "Memory Leak",
+          "reference": Array [
+            Object {
+              "ref_id": "CVE-2015-0646",
+              "ref_url": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2015-0646",
+              "source": "CVE",
+            },
+            Object {
+              "ref_id": "http://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20150325-tcpleak",
+              "ref_url": "http://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20150325-tcpleak",
+              "source": "tools.cisco.com",
+            },
+          ],
+          "remediation": "Use vendor's advisory: http://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20150325-tcpleak",
+          "uid": "184350",
+        },
+        Object {
+          "description": "The symmetric-key feature in the receive function in ntp_proto.c in ntpd in NTP 4.x before 4.2.8p2 requires a correct MAC only if the MAC field has a nonzero length, which makes it easier for man-in-the-middle attackers to spoof packets by omitting the MAC.",
+          "level_id": 1,
+          "name": "Spoofing",
+          "reference": Array [
+            Object {
+              "ref_id": "CVE-2015-1798",
+              "ref_url": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2015-1798",
+              "source": "CVE",
+            },
+            Object {
+              "ref_id": "http://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20150408-ntpd",
+              "ref_url": "http://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20150408-ntpd",
+              "source": "tools.cisco.com",
+            },
+          ],
+          "remediation": "Use vendor's advisory: https://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20150408-ntpd",
+          "uid": "186281",
+        },
+        Object {
+          "description": "The symmetric-key feature in the receive function in ntp_proto.c in ntpd in NTP 3.x and 4.x before 4.2.8p2 performs state-variable updates upon receiving certain invalid packets, which makes it easier for man-in-the-middle attackers to cause a denial of service (synchronization loss) by spoofing the source IP address of a peer.",
+          "level_id": 2,
+          "name": "Denial of Service",
+          "reference": Array [
+            Object {
+              "ref_id": "CVE-2015-1799",
+              "ref_url": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2015-1799",
+              "source": "CVE",
+            },
+          ],
+          "remediation": "Use vendor's advisory: https://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20150408-ntpd",
+          "uid": "186282",
+        },
+        Object {
+          "description": "The server IKEv1 implementation in Cisco IOS, IOS XE, IOS XR and PIX allows remote attackers to obtain sensitive information from device memory via a Security Association (SA) negotiation request, aka Bug IDs CSCvb29204 and CSCvb36055 or BENIGNCERTAIN.",
+          "level_id": 3,
+          "name": "Information Disclosure",
+          "reference": Array [
+            Object {
+              "ref_id": "CVE-2016-6415",
+              "ref_url": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2016-6415",
+              "source": "CVE",
+            },
+            Object {
+              "ref_id": "http://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20160916-ikev1",
+              "ref_url": "http://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20160916-ikev1",
+              "source": "tools.cisco.com",
+            },
+          ],
+          "remediation": "Use vendor's advisory: https://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20160916-ikev1",
+          "uid": "187015",
+        },
+        Object {
+          "description": "The DNS forwarder in Cisco IOS and IOS XE allows remote attackers to obtain sensitive information from process memory or cause a denial of service (data corruption or device reload) via a crafted DNS response, aka Bug ID CSCup90532.",
+          "level_id": 4,
+          "name": "Information Disclosure",
+          "reference": Array [
+            Object {
+              "ref_id": "CVE-2016-6380",
+              "ref_url": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2016-6380",
+              "source": "CVE",
+            },
+            Object {
+              "ref_id": "http://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20160928-dns",
+              "ref_url": "http://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20160928-dns",
+              "source": "tools.cisco.com",
+            },
+          ],
+          "remediation": "Use vendor's advisory: https://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20160928-dns",
+          "uid": "187303",
+        },
+        Object {
+          "description": "Cisco IOS and IOS XE allow remote attackers to cause a denial of service (device reload) via crafted fields in an H.323 message, aka Bug ID CSCux04257.",
+          "level_id": 4,
+          "name": "Denial of Service",
+          "reference": Array [
+            Object {
+              "ref_id": "CVE-2016-6384",
+              "ref_url": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2016-6384",
+              "source": "CVE",
+            },
+            Object {
+              "ref_id": "http://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20160928-h323",
+              "ref_url": "http://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20160928-h323",
+              "source": "tools.cisco.com",
+            },
+          ],
+          "remediation": "Use vendor's advisory: https://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20160928-h323",
+          "uid": "187304",
+        },
+        Object {
+          "description": "Vulnerability in ntpd allows local authenticated users to cause a denial of service via a specially crafted packet.",
+          "level_id": 2,
+          "name": "Denial of Service",
+          "reference": Array [
+            Object {
+              "ref_id": "CVE-2015-7855",
+              "ref_url": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2015-7855",
+              "source": "CVE",
+            },
+            Object {
+              "ref_id": "http://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20151021-ntp",
+              "ref_url": "http://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20151021-ntp",
+              "source": "tools.cisco.com",
+            },
+          ],
+          "remediation": "Use vendor's advisory: https://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20151021-ntp",
+          "uid": "187396",
+        },
+        Object {
+          "description": "NTP, when configured in broadcast mode, allows man-in-the-middle attackers to conduct replay attacks by sniffing the network.",
+          "level_id": 3,
+          "name": "Replay Attack",
+          "reference": Array [
+            Object {
+              "ref_id": "CVE-2015-7973",
+              "ref_url": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2015-7973",
+              "source": "CVE",
+            },
+            Object {
+              "ref_id": "http://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20160127-ntpd",
+              "ref_url": "http://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20160127-ntpd",
+              "source": "tools.cisco.com",
+            },
+          ],
+          "remediation": "Use vendor's advisory: http://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20160127-ntpd",
+          "uid": "187924",
+        },
+        Object {
+          "description": "NTP does not verify peer associations of symmetric keys when authenticating packets, which might allow remote attackers to conduct impersonation attacks via an arbitrary trusted key, aka a \\"skeleton key.\\"",
+          "level_id": 1,
+          "name": "Impersonation",
+          "reference": Array [
+            Object {
+              "ref_id": "CVE-2015-7974",
+              "ref_url": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2015-7974",
+              "source": "CVE",
+            },
+            Object {
+              "ref_id": "http://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20160127-ntpd",
+              "ref_url": "http://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20160127-ntpd",
+              "source": "tools.cisco.com",
+            },
+          ],
+          "remediation": "Use vendor's advisory: http://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20160127-ntpd",
+          "uid": "187927",
+        },
+        Object {
+          "description": "NTP allows remote attackers to cause a denial of service (client-server association tear down) by sending broadcast packets with invalid authentication to a broadcast client.",
+          "level_id": 3,
+          "name": "Denial of Service",
+          "reference": Array [
+            Object {
+              "ref_id": "CVE-2015-7979",
+              "ref_url": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2015-7979",
+              "source": "CVE",
+            },
+            Object {
+              "ref_id": "http://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20160127-ntpd",
+              "ref_url": "http://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20160127-ntpd",
+              "source": "tools.cisco.com",
+            },
+          ],
+          "remediation": "Use vendor's advisory: http://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20160127-ntpd",
+          "uid": "187930",
+        },
+        Object {
+          "description": "ntpq in NTP allows remote attackers to obtain origin timestamps and then impersonate peers via unspecified vectors.",
+          "level_id": 3,
+          "name": "Impersonation",
+          "reference": Array [
+            Object {
+              "ref_id": "CVE-2015-8139",
+              "ref_url": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2015-8139",
+              "source": "CVE",
+            },
+            Object {
+              "ref_id": "http://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20160127-ntpd",
+              "ref_url": "http://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20160127-ntpd",
+              "source": "tools.cisco.com",
+            },
+          ],
+          "remediation": "Use vendor's advisory: http://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20160127-ntpd",
+          "uid": "187931",
+        },
+        Object {
+          "description": "NTP allows remote attackers to bypass the origin timestamp validation via a packet with an origin timestamp set to zero.",
+          "level_id": 3,
+          "name": "Security Bypass",
+          "reference": Array [
+            Object {
+              "ref_id": "CVE-2015-8138",
+              "ref_url": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2015-8138",
+              "source": "CVE",
+            },
+            Object {
+              "ref_id": "http://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20160127-ntpd",
+              "ref_url": "http://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20160127-ntpd",
+              "source": "tools.cisco.com",
+            },
+          ],
+          "remediation": "Use vendor's advisory: http://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20160127-ntpd",
+          "uid": "187932",
+        },
+        Object {
+          "description": "The ntpq protocol in NTP allows remote attackers to conduct replay attacks by sniffing the network.",
+          "level_id": 3,
+          "name": "Replay Attack",
+          "reference": Array [
+            Object {
+              "ref_id": "CVE-2015-8140",
+              "ref_url": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2015-8140",
+              "source": "CVE",
+            },
+            Object {
+              "ref_id": "http://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20160127-ntpd",
+              "ref_url": "http://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20160127-ntpd",
+              "source": "tools.cisco.com",
+            },
+          ],
+          "remediation": "Use vendor's advisory: http://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20160127-ntpd",
+          "uid": "187933",
+        },
+        Object {
+          "description": "The getresponse function in ntpq in NTP allows remote attackers to cause a denial of service (infinite loop) via crafted packets with incorrect values.",
+          "level_id": 2,
+          "name": "Denial of Service",
+          "reference": Array [
+            Object {
+              "ref_id": "CVE-2015-8158",
+              "ref_url": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2015-8158",
+              "source": "CVE",
+            },
+            Object {
+              "ref_id": "http://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20160127-ntpd",
+              "ref_url": "http://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20160127-ntpd",
+              "source": "tools.cisco.com",
+            },
+          ],
+          "remediation": "Use vendor's advisory: http://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20160127-ntpd",
+          "uid": "187934",
+        },
+        Object {
+          "description": "The debug-logging (aka debug cns) feature in Cisco Networking Services (CNS) for IOS allows local users to obtain sensitive information by reading an unspecified file.",
+          "level_id": 1,
+          "name": "Information Disclosure",
+          "reference": Array [
+            Object {
+              "ref_id": "CVE-2015-6375",
+              "ref_url": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2015-6375",
+              "source": "CVE",
+            },
+            Object {
+              "ref_id": "http://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20151120-ns",
+              "ref_url": "http://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20151120-ns",
+              "source": "tools.cisco.com",
+            },
+          ],
+          "remediation": "Use vendor's advisory: http://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20151120-ns",
+          "uid": "188506",
+        },
+        Object {
+          "description": "These services can be leveraged by attackers to launch denial-of-service (DoS) and other attacks that would be prevented by packet inspection filters provided these services are disabled. Services that are not needed should be turned off because they present potential avenues of attack and may provide information that could be useful for gaining unauthorized access.
+",
+          "level_id": 3,
+          "name": "Rarely used services",
+          "reference": Array [],
+          "remediation": "Disable unused services. hostname(config)#no {service}",
+          "uid": "425398",
+        },
+        Object {
+          "description": "There are some defects in SSHv1 in encryption algorithms as well as in programs that use it. So if you use SSH service to manage devices install SSHv2.",
+          "level_id": 2,
+          "name": "Weak encryption in SSH protocol",
+          "reference": Array [],
+          "remediation": "Configure SSHv2 with the following command: hostname(config)# ip ssh version 2",
+          "uid": "510022",
+        },
+      ],
+    },
+    Object {
+      "domain_workgroup": "rvlab.net",
+      "firmware": Object {
+        "name": "C3725-ADVSECURITYK9-M",
+        "version": "12.4(16)",
+      },
+      "ifs": Array [
+        Object {
+          "address": Array [
+            Object {
+              "family": "ipv4",
+              "ip": "172.16.101.26",
+              "mask": "255.255.255.0",
+            },
+          ],
+          "mac": "c2:02:17:4a:00:00",
+        },
+      ],
+      "modelNumber": "3725",
+      "name": "c3725-2.rvlab.net",
+      "os": "Cisco IOS 12.4(16)",
+      "ports": Array [
+        22,
+        80,
+        161,
+        67,
+        162,
+        2887,
+        52436,
+        54191,
+      ],
+      "sn": undefined,
+      "software": Array [],
+      "updated_at": "2018-11-10T15:19:12+03:00",
+      "users": Array [],
+      "vuln_discovery_date": "2018-11-10T15:19:12+03:00",
+      "vuln_elimination_date": "2018-11-10T15:19:12+03:00",
+      "vulnerabilities": Array [
+        Object {
+          "description": "Versions 1.33 and 1.5 have insufficient cryptographic security.",
+          "isNetworkVulnerability": true,
+          "level_id": 2,
+          "name": "Weak Cryptography",
+          "port": 22,
+          "protocol": "tcp",
+          "reference": Array [],
+          "remediation": "Use protocol version 2.0.",
+          "uid": "1044",
+        },
+        Object {
+          "description": "The 'arcfour' is the Arcfour stream cipher. The Arcfour cipher is believed to be compatible with the RC4 cipher. RFC 4253 states that Arcfour (and RC4) has problems with weak keys, and should be used with caution.
+ If SSH server is configured to support Cipher Block Chaining (CBC) encryption, this may allow an attacker to recover plaintext data from the ciphertext.",
+          "isNetworkVulnerability": true,
+          "level_id": 1,
+          "name": "SSH Weak Cryptography Ciphers",
+          "port": 22,
+          "protocol": "tcp",
+          "reference": Array [
+            Object {
+              "ref_id": "https://www.ietf.org/rfc/rfc4253.txt",
+              "ref_url": "https://www.ietf.org/rfc/rfc4253.txt",
+              "source": "www.ietf.org",
+            },
+            Object {
+              "ref_id": "CVE-2008-5161",
+              "ref_url": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2008-5161",
+              "source": "CVE",
+            },
+            Object {
+              "ref_id": "http://www.openssh.com/txt/release-7.1",
+              "ref_url": "http://www.openssh.com/txt/release-7.1",
+              "source": "www.openssh.com",
+            },
+            Object {
+              "ref_id": "http://www.openssh.com/txt/release-7.6",
+              "ref_url": "http://www.openssh.com/txt/release-7.6",
+              "source": "www.openssh.com",
+            },
+          ],
+          "remediation": "Disable the listed encryption algorithms.",
+          "uid": "8365",
+        },
+        Object {
+          "description": "Multiple cross-site scripting (XSS) vulnerabilities in the HTTP server in Cisco IOS 12.4(23) allow remote attackers to inject arbitrary web script or HTML via the PATH_INFO to the default URI under (1) level/15/exec/-/ or (2) exec/, a different vulnerability than CVE-2008-3821.",
+          "level_id": 2,
+          "name": "Cross-Site Scripting",
+          "reference": Array [
+            Object {
+              "ref_id": "BID/33625",
+              "ref_url": "http://www.securityfocus.com/bid/33625",
+              "source": "SecurityFocus",
+            },
+          ],
+          "remediation": "Use vendor's advisory: http://tools.cisco.com/security/center/content/CiscoSecurityResponse/cisco-sr-20090114-http",
+          "uid": "171861",
+        },
+        Object {
+          "description": "Cross-site request forgery (CSRF) vulnerability in the HTTP server in Cisco IOS 12.4(23) allows remote attackers to execute arbitrary commands, as demonstrated by executing the hostname command with a level/15/configure/-/hostname request.",
+          "level_id": 3,
+          "name": "Cross-Site Request Forgery Vulnerability",
+          "reference": Array [],
+          "remediation": "To fix the vulnerability update your software according to used platform. All necessary information is available here: http://www.cisco.com/",
+          "uid": "171862",
+        },
+        Object {
+          "description": "The SSLVPN feature in Cisco IOS 12.3 through 12.4 allows remote attackers to cause a denial of service (device reload or hang) via a crafted HTTPS packet.",
+          "level_id": 4,
+          "name": "Denial of Service",
+          "reference": Array [
+            Object {
+              "ref_id": "XFDB/49425",
+              "ref_url": "http://xforce.iss.net/xforce/xfdb/49425",
+              "source": "X-Force",
+            },
+            Object {
+              "ref_id": "BID/34239",
+              "ref_url": "http://www.securityfocus.com/bid/34239",
+              "source": "SecurityFocus",
+            },
+            Object {
+              "ref_id": "http://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20090325-webvpn",
+              "ref_url": "http://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20090325-webvpn",
+              "source": "tools.cisco.com",
+            },
+          ],
+          "remediation": "Use vendor's advisory: http://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20090325-webvpn",
+          "uid": "171942",
+        },
+        Object {
+          "description": "The (1) Cisco Unified Communications Manager Express; (2) SIP Gateway Signaling Support Over Transport Layer Security (TLS) Transport; (3) Secure Signaling and Media Encryption; (4) Blocks Extensible Exchange Protocol (BEEP); (5) Network Admission Control HTTP Authentication Proxy; (6) Per-user URL Redirect for EAPoUDP, Dot1x, and MAC Authentication Bypass; (7) Distributed Director with HTTP Redirects; and (8) TCP DNS features in Cisco IOS 12.0 through 12.4 do not properly handle IP sockets, which allows remote attackers to cause a denial of service (outage or resource consumption) via a series of crafted TCP packets.",
+          "level_id": 4,
+          "name": "Denial of Service",
+          "reference": Array [
+            Object {
+              "ref_id": "XFDB/49418",
+              "ref_url": "http://xforce.iss.net/xforce/xfdb/49418",
+              "source": "X-Force",
+            },
+            Object {
+              "ref_id": "BID/34242",
+              "ref_url": "http://www.securityfocus.com/bid/34242",
+              "source": "SecurityFocus",
+            },
+            Object {
+              "ref_id": "http://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20090325-ip",
+              "ref_url": "http://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20090325-ip",
+              "source": "tools.cisco.com",
+            },
+          ],
+          "remediation": "Use vendor's advisory: http://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20090325-ip",
+          "uid": "171945",
+        },
+        Object {
+          "description": "Devices that are running an affected version of Cisco IOS Software and configured for Mobile IPv6 or Mobile IP NAT Traversal feature are affected by a DoS vulnerability. A successful exploitation of this vulnerability could cause an interface to stop processing traffic until the system is restarted. Offending packets need to be destined to the router for a successful exploit.",
+          "level_id": 4,
+          "name": "Denial of Service",
+          "reference": Array [
+            Object {
+              "ref_id": "XFDB/49424",
+              "ref_url": "http://xforce.iss.net/xforce/xfdb/49424",
+              "source": "X-Force",
+            },
+            Object {
+              "ref_id": "BID/34241",
+              "ref_url": "http://www.securityfocus.com/bid/34241",
+              "source": "SecurityFocus",
+            },
+            Object {
+              "ref_id": "http://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20090325-mobileip",
+              "ref_url": "http://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20090325-mobileip",
+              "source": "tools.cisco.com",
+            },
+          ],
+          "remediation": "Use vendor's advisory: http://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20090325-mobileip",
+          "uid": "171947",
+        },
+        Object {
+          "description": "Devices that are running an affected version of Cisco IOS Software and configured for Mobile IPv6 or Mobile IP NAT Traversal feature are affected by a DoS vulnerability. A successful exploitation of this vulnerability could cause an interface to stop processing traffic until the system is restarted. Offending packets need to be destined to the router for a successful exploit.",
+          "level_id": 4,
+          "name": "Denial of Service",
+          "reference": Array [
+            Object {
+              "ref_id": "XFDB/49424",
+              "ref_url": "http://xforce.iss.net/xforce/xfdb/49424",
+              "source": "X-Force",
+            },
+            Object {
+              "ref_id": "BID/34241",
+              "ref_url": "http://www.securityfocus.com/bid/34241",
+              "source": "SecurityFocus",
+            },
+          ],
+          "remediation": "Use vendor's advisory: http://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20090325-mobileip",
+          "uid": "171948",
+        },
+        Object {
+          "description": "Unspecified vulnerability in the NAT for SIP implementation in Cisco IOS 12.1 through 12.4 and 15.0 through 15.1 allows remote attackers to cause a denial of service (device reload) via transit traffic on UDP port 5060, aka Bug ID CSCtf17624.",
+          "level_id": 4,
+          "name": "Denial of Service",
+          "reference": Array [
+            Object {
+              "ref_id": "http://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20100922-nat",
+              "ref_url": "http://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20100922-nat",
+              "source": "tools.cisco.com",
+            },
+          ],
+          "remediation": "Use vendor's advisory: http://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20100922-nat",
+          "uid": "172088",
+        },
+        Object {
+          "description": "Unspecified vulnerability in the H.323 implementation in Cisco IOS 12.1 through 12.4 and 15.0 through 15.1, and IOS XE 2.5.x before 2.5.2 and 2.6.x before 2.6.1, allows remote attackers to cause a denial of service (device reload) via crafted H.323 packets, aka Bug ID CSCtc73759.",
+          "level_id": 4,
+          "name": "Denial of Service",
+          "reference": Array [
+            Object {
+              "ref_id": "http://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20100922-h323",
+              "ref_url": "http://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20100922-h323",
+              "source": "tools.cisco.com",
+            },
+          ],
+          "remediation": "Use vendor's advisory: http://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20100922-h323",
+          "uid": "172089",
+        },
+        Object {
+          "description": "The IGMPv3 implementation in Cisco IOS and IOS XE, when PIM is enabled, allows remote attackers to cause a denial of service (device reload) via a malformed IGMP packet, aka Bug ID CSCte14603.",
+          "level_id": 4,
+          "name": "Denial of Service",
+          "reference": Array [
+            Object {
+              "ref_id": "http://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20100922-igmp",
+              "ref_url": "http://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20100922-igmp",
+              "source": "tools.cisco.com",
+            },
+          ],
+          "remediation": "Use vendor's advisory: http://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20100922-igmp",
+          "uid": "172091",
+        },
+        Object {
+          "description": "Unspecified vulnerability in the NAT for H.323 implementation in Cisco IOS 12.1 through 12.4 and 15.0 through 15.1 allows remote attackers to cause a denial of service (device reload) via transit traffic, aka Bug ID CSCtf91428.",
+          "level_id": 4,
+          "name": "Denial of Service",
+          "reference": Array [
+            Object {
+              "ref_id": "http://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20100922-nat",
+              "ref_url": "http://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20100922-nat",
+              "source": "tools.cisco.com",
+            },
+          ],
+          "remediation": "Use vendor's advisory: http://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20100922-nat",
+          "uid": "172094",
+        },
+        Object {
+          "description": "Unspecified vulnerability in the NAT for H.225.0 implementation in Cisco IOS 12.1 through 12.4 and 15.0 through 15.1 allows remote attackers to cause a denial of service (device reload) via transit traffic, aka Bug ID CSCtd86472.",
+          "level_id": 4,
+          "name": "Denial of Service",
+          "reference": Array [
+            Object {
+              "ref_id": "http://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20100922-nat",
+              "ref_url": "http://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20100922-nat",
+              "source": "tools.cisco.com",
+            },
+          ],
+          "remediation": "Use vendor's advisory: http://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20100922-nat",
+          "uid": "172095",
+        },
+        Object {
+          "description": "Cisco IOS 12.2 through 12.4, when certain PMTUD, SNAT, or window-size configurations are used, allows remote attackers to cause a denial of service (infinite loop, and device reload or hang) via a TCP segment with crafted options, aka Bug ID CSCsz75186.",
+          "level_id": 4,
+          "name": "Denial of Service",
+          "reference": Array [
+            Object {
+              "ref_id": "http://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20100324-tcp",
+              "ref_url": "http://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20100324-tcp",
+              "source": "tools.cisco.com",
+            },
+          ],
+          "remediation": "Use vendor's advisory: http://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20100324-tcp",
+          "uid": "174075",
+        },
+        Object {
+          "description": "Cisco IOS and IOS XE allow remote attackers to cause a denial of service (interface queue wedge) via malformed H.323 packets.",
+          "level_id": 4,
+          "name": "Denial of Service",
+          "reference": Array [
+            Object {
+              "ref_id": "http://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20100324-h323",
+              "ref_url": "http://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20100324-h323",
+              "source": "tools.cisco.com",
+            },
+            Object {
+              "ref_id": "CVE-2010-0582",
+              "ref_url": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2010-0582",
+              "source": "CVE",
+            },
+          ],
+          "remediation": "Use vendor's advisory: http://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20100324-h323",
+          "uid": "174076",
+        },
+        Object {
+          "description": "The SIP implementation in Cisco IOS 12.3 and 12.4 allows remote attackers to cause a denial of service (device reload) via a malformed SIP message, aka Bug ID CSCtb93416, the \\"SIP Message Handling Denial of Service Vulnerability.\\"",
+          "level_id": 4,
+          "name": "Denial of Service",
+          "reference": Array [
+            Object {
+              "ref_id": "http://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20100324-sip",
+              "ref_url": "http://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20100324-sip",
+              "source": "tools.cisco.com",
+            },
+          ],
+          "remediation": "Use vendor's advisory: http://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20100324-sip",
+          "uid": "174078",
+        },
+        Object {
+          "description": "Unspecified vulnerability in Cisco IOS 12.0 through 12.4, IOS XE 2.1.x through 2.3.x before 2.3.2, and IOS XR 3.2.x through 3.4.3, when Multiprotocol Label Switching (MPLS) and Label Distribution Protocol (LDP) are enabled, allows remote attackers to cause a denial of service (device reload or process restart) via a crafted LDP packet, aka Bug IDs CSCsz45567 and CSCsj25893.",
+          "level_id": 4,
+          "name": "Denial of Service",
+          "reference": Array [
+            Object {
+              "ref_id": "http://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20100324-ldp",
+              "ref_url": "http://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20100324-ldp",
+              "source": "tools.cisco.com",
+            },
+          ],
+          "remediation": "Use vendor's advisory: http://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20100324-ldp",
+          "uid": "174081",
+        },
+        Object {
+          "description": "The IKE implementation in Cisco IOS 12.2 through 12.4 on Cisco 7200 and 7301 routers with VAM2+ allows remote attackers to cause a denial of service (device reload) via a malformed IKE packet, aka Bug ID CSCtb13491.",
+          "level_id": 4,
+          "name": "Denial of Service",
+          "reference": Array [
+            Object {
+              "ref_id": "http://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20100324-ipsec",
+              "ref_url": "http://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20100324-ipsec",
+              "source": "tools.cisco.com",
+            },
+          ],
+          "remediation": "Use vendor's advisory: http://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20100324-ipsec",
+          "uid": "174083",
+        },
+        Object {
+          "description": "Cisco IOS 12.1 through 12.4, when Cisco Unified Communications Manager Express (CME) or Cisco Unified Survivable Remote Site Telephony (SRST) is enabled, allows remote attackers to cause a denial of service (device reload) via a malformed Skinny Client Control Protocol (SCCP) message, aka Bug ID CSCsz48614, the \\"SCCP Packet Processing Denial of Service Vulnerability.\\"",
+          "level_id": 4,
+          "name": "Denial of Service",
+          "reference": Array [
+            Object {
+              "ref_id": "CVE-2010-0585",
+              "ref_url": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2010-0585",
+              "source": "CVE",
+            },
+            Object {
+              "ref_id": "http://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20100324-cucme",
+              "ref_url": "http://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20100324-cucme",
+              "source": "tools.cisco.com",
+            },
+          ],
+          "remediation": "Use vendor's advisory: http://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20100324-cucme",
+          "uid": "175303",
+        },
+        Object {
+          "description": "The NAT implementation in Cisco IOS 12.1 through 12.4 and 15.0 through 15.1, and IOS XE 3.1.xSG, allows remote attackers to cause a denial of service (device reload or hang) via malformed NetMeeting Directory (aka Internet Locator Service or ILS) LDAP traffic, aka Bug ID CSCtd10712.",
+          "level_id": 4,
+          "name": "Denial of Service",
+          "reference": Array [
+            Object {
+              "ref_id": "CVE-2011-0946",
+              "ref_url": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2011-0946",
+              "source": "CVE",
+            },
+            Object {
+              "ref_id": "http://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20110928-nat",
+              "ref_url": "http://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20110928-nat",
+              "source": "tools.cisco.com",
+            },
+          ],
+          "remediation": "Use vendor's advisory: http://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20110928-nat",
+          "uid": "176264",
+        },
+        Object {
+          "description": "Unspecified vulnerability in the NAT implementation in Cisco IOS 12.1 through 12.4 and 15.0 through 15.1, and IOS XE 3.1.xSG, allows remote attackers to cause a denial of service (device reload or hang) by sending crafted SIP packets to TCP port 5060, aka Bug ID CSCso02147.",
+          "level_id": 4,
+          "name": "Denial of Service",
+          "reference": Array [
+            Object {
+              "ref_id": "CVE-2011-3276",
+              "ref_url": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2011-3276",
+              "source": "CVE",
+            },
+            Object {
+              "ref_id": "http://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20110928-nat",
+              "ref_url": "http://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20110928-nat",
+              "source": "tools.cisco.com",
+            },
+          ],
+          "remediation": "Use vendor's advisory: http://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20110928-nat",
+          "uid": "176265",
+        },
+        Object {
+          "description": "The provider-edge MPLS NAT implementation in Cisco IOS 12.1 through 12.4 and 15.0 through 15.1, and IOS XE 3.1.xSG, allows remote attackers to cause a denial of service (device reload) via a malformed SIP packet to UDP port 5060, aka Bug ID CSCti98219.",
+          "level_id": 4,
+          "name": "Denial of Service",
+          "reference": Array [
+            Object {
+              "ref_id": "CVE-2011-3279",
+              "ref_url": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2011-3279",
+              "source": "CVE",
+            },
+            Object {
+              "ref_id": "http://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20110928-nat",
+              "ref_url": "http://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20110928-nat",
+              "source": "tools.cisco.com",
+            },
+          ],
+          "remediation": "Use vendor's advisory: http://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20110928-nat",
+          "uid": "176266",
+        },
+        Object {
+          "description": "Unspecified vulnerability in the NAT implementation in Cisco IOS 12.1 through 12.4 and 15.0 through 15.1, and IOS XE 3.1.xSG, allows remote attackers to cause a denial of service (device reload) by sending crafted SIP packets to UDP port 5060, aka Bug ID CSCti48483.",
+          "level_id": 4,
+          "name": "Denial of Service",
+          "reference": Array [
+            Object {
+              "ref_id": "CVE-2011-3278",
+              "ref_url": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2011-3278",
+              "source": "CVE",
+            },
+            Object {
+              "ref_id": "http://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20110928-nat",
+              "ref_url": "http://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20110928-nat",
+              "source": "tools.cisco.com",
+            },
+          ],
+          "remediation": "Use vendor's advisory: http://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20110928-nat",
+          "uid": "176267",
+        },
+        Object {
+          "description": "Memory leak in the NAT implementation in Cisco IOS 12.1 through 12.4 and 15.0 through 15.1, and IOS XE 3.1.xSG, allows remote attackers to cause a denial of service (memory consumption or device reload) by sending crafted SIP packets to UDP port 5060, aka Bug ID CSCtj04672.",
+          "level_id": 4,
+          "name": "Denial of Service",
+          "reference": Array [
+            Object {
+              "ref_id": "CVE-2011-3280",
+              "ref_url": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2011-3280",
+              "source": "CVE",
+            },
+            Object {
+              "ref_id": "http://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20110928-nat",
+              "ref_url": "http://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20110928-nat",
+              "source": "tools.cisco.com",
+            },
+          ],
+          "remediation": "Use vendor's advisory: http://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20110928-nat",
+          "uid": "176268",
+        },
+        Object {
+          "description": "Unspecified vulnerability in the NAT implementation in Cisco IOS 12.1 through 12.4 and 15.0 through 15.1, and IOS XE 3.1.xSG, allows remote attackers to cause a denial of service (device reload) by sending crafted H.323 packets to TCP port 1720, aka Bug ID CSCth11006.",
+          "level_id": 4,
+          "name": "Denial of Service",
+          "reference": Array [
+            Object {
+              "ref_id": "CVE-2011-3277",
+              "ref_url": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2011-3277",
+              "source": "CVE",
+            },
+            Object {
+              "ref_id": "http://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20110928-nat",
+              "ref_url": "http://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20110928-nat",
+              "source": "tools.cisco.com",
+            },
+          ],
+          "remediation": "Use vendor's advisory: http://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20110928-nat",
+          "uid": "176269",
+        },
+        Object {
+          "description": "Memory leak in the Data-link switching (aka DLSw) feature in Cisco IOS 12.1 through 12.4 and 15.0 through 15.1, and IOS XE 3.1.xS before 3.1.3S and 3.2.xS before 3.2.1S, when implemented over Fast Sequence Transport (FST), allows remote attackers to cause a denial of service (memory consumption and device reload or hang) via a crafted IP protocol 91 packet, aka Bug ID CSCth69364.",
+          "level_id": 4,
+          "name": "Denial of Service",
+          "reference": Array [
+            Object {
+              "ref_id": "CVE-2011-0945",
+              "ref_url": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2011-0945",
+              "source": "CVE",
+            },
+            Object {
+              "ref_id": "http://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20110928-dlsw",
+              "ref_url": "http://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20110928-dlsw",
+              "source": "tools.cisco.com",
+            },
+          ],
+          "remediation": "Use vendor's advisory: http://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20110928-dlsw",
+          "uid": "176274",
+        },
+        Object {
+          "description": "The IKEv1 implementation in Cisco IOS 12.2 through 12.4 and 15.0 through 15.2 and IOS XE 2.1.x through 2.6.x and 3.1.xS through 3.4.xS before 3.4.2S, 3.5.xS before 3.5.1S, and 3.2.xSG before 3.2.2SG allows remote attackers to cause a denial of service (device reload) by sending IKE UDP packets over (1) IPv4 or (2) IPv6, aka Bug ID CSCts38429.",
+          "level_id": 4,
+          "name": "Denial of Service",
+          "reference": Array [
+            Object {
+              "ref_id": "CVE-2012-0381",
+              "ref_url": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2012-0381",
+              "source": "CVE",
+            },
+            Object {
+              "ref_id": "http://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20120328-ike",
+              "ref_url": "http://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20120328-ike",
+              "source": "tools.cisco.com",
+            },
+          ],
+          "remediation": "Use vendor's advisory: http://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20120328-ike",
+          "uid": "178380",
+        },
+        Object {
+          "description": "The Multicast Source Discovery Protocol (MSDP) implementation in Cisco IOS 12.0, 12.2 through 12.4, and 15.0 through 15.2 and IOS XE 2.1.x through 2.6.x and 3.1.xS through 3.4.xS before 3.4.1S and 3.1.xSG and 3.2.xSG before 3.2.2SG allows remote attackers to cause a denial of service (device reload) via encapsulated IGMP data in an MSDP packet, aka Bug ID CSCtr28857.",
+          "level_id": 4,
+          "name": "Denial of Service",
+          "reference": Array [
+            Object {
+              "ref_id": "CVE-2012-0382",
+              "ref_url": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2012-0382",
+              "source": "CVE",
+            },
+            Object {
+              "ref_id": "http://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20120328-msdp",
+              "ref_url": "http://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20120328-msdp",
+              "source": "tools.cisco.com",
+            },
+          ],
+          "remediation": "Use vendor's advisory: http://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20120328-msdp",
+          "uid": "178384",
+        },
+        Object {
+          "description": "Cisco IOS 12.2 through 12.4 and 15.0 through 15.2 and IOS XE 2.1.x through 2.6.x and 3.1.xS before 3.1.2S, 3.2.xS through 3.4.xS before 3.4.2S, 3.5.xS before 3.5.1S, and 3.1.xSG and 3.2.xSG before 3.2.2SG, when AAA authorization is enabled, allow remote authenticated users to bypass intended access restrictions and execute commands via a (1) HTTP or (2) HTTPS session, aka Bug ID CSCtr91106.",
+          "level_id": 4,
+          "name": "Access Restrictions Bypassing",
+          "reference": Array [
+            Object {
+              "ref_id": "CVE-2012-0384",
+              "ref_url": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2012-0384",
+              "source": "CVE",
+            },
+            Object {
+              "ref_id": "http://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20120328-pai",
+              "ref_url": "http://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20120328-pai",
+              "source": "tools.cisco.com",
+            },
+          ],
+          "remediation": "To fix the vulnerability update your software according to used platform. All necessary information is available here: http://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20120328-pai",
+          "uid": "178386",
+        },
+        Object {
+          "description": "The DHCPv6 server in Cisco IOS 12.2 through 12.4 and 15.0 through 15.2 and IOS XE 2.1.x through 2.6.x, 3.1.xS before 3.1.4S, 3.1.xSG and 3.2.xSG before 3.2.5SG, 3.2.xS, 3.2.xXO, 3.3.xS, and 3.3.xSG before 3.3.1SG allows remote attackers to cause a denial of service (device reload) via a malformed DHCPv6 packet, aka Bug ID CSCto57723.",
+          "level_id": 4,
+          "name": "Denial of Service",
+          "reference": Array [
+            Object {
+              "ref_id": "CVE-2012-4623",
+              "ref_url": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2012-4623",
+              "source": "CVE",
+            },
+            Object {
+              "ref_id": "http://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20120926-dhcpv6",
+              "ref_url": "http://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20120926-dhcpv6",
+              "source": "tools.cisco.com",
+            },
+          ],
+          "remediation": "Use vendor's advisory: http://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20120926-dhcpv6",
+          "uid": "180491",
+        },
+        Object {
+          "description": "The SIP implementation in Cisco Unified Communications Manager (CUCM) 6.x and 7.x before 7.1(5b)su5, 8.x before 8.5(1)su4, and 8.6 before 8.6(2a)su1; Cisco IOS 12.2 through 12.4 and 15.0 through 15.2; and Cisco IOS XE 3.3.xSG before 3.3.1SG, 3.4.xS, and 3.5.xS allows remote attackers to cause a denial of service (service crash or device reload) via a crafted SIP message containing an SDP session description, aka Bug IDs CSCtw66721, CSCtj33003, and CSCtw84664.",
+          "level_id": 4,
+          "name": "Denial of Service",
+          "reference": Array [
+            Object {
+              "ref_id": "CVE-2012-3949",
+              "ref_url": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2012-3949",
+              "source": "CVE",
+            },
+            Object {
+              "ref_id": "http://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20120926-sip",
+              "ref_url": "http://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20120926-sip",
+              "source": "tools.cisco.com",
+            },
+            Object {
+              "ref_id": "http://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20120926-cucm",
+              "ref_url": "http://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20120926-cucm",
+              "source": "tools.cisco.com",
+            },
+          ],
+          "remediation": "Use vendor's advisory: http://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20120926-sip http://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20120926-cucm",
+          "uid": "180494",
+        },
+        Object {
+          "description": "The Protocol Translation (PT) functionality in Cisco IOS 12.3 through 12.4 and 15.0 through 15.3, when one-step port-23 translation or a Telnet-to-PAD ruleset is configured, does not properly validate TCP connection information, which allows remote attackers to cause a denial of service (device reload) via an attempted connection to a PT resource, aka Bug ID CSCtz35999.",
+          "level_id": 4,
+          "name": "Denial of Service",
+          "reference": Array [
+            Object {
+              "ref_id": "CVE-2013-1147",
+              "ref_url": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-1147",
+              "source": "CVE",
+            },
+            Object {
+              "ref_id": "http://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20130327-pt",
+              "ref_url": "http://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20130327-pt",
+              "source": "tools.cisco.com",
+            },
+          ],
+          "remediation": "Use vendor's advisory: http://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20130327-pt",
+          "uid": "181417",
+        },
+        Object {
+          "description": "Race condition in the VRF-aware NAT feature in Cisco IOS 12.2 through 12.4 and 15.0 through 15.2 allows remote attackers to cause a denial of service (memory consumption) via IPv4 packets, aka Bug IDs CSCtg47129 and CSCtz96745.",
+          "level_id": 4,
+          "name": "Race condition",
+          "reference": Array [
+            Object {
+              "ref_id": "CVE-2013-1142",
+              "ref_url": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-1142",
+              "source": "CVE",
+            },
+            Object {
+              "ref_id": "http://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20130327-nat",
+              "ref_url": "http://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20130327-nat",
+              "source": "tools.cisco.com",
+            },
+            Object {
+              "ref_id": "CVE-2013-1142",
+              "ref_url": "http://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/Cisco-SA-20130327-CVE-2013-1142",
+              "source": "CVE",
+            },
+          ],
+          "remediation": "Use vendor's advisory: http://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20130327-nat http://tools.cisco.com/security/center/content/CiscoSecurityNotice/CVE-2013-1142",
+          "uid": "181419",
+        },
+        Object {
+          "description": "The OSPF implementation in Cisco IOS, IOS-XE, ASA and PIX, FWSM, NX-OS, and StarOS does not properly validate Link State Advertisement (LSA) type 1 packets before performing operations on the LSA database, which allows remote attackers to cause a denial of service (routing disruption) or obtain sensitive packet information via a (1) unicast or (2) multicast packet, aka Bug IDs CSCug34485, CSCug34469, CSCug39762, CSCug63304, and CSCug39795.",
+          "level_id": 3,
+          "name": "Information Disclosure",
+          "reference": Array [
+            Object {
+              "ref_id": "CVE-2013-0149",
+              "ref_url": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-0149",
+              "source": "CVE",
+            },
+            Object {
+              "ref_id": "http://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20130801-lsaospf",
+              "ref_url": "http://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20130801-lsaospf",
+              "source": "tools.cisco.com",
+            },
+          ],
+          "remediation": "Use vendor's advisory: http://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20130801-lsaospf",
+          "uid": "181997",
+        },
+        Object {
+          "description": "Cisco IOS and IOS XE allows remote attackers to cause a denial of service (device reload) via crafted DHCP packets that are processed locally by a (1) server or (2) relay agent, aka Bug ID CSCug31561.",
+          "level_id": 4,
+          "name": "Denial of Service",
+          "reference": Array [
+            Object {
+              "ref_id": "CVE-2013-5475",
+              "ref_url": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-5475",
+              "source": "CVE",
+            },
+            Object {
+              "ref_id": "http://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20130925-dhcp",
+              "ref_url": "http://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20130925-dhcp",
+              "source": "tools.cisco.com",
+            },
+          ],
+          "remediation": "Use vendor's advisory: http://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20130925-dhcp",
+          "uid": "182436",
+        },
+        Object {
+          "description": "Race condition in the IPv6 virtual fragmentation reassembly (VFR) implementation in Cisco IOS 12.2 through 12.4 and 15.0 through 15.3 allows remote attackers to cause a denial of service (device reload or hang) via fragmented IPv6 packets, aka Bug ID CSCud64812.",
+          "level_id": 4,
+          "name": "Race condition",
+          "reference": Array [
+            Object {
+              "ref_id": "CVE-2013-5474",
+              "ref_url": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-5474",
+              "source": "CVE",
+            },
+            Object {
+              "ref_id": "http://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20130925-ipv6vfr",
+              "ref_url": "http://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20130925-ipv6vfr",
+              "source": "tools.cisco.com",
+            },
+          ],
+          "remediation": "Use vendor's advisory: http://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20130925-ipv6vfr",
+          "uid": "182437",
+        },
+        Object {
+          "description": "The Application Layer Gateway (ALG) module in Cisco IOS 12.2 through 12.4 and 15.0 through 15.4, when NAT is used, allows remote attackers to cause a denial of service (device reload) via crafted DNS packets, aka Bug ID CSCue00996.",
+          "level_id": 4,
+          "name": "Denial of Service",
+          "reference": Array [
+            Object {
+              "ref_id": "CVE-2014-2111",
+              "ref_url": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-2111",
+              "source": "CVE",
+            },
+            Object {
+              "ref_id": "http://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20140326-nat",
+              "ref_url": "http://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20140326-nat",
+              "source": "tools.cisco.com",
+            },
+          ],
+          "remediation": "Use vendor's advisory: http://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20140326-nat",
+          "uid": "183503",
+        },
+        Object {
+          "description": "The TCP Input module in Cisco IOS 12.2 through 12.4 and 15.0 through 15.4, when NAT is used, allows remote attackers to cause a denial of service (memory consumption or device reload) via crafted TCP packets, aka Bug IDs CSCuh33843 and CSCuj41494.",
+          "level_id": 4,
+          "name": "Denial of Service",
+          "reference": Array [
+            Object {
+              "ref_id": "CVE-2014-2109",
+              "ref_url": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-2109",
+              "source": "CVE",
+            },
+            Object {
+              "ref_id": "http://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20140326-nat",
+              "ref_url": "http://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20140326-nat",
+              "source": "tools.cisco.com",
+            },
+          ],
+          "remediation": "Use vendor's advisory: http://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20140326-nat",
+          "uid": "183504",
+        },
+        Object {
+          "description": "Memory leak in the TCP input module in Cisco and IOS XE allows remote attackers to cause a denial of service (memory consumption or device reload) by sending crafted TCP packets over (1) IPv4 or (2) IPv6, aka Bug ID CSCum94811.",
+          "level_id": 4,
+          "name": "Memory Leak",
+          "reference": Array [
+            Object {
+              "ref_id": "CVE-2015-0646",
+              "ref_url": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2015-0646",
+              "source": "CVE",
+            },
+            Object {
+              "ref_id": "http://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20150325-tcpleak",
+              "ref_url": "http://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20150325-tcpleak",
+              "source": "tools.cisco.com",
+            },
+          ],
+          "remediation": "Use vendor's advisory: http://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20150325-tcpleak",
+          "uid": "184350",
+        },
+        Object {
+          "description": "The symmetric-key feature in the receive function in ntp_proto.c in ntpd in NTP 4.x before 4.2.8p2 requires a correct MAC only if the MAC field has a nonzero length, which makes it easier for man-in-the-middle attackers to spoof packets by omitting the MAC.",
+          "level_id": 1,
+          "name": "Spoofing",
+          "reference": Array [
+            Object {
+              "ref_id": "CVE-2015-1798",
+              "ref_url": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2015-1798",
+              "source": "CVE",
+            },
+            Object {
+              "ref_id": "http://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20150408-ntpd",
+              "ref_url": "http://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20150408-ntpd",
+              "source": "tools.cisco.com",
+            },
+          ],
+          "remediation": "Use vendor's advisory: https://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20150408-ntpd",
+          "uid": "186281",
+        },
+        Object {
+          "description": "The symmetric-key feature in the receive function in ntp_proto.c in ntpd in NTP 3.x and 4.x before 4.2.8p2 performs state-variable updates upon receiving certain invalid packets, which makes it easier for man-in-the-middle attackers to cause a denial of service (synchronization loss) by spoofing the source IP address of a peer.",
+          "level_id": 2,
+          "name": "Denial of Service",
+          "reference": Array [
+            Object {
+              "ref_id": "CVE-2015-1799",
+              "ref_url": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2015-1799",
+              "source": "CVE",
+            },
+          ],
+          "remediation": "Use vendor's advisory: https://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20150408-ntpd",
+          "uid": "186282",
+        },
+        Object {
+          "description": "The server IKEv1 implementation in Cisco IOS, IOS XE, IOS XR and PIX allows remote attackers to obtain sensitive information from device memory via a Security Association (SA) negotiation request, aka Bug IDs CSCvb29204 and CSCvb36055 or BENIGNCERTAIN.",
+          "level_id": 3,
+          "name": "Information Disclosure",
+          "reference": Array [
+            Object {
+              "ref_id": "CVE-2016-6415",
+              "ref_url": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2016-6415",
+              "source": "CVE",
+            },
+            Object {
+              "ref_id": "http://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20160916-ikev1",
+              "ref_url": "http://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20160916-ikev1",
+              "source": "tools.cisco.com",
+            },
+          ],
+          "remediation": "Use vendor's advisory: https://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20160916-ikev1",
+          "uid": "187015",
+        },
+        Object {
+          "description": "The DNS forwarder in Cisco IOS and IOS XE allows remote attackers to obtain sensitive information from process memory or cause a denial of service (data corruption or device reload) via a crafted DNS response, aka Bug ID CSCup90532.",
+          "level_id": 4,
+          "name": "Information Disclosure",
+          "reference": Array [
+            Object {
+              "ref_id": "CVE-2016-6380",
+              "ref_url": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2016-6380",
+              "source": "CVE",
+            },
+            Object {
+              "ref_id": "http://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20160928-dns",
+              "ref_url": "http://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20160928-dns",
+              "source": "tools.cisco.com",
+            },
+          ],
+          "remediation": "Use vendor's advisory: https://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20160928-dns",
+          "uid": "187303",
+        },
+        Object {
+          "description": "Cisco IOS and IOS XE allow remote attackers to cause a denial of service (device reload) via crafted fields in an H.323 message, aka Bug ID CSCux04257.",
+          "level_id": 4,
+          "name": "Denial of Service",
+          "reference": Array [
+            Object {
+              "ref_id": "CVE-2016-6384",
+              "ref_url": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2016-6384",
+              "source": "CVE",
+            },
+            Object {
+              "ref_id": "http://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20160928-h323",
+              "ref_url": "http://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20160928-h323",
+              "source": "tools.cisco.com",
+            },
+          ],
+          "remediation": "Use vendor's advisory: https://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20160928-h323",
+          "uid": "187304",
+        },
+        Object {
+          "description": "Vulnerability in ntpd allows local authenticated users to cause a denial of service via a specially crafted packet.",
+          "level_id": 2,
+          "name": "Denial of Service",
+          "reference": Array [
+            Object {
+              "ref_id": "CVE-2015-7855",
+              "ref_url": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2015-7855",
+              "source": "CVE",
+            },
+            Object {
+              "ref_id": "http://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20151021-ntp",
+              "ref_url": "http://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20151021-ntp",
+              "source": "tools.cisco.com",
+            },
+          ],
+          "remediation": "Use vendor's advisory: https://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20151021-ntp",
+          "uid": "187396",
+        },
+        Object {
+          "description": "NTP, when configured in broadcast mode, allows man-in-the-middle attackers to conduct replay attacks by sniffing the network.",
+          "level_id": 3,
+          "name": "Replay Attack",
+          "reference": Array [
+            Object {
+              "ref_id": "CVE-2015-7973",
+              "ref_url": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2015-7973",
+              "source": "CVE",
+            },
+            Object {
+              "ref_id": "http://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20160127-ntpd",
+              "ref_url": "http://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20160127-ntpd",
+              "source": "tools.cisco.com",
+            },
+          ],
+          "remediation": "Use vendor's advisory: http://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20160127-ntpd",
+          "uid": "187924",
+        },
+        Object {
+          "description": "NTP does not verify peer associations of symmetric keys when authenticating packets, which might allow remote attackers to conduct impersonation attacks via an arbitrary trusted key, aka a \\"skeleton key.\\"",
+          "level_id": 1,
+          "name": "Impersonation",
+          "reference": Array [
+            Object {
+              "ref_id": "CVE-2015-7974",
+              "ref_url": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2015-7974",
+              "source": "CVE",
+            },
+            Object {
+              "ref_id": "http://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20160127-ntpd",
+              "ref_url": "http://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20160127-ntpd",
+              "source": "tools.cisco.com",
+            },
+          ],
+          "remediation": "Use vendor's advisory: http://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20160127-ntpd",
+          "uid": "187927",
+        },
+        Object {
+          "description": "NTP allows remote attackers to cause a denial of service (client-server association tear down) by sending broadcast packets with invalid authentication to a broadcast client.",
+          "level_id": 3,
+          "name": "Denial of Service",
+          "reference": Array [
+            Object {
+              "ref_id": "CVE-2015-7979",
+              "ref_url": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2015-7979",
+              "source": "CVE",
+            },
+            Object {
+              "ref_id": "http://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20160127-ntpd",
+              "ref_url": "http://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20160127-ntpd",
+              "source": "tools.cisco.com",
+            },
+          ],
+          "remediation": "Use vendor's advisory: http://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20160127-ntpd",
+          "uid": "187930",
+        },
+        Object {
+          "description": "ntpq in NTP allows remote attackers to obtain origin timestamps and then impersonate peers via unspecified vectors.",
+          "level_id": 3,
+          "name": "Impersonation",
+          "reference": Array [
+            Object {
+              "ref_id": "CVE-2015-8139",
+              "ref_url": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2015-8139",
+              "source": "CVE",
+            },
+            Object {
+              "ref_id": "http://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20160127-ntpd",
+              "ref_url": "http://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20160127-ntpd",
+              "source": "tools.cisco.com",
+            },
+          ],
+          "remediation": "Use vendor's advisory: http://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20160127-ntpd",
+          "uid": "187931",
+        },
+        Object {
+          "description": "NTP allows remote attackers to bypass the origin timestamp validation via a packet with an origin timestamp set to zero.",
+          "level_id": 3,
+          "name": "Security Bypass",
+          "reference": Array [
+            Object {
+              "ref_id": "CVE-2015-8138",
+              "ref_url": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2015-8138",
+              "source": "CVE",
+            },
+            Object {
+              "ref_id": "http://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20160127-ntpd",
+              "ref_url": "http://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20160127-ntpd",
+              "source": "tools.cisco.com",
+            },
+          ],
+          "remediation": "Use vendor's advisory: http://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20160127-ntpd",
+          "uid": "187932",
+        },
+        Object {
+          "description": "The ntpq protocol in NTP allows remote attackers to conduct replay attacks by sniffing the network.",
+          "level_id": 3,
+          "name": "Replay Attack",
+          "reference": Array [
+            Object {
+              "ref_id": "CVE-2015-8140",
+              "ref_url": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2015-8140",
+              "source": "CVE",
+            },
+            Object {
+              "ref_id": "http://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20160127-ntpd",
+              "ref_url": "http://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20160127-ntpd",
+              "source": "tools.cisco.com",
+            },
+          ],
+          "remediation": "Use vendor's advisory: http://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20160127-ntpd",
+          "uid": "187933",
+        },
+        Object {
+          "description": "The getresponse function in ntpq in NTP allows remote attackers to cause a denial of service (infinite loop) via crafted packets with incorrect values.",
+          "level_id": 2,
+          "name": "Denial of Service",
+          "reference": Array [
+            Object {
+              "ref_id": "CVE-2015-8158",
+              "ref_url": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2015-8158",
+              "source": "CVE",
+            },
+            Object {
+              "ref_id": "http://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20160127-ntpd",
+              "ref_url": "http://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20160127-ntpd",
+              "source": "tools.cisco.com",
+            },
+          ],
+          "remediation": "Use vendor's advisory: http://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20160127-ntpd",
+          "uid": "187934",
+        },
+        Object {
+          "description": "The debug-logging (aka debug cns) feature in Cisco Networking Services (CNS) for IOS allows local users to obtain sensitive information by reading an unspecified file.",
+          "level_id": 1,
+          "name": "Information Disclosure",
+          "reference": Array [
+            Object {
+              "ref_id": "CVE-2015-6375",
+              "ref_url": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2015-6375",
+              "source": "CVE",
+            },
+            Object {
+              "ref_id": "http://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20151120-ns",
+              "ref_url": "http://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20151120-ns",
+              "source": "tools.cisco.com",
+            },
+          ],
+          "remediation": "Use vendor's advisory: http://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20151120-ns",
+          "uid": "188506",
+        },
+        Object {
+          "description": "These services can be leveraged by attackers to launch denial-of-service (DoS) and other attacks that would be prevented by packet inspection filters provided these services are disabled. Services that are not needed should be turned off because they present potential avenues of attack and may provide information that could be useful for gaining unauthorized access.
+",
+          "level_id": 3,
+          "name": "Rarely used services",
+          "reference": Array [],
+          "remediation": "Disable unused services. hostname(config)#no {service}",
+          "uid": "425398",
+        },
+        Object {
+          "description": "There are some defects in SSHv1 in encryption algorithms as well as in programs that use it. So if you use SSH service to manage devices install SSHv2.",
+          "level_id": 2,
+          "name": "Weak encryption in SSH protocol",
+          "reference": Array [],
+          "remediation": "Configure SSHv2 with the following command: hostname(config)# ip ssh version 2",
+          "uid": "510022",
+        },
+      ],
+    },
+    Object {
+      "domain_workgroup": null,
+      "firmware": undefined,
+      "ifs": Array [],
+      "ip": "172.16.101.27",
+      "name": "172.16.101.27",
+      "os": "",
+      "ports": Array [
+        22,
+        443,
+      ],
+      "software": Array [],
+      "updated_at": "2018-11-10T15:19:12+03:00",
+      "users": Array [],
+      "vuln_discovery_date": "2018-11-10T15:19:12+03:00",
+      "vuln_elimination_date": "2018-11-10T15:19:12+03:00",
+      "vulnerabilities": Array [
+        Object {
+          "description": "Versions 1.33 and 1.5 have insufficient cryptographic security.",
+          "isNetworkVulnerability": true,
+          "level_id": 2,
+          "name": "Weak Cryptography",
+          "port": 22,
+          "protocol": "tcp",
+          "reference": Array [],
+          "remediation": "Use protocol version 2.0.",
+          "uid": "1044",
+        },
+        Object {
+          "description": "Subject Name and Alternative Subject Names do not match domain name. This certificate could be misused.",
+          "isNetworkVulnerability": true,
+          "level_id": 3,
+          "name": "Invalid certificate",
+          "port": 443,
+          "protocol": "tcp",
+          "reference": Array [],
+          "remediation": "Install valid certificate.",
+          "uid": "7029",
+        },
+        Object {
+          "description": "During verification of the service certificate chain, the following errors were detected
+",
+          "isNetworkVulnerability": true,
+          "level_id": 3,
+          "name": "Invalid certificate chain",
+          "port": 443,
+          "protocol": "tcp",
+          "reference": Array [],
+          "remediation": "Install valid certificate for the service.",
+          "uid": "7034",
+        },
+        Object {
+          "description": "Vulnerability allows MITM attackers, having ability to sniff the network traffic (e.g. in public Wi-Fi networks), to recover some identifiers like HTTPS session cookies transmitted via a 3DES-encrypted connection.
+ Successful exploitation of this vulnerability requires a web site to support connections encrypted with the Triple DES symmetric-key block cipher and transmission of huge number of requests via the same session.
+ This attack exploits the mathematics behind the birthday problem in probability theory, a.k.a. a Birthday attack. An attacker will generate a large number of requests and then check for two identically encrypted blocks that indicate a collision. The attacker knowing the original request, which caused a collision, and the fact that CBC mode uses XORing of two different blocks can recover the encryption key by getting results of several collisions.",
+          "isNetworkVulnerability": true,
+          "level_id": 3,
+          "name": "Information Disclosure (SWEET32)",
+          "port": 443,
+          "protocol": "tcp",
+          "reference": Array [
+            Object {
+              "ref_id": "CVE-2016-2183",
+              "ref_url": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2016-2183",
+              "source": "CVE",
+            },
+            Object {
+              "ref_id": "https://www.openssl.org/blog/blog/2016/08/24/sweet32",
+              "ref_url": "https://www.openssl.org/blog/blog/2016/08/24/sweet32",
+              "source": "www.openssl.org",
+            },
+            Object {
+              "ref_id": "https://sweet32.info",
+              "ref_url": "https://sweet32.info",
+              "source": "sweet32.info",
+            },
+          ],
+          "remediation": "You should disable 3DES cipher support. If you run an old server that doesn’t support any better ciphers than DES, you should upgrade.",
+          "uid": "8351",
+        },
+        Object {
+          "description": "The 'arcfour' is the Arcfour stream cipher. The Arcfour cipher is believed to be compatible with the RC4 cipher. RFC 4253 states that Arcfour (and RC4) has problems with weak keys, and should be used with caution.
+ If SSH server is configured to support Cipher Block Chaining (CBC) encryption, this may allow an attacker to recover plaintext data from the ciphertext.",
+          "isNetworkVulnerability": true,
+          "level_id": 1,
+          "name": "SSH Weak Cryptography Ciphers",
+          "port": 22,
+          "protocol": "tcp",
+          "reference": Array [
+            Object {
+              "ref_id": "https://www.ietf.org/rfc/rfc4253.txt",
+              "ref_url": "https://www.ietf.org/rfc/rfc4253.txt",
+              "source": "www.ietf.org",
+            },
+            Object {
+              "ref_id": "CVE-2008-5161",
+              "ref_url": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2008-5161",
+              "source": "CVE",
+            },
+            Object {
+              "ref_id": "http://www.openssh.com/txt/release-7.1",
+              "ref_url": "http://www.openssh.com/txt/release-7.1",
+              "source": "www.openssh.com",
+            },
+            Object {
+              "ref_id": "http://www.openssh.com/txt/release-7.6",
+              "ref_url": "http://www.openssh.com/txt/release-7.6",
+              "source": "www.openssh.com",
+            },
+          ],
+          "remediation": "Disable the listed encryption algorithms.",
+          "uid": "8365",
+        },
+        Object {
+          "description": "crypto/rsa/rsa_ameth.c in OpenSSL 1.0.1 before 1.0.1q and 1.0.2 before 1.0.2e allows remote attackers to cause a denial of service (NULL pointer dereference and application crash) via an RSA PSS ASN.1 signature that lacks a mask generation function parameter.",
+          "level_id": 3,
+          "name": "Denial of Service",
+          "reference": Array [
+            Object {
+              "ref_id": "CVE-2015-3194",
+              "ref_url": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2015-3194",
+              "source": "CVE",
+            },
+          ],
+          "remediation": "Use vendor's advisory: http://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20151204-openssl",
+          "uid": "185895",
+        },
+        Object {
+          "description": "ssl/s3_clnt.c in OpenSSL 1.0.0 before 1.0.0t, 1.0.1 before 1.0.1p, and 1.0.2 before 1.0.2d, when used for a multi-threaded client, writes the PSK identity hint to an incorrect data structure, which allows remote servers to cause a denial of service (race condition and double free) via a crafted ServerKeyExchange message.",
+          "level_id": 2,
+          "name": "Denial of Service",
+          "reference": Array [
+            Object {
+              "ref_id": "CVE-2015-3196",
+              "ref_url": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2015-3196",
+              "source": "CVE",
+            },
+          ],
+          "remediation": "Use vendor's advisory: http://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20151204-openssl",
+          "uid": "185897",
+        },
+        Object {
+          "description": "A vulnerability in the Secure Sockets Layer (SSL) VPN functionality of the Cisco Adaptive Security Appliance (ASA) Software could allow an unauthenticated, remote attacker to cause a reload of the affected system or to remotely execute code. The vulnerability is due to an attempt to double free a region of memory when the webvpn feature is enabled on the Cisco ASA device. An attacker could exploit this vulnerability by sending multiple, crafted XML packets to a webvpn-configured interface on the affected system. An exploit could allow the attacker to execute arbitrary code and obtain full control of the system, or cause a reload of the affected device. This vulnerability affects Cisco ASA Software that is running on the following Cisco products: 3000 Series Industrial Security Appliance (ISA), ASA 5500 Series Adaptive Security Appliances, ASA 5500-X Series Next-Generation Firewalls, ASA Services Module for Cisco Catalyst 6500 Series Switches and Cisco 7600 Series Routers, ASA 1000V Cloud Firewall, Adaptive Security Virtual Appliance (ASAv), Firepower 2100 Series Security Appliance, Firepower 4110 Security Appliance, Firepower 9300 ASA Security Module, Firepower Threat Defense Software (FTD).",
+          "level_id": 5,
+          "name": "Remote Code Execution",
+          "reference": Array [
+            Object {
+              "ref_id": "CVE-2018-0101",
+              "ref_url": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2018-0101",
+              "source": "CVE",
+            },
+          ],
+          "remediation": "Use the vendor's advisory: https://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20180129-asa1",
+          "uid": "189568",
+        },
+        Object {
+          "description": "A vulnerability in the ingress flow creation functionality of Cisco Adaptive Security Appliance (ASA) could allow an unauthenticated, remote attacker to cause the CPU to increase upwards of 100% utilization, causing a denial of service (DoS) condition on an affected system. The vulnerability is due to incorrect handling of an internal software lock that could prevent other system processes from getting CPU cycles, causing a high CPU condition. An attacker could exploit this vulnerability by sending a steady stream of malicious IP packets that can cause connections to be created on the targeted device. A successful exploit could allow the attacker to exhaust CPU resources, resulting in a DoS condition during which traffic through the device could be delayed. This vulnerability applies to either IPv4 or IPv6 ingress traffic.",
+          "level_id": 3,
+          "name": "Denial of Service",
+          "reference": Array [
+            Object {
+              "ref_id": "CVE-2018-0228",
+              "ref_url": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2018-0228",
+              "source": "CVE",
+            },
+          ],
+          "remediation": "Use the vendor's advisory: https://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20180418-asa2",
+          "uid": "189893",
+        },
+        Object {
+          "description": "A vulnerability in the Transport Layer Security (TLS) library of Cisco Adaptive Security Appliance (ASA) Software and Cisco Firepower Threat Defense (FTD) Software could allow an unauthenticated, remote attacker to trigger a reload of the affected device, resulting in a denial of service (DoS) condition. The vulnerability is due to insufficient validation of user-supplied input. An attacker could exploit this vulnerability by sending a malicious TLS message to an interface enabled for Secure Layer Socket (SSL) services on an affected device. Messages using SSL Version 3 (SSLv3) or SSL Version 2 (SSLv2) cannot be be used to exploit this vulnerability. An exploit could allow the attacker to cause a buffer underflow, triggering a crash on an affected device.",
+          "level_id": 4,
+          "name": "Denial of Service",
+          "reference": Array [
+            Object {
+              "ref_id": "CVE-2018-0231",
+              "ref_url": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2018-0231",
+              "source": "CVE",
+            },
+          ],
+          "remediation": "Use the vendor's advisory: https://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20180418-asa3",
+          "uid": "189894",
+        },
+        Object {
+          "description": "A vulnerability in the web interface of the Cisco Adaptive Security Appliance (ASA) could allow an unauthenticated, remote attacker to cause an affected device to reload unexpectedly, resulting in a denial of service (DoS) condition. It is also possible on certain software releases that the ASA will not reload, but an attacker could view sensitive system information without authentication by using directory traversal techniques. The vulnerability is due to lack of proper input validation of the HTTP URL. An attacker could exploit this vulnerability by sending a crafted HTTP request to an affected device. An exploit could allow the attacker to cause a DoS condition or unauthenticated disclosure of information. This vulnerability applies to IPv4 and IPv6 HTTP traffic.",
+          "level_id": 4,
+          "name": "Denial of Service",
+          "reference": Array [
+            Object {
+              "ref_id": "CVE-2018-0296",
+              "ref_url": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2018-0296",
+              "source": "CVE",
+            },
+          ],
+          "remediation": "Use the vendor's advisory: https://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20180606-asaftd",
+          "uid": "190230",
+        },
+        Object {
+          "description": "A vulnerability in the IPsec driver code of multiple Cisco IOS XE Software platforms and the Cisco ASA 5500-X Series Adaptive Security Appliance (ASA) allows an unauthenticated, remote attacker to cause a denial of service (device reload) by sending malformed IPsec packets to an affected device.",
+          "level_id": 3,
+          "name": "Denial of Service",
+          "reference": Array [
+            Object {
+              "ref_id": "CVE-2018-0472",
+              "ref_url": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2018-0472",
+              "source": "CVE",
+            },
+          ],
+          "remediation": "Use the vendor's advisory: https://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20180926-ipsec",
+          "uid": "190783",
+        },
+      ],
+    },
+  ],
+}
+`;
+
+exports[`parse Cisco ASA host data matches snapshot 2`] = `
 Object {
   "errors": Array [],
   "hosts": Array [
@@ -1921,12 +4200,13 @@ Object {
 }
 `;
 
-exports[`parse HP host data matches snapshot 2`] = `
+exports[`parse HP host data matches snapshot 1`] = `
 Object {
   "errors": Array [],
   "hosts": Array [
     Object {
       "domain_workgroup": null,
+      "firmware": undefined,
       "ifs": Array [
         Object {
           "address": Array [
@@ -2007,6 +4287,7 @@ Object {
   "hosts": Array [
     Object {
       "domain_workgroup": null,
+      "firmware": undefined,
       "ifs": Array [
         Object {
           "address": Array [

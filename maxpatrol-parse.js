@@ -1,4 +1,4 @@
-/* eslint-disable default-case, no-continue */
+/* eslint-disable default-case, no-continue,no-param-reassign,no-restricted-syntax */
 
 'use strict';
 
@@ -21,12 +21,13 @@ const {
   formatSNMPInterfaces,
   getSerialNumbers,
   getDomainName,
+  getSoftwareVulnerabilityResult,
 } = require('./maxpatrol-helper');
 
 
 /**
  * Парсим данные о софте хоста
- * @param {Array} data
+ * @param {Array<Object>} data
  * @returns {{
  * software: Array,
  * ifs: Array,
@@ -54,6 +55,7 @@ function parseHostSoft(data) {
       version,
     } = item;
 
+    // это некруто, но другого способа найти os на cisco asa не нашел
     if (name === 'Cisco IOS') {
       os = `${name} ${version}`;
     }
@@ -98,6 +100,7 @@ function parseHostSoft(data) {
             vulns[vulnerId] = {
               port,
               protocol,
+              result: getSoftwareVulnerabilityResult(vuln),
             };
         }
 
@@ -327,6 +330,15 @@ function filterNetworkInterfaces(interfaces) {
 }
 
 /**
+ * Форматирует хостнейм
+ * @param {String} name
+ * @return {String}
+ */
+function formatHostname(name) {
+  return ipUtils.isV4Format(name) ? name : name.split('.')[0];
+}
+
+/**
  * Парсит xml отчет из MaxPatrol
  * @param {ReadStream} inputStream - readable поток с отчетом
  * @param {Object} options
@@ -340,17 +352,15 @@ module.exports = function (inputStream, options = {}, cb) {
 
   xml.collect('scan_objects > soft');
   xml.collect('scan_objects > soft > vulners > vulner');
-  xml.collect('scan_objects > soft > vulners > vulner > param_list');
   xml.collect('scan_objects > soft > vulners > vulner > param_list > table');
-  xml.collect('scan_objects > soft > vulners > vulner > param_list > table > body');
+  xml.collect('scan_objects > soft > vulners > vulner > param_list > table > header > column');
   xml.collect('scan_objects > soft > vulners > vulner > param_list > table > body > row');
   xml.collect('scan_objects > soft > vulners > vulner > param_list > table > body > row > field');
 
   // в результатах всего один ряд значений, так что остальное нас не интересует
   xml.collect('hardware > device');
-  xml.collect('hardware > device > param_list');
   xml.collect('hardware > device > param_list > table');
-  xml.collect('hardware > device > param_list > table > body');
+  xml.collect('hardware > device > param_list > table > body > header > column');
   xml.collect('hardware > device > param_list > table > body > row');
   xml.collect('hardware > device > param_list > table > body > row > field');
 
@@ -393,6 +403,7 @@ module.exports = function (inputStream, options = {}, cb) {
         {};
 
       const scanFinished = moment(stopTime).format();
+      const name = fqdn || netbios || softData.name || ip || ifs[0].address[0].ip;
 
       hosts.push({
         ...softData,
@@ -403,7 +414,7 @@ module.exports = function (inputStream, options = {}, cb) {
         domain_workgroup: getDomainName(fqdn),
         software: options.import_software ? softData.software : [],
         users: options.import_users ? softData.users : [],
-        name: fqdn || netbios || softData.name || ip || ifs[0].address[0].ip,
+        name: formatHostname(name),
         updated_at: scanFinished,
         vuln_discovery_date: scanFinished,
         vuln_elimination_date: scanFinished,
@@ -459,6 +470,7 @@ module.exports = function (inputStream, options = {}, cb) {
     // маппим уязвимости с хостами и возвращаем результат
     hosts = hosts.map((host) => {
       const vulnerabilities = [];
+
       if (host.vulns) {
         for (const key in host.vulns) {
           const vuln = host.vulns[key];
@@ -471,7 +483,7 @@ module.exports = function (inputStream, options = {}, cb) {
               vulnerability = {
                 ...vulnerability,
                 ...vuln,
-                isNetworkVulnerability: !!vuln.port,
+                isNetworkVulnerability: Boolean(vuln.port),
               };
             }
 

@@ -22,7 +22,7 @@ async function testReport(filename) {
   maxPatrolParse(testDataStream, parseOptions, cb);
 
   // ждем - парсинг иногда занимает время
-  await new Promise(resolve => setTimeout(resolve, 3000));
+  await new Promise(resolve => setTimeout(resolve, 5000));
 }
 
 describe('parse', () => {

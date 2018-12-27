@@ -37,7 +37,7 @@ function getDomainName(value) {
  */
 function formatSingleDimensionParamListTable(paramList, returnFirstItem) {
   const result = [];
-  const body = _.get(paramList, '[0].table[0].body[0].row');
+  const body = _.get(paramList, 'table[0].body.row');
 
   if (body) {
     body.forEach((row) => {
@@ -67,7 +67,7 @@ function formatSingleDimensionParamListTable(paramList, returnFirstItem) {
  * @returns {*}
  */
 function formatTwoDimensionParamListTable(paramList, valueId) {
-  const body = _.get(paramList, '[0].table[0].body[0].row');
+  const body = _.get(paramList, 'table[0].body.row');
   const item = {};
 
   if (body) {
@@ -313,7 +313,7 @@ function getNetworkDeviceNetworkAdapterData(vuln) {
  * @returns {Object}
  */
 function getNetworkInterfaceData(vuln) {
-  const tableName = _.get(vuln, 'param_list[0].table[0].$.name');
+  const tableName = _.get(vuln, 'param_list.table[0].$.name');
 
   return tableName === 'GennetConnNew' ?
     getLinuxNetworkAdapterData(vuln) :
@@ -502,6 +502,48 @@ function formatSNMPInterfaces(addresses, interfaces) {
   return result;
 }
 
+function getSoftwareVulnerabilityResult(vuln) {
+  const { param_list: paramList } = vuln;
+  const tables = paramList.table;
+  const result = [];
+
+  if (tables && tables.length) {
+    for (const table of tables) {
+      let tableHTML = `<table><caption>${table.$.description}</caption><tbody>`;
+
+      const columns = table.header.column;
+
+      if (columns && columns.length) {
+        tableHTML += '<tr>';
+        columns.forEach((column) => {
+          tableHTML += `<th>${column.$.name}</th>`;
+        });
+        tableHTML += '</tr>';
+      }
+
+      const rows = table.body.row;
+      if (rows && rows.length) {
+        rows.forEach((row) => {
+          const fields = row.field;
+
+          if (fields && fields.length) {
+            tableHTML += '<tr>';
+            row.field.forEach((field) => {
+              tableHTML += `<td>${field.$text}</td>`;
+            });
+            tableHTML += '</tr>';
+          }
+        });
+      }
+
+      tableHTML += '</tbody>';
+      result.push(tableHTML);
+    }
+  }
+
+  return result;
+}
+
 
 module.exports = {
   parseReferenceLinks,
@@ -518,4 +560,5 @@ module.exports = {
   formatSNMPInterfaces,
   getSerialNumbers,
   getDomainName,
+  getSoftwareVulnerabilityResult,
 };

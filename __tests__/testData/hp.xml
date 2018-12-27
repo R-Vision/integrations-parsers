@@ -1,0 +1,648 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<content xsi:schemaLocation="http://www.ptsecurity.ru/reports https://support.ptsecurity.ru/xsd/mp8/25/maxpatrol80-info-report.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://www.ptsecurity.ru/reports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<server db_guid="E4ADB012-661B-47F2-9242-EBEA2CE0F5E6" license="15749" id="1" version="28461"/>
+<report lang="en" name="hp" comment="" created="2018-11-12T09:33:08"/>
+<tasks>
+<task name="HP" id="13" license="15749"/></tasks>
+<data>
+<host ip="172.16.101.30" host_stop_time="2018-11-10T13:48:00" host_start_time="2018-11-10T13:24:03" start_time="2018-11-10T13:24:03" task="13" host_uid="1" scan="39" fqdn="" stop_time="2018-11-10T13:48:00" primary="172.16.101.30" exitcode="0" scan_status="0" netbios="">
+<qualifier_rule>As specified</qualifier_rule>
+<scanner license="319D722B-F1C6-4222-86CD-25A62AC7B73D" version="28461" profile="RV_PA_HP">Default Scanner on MP</scanner>
+<transport_info>LDAP:2/MML:0/NotesRPC:7/ODBC DB2:0/ODBC MSSQL:4/ODBC MySQL:0/ODBC Oracle:4/ODBC PostgreSQL:0/ODBC Sybase:0/ODBC Tibero:0/RPC Filesystem:4/RPC Registry:4/RPC:4/Remote Engine:2/SAP GUI:7/SAP HANA:0/SAP HTTP:0/SAPRFC:9/SSH2:3/TELNET:4/VMWARE vCenter:0/VMWARE:0/WMI FILESYSTEM:4/WMI REGISTRY:4/WMI:4/XEN:0/XENRPC:0/vSphere API vCenter:0/vSphere API:0</transport_info>
+<statistics/>
+<scan_objects>
+<soft port_status="0" type="3" port="22" id="1" security_object="0" protocol="6" service="1100">
+<name>SSH</name>
+<version/>
+<path/>
+<metadata>
+<soft_version id="0"/></metadata>
+<banner>
+<table index="0" name="GenBanner" description="Banner" format="key-value">
+<header>
+<column name="Banner" id="1"/></header>
+<body>
+<row>
+<field id="1">SSH-2.0-Comware-7.1.059
+</field></row></body></table>
+<table index="2" name="GenProtocolVersions" description="Protocol versions" format="key-value">
+<header>
+<column name="Protocol versions" id="1"/></header>
+<body>
+<row>
+<field id="1">1.99,2.0</field></row></body></table></banner>
+<statistics>
+<table index="2" name="GenPortStatistics" description="" format="table">
+<header>
+<column name="scan_time" id="1"/></header>
+<body>
+<row>
+<field id="1">1 min 33 sec</field></row></body></table></statistics>
+<vulners>
+<vulner id="1092" level="0" status="0">
+<param/>
+<param_list/></vulner>
+<vulner id="8176" level="0" status="0">
+<param/>
+<param_list>
+<table index="0" name="GenProfile" description="Server configuration" format="key-value">
+<header>
+<column name="Keys exchange algorithms" id="1"/>
+<column name="Server host key algorithms" id="2"/>
+<column name="Decryption ciphers" id="3"/>
+<column name="Encryption ciphers" id="4"/>
+<column name="MAC algorithms (client to server)" id="5"/>
+<column name="MAC algorithms (server to client)" id="6"/>
+<column name="Decompression algorithms" id="7"/>
+<column name="Compression algorithms" id="8"/>
+<column name="Authentication methods" id="9"/></header>
+<body>
+<row>
+<field id="1">ecdh-sha2-nistp256,ecdh-sha2-nistp384,diffie-hellman-group-exchange-sha1,diffie-hellman-group14-sha1,diffie-hellman-group1-sha1</field>
+<field id="2">ssh-rsa</field>
+<field id="3">aes128-ctr,aes192-ctr,aes256-ctr,AEAD_AES_128_GCM,AEAD_AES_256_GCM,aes128-cbc,3des-cbc,aes256-cbc,des-cbc</field>
+<field id="4">aes128-ctr,aes192-ctr,aes256-ctr,AEAD_AES_128_GCM,AEAD_AES_256_GCM,aes128-cbc,3des-cbc,aes256-cbc,des-cbc</field>
+<field id="5">hmac-sha2-256,hmac-sha2-512,hmac-sha1,hmac-md5,hmac-sha1-96,hmac-md5-96</field>
+<field id="6">hmac-sha2-256,hmac-sha2-512,hmac-sha1,hmac-md5,hmac-sha1-96,hmac-md5-96</field>
+<field id="7">none,zlib,zlib@openssh.com</field>
+<field id="8">none,zlib,zlib@openssh.com</field>
+<field id="9">password</field></row></body></table></param_list></vulner>
+<vulner id="8177" level="0" status="0">
+<param/>
+<param_list>
+<table index="1" name="GenKeySSH2" description="Host keys (SSH2)" format="table">
+<header>
+<column name="Key Fingerprint" id="1"/>
+<column name="Host-Key Method" id="2"/></header>
+<body>
+<row>
+<field id="1">70:cb:78:0d:a5:cb:02:f5:f9:44:15:34:b3:7e:a7:7f</field>
+<field id="2">ssh-rsa</field></row></body></table></param_list></vulner>
+<vulner id="8365" level="1" status="0">
+<param/>
+<param_list>
+<table index="0" name="GenWeakCiphers" description="Encyption algorithms" format="table">
+<header>
+<column name="Weak Ciphers" id="1"/></header>
+<body>
+<row>
+<field id="1">aes128-cbc</field></row>
+<row>
+<field id="1">3des-cbc</field></row>
+<row>
+<field id="1">aes256-cbc</field></row>
+<row>
+<field id="1">des-cbc</field></row></body></table></param_list></vulner>
+<vulner id="8368" level="1" status="0">
+<param/>
+<param_list>
+<table index="0" name="GenWeakMACs" description="MAC algorithms" format="table">
+<header>
+<column name="Weak algorithms" id="1"/></header>
+<body>
+<row>
+<field id="1">hmac-sha1</field></row>
+<row>
+<field id="1">hmac-md5</field></row>
+<row>
+<field id="1">hmac-sha1-96</field></row>
+<row>
+<field id="1">hmac-md5-96</field></row></body></table></param_list></vulner>
+<vulner id="8369" level="1" status="0">
+<param/>
+<param_list>
+<table index="0" name="GenWeakKEXs" description="Key-Exchange Algorithms" format="table">
+<header>
+<column name="Weak algorithms" id="1"/></header>
+<body>
+<row>
+<field id="1">ecdh-sha2-nistp256</field></row>
+<row>
+<field id="1">ecdh-sha2-nistp384</field></row>
+<row>
+<field id="1">diffie-hellman-group-exchange-sha1</field></row>
+<row>
+<field id="1">diffie-hellman-group14-sha1</field></row>
+<row>
+<field id="1">diffie-hellman-group1-sha1</field></row></body></table></param_list></vulner></vulners></soft>
+<soft port_status="0" type="3" port="0" id="2" security_object="0" protocol="6" service="1">
+<name>System</name>
+<version/>
+<path/>
+<metadata>
+<soft_version id="0"/></metadata>
+<statistics>
+<table index="2" name="GenPortStatistics" description="" format="table">
+<header>
+<column name="scan_time" id="1"/></header>
+<body>
+<row>
+<field id="1">0 sec</field></row></body></table></statistics>
+<vulners>
+<vulner id="1222" level="0" status="0">
+<param>HPE Comware Platform Software, Software Version 7.1.059, Release R0326
+HPE VSR1000
+Copyright (c) 2010-2017 Hewlett Packard Enterprise Development LP</param>
+<param_list>
+<table index="1" name="GenOperatingSystemsList" description="Detection methods" format="table">
+<header>
+<column name="Name" id="1"/>
+<column name="Version" id="2"/>
+<column name="Detection method" id="3"/>
+<column name="Weight" id="4"/></header>
+<body>
+<row>
+<field id="1">Operating System</field>
+<field id="2">HPE Comware Platform Software, Software Version 7.1.059, Release R0326
+HPE VSR1000
+Copyright (c) 2010-2017 Hewlett Packard Enterprise Development LP</field>
+<field id="3">SNMP (161/UDP)</field>
+<field id="4">3</field></row></body></table></param_list></vulner>
+<vulner id="8123" level="0" status="0">
+<param/>
+<param_list>
+<table index="0" name="Gentime_table" description="Routing information" format="table">
+<header>
+<column name="TTL" id="1"/>
+<column name="Hop address" id="2"/>
+<column name="Round Trip Time, ms" id="3"/></header>
+<body>
+<row>
+<field id="1">1</field>
+<field id="2">10.4.5.1</field>
+<field id="3">                       0.17   0.17   0.10   </field></row>
+<row>
+<field id="1">2</field>
+<field id="2">172.16.7.2</field>
+<field id="3">                       1.06   1.16   0.93   </field></row>
+<row>
+<field id="1">3</field>
+<field id="2">172.16.101.30</field>
+<field id="3">                       1.14   2.75   1.10   </field></row></body></table></param_list></vulner>
+<vulner id="8124" level="0" status="0">
+<param/>
+<param_list>
+<table index="0" name="Genuptime" description="Guess uptime" format="key-value">
+<header>
+<column name="Guess uptime" id="1"/></header>
+<body>
+<row>
+<field id="1">      35.7 days or more</field></row></body></table></param_list></vulner>
+<vulner id="8134" level="0" status="0">
+<param/>
+<param_list>
+<table index="0" name="Gendelta" description="Timestamp delta" format="key-value">
+<header>
+<column name="Timestamp delta" id="1"/></header>
+<body>
+<row>
+<field id="1">-61.459 +/- 0.002 seconds</field></row></body></table></param_list></vulner></vulners></soft>
+<soft port_status="0" type="3" port="161" id="3" security_object="0" protocol="17" service="10007">
+<name>SNMP</name>
+<version/>
+<path/>
+<metadata>
+<soft_version id="0"/></metadata>
+<banner>
+<table index="2" name="GenProtocolVersions" description="Protocol versions" format="key-value">
+<header>
+<column name="Protocol versions" id="1"/></header>
+<body>
+<row>
+<field id="1">2, 3</field></row></body></table></banner>
+<statistics>
+<table index="2" name="GenPortStatistics" description="" format="table">
+<header>
+<column name="scan_time" id="1"/></header>
+<body>
+<row>
+<field id="1">0 sec</field></row></body></table></statistics>
+<vulners>
+<vulner id="8167" level="0" status="0">
+<param/>
+<param_list>
+<table index="0" name="GenInterfaces" description="Network interface list" format="table">
+<header>
+<column name="Interface ID" id="1"/>
+<column name="Description" id="2"/>
+<column name="Type" id="3"/>
+<column name="MTU" id="4"/>
+<column name="Speed" id="5"/>
+<column name="MAC" id="6"/>
+<column name="Admin status" id="7"/>
+<column name="Operation status" id="8"/></header>
+<body>
+<row>
+<field id="1">401</field>
+<field id="2">NULL0</field>
+<field id="3">1</field>
+<field id="4">1500</field>
+<field id="5">1000000000</field>
+<field id="6">00:00:00:00:00:00</field>
+<field id="7">up</field>
+<field id="8">up</field></row>
+<row>
+<field id="1">402</field>
+<field id="2">InLoopBack0</field>
+<field id="3">24</field>
+<field id="4">1536</field>
+<field id="5">0</field>
+<field id="6">00:00:00:00:00:00</field>
+<field id="7">up</field>
+<field id="8">up</field></row>
+<row>
+<field id="1">403</field>
+<field id="2">Register-Tunnel0</field>
+<field id="3">1</field>
+<field id="4">1536</field>
+<field id="5">0</field>
+<field id="6">00:00:00:00:00:00</field>
+<field id="7">up</field>
+<field id="8">up</field></row>
+<row>
+<field id="1">404</field>
+<field id="2">Vlan-interface1</field>
+<field id="3">136</field>
+<field id="4">1500</field>
+<field id="5">1000000000</field>
+<field id="6">00:00:00:00:00:00</field>
+<field id="7">up</field>
+<field id="8">down</field></row>
+<row>
+<field id="1">405</field>
+<field id="2">Vlan-interface2</field>
+<field id="3">136</field>
+<field id="4">1500</field>
+<field id="5">1000000000</field>
+<field id="6">00:00:00:00:00:00</field>
+<field id="7">up</field>
+<field id="8">down</field></row>
+<row>
+<field id="1">17</field>
+<field id="2">GigabitEthernet1/0</field>
+<field id="3">6</field>
+<field id="4">1500</field>
+<field id="5">1000000000</field>
+<field id="6">00:0c:29:32:07:c8</field>
+<field id="7">up</field>
+<field id="8">up</field></row>
+<row>
+<field id="1">33</field>
+<field id="2">GigabitEthernet2/0</field>
+<field id="3">6</field>
+<field id="4">1500</field>
+<field id="5">1000000000</field>
+<field id="6">00:0c:29:32:07:d2</field>
+<field id="7">up</field>
+<field id="8">down</field></row></body></table>
+<table index="1" name="GenCommunity" description="Community Strings" format="table">
+<header>
+<column name="Name" id="1"/></header>
+<body>
+<row>
+<field id="1">public</field></row></body></table></param_list></vulner>
+<vulner id="8168" level="0" status="0">
+<param/>
+<param_list>
+<table index="0" name="GenSysInfo" description="" format="key-value">
+<header>
+<column name="Description" id="1"/>
+<column name="Uptime" id="2"/>
+<column name="Contact" id="3"/>
+<column name="Name" id="4"/>
+<column name="Location" id="5"/></header>
+<body>
+<row>
+<field id="1">HPE Comware Platform Software, Software Version 7.1.059, Release R0326
+HPE VSR1000
+Copyright (c) 2010-2017 Hewlett Packard Enterprise Development LP</field>
+<field id="2">35 days 16:04:36.85</field>
+<field id="3"> </field>
+<field id="4">HPE</field>
+<field id="5"> </field></row></body></table>
+<table index="1" name="GenCommunity" description="Community Strings" format="table">
+<header>
+<column name="Name" id="1"/></header>
+<body>
+<row>
+<field id="1">public</field></row></body></table></param_list></vulner>
+<vulner id="8169" level="0" status="0">
+<param/>
+<param_list>
+<table index="0" name="GenIpAddr" description="IP address list" format="table">
+<header>
+<column name="IP Address" id="1"/>
+<column name="Interface ID" id="2"/>
+<column name="Netmask" id="3"/></header>
+<body>
+<row>
+<field id="1">10.10.10.10</field>
+<field id="2">33</field>
+<field id="3">255.255.255.0</field></row>
+<row>
+<field id="1">172.16.101.30</field>
+<field id="2">17</field>
+<field id="3">255.255.255.0</field></row></body></table>
+<table index="1" name="GenCommunity" description="Community Strings" format="table">
+<header>
+<column name="Name" id="1"/></header>
+<body>
+<row>
+<field id="1">public</field></row></body></table></param_list></vulner>
+<vulner id="8170" level="0" status="0">
+<param/>
+<param_list>
+<table index="0" name="Genroutes" description="Routing table" format="table">
+<header>
+<column name="Destination address" id="1"/>
+<column name="Netmask" id="2"/>
+<column name="Next hop" id="3"/>
+<column name="Interface" id="4"/>
+<column name="Metrics" id="5"/></header>
+<body>
+<row>
+<field id="1">0.0.0.0</field>
+<field id="2">0.0.0.0</field>
+<field id="3">172.16.101.1</field>
+<field id="4">17</field>
+<field id="5">0</field></row>
+<row>
+<field id="1">127.0.0.0</field>
+<field id="2">255.0.0.0</field>
+<field id="3">127.0.0.1</field>
+<field id="4">402</field>
+<field id="5">0</field></row>
+<row>
+<field id="1">127.0.0.1</field>
+<field id="2">255.255.255.255</field>
+<field id="3">127.0.0.1</field>
+<field id="4">402</field>
+<field id="5">0</field></row>
+<row>
+<field id="1">127.255.255.255</field>
+<field id="2">255.255.255.255</field>
+<field id="3">127.0.0.1</field>
+<field id="4">402</field>
+<field id="5">0</field></row>
+<row>
+<field id="1">172.16.101.0</field>
+<field id="2">255.255.255.0</field>
+<field id="3">172.16.101.30</field>
+<field id="4">17</field>
+<field id="5">0</field></row>
+<row>
+<field id="1">172.16.101.255</field>
+<field id="2">255.255.255.255</field>
+<field id="3">172.16.101.30</field>
+<field id="4">17</field>
+<field id="5">0</field></row>
+<row>
+<field id="1">172.16.101.30</field>
+<field id="2">255.255.255.255</field>
+<field id="3">127.0.0.1</field>
+<field id="4">402</field>
+<field id="5">0</field></row>
+<row>
+<field id="1">224.0.0.0</field>
+<field id="2">240.0.0.0</field>
+<field id="3">0.0.0.0</field>
+<field id="4">401</field>
+<field id="5">0</field></row>
+<row>
+<field id="1">255.255.255.255</field>
+<field id="2">255.255.255.255</field>
+<field id="3">127.0.0.1</field>
+<field id="4">402</field>
+<field id="5">0</field></row></body></table>
+<table index="1" name="GenCommunity" description="Community Strings" format="table">
+<header>
+<column name="Name" id="1"/></header>
+<body>
+<row>
+<field id="1">public</field></row></body></table></param_list></vulner>
+<vulner id="8171" level="0" status="0">
+<param/>
+<param_list>
+<table index="0" name="Gentcp" description="Opened TCP ports" format="table">
+<header>
+<column name="Port No." id="1"/></header>
+<body>
+<row>
+<field id="1">22</field></row>
+<row>
+<field id="1">7547</field></row>
+<row>
+<field id="1"> </field></row></body></table>
+<table index="1" name="Genudp" description="Opened UDP ports" format="table">
+<header>
+<column name="Port No." id="1"/></header>
+<body>
+<row>
+<field id="1">161</field></row>
+<row>
+<field id="1"> </field></row></body></table></param_list></vulner></vulners></soft>
+<soft port_status="0" type="3" port="7547" id="4" security_object="0" protocol="6" service="100">
+<name>HTTP</name>
+<version/>
+<path/>
+<metadata>
+<soft_version id="0"/></metadata>
+<banner>
+<table index="3" name="GenServerName" description="Server name" format="key-value">
+<header>
+<column name="Server name" id="1"/></header>
+<body>
+<row>
+<field id="1">HTTPD</field></row></body></table>
+<table index="9" name="GenHeuristicInfo" description="" format="list">
+<header>
+<column name="" id="1"/></header>
+<body>
+<row>
+<field id="1">Heuristic confirmation unavailable</field></row></body></table>
+<table index="5" name="GenServerState" description="State" format="key-value">
+<header>
+<column name="State" id="1"/></header>
+<body>
+<row>
+<field id="1">404 (Not Found)</field></row></body></table></banner>
+<statistics>
+<table index="2" name="GenPortStatistics" description="" format="table">
+<header>
+<column name="scan_time" id="1"/></header>
+<body>
+<row>
+<field id="1">11 min 46 sec</field></row></body></table></statistics>
+<vulners>
+<vulner id="8375" level="0" status="0">
+<param/>
+<param_list>
+<table index="0" name="GenHeaders" description="HTTP Headers" format="table">
+<header>
+<column name="HTTP Header" id="1"/>
+<column name="Value" id="2"/></header>
+<body>
+<row>
+<field id="1">CONNECTION</field>
+<field id="2">CLOSE</field></row>
+<row>
+<field id="1">CONTENT-LENGTH</field>
+<field id="2">0</field></row>
+<row>
+<field id="1">CONTENT-TYPE</field>
+<field id="2">TEXT/HTML</field></row>
+<row>
+<field id="1">DATE</field>
+<field id="2">SAT, 10 NOV 2018 10:31:04 GMT</field></row>
+<row>
+<field id="1">SERVER</field>
+<field id="2">HTTPD</field></row></body></table></param_list></vulner>
+<vulner id="8376" level="0" status="0">
+<param/>
+<param_list>
+<table index="0" name="GenMethods" description="HTTP Methods" format="list">
+<header>
+<column name="" id="1"/></header>
+<body>
+<row>
+<field id="1">GET HEAD POST PUT DELETE OPTIONS</field></row></body></table></param_list></vulner></vulners></soft>
+<soft type="2" port="0" id="5" security_object="6082693" protocol="0" service="6082433">
+<name>Operating System</name>
+<version>HPE Comware Platform Software, Software Version 7.1.059, Release R0326 or HPE VSR1000 or Copyright (c) 2010-2017 Hewlett Packard Enterprise Development LP</version>
+<path/>
+<metadata>
+<soft_version id="6082693"/></metadata></soft></scan_objects></host></data>
+<vulners>
+<vulner id="1092">
+<title>Remote Control</title>
+<short_description>Start remote control service.</short_description>
+<description>Remote control service is started. An attacker can access other network hosts using vulnerabilities in the service implementation or configuration.</description>
+<how_to_fix>Disable the service access for all hosts until it is necessary.
+Pay special attention to the service configuration.
+Ensure that the service is unavailable from the Internet.</how_to_fix>
+<links/></vulner>
+<vulner id="1222">
+<title>OS</title>
+<short_description/>
+<description>Probable Operating System.</description>
+<how_to_fix/>
+<links/></vulner>
+<vulner id="8123">
+<title>Route to target host</title>
+<short_description>Route to taget host in chain of intermediate hosts.</short_description>
+<description>Knowledge of path to host can provide information about network structure. Having big number of paths to different hosts enough to build detailed map of network.</description>
+<how_to_fix/>
+<links/>
+<cvss temp_score="0.0" base_score="0.0" temp_score_decomp="" base_score_decomp=""/></vulner>
+<vulner id="8124">
+<title>Supposed host uptime</title>
+<short_description>Supposed uptime of scanned host</short_description>
+<description>Supposed host uptime might be incorrect if real host uptime is greater than a month.</description>
+<how_to_fix/>
+<links/>
+<cvss temp_score="0.0" base_score="0.0" temp_score_decomp="" base_score_decomp=""/></vulner>
+<vulner id="8134">
+<title>ICMP Timestamp Response</title>
+<short_description>Remote host timestamp received.</short_description>
+<description>The remote host responded to an ICMP timestamp request. It allows an attacker to find out what date is set on the target machine and use this information to attack cryptographic protocols with time-based parameters.</description>
+<how_to_fix/>
+<links/>
+<cvss temp_score="0.0" base_score="0.0" temp_score_decomp="" base_score_decomp=""/></vulner>
+<vulner id="8167">
+<title>Network interface list</title>
+<short_description/>
+<description>A network interface list is found. The network interface list may be used to gain information on the network architecture and node configuration.</description>
+<how_to_fix/>
+<links/>
+<cvss temp_score="0.0" base_score="0.0" temp_score_decomp="" base_score_decomp=""/></vulner>
+<vulner id="8168">
+<title>System information</title>
+<short_description/>
+<description/>
+<how_to_fix/>
+<links/>
+<cvss temp_score="0.0" base_score="0.0" temp_score_decomp="" base_score_decomp=""/></vulner>
+<vulner id="8169">
+<title>IP address list</title>
+<short_description/>
+<description>A network interface IP address list is found. Each network interface may be associated with several IP addresses.</description>
+<how_to_fix/>
+<links/>
+<cvss temp_score="0.0" base_score="0.0" temp_score_decomp="" base_score_decomp=""/></vulner>
+<vulner id="8170">
+<title>Routing table</title>
+<short_description/>
+<description>A routing table is found. Routing table data may be used to determine the network architecture.</description>
+<how_to_fix/>
+<links/>
+<cvss temp_score="0.0" base_score="0.0" temp_score_decomp="" base_score_decomp=""/></vulner>
+<vulner id="8171">
+<title>Opened ports list</title>
+<short_description/>
+<description>An opened ports list is obtained. This list contains only ports opened on the scanned interface or on all host&apos;s interfaces.</description>
+<how_to_fix/>
+<links/>
+<cvss temp_score="0.0" base_score="0.0" temp_score_decomp="" base_score_decomp=""/></vulner>
+<vulner id="8176">
+<title>SSH2 Configuration</title>
+<short_description/>
+<description>Information about cryptographic algorithms and authentication methods was obtained.</description>
+<how_to_fix/>
+<links/>
+<cvss temp_score="0.0" base_score="0.0" temp_score_decomp="" base_score_decomp=""/></vulner>
+<vulner id="8177">
+<title>SSH Host Key Fingerprint</title>
+<short_description/>
+<description>The key fingerprint was obtained. To prevent man-in-the-middle attacks when connecting to a host with the key the client doesn&apos;t yet know, the client software shows the fingerprint of this key to the user. It is recommended to verify the key fingerprint displayed by the client software by comparing it with the server key fingerprint received via trusted channels or by hand.</description>
+<how_to_fix/>
+<links/>
+<cvss temp_score="0.0" base_score="0.0" temp_score_decomp="" base_score_decomp=""/></vulner>
+<vulner id="8365">
+<title>SSH Weak Cryptography Ciphers</title>
+<short_description>Weak encryption algorithms are enabled for the SSH protocol.</short_description>
+<description>The &apos;arcfour&apos; is the Arcfour stream cipher. The Arcfour cipher is believed to be compatible with the RC4 cipher. RFC 4253 states that Arcfour (and RC4) has problems with weak keys, and should be used with caution.
+If SSH server is configured to support Cipher Block Chaining (CBC) encryption, this may allow an attacker to recover plaintext data from the ciphertext.</description>
+<how_to_fix>Disable the listed encryption algorithms.</how_to_fix>
+<links>https://www.ietf.org/rfc/rfc4253.txt
+http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2008-5161
+http://www.openssh.com/txt/release-7.1
+http://www.openssh.com/txt/release-7.6</links>
+<publication_date>2017-12-20</publication_date>
+<cvss temp_score="0.0" base_score="0.0" temp_score_decomp="" base_score_decomp=""/>
+<global_id name="CVE" value="CVE-2008-5161"/>
+<global_id name="fstec" value="BDU:2015-09678"/></vulner>
+<vulner id="8368">
+<title>SSH Weak MAC Algorithms</title>
+<short_description>The remote SSH server is configured to allow weak MD5, 96-bit, and SHA1 MAC algorithms.</short_description>
+<description>Using the following algorithms is unsafe: md5-based, sha1-based.
+The following algorithms use weak cryptography: umac-64.
+The following algorithms are considered obsolete and removed from the standard: ripemd160, blowfish.</description>
+<how_to_fix>Disable the listed MAC algorithms.</how_to_fix>
+<links>https://shattered.io/
+https://stribika.github.io/2015/01/04/secure-secure-shell.html
+http://www.openssh.com/txt/release-7.4</links>
+<cvss temp_score="0.0" base_score="0.0" temp_score_decomp="" base_score_decomp=""/></vulner>
+<vulner id="8369">
+<title>SSH Weak Key-Exchange Algorithms</title>
+<short_description>The remote SSH server is configured to allow weak SHA1-based or weak elliptic-curves Key-Exchange algorithms.</short_description>
+<description>Using the following algorithms is unsafe: sha1-based.
+The following algorithms use weak elliptic-curve cryptography: ecdh-sha2-nistp-*.</description>
+<how_to_fix>Disable the listed Key-Exchange algorithms.</how_to_fix>
+<links>https://githubengineering.com/crypto-deprecation-notice-update-1/
+https://stribika.github.io/2015/01/04/secure-secure-shell.html
+https://shattered.io/</links>
+<cvss temp_score="0.0" base_score="0.0" temp_score_decomp="" base_score_decomp=""/></vulner>
+<vulner id="8375">
+<title>HTTP Headers Data</title>
+<short_description>HTTP headers are listed in the server response received to a GET request.</short_description>
+<description/>
+<how_to_fix/>
+<links>https://www.ietf.org/rfc/rfc2616.txt</links>
+<cvss temp_score="0.0" base_score="0.0" temp_score_decomp="" base_score_decomp=""/></vulner>
+<vulner id="8376">
+<title>Available HTTP Methods</title>
+<short_description>Available HTTP request methods received on the HTTP OPTIONS request in the Allow field.</short_description>
+<description/>
+<how_to_fix/>
+<links>https://www.ietf.org/rfc/rfc2616.txt</links>
+<cvss temp_score="0.0" base_score="0.0" temp_score_decomp="" base_score_decomp=""/></vulner></vulners></content>

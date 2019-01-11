@@ -1,0 +1,3951 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<content xsi:schemaLocation="http://www.ptsecurity.ru/reports https://support.ptsecurity.ru/xsd/mp8/25/maxpatrol80-info-report.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://www.ptsecurity.ru/reports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<server db_guid="E4ADB012-661B-47F2-9242-EBEA2CE0F5E6" license="15749" id="1" version="28461"/>
+<report lang="en" name="cisco" comment="" created="2018-11-12T09:30:17"/>
+<tasks>
+<task name="cisco pa" id="12" license="15749"/></tasks>
+<data>
+<host ip="172.16.101.25" host_stop_time="2018-11-10T15:19:12" host_start_time="2018-11-10T13:22:09" start_time="2018-11-10T13:22:08" task="12" host_uid="1" scan="38" fqdn="" stop_time="2018-11-10T15:19:12" primary="172.16.101.25" exitcode="0" scan_status="2" netbios="">
+<qualifier_rule>As specified</qualifier_rule>
+<scanner license="319D722B-F1C6-4222-86CD-25A62AC7B73D" version="28461" profile="RV_PA_Cisco">Default Scanner on MP</scanner>
+<transport_info>LDAP:2/MML:0/NotesRPC:7/ODBC DB2:0/ODBC MSSQL:4/ODBC MySQL:0/ODBC Oracle:4/ODBC PostgreSQL:0/ODBC Sybase:0/ODBC Tibero:0/RPC Filesystem:4/RPC Registry:4/RPC:4/Remote Engine:2/SAP GUI:7/SAP HANA:0/SAP HTTP:0/SAPRFC:9/SSH2:6/TELNET:4/VMWARE vCenter:0/VMWARE:0/WMI FILESYSTEM:4/WMI REGISTRY:4/WMI:4/XEN:0/XENRPC:0/vSphere API vCenter:0/vSphere API:0</transport_info>
+<statistics/>
+<hardware name="Hardware Information" security_object="6075071">
+<device id="425301">
+<name>Device Modules</name>
+<param_list>
+<table index="0" name="Gentable" description="Device modules" format="table">
+<header>
+<column name="Module" id="1"/>
+<column name="Description" id="2"/>
+<column name="PID" id="3"/>
+<column name="VID" id="4"/>
+<column name="Serial number" id="5"/></header>
+<body>
+<row>
+<field id="1">3620 Chassis Slot 0</field>
+<field id="2">3620 Chassis Slot</field>
+<field id="3"/>
+<field id="4"/>
+<field id="5"/></row>
+<row>
+<field id="1">3620 Chassis Slot 1</field>
+<field id="2">3620 Chassis Slot</field>
+<field id="3"/>
+<field id="4"/>
+<field id="5"/></row>
+<row>
+<field id="1">3620 Chassis Slot 2</field>
+<field id="2">3620 Chassis Slot</field>
+<field id="3"/>
+<field id="4"/>
+<field id="5"/></row>
+<row>
+<field id="1">3725 chassis</field>
+<field id="2">3725 chassis</field>
+<field id="3"/>
+<field id="4">0.1</field>
+<field id="5">FTX0945W0MY</field></row>
+<row>
+<field id="1">AIM Container Slot 0</field>
+<field id="2">AIM Container Slot 0</field>
+<field id="3"/>
+<field id="4"/>
+<field id="5"/></row>
+<row>
+<field id="1">AIM Container Slot 1</field>
+<field id="2">AIM Container Slot 1</field>
+<field id="3"/>
+<field id="4"/>
+<field id="5"/></row>
+<row>
+<field id="1">DaughterCard Slot 0 on Card 0</field>
+<field id="2">3620 DaughterCard Slot</field>
+<field id="3"/>
+<field id="4"/>
+<field id="5"/></row>
+<row>
+<field id="1">DaughterCard Slot 1 on Card 0</field>
+<field id="2">3620 DaughterCard Slot</field>
+<field id="3"/>
+<field id="4"/>
+<field id="5"/></row>
+<row>
+<field id="1">DaughterCard Slot 2 on Card 0</field>
+<field id="2">3620 DaughterCard Slot</field>
+<field id="3"/>
+<field id="4"/>
+<field id="5"/></row>
+<row>
+<field id="1">FastEthernet0/0</field>
+<field id="2">Gt96k FE</field>
+<field id="3"/>
+<field id="4"/>
+<field id="5"/></row>
+<row>
+<field id="1">FastEthernet0/1</field>
+<field id="2">Gt96k FE</field>
+<field id="3"/>
+<field id="4"/>
+<field id="5"/></row>
+<row>
+<field id="1">c3725 Motherboard with Fast Ethernet</field>
+<field id="2">c3725 Motherboard with Fast Ethernet</field>
+<field id="3"/>
+<field id="4">0.1</field>
+<field id="5">XXXXXXXXXXX</field></row></body></table></param_list></device>
+<device id="425302">
+<name>Hardware Information</name>
+<param_list>
+<table index="0" name="Gentext1" description="var" format="key-value">
+<header>
+<column name="CPU type" id="1"/>
+<column name="CPU frequency" id="2"/>
+<column name="L2 cache" id="3"/>
+<column name="L3 cache" id="4"/>
+<column name="CPU ID" id="5"/>
+<column name="RAM memory" id="6"/>
+<column name="FLash memory" id="7"/>
+<column name="NVRAM memory" id="8"/>
+<column name="Motherboard serial number" id="9"/>
+<column name="System unit serial number" id="10"/>
+<column name="PSU serial number" id="11"/>
+<column name="Device Model" id="12"/></header>
+<body>
+<row>
+<field id="1">R7000</field>
+<field id="2">240MHz</field>
+<field id="3">256KB</field>
+<field id="4">512KB</field>
+<field id="5">FTX0945W0MY</field>
+<field id="6">249856K/12288K</field>
+<field id="7">131072K bytes</field>
+<field id="8">55K</field>
+<field id="9"/>
+<field id="10"/>
+<field id="11"/>
+<field id="12">3725</field></row></body></table></param_list></device></hardware>
+<scan_objects>
+<soft port_status="0" type="3" port="22" id="1" security_object="0" protocol="6" service="1100">
+<name>SSH</name>
+<version/>
+<path/>
+<metadata>
+<soft_version id="0"/></metadata>
+<banner>
+<table index="0" name="GenBanner" description="Banner" format="key-value">
+<header>
+<column name="Banner" id="1"/></header>
+<body>
+<row>
+<field id="1">SSH-1.99-Cisco-1.25
+</field></row></body></table>
+<table index="2" name="GenProtocolVersions" description="Protocol versions" format="key-value">
+<header>
+<column name="Protocol versions" id="1"/></header>
+<body>
+<row>
+<field id="1">1.5,1.99,2.0</field></row></body></table></banner>
+<statistics>
+<table index="2" name="GenPortStatistics" description="" format="table">
+<header>
+<column name="scan_time" id="1"/></header>
+<body>
+<row>
+<field id="1">40 min 33 sec</field></row></body></table></statistics>
+<vulners>
+<vulner id="1044" level="3" status="0">
+<param/>
+<param_list/></vulner>
+<vulner id="1092" level="0" status="0">
+<param/>
+<param_list/></vulner>
+<vulner id="8176" level="0" status="0">
+<param/>
+<param_list>
+<table index="0" name="GenProfile" description="Server configuration" format="key-value">
+<header>
+<column name="Keys exchange algorithms" id="1"/>
+<column name="Server host key algorithms" id="2"/>
+<column name="Decryption ciphers" id="3"/>
+<column name="Encryption ciphers" id="4"/>
+<column name="MAC algorithms (client to server)" id="5"/>
+<column name="MAC algorithms (server to client)" id="6"/>
+<column name="Decompression algorithms" id="7"/>
+<column name="Compression algorithms" id="8"/>
+<column name="Authentication methods" id="9"/></header>
+<body>
+<row>
+<field id="1">diffie-hellman-group1-sha1</field>
+<field id="2">ssh-rsa</field>
+<field id="3">aes128-cbc,3des-cbc,aes192-cbc,aes256-cbc</field>
+<field id="4">aes128-cbc,3des-cbc,aes192-cbc,aes256-cbc</field>
+<field id="5">hmac-sha1,hmac-sha1-96,hmac-md5,hmac-md5-96</field>
+<field id="6">hmac-sha1,hmac-sha1-96,hmac-md5,hmac-md5-96</field>
+<field id="7">none</field>
+<field id="8">none</field>
+<field id="9">password</field></row></body></table></param_list></vulner>
+<vulner id="8177" level="0" status="0">
+<param/>
+<param_list>
+<table index="1" name="GenKeySSH2" description="Host keys (SSH2)" format="table">
+<header>
+<column name="Key Fingerprint" id="1"/>
+<column name="Host-Key Method" id="2"/></header>
+<body>
+<row>
+<field id="1">fa:4d:09:d8:f8:e6:c1:32:8a:9c:54:af:72:4d:ab:90</field>
+<field id="2">ssh-rsa</field></row></body></table>
+<table index="0" name="GenKeySSH1" description="Host key (SSH1)" format="table">
+<header>
+<column name="Key Fingerprint" id="1"/></header>
+<body>
+<row>
+<field id="1">95:41:ca:b2:58:05:6b:7b:58:b3:36:6a:c9:44:c9:a2</field>
+<field id="2">ssh-rsa</field></row></body></table></param_list></vulner>
+<vulner id="8365" level="1" status="0">
+<param/>
+<param_list>
+<table index="0" name="GenWeakCiphers" description="Encyption algorithms" format="table">
+<header>
+<column name="Weak Ciphers" id="1"/></header>
+<body>
+<row>
+<field id="1">aes128-cbc</field></row>
+<row>
+<field id="1">3des-cbc</field></row>
+<row>
+<field id="1">aes192-cbc</field></row>
+<row>
+<field id="1">aes256-cbc</field></row></body></table></param_list></vulner>
+<vulner id="8368" level="1" status="0">
+<param/>
+<param_list>
+<table index="0" name="GenWeakMACs" description="MAC algorithms" format="table">
+<header>
+<column name="Weak algorithms" id="1"/></header>
+<body>
+<row>
+<field id="1">hmac-sha1</field></row>
+<row>
+<field id="1">hmac-sha1-96</field></row>
+<row>
+<field id="1">hmac-md5</field></row>
+<row>
+<field id="1">hmac-md5-96</field></row></body></table></param_list></vulner>
+<vulner id="8369" level="1" status="0">
+<param/>
+<param_list>
+<table index="0" name="GenWeakKEXs" description="Key-Exchange Algorithms" format="table">
+<header>
+<column name="Weak algorithms" id="1"/></header>
+<body>
+<row>
+<field id="1">diffie-hellman-group1-sha1</field></row></body></table></param_list></vulner></vulners></soft>
+<soft port_status="0" type="3" port="80" id="2" security_object="0" protocol="6" service="100">
+<name>HTTP</name>
+<version/>
+<path/>
+<metadata>
+<soft_version id="0"/></metadata>
+<banner>
+<table index="5" name="GenServerState" description="State" format="key-value">
+<header>
+<column name="State" id="1"/></header>
+<body>
+<row>
+<field id="1">401 (Unauthorized)</field></row></body></table>
+<table index="9" name="GenHeuristicInfo" description="" format="list">
+<header>
+<column name="" id="1"/></header>
+<body>
+<row>
+<field id="1">The application name was confirmed by heuristic methods</field></row></body></table>
+<table index="3" name="GenServerName" description="Server name" format="key-value">
+<header>
+<column name="Server name" id="1"/></header>
+<body>
+<row>
+<field id="1">cisco-IOS</field></row></body></table>
+<table index="8" name="GenHeuristicServerName" description="Server name (heuristic detected)" format="key-value">
+<header>
+<column name="Server name (heuristic detected)" id="1"/></header>
+<body>
+<row>
+<field id="1">Cisco HTTP Server</field></row></body></table></banner>
+<statistics>
+<table index="2" name="GenPortStatistics" description="" format="table">
+<header>
+<column name="scan_time" id="1"/></header>
+<body>
+<row>
+<field id="1">1 h 5 min 36 sec</field></row></body></table></statistics>
+<vulners>
+<vulner id="1235" level="0" status="0">
+<param/>
+<param_list>
+<table index="0" name="Gen" description="" format="table">
+<header>
+<column name="" id="1"/></header>
+<body>
+<row>
+<field id="1">&amp;lt;a href=&amp;quot;http://172.16.101.25/&amp;quot; target=_blank&amp;gt;/&amp;lt;/a&amp;gt;</field></row>
+<row>
+<field id="1">&amp;lt;a href=&amp;quot;http://172.16.101.25/archive/&amp;quot; target=_blank&amp;gt;/archive/&amp;lt;/a&amp;gt;</field></row>
+<row>
+<field id="1">&amp;lt;a href=&amp;quot;http://172.16.101.25/template/&amp;quot; target=_blank&amp;gt;/template/&amp;lt;/a&amp;gt;</field></row>
+<row>
+<field id="1">&amp;lt;a href=&amp;quot;http://172.16.101.25/view/&amp;quot; target=_blank&amp;gt;/view/&amp;lt;/a&amp;gt;</field></row></body></table></param_list></vulner>
+<vulner id="8375" level="0" status="0">
+<param/>
+<param_list>
+<table index="0" name="GenHeaders" description="HTTP Headers" format="table">
+<header>
+<column name="HTTP Header" id="1"/>
+<column name="Value" id="2"/></header>
+<body>
+<row>
+<field id="1">ACCEPT-RANGES</field>
+<field id="2">NONE</field></row>
+<row>
+<field id="1">CONNECTION</field>
+<field id="2">CLOSE</field></row>
+<row>
+<field id="1">DATE</field>
+<field id="2">SUN, 14 APR 2002 03:52:20 GMT</field></row>
+<row>
+<field id="1">SERVER</field>
+<field id="2">CISCO-IOS</field></row>
+<row>
+<field id="1">WWW-AUTHENTICATE</field>
+<field id="2">BASIC REALM=&amp;quot;LEVEL_15_ACCESS&amp;quot;</field></row></body></table></param_list></vulner></vulners></soft>
+<soft port_status="0" type="3" port="0" id="3" security_object="0" protocol="6" service="1">
+<name>System</name>
+<version/>
+<path/>
+<metadata>
+<soft_version id="0"/></metadata>
+<statistics>
+<table index="2" name="GenPortStatistics" description="" format="table">
+<header>
+<column name="scan_time" id="1"/></header>
+<body>
+<row>
+<field id="1">0 sec</field></row></body></table></statistics>
+<vulners>
+<vulner id="1222" level="0" status="0">
+<param>12.4(16)</param>
+<param_list>
+<table index="1" name="GenOperatingSystemsList" description="Detection methods" format="table">
+<header>
+<column name="Name" id="1"/>
+<column name="Version" id="2"/>
+<column name="Detection method" id="3"/>
+<column name="Weight" id="4"/></header>
+<body>
+<row>
+<field id="1">Cisco IOS</field>
+<field id="2">12.4(16)</field>
+<field id="3">Audit</field>
+<field id="4">70</field></row>
+<row>
+<field id="1">Cisco IOS</field>
+<field id="2">12.4(16)</field>
+<field id="3">SNMP (161/UDP)</field>
+<field id="4">30</field></row>
+<row>
+<field id="1">Cisco IOS</field>
+<field id="2">Cisco IOS </field>
+<field id="3">HTTP (80/TCP)</field>
+<field id="4">20</field></row>
+<row>
+<field id="1">Operating System</field>
+<field id="2">Cisco IOS 12 or PIX</field>
+<field id="3">Heuristic SSH OS (22/TCP)</field>
+<field id="4">2</field></row>
+<row>
+<field id="1">Operating System</field>
+<field id="2">Cisco</field>
+<field id="3">Counter OS Info</field>
+<field id="4">1</field></row></body></table></param_list></vulner>
+<vulner id="8123" level="0" status="0">
+<param/>
+<param_list>
+<table index="0" name="Gentime_table" description="Routing information" format="table">
+<header>
+<column name="TTL" id="1"/>
+<column name="Hop address" id="2"/>
+<column name="Round Trip Time, ms" id="3"/></header>
+<body>
+<row>
+<field id="1">1</field>
+<field id="2">10.4.5.1</field>
+<field id="3">                       0.14   0.10   0.07   </field></row>
+<row>
+<field id="1">2</field>
+<field id="2">172.16.7.2</field>
+<field id="3">                       0.93   0.95   0.83   </field></row>
+<row>
+<field id="1">3</field>
+<field id="2">172.16.101.25</field>
+<field id="3">                       4.81   8.43   8.31   </field></row></body></table></param_list></vulner>
+<vulner id="8134" level="0" status="0">
+<param/>
+<param_list>
+<table index="0" name="Gendelta" description="Timestamp delta" format="key-value">
+<header>
+<column name="Timestamp delta" id="1"/></header>
+<body>
+<row>
+<field id="1">2.12378e+006 +/- 0.003 seconds</field></row></body></table></param_list></vulner></vulners></soft>
+<soft port_status="0" type="3" port="161" id="4" security_object="0" protocol="17" service="10007">
+<name>SNMP</name>
+<version/>
+<path/>
+<metadata>
+<soft_version id="0"/></metadata>
+<banner>
+<table index="2" name="GenProtocolVersions" description="Protocol versions" format="key-value">
+<header>
+<column name="Protocol versions" id="1"/></header>
+<body>
+<row>
+<field id="1">1, 2, 3</field></row></body></table></banner>
+<statistics>
+<table index="2" name="GenPortStatistics" description="" format="table">
+<header>
+<column name="scan_time" id="1"/></header>
+<body>
+<row>
+<field id="1">1 sec</field></row></body></table></statistics>
+<vulners>
+<vulner id="1079" level="5" status="0">
+<param/>
+<param_list>
+<table index="1" name="GenBanner" description="" format="table">
+<header>
+<column name="Information" id="1"/></header>
+<body>
+<row>
+<field id="1">Cisco 3700,  IOS Version 12.4(16)</field></row></body></table>
+<table index="0" name="GenCommunity" description="" format="table">
+<header>
+<column name="Account" id="1"/>
+<column name="Access permissions" id="2"/></header>
+<body>
+<row>
+<field id="1">private</field>
+<field id="2">read/write</field></row></body></table></param_list></vulner>
+<vulner id="8166" level="0" status="0">
+<param/>
+<param_list>
+<table index="0" name="GenStaticARP" description="ARP table" format="table">
+<header>
+<column name="IP" id="1"/>
+<column name="MAC" id="2"/></header>
+<body>
+<row>
+<field id="1">172.16.101.25</field>
+<field id="2">c2:01:18:48:00:00</field></row></body></table>
+<table index="1" name="GenCommunity" description="Community Strings" format="table">
+<header>
+<column name="Name" id="1"/></header>
+<body>
+<row>
+<field id="1">public</field></row>
+<row>
+<field id="1">private</field></row></body></table></param_list></vulner>
+<vulner id="8167" level="0" status="0">
+<param/>
+<param_list>
+<table index="0" name="GenInterfaces" description="Network interface list" format="table">
+<header>
+<column name="Interface ID" id="1"/>
+<column name="Description" id="2"/>
+<column name="Type" id="3"/>
+<column name="MTU" id="4"/>
+<column name="Speed" id="5"/>
+<column name="MAC" id="6"/>
+<column name="Admin status" id="7"/>
+<column name="Operation status" id="8"/></header>
+<body>
+<row>
+<field id="1">3</field>
+<field id="2">Null0</field>
+<field id="3">1</field>
+<field id="4">1500</field>
+<field id="5">4294967295</field>
+<field id="6">N/A</field>
+<field id="7">up</field>
+<field id="8">up</field></row>
+<row>
+<field id="1">1</field>
+<field id="2">FastEthernet0/0</field>
+<field id="3">6</field>
+<field id="4">1500</field>
+<field id="5">10000000</field>
+<field id="6">c2:01:18:48:00:00</field>
+<field id="7">up</field>
+<field id="8">up</field></row>
+<row>
+<field id="1">2</field>
+<field id="2">FastEthernet0/1</field>
+<field id="3">6</field>
+<field id="4">1500</field>
+<field id="5">10000000</field>
+<field id="6">c2:01:18:48:00:01</field>
+<field id="7">down</field>
+<field id="8">down</field></row></body></table>
+<table index="1" name="GenCommunity" description="Community Strings" format="table">
+<header>
+<column name="Name" id="1"/></header>
+<body>
+<row>
+<field id="1">public</field></row>
+<row>
+<field id="1">private</field></row></body></table></param_list></vulner>
+<vulner id="8168" level="0" status="0">
+<param/>
+<param_list>
+<table index="0" name="GenSysInfo" description="" format="key-value">
+<header>
+<column name="Description" id="1"/>
+<column name="Uptime" id="2"/>
+<column name="Contact" id="3"/>
+<column name="Name" id="4"/>
+<column name="Location" id="5"/></header>
+<body>
+<row>
+<field id="1">Cisco IOS Software, 3700 Software (C3725-ADVSECURITYK9-M), Version 12.4(16), RELEASE SOFTWARE (fc1)
+Technical Support: http://www.cisco.com/techsupport
+Copyright (c) 1986-2007 by Cisco Systems, Inc.
+Compiled Wed 20-Jun-07 13:14 by prod_rel_team</field>
+<field id="2">44 days 04:58:34.09</field>
+<field id="3"> </field>
+<field id="4">c3725-1.rvlab.net</field>
+<field id="5"> </field></row></body></table>
+<table index="1" name="GenCommunity" description="Community Strings" format="table">
+<header>
+<column name="Name" id="1"/></header>
+<body>
+<row>
+<field id="1">public</field></row>
+<row>
+<field id="1">private</field></row></body></table></param_list></vulner>
+<vulner id="8169" level="0" status="0">
+<param/>
+<param_list>
+<table index="0" name="GenIpAddr" description="IP address list" format="table">
+<header>
+<column name="IP Address" id="1"/>
+<column name="Interface ID" id="2"/>
+<column name="Netmask" id="3"/></header>
+<body>
+<row>
+<field id="1">172.16.101.25</field>
+<field id="2">1</field>
+<field id="3">255.255.255.0</field></row></body></table>
+<table index="1" name="GenCommunity" description="Community Strings" format="table">
+<header>
+<column name="Name" id="1"/></header>
+<body>
+<row>
+<field id="1">public</field></row>
+<row>
+<field id="1">private</field></row></body></table></param_list></vulner>
+<vulner id="8170" level="0" status="0">
+<param/>
+<param_list>
+<table index="0" name="Genroutes" description="Routing table" format="table">
+<header>
+<column name="Destination address" id="1"/>
+<column name="Netmask" id="2"/>
+<column name="Next hop" id="3"/>
+<column name="Interface" id="4"/>
+<column name="Metrics" id="5"/></header>
+<body>
+<row>
+<field id="1">0.0.0.0</field>
+<field id="2">0.0.0.0</field>
+<field id="3">172.16.101.1</field>
+<field id="4">0</field>
+<field id="5">0</field></row>
+<row>
+<field id="1">172.16.101.0</field>
+<field id="2">255.255.255.0</field>
+<field id="3">172.16.101.25</field>
+<field id="4">1</field>
+<field id="5">0</field></row></body></table>
+<table index="1" name="GenCommunity" description="Community Strings" format="table">
+<header>
+<column name="Name" id="1"/></header>
+<body>
+<row>
+<field id="1">public</field></row>
+<row>
+<field id="1">private</field></row></body></table></param_list></vulner>
+<vulner id="8171" level="0" status="0">
+<param/>
+<param_list>
+<table index="1" name="Genudp" description="Opened UDP ports" format="table">
+<header>
+<column name="Port No." id="1"/></header>
+<body>
+<row>
+<field id="1">67</field></row>
+<row>
+<field id="1">161</field></row>
+<row>
+<field id="1">162</field></row>
+<row>
+<field id="1">2887</field></row>
+<row>
+<field id="1">52611</field></row>
+<row>
+<field id="1">54560</field></row>
+<row>
+<field id="1"> </field></row></body></table></param_list></vulner></vulners></soft>
+<soft port_status="0" type="3" port="67" id="5" security_object="0" protocol="17" service="0">
+<name/>
+<version/>
+<path/>
+<metadata>
+<soft_version id="0"/></metadata>
+<banner></banner>
+<statistics>
+<table index="2" name="GenPortStatistics" description="" format="table">
+<header>
+<column name="scan_time" id="1"/></header>
+<body>
+<row>
+<field id="1">0 sec</field></row></body></table></statistics></soft>
+<soft port_status="0" type="3" port="162" id="6" security_object="0" protocol="17" service="0">
+<name/>
+<version/>
+<path/>
+<metadata>
+<soft_version id="0"/></metadata>
+<banner></banner>
+<statistics>
+<table index="2" name="GenPortStatistics" description="" format="table">
+<header>
+<column name="scan_time" id="1"/></header>
+<body>
+<row>
+<field id="1">0 sec</field></row></body></table></statistics></soft>
+<soft port_status="0" type="3" port="2887" id="7" security_object="0" protocol="17" service="0">
+<name/>
+<version/>
+<path/>
+<metadata>
+<soft_version id="0"/></metadata>
+<statistics>
+<table index="2" name="GenPortStatistics" description="" format="table">
+<header>
+<column name="scan_time" id="1"/></header>
+<body>
+<row>
+<field id="1">0 sec</field></row></body></table></statistics></soft>
+<soft port_status="0" type="3" port="52611" id="8" security_object="0" protocol="17" service="0">
+<name/>
+<version/>
+<path/>
+<metadata>
+<soft_version id="0"/></metadata>
+<statistics>
+<table index="2" name="GenPortStatistics" description="" format="table">
+<header>
+<column name="scan_time" id="1"/></header>
+<body>
+<row>
+<field id="1">0 sec</field></row></body></table></statistics></soft>
+<soft port_status="0" type="3" port="54560" id="9" security_object="0" protocol="17" service="0">
+<name/>
+<version/>
+<path/>
+<metadata>
+<soft_version id="0"/></metadata>
+<statistics>
+<table index="2" name="GenPortStatistics" description="" format="table">
+<header>
+<column name="scan_time" id="1"/></header>
+<body>
+<row>
+<field id="1">0 sec</field></row></body></table></statistics></soft>
+<soft type="2" port="0" id="10" security_object="6076544" protocol="0" service="6067840">
+<name>Cisco IOS</name>
+<version>12.4(16)</version>
+<path/>
+<metadata>
+<soft_version id="6067840"/>
+<soft_version id="6067841"/>
+<soft_version id="6073353"/></metadata>
+<vulners>
+<vulner id="12204" level="0" status="0">
+<param>FTX0945W0MY</param>
+<param_list/></vulner>
+<vulner id="171861" level="3" status="0">
+<param/>
+<param_list/></vulner>
+<vulner id="171862" level="5" status="0">
+<param/>
+<param_list/></vulner>
+<vulner id="171942" level="5" status="0">
+<param/>
+<param_list/></vulner>
+<vulner id="171945" level="5" status="0">
+<param/>
+<param_list/></vulner>
+<vulner id="171947" level="5" status="0">
+<param/>
+<param_list/></vulner>
+<vulner id="171948" level="5" status="0">
+<param/>
+<param_list/></vulner>
+<vulner id="172088" level="5" status="0">
+<param/>
+<param_list/></vulner>
+<vulner id="172089" level="5" status="0">
+<param/>
+<param_list/></vulner>
+<vulner id="172091" level="5" status="0">
+<param/>
+<param_list/></vulner>
+<vulner id="172094" level="5" status="0">
+<param/>
+<param_list/></vulner>
+<vulner id="172095" level="5" status="0">
+<param/>
+<param_list/></vulner>
+<vulner id="174075" level="5" status="0">
+<param/>
+<param_list/></vulner>
+<vulner id="174076" level="5" status="0">
+<param/>
+<param_list/></vulner>
+<vulner id="174078" level="5" status="0">
+<param/>
+<param_list/></vulner>
+<vulner id="174081" level="5" status="0">
+<param/>
+<param_list/></vulner>
+<vulner id="174083" level="5" status="0">
+<param/>
+<param_list/></vulner>
+<vulner id="175303" level="5" status="0">
+<param/>
+<param_list/></vulner>
+<vulner id="175303" level="5" status="0">
+<param/>
+<param_list/></vulner>
+<vulner id="175794" level="0" status="0">
+<param/>
+<param_list>
+<table index="0" name="Gentable1" description="MAC address table" format="table">
+<header>
+<column name="VLAN" id="1"/>
+<column name="MAC address" id="2"/>
+<column name="Type" id="3"/>
+<column name="Ports" id="4"/></header>
+<body>
+<row>
+<field id="1"/>
+<field id="2"/>
+<field id="3"/>
+<field id="4"/></row></body></table></param_list></vulner>
+<vulner id="176264" level="5" status="0">
+<param/>
+<param_list/></vulner>
+<vulner id="176265" level="5" status="0">
+<param/>
+<param_list/></vulner>
+<vulner id="176266" level="5" status="0">
+<param/>
+<param_list/></vulner>
+<vulner id="176267" level="5" status="0">
+<param/>
+<param_list/></vulner>
+<vulner id="176268" level="5" status="0">
+<param/>
+<param_list/></vulner>
+<vulner id="176269" level="5" status="0">
+<param/>
+<param_list/></vulner>
+<vulner id="176274" level="5" status="0">
+<param/>
+<param_list/></vulner>
+<vulner id="178380" level="5" status="0">
+<param/>
+<param_list/></vulner>
+<vulner id="178384" level="5" status="0">
+<param/>
+<param_list/></vulner>
+<vulner id="178386" level="5" status="0">
+<param/>
+<param_list/></vulner>
+<vulner id="180491" level="5" status="0">
+<param/>
+<param_list/></vulner>
+<vulner id="180494" level="5" status="0">
+<param/>
+<param_list/></vulner>
+<vulner id="181417" level="5" status="0">
+<param/>
+<param_list/></vulner>
+<vulner id="181419" level="5" status="0">
+<param/>
+<param_list/></vulner>
+<vulner id="181997" level="3" status="0">
+<param/>
+<param_list/></vulner>
+<vulner id="182436" level="5" status="0">
+<param/>
+<param_list/></vulner>
+<vulner id="182437" level="5" status="0">
+<param/>
+<param_list/></vulner>
+<vulner id="183503" level="5" status="0">
+<param/>
+<param_list/></vulner>
+<vulner id="183504" level="5" status="0">
+<param/>
+<param_list/></vulner>
+<vulner id="184350" level="5" status="0">
+<param/>
+<param_list/></vulner>
+<vulner id="186281" level="1" status="0">
+<param/>
+<param_list/></vulner>
+<vulner id="186282" level="3" status="0">
+<param/>
+<param_list/></vulner>
+<vulner id="187015" level="3" status="0">
+<param/>
+<param_list/></vulner>
+<vulner id="187303" level="5" status="0">
+<param/>
+<param_list/></vulner>
+<vulner id="187304" level="5" status="0">
+<param/>
+<param_list/></vulner>
+<vulner id="187396" level="3" status="0">
+<param/>
+<param_list/></vulner>
+<vulner id="187924" level="3" status="0">
+<param/>
+<param_list/></vulner>
+<vulner id="187927" level="1" status="0">
+<param/>
+<param_list/></vulner>
+<vulner id="187930" level="3" status="0">
+<param/>
+<param_list/></vulner>
+<vulner id="187931" level="3" status="0">
+<param/>
+<param_list/></vulner>
+<vulner id="187932" level="3" status="0">
+<param/>
+<param_list/></vulner>
+<vulner id="187933" level="3" status="0">
+<param/>
+<param_list/></vulner>
+<vulner id="187934" level="3" status="0">
+<param/>
+<param_list/></vulner>
+<vulner id="188506" level="1" status="0">
+<param/>
+<param_list/></vulner>
+<vulner id="411401" level="0" status="0">
+<param/>
+<param_list>
+<table index="0" name="Gen" description="Var" format="key-value">
+<header>
+<column name="Image file" id="1"/>
+<column name="IOS version" id="2"/>
+<column name="IOS release" id="3"/>
+<column name="Config register" id="4"/></header>
+<body>
+<row>
+<field id="1">C3725-ADVSECURITYK9-M</field>
+<field id="2">12.4(16)</field>
+<field id="3">fc1</field>
+<field id="4">0x2102</field></row></body></table></param_list></vulner>
+<vulner id="425304" level="0" status="0">
+<param/>
+<param_list>
+<table index="0" name="Gen" description="var" format="key-value">
+<header>
+<column name="Device name" id="1"/>
+<column name="Device model" id="2"/></header>
+<body>
+<row>
+<field id="1"/>
+<field id="2">3725</field></row></body></table></param_list></vulner>
+<vulner id="425308" level="0" status="0">
+<param/>
+<param_list>
+<table index="0" name="Gen" description="var" format="key-value">
+<header>
+<column name="Password encryption service" id="1"/>
+<column name="CDP" id="2"/>
+<column name="Finger" id="3"/>
+<column name="BOOTP" id="4"/>
+<column name="Identd" id="5"/>
+<column name="HTTP" id="6"/>
+<column name="HTTPS" id="7"/>
+<column name="TCP-keepalives-in" id="8"/>
+<column name="TCP-keepalives-out" id="9"/>
+<column name="TCP-small-servers" id="10"/>
+<column name="UDP-small-servers" id="11"/>
+<column name="TFTP" id="12"/>
+<column name="AAA" id="13"/>
+<column name="IPv6" id="14"/>
+<column name="DHCP" id="15"/>
+<column name="Service config" id="16"/>
+<column name="Cisco Smart Install" id="17"/></header>
+<body>
+<row>
+<field id="1">Enabled</field>
+<field id="2">Enabled (default)</field>
+<field id="3">Enabled</field>
+<field id="4">&amp;lt;b&amp;gt;Enable command verification through the configuration mode in the scan profile&amp;lt;/b&amp;gt;</field>
+<field id="5">Enabled</field>
+<field id="6">not support in this version</field>
+<field id="7">not support in this version</field>
+<field id="8">Disabled (default)</field>
+<field id="9">Disabled (default)</field>
+<field id="10">Disabled (default)</field>
+<field id="11">Disabled (default)</field>
+<field id="12">Disabled (default)</field>
+<field id="13">Enabled</field>
+<field id="14">Enabled</field>
+<field id="15">Enabled (default)</field>
+<field id="16">Disabled (default)</field>
+<field id="17">Not supported</field></row></body></table></param_list></vulner>
+<vulner id="425310" level="0" status="0">
+<param/>
+<param_list>
+<table index="0" name="Gentable" description="VLANs list" format="table">
+<header>
+<column name="VLAN number" id="1"/>
+<column name="Name" id="2"/>
+<column name="Status" id="3"/>
+<column name="Interfaces" id="4"/></header>
+<body>
+<row>
+<field id="1">1</field>
+<field id="2">default</field>
+<field id="3">active</field>
+<field id="4">-</field></row>
+<row>
+<field id="1">1002</field>
+<field id="2">fddi-default</field>
+<field id="3">active</field>
+<field id="4">-</field></row>
+<row>
+<field id="1">1003</field>
+<field id="2">token-ring-default</field>
+<field id="3">active</field>
+<field id="4">-</field></row>
+<row>
+<field id="1">1004</field>
+<field id="2">fddinet-default</field>
+<field id="3">active</field>
+<field id="4">-</field></row>
+<row>
+<field id="1">1005</field>
+<field id="2">trnet-default</field>
+<field id="3">active</field>
+<field id="4">-</field></row></body></table></param_list></vulner>
+<vulner id="425345" level="0" status="0">
+<param/>
+<param_list>
+<table index="0" name="Gentext" description="var" format="key-value">
+<header>
+<column name="Console logging level" id="1"/>
+<column name="Buffer size" id="2"/>
+<column name="Syslog server message source identifier" id="3"/>
+<column name="Syslog server logging level" id="4"/></header>
+<body>
+<row>
+<field id="1">debugging</field>
+<field id="2">not defined</field>
+<field id="3">not defined</field>
+<field id="4"> informational (default)</field></row></body></table></param_list></vulner>
+<vulner id="425349" level="0" status="0">
+<param/>
+<param_list>
+<table index="1" name="Gentable2" description="Authorization" format="table">
+<header>
+<column name="Authorization group" id="1"/>
+<column name="Authorization type" id="2"/>
+<column name="AAA Group" id="3"/></header>
+<body>
+<row>
+<field id="1">default</field>
+<field id="2">commands 0</field>
+<field id="3">none (default)</field></row>
+<row>
+<field id="1">default</field>
+<field id="2">commands 1</field>
+<field id="3">none (default)</field></row>
+<row>
+<field id="1">default</field>
+<field id="2">commands 10</field>
+<field id="3">none (default)</field></row>
+<row>
+<field id="1">default</field>
+<field id="2">commands 11</field>
+<field id="3">none (default)</field></row>
+<row>
+<field id="1">default</field>
+<field id="2">commands 12</field>
+<field id="3">none (default)</field></row>
+<row>
+<field id="1">default</field>
+<field id="2">commands 13</field>
+<field id="3">none (default)</field></row>
+<row>
+<field id="1">default</field>
+<field id="2">commands 14</field>
+<field id="3">none (default)</field></row>
+<row>
+<field id="1">default</field>
+<field id="2">commands 15</field>
+<field id="3">none (default)</field></row>
+<row>
+<field id="1">default</field>
+<field id="2">commands 2</field>
+<field id="3">none (default)</field></row>
+<row>
+<field id="1">default</field>
+<field id="2">commands 3</field>
+<field id="3">none (default)</field></row>
+<row>
+<field id="1">default</field>
+<field id="2">commands 4</field>
+<field id="3">none (default)</field></row>
+<row>
+<field id="1">default</field>
+<field id="2">commands 5</field>
+<field id="3">none (default)</field></row>
+<row>
+<field id="1">default</field>
+<field id="2">commands 6</field>
+<field id="3">none (default)</field></row>
+<row>
+<field id="1">default</field>
+<field id="2">commands 7</field>
+<field id="3">none (default)</field></row>
+<row>
+<field id="1">default</field>
+<field id="2">commands 8</field>
+<field id="3">none (default)</field></row>
+<row>
+<field id="1">default</field>
+<field id="2">commands 9</field>
+<field id="3">none (default)</field></row>
+<row>
+<field id="1">default</field>
+<field id="2">configuration</field>
+<field id="3">none (default)</field></row>
+<row>
+<field id="1">default</field>
+<field id="2">exec</field>
+<field id="3">none (default)</field></row>
+<row>
+<field id="1">default</field>
+<field id="2">network</field>
+<field id="3">none (default)</field></row>
+<row>
+<field id="1">none</field>
+<field id="2">commands default</field>
+<field id="3">(default)</field></row></body></table>
+<table index="0" name="Gentable1" description="Authentication" format="table">
+<header>
+<column name="Authentication group" id="1"/>
+<column name="Authentication type" id="2"/>
+<column name="AAA Group" id="3"/></header>
+<body>
+<row>
+<field id="1">default</field>
+<field id="2">enable</field>
+<field id="3">enable (default)</field></row>
+<row>
+<field id="1">default</field>
+<field id="2">login</field>
+<field id="3">local (default)</field></row></body></table></param_list></vulner>
+<vulner id="425398" level="1" status="0">
+<param/>
+<param_list>
+<table index="0" name="Gentable" description="Following rarely used services are enabled" format="table">
+<header>
+<column name="" id="1"/></header>
+<body>
+<row>
+<field id="1">Bootp</field></row>
+<row>
+<field id="1">CDP</field></row></body></table></param_list></vulner>
+<vulner id="510022" level="3" status="0">
+<param/>
+<param_list>
+<table index="0" name="Gendatatemp" description="SSH protocol version" format="table">
+<header>
+<column name="" id="1"/></header>
+<body>
+<row>
+<field id="1">1.99</field></row></body></table></param_list></vulner>
+<vulner id="510101" level="0" status="0">
+<param/>
+<param_list>
+<table index="0" name="Gentable1" description="Addresses" format="table">
+<header>
+<column name="Protocol" id="1"/>
+<column name="Address" id="2"/>
+<column name="IP address age (min.)" id="3"/>
+<column name="Physical address" id="4"/>
+<column name="Encapsulation type" id="5"/>
+<column name="Interface" id="6"/></header>
+<body>
+<row>
+<field id="1">Internet</field>
+<field id="2">172.16.101.170</field>
+<field id="3">64</field>
+<field id="4">000c.2905.6c50</field>
+<field id="5">ARPA</field>
+<field id="6">FastEthernet0/0</field></row>
+<row>
+<field id="1">Internet</field>
+<field id="2">172.16.101.8</field>
+<field id="3">78</field>
+<field id="4">000c.2948.165d</field>
+<field id="5">ARPA</field>
+<field id="6">FastEthernet0/0</field></row>
+<row>
+<field id="1">Internet</field>
+<field id="2">172.16.101.48</field>
+<field id="3">0</field>
+<field id="4">000c.296d.fe05</field>
+<field id="5">ARPA</field>
+<field id="6">FastEthernet0/0</field></row>
+<row>
+<field id="1">Internet</field>
+<field id="2">172.16.101.201</field>
+<field id="3">72</field>
+<field id="4">000c.297a.8a2e</field>
+<field id="5">ARPA</field>
+<field id="6">FastEthernet0/0</field></row>
+<row>
+<field id="1">Internet</field>
+<field id="2">172.16.101.46</field>
+<field id="3">0</field>
+<field id="4">000c.2988.2b58</field>
+<field id="5">ARPA</field>
+<field id="6">FastEthernet0/0</field></row>
+<row>
+<field id="1">Internet</field>
+<field id="2">172.16.101.32</field>
+<field id="3">0</field>
+<field id="4">000c.2993.57f9</field>
+<field id="5">ARPA</field>
+<field id="6">FastEthernet0/0</field></row>
+<row>
+<field id="1">Internet</field>
+<field id="2">172.16.101.10</field>
+<field id="3">199</field>
+<field id="4">000c.29bf.9e30</field>
+<field id="5">ARPA</field>
+<field id="6">FastEthernet0/0</field></row>
+<row>
+<field id="1">Internet</field>
+<field id="2">172.16.101.177</field>
+<field id="3">59</field>
+<field id="4">000c.29c0.5f89</field>
+<field id="5">ARPA</field>
+<field id="6">FastEthernet0/0</field></row>
+<row>
+<field id="1">Internet</field>
+<field id="2">172.16.101.3</field>
+<field id="3">0</field>
+<field id="4">000c.29f5.550b</field>
+<field id="5">ARPA</field>
+<field id="6">FastEthernet0/0</field></row>
+<row>
+<field id="1">Internet</field>
+<field id="2">172.16.101.2</field>
+<field id="3">0</field>
+<field id="4">000c.29fb.675f</field>
+<field id="5">ARPA</field>
+<field id="6">FastEthernet0/0</field></row>
+<row>
+<field id="1">Internet</field>
+<field id="2">172.16.101.1</field>
+<field id="3">0</field>
+<field id="4">000c.29fd.3f53</field>
+<field id="5">ARPA</field>
+<field id="6">FastEthernet0/0</field></row>
+<row>
+<field id="1">Internet</field>
+<field id="2">172.16.101.25</field>
+<field id="3">-</field>
+<field id="4">c201.1848.0000</field>
+<field id="5">ARPA</field>
+<field id="6">FastEthernet0/0</field></row></body></table></param_list></vulner></vulners></soft></scan_objects></host>
+<host ip="172.16.101.26" host_stop_time="2018-11-10T15:18:55" host_start_time="2018-11-10T13:22:09" start_time="2018-11-10T13:22:08" task="12" host_uid="2" scan="38" fqdn="c3725-2.rvlab.net" stop_time="2018-11-10T15:19:12" primary="172.16.101.26" exitcode="0" scan_status="2" netbios="C3725-2">
+<qualifier_rule>As specified</qualifier_rule>
+<scanner license="319D722B-F1C6-4222-86CD-25A62AC7B73D" version="28461" profile="RV_PA_Cisco">Default Scanner on MP</scanner>
+<transport_info>LDAP:2/MML:0/NotesRPC:7/ODBC DB2:0/ODBC MSSQL:4/ODBC MySQL:0/ODBC Oracle:4/ODBC PostgreSQL:0/ODBC Sybase:0/ODBC Tibero:0/RPC Filesystem:4/RPC Registry:4/RPC:4/Remote Engine:2/SAP GUI:7/SAP HANA:0/SAP HTTP:0/SAPRFC:9/SSH2:6/TELNET:4/VMWARE vCenter:0/VMWARE:0/WMI FILESYSTEM:4/WMI REGISTRY:4/WMI:4/XEN:0/XENRPC:0/vSphere API vCenter:0/vSphere API:0</transport_info>
+<statistics/>
+<hardware name="Hardware Information" security_object="6075071">
+<device id="425301">
+<name>Device Modules</name>
+<param_list>
+<table index="0" name="Gentable" description="Device modules" format="table">
+<header>
+<column name="Module" id="1"/>
+<column name="Description" id="2"/>
+<column name="PID" id="3"/>
+<column name="VID" id="4"/>
+<column name="Serial number" id="5"/></header>
+<body>
+<row>
+<field id="1">3620 Chassis Slot 0</field>
+<field id="2">3620 Chassis Slot</field>
+<field id="3"/>
+<field id="4"/>
+<field id="5"/></row>
+<row>
+<field id="1">3620 Chassis Slot 1</field>
+<field id="2">3620 Chassis Slot</field>
+<field id="3"/>
+<field id="4"/>
+<field id="5"/></row>
+<row>
+<field id="1">3620 Chassis Slot 2</field>
+<field id="2">3620 Chassis Slot</field>
+<field id="3"/>
+<field id="4"/>
+<field id="5"/></row>
+<row>
+<field id="1">3725 chassis</field>
+<field id="2">3725 chassis</field>
+<field id="3"/>
+<field id="4">0.1</field>
+<field id="5">FTX0945W0MY</field></row>
+<row>
+<field id="1">AIM Container Slot 0</field>
+<field id="2">AIM Container Slot 0</field>
+<field id="3"/>
+<field id="4"/>
+<field id="5"/></row>
+<row>
+<field id="1">AIM Container Slot 1</field>
+<field id="2">AIM Container Slot 1</field>
+<field id="3"/>
+<field id="4"/>
+<field id="5"/></row>
+<row>
+<field id="1">DaughterCard Slot 0 on Card 0</field>
+<field id="2">3620 DaughterCard Slot</field>
+<field id="3"/>
+<field id="4"/>
+<field id="5"/></row>
+<row>
+<field id="1">DaughterCard Slot 1 on Card 0</field>
+<field id="2">3620 DaughterCard Slot</field>
+<field id="3"/>
+<field id="4"/>
+<field id="5"/></row>
+<row>
+<field id="1">DaughterCard Slot 2 on Card 0</field>
+<field id="2">3620 DaughterCard Slot</field>
+<field id="3"/>
+<field id="4"/>
+<field id="5"/></row>
+<row>
+<field id="1">FastEthernet0/0</field>
+<field id="2">Gt96k FE</field>
+<field id="3"/>
+<field id="4"/>
+<field id="5"/></row>
+<row>
+<field id="1">FastEthernet0/1</field>
+<field id="2">Gt96k FE</field>
+<field id="3"/>
+<field id="4"/>
+<field id="5"/></row>
+<row>
+<field id="1">c3725 Motherboard with Fast Ethernet</field>
+<field id="2">c3725 Motherboard with Fast Ethernet</field>
+<field id="3"/>
+<field id="4">0.1</field>
+<field id="5">XXXXXXXXXXX</field></row></body></table></param_list></device>
+<device id="425302">
+<name>Hardware Information</name>
+<param_list>
+<table index="0" name="Gentext1" description="var" format="key-value">
+<header>
+<column name="CPU type" id="1"/>
+<column name="CPU frequency" id="2"/>
+<column name="L2 cache" id="3"/>
+<column name="L3 cache" id="4"/>
+<column name="CPU ID" id="5"/>
+<column name="RAM memory" id="6"/>
+<column name="FLash memory" id="7"/>
+<column name="NVRAM memory" id="8"/>
+<column name="Motherboard serial number" id="9"/>
+<column name="System unit serial number" id="10"/>
+<column name="PSU serial number" id="11"/>
+<column name="Device Model" id="12"/></header>
+<body>
+<row>
+<field id="1">R7000</field>
+<field id="2">240MHz</field>
+<field id="3">256KB</field>
+<field id="4">512KB</field>
+<field id="5">FTX0945W0MY</field>
+<field id="6">249856K/12288K</field>
+<field id="7">131072K bytes</field>
+<field id="8">55K</field>
+<field id="9"/>
+<field id="10"/>
+<field id="11"/>
+<field id="12">3725</field></row></body></table></param_list></device></hardware>
+<scan_objects>
+<soft port_status="0" type="3" port="22" id="1" security_object="0" protocol="6" service="1100">
+<name>SSH</name>
+<version/>
+<path/>
+<metadata>
+<soft_version id="0"/></metadata>
+<banner>
+<table index="0" name="GenBanner" description="Banner" format="key-value">
+<header>
+<column name="Banner" id="1"/></header>
+<body>
+<row>
+<field id="1">SSH-1.99-Cisco-1.25
+</field></row></body></table>
+<table index="2" name="GenProtocolVersions" description="Protocol versions" format="key-value">
+<header>
+<column name="Protocol versions" id="1"/></header>
+<body>
+<row>
+<field id="1">1.5,1.99,2.0</field></row></body></table></banner>
+<statistics>
+<table index="2" name="GenPortStatistics" description="" format="table">
+<header>
+<column name="scan_time" id="1"/></header>
+<body>
+<row>
+<field id="1">40 min 31 sec</field></row></body></table></statistics>
+<vulners>
+<vulner id="1044" level="3" status="0">
+<param/>
+<param_list/></vulner>
+<vulner id="1092" level="0" status="0">
+<param/>
+<param_list/></vulner>
+<vulner id="8176" level="0" status="0">
+<param/>
+<param_list>
+<table index="0" name="GenProfile" description="Server configuration" format="key-value">
+<header>
+<column name="Keys exchange algorithms" id="1"/>
+<column name="Server host key algorithms" id="2"/>
+<column name="Decryption ciphers" id="3"/>
+<column name="Encryption ciphers" id="4"/>
+<column name="MAC algorithms (client to server)" id="5"/>
+<column name="MAC algorithms (server to client)" id="6"/>
+<column name="Decompression algorithms" id="7"/>
+<column name="Compression algorithms" id="8"/>
+<column name="Authentication methods" id="9"/></header>
+<body>
+<row>
+<field id="1">diffie-hellman-group1-sha1</field>
+<field id="2">ssh-rsa</field>
+<field id="3">aes128-cbc,3des-cbc,aes192-cbc,aes256-cbc</field>
+<field id="4">aes128-cbc,3des-cbc,aes192-cbc,aes256-cbc</field>
+<field id="5">hmac-sha1,hmac-sha1-96,hmac-md5,hmac-md5-96</field>
+<field id="6">hmac-sha1,hmac-sha1-96,hmac-md5,hmac-md5-96</field>
+<field id="7">none</field>
+<field id="8">none</field>
+<field id="9">password</field></row></body></table></param_list></vulner>
+<vulner id="8177" level="0" status="0">
+<param/>
+<param_list>
+<table index="1" name="GenKeySSH2" description="Host keys (SSH2)" format="table">
+<header>
+<column name="Key Fingerprint" id="1"/>
+<column name="Host-Key Method" id="2"/></header>
+<body>
+<row>
+<field id="1">67:87:5d:0e:3d:40:c3:5d:6b:c1:0f:57:bd:18:e8:0d</field>
+<field id="2">ssh-rsa</field></row></body></table>
+<table index="0" name="GenKeySSH1" description="Host key (SSH1)" format="table">
+<header>
+<column name="Key Fingerprint" id="1"/></header>
+<body>
+<row>
+<field id="1">8e:a2:64:2d:11:c2:22:86:50:46:74:8a:83:d9:bb:51</field>
+<field id="2">ssh-rsa</field></row></body></table></param_list></vulner>
+<vulner id="8365" level="1" status="0">
+<param/>
+<param_list>
+<table index="0" name="GenWeakCiphers" description="Encyption algorithms" format="table">
+<header>
+<column name="Weak Ciphers" id="1"/></header>
+<body>
+<row>
+<field id="1">aes128-cbc</field></row>
+<row>
+<field id="1">3des-cbc</field></row>
+<row>
+<field id="1">aes192-cbc</field></row>
+<row>
+<field id="1">aes256-cbc</field></row></body></table></param_list></vulner>
+<vulner id="8368" level="1" status="0">
+<param/>
+<param_list>
+<table index="0" name="GenWeakMACs" description="MAC algorithms" format="table">
+<header>
+<column name="Weak algorithms" id="1"/></header>
+<body>
+<row>
+<field id="1">hmac-sha1</field></row>
+<row>
+<field id="1">hmac-sha1-96</field></row>
+<row>
+<field id="1">hmac-md5</field></row>
+<row>
+<field id="1">hmac-md5-96</field></row></body></table></param_list></vulner>
+<vulner id="8369" level="1" status="0">
+<param/>
+<param_list>
+<table index="0" name="GenWeakKEXs" description="Key-Exchange Algorithms" format="table">
+<header>
+<column name="Weak algorithms" id="1"/></header>
+<body>
+<row>
+<field id="1">diffie-hellman-group1-sha1</field></row></body></table></param_list></vulner></vulners></soft>
+<soft port_status="0" type="3" port="80" id="2" security_object="0" protocol="6" service="100">
+<name>HTTP</name>
+<version/>
+<path/>
+<metadata>
+<soft_version id="0"/></metadata>
+<banner>
+<table index="5" name="GenServerState" description="State" format="key-value">
+<header>
+<column name="State" id="1"/></header>
+<body>
+<row>
+<field id="1">401 (Unauthorized)</field></row></body></table>
+<table index="9" name="GenHeuristicInfo" description="" format="list">
+<header>
+<column name="" id="1"/></header>
+<body>
+<row>
+<field id="1">The application name was confirmed by heuristic methods</field></row></body></table>
+<table index="3" name="GenServerName" description="Server name" format="key-value">
+<header>
+<column name="Server name" id="1"/></header>
+<body>
+<row>
+<field id="1">cisco-IOS</field></row></body></table>
+<table index="8" name="GenHeuristicServerName" description="Server name (heuristic detected)" format="key-value">
+<header>
+<column name="Server name (heuristic detected)" id="1"/></header>
+<body>
+<row>
+<field id="1">Cisco HTTP Server</field></row></body></table></banner>
+<statistics>
+<table index="2" name="GenPortStatistics" description="" format="table">
+<header>
+<column name="scan_time" id="1"/></header>
+<body>
+<row>
+<field id="1">1 h 5 min 16 sec</field></row></body></table></statistics>
+<vulners>
+<vulner id="1235" level="0" status="0">
+<param/>
+<param_list>
+<table index="0" name="Gen" description="" format="table">
+<header>
+<column name="" id="1"/></header>
+<body>
+<row>
+<field id="1">&amp;lt;a href=&amp;quot;http://c3725-2.rvlab.net/&amp;quot; target=_blank&amp;gt;/&amp;lt;/a&amp;gt;</field></row>
+<row>
+<field id="1">&amp;lt;a href=&amp;quot;http://c3725-2.rvlab.net/archive/&amp;quot; target=_blank&amp;gt;/archive/&amp;lt;/a&amp;gt;</field></row>
+<row>
+<field id="1">&amp;lt;a href=&amp;quot;http://c3725-2.rvlab.net/template/&amp;quot; target=_blank&amp;gt;/template/&amp;lt;/a&amp;gt;</field></row>
+<row>
+<field id="1">&amp;lt;a href=&amp;quot;http://c3725-2.rvlab.net/view/&amp;quot; target=_blank&amp;gt;/view/&amp;lt;/a&amp;gt;</field></row></body></table></param_list></vulner>
+<vulner id="8375" level="0" status="0">
+<param/>
+<param_list>
+<table index="0" name="GenHeaders" description="HTTP Headers" format="table">
+<header>
+<column name="HTTP Header" id="1"/>
+<column name="Value" id="2"/></header>
+<body>
+<row>
+<field id="1">ACCEPT-RANGES</field>
+<field id="2">NONE</field></row>
+<row>
+<field id="1">CONNECTION</field>
+<field id="2">CLOSE</field></row>
+<row>
+<field id="1">DATE</field>
+<field id="2">SUN, 14 APR 2002 03:52:26 GMT</field></row>
+<row>
+<field id="1">SERVER</field>
+<field id="2">CISCO-IOS</field></row>
+<row>
+<field id="1">WWW-AUTHENTICATE</field>
+<field id="2">BASIC REALM=&amp;quot;LEVEL_15_ACCESS&amp;quot;</field></row></body></table></param_list></vulner></vulners></soft>
+<soft port_status="0" type="3" port="0" id="3" security_object="0" protocol="6" service="1">
+<name>System</name>
+<version/>
+<path/>
+<metadata>
+<soft_version id="0"/></metadata>
+<statistics>
+<table index="2" name="GenPortStatistics" description="" format="table">
+<header>
+<column name="scan_time" id="1"/></header>
+<body>
+<row>
+<field id="1">0 sec</field></row></body></table></statistics>
+<vulners>
+<vulner id="1222" level="0" status="0">
+<param>12.4(16)</param>
+<param_list>
+<table index="1" name="GenOperatingSystemsList" description="Detection methods" format="table">
+<header>
+<column name="Name" id="1"/>
+<column name="Version" id="2"/>
+<column name="Detection method" id="3"/>
+<column name="Weight" id="4"/></header>
+<body>
+<row>
+<field id="1">Cisco IOS</field>
+<field id="2">12.4(16)</field>
+<field id="3">Audit</field>
+<field id="4">70</field></row>
+<row>
+<field id="1">Cisco IOS</field>
+<field id="2">12.4(16)</field>
+<field id="3">SNMP (161/UDP)</field>
+<field id="4">30</field></row>
+<row>
+<field id="1">Cisco IOS</field>
+<field id="2">Cisco IOS </field>
+<field id="3">HTTP (80/TCP)</field>
+<field id="4">20</field></row>
+<row>
+<field id="1">Operating System</field>
+<field id="2">Cisco IOS 12 or PIX</field>
+<field id="3">Heuristic SSH OS (22/TCP)</field>
+<field id="4">2</field></row>
+<row>
+<field id="1">Operating System</field>
+<field id="2">Cisco</field>
+<field id="3">Counter OS Info</field>
+<field id="4">1</field></row></body></table></param_list></vulner>
+<vulner id="8123" level="0" status="0">
+<param/>
+<param_list>
+<table index="0" name="Gentime_table" description="Routing information" format="table">
+<header>
+<column name="TTL" id="1"/>
+<column name="Hop address" id="2"/>
+<column name="Round Trip Time, ms" id="3"/></header>
+<body>
+<row>
+<field id="1">1</field>
+<field id="2">10.4.5.1</field>
+<field id="3">                       0.13   0.15   0.12   </field></row>
+<row>
+<field id="1">2</field>
+<field id="2">172.16.7.2</field>
+<field id="3">                       0.98   0.87   0.95   </field></row>
+<row>
+<field id="1">3</field>
+<field id="2">172.16.101.26</field>
+<field id="3">                       6.72   6.89   7.32   </field></row></body></table></param_list></vulner>
+<vulner id="8134" level="0" status="0">
+<param/>
+<param_list>
+<table index="0" name="Gendelta" description="Timestamp delta" format="key-value">
+<header>
+<column name="Timestamp delta" id="1"/></header>
+<body>
+<row>
+<field id="1">2.12378e+006 +/- 0.002 seconds</field></row></body></table></param_list></vulner></vulners></soft>
+<soft port_status="0" type="3" port="161" id="4" security_object="0" protocol="17" service="10007">
+<name>SNMP</name>
+<version/>
+<path/>
+<metadata>
+<soft_version id="0"/></metadata>
+<banner>
+<table index="2" name="GenProtocolVersions" description="Protocol versions" format="key-value">
+<header>
+<column name="Protocol versions" id="1"/></header>
+<body>
+<row>
+<field id="1">1, 2, 3</field></row></body></table></banner>
+<statistics>
+<table index="2" name="GenPortStatistics" description="" format="table">
+<header>
+<column name="scan_time" id="1"/></header>
+<body>
+<row>
+<field id="1">0 sec</field></row></body></table></statistics>
+<vulners>
+<vulner id="8166" level="0" status="0">
+<param/>
+<param_list>
+<table index="0" name="GenStaticARP" description="ARP table" format="table">
+<header>
+<column name="IP" id="1"/>
+<column name="MAC" id="2"/></header>
+<body>
+<row>
+<field id="1">172.16.101.26</field>
+<field id="2">c2:02:17:4a:00:00</field></row></body></table>
+<table index="1" name="GenCommunity" description="Community Strings" format="table">
+<header>
+<column name="Name" id="1"/></header>
+<body>
+<row>
+<field id="1">public</field></row></body></table></param_list></vulner>
+<vulner id="8167" level="0" status="0">
+<param/>
+<param_list>
+<table index="0" name="GenInterfaces" description="Network interface list" format="table">
+<header>
+<column name="Interface ID" id="1"/>
+<column name="Description" id="2"/>
+<column name="Type" id="3"/>
+<column name="MTU" id="4"/>
+<column name="Speed" id="5"/>
+<column name="MAC" id="6"/>
+<column name="Admin status" id="7"/>
+<column name="Operation status" id="8"/></header>
+<body>
+<row>
+<field id="1">3</field>
+<field id="2">Null0</field>
+<field id="3">1</field>
+<field id="4">1500</field>
+<field id="5">4294967295</field>
+<field id="6">N/A</field>
+<field id="7">up</field>
+<field id="8">up</field></row>
+<row>
+<field id="1">1</field>
+<field id="2">FastEthernet0/0</field>
+<field id="3">6</field>
+<field id="4">1500</field>
+<field id="5">10000000</field>
+<field id="6">c2:02:17:4a:00:00</field>
+<field id="7">up</field>
+<field id="8">up</field></row>
+<row>
+<field id="1">2</field>
+<field id="2">FastEthernet0/1</field>
+<field id="3">6</field>
+<field id="4">1500</field>
+<field id="5">10000000</field>
+<field id="6">c2:02:17:4a:00:01</field>
+<field id="7">down</field>
+<field id="8">down</field></row></body></table>
+<table index="1" name="GenCommunity" description="Community Strings" format="table">
+<header>
+<column name="Name" id="1"/></header>
+<body>
+<row>
+<field id="1">public</field></row></body></table></param_list></vulner>
+<vulner id="8168" level="0" status="0">
+<param/>
+<param_list>
+<table index="0" name="GenSysInfo" description="" format="key-value">
+<header>
+<column name="Description" id="1"/>
+<column name="Uptime" id="2"/>
+<column name="Contact" id="3"/>
+<column name="Name" id="4"/>
+<column name="Location" id="5"/></header>
+<body>
+<row>
+<field id="1">Cisco IOS Software, 3700 Software (C3725-ADVSECURITYK9-M), Version 12.4(16), RELEASE SOFTWARE (fc1)
+Technical Support: http://www.cisco.com/techsupport
+Copyright (c) 1986-2007 by Cisco Systems, Inc.
+Compiled Wed 20-Jun-07 13:14 by prod_rel_team</field>
+<field id="2">44 days 04:58:17.20</field>
+<field id="3"> </field>
+<field id="4">c3725-2.rvlab.net</field>
+<field id="5"> </field></row></body></table>
+<table index="1" name="GenCommunity" description="Community Strings" format="table">
+<header>
+<column name="Name" id="1"/></header>
+<body>
+<row>
+<field id="1">public</field></row></body></table></param_list></vulner>
+<vulner id="8169" level="0" status="0">
+<param/>
+<param_list>
+<table index="0" name="GenIpAddr" description="IP address list" format="table">
+<header>
+<column name="IP Address" id="1"/>
+<column name="Interface ID" id="2"/>
+<column name="Netmask" id="3"/></header>
+<body>
+<row>
+<field id="1">172.16.101.26</field>
+<field id="2">1</field>
+<field id="3">255.255.255.0</field></row></body></table>
+<table index="1" name="GenCommunity" description="Community Strings" format="table">
+<header>
+<column name="Name" id="1"/></header>
+<body>
+<row>
+<field id="1">public</field></row></body></table></param_list></vulner>
+<vulner id="8170" level="0" status="0">
+<param/>
+<param_list>
+<table index="0" name="Genroutes" description="Routing table" format="table">
+<header>
+<column name="Destination address" id="1"/>
+<column name="Netmask" id="2"/>
+<column name="Next hop" id="3"/>
+<column name="Interface" id="4"/>
+<column name="Metrics" id="5"/></header>
+<body>
+<row>
+<field id="1">0.0.0.0</field>
+<field id="2">0.0.0.0</field>
+<field id="3">172.16.101.1</field>
+<field id="4">0</field>
+<field id="5">0</field></row>
+<row>
+<field id="1">172.16.101.0</field>
+<field id="2">255.255.255.0</field>
+<field id="3">172.16.101.26</field>
+<field id="4">1</field>
+<field id="5">0</field></row></body></table>
+<table index="1" name="GenCommunity" description="Community Strings" format="table">
+<header>
+<column name="Name" id="1"/></header>
+<body>
+<row>
+<field id="1">public</field></row></body></table></param_list></vulner>
+<vulner id="8171" level="0" status="0">
+<param/>
+<param_list>
+<table index="1" name="Genudp" description="Opened UDP ports" format="table">
+<header>
+<column name="Port No." id="1"/></header>
+<body>
+<row>
+<field id="1">67</field></row>
+<row>
+<field id="1">161</field></row>
+<row>
+<field id="1">162</field></row>
+<row>
+<field id="1">2887</field></row>
+<row>
+<field id="1">52436</field></row>
+<row>
+<field id="1">54191</field></row>
+<row>
+<field id="1"> </field></row></body></table></param_list></vulner></vulners></soft>
+<soft port_status="0" type="3" port="67" id="5" security_object="0" protocol="17" service="0">
+<name/>
+<version/>
+<path/>
+<metadata>
+<soft_version id="0"/></metadata>
+<banner></banner>
+<statistics>
+<table index="2" name="GenPortStatistics" description="" format="table">
+<header>
+<column name="scan_time" id="1"/></header>
+<body>
+<row>
+<field id="1">0 sec</field></row></body></table></statistics></soft>
+<soft port_status="0" type="3" port="162" id="6" security_object="0" protocol="17" service="0">
+<name/>
+<version/>
+<path/>
+<metadata>
+<soft_version id="0"/></metadata>
+<banner></banner>
+<statistics>
+<table index="2" name="GenPortStatistics" description="" format="table">
+<header>
+<column name="scan_time" id="1"/></header>
+<body>
+<row>
+<field id="1">0 sec</field></row></body></table></statistics></soft>
+<soft port_status="0" type="3" port="2887" id="7" security_object="0" protocol="17" service="0">
+<name/>
+<version/>
+<path/>
+<metadata>
+<soft_version id="0"/></metadata>
+<statistics>
+<table index="2" name="GenPortStatistics" description="" format="table">
+<header>
+<column name="scan_time" id="1"/></header>
+<body>
+<row>
+<field id="1">0 sec</field></row></body></table></statistics></soft>
+<soft port_status="0" type="3" port="52436" id="8" security_object="0" protocol="17" service="0">
+<name/>
+<version/>
+<path/>
+<metadata>
+<soft_version id="0"/></metadata>
+<statistics>
+<table index="2" name="GenPortStatistics" description="" format="table">
+<header>
+<column name="scan_time" id="1"/></header>
+<body>
+<row>
+<field id="1">0 sec</field></row></body></table></statistics></soft>
+<soft port_status="0" type="3" port="54191" id="9" security_object="0" protocol="17" service="0">
+<name/>
+<version/>
+<path/>
+<metadata>
+<soft_version id="0"/></metadata>
+<statistics>
+<table index="2" name="GenPortStatistics" description="" format="table">
+<header>
+<column name="scan_time" id="1"/></header>
+<body>
+<row>
+<field id="1">0 sec</field></row></body></table></statistics></soft>
+<soft type="2" port="0" id="10" security_object="6076544" protocol="0" service="6067840">
+<name>Cisco IOS</name>
+<version>12.4(16)</version>
+<path/>
+<metadata>
+<soft_version id="6067840"/>
+<soft_version id="6067841"/>
+<soft_version id="6073353"/></metadata>
+<vulners>
+<vulner id="12204" level="0" status="0">
+<param>FTX0945W0MY</param>
+<param_list/></vulner>
+<vulner id="171861" level="3" status="0">
+<param/>
+<param_list/></vulner>
+<vulner id="171862" level="5" status="0">
+<param/>
+<param_list/></vulner>
+<vulner id="171942" level="5" status="0">
+<param/>
+<param_list/></vulner>
+<vulner id="171945" level="5" status="0">
+<param/>
+<param_list/></vulner>
+<vulner id="171947" level="5" status="0">
+<param/>
+<param_list/></vulner>
+<vulner id="171948" level="5" status="0">
+<param/>
+<param_list/></vulner>
+<vulner id="172088" level="5" status="0">
+<param/>
+<param_list/></vulner>
+<vulner id="172089" level="5" status="0">
+<param/>
+<param_list/></vulner>
+<vulner id="172091" level="5" status="0">
+<param/>
+<param_list/></vulner>
+<vulner id="172094" level="5" status="0">
+<param/>
+<param_list/></vulner>
+<vulner id="172095" level="5" status="0">
+<param/>
+<param_list/></vulner>
+<vulner id="174075" level="5" status="0">
+<param/>
+<param_list/></vulner>
+<vulner id="174076" level="5" status="0">
+<param/>
+<param_list/></vulner>
+<vulner id="174078" level="5" status="0">
+<param/>
+<param_list/></vulner>
+<vulner id="174081" level="5" status="0">
+<param/>
+<param_list/></vulner>
+<vulner id="174083" level="5" status="0">
+<param/>
+<param_list/></vulner>
+<vulner id="175303" level="5" status="0">
+<param/>
+<param_list/></vulner>
+<vulner id="175303" level="5" status="0">
+<param/>
+<param_list/></vulner>
+<vulner id="175794" level="0" status="0">
+<param/>
+<param_list>
+<table index="0" name="Gentable1" description="MAC address table" format="table">
+<header>
+<column name="VLAN" id="1"/>
+<column name="MAC address" id="2"/>
+<column name="Type" id="3"/>
+<column name="Ports" id="4"/></header>
+<body>
+<row>
+<field id="1"/>
+<field id="2"/>
+<field id="3"/>
+<field id="4"/></row></body></table></param_list></vulner>
+<vulner id="176264" level="5" status="0">
+<param/>
+<param_list/></vulner>
+<vulner id="176265" level="5" status="0">
+<param/>
+<param_list/></vulner>
+<vulner id="176266" level="5" status="0">
+<param/>
+<param_list/></vulner>
+<vulner id="176267" level="5" status="0">
+<param/>
+<param_list/></vulner>
+<vulner id="176268" level="5" status="0">
+<param/>
+<param_list/></vulner>
+<vulner id="176269" level="5" status="0">
+<param/>
+<param_list/></vulner>
+<vulner id="176274" level="5" status="0">
+<param/>
+<param_list/></vulner>
+<vulner id="178380" level="5" status="0">
+<param/>
+<param_list/></vulner>
+<vulner id="178384" level="5" status="0">
+<param/>
+<param_list/></vulner>
+<vulner id="178386" level="5" status="0">
+<param/>
+<param_list/></vulner>
+<vulner id="180491" level="5" status="0">
+<param/>
+<param_list/></vulner>
+<vulner id="180494" level="5" status="0">
+<param/>
+<param_list/></vulner>
+<vulner id="181417" level="5" status="0">
+<param/>
+<param_list/></vulner>
+<vulner id="181419" level="5" status="0">
+<param/>
+<param_list/></vulner>
+<vulner id="181997" level="3" status="0">
+<param/>
+<param_list/></vulner>
+<vulner id="182436" level="5" status="0">
+<param/>
+<param_list/></vulner>
+<vulner id="182437" level="5" status="0">
+<param/>
+<param_list/></vulner>
+<vulner id="183503" level="5" status="0">
+<param/>
+<param_list/></vulner>
+<vulner id="183504" level="5" status="0">
+<param/>
+<param_list/></vulner>
+<vulner id="184350" level="5" status="0">
+<param/>
+<param_list/></vulner>
+<vulner id="186281" level="1" status="0">
+<param/>
+<param_list/></vulner>
+<vulner id="186282" level="3" status="0">
+<param/>
+<param_list/></vulner>
+<vulner id="187015" level="3" status="0">
+<param/>
+<param_list/></vulner>
+<vulner id="187303" level="5" status="0">
+<param/>
+<param_list/></vulner>
+<vulner id="187304" level="5" status="0">
+<param/>
+<param_list/></vulner>
+<vulner id="187396" level="3" status="0">
+<param/>
+<param_list/></vulner>
+<vulner id="187924" level="3" status="0">
+<param/>
+<param_list/></vulner>
+<vulner id="187927" level="1" status="0">
+<param/>
+<param_list/></vulner>
+<vulner id="187930" level="3" status="0">
+<param/>
+<param_list/></vulner>
+<vulner id="187931" level="3" status="0">
+<param/>
+<param_list/></vulner>
+<vulner id="187932" level="3" status="0">
+<param/>
+<param_list/></vulner>
+<vulner id="187933" level="3" status="0">
+<param/>
+<param_list/></vulner>
+<vulner id="187934" level="3" status="0">
+<param/>
+<param_list/></vulner>
+<vulner id="188506" level="1" status="0">
+<param/>
+<param_list/></vulner>
+<vulner id="411401" level="0" status="0">
+<param/>
+<param_list>
+<table index="0" name="Gen" description="Var" format="key-value">
+<header>
+<column name="Image file" id="1"/>
+<column name="IOS version" id="2"/>
+<column name="IOS release" id="3"/>
+<column name="Config register" id="4"/></header>
+<body>
+<row>
+<field id="1">C3725-ADVSECURITYK9-M</field>
+<field id="2">12.4(16)</field>
+<field id="3">fc1</field>
+<field id="4">0x2102</field></row></body></table></param_list></vulner>
+<vulner id="425304" level="0" status="0">
+<param/>
+<param_list>
+<table index="0" name="Gen" description="var" format="key-value">
+<header>
+<column name="Device name" id="1"/>
+<column name="Device model" id="2"/></header>
+<body>
+<row>
+<field id="1"/>
+<field id="2">3725</field></row></body></table></param_list></vulner>
+<vulner id="425308" level="0" status="0">
+<param/>
+<param_list>
+<table index="0" name="Gen" description="var" format="key-value">
+<header>
+<column name="Password encryption service" id="1"/>
+<column name="CDP" id="2"/>
+<column name="Finger" id="3"/>
+<column name="BOOTP" id="4"/>
+<column name="Identd" id="5"/>
+<column name="HTTP" id="6"/>
+<column name="HTTPS" id="7"/>
+<column name="TCP-keepalives-in" id="8"/>
+<column name="TCP-keepalives-out" id="9"/>
+<column name="TCP-small-servers" id="10"/>
+<column name="UDP-small-servers" id="11"/>
+<column name="TFTP" id="12"/>
+<column name="AAA" id="13"/>
+<column name="IPv6" id="14"/>
+<column name="DHCP" id="15"/>
+<column name="Service config" id="16"/>
+<column name="Cisco Smart Install" id="17"/></header>
+<body>
+<row>
+<field id="1">Enabled</field>
+<field id="2">Enabled (default)</field>
+<field id="3">Enabled</field>
+<field id="4">&amp;lt;b&amp;gt;Enable command verification through the configuration mode in the scan profile&amp;lt;/b&amp;gt;</field>
+<field id="5">Enabled</field>
+<field id="6">not support in this version</field>
+<field id="7">not support in this version</field>
+<field id="8">Disabled (default)</field>
+<field id="9">Disabled (default)</field>
+<field id="10">Disabled (default)</field>
+<field id="11">Disabled (default)</field>
+<field id="12">Disabled (default)</field>
+<field id="13">Enabled</field>
+<field id="14">Enabled</field>
+<field id="15">Enabled (default)</field>
+<field id="16">Disabled (default)</field>
+<field id="17">Not supported</field></row></body></table></param_list></vulner>
+<vulner id="425310" level="0" status="0">
+<param/>
+<param_list>
+<table index="0" name="Gentable" description="VLANs list" format="table">
+<header>
+<column name="VLAN number" id="1"/>
+<column name="Name" id="2"/>
+<column name="Status" id="3"/>
+<column name="Interfaces" id="4"/></header>
+<body>
+<row>
+<field id="1">1</field>
+<field id="2">default</field>
+<field id="3">active</field>
+<field id="4">-</field></row>
+<row>
+<field id="1">1002</field>
+<field id="2">fddi-default</field>
+<field id="3">active</field>
+<field id="4">-</field></row>
+<row>
+<field id="1">1003</field>
+<field id="2">token-ring-default</field>
+<field id="3">active</field>
+<field id="4">-</field></row>
+<row>
+<field id="1">1004</field>
+<field id="2">fddinet-default</field>
+<field id="3">active</field>
+<field id="4">-</field></row>
+<row>
+<field id="1">1005</field>
+<field id="2">trnet-default</field>
+<field id="3">active</field>
+<field id="4">-</field></row></body></table></param_list></vulner>
+<vulner id="425345" level="0" status="0">
+<param/>
+<param_list>
+<table index="0" name="Gentext" description="var" format="key-value">
+<header>
+<column name="Console logging level" id="1"/>
+<column name="Buffer size" id="2"/>
+<column name="Syslog server message source identifier" id="3"/>
+<column name="Syslog server logging level" id="4"/></header>
+<body>
+<row>
+<field id="1">debugging</field>
+<field id="2">4096 bytes</field>
+<field id="3">not defined</field>
+<field id="4"> informational (default)</field></row></body></table></param_list></vulner>
+<vulner id="425349" level="0" status="0">
+<param/>
+<param_list>
+<table index="1" name="Gentable2" description="Authorization" format="table">
+<header>
+<column name="Authorization group" id="1"/>
+<column name="Authorization type" id="2"/>
+<column name="AAA Group" id="3"/></header>
+<body>
+<row>
+<field id="1">default</field>
+<field id="2">commands 0</field>
+<field id="3">none (default)</field></row>
+<row>
+<field id="1">default</field>
+<field id="2">commands 1</field>
+<field id="3">none (default)</field></row>
+<row>
+<field id="1">default</field>
+<field id="2">commands 10</field>
+<field id="3">none (default)</field></row>
+<row>
+<field id="1">default</field>
+<field id="2">commands 11</field>
+<field id="3">none (default)</field></row>
+<row>
+<field id="1">default</field>
+<field id="2">commands 12</field>
+<field id="3">none (default)</field></row>
+<row>
+<field id="1">default</field>
+<field id="2">commands 13</field>
+<field id="3">none (default)</field></row>
+<row>
+<field id="1">default</field>
+<field id="2">commands 14</field>
+<field id="3">none (default)</field></row>
+<row>
+<field id="1">default</field>
+<field id="2">commands 15</field>
+<field id="3">none (default)</field></row>
+<row>
+<field id="1">default</field>
+<field id="2">commands 2</field>
+<field id="3">none (default)</field></row>
+<row>
+<field id="1">default</field>
+<field id="2">commands 3</field>
+<field id="3">none (default)</field></row>
+<row>
+<field id="1">default</field>
+<field id="2">commands 4</field>
+<field id="3">none (default)</field></row>
+<row>
+<field id="1">default</field>
+<field id="2">commands 5</field>
+<field id="3">none (default)</field></row>
+<row>
+<field id="1">default</field>
+<field id="2">commands 6</field>
+<field id="3">none (default)</field></row>
+<row>
+<field id="1">default</field>
+<field id="2">commands 7</field>
+<field id="3">none (default)</field></row>
+<row>
+<field id="1">default</field>
+<field id="2">commands 8</field>
+<field id="3">none (default)</field></row>
+<row>
+<field id="1">default</field>
+<field id="2">commands 9</field>
+<field id="3">none (default)</field></row>
+<row>
+<field id="1">default</field>
+<field id="2">configuration</field>
+<field id="3">none (default)</field></row>
+<row>
+<field id="1">default</field>
+<field id="2">exec</field>
+<field id="3">none (default)</field></row>
+<row>
+<field id="1">default</field>
+<field id="2">network</field>
+<field id="3">none (default)</field></row>
+<row>
+<field id="1">none</field>
+<field id="2">commands default</field>
+<field id="3">(default)</field></row></body></table>
+<table index="0" name="Gentable1" description="Authentication" format="table">
+<header>
+<column name="Authentication group" id="1"/>
+<column name="Authentication type" id="2"/>
+<column name="AAA Group" id="3"/></header>
+<body>
+<row>
+<field id="1">default</field>
+<field id="2">enable</field>
+<field id="3">enable (default)</field></row>
+<row>
+<field id="1">default</field>
+<field id="2">login</field>
+<field id="3">local (default)</field></row></body></table></param_list></vulner>
+<vulner id="425398" level="1" status="0">
+<param/>
+<param_list>
+<table index="0" name="Gentable" description="Following rarely used services are enabled" format="table">
+<header>
+<column name="" id="1"/></header>
+<body>
+<row>
+<field id="1">Bootp</field></row>
+<row>
+<field id="1">CDP</field></row></body></table></param_list></vulner>
+<vulner id="510022" level="3" status="0">
+<param/>
+<param_list>
+<table index="0" name="Gendatatemp" description="SSH protocol version" format="table">
+<header>
+<column name="" id="1"/></header>
+<body>
+<row>
+<field id="1">1.99</field></row></body></table></param_list></vulner>
+<vulner id="510101" level="0" status="0">
+<param/>
+<param_list>
+<table index="0" name="Gentable1" description="Addresses" format="table">
+<header>
+<column name="Protocol" id="1"/>
+<column name="Address" id="2"/>
+<column name="IP address age (min.)" id="3"/>
+<column name="Physical address" id="4"/>
+<column name="Encapsulation type" id="5"/>
+<column name="Interface" id="6"/></header>
+<body>
+<row>
+<field id="1">Internet</field>
+<field id="2">172.16.101.170</field>
+<field id="3">63</field>
+<field id="4">000c.2905.6c50</field>
+<field id="5">ARPA</field>
+<field id="6">FastEthernet0/0</field></row>
+<row>
+<field id="1">Internet</field>
+<field id="2">172.16.101.8</field>
+<field id="3">78</field>
+<field id="4">000c.2948.165d</field>
+<field id="5">ARPA</field>
+<field id="6">FastEthernet0/0</field></row>
+<row>
+<field id="1">Internet</field>
+<field id="2">172.16.101.48</field>
+<field id="3">0</field>
+<field id="4">000c.296d.fe05</field>
+<field id="5">ARPA</field>
+<field id="6">FastEthernet0/0</field></row>
+<row>
+<field id="1">Internet</field>
+<field id="2">172.16.101.201</field>
+<field id="3">72</field>
+<field id="4">000c.297a.8a2e</field>
+<field id="5">ARPA</field>
+<field id="6">FastEthernet0/0</field></row>
+<row>
+<field id="1">Internet</field>
+<field id="2">172.16.101.46</field>
+<field id="3">0</field>
+<field id="4">000c.2988.2b58</field>
+<field id="5">ARPA</field>
+<field id="6">FastEthernet0/0</field></row>
+<row>
+<field id="1">Internet</field>
+<field id="2">172.16.101.32</field>
+<field id="3">0</field>
+<field id="4">000c.2993.57f9</field>
+<field id="5">ARPA</field>
+<field id="6">FastEthernet0/0</field></row>
+<row>
+<field id="1">Internet</field>
+<field id="2">172.16.101.10</field>
+<field id="3">198</field>
+<field id="4">000c.29bf.9e30</field>
+<field id="5">ARPA</field>
+<field id="6">FastEthernet0/0</field></row>
+<row>
+<field id="1">Internet</field>
+<field id="2">172.16.101.177</field>
+<field id="3">59</field>
+<field id="4">000c.29c0.5f89</field>
+<field id="5">ARPA</field>
+<field id="6">FastEthernet0/0</field></row>
+<row>
+<field id="1">Internet</field>
+<field id="2">172.16.101.3</field>
+<field id="3">0</field>
+<field id="4">000c.29f5.550b</field>
+<field id="5">ARPA</field>
+<field id="6">FastEthernet0/0</field></row>
+<row>
+<field id="1">Internet</field>
+<field id="2">172.16.101.2</field>
+<field id="3">0</field>
+<field id="4">000c.29fb.675f</field>
+<field id="5">ARPA</field>
+<field id="6">FastEthernet0/0</field></row>
+<row>
+<field id="1">Internet</field>
+<field id="2">172.16.101.1</field>
+<field id="3">0</field>
+<field id="4">000c.29fd.3f53</field>
+<field id="5">ARPA</field>
+<field id="6">FastEthernet0/0</field></row>
+<row>
+<field id="1">Internet</field>
+<field id="2">172.16.101.26</field>
+<field id="3">-</field>
+<field id="4">c202.174a.0000</field>
+<field id="5">ARPA</field>
+<field id="6">FastEthernet0/0</field></row></body></table></param_list></vulner></vulners></soft></scan_objects></host>
+<host ip="172.16.101.27" host_stop_time="2018-11-10T13:47:56" host_start_time="2018-11-10T13:22:09" start_time="2018-11-10T13:22:08" task="12" host_uid="3" scan="38" fqdn="" stop_time="2018-11-10T15:19:12" primary="172.16.101.27" exitcode="0" scan_status="2" netbios="">
+<qualifier_rule>As specified</qualifier_rule>
+<scanner license="319D722B-F1C6-4222-86CD-25A62AC7B73D" version="28461" profile="RV_PA_Cisco">Default Scanner on MP</scanner>
+<transport_info>LDAP:2/MML:0/NotesRPC:7/ODBC DB2:0/ODBC MSSQL:4/ODBC MySQL:0/ODBC Oracle:4/ODBC PostgreSQL:0/ODBC Sybase:0/ODBC Tibero:0/RPC Filesystem:4/RPC Registry:4/RPC:4/Remote Engine:2/SAP GUI:7/SAP HANA:0/SAP HTTP:0/SAPRFC:9/SSH2:6/TELNET:4/VMWARE vCenter:0/VMWARE:0/WMI FILESYSTEM:4/WMI REGISTRY:4/WMI:4/XEN:0/XENRPC:0/vSphere API vCenter:0/vSphere API:0</transport_info>
+<statistics/>
+<hardware name="Hardware Information" security_object="6075071">
+<device id="425353">
+<name>Hardware Information</name>
+<param_list>
+<table index="0" name="Gen" description="var" format="key-value">
+<header>
+<column name="Device model" id="1"/>
+<column name="RAM memory" id="2"/>
+<column name="BIOS memory" id="3"/>
+<column name="Flash memory" id="4"/>
+<column name="CPU" id="5"/></header>
+<body>
+<row>
+<field id="1">ASAv</field>
+<field id="2">2048 MB</field>
+<field id="3">0KB</field>
+<field id="4">8192MB</field>
+<field id="5">Pentium II 2397 MHz,</field></row></body></table></param_list></device></hardware>
+<scan_objects>
+<soft port_status="0" type="3" port="22" id="1" security_object="0" protocol="6" service="1100">
+<name>SSH</name>
+<version/>
+<path/>
+<metadata>
+<soft_version id="0"/></metadata>
+<banner>
+<table index="0" name="GenBanner" description="Banner" format="key-value">
+<header>
+<column name="Banner" id="1"/></header>
+<body>
+<row>
+<field id="1">SSH-1.99-Cisco-1.25
+</field></row></body></table>
+<table index="2" name="GenProtocolVersions" description="Protocol versions" format="key-value">
+<header>
+<column name="Protocol versions" id="1"/></header>
+<body>
+<row>
+<field id="1">1.33,1.5,1.99,2.0</field></row></body></table></banner>
+<statistics>
+<table index="2" name="GenPortStatistics" description="" format="table">
+<header>
+<column name="scan_time" id="1"/></header>
+<body>
+<row>
+<field id="1">3 min 17 sec</field></row></body></table></statistics>
+<vulners>
+<vulner id="1044" level="3" status="0">
+<param/>
+<param_list/></vulner>
+<vulner id="1092" level="0" status="0">
+<param/>
+<param_list/></vulner>
+<vulner id="8176" level="0" status="0">
+<param/>
+<param_list>
+<table index="0" name="GenProfile" description="Server configuration" format="key-value">
+<header>
+<column name="Keys exchange algorithms" id="1"/>
+<column name="Server host key algorithms" id="2"/>
+<column name="Decryption ciphers" id="3"/>
+<column name="Encryption ciphers" id="4"/>
+<column name="MAC algorithms (client to server)" id="5"/>
+<column name="MAC algorithms (server to client)" id="6"/>
+<column name="Decompression algorithms" id="7"/>
+<column name="Compression algorithms" id="8"/>
+<column name="Authentication methods" id="9"/></header>
+<body>
+<row>
+<field id="1">diffie-hellman-group1-sha1</field>
+<field id="2">ssh-rsa</field>
+<field id="3">aes128-cbc,3des-cbc,aes192-cbc,aes256-cbc,aes128-ctr,aes192-ctr,aes256-ctr</field>
+<field id="4">aes128-cbc,3des-cbc,aes192-cbc,aes256-cbc,aes128-ctr,aes192-ctr,aes256-ctr</field>
+<field id="5">hmac-sha1,hmac-sha1-96,hmac-md5,hmac-md5-96</field>
+<field id="6">hmac-sha1,hmac-sha1-96,hmac-md5,hmac-md5-96</field>
+<field id="7">none</field>
+<field id="8">none</field>
+<field id="9">publickey,password</field></row></body></table></param_list></vulner>
+<vulner id="8177" level="0" status="0">
+<param/>
+<param_list>
+<table index="1" name="GenKeySSH2" description="Host keys (SSH2)" format="table">
+<header>
+<column name="Key Fingerprint" id="1"/>
+<column name="Host-Key Method" id="2"/></header>
+<body>
+<row>
+<field id="1">a5:60:ce:9f:3a:60:f3:52:7f:82:bd:b9:44:00:52:18</field>
+<field id="2">ssh-rsa</field></row></body></table>
+<table index="0" name="GenKeySSH1" description="Host key (SSH1)" format="table">
+<header>
+<column name="Key Fingerprint" id="1"/></header>
+<body>
+<row>
+<field id="1">57:b6:34:8a:b7:a1:b6:ed:eb:ec:af:7d:4b:cb:2f:e1</field>
+<field id="2">ssh-rsa</field></row></body></table></param_list></vulner>
+<vulner id="8365" level="1" status="0">
+<param/>
+<param_list>
+<table index="0" name="GenWeakCiphers" description="Encyption algorithms" format="table">
+<header>
+<column name="Weak Ciphers" id="1"/></header>
+<body>
+<row>
+<field id="1">aes128-cbc</field></row>
+<row>
+<field id="1">3des-cbc</field></row>
+<row>
+<field id="1">aes192-cbc</field></row>
+<row>
+<field id="1">aes256-cbc</field></row></body></table></param_list></vulner>
+<vulner id="8368" level="1" status="0">
+<param/>
+<param_list>
+<table index="0" name="GenWeakMACs" description="MAC algorithms" format="table">
+<header>
+<column name="Weak algorithms" id="1"/></header>
+<body>
+<row>
+<field id="1">hmac-sha1</field></row>
+<row>
+<field id="1">hmac-sha1-96</field></row>
+<row>
+<field id="1">hmac-md5</field></row>
+<row>
+<field id="1">hmac-md5-96</field></row></body></table></param_list></vulner>
+<vulner id="8369" level="1" status="0">
+<param/>
+<param_list>
+<table index="0" name="GenWeakKEXs" description="Key-Exchange Algorithms" format="table">
+<header>
+<column name="Weak algorithms" id="1"/></header>
+<body>
+<row>
+<field id="1">diffie-hellman-group1-sha1</field></row></body></table></param_list></vulner></vulners></soft>
+<soft port_status="0" type="3" port="443" id="2" security_object="0" protocol="6" service="150">
+<name>HTTP SSL</name>
+<version/>
+<path/>
+<metadata>
+<soft_version id="0"/></metadata>
+<banner>
+<table index="3" name="GenServerName" description="Server name" format="key-value">
+<header>
+<column name="Server name" id="1"/></header>
+<body>
+<row>
+<field id="1">[not available]</field></row></body></table>
+<table index="9" name="GenHeuristicInfo" description="" format="list">
+<header>
+<column name="" id="1"/></header>
+<body>
+<row>
+<field id="1">Heuristic confirmation unavailable</field></row></body></table>
+<table index="5" name="GenServerState" description="State" format="key-value">
+<header>
+<column name="State" id="1"/></header>
+<body>
+<row>
+<field id="1">301 (Moved Permanently)</field></row></body></table></banner>
+<statistics>
+<table index="2" name="GenPortStatistics" description="" format="table">
+<header>
+<column name="scan_time" id="1"/></header>
+<body>
+<row>
+<field id="1">2 min 46 sec</field></row></body></table></statistics>
+<vulners>
+<vulner id="1262" level="0" status="0">
+<param/>
+<param_list>
+<table index="0" name="Gen" description="" format="table">
+<header>
+<column name="" id="1"/></header>
+<body>
+<row>
+<field id="1">&amp;lt;a href=&amp;quot;http://www.cisco.com/go/asdm&amp;quot; target=_blank&amp;gt;http://www.cisco.com/go/asdm&amp;lt;/a&amp;gt;</field></row>
+<row>
+<field id="1">&amp;lt;a href=&amp;quot;http://www.java.com&amp;quot; target=_blank&amp;gt;http://www.java.com&amp;lt;/a&amp;gt;</field></row></body></table></param_list></vulner>
+<vulner id="1298" level="0" status="0">
+<param/>
+<param_list>
+<table index="0" name="Gen" description="" format="table">
+<header>
+<column name="" id="1"/></header>
+<body>
+<row>
+<field id="1">User-agent: *
+Disallow: /
+</field></row></body></table></param_list></vulner>
+<vulner id="7027" level="0" status="0">
+<param>asa temporary self signed certificate</param>
+<param_list>
+<table index="0" name="GencertType" description="Certificate Type" format="key-value">
+<header>
+<column name="Certificate type" id="1"/></header>
+<body>
+<row>
+<field id="1">Certificate of this peer</field></row></body></table>
+<table index="1" name="Gencert" description="SSL Certificate" format="table">
+<header>
+<column name="" id="1"/></header>
+<body>
+<row>
+<field id="1">Certificate:
+    Data:
+        Version: 3 (0x2)
+        Serial Number: 1881790555 (0x7029d85b)
+    Signature Algorithm: ecdsa-with-SHA256
+        Issuer: CN=ASA Temporary Self Signed Certificate
+        Validity
+            Not Before: Oct 30 09:50:39 2018 GMT
+            Not After : Oct 27 09:50:39 2028 GMT
+        Subject: CN=ASA Temporary Self Signed Certificate
+        Subject Public Key Info:
+            Public Key Algorithm: id-ecPublicKey
+                Public-Key: (256 bit)
+                pub: 
+                    04:4f:b0:d2:bb:53:89:60:9d:9e:9f:19:dc:7f:f9:
+                    96:87:e7:12:ba:93:8f:01:9d:4e:58:f7:93:a1:5f:
+                    6a:31:1c:ac:8d:23:36:16:eb:7e:f4:b6:9a:35:2a:
+                    f1:0a:a5:72:d0:0e:5f:da:81:4d:8e:39:d0:a3:6b:
+                    35:cd:b2:1b:5a
+                ASN1 OID: prime256v1
+                NIST CURVE: P-256
+    Signature Algorithm: ecdsa-with-SHA256
+         30:44:02:20:6c:1c:cb:ba:b6:ed:7c:ce:ef:72:e9:37:0c:dc:
+         1c:c9:2a:ac:aa:33:da:ce:ab:3b:22:9b:23:ae:1b:f5:44:ba:
+         02:20:65:bf:f4:71:54:11:83:43:bf:49:e1:9e:26:ab:af:f5:
+         6e:96:97:43:9d:b1:18:6b:66:57:65:3b:3a:37:e2:67
+</field></row></body></table></param_list></vulner>
+<vulner id="7029" level="3" status="0">
+<param/>
+<param_list>
+<table index="2" name="GendataArea" description="Host ID" format="table">
+<header>
+<column name="Type" id="1"/>
+<column name="Value" id="2"/></header>
+<body>
+<row>
+<field id="1">IP address</field>
+<field id="2">172.16.101.27</field></row>
+<row>
+<field id="1">Name specified in task</field>
+<field id="2">172.16.101.27</field></row></body></table>
+<table index="0" name="GencommonName" description="Subject Name" format="table">
+<header>
+<column name="" id="1"/></header>
+<body>
+<row>
+<field id="1">asa temporary self signed certificate</field></row></body></table></param_list></vulner>
+<vulner id="7030" level="0" status="0">
+<param/>
+<param_list>
+<table index="2" name="Genmedium" description="Medium strength ciphers ( &gt; 56-bit and &lt; 128-bit key)" format="table">
+<header>
+<column name="Version" id="1"/>
+<column name="Name" id="2"/>
+<column name="Key exchange" id="3"/>
+<column name="Authentication" id="4"/>
+<column name="Encryption" id="5"/>
+<column name="Mac" id="6"/></header>
+<body>
+<row>
+<field id="1">TLSv1</field>
+<field id="2">SSL_RSA_WITH_3DES_EDE_CBC_SHA</field>
+<field id="3">RSA     </field>
+<field id="4">RSA </field>
+<field id="5">3DES(168)</field>
+<field id="6">SHA1</field></row>
+<row>
+<field id="1">TLSv1.2</field>
+<field id="2">SSL_RSA_WITH_3DES_EDE_CBC_SHA</field>
+<field id="3">RSA     </field>
+<field id="4">RSA </field>
+<field id="5">3DES(168)</field>
+<field id="6">SHA1</field></row></body></table>
+<table index="3" name="Genhigh" description="High strength ciphers ( &gt;= 128-bit key)" format="table">
+<header>
+<column name="Version" id="1"/>
+<column name="Name" id="2"/>
+<column name="Key exchange" id="3"/>
+<column name="Authentication" id="4"/>
+<column name="Encryption" id="5"/>
+<column name="Mac" id="6"/></header>
+<body>
+<row>
+<field id="1">TLSv1</field>
+<field id="2">TLS_DHE_RSA_WITH_AES_128_CBC_SHA</field>
+<field id="3">DH      </field>
+<field id="4">RSA </field>
+<field id="5">AES(128) </field>
+<field id="6">SHA1</field></row>
+<row>
+<field id="1">TLSv1</field>
+<field id="2">TLS_DHE_RSA_WITH_AES_256_CBC_SHA</field>
+<field id="3">DH      </field>
+<field id="4">RSA </field>
+<field id="5">AES(256) </field>
+<field id="6">SHA1</field></row>
+<row>
+<field id="1">TLSv1</field>
+<field id="2">TLS_RSA_WITH_AES_128_CBC_SHA</field>
+<field id="3">RSA     </field>
+<field id="4">RSA </field>
+<field id="5">AES(128) </field>
+<field id="6">SHA1</field></row>
+<row>
+<field id="1">TLSv1</field>
+<field id="2">TLS_RSA_WITH_AES_256_CBC_SHA</field>
+<field id="3">RSA     </field>
+<field id="4">RSA </field>
+<field id="5">AES(256) </field>
+<field id="6">SHA1</field></row>
+<row>
+<field id="1">TLSv1.2</field>
+<field id="2">TLS_DHE_RSA_WITH_AES_128_CBC_SHA</field>
+<field id="3">DH      </field>
+<field id="4">RSA </field>
+<field id="5">AES(128) </field>
+<field id="6">SHA1</field></row>
+<row>
+<field id="1">TLSv1.2</field>
+<field id="2">TLS_DHE_RSA_WITH_AES_128_CBC_SHA256</field>
+<field id="3">DH      </field>
+<field id="4">RSA </field>
+<field id="5">AES(128) </field>
+<field id="6">SHA256</field></row>
+<row>
+<field id="1">TLSv1.2</field>
+<field id="2">TLS_DHE_RSA_WITH_AES_128_GCM_SHA256</field>
+<field id="3">DH      </field>
+<field id="4">RSA </field>
+<field id="5">AESGCM(128)</field>
+<field id="6">AEAD</field></row>
+<row>
+<field id="1">TLSv1.2</field>
+<field id="2">TLS_DHE_RSA_WITH_AES_256_CBC_SHA</field>
+<field id="3">DH      </field>
+<field id="4">RSA </field>
+<field id="5">AES(256) </field>
+<field id="6">SHA1</field></row>
+<row>
+<field id="1">TLSv1.2</field>
+<field id="2">TLS_DHE_RSA_WITH_AES_256_CBC_SHA256</field>
+<field id="3">DH      </field>
+<field id="4">RSA </field>
+<field id="5">AES(256) </field>
+<field id="6">SHA256</field></row>
+<row>
+<field id="1">TLSv1.2</field>
+<field id="2">TLS_DHE_RSA_WITH_AES_256_GCM_SHA384</field>
+<field id="3">DH      </field>
+<field id="4">RSA </field>
+<field id="5">AESGCM(256)</field>
+<field id="6">AEAD</field></row>
+<row>
+<field id="1">TLSv1.2</field>
+<field id="2">TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA256</field>
+<field id="3">ECDH    </field>
+<field id="4">ECDSA</field>
+<field id="5">AES(128) </field>
+<field id="6">SHA256</field></row>
+<row>
+<field id="1">TLSv1.2</field>
+<field id="2">TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256</field>
+<field id="3">ECDH    </field>
+<field id="4">ECDSA</field>
+<field id="5">AESGCM(128)</field>
+<field id="6">AEAD</field></row>
+<row>
+<field id="1">TLSv1.2</field>
+<field id="2">TLS_ECDHE_ECDSA_WITH_AES_256_CBC_SHA384</field>
+<field id="3">ECDH    </field>
+<field id="4">ECDSA</field>
+<field id="5">AES(256) </field>
+<field id="6">SHA384</field></row>
+<row>
+<field id="1">TLSv1.2</field>
+<field id="2">TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384</field>
+<field id="3">ECDH    </field>
+<field id="4">ECDSA</field>
+<field id="5">AESGCM(256)</field>
+<field id="6">AEAD</field></row>
+<row>
+<field id="1">TLSv1.2</field>
+<field id="2">TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256</field>
+<field id="3">ECDH    </field>
+<field id="4">RSA </field>
+<field id="5">AES(128) </field>
+<field id="6">SHA256</field></row>
+<row>
+<field id="1">TLSv1.2</field>
+<field id="2">TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256</field>
+<field id="3">ECDH    </field>
+<field id="4">RSA </field>
+<field id="5">AESGCM(128)</field>
+<field id="6">AEAD</field></row>
+<row>
+<field id="1">TLSv1.2</field>
+<field id="2">TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA384</field>
+<field id="3">ECDH    </field>
+<field id="4">RSA </field>
+<field id="5">AES(256) </field>
+<field id="6">SHA384</field></row>
+<row>
+<field id="1">TLSv1.2</field>
+<field id="2">TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384</field>
+<field id="3">ECDH    </field>
+<field id="4">RSA </field>
+<field id="5">AESGCM(256)</field>
+<field id="6">AEAD</field></row>
+<row>
+<field id="1">TLSv1.2</field>
+<field id="2">TLS_RSA_WITH_AES_128_CBC_SHA</field>
+<field id="3">RSA     </field>
+<field id="4">RSA </field>
+<field id="5">AES(128) </field>
+<field id="6">SHA1</field></row>
+<row>
+<field id="1">TLSv1.2</field>
+<field id="2">TLS_RSA_WITH_AES_128_CBC_SHA256</field>
+<field id="3">RSA     </field>
+<field id="4">RSA </field>
+<field id="5">AES(128) </field>
+<field id="6">SHA256</field></row>
+<row>
+<field id="1">TLSv1.2</field>
+<field id="2">TLS_RSA_WITH_AES_128_GCM_SHA256</field>
+<field id="3">RSA     </field>
+<field id="4">RSA </field>
+<field id="5">AESGCM(128)</field>
+<field id="6">AEAD</field></row>
+<row>
+<field id="1">TLSv1.2</field>
+<field id="2">TLS_RSA_WITH_AES_256_CBC_SHA</field>
+<field id="3">RSA     </field>
+<field id="4">RSA </field>
+<field id="5">AES(256) </field>
+<field id="6">SHA1</field></row>
+<row>
+<field id="1">TLSv1.2</field>
+<field id="2">TLS_RSA_WITH_AES_256_CBC_SHA256</field>
+<field id="3">RSA     </field>
+<field id="4">RSA </field>
+<field id="5">AES(256) </field>
+<field id="6">SHA256</field></row>
+<row>
+<field id="1">TLSv1.2</field>
+<field id="2">TLS_RSA_WITH_AES_256_GCM_SHA384</field>
+<field id="3">RSA     </field>
+<field id="4">RSA </field>
+<field id="5">AESGCM(256)</field>
+<field id="6">AEAD</field></row></body></table></param_list></vulner>
+<vulner id="7034" level="3" status="0">
+<param/>
+<param_list>
+<table index="0" name="GenchainErr" description="" format="table">
+<header>
+<column name="" id="1"/></header>
+<body>
+<row>
+<field id="1">1. The certificate or certificate chain is based on an untrusted root.
+2. Certificate of this service is self-signed.
+</field></row></body></table></param_list></vulner>
+<vulner id="8319" level="0" status="0">
+<param/>
+<param_list>
+<table index="0" name="GenTlsExtensions" description="TLS Extensions" format="table">
+<header>
+<column name="Extension" id="1"/></header>
+<body>
+<row>
+<field id="1">server_name</field></row>
+<row>
+<field id="1">renegotiation_info</field></row>
+<row>
+<field id="1">ec_point_formats</field></row>
+<row>
+<field id="1">heartbeat</field></row></body></table></param_list></vulner>
+<vulner id="8337" level="0" status="0">
+<param/>
+<param_list>
+<table index="0" name="Genprotocols" description="SSL/TLS versions" format="list">
+<header>
+<column name="" id="1"/></header>
+<body>
+<row>
+<field id="1">TLSv1 TLSv1.1 TLSv1.2</field></row></body></table></param_list></vulner>
+<vulner id="8351" level="3" status="0">
+<param/>
+<param_list/></vulner>
+<vulner id="8353" level="0" status="0">
+<param/>
+<param_list/></vulner>
+<vulner id="8361" level="1" status="0">
+<param/>
+<param_list>
+<table index="0" name="Genciphers" description="Vulnerable algorithms" format="list">
+<header>
+<column name="" id="1"/></header>
+<body>
+<row>
+<field id="1">SSL_RSA_WITH_3DES_EDE_CBC_SHA TLS_RSA_WITH_AES_128_CBC_SHA TLS_RSA_WITH_AES_128_CBC_SHA256 TLS_RSA_WITH_AES_128_GCM_SHA256 TLS_RSA_WITH_AES_256_CBC_SHA TLS_RSA_WITH_AES_256_CBC_SHA256 TLS_RSA_WITH_AES_256_GCM_SHA384</field></row></body></table></param_list></vulner>
+<vulner id="8375" level="0" status="0">
+<param/>
+<param_list>
+<table index="0" name="GenHeaders" description="HTTP Headers" format="table">
+<header>
+<column name="HTTP Header" id="1"/>
+<column name="Value" id="2"/></header>
+<body>
+<row>
+<field id="1">CONNECTION</field>
+<field id="2">CLOSE</field></row>
+<row>
+<field id="1">DATE</field>
+<field id="2">SAT, 10 NOV 2018 10:32:28 UTC</field></row>
+<row>
+<field id="1">LOCATION</field>
+<field id="2">/ADMIN/PUBLIC/INDEX.HTML</field></row></body></table></param_list></vulner></vulners></soft>
+<soft port_status="0" type="3" port="0" id="3" security_object="0" protocol="6" service="1">
+<name>System</name>
+<version/>
+<path/>
+<metadata>
+<soft_version id="0"/></metadata>
+<statistics>
+<table index="2" name="GenPortStatistics" description="" format="table">
+<header>
+<column name="scan_time" id="1"/></header>
+<body>
+<row>
+<field id="1">0 sec</field></row></body></table></statistics>
+<vulners>
+<vulner id="1222" level="0" status="0">
+<param>9.4(1)200</param>
+<param_list>
+<table index="1" name="GenOperatingSystemsList" description="Detection methods" format="table">
+<header>
+<column name="Name" id="1"/>
+<column name="Version" id="2"/>
+<column name="Detection method" id="3"/>
+<column name="Weight" id="4"/></header>
+<body>
+<row>
+<field id="1">Cisco ASA</field>
+<field id="2">9.4(1)200</field>
+<field id="3">Audit</field>
+<field id="4">70</field></row>
+<row>
+<field id="1">Operating System</field>
+<field id="2">Cisco IOS 12 or PIX</field>
+<field id="3">Heuristic SSH OS (22/TCP)</field>
+<field id="4">2</field></row></body></table></param_list></vulner>
+<vulner id="8123" level="0" status="0">
+<param/>
+<param_list>
+<table index="0" name="Gentime_table" description="Routing information" format="table">
+<header>
+<column name="TTL" id="1"/>
+<column name="Hop address" id="2"/>
+<column name="Round Trip Time, ms" id="3"/></header>
+<body>
+<row>
+<field id="1">1</field>
+<field id="2">10.4.5.1</field>
+<field id="3">                       0.12   0.15   0.10   </field></row>
+<row>
+<field id="1">2</field>
+<field id="2">172.16.7.2</field>
+<field id="3">                       0.91   0.98   0.91   </field></row>
+<row>
+<field id="1">3</field>
+<field id="2">172.16.101.27</field>
+<field id="3">                       3.39   4.21   2.14   </field></row></body></table></param_list></vulner>
+<vulner id="8124" level="0" status="0">
+<param/>
+<param_list>
+<table index="0" name="Genuptime" description="Guess uptime" format="key-value">
+<header>
+<column name="Guess uptime" id="1"/></header>
+<body>
+<row>
+<field id="1">        11 days or more</field></row></body></table></param_list></vulner></vulners></soft>
+<soft type="2" port="0" id="4" security_object="6074931" protocol="0" service="6074994">
+<name>Cisco ASA</name>
+<version>9.4(1)200</version>
+<path/>
+<metadata>
+<soft_version id="6074931"/></metadata>
+<vulners>
+<vulner id="185895" level="3" status="0">
+<param/>
+<param_list/></vulner>
+<vulner id="185897" level="3" status="0">
+<param/>
+<param_list/></vulner>
+<vulner id="189568" level="5" status="0">
+<param/>
+<param_list/></vulner>
+<vulner id="189893" level="3" status="0">
+<param/>
+<param_list/></vulner>
+<vulner id="189894" level="5" status="0">
+<param/>
+<param_list/></vulner>
+<vulner id="190230" level="5" status="0">
+<param/>
+<param_list/></vulner>
+<vulner id="190783" level="3" status="0">
+<param/>
+<param_list/></vulner>
+<vulner id="425351" level="0" status="0">
+<param/>
+<param_list>
+<table index="0" name="Gen" description="var" format="key-value">
+<header>
+<column name="OS version" id="1"/>
+<column name="Device Manager version" id="2"/>
+<column name="Image file" id="3"/>
+<column name="Boot file" id="4"/>
+<column name="Config register value" id="5"/></header>
+<body>
+<row>
+<field id="1">9.4(1)200</field>
+<field id="2">:</field>
+<field id="3">boot:/asa941-200-smp-k8.bin</field>
+<field id="4">startup-config</field>
+<field id="5"> </field></row></body></table></param_list></vulner></vulners></soft></scan_objects></host></data>
+<vulners>
+<vulner id="1044">
+<title>Weak Cryptography</title>
+<short_description/>
+<description>Versions 1.33 and 1.5 have insufficient cryptographic security.</description>
+<how_to_fix>Use protocol version 2.0.</how_to_fix>
+<links/>
+<cvss temp_score="0.0" base_score="4.3" temp_score_decomp="" base_score_decomp="(AV:A/AC:M/Au:N/C:P/I:P/A:N)"/></vulner>
+<vulner id="1079">
+<title>Account</title>
+<short_description/>
+<description>Found account.</description>
+<how_to_fix>Restrict Access to this Account.</how_to_fix>
+<links/>
+<cvss temp_score="0.0" base_score="7.5" temp_score_decomp="" base_score_decomp="(AV:N/AC:L/Au:N/C:P/I:P/A:P)"/></vulner>
+<vulner id="1092">
+<title>Remote Control</title>
+<short_description>Start remote control service.</short_description>
+<description>Remote control service is started. An attacker can access other network hosts using vulnerabilities in the service implementation or configuration.</description>
+<how_to_fix>Disable the service access for all hosts until it is necessary.
+Pay special attention to the service configuration.
+Ensure that the service is unavailable from the Internet.</how_to_fix>
+<links/></vulner>
+<vulner id="1222">
+<title>OS</title>
+<short_description/>
+<description>Probable Operating System.</description>
+<how_to_fix/>
+<links/></vulner>
+<vulner id="1235">
+<title>Directories Requiring Authorization (Basic)</title>
+<short_description/>
+<description>Directories with authorization (Basic):
+</description>
+<how_to_fix/>
+<links/></vulner>
+<vulner id="1262">
+<title>External Links Listed</title>
+<short_description/>
+<description>External links published on web-server pages:</description>
+<how_to_fix/>
+<links/></vulner>
+<vulner id="1298">
+<title>File robots.txt</title>
+<short_description>File robots.txt has been found</short_description>
+<description>File robots.txt has been found.
+File content:
+</description>
+<how_to_fix/>
+<links/></vulner>
+<vulner id="7027">
+<title>Certificate chain</title>
+<short_description/>
+<description/>
+<how_to_fix/>
+<links/></vulner>
+<vulner id="7029">
+<title>Invalid certificate</title>
+<short_description/>
+<description>Subject Name and Alternative Subject Names do not match domain name. This certificate could be misused.</description>
+<how_to_fix>Install valid certificate.</how_to_fix>
+<links/>
+<cvss temp_score="0.0" base_score="5.0" temp_score_decomp="" base_score_decomp="(AV:N/AC:L/Au:N/C:P/I:N/A:N)"/></vulner>
+<vulner id="7030">
+<title>SSL cipher suite</title>
+<short_description/>
+<description>key length is mentioned in brackets.</description>
+<how_to_fix/>
+<links>https://www.openssl.org/docs/manmaster/man1/ciphers.html</links></vulner>
+<vulner id="7034">
+<title>Invalid certificate chain</title>
+<short_description/>
+<description>During verification of the service certificate chain, the following errors were detected
+</description>
+<how_to_fix>Install valid certificate for the service.
+</how_to_fix>
+<links/>
+<cvss temp_score="0.0" base_score="5.0" temp_score_decomp="" base_score_decomp="(AV:N/AC:L/Au:N/C:P/I:N/A:N)"/></vulner>
+<vulner id="8123">
+<title>Route to target host</title>
+<short_description>Route to taget host in chain of intermediate hosts.</short_description>
+<description>Knowledge of path to host can provide information about network structure. Having big number of paths to different hosts enough to build detailed map of network.</description>
+<how_to_fix/>
+<links/>
+<cvss temp_score="0.0" base_score="0.0" temp_score_decomp="" base_score_decomp=""/></vulner>
+<vulner id="8124">
+<title>Supposed host uptime</title>
+<short_description>Supposed uptime of scanned host</short_description>
+<description>Supposed host uptime might be incorrect if real host uptime is greater than a month.</description>
+<how_to_fix/>
+<links/>
+<cvss temp_score="0.0" base_score="0.0" temp_score_decomp="" base_score_decomp=""/></vulner>
+<vulner id="8134">
+<title>ICMP Timestamp Response</title>
+<short_description>Remote host timestamp received.</short_description>
+<description>The remote host responded to an ICMP timestamp request. It allows an attacker to find out what date is set on the target machine and use this information to attack cryptographic protocols with time-based parameters.</description>
+<how_to_fix/>
+<links/>
+<cvss temp_score="0.0" base_score="0.0" temp_score_decomp="" base_score_decomp=""/></vulner>
+<vulner id="8166">
+<title>ARP table</title>
+<short_description/>
+<description>ARP table static data are found. ARP table is used to determine the MAC address of a particular IP address. ARP table static data provide protection against ARP spoofing.</description>
+<how_to_fix/>
+<links/>
+<cvss temp_score="0.0" base_score="0.0" temp_score_decomp="" base_score_decomp=""/></vulner>
+<vulner id="8167">
+<title>Network interface list</title>
+<short_description/>
+<description>A network interface list is found. The network interface list may be used to gain information on the network architecture and node configuration.</description>
+<how_to_fix/>
+<links/>
+<cvss temp_score="0.0" base_score="0.0" temp_score_decomp="" base_score_decomp=""/></vulner>
+<vulner id="8168">
+<title>System information</title>
+<short_description/>
+<description/>
+<how_to_fix/>
+<links/>
+<cvss temp_score="0.0" base_score="0.0" temp_score_decomp="" base_score_decomp=""/></vulner>
+<vulner id="8169">
+<title>IP address list</title>
+<short_description/>
+<description>A network interface IP address list is found. Each network interface may be associated with several IP addresses.</description>
+<how_to_fix/>
+<links/>
+<cvss temp_score="0.0" base_score="0.0" temp_score_decomp="" base_score_decomp=""/></vulner>
+<vulner id="8170">
+<title>Routing table</title>
+<short_description/>
+<description>A routing table is found. Routing table data may be used to determine the network architecture.</description>
+<how_to_fix/>
+<links/>
+<cvss temp_score="0.0" base_score="0.0" temp_score_decomp="" base_score_decomp=""/></vulner>
+<vulner id="8171">
+<title>Opened ports list</title>
+<short_description/>
+<description>An opened ports list is obtained. This list contains only ports opened on the scanned interface or on all host&apos;s interfaces.</description>
+<how_to_fix/>
+<links/>
+<cvss temp_score="0.0" base_score="0.0" temp_score_decomp="" base_score_decomp=""/></vulner>
+<vulner id="8176">
+<title>SSH2 Configuration</title>
+<short_description/>
+<description>Information about cryptographic algorithms and authentication methods was obtained.</description>
+<how_to_fix/>
+<links/>
+<cvss temp_score="0.0" base_score="0.0" temp_score_decomp="" base_score_decomp=""/></vulner>
+<vulner id="8177">
+<title>SSH Host Key Fingerprint</title>
+<short_description/>
+<description>The key fingerprint was obtained. To prevent man-in-the-middle attacks when connecting to a host with the key the client doesn&apos;t yet know, the client software shows the fingerprint of this key to the user. It is recommended to verify the key fingerprint displayed by the client software by comparing it with the server key fingerprint received via trusted channels or by hand.</description>
+<how_to_fix/>
+<links/>
+<cvss temp_score="0.0" base_score="0.0" temp_score_decomp="" base_score_decomp=""/></vulner>
+<vulner id="8319">
+<title>TLS extensions</title>
+<short_description>A remote host exposed supported TLS extensions.</short_description>
+<description/>
+<how_to_fix/>
+<links/>
+<cvss temp_score="0.0" base_score="0.0" temp_score_decomp="" base_score_decomp=""/></vulner>
+<vulner id="8337">
+<title>SSL/TLS versions</title>
+<short_description>Supported versions of SSL/TLS protocols were obtained</short_description>
+<description/>
+<how_to_fix/>
+<links/>
+<cvss temp_score="0.0" base_score="0.0" temp_score_decomp="" base_score_decomp=""/></vulner>
+<vulner id="8351">
+<title>Information Disclosure (SWEET32)</title>
+<short_description>Sweet32 attack allows attackers to obtain cleartext data from HTTPS sessions when the Triple DES (3DES) cipher is used.</short_description>
+<description>Vulnerability allows MITM attackers, having ability to sniff the network traffic (e.g. in public Wi-Fi networks), to recover some identifiers like HTTPS session cookies transmitted via a 3DES-encrypted connection.
+Successful exploitation of this vulnerability requires a web site to support connections encrypted with the Triple DES symmetric-key block cipher and transmission of huge number of requests via the same session.
+This attack exploits the mathematics behind the birthday problem in probability theory, a.k.a. a Birthday attack. An attacker will generate a large number of requests and then check for two identically encrypted blocks that indicate a collision. The attacker knowing the original request, which caused a collision, and the fact that CBC mode uses XORing of two different blocks can recover the encryption key by getting results of several collisions.</description>
+<how_to_fix>You should disable 3DES cipher support. If you run an old server that doesn’t support any better ciphers than DES, you should upgrade.</how_to_fix>
+<links>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2016-2183
+https://www.openssl.org/blog/blog/2016/08/24/sweet32 
+https://sweet32.info</links>
+<cvss temp_score="0.0" base_score="5.0" temp_score_decomp="" base_score_decomp="(AV:N/AC:L/Au:N/C:P/I:N/A:N)"/>
+<global_id name="CVE" value="CVE-2016-2183"/></vulner>
+<vulner id="8353">
+<title>Session Resumption Support</title>
+<short_description>Session Resumption based on the session ID is enabled.</short_description>
+<description>When establishing a new connection, the server generates a session ID and sends it to the client. For subsequent connections the client will encapsulate this session ID in to the ClientHello message informing the server that it wants to resume a previous session. If the server finds this session ID in its local cache, the exchange of encrypted data with the client will be skipped. An attacker having a possibility to compromise the server and obtain session keys stored on it will be able to decrypt previous and future sessions.</description>
+<how_to_fix/>
+<links>https://tools.ietf.org/html/rfc5077
+https://wiki.mozilla.org/Security/Server_Side_TLS#Session_Resumption
+https://www.openssl.org/docs/man1.0.1/ssl/SSL_set_generate_session_id.html
+https://hpbn.co/transport-layer-security-tls/#tls-session-resumption</links>
+<cvss temp_score="0.0" base_score="0.0" temp_score_decomp="" base_score_decomp=""/></vulner>
+<vulner id="8361">
+<title>Insecure Encryption Key-Exchange Algorithms</title>
+<short_description>Insecure encryption key-exchange algorithms are enabled for the TLS protocol.</short_description>
+<description>These key-exchange algorithms allow attackers to conduct attacks against the encryption algorithm and obtain data transmitted via an encrypted connection. In modern TLS standards, the RSA algorithm is used only as compatibility with previous versions of standards.</description>
+<how_to_fix>Disable the listed encryption algorithms which use insecure key-exchange algorithms.</how_to_fix>
+<links>https://www.trustzone.com/robot-attack-rsa-encryption-vulnerable-choose-ecc-tlsssl-certificates-ensure-security
+https://eprint.iacr.org/2017/1189.pdf
+http://archiv.infsec.ethz.ch/education/fs08/secsem/bleichenbacher98.pdf
+https://robotattack.org/</links>
+<cvss temp_score="0.0" base_score="0.0" temp_score_decomp="" base_score_decomp=""/></vulner>
+<vulner id="8365">
+<title>SSH Weak Cryptography Ciphers</title>
+<short_description>Weak encryption algorithms are enabled for the SSH protocol.</short_description>
+<description>The &apos;arcfour&apos; is the Arcfour stream cipher. The Arcfour cipher is believed to be compatible with the RC4 cipher. RFC 4253 states that Arcfour (and RC4) has problems with weak keys, and should be used with caution.
+If SSH server is configured to support Cipher Block Chaining (CBC) encryption, this may allow an attacker to recover plaintext data from the ciphertext.</description>
+<how_to_fix>Disable the listed encryption algorithms.</how_to_fix>
+<links>https://www.ietf.org/rfc/rfc4253.txt
+http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2008-5161
+http://www.openssh.com/txt/release-7.1
+http://www.openssh.com/txt/release-7.6</links>
+<publication_date>2017-12-20</publication_date>
+<cvss temp_score="0.0" base_score="0.0" temp_score_decomp="" base_score_decomp=""/>
+<global_id name="CVE" value="CVE-2008-5161"/>
+<global_id name="fstec" value="BDU:2015-09678"/></vulner>
+<vulner id="8368">
+<title>SSH Weak MAC Algorithms</title>
+<short_description>The remote SSH server is configured to allow weak MD5, 96-bit, and SHA1 MAC algorithms.</short_description>
+<description>Using the following algorithms is unsafe: md5-based, sha1-based.
+The following algorithms use weak cryptography: umac-64.
+The following algorithms are considered obsolete and removed from the standard: ripemd160, blowfish.</description>
+<how_to_fix>Disable the listed MAC algorithms.</how_to_fix>
+<links>https://shattered.io/
+https://stribika.github.io/2015/01/04/secure-secure-shell.html
+http://www.openssh.com/txt/release-7.4</links>
+<cvss temp_score="0.0" base_score="0.0" temp_score_decomp="" base_score_decomp=""/></vulner>
+<vulner id="8369">
+<title>SSH Weak Key-Exchange Algorithms</title>
+<short_description>The remote SSH server is configured to allow weak SHA1-based or weak elliptic-curves Key-Exchange algorithms.</short_description>
+<description>Using the following algorithms is unsafe: sha1-based.
+The following algorithms use weak elliptic-curve cryptography: ecdh-sha2-nistp-*.</description>
+<how_to_fix>Disable the listed Key-Exchange algorithms.</how_to_fix>
+<links>https://githubengineering.com/crypto-deprecation-notice-update-1/
+https://stribika.github.io/2015/01/04/secure-secure-shell.html
+https://shattered.io/</links>
+<cvss temp_score="0.0" base_score="0.0" temp_score_decomp="" base_score_decomp=""/></vulner>
+<vulner id="8375">
+<title>HTTP Headers Data</title>
+<short_description>HTTP headers are listed in the server response received to a GET request.</short_description>
+<description/>
+<how_to_fix/>
+<links>https://www.ietf.org/rfc/rfc2616.txt</links>
+<cvss temp_score="0.0" base_score="0.0" temp_score_decomp="" base_score_decomp=""/></vulner>
+<vulner id="12204">
+<title>Cisco ID</title>
+<short_description/>
+<description/>
+<how_to_fix/>
+<links/>
+<cvss temp_score="0.0" base_score="0.0" temp_score_decomp="" base_score_decomp=""/></vulner>
+<vulner id="171861">
+<title>Cross-Site Scripting</title>
+<short_description>Vulnerability allows remote attackers to inject arbitrary web script or HTML.</short_description>
+<description>Multiple cross-site scripting (XSS) vulnerabilities in the HTTP server in Cisco IOS 12.4(23) allow remote attackers to inject arbitrary web script or HTML via the PATH_INFO to the default URI under (1) level/15/exec/-/ or (2) exec/, a different vulnerability than CVE-2008-3821.</description>
+<how_to_fix>Use vendor&apos;s advisory:
+http://tools.cisco.com/security/center/content/CiscoSecurityResponse/cisco-sr-20090114-http</how_to_fix>
+<links>BID (33625): http://www.securityfocus.com/bid/33625</links>
+<publication_date>2009-02-06</publication_date>
+<cvss temp_score="0.0" base_score="4.3" temp_score_decomp="" base_score_decomp="(AV:N/AC:M/Au:N/C:N/I:P/A:N)"/>
+<global_id name="CVE" value="CVE-2009-0470"/></vulner>
+<vulner id="171862">
+<title>Cross-Site Request Forgery Vulnerability</title>
+<short_description>Vulnerability allows attackers to execute arbitrary commands.</short_description>
+<description>Cross-site request forgery (CSRF) vulnerability in the HTTP server in Cisco IOS 12.4(23) allows remote attackers to execute arbitrary commands, as demonstrated by executing the hostname command with a level/15/configure/-/hostname request.</description>
+<how_to_fix>To fix the vulnerability update your software according to used platform. All necessary information is available here:
+http://www.cisco.com/</how_to_fix>
+<links/>
+<publication_date>2009-02-06</publication_date>
+<cvss temp_score="0.0" base_score="6.8" temp_score_decomp="" base_score_decomp="(AV:N/AC:M/Au:N/C:P/I:P/A:P)"/>
+<global_id name="CVE" value="CVE-2009-0471"/></vulner>
+<vulner id="171942">
+<title>Denial of Service</title>
+<short_description>Vulnerability allows remote attackers to cause a denial of service.</short_description>
+<description>The SSLVPN feature in Cisco IOS 12.3 through 12.4 allows remote attackers to cause a denial of service (device reload or hang) via a crafted HTTPS packet.</description>
+<how_to_fix>Use vendor&apos;s advisory:
+http://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20090325-webvpn</how_to_fix>
+<links>XF (ios-sslvpn-dos(49425)): http://xforce.iss.net/xforce/xfdb/49425
+BID (34239): http://www.securityfocus.com/bid/34239
+http://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20090325-webvpn</links>
+<publication_date>2009-03-25</publication_date>
+<cvss temp_score="6.4" base_score="7.8" temp_score_decomp="(AV:N/AC:L/Au:N/C:N/I:N/A:C/E:F/RL:O/RC:C)" base_score_decomp="(AV:N/AC:L/Au:N/C:N/I:N/A:C)"/>
+<global_id name="CVE" value="CVE-2009-0626"/></vulner>
+<vulner id="171945">
+<title>Denial of Service</title>
+<short_description>Vulnerability allows remote attackers to cause a denial of service.</short_description>
+<description>The (1) Cisco Unified Communications Manager Express; (2) SIP Gateway Signaling Support Over Transport Layer Security (TLS) Transport; (3) Secure Signaling and Media Encryption; (4) Blocks Extensible Exchange Protocol (BEEP); (5) Network Admission Control HTTP Authentication Proxy; (6) Per-user URL Redirect for EAPoUDP, Dot1x, and MAC Authentication Bypass; (7) Distributed Director with HTTP Redirects; and (8) TCP DNS features in Cisco IOS 12.0 through 12.4 do not properly handle IP sockets, which allows remote attackers to cause a denial of service (outage or resource consumption) via a series of crafted TCP packets.</description>
+<how_to_fix>Use vendor&apos;s advisory:
+http://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20090325-ip</how_to_fix>
+<links>XF (ios-ipsockets-dos(49418)): http://xforce.iss.net/xforce/xfdb/49418
+BID (34242): http://www.securityfocus.com/bid/34242
+http://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20090325-ip</links>
+<publication_date>2009-03-25</publication_date>
+<cvss temp_score="6.4" base_score="7.1" temp_score_decomp="(AV:N/AC:L/Au:N/C:N/I:N/A:C/E:F/RL:O/RC:C)" base_score_decomp="(AV:N/AC:M/Au:N/C:N/I:N/A:C)"/>
+<global_id name="CVE" value="CVE-2009-0630"/></vulner>
+<vulner id="171947">
+<title>Denial of Service</title>
+<short_description>Vulnerability allows remote attackers to cause a denial of service.</short_description>
+<description>Devices that are running an affected version of Cisco IOS Software and configured for Mobile IPv6 or Mobile IP NAT Traversal feature are affected by a DoS vulnerability. A successful exploitation of this vulnerability could cause an interface to stop processing traffic until the system is restarted. Offending packets need to be destined to the router for a successful exploit.</description>
+<how_to_fix>Use vendor&apos;s advisory:
+http://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20090325-mobileip</how_to_fix>
+<links>XF (ios-mobile-dos(49424)): http://xforce.iss.net/xforce/xfdb/49424
+BID (34241): http://www.securityfocus.com/bid/34241
+http://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20090325-mobileip</links>
+<publication_date>2009-03-25</publication_date>
+<cvss temp_score="6.4" base_score="7.1" temp_score_decomp="(AV:N/AC:L/Au:N/C:N/I:N/A:C/E:F/RL:O/RC:C)" base_score_decomp="(AV:N/AC:M/Au:N/C:N/I:N/A:C)"/>
+<global_id name="CVE" value="CVE-2009-0633"/></vulner>
+<vulner id="171948">
+<title>Denial of Service</title>
+<short_description>Vulnerability allows attackers to cause a denial of service.</short_description>
+<description>Devices that are running an affected version of Cisco IOS Software and configured for Mobile IPv6 or Mobile IP NAT Traversal feature are affected by a DoS vulnerability. A successful exploitation of this vulnerability could cause an interface to stop processing traffic until the system is restarted. Offending packets need to be destined to the router for a successful exploit.</description>
+<how_to_fix>Use vendor&apos;s advisory:
+http://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20090325-mobileip</how_to_fix>
+<links>XF (ios-mobile-dos(49424)): http://xforce.iss.net/xforce/xfdb/49424
+BID (34241): http://www.securityfocus.com/bid/34241</links>
+<publication_date>2009-03-27</publication_date>
+<cvss temp_score="6.4" base_score="7.8" temp_score_decomp="(AV:N/AC:L/Au:N/C:N/I:N/A:C/E:F/RL:O/RC:C)" base_score_decomp="(AV:N/AC:L/Au:N/C:N/I:N/A:C)"/>
+<global_id name="CVE" value="CVE-2009-0634"/></vulner>
+<vulner id="172088">
+<title>Denial of Service</title>
+<short_description>Vulnerability allows remote attackers to cause a denial of service.</short_description>
+<description>Unspecified vulnerability in the NAT for SIP implementation in Cisco IOS 12.1 through 12.4 and 15.0 through 15.1 allows remote attackers to cause a denial of service (device reload) via transit traffic on UDP port 5060, aka Bug ID CSCtf17624.</description>
+<how_to_fix>Use vendor&apos;s advisory:
+http://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20100922-nat</how_to_fix>
+<links>http://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20100922-nat</links>
+<publication_date>2010-09-22</publication_date>
+<cvss temp_score="6.4" base_score="7.8" temp_score_decomp="(AV:N/AC:L/Au:N/C:N/I:N/A:C/E:F/RL:O/RC:C)" base_score_decomp="(AV:N/AC:L/Au:N/C:N/I:N/A:C)"/>
+<global_id name="CVE" value="CVE-2010-2831"/></vulner>
+<vulner id="172089">
+<title>Denial of Service</title>
+<short_description>Vulnerability allows remote attackers to cause a denial of service.</short_description>
+<description>Unspecified vulnerability in the H.323 implementation in Cisco IOS 12.1 through 12.4 and 15.0 through 15.1, and IOS XE 2.5.x before 2.5.2 and 2.6.x before 2.6.1, allows remote attackers to cause a denial of service (device reload) via crafted H.323 packets, aka Bug ID CSCtc73759.</description>
+<how_to_fix>Use vendor&apos;s advisory:
+http://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20100922-h323</how_to_fix>
+<links>http://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20100922-h323</links>
+<publication_date>2010-09-22</publication_date>
+<cvss temp_score="6.4" base_score="7.8" temp_score_decomp="(AV:N/AC:L/Au:N/C:N/I:N/A:C/E:F/RL:O/RC:C)" base_score_decomp="(AV:N/AC:L/Au:N/C:N/I:N/A:C)"/>
+<global_id name="CVE" value="CVE-2010-2828"/></vulner>
+<vulner id="172091">
+<title>Denial of Service</title>
+<short_description>Vulnerability allows remote attackers to cause a denial of service.</short_description>
+<description>The IGMPv3 implementation in Cisco IOS and IOS XE, when PIM is enabled, allows remote attackers to cause a denial of service (device reload) via a malformed IGMP packet, aka Bug ID CSCte14603.</description>
+<how_to_fix>Use vendor&apos;s advisory:
+http://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20100922-igmp</how_to_fix>
+<links>http://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20100922-igmp</links>
+<publication_date>2010-09-22</publication_date>
+<cvss temp_score="5.9" base_score="7.1" temp_score_decomp="(AV:N/AC:M/Au:N/C:N/I:N/A:C/E:F/RL:O/RC:C)" base_score_decomp="(AV:N/AC:M/Au:N/C:N/I:N/A:C)"/>
+<global_id name="CVE" value="CVE-2010-2830"/></vulner>
+<vulner id="172094">
+<title>Denial of Service</title>
+<short_description>Vulnerability allows remote attackers to cause a denial of service.</short_description>
+<description>Unspecified vulnerability in the NAT for H.323 implementation in Cisco IOS 12.1 through 12.4 and 15.0 through 15.1 allows remote attackers to cause a denial of service (device reload) via transit traffic, aka Bug ID CSCtf91428.</description>
+<how_to_fix>Use vendor&apos;s advisory:
+http://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20100922-nat</how_to_fix>
+<links>http://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20100922-nat</links>
+<publication_date>2010-09-22</publication_date>
+<cvss temp_score="6.4" base_score="7.8" temp_score_decomp="(AV:N/AC:L/Au:N/C:N/I:N/A:C/E:F/RL:O/RC:C)" base_score_decomp="(AV:N/AC:L/Au:N/C:N/I:N/A:C)"/>
+<global_id name="CVE" value="CVE-2010-2832"/></vulner>
+<vulner id="172095">
+<title>Denial of Service</title>
+<short_description>Vulnerability allows remote attackers to cause a denial of service.</short_description>
+<description>Unspecified vulnerability in the NAT for H.225.0 implementation in Cisco IOS 12.1 through 12.4 and 15.0 through 15.1 allows remote attackers to cause a denial of service (device reload) via transit traffic, aka Bug ID CSCtd86472.</description>
+<how_to_fix>Use vendor&apos;s advisory:
+http://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20100922-nat</how_to_fix>
+<links>http://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20100922-nat</links>
+<publication_date>2010-09-22</publication_date>
+<cvss temp_score="6.4" base_score="7.8" temp_score_decomp="(AV:N/AC:L/Au:N/C:N/I:N/A:C/E:F/RL:O/RC:C)" base_score_decomp="(AV:N/AC:L/Au:N/C:N/I:N/A:C)"/>
+<global_id name="CVE" value="CVE-2010-2833"/></vulner>
+<vulner id="174075">
+<title>Denial of Service</title>
+<short_description>Vulnerability allows remote attackers to cause a denial of service.</short_description>
+<description>Cisco IOS 12.2 through 12.4, when certain PMTUD, SNAT, or window-size configurations are used, allows remote attackers to cause a denial of service (infinite loop, and device reload or hang) via a TCP segment with crafted options, aka Bug ID CSCsz75186.</description>
+<how_to_fix>Use vendor&apos;s advisory:
+http://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20100324-tcp</how_to_fix>
+<links>http://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20100324-tcp</links>
+<publication_date>2010-03-24</publication_date>
+<cvss temp_score="5.9" base_score="7.1" temp_score_decomp="(AV:N/AC:M/Au:N/C:N/I:N/A:C/E:F/RL:O/RC:C)" base_score_decomp="(AV:N/AC:M/Au:N/C:N/I:N/A:C)"/>
+<global_id name="CVE" value="CVE-2010-0577"/></vulner>
+<vulner id="174076">
+<title>Denial of Service</title>
+<short_description>Vulnerability allows remote attackers to cause a denial of service (interface queue wedge).</short_description>
+<description>Cisco IOS and IOS XE allow remote attackers to cause a denial of service (interface queue wedge) via malformed H.323 packets.</description>
+<how_to_fix>Use vendor&apos;s advisory:
+http://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20100324-h323</how_to_fix>
+<links>http://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20100324-h323
+http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2010-0582</links>
+<publication_date>2010-03-24</publication_date>
+<cvss temp_score="6.4" base_score="7.8" temp_score_decomp="(AV:N/AC:L/Au:N/C:N/I:N/A:C/E:F/RL:O/RC:C)" base_score_decomp="(AV:N/AC:L/Au:N/C:N/I:N/A:C)"/>
+<global_id name="CVE" value="CVE-2010-0582"/></vulner>
+<vulner id="174078">
+<title>Denial of Service</title>
+<short_description>Vulnerability allows remote attackers to cause a denial of service.</short_description>
+<description>The SIP implementation in Cisco IOS 12.3 and 12.4 allows remote attackers to cause a denial of service (device reload) via a malformed SIP message, aka Bug ID CSCtb93416, the &quot;SIP Message Handling Denial of Service Vulnerability.&quot;</description>
+<how_to_fix>Use vendor&apos;s advisory:
+http://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20100324-sip</how_to_fix>
+<links>http://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20100324-sip</links>
+<publication_date>2010-03-24</publication_date>
+<cvss temp_score="8.3" base_score="7.8" temp_score_decomp="(AV:N/AC:L/Au:N/C:C/I:C/A:C/E:F/RL:O/RC:C)" base_score_decomp="(AV:N/AC:L/Au:N/C:N/I:N/A:C)"/>
+<global_id name="CVE" value="CVE-2010-0579"/></vulner>
+<vulner id="174081">
+<title>Denial of Service</title>
+<short_description>Vulnerability allows remote attackers to cause a denial of service.</short_description>
+<description>Unspecified vulnerability in Cisco IOS 12.0 through 12.4, IOS XE 2.1.x through 2.3.x before 2.3.2, and IOS XR 3.2.x through 3.4.3, when Multiprotocol Label Switching (MPLS) and Label Distribution Protocol (LDP) are enabled, allows remote attackers to cause a denial of service (device reload or process restart) via a crafted LDP packet, aka Bug IDs CSCsz45567 and CSCsj25893.</description>
+<how_to_fix>Use vendor&apos;s advisory:
+http://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20100324-ldp</how_to_fix>
+<links>http://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20100324-ldp</links>
+<publication_date>2010-03-24</publication_date>
+<cvss temp_score="6.4" base_score="7.8" temp_score_decomp="(AV:N/AC:L/Au:N/C:N/I:N/A:C/E:F/RL:O/RC:C)" base_score_decomp="(AV:N/AC:L/Au:N/C:N/I:N/A:C)"/>
+<global_id name="CVE" value="CVE-2010-0576"/></vulner>
+<vulner id="174083">
+<title>Denial of Service</title>
+<short_description>Vulnerability allows remote attackers to cause a denial of service.</short_description>
+<description>The IKE implementation in Cisco IOS 12.2 through 12.4 on Cisco 7200 and 7301 routers with VAM2+ allows remote attackers to cause a denial of service (device reload) via a malformed IKE packet, aka Bug ID CSCtb13491.</description>
+<how_to_fix>Use vendor&apos;s advisory:
+http://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20100324-ipsec</how_to_fix>
+<links>http://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20100324-ipsec</links>
+<publication_date>2010-03-24</publication_date>
+<cvss temp_score="6.4" base_score="7.8" temp_score_decomp="(AV:N/AC:L/Au:N/C:N/I:N/A:C/E:F/RL:O/RC:C)" base_score_decomp="(AV:N/AC:L/Au:N/C:N/I:N/A:C)"/>
+<global_id name="CVE" value="CVE-2010-0578"/></vulner>
+<vulner id="175303">
+<title>Denial of Service</title>
+<short_description>Vulnerability allows remote attackers to cause a denial of service.</short_description>
+<description>Cisco IOS 12.1 through 12.4, when Cisco Unified Communications Manager Express (CME) or Cisco Unified Survivable Remote Site Telephony (SRST) is enabled, allows remote attackers to cause a denial of service (device reload) via a malformed Skinny Client Control Protocol (SCCP) message, aka Bug ID CSCsz48614, the &quot;SCCP Packet Processing Denial of Service Vulnerability.&quot;</description>
+<how_to_fix>Use vendor&apos;s advisory:
+http://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20100324-cucme</how_to_fix>
+<links>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2010-0585
+http://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20100324-cucme</links>
+<publication_date>2010-03-24</publication_date>
+<cvss temp_score="0.0" base_score="7.8" temp_score_decomp="" base_score_decomp="(AV:N/AC:L/Au:N/C:N/I:N/A:C)"/>
+<global_id name="CVE" value="CVE-2010-0585"/></vulner>
+<vulner id="175794">
+<title>MAC address table</title>
+<short_description/>
+<description/>
+<how_to_fix/>
+<links/>
+<cvss temp_score="0.0" base_score="0.0" temp_score_decomp="" base_score_decomp=""/></vulner>
+<vulner id="176264">
+<title>Denial of Service</title>
+<short_description>Vulnerability allows remote attackers to cause a denial of service.</short_description>
+<description>The NAT implementation in Cisco IOS 12.1 through 12.4 and 15.0 through 15.1, and IOS XE 3.1.xSG, allows remote attackers to cause a denial of service (device reload or hang) via malformed NetMeeting Directory (aka Internet Locator Service or ILS) LDAP traffic, aka Bug ID CSCtd10712.</description>
+<how_to_fix>Use vendor&apos;s advisory:
+http://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20110928-nat</how_to_fix>
+<links>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2011-0946
+http://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20110928-nat</links>
+<publication_date>2011-09-28</publication_date>
+<cvss temp_score="6.4" base_score="7.8" temp_score_decomp="(AV:N/AC:L/Au:N/C:N/I:N/A:C/E:F/RL:O/RC:C)" base_score_decomp="(AV:N/AC:L/Au:N/C:N/I:N/A:C)"/>
+<global_id name="CVE" value="CVE-2011-0946"/>
+<global_id name="fstec" value="BDU:2014-00025"/></vulner>
+<vulner id="176265">
+<title>Denial of Service</title>
+<short_description>Vulnerability allows remote attackers to cause a denial of service.</short_description>
+<description>Unspecified vulnerability in the NAT implementation in Cisco IOS 12.1 through 12.4 and 15.0 through 15.1, and IOS XE 3.1.xSG, allows remote attackers to cause a denial of service (device reload or hang) by sending crafted SIP packets to TCP port 5060, aka Bug ID CSCso02147.</description>
+<how_to_fix>Use vendor&apos;s advisory:
+http://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20110928-nat</how_to_fix>
+<links>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2011-3276
+http://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20110928-nat</links>
+<publication_date>2011-09-28</publication_date>
+<cvss temp_score="6.4" base_score="7.8" temp_score_decomp="(AV:N/AC:L/Au:N/C:N/I:N/A:C/E:F/RL:O/RC:C)" base_score_decomp="(AV:N/AC:L/Au:N/C:N/I:N/A:C)"/>
+<global_id name="CVE" value="CVE-2011-3276"/></vulner>
+<vulner id="176266">
+<title>Denial of Service</title>
+<short_description>Vulnerability allows remote attackers to cause a denial of service.</short_description>
+<description>The provider-edge MPLS NAT implementation in Cisco IOS 12.1 through 12.4 and 15.0 through 15.1, and IOS XE 3.1.xSG, allows remote attackers to cause a denial of service (device reload) via a malformed SIP packet to UDP port 5060, aka Bug ID CSCti98219.</description>
+<how_to_fix>Use vendor&apos;s advisory:
+http://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20110928-nat</how_to_fix>
+<links>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2011-3279
+http://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20110928-nat</links>
+<publication_date>2011-09-28</publication_date>
+<cvss temp_score="6.4" base_score="7.8" temp_score_decomp="(AV:N/AC:L/Au:N/C:N/I:N/A:C/E:F/RL:O/RC:C)" base_score_decomp="(AV:N/AC:L/Au:N/C:N/I:N/A:C)"/>
+<global_id name="CVE" value="CVE-2011-3279"/></vulner>
+<vulner id="176267">
+<title>Denial of Service</title>
+<short_description>Vulnerability allows remote attackers to cause a denial of service.</short_description>
+<description>Unspecified vulnerability in the NAT implementation in Cisco IOS 12.1 through 12.4 and 15.0 through 15.1, and IOS XE 3.1.xSG, allows remote attackers to cause a denial of service (device reload) by sending crafted SIP packets to UDP port 5060, aka Bug ID CSCti48483.</description>
+<how_to_fix>Use vendor&apos;s advisory:
+http://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20110928-nat</how_to_fix>
+<links>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2011-3278
+http://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20110928-nat</links>
+<publication_date>2011-09-28</publication_date>
+<cvss temp_score="6.4" base_score="7.8" temp_score_decomp="(AV:N/AC:L/Au:N/C:N/I:N/A:C/E:F/RL:O/RC:C)" base_score_decomp="(AV:N/AC:L/Au:N/C:N/I:N/A:C)"/>
+<global_id name="CVE" value="CVE-2011-3278"/></vulner>
+<vulner id="176268">
+<title>Denial of Service</title>
+<short_description>Vulnerability allows remote attackers to cause a denial of service.</short_description>
+<description>Memory leak in the NAT implementation in Cisco IOS 12.1 through 12.4 and 15.0 through 15.1, and IOS XE 3.1.xSG, allows remote attackers to cause a denial of service (memory consumption or device reload) by sending crafted SIP packets to UDP port 5060, aka Bug ID CSCtj04672.</description>
+<how_to_fix>Use vendor&apos;s advisory:
+http://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20110928-nat</how_to_fix>
+<links>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2011-3280
+http://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20110928-nat</links>
+<publication_date>2011-09-28</publication_date>
+<cvss temp_score="6.4" base_score="7.8" temp_score_decomp="(AV:N/AC:L/Au:N/C:N/I:N/A:C/E:F/RL:O/RC:C)" base_score_decomp="(AV:N/AC:L/Au:N/C:N/I:N/A:C)"/>
+<global_id name="CVE" value="CVE-2011-3280"/></vulner>
+<vulner id="176269">
+<title>Denial of Service</title>
+<short_description>Vulnerability allows remote attackers to cause a denial of service.</short_description>
+<description>Unspecified vulnerability in the NAT implementation in Cisco IOS 12.1 through 12.4 and 15.0 through 15.1, and IOS XE 3.1.xSG, allows remote attackers to cause a denial of service (device reload) by sending crafted H.323 packets to TCP port 1720, aka Bug ID CSCth11006.</description>
+<how_to_fix>Use vendor&apos;s advisory:
+http://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20110928-nat</how_to_fix>
+<links>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2011-3277
+http://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20110928-nat</links>
+<publication_date>2011-09-28</publication_date>
+<cvss temp_score="6.4" base_score="7.8" temp_score_decomp="(AV:N/AC:L/Au:N/C:N/I:N/A:C/E:F/RL:O/RC:C)" base_score_decomp="(AV:N/AC:L/Au:N/C:N/I:N/A:C)"/>
+<global_id name="CVE" value="CVE-2011-3277"/></vulner>
+<vulner id="176274">
+<title>Denial of Service</title>
+<short_description>Vulnerability allows remote attackers to cause a denial of service.</short_description>
+<description>Memory leak in the Data-link switching (aka DLSw) feature in Cisco IOS 12.1 through 12.4 and 15.0 through 15.1, and IOS XE 3.1.xS before 3.1.3S and 3.2.xS before 3.2.1S, when implemented over Fast Sequence Transport (FST), allows remote attackers to cause a denial of service (memory consumption and device reload or hang) via a crafted IP protocol 91 packet, aka Bug ID CSCth69364.</description>
+<how_to_fix>Use vendor&apos;s advisory:
+http://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20110928-dlsw</how_to_fix>
+<links>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2011-0945
+http://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20110928-dlsw</links>
+<publication_date>2011-09-28</publication_date>
+<cvss temp_score="6.4" base_score="7.8" temp_score_decomp="(AV:N/AC:L/Au:N/C:N/I:N/A:C/E:F/RL:O/RC:C)" base_score_decomp="(AV:N/AC:L/Au:N/C:N/I:N/A:C)"/>
+<global_id name="CVE" value="CVE-2011-0945"/></vulner>
+<vulner id="178380">
+<title>Denial of Service</title>
+<short_description>Vulnerability allows remote attackers to cause a denial of service.</short_description>
+<description>The IKEv1 implementation in Cisco IOS 12.2 through 12.4 and 15.0 through 15.2 and IOS XE 2.1.x through 2.6.x and 3.1.xS through 3.4.xS before 3.4.2S, 3.5.xS before 3.5.1S, and 3.2.xSG before 3.2.2SG allows remote attackers to cause a denial of service (device reload) by sending IKE UDP packets over (1) IPv4 or (2) IPv6, aka Bug ID CSCts38429.</description>
+<how_to_fix>Use vendor&apos;s advisory:
+http://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20120328-ike</how_to_fix>
+<links>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2012-0381
+http://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20120328-ike</links>
+<publication_date>2012-03-28</publication_date>
+<cvss temp_score="0.0" base_score="7.8" temp_score_decomp="" base_score_decomp="(AV:N/AC:L/Au:N/C:N/I:N/A:C)"/>
+<global_id name="CVE" value="CVE-2012-0381"/>
+<global_id name="fstec" value="BDU:2014-00034"/></vulner>
+<vulner id="178384">
+<title>Denial of Service</title>
+<short_description>Vulnerability allows remote attackers to cause a denial of service.</short_description>
+<description>The Multicast Source Discovery Protocol (MSDP) implementation in Cisco IOS 12.0, 12.2 through 12.4, and 15.0 through 15.2 and IOS XE 2.1.x through 2.6.x and 3.1.xS through 3.4.xS before 3.4.1S and 3.1.xSG and 3.2.xSG before 3.2.2SG allows remote attackers to cause a denial of service (device reload) via encapsulated IGMP data in an MSDP packet, aka Bug ID CSCtr28857.</description>
+<how_to_fix>Use vendor&apos;s advisory:
+http://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20120328-msdp</how_to_fix>
+<links>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2012-0382
+http://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20120328-msdp</links>
+<publication_date>2012-03-28</publication_date>
+<cvss temp_score="0.0" base_score="7.1" temp_score_decomp="" base_score_decomp="(AV:N/AC:M/Au:N/C:N/I:N/A:C)"/>
+<global_id name="CVE" value="CVE-2012-0382"/>
+<global_id name="fstec" value="BDU:2014-00032"/></vulner>
+<vulner id="178386">
+<title>Access Restrictions Bypassing</title>
+<short_description>Vulnerability allows remote attackers to bypass intended access restrictions and execute commands.</short_description>
+<description>Cisco IOS 12.2 through 12.4 and 15.0 through 15.2 and IOS XE 2.1.x through 2.6.x and 3.1.xS before 3.1.2S, 3.2.xS through 3.4.xS before 3.4.2S, 3.5.xS before 3.5.1S, and 3.1.xSG and 3.2.xSG before 3.2.2SG, when AAA authorization is enabled, allow remote authenticated users to bypass intended access restrictions and execute commands via a (1) HTTP or (2) HTTPS session, aka Bug ID CSCtr91106.</description>
+<how_to_fix>To fix the vulnerability update your software according to used platform. All necessary information is available here:
+http://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20120328-pai</how_to_fix>
+<links>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2012-0384
+http://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20120328-pai</links>
+<publication_date>2012-03-28</publication_date>
+<cvss temp_score="0.0" base_score="8.5" temp_score_decomp="" base_score_decomp="(AV:N/AC:M/Au:S/C:C/I:C/A:C)"/>
+<global_id name="CVE" value="CVE-2012-0384"/>
+<global_id name="fstec" value="BDU:2014-00033"/></vulner>
+<vulner id="180491">
+<title>Denial of Service</title>
+<short_description>Vulnerability allows remote attackers to cause a denial of service.</short_description>
+<description>The DHCPv6 server in Cisco IOS 12.2 through 12.4 and 15.0 through 15.2 and IOS XE 2.1.x through 2.6.x, 3.1.xS before 3.1.4S, 3.1.xSG and 3.2.xSG before 3.2.5SG, 3.2.xS, 3.2.xXO, 3.3.xS, and 3.3.xSG before 3.3.1SG allows remote attackers to cause a denial of service (device reload) via a malformed DHCPv6 packet, aka Bug ID CSCto57723.</description>
+<how_to_fix>Use vendor&apos;s advisory:
+http://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20120926-dhcpv6</how_to_fix>
+<links>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2012-4623
+http://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20120926-dhcpv6</links>
+<publication_date>2012-09-26</publication_date>
+<cvss temp_score="0.0" base_score="7.8" temp_score_decomp="" base_score_decomp="(AV:N/AC:L/Au:N/C:N/I:N/A:C)"/>
+<global_id name="CVE" value="CVE-2012-4623"/>
+<global_id name="fstec" value="BDU:2014-00038"/></vulner>
+<vulner id="180494">
+<title>Denial of Service</title>
+<short_description>Vulnerability allows remote attackers to cause a denial of service.</short_description>
+<description>The SIP implementation in Cisco Unified Communications Manager (CUCM) 6.x and 7.x before 7.1(5b)su5, 8.x before 8.5(1)su4, and 8.6 before 8.6(2a)su1; Cisco IOS 12.2 through 12.4 and 15.0 through 15.2; and Cisco IOS XE 3.3.xSG before 3.3.1SG, 3.4.xS, and 3.5.xS allows remote attackers to cause a denial of service (service crash or device reload) via a crafted SIP message containing an SDP session description, aka Bug IDs CSCtw66721, CSCtj33003, and CSCtw84664.</description>
+<how_to_fix>Use vendor&apos;s advisory:
+http://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20120926-sip
+http://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20120926-cucm</how_to_fix>
+<links>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2012-3949
+http://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20120926-sip
+http://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20120926-cucm</links>
+<publication_date>2012-09-26</publication_date>
+<cvss temp_score="0.0" base_score="7.8" temp_score_decomp="" base_score_decomp="(AV:N/AC:L/Au:N/C:N/I:N/A:C)"/>
+<global_id name="CVE" value="CVE-2012-3949"/>
+<global_id name="fstec" value="BDU:2014-00035"/></vulner>
+<vulner id="181417">
+<title>Denial of Service</title>
+<short_description>Vulnerability allows remote attackers to cause a denial of service.</short_description>
+<description>The Protocol Translation (PT) functionality in Cisco IOS 12.3 through 12.4 and 15.0 through 15.3, when one-step port-23 translation or a Telnet-to-PAD ruleset is configured, does not properly validate TCP connection information, which allows remote attackers to cause a denial of service (device reload) via an attempted connection to a PT resource, aka Bug ID CSCtz35999.</description>
+<how_to_fix>Use vendor&apos;s advisory:
+http://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20130327-pt</how_to_fix>
+<links>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-1147
+http://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20130327-pt</links>
+<publication_date>2013-03-27</publication_date>
+<cvss temp_score="6.4" base_score="7.8" temp_score_decomp="(AV:N/AC:L/Au:N/C:N/I:N/A:C/E:F/RL:O/RC:C)" base_score_decomp="(AV:N/AC:L/Au:N/C:N/I:N/A:C)"/>
+<global_id name="CVE" value="CVE-2013-1147"/>
+<global_id name="fstec" value="BDU:2014-00040"/></vulner>
+<vulner id="181419">
+<title>Race condition</title>
+<short_description>Vulnerability allows remote attackers to cause a denial of service.</short_description>
+<description>Race condition in the VRF-aware NAT feature in Cisco IOS 12.2 through 12.4 and 15.0 through 15.2 allows remote attackers to cause a denial of service (memory consumption) via IPv4 packets, aka Bug IDs CSCtg47129 and CSCtz96745.</description>
+<how_to_fix>Use vendor&apos;s advisory:
+http://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20130327-nat
+http://tools.cisco.com/security/center/content/CiscoSecurityNotice/CVE-2013-1142</how_to_fix>
+<links>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-1142
+http://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20130327-nat
+http://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/Cisco-SA-20130327-CVE-2013-1142</links>
+<publication_date>2013-03-27</publication_date>
+<cvss temp_score="6.1" base_score="7.8" temp_score_decomp="(AV:N/AC:L/Au:N/C:N/I:N/A:C/E:P/RL:O/RC:C)" base_score_decomp="(AV:N/AC:L/Au:N/C:N/I:N/A:C)"/>
+<global_id name="CVE" value="CVE-2013-1142"/></vulner>
+<vulner id="181997">
+<title>Information Disclosure</title>
+<short_description>Vulnerability allows remote attackers to cause a denial of service or obtain sensitive information.</short_description>
+<description>The OSPF implementation in Cisco IOS, IOS-XE, ASA and PIX, FWSM, NX-OS, and StarOS  does not properly validate Link State Advertisement (LSA) type 1 packets before performing operations on the LSA database, which allows remote attackers to cause a denial of service (routing disruption) or obtain sensitive packet information via a (1) unicast or (2) multicast packet, aka Bug IDs CSCug34485, CSCug34469, CSCug39762, CSCug63304, and CSCug39795.</description>
+<how_to_fix>Use vendor&apos;s advisory:
+http://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20130801-lsaospf</how_to_fix>
+<links>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-0149
+http://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20130801-lsaospf</links>
+<publication_date>2013-08-01</publication_date>
+<cvss temp_score="4.8" base_score="5.8" temp_score_decomp="(AV:N/AC:M/Au:N/C:P/I:N/A:P/E:F/RL:OF/RC:C)" base_score_decomp="(AV:N/AC:M/Au:N/C:P/I:N/A:P)"/>
+<global_id name="CVE" value="CVE-2013-0149"/>
+<global_id name="fstec" value="BDU:2014-00041"/></vulner>
+<vulner id="182436">
+<title>Denial of Service</title>
+<short_description>Vulnerability allows remote attackers to cause a denial of service.</short_description>
+<description>Cisco IOS and IOS XE allows remote attackers to cause a denial of service (device reload) via crafted DHCP packets that are processed locally by a (1) server or (2) relay agent, aka Bug ID CSCug31561.</description>
+<how_to_fix>Use vendor&apos;s advisory:
+http://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20130925-dhcp</how_to_fix>
+<links>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-5475
+http://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20130925-dhcp</links>
+<publication_date>2013-09-25</publication_date>
+<cvss temp_score="6.4" base_score="7.8" temp_score_decomp="(AV:N/AC:L/Au:N/C:N/I:N/A:C/E:F/RL:OF/RC:C)" base_score_decomp="(AV:N/AC:L/Au:N/C:N/I:N/A:C)"/>
+<global_id name="CVE" value="CVE-2013-5475"/>
+<global_id name="fstec" value="BDU:2014-00044"/></vulner>
+<vulner id="182437">
+<title>Race condition</title>
+<short_description>Vulnerability allows remote attackers to cause a denial of service.</short_description>
+<description>Race condition in the IPv6 virtual fragmentation reassembly (VFR) implementation in Cisco IOS 12.2 through 12.4 and 15.0 through 15.3 allows remote attackers to cause a denial of service (device reload or hang) via fragmented IPv6 packets, aka Bug ID CSCud64812.</description>
+<how_to_fix>Use vendor&apos;s advisory:
+http://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20130925-ipv6vfr</how_to_fix>
+<links>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-5474
+http://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20130925-ipv6vfr</links>
+<publication_date>2013-09-25</publication_date>
+<cvss temp_score="6.4" base_score="7.8" temp_score_decomp="(AV:N/AC:L/Au:N/C:N/I:N/A:C/E:F/RL:OF/RC:C)" base_score_decomp="(AV:N/AC:L/Au:N/C:N/I:N/A:C)"/>
+<global_id name="CVE" value="CVE-2013-5474"/>
+<global_id name="fstec" value="BDU:2014-00043"/></vulner>
+<vulner id="183503">
+<title>Denial of Service</title>
+<short_description>Vulnerability allows remote attackers to cause a denial of service.</short_description>
+<description>The Application Layer Gateway (ALG) module in Cisco IOS 12.2 through 12.4 and 15.0 through 15.4, when NAT is used, allows remote attackers to cause a denial of service (device reload) via crafted DNS packets, aka Bug ID CSCue00996.</description>
+<how_to_fix>Use vendor&apos;s advisory:
+http://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20140326-nat</how_to_fix>
+<links>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-2111
+http://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20140326-nat</links>
+<publication_date>2014-03-26</publication_date>
+<cvss temp_score="5.9" base_score="7.1" temp_score_decomp="(AV:N/AC:M/Au:N/C:N/I:N/A:C/E:F/RL:OF/RC:C)" base_score_decomp="(AV:N/AC:M/Au:N/C:N/I:N/A:C)"/>
+<global_id name="CVE" value="CVE-2014-2111"/>
+<global_id name="fstec" value="BDU:2014-00225"/></vulner>
+<vulner id="183504">
+<title>Denial of Service</title>
+<short_description>Vulnerability allows remote attackers to cause a denial of service.</short_description>
+<description>The TCP Input module in Cisco IOS 12.2 through 12.4 and 15.0 through 15.4, when NAT is used, allows remote attackers to cause a denial of service (memory consumption or device reload) via crafted TCP packets, aka Bug IDs CSCuh33843 and CSCuj41494.</description>
+<how_to_fix>Use vendor&apos;s advisory:
+http://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20140326-nat</how_to_fix>
+<links>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-2109
+http://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20140326-nat</links>
+<publication_date>2014-03-26</publication_date>
+<cvss temp_score="6.4" base_score="7.8" temp_score_decomp="(AV:N/AC:L/Au:N/C:N/I:N/A:C/E:F/RL:OF/RC:C)" base_score_decomp="(AV:N/AC:L/Au:N/C:N/I:N/A:C)"/>
+<global_id name="CVE" value="CVE-2014-2109"/>
+<global_id name="fstec" value="BDU:2014-00045"/>
+<global_id name="fstec" value="BDU:2015-00175"/></vulner>
+<vulner id="184350">
+<title>Memory Leak</title>
+<short_description>Vulnerability allows remote attackers to cause a denial of service (memory consumption or device reload).</short_description>
+<description>Memory leak in the TCP input module in Cisco and IOS XE allows remote attackers to cause a denial of service (memory consumption or device reload) by sending crafted TCP packets over (1) IPv4 or (2) IPv6, aka Bug ID CSCum94811.</description>
+<how_to_fix>Use vendor&apos;s advisory:
+http://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20150325-tcpleak</how_to_fix>
+<links>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2015-0646
+http://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20150325-tcpleak</links>
+<publication_date>2015-03-25</publication_date>
+<cvss temp_score="6.4" base_score="7.8" temp_score_decomp="(AV:N/AC:L/Au:N/C:N/I:N/A:C/E:F/RL:OF/RC:C)" base_score_decomp="(AV:N/AC:L/Au:N/C:N/I:N/A:C)"/>
+<global_id name="CVE" value="CVE-2015-0646"/>
+<global_id name="fstec" value="BDU:2015-09864"/></vulner>
+<vulner id="185895">
+<title>Denial of Service</title>
+<short_description>Vulnerability allows remote attackers to cause a denial of service (NULL pointer dereference and application crash).</short_description>
+<description>crypto/rsa/rsa_ameth.c in OpenSSL 1.0.1 before 1.0.1q and 1.0.2 before 1.0.2e allows remote attackers to cause a denial of service (NULL pointer dereference and application crash) via an RSA PSS ASN.1 signature that lacks a mask generation function parameter.</description>
+<how_to_fix>Use vendor&apos;s advisory:
+http://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20151204-openssl</how_to_fix>
+<links>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2015-3194 </links>
+<cvss temp_score="0.0" base_score="5.0" temp_score_decomp="" base_score_decomp="(AV:N/AC:L/Au:N/C:N/I:N/A:P)"/>
+<global_id name="CVE" value="CVE-2015-3194"/>
+<global_id name="fstec" value="BDU:2016-01653"/></vulner>
+<vulner id="185897">
+<title>Denial of Service</title>
+<short_description>Vulnerability allows remote attackers to cause a denial of service (race condition and double free).</short_description>
+<description>ssl/s3_clnt.c in OpenSSL 1.0.0 before 1.0.0t, 1.0.1 before 1.0.1p, and 1.0.2 before 1.0.2d, when used for a multi-threaded client, writes the PSK identity hint to an incorrect data structure, which allows remote servers to cause a denial of service (race condition and double free) via a crafted ServerKeyExchange message.</description>
+<how_to_fix>Use vendor&apos;s advisory:
+http://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20151204-openssl</how_to_fix>
+<links>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2015-3196 </links>
+<cvss temp_score="0.0" base_score="4.3" temp_score_decomp="" base_score_decomp="(AV:N/AC:M/Au:N/C:N/I:N/A:P)"/>
+<global_id name="CVE" value="CVE-2015-3196"/>
+<global_id name="fstec" value="BDU:2016-01655"/></vulner>
+<vulner id="186281">
+<title>Spoofing</title>
+<short_description>Vulnerability allows attackers to spoof packets.</short_description>
+<description>The symmetric-key feature in the receive function in ntp_proto.c in ntpd in NTP 4.x before 4.2.8p2 requires a correct MAC only if the MAC field has a nonzero length, which makes it easier for man-in-the-middle attackers to spoof packets by omitting the MAC.</description>
+<how_to_fix>Use vendor&apos;s advisory:
+https://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20150408-ntpd</how_to_fix>
+<links>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2015-1798
+http://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20150408-ntpd</links>
+<publication_date>2015-04-08</publication_date>
+<cvss temp_score="0.0" base_score="1.8" temp_score_decomp="" base_score_decomp="(AV:A/AC:H/Au:N/C:N/I:P/A:N)"/>
+<global_id name="CVE" value="CVE-2015-1798"/></vulner>
+<vulner id="186282">
+<title>Denial of Service</title>
+<short_description>Vulnerability allows attackers to cause a denial of service (synchronization loss).</short_description>
+<description>The symmetric-key feature in the receive function in ntp_proto.c in ntpd in NTP 3.x and 4.x before 4.2.8p2 performs state-variable updates upon receiving certain invalid packets, which makes it easier for man-in-the-middle attackers to cause a denial of service (synchronization loss) by spoofing the source IP address of a peer.</description>
+<how_to_fix>Use vendor&apos;s advisory:
+https://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20150408-ntpd</how_to_fix>
+<links>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2015-1799 </links>
+<cvss temp_score="0.0" base_score="4.3" temp_score_decomp="" base_score_decomp="(AV:A/AC:M/Au:N/C:N/I:P/A:P)"/>
+<global_id name="CVE" value="CVE-2015-1799"/></vulner>
+<vulner id="187015">
+<title>Information Disclosure</title>
+<short_description>Vulnerability allows remote attackers to obtain sensitive information from device memory.</short_description>
+<description>The server IKEv1 implementation in Cisco IOS, IOS XE, IOS XR and PIX allows remote attackers to obtain sensitive information from device memory via a Security Association (SA) negotiation request, aka Bug IDs CSCvb29204 and CSCvb36055 or BENIGNCERTAIN.</description>
+<how_to_fix>Use vendor&apos;s advisory:
+https://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20160916-ikev1</how_to_fix>
+<links>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2016-6415
+http://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20160916-ikev1</links>
+<publication_date>2016-09-16</publication_date>
+<cvss temp_score="7.4" base_score="5.0" temp_score_decomp="(AV:N/AC:L/Au:N/C:P/I:N/A:N/E:F/RL:U/RC:C)" base_score_decomp="(AV:N/AC:L/Au:N/C:P/I:N/A:N)"/>
+<global_id name="CVE" value="CVE-2016-6415"/></vulner>
+<vulner id="187303">
+<title>Information Disclosure</title>
+<short_description>Vulnerability allows remote attackers to obtain sensitive information or cause a denial of service (data corruption or device reload).</short_description>
+<description>The DNS forwarder in Cisco IOS and IOS XE allows remote attackers to obtain sensitive information from process memory or cause a denial of service (data corruption or device reload) via a crafted DNS response, aka Bug ID CSCup90532.</description>
+<how_to_fix>Use vendor&apos;s advisory:
+https://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20160928-dns</how_to_fix>
+<links>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2016-6380
+http://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20160928-dns</links>
+<publication_date>2016-09-28</publication_date>
+<cvss temp_score="6.9" base_score="8.3" temp_score_decomp="(AV:N/AC:M/Au:N/C:P/I:P/A:C/E:F/RL:OF/RC:C)" base_score_decomp="(AV:N/AC:M/Au:N/C:P/I:P/A:C)"/>
+<global_id name="CVE" value="CVE-2016-6380"/></vulner>
+<vulner id="187304">
+<title>Denial of Service</title>
+<short_description>Vulnerability allows remote attackers to cause a denial of service (device reload).</short_description>
+<description>Cisco IOS and IOS XE allow remote attackers to cause a denial of service (device reload) via crafted fields in an H.323 message, aka Bug ID CSCux04257.</description>
+<how_to_fix>Use vendor&apos;s advisory:
+https://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20160928-h323</how_to_fix>
+<links>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2016-6384
+http://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20160928-h323</links>
+<publication_date>2016-09-28</publication_date>
+<cvss temp_score="6.4" base_score="7.8" temp_score_decomp="(AV:N/AC:L/Au:N/C:N/I:N/A:C/E:F/RL:OF/RC:C)" base_score_decomp="(AV:N/AC:L/Au:N/C:N/I:N/A:C)"/>
+<global_id name="CVE" value="CVE-2016-6384"/></vulner>
+<vulner id="187396">
+<title>Denial of Service</title>
+<short_description>Vulnerability allows attackers to cause a denial of service.</short_description>
+<description>Vulnerability in ntpd allows local authenticated users to cause a denial of service via a specially crafted packet.</description>
+<how_to_fix>Use vendor&apos;s advisory:
+https://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20151021-ntp</how_to_fix>
+<links>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2015-7855
+http://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20151021-ntp</links>
+<publication_date>2015-10-21</publication_date>
+<cvss temp_score="0.0" base_score="4.0" temp_score_decomp="" base_score_decomp="(AV:N/AC:L/Au:S/C:N/I:N/A:P)"/>
+<global_id name="CVE" value="CVE-2015-7855"/></vulner>
+<vulner id="187924">
+<title>Replay Attack</title>
+<short_description>Vulnerability allows attackers to conduct replay attacks.</short_description>
+<description>NTP, when configured in broadcast mode, allows man-in-the-middle attackers to conduct replay attacks by sniffing the network.</description>
+<how_to_fix>Use vendor&apos;s advisory:
+http://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20160127-ntpd</how_to_fix>
+<links>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2015-7973
+http://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20160127-ntpd</links>
+<publication_date>2016-01-27</publication_date>
+<cvss temp_score="0.0" base_score="5.8" temp_score_decomp="" base_score_decomp="(AV:N/AC:M/Au:N/C:N/I:P/A:P)"/>
+<global_id name="CVE" value="CVE-2015-7973"/></vulner>
+<vulner id="187927">
+<title>Impersonation</title>
+<short_description>Vulnerability allows remote attackers to conduct impersonation attacks.</short_description>
+<description>NTP does not verify peer associations of symmetric keys when authenticating packets, which might allow remote attackers to conduct impersonation attacks via an arbitrary trusted key, aka a &quot;skeleton key.&quot;</description>
+<how_to_fix>Use vendor&apos;s advisory:
+http://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20160127-ntpd</how_to_fix>
+<links>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2015-7974
+http://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20160127-ntpd</links>
+<publication_date>2016-01-27</publication_date>
+<cvss temp_score="0.0" base_score="2.1" temp_score_decomp="" base_score_decomp="(AV:N/AC:H/Au:S/C:N/I:P/A:N)"/>
+<global_id name="CVE" value="CVE-2015-7974"/></vulner>
+<vulner id="187930">
+<title>Denial of Service</title>
+<short_description>Vulnerability allows remote attackers to cause a denial of service (client-server association tear down).</short_description>
+<description>NTP allows remote attackers to cause a denial of service (client-server association tear down) by sending broadcast packets with invalid authentication to a broadcast client.</description>
+<how_to_fix>Use vendor&apos;s advisory:
+http://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20160127-ntpd</how_to_fix>
+<links>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2015-7979
+http://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20160127-ntpd</links>
+<publication_date>2016-01-27</publication_date>
+<cvss temp_score="0.0" base_score="5.0" temp_score_decomp="" base_score_decomp="(AV:N/AC:L/Au:N/C:N/I:N/A:P)"/>
+<global_id name="CVE" value="CVE-2015-7979"/></vulner>
+<vulner id="187931">
+<title>Impersonation</title>
+<short_description>Vulnerability allows remote attackers to obtain origin timestamps and then impersonate peers.</short_description>
+<description>ntpq in NTP allows remote attackers to obtain origin timestamps and then impersonate peers via unspecified vectors.</description>
+<how_to_fix>Use vendor&apos;s advisory:
+http://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20160127-ntpd</how_to_fix>
+<links>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2015-8139
+http://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20160127-ntpd</links>
+<publication_date>2016-01-27</publication_date>
+<cvss temp_score="0.0" base_score="5.0" temp_score_decomp="" base_score_decomp="(AV:N/AC:L/Au:N/C:N/I:P/A:N)"/>
+<global_id name="CVE" value="CVE-2015-8139"/></vulner>
+<vulner id="187932">
+<title>Security Bypass</title>
+<short_description>Vulnerability allows remote attackers to bypass the origin timestamp validation.</short_description>
+<description>NTP allows remote attackers to bypass the origin timestamp validation via a packet with an origin timestamp set to zero.</description>
+<how_to_fix>Use vendor&apos;s advisory:
+http://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20160127-ntpd</how_to_fix>
+<links>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2015-8138
+http://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20160127-ntpd</links>
+<publication_date>2016-01-27</publication_date>
+<cvss temp_score="0.0" base_score="5.0" temp_score_decomp="" base_score_decomp="(AV:N/AC:L/Au:N/C:N/I:P/A:N)"/>
+<global_id name="CVE" value="CVE-2015-8138"/></vulner>
+<vulner id="187933">
+<title>Replay Attack</title>
+<short_description>Vulnerability allows remote attackers to conduct replay attacks.</short_description>
+<description>The ntpq protocol in NTP allows remote attackers to conduct replay attacks by sniffing the network.</description>
+<how_to_fix>Use vendor&apos;s advisory:
+http://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20160127-ntpd</how_to_fix>
+<links>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2015-8140
+http://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20160127-ntpd</links>
+<publication_date>2016-01-27</publication_date>
+<cvss temp_score="0.0" base_score="5.8" temp_score_decomp="" base_score_decomp="(AV:N/AC:M/Au:N/C:N/I:P/A:P)"/>
+<global_id name="CVE" value="CVE-2015-8140"/></vulner>
+<vulner id="187934">
+<title>Denial of Service</title>
+<short_description>Vulnerability allows remote attackers to cause a denial of service (infinite loop).</short_description>
+<description>The getresponse function in ntpq in NTP allows remote attackers to cause a denial of service (infinite loop) via crafted packets with incorrect values.</description>
+<how_to_fix>Use vendor&apos;s advisory:
+http://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20160127-ntpd</how_to_fix>
+<links>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2015-8158
+http://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20160127-ntpd</links>
+<publication_date>2016-01-27</publication_date>
+<cvss temp_score="0.0" base_score="4.3" temp_score_decomp="" base_score_decomp="(AV:N/AC:M/Au:N/C:N/I:N/A:P)"/>
+<global_id name="CVE" value="CVE-2015-8158"/></vulner>
+<vulner id="188506">
+<title>Information Disclosure</title>
+<short_description>Vulnerability allows attackers to obtain sensitive information.</short_description>
+<description>The debug-logging (aka debug cns) feature in Cisco Networking Services (CNS) for IOS allows local users to obtain sensitive information by reading an unspecified file.</description>
+<how_to_fix>Use vendor&apos;s advisory:
+http://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20151120-ns</how_to_fix>
+<links>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2015-6375
+http://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20151120-ns</links>
+<publication_date>2015-11-20</publication_date>
+<cvss temp_score="0.0" base_score="2.1" temp_score_decomp="" base_score_decomp="(AV:L/AC:L/Au:N/C:P/I:N/A:N)"/>
+<global_id name="CVE" value="CVE-2015-6375"/></vulner>
+<vulner id="189568">
+<title>Remote Code Execution</title>
+<short_description>Vulnerability allows remote attackers to execute arbitrary code and obtain full control of the system, or cause a reload of the affected device.</short_description>
+<description>A vulnerability in the Secure Sockets Layer (SSL) VPN functionality of the Cisco Adaptive Security Appliance (ASA) Software could allow an unauthenticated, remote attacker to cause a reload of the affected system or to remotely execute code. The vulnerability is due to an attempt to double free a region of memory when the webvpn feature is enabled on the Cisco ASA device. An attacker could exploit this vulnerability by sending multiple, crafted XML packets to a webvpn-configured interface on the affected system. An exploit could allow the attacker to execute arbitrary code and obtain full control of the system, or cause a reload of the affected device. This vulnerability affects Cisco ASA Software that is running on the following Cisco products: 3000 Series Industrial Security Appliance (ISA), ASA 5500 Series Adaptive Security Appliances, ASA 5500-X Series Next-Generation Firewalls, ASA Services Module for Cisco Catalyst 6500 Series Switches and Cisco 7600 Series Routers, ASA 1000V Cloud Firewall, Adaptive Security Virtual Appliance (ASAv), Firepower 2100 Series Security Appliance, Firepower 4110 Security Appliance, Firepower 9300 ASA Security Module, Firepower Threat Defense Software (FTD).</description>
+<how_to_fix>Use the vendor&apos;s advisory:
+https://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20180129-asa1</how_to_fix>
+<links>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2018-0101 </links>
+<publication_date>2018-01-29</publication_date>
+<cvss temp_score="0.0" base_score="10.0" temp_score_decomp="" base_score_decomp="(AV:N/AC:L/Au:N/C:C/I:C/A:C)"/>
+<global_id name="CVE" value="CVE-2018-0101"/>
+<global_id name="fstec" value="BDU:2018-00188"/></vulner>
+<vulner id="189893">
+<title>Denial of Service</title>
+<short_description>Vulnerability allows remote attackers to cause a denial of service.</short_description>
+<description>A vulnerability in the ingress flow creation functionality of Cisco Adaptive Security Appliance (ASA) could allow an unauthenticated, remote attacker to cause the CPU to increase upwards of 100% utilization, causing a denial of service (DoS) condition on an affected system. The vulnerability is due to incorrect handling of an internal software lock that could prevent other system processes from getting CPU cycles, causing a high CPU condition. An attacker could exploit this vulnerability by sending a steady stream of malicious IP packets that can cause connections to be created on the targeted device. A successful exploit could allow the attacker to exhaust CPU resources, resulting in a DoS condition during which traffic through the device could be delayed. This vulnerability applies to either IPv4 or IPv6 ingress traffic.</description>
+<how_to_fix>Use the vendor&apos;s advisory:
+https://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20180418-asa2</how_to_fix>
+<links>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2018-0228 </links>
+<publication_date>2018-04-18</publication_date>
+<cvss temp_score="0.0" base_score="5.0" temp_score_decomp="" base_score_decomp="(AV:N/AC:L/Au:N/C:N/I:N/A:P)"/>
+<global_id name="CVE" value="CVE-2018-0228"/>
+<global_id name="fstec" value="BDU:2018-00801"/></vulner>
+<vulner id="189894">
+<title>Denial of Service</title>
+<short_description>Vulnerability allows remote attackers to cause a denial of service.</short_description>
+<description>A vulnerability in the Transport Layer Security (TLS) library of Cisco Adaptive Security Appliance (ASA) Software and Cisco Firepower Threat Defense (FTD) Software could allow an unauthenticated, remote attacker to trigger a reload of the affected device, resulting in a denial of service (DoS) condition. The vulnerability is due to insufficient validation of user-supplied input. An attacker could exploit this vulnerability by sending a malicious TLS message to an interface enabled for Secure Layer Socket (SSL) services on an affected device. Messages using SSL Version 3 (SSLv3) or SSL Version 2 (SSLv2) cannot be be used to exploit this vulnerability. An exploit could allow the attacker to cause a buffer underflow, triggering a crash on an affected device.</description>
+<how_to_fix>Use the vendor&apos;s advisory:
+https://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20180418-asa3</how_to_fix>
+<links>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2018-0231 </links>
+<publication_date>2018-04-18</publication_date>
+<cvss temp_score="0.0" base_score="8.5" temp_score_decomp="" base_score_decomp="(AV:N/AC:L/Au:N/C:N/I:P/A:C)"/>
+<global_id name="CVE" value="CVE-2018-0231"/>
+<global_id name="fstec" value="BDU:2018-00799"/></vulner>
+<vulner id="190230">
+<title>Denial of Service</title>
+<short_description>Vulnerability allows attackers to cause a denial of service or disclosure of information.</short_description>
+<description>A vulnerability in the web interface of the Cisco Adaptive Security Appliance (ASA) could allow an unauthenticated, remote attacker to cause an affected device to reload unexpectedly, resulting in a denial of service (DoS) condition. It is also possible on certain software releases that the ASA will not reload, but an attacker could view sensitive system information without authentication by using directory traversal techniques. The vulnerability is due to lack of proper input validation of the HTTP URL. An attacker could exploit this vulnerability by sending a crafted HTTP request to an affected device. An exploit could allow the attacker to cause a DoS condition or unauthenticated disclosure of information. This vulnerability applies to IPv4 and IPv6 HTTP traffic.</description>
+<how_to_fix>Use the vendor&apos;s advisory:
+https://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20180606-asaftd</how_to_fix>
+<links>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2018-0296 </links>
+<publication_date>2018-06-06</publication_date>
+<cvss temp_score="0.0" base_score="8.7" temp_score_decomp="" base_score_decomp="(AV:N/AC:L/Au:S/C:C/I:C/A:P)"/>
+<global_id name="CVE" value="CVE-2018-0296"/></vulner>
+<vulner id="190783">
+<title>Denial of Service</title>
+<short_description>Vulnerability allows remote attackers to cause a denial of service (device reload).</short_description>
+<description>A vulnerability in the IPsec driver code of multiple Cisco IOS XE Software platforms and the Cisco ASA 5500-X Series Adaptive Security Appliance (ASA) allows an unauthenticated, remote attacker to cause a denial of service (device reload) by sending malformed IPsec packets to an affected device.</description>
+<how_to_fix>Use the vendor&apos;s advisory:
+https://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20180926-ipsec</how_to_fix>
+<links>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2018-0472 </links>
+<cvss temp_score="0.0" base_score="5.0" temp_score_decomp="" base_score_decomp="(AV:N/AC:L/Au:N/C:N/I:N/A:P)"/>
+<global_id name="CVE" value="CVE-2018-0472"/></vulner>
+<vulner id="411401">
+<title>System Information</title>
+<short_description/>
+<description/>
+<how_to_fix/>
+<links/></vulner>
+<vulner id="425304">
+<title>Device Information</title>
+<short_description/>
+<description/>
+<how_to_fix/>
+<links/></vulner>
+<vulner id="425308">
+<title>Services</title>
+<short_description/>
+<description/>
+<how_to_fix/>
+<links/></vulner>
+<vulner id="425310">
+<title>VLAN Database</title>
+<short_description/>
+<description/>
+<how_to_fix/>
+<links/></vulner>
+<vulner id="425345">
+<title>Logging service</title>
+<short_description/>
+<description/>
+<how_to_fix/>
+<links/></vulner>
+<vulner id="425349">
+<title>AAA Service</title>
+<short_description/>
+<description/>
+<how_to_fix/>
+<links/></vulner>
+<vulner id="425351">
+<title>System Information</title>
+<short_description/>
+<description/>
+<how_to_fix/>
+<links/></vulner>
+<vulner id="425398">
+<title>Rarely used services</title>
+<short_description/>
+<description>These services can be leveraged by attackers to launch denial-of-service (DoS) and other attacks that would be prevented by packet inspection filters provided these services are disabled. Services that are not needed should be turned off because they present potential avenues of attack and may provide information that could be useful for gaining unauthorized access.
+</description>
+<how_to_fix>Disable unused services.
+hostname(config)#no {service}</how_to_fix>
+<links/>
+<cvss temp_score="4.1" base_score="5.0" temp_score_decomp="(AV:N/AC:L/Au:N/C:N/I:N/A:P/E:F/RL:O/RC:C)" base_score_decomp="(AV:N/AC:L/Au:N/C:N/I:N/A:P)"/></vulner>
+<vulner id="510022">
+<title>Weak encryption in SSH protocol</title>
+<short_description>Weak encryption algorithms are used in versions 1.33 and 1.5.</short_description>
+<description>There are some defects in SSHv1 in encryption algorithms as well as in programs that use it. So if you use SSH service to manage devices install SSHv2.</description>
+<how_to_fix>Configure SSHv2 with the following command:
+hostname(config)# ip ssh version 2</how_to_fix>
+<links/>
+<cvss temp_score="0.0" base_score="4.3" temp_score_decomp="" base_score_decomp="(AV:A/AC:M/Au:N/C:P/I:P/A:N)"/></vulner>
+<vulner id="510101">
+<title>ARP Protocol</title>
+<short_description/>
+<description/>
+<how_to_fix/>
+<links/>
+<cvss temp_score="0.0" base_score="0.0" temp_score_decomp="" base_score_decomp=""/></vulner></vulners></content>

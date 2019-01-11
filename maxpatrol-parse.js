@@ -1,525 +1,509 @@
+/* eslint-disable default-case, no-continue,no-param-reassign,no-restricted-syntax */
+
 'use strict';
 
 const XmlStream = require('xml-stream');
+const ipUtils = require('ip');
+const moment = require('moment');
 
-const url = require('url');
-const _ = require('lodash');
-const ip = require('ip');
+const {
+  parseReferenceLinks,
+  getWindowsSoftwareData,
+  getLinuxSoftwareData,
+  getWindowsUserData,
+  getNetworkDeviceNetworkAdapterData,
+  getNetworkInterfaceData,
+  getNetworkDeviceFirmwareData,
+  getNetworkDeviceOrLinuxUserData,
+  getSNMPNetworkAddresses,
+  getSNMPNetworkInterfaces,
+  getSNMPSystemInformation,
+  formatSNMPInterfaces,
+  getSerialNumbers,
+  getDomainName,
+  getSoftwareVulnerabilityResult,
+} = require('./maxpatrol-helper');
 
-/**
- * Получает имя домена из строки
- * @see RVN-4024
- * @param {String} value - строка с именем домена
- * @returns {String}
- */
-function getDomainName(value) {
-  if (!value || ip.isV4Format(value) || ip.isV6Format(value)) return null;
-
-  let domain = String(value).split('.');
-  const l = domain.length;
-
-  if (l === 1) return null;
-
-  if (l > 2) {
-    domain = domain.splice(l - 2, l);
-  }
-
-  return domain.join('.');
-}
-
-const blockedSoftware = [
-  'Microsoft Windows',
-  'Microsoft Updates',
-  'Microsoft Active Directory',
-  'Microsoft DNS Server',
-  'OpenSSH Server',
-  'Network Configuration',
-  'Samba',
-  'Linux Kernel',
-  'debian kernel',
-  'Ubuntu Kernel',
-  'Operating System',
-  'OpenSSL',
-  'Juniper JUNOS',
-  'Oracle Database',
-];
 
 /**
- * По ссылке на уязвимость получает название БД с уязвимостями
- * @param {String[]} links - массив ссылок на  уязвимость
- * @returns {String[]}
+ * Парсим данные о софте хоста
+ * @param {Array<Object>} data
+ * @returns {{
+ * software: Array,
+ * ifs: Array,
+ * vulns: Object,
+ * ports: Array,
+ * firmware: Object,
+ * users: Array
+ * }}
  */
-function parseReferenceLinks(links) {
-  // TODO: I should probably refactor this mess :/
-  return links.reduce((reference, link) => {
-    const uri = url.parse(link);
+function parseHostSoft(data) {
+  const ifs = [];
+  const users = [];
+  const ports = [];
+  const vulns = {};
+  let software = [];
+  let firmware;
+  let os;
 
-    const cve = link.match(/(CVE-\d+-\d+)/gim);
-    const rhsa = link.match(/(RHSA-\d+-\d+)/gim);
-    const ms = link.match(/(ms\d+-\d+)/gim);
-    const bid = link.match(/(bid\/\d+)/gim);
-    const xfdb = link.match(/(xfdb\/\d+)/gim);
-    const dsa = link.match(/(dsa-\d+)/gim);
-    const usn = link.match(/(usn-\d+-\d+)/gim);
-    const mdksa = link.match(/(MDKSA-\d+:\d+)/gim);
-    const asa = link.match(/(ASA-\d+-\d+)/gim);
-    const glsa = link.match(/(glsa-\d+-\d+)/gim);
-    const esx = link.match(/(esx-\d+)/gim);
-    const rpl = link.match(/(RPL-\d+)/gim);
-    const vmsa = link.match(/(VMSA-\d+-\d+)/gim);
-    const jsa = link.match(/(JSA\d+)/gim);
-    const swg = link.match(/(swg\d+)/gim);
-    const st1 = link.match(/securitytracker\.com\/id\?(\d+)/im);
-    const st2 = link.match(/securitytracker\.com\/.+\/(\d+)\.html/im);
-    const osvdb = link.match(/osvdb.org\/(\d+)/im);
+  for (const item of data) {
+    const {
+      vulners,
+      port,
+      protocol,
+      name,
+      version,
+    } = item;
 
-    if (uri.host) {
-      if (cve) {
-        reference.push({
-          ref_id: cve.toString().toUpperCase(),
-          source: 'CVE',
-          ref_url: link,
-        });
-      } else if (rhsa) {
-        reference.push({
-          ref_id: rhsa.toString().toUpperCase(),
-          source: 'RedHat',
-          ref_url: link,
-        });
-      } else if (ms) {
-        reference.push({
-          ref_id: ms.toString().toUpperCase(),
-          source: 'Microsoft',
-          ref_url: link,
-        });
-      } else if (bid) {
-        reference.push({
-          ref_id: bid.toString().toUpperCase(),
-          source: 'SecurityFocus',
-          ref_url: link,
-        });
-      } else if (xfdb) {
-        reference.push({
-          ref_id: xfdb.toString().toUpperCase(),
-          source: 'X-Force',
-          ref_url: link,
-        });
-      } else if (dsa) {
-        reference.push({
-          ref_id: dsa.toString().toUpperCase(),
-          source: 'Debian',
-          ref_url: link,
-        });
-      } else if (usn) {
-        reference.push({
-          ref_id: usn.toString().toUpperCase(),
-          source: 'Ubuntu',
-          ref_url: link,
-        });
-      } else if (mdksa) {
-        reference.push({
-          ref_id: mdksa.toString().toUpperCase(),
-          source: 'Mandriva',
-          ref_url: link,
-        });
-      } else if (asa) {
-        reference.push({
-          ref_id: asa.toString().toUpperCase(),
-          source: 'Avaya',
-          ref_url: link,
-        });
-      } else if (glsa) {
-        reference.push({
-          ref_id: glsa.toString().toUpperCase(),
-          source: 'Gentoo',
-          ref_url: link,
-        });
-      } else if (esx) {
-        reference.push({
-          ref_id: esx.toString().toUpperCase(),
-          source: 'VMware',
-          ref_url: link,
-        });
-      } else if (rpl) {
-        reference.push({
-          ref_id: rpl.toString().toUpperCase(),
-          source: 'Rpath',
-          ref_url: link,
-        });
-      } else if (vmsa) {
-        reference.push({
-          ref_id: vmsa.toString().toUpperCase(),
-          source: 'VMware',
-          ref_url: link,
-        });
-      } else if (jsa) {
-        reference.push({
-          ref_id: jsa.toString().toUpperCase(),
-          source: 'Juniper',
-          ref_url: link,
-        });
-      } else if (swg) {
-        reference.push({
-          ref_id: swg.toString().toUpperCase(),
-          source: 'IBM',
-          ref_url: link,
-        });
-      } else if (st1) {
-        reference.push({
-          ref_id: `ST-${st1[1]}`,
-          source: 'SecurityTracker',
-          ref_url: link,
-        });
-      } else if (st2) {
-        reference.push({
-          ref_id: `ST-${st2[1]}`,
-          source: 'SecurityTracker',
-          ref_url: link,
-        });
-      } else if (osvdb) {
-        // игнорируем, т.к. эта база уязвимостей больше не работает
-      } else {
-        reference.push({
-          ref_id: link,
-          source: uri.host,
-          ref_url: link,
-        });
+    // это некруто, но другого способа найти os на cisco asa не нашел
+    if (name === 'Cisco IOS') {
+      os = `${name} ${version}`;
+    }
+
+    if (port > 0) {
+      ports.push(port);
+    }
+
+    if (vulners && vulners.vulner) {
+      for (const vuln of vulners.vulner) {
+        const { id: vulnerId } = vuln.$;
+        let user;
+        let soft;
+        let networkInterface = {
+          address: [],
+        };
+
+        switch (vulnerId) {
+          case '4424673': // сетевой интерфейс Windows и Linux
+            networkInterface = getNetworkInterfaceData(vuln);
+            break;
+          case '425336': // сетевой интерфейс сетевого оборудования
+            networkInterface = getNetworkDeviceNetworkAdapterData(vuln);
+            break;
+          case '401005': // пользователи Windows
+            user = getWindowsUserData(vuln);
+            break;
+          case '425318':
+          case '411402': // пользователи Linux или сетевого оборудования
+            user = getNetworkDeviceOrLinuxUserData(vuln);
+            break;
+          case '401000': // софт Windows
+            soft = getWindowsSoftwareData(vuln);
+            break;
+          case '175492': // софт Linux
+            soft = getLinuxSoftwareData(vuln);
+            break;
+          case '411401': // прошивка сетевого оборудования
+            firmware = getNetworkDeviceFirmwareData(vuln);
+            break;
+          default: // собственно уязвимость (внезапно)
+            vulns[vulnerId] = {
+              port,
+              protocol,
+              result: getSoftwareVulnerabilityResult(vuln),
+            };
+        }
+
+        if (networkInterface && networkInterface.address && networkInterface.address.length) {
+          ifs.push(networkInterface);
+        }
+
+        if (soft) {
+          software = Array.isArray(soft) ? [...software, ...soft] : [...software, soft];
+        }
+
+        if (user) {
+          users.push(user);
+        }
       }
     }
-    return reference;
+  }
+
+  return {
+    ifs,
+    software,
+    users,
+    ports,
+    vulns,
+    firmware,
+    os,
+  };
+}
+
+/**
+ * Парсим данные девайса, полученные по SNMP
+ * @param {Object} data
+ * @returns {{ifs: Array, name: string}}
+ */
+function parseSNMPData(data) {
+  let addresses = [];
+  let interfaces = [];
+  let name = '';
+
+  for (const vuln of data.vulners.vulner) {
+    switch (vuln.$.id) {
+      case '8167':
+        interfaces = getSNMPNetworkInterfaces(vuln);
+        break;
+      case '8168':
+        ({ name } = getSNMPSystemInformation(vuln));
+        break;
+      case '8169':
+        addresses = getSNMPNetworkAddresses(vuln);
+        break;
+    }
+  }
+
+  return {
+    ifs: formatSNMPInterfaces(addresses, interfaces),
+    name,
+  };
+}
+
+/**
+ * Парсим данные об уязвимостях, полученные по SNMP
+ * @param {Object} data
+ * @return {Object}
+ */
+function parseSNMPVulners(data) {
+  const {
+    vulners,
+    port,
+    protocol,
+  } = data;
+
+  const vulns = {};
+
+  if (vulners && vulners.vulner) {
+    for (const vuln of vulners.vulner) {
+      vulns[vuln.$.id] = {
+        port,
+        protocol,
+      };
+    }
+  }
+
+  return vulns;
+}
+
+/**
+ * Парсим данные сканирования SNMP
+ * @param {Object} data
+ * @returns {Object}
+ */
+function parseSNMPScanData(data) {
+  let snmpData = {};
+  let vulns = {};
+
+  for (const item of data) {
+    if (item.name === 'SNMP') {
+      snmpData = parseSNMPData(item);
+    } else {
+      const itemVulns = parseSNMPVulners(item);
+
+      vulns = { ...itemVulns, ...vulns };
+    }
+  }
+
+  return {
+    ...snmpData,
+    vulns,
+  };
+}
+
+/**
+ * Парсим данные о hardware хоста
+ * @param {Array} data
+ * @returns {Object}
+ */
+function parseHardwareData(data) {
+  let serial = {};
+
+  for (const item of data) {
+    if (item.$.id === '425302') {
+      serial = getSerialNumbers(item);
+    }
+  }
+
+  return {
+    ...serial,
+  };
+}
+
+/**
+ * Форматируем данные о софте хоста
+ * @param {Array} softData
+ * @returns {{formattedSoft: Array, ports: Array}}
+ */
+function formatSoftData(softData) {
+  const ports = [];
+  const formattedSoft = [];
+
+  for (const item of softData) {
+    const port = item.$.port && Number(item.$.port);
+    let protocol = item.$.protocol && Number(item.$.protocol);
+
+    switch (protocol) {
+      case 6:
+        protocol = 'tcp';
+        break;
+      case 17:
+        protocol = 'udp';
+        break;
+    }
+
+    formattedSoft.push({
+      ...item,
+      port,
+      protocol,
+    });
+
+    // Список открытых портов
+    if (port > 0) {
+      ports.push(port);
+    }
+  }
+
+  return {
+    formattedSoft,
+    ports,
+  };
+}
+
+/**
+ * Форматируем данные о софте и получаем из них необходимые данные
+ * @param {Array} data
+ * @returns {{
+ *  software: Array,
+ *  os: String,
+ *  ifs: Array,
+ *  vulns: Object,
+ *  ports: Array,
+ *  firmware: Object,
+ *  users: Array
+ * }}
+ */
+function parseSoftData(data) {
+  const { formattedSoft, ports } = formatSoftData(data);
+  const snmpData = formattedSoft.find(item => item.name === 'SNMP');
+  const osData = formattedSoft.find(item => item.name === 'Operating System');
+  const os = osData ? osData.version : '';
+
+  let result = parseHostSoft(formattedSoft);
+
+  // если данных нет, но есть данные SNMP-сканирования - используем последние
+  if ((!result.ifs || result.ifs.length === 0) &&
+    (snmpData && snmpData.vulners && snmpData.vulners.vulner && snmpData.vulners.vulner.length)) {
+    // const newresult = parseSNMPScanData(formattedSoft);
+    result = {
+      ...result,
+      ...parseSNMPScanData(formattedSoft),
+    };
+  }
+
+  return {
+    ...result,
+    ports: [...new Set(ports)],
+    os: result.os || os,
+  };
+}
+
+/**
+ * Фильтруем сетевые интерфейсы - отбрасываем локальные адреса и все адреса, непохожие на IPV4
+ * @param {Array} interfaces
+ * @returns {Array}
+ */
+function filterNetworkInterfaces(interfaces) {
+  return interfaces.reduce((accumulator, ifs) => {
+    if (ifs && ifs.address && ifs.address.length) {
+      ifs.address = ifs.address
+        .filter(item => !['127.0.0.1', 'localhost'].includes(item.ip)
+          && ipUtils.isV4Format(item.ip));
+
+      if (ifs.address.length) {
+        accumulator.push(ifs);
+      }
+    }
+
+    return accumulator;
   }, []);
 }
 
 /**
- * Парсит параметры интерфейсов из xml отчета
- * @param {Object} vuln - часть отчета из xml-stream
- * @returns {Object}
+ * Форматирует хостнейм
+ * @param {String} name
+ * @return {String}
  */
-function parseInterfaces(vuln) {
-  const ifsItem = {
-    name: vuln.param,
-    address: [],
-  };
-
-  const ipAndMaskRegExp = /(\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}) \((\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})\)/;
-  const newIpAndMaskRegExp = /(\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})\(\/(\d{1,2})\)/;
-  const ciscoIpAndMaskRegExp = /(\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})\/(\d{1,2})/;
-
-  vuln.param_list.forEach((param) => {
-    param.table.forEach((table) => {
-      const tableName = table.$.name;
-      table.body.forEach((body) => {
-        body.row.forEach((row) => {
-          if (tableName === 'GennetConnNew') {
-            // linux-сервер
-            if (row.field[0].$text === 'MAC:') {
-              ifsItem.mac = row.field[1].$text;
-            }
-
-            if (row.field[0].$text === 'Address:') {
-              const match = String(row.field[1].$text).match(newIpAndMaskRegExp);
-
-              if (match) {
-                ifsItem.address.push({
-                  ip: match[1],
-                  mask: ip.fromPrefixLen(match[2]),
-                  family: 'ipv4',
-                });
-              }
-            }
-          } else if (tableName === 'Gen') {
-            // cisco
-            row.field.forEach((field) => {
-              if (typeof field.$text !== 'string') return;
-              const id = parseInt(field.$.id, 10);
-              if (id === 5) {
-                ifsItem.mac = field.$text.replace(/(.{2})/g, '$1:').slice(0, -1);
-              }
-
-              if (id === 2) {
-                const match = String(field.$text).match(ciscoIpAndMaskRegExp);
-
-                if (match) {
-                  ifsItem.address.push({
-                    ip: match[1],
-                    mask: ip.fromPrefixLen(match[2]),
-                    family: 'ipv4',
-                  });
-                }
-              }
-            });
-          } else {
-            const rowLength = row.field.length;
-            row.field.forEach((field) => {
-              const idOffset = rowLength > 9 ? 1 : 0;
-              const id = parseInt(field.$.id, 10);
-
-              if (id === 4 + idOffset) {
-                ifsItem.mac = field.$text;
-              }
-
-              if (id === 6 + idOffset) {
-                const match = String(field.$text).match(ipAndMaskRegExp);
-
-                if (match) {
-                  ifsItem.address.push({
-                    ip: match[1],
-                    mask: match[2],
-                    family: 'ipv4',
-                  });
-                }
-              }
-            });
-          }
-        });
-      });
-    });
-  });
-
-  return ifsItem;
-}
-
-/**
- * Парсит пользователей из xml отчета
- * @param {Object} vuln - часть отчета из xml-stream
- * @returns {Object}
- */
-function parseUsers(vuln) {
-  const userItem = {
-    login: vuln.$.param,
-  };
-
-  vuln.param_list.forEach((param) => {
-    param.table.forEach((table) => {
-      table.body.forEach((body) => {
-        body.row.forEach((row) => {
-          row.field.forEach((field) => {
-            const id = parseInt(field.$.id, 10);
-
-            if (id === 2) {
-              userItem.fio = field.text;
-            }
-          });
-        });
-      });
-    });
-  });
-
-  return userItem;
-}
-
-/**
- * Парсит уязвимости
- * @see RVN-4043
- * @param {Object[]} vulners - Массив уязвимостей из отчета
- * @param {Object} host
- * @param {Number} port
- * @param {String} protocol
- * @return {Object}
- */
-function parseVulners(vulners, host, port, protocol) {
-  const vulnerabilities = [];
-  const users = [];
-  const interfaces = [];
-  let mac;
-
-  vulners.forEach((vulner) => {
-    const id = Number(vulner.$.id);
-    const level = Number(vulner.$.level);
-
-    if (id) {
-      // Уязвимости
-      let vuln = { id, level };
-      if (port > 0) {
-        vuln = Object.assign(vuln, { port, protocol, isNetworkVulnerability: true });
-      }
-
-      vulnerabilities.push(vuln);
-
-      // MAC-адреса
-      if (id === 180245 && !host.mac) {
-        mac = vulner.param.toLowerCase();
-      }
-
-      // Сетевые интерфейсы
-      if (id === 4424673 || id === 425336) {
-        const ifsItem = parseInterfaces(vulner);
-        if (ifsItem.address.length > 0) {
-          interfaces.push(ifsItem);
-        }
-      }
-
-      // Пользователи
-      if (id === 425318) {
-        users.push(parseUsers(vulner));
-      }
-    }
-  });
-
-  return { users, vulnerabilities, interfaces, mac };
+function formatHostname(name) {
+  return ipUtils.isV4Format(name) ? name : name.split('.')[0];
 }
 
 /**
  * Парсит xml отчет из MaxPatrol
- * @param {Stream} stream - readable поток с отчетом
- * @param {Date} lastRun - дата последнего запуска
- * @param {Function} cb - callback. вызывается после завершения работы функции
+ * @param {ReadStream} inputStream - readable поток с отчетом
+ * @param {Object} options
+ * @param {Function} cb - колбэк, который должен быть вызван по завершении парсинга
  */
-module.exports = function(stream, lastRun, cb) {
-  const hosts = [];
-  const vulnerabilitiesDesc = {};
+module.exports = function (inputStream, options = {}, cb) {
+  const errors = [];
+  const { last_run: lastRun } = options;
 
-  const xml = new XmlStream(stream);
+  const xml = new XmlStream(inputStream);
 
+  xml.collect('scan_objects > soft');
   xml.collect('scan_objects > soft > vulners > vulner');
-  xml.collect('scan_objects > soft > vulners > vulner > param_list');
   xml.collect('scan_objects > soft > vulners > vulner > param_list > table');
-  xml.collect('scan_objects > soft > vulners > vulner > param_list > table > body');
+  xml.collect('scan_objects > soft > vulners > vulner > param_list > table > header > column');
   xml.collect('scan_objects > soft > vulners > vulner > param_list > table > body > row');
   xml.collect('scan_objects > soft > vulners > vulner > param_list > table > body > row > field');
 
+  // в результатах всего один ряд значений, так что остальное нас не интересует
+  xml.collect('hardware > device');
+  xml.collect('hardware > device > param_list > table');
+  xml.collect('hardware > device > param_list > table > body > header > column');
+  xml.collect('hardware > device > param_list > table > body > row');
+  xml.collect('hardware > device > param_list > table > body > row > field');
+
   xml.collect('content > vulners > vulner');
+  xml.collect('content > vulners > vulner > global_id');
 
   // undocumented feature, second parameter preserves whitespaces
   xml.preserve('content > vulners > vulner > description', true);
 
-  let software = {};
-  let interfaces = [];
-  let ports = [];
-  let users = [];
-  let vulnerabilities = [];
-  let host = {};
-
-  xml.on('startElement: host', () => {
-    software = {};
-    interfaces = [];
-    ports = [];
-    users = [];
-    vulnerabilities = [];
-    host = {};
-  });
-
-  xml.on('endElement: scan_objects > soft', (soft) => {
-    // Программное обеспечение
-    const name = soft.name;
-    const version = soft.version;
-    const port = soft.$.port && parseInt(soft.$.port, 10);
-    let protocol = soft.$.protocol && parseInt(soft.$.protocol, 10);
-
-    // Список открытых портов
-    if (port > 0 && protocol > 0) {
-      if (protocol === 6) {
-        protocol = 'tcp';
-      } else if (protocol === 17) {
-        protocol = 'udp';
-      }
-    }
-
-    if (!_.isEmpty(name) && !_.isEmpty(version) && blockedSoftware.indexOf(name) === -1) {
-      software[name + version] = { name, version };
-    }
-
-    if (soft.vulners && soft.vulners.vulner) {
-      const data = parseVulners(soft.vulners.vulner, host, port, protocol);
-
-      interfaces.push(...data.interfaces);
-      vulnerabilities.push(...data.vulnerabilities);
-      users.push(...data.users);
-      if (data.mac) {
-        host.mac = data.mac;
-      }
-    }
-
-    if (port > 0) {
-      ports.push({ port, protocol });
-    }
-  });
+  const uniqueVulns = {};
+  let hosts = [];
 
   xml.on('endElement: host', (node) => {
-    const stop = Number(new Date(node.$.stop_time));
-    if (stop && lastRun && stop < lastRun) return true;
+    // парсим данные хоста - тут все самое интересное
+    const {
+      fqdn,
+      netbios,
+      stop_time: stopTime,
+      host_uid: maxpatrolUid,
+      ip,
+    } = node.$;
 
-    host = {
-      address: node.$.ip,
-      ip: node.$.ip,
-      name: node.$.netbios || node.$.fqdn,
-      start_time: node.$.start_time,
-      stop_time: node.$.stop_time,
-      updated_at: new Date(node.$.stop_time).toUTCString(),
-      domain_workgroup: getDomainName(node.$.fqdn),
-    };
-
-    if (interfaces.length > 0) {
-      host.ifs = interfaces;
+    const stop = Number(new Date(stopTime));
+    if (stop && lastRun && stop < lastRun) {
+      return true;
     }
 
-    if (ports.length > 0) {
-      host.ports = _.values(_.indexBy(ports, 'port'));
-    }
+    try {
+      const softData = typeof node.scan_objects === 'object' && node.scan_objects.soft ?
+        parseSoftData(node.scan_objects.soft) :
+        {};
 
-    if (vulnerabilities.length > 0) {
-      host.vulnerabilities = vulnerabilities.slice(0);
-    }
+      const ifs = filterNetworkInterfaces(softData.ifs || []);
+      if ((!ifs || ifs.length === 0) && !ipUtils.isV4Format(ip)) {
+        return true;
+      }
 
-    if (!_.isEmpty(software)) {
-      host.software = _.values(software);
-    }
+      const hardware = node.hardware && node.hardware.device ?
+        parseHardwareData(node.hardware.device) :
+        {};
 
-    if (users.length > 0) {
-      host.users = users;
-    }
+      const scanFinished = moment(stopTime).format();
+      const name = fqdn || netbios || softData.name || ip || ifs[0].address[0].ip;
 
-    hosts.push(host);
+      hosts.push({
+        ...softData,
+        ...hardware,
+        maxpatrolUid,
+        ifs,
+        ip,
+        domain_workgroup: getDomainName(fqdn),
+        software: options.import_software ? softData.software : [],
+        users: options.import_users ? softData.users : [],
+        name: formatHostname(name),
+        updated_at: scanFinished,
+        vuln_discovery_date: scanFinished,
+        vuln_elimination_date: scanFinished,
+      });
+    } catch (e) {
+      errors.push(new Error(`Error: id ${maxpatrolUid} - ${e.message}`));
+    }
   });
 
   xml.on('endElement: content > vulners > vulner', (el) => {
-    const description = el.description.$text || el.short_description.$text || '';
-    const vuln = {
-      description: description.replace(/  +/g, ' '),
-      name: el.title,
-      remediation: el.how_to_fix,
-      uid: el.$.id,
-      reference: parseReferenceLinks(el.links.replace(/[\n\t\r]/g, ' ').split(' ')),
-    };
+    // парсим уязвимости
+    const {
+      description,
+      cvss,
+      title,
+      links,
+      $,
+      short_description: shortDescription,
+      how_to_fix: remediation,
+      global_id: globalId,
+    } = el;
 
-    if (vuln.uid) {
-      vulnerabilitiesDesc[vuln.uid] = vuln;
+    // не учитываем уязвимости, у которых нет global_id и cvss.base_score
+    if ((!globalId || globalId.length === 0) && (!cvss || !cvss.$.base_score || cvss.$.base_score === '0.0')) {
+      return;
+    }
+
+    try {
+      const level = Math.round(Number(cvss.$.base_score) / 2);
+      const vulnDescription = description.$text || shortDescription.$text || '';
+      const vuln = {
+        description: vulnDescription.replace(/  +/g, ' '),
+        name: title,
+        remediation,
+        uid: $.id,
+        reference: parseReferenceLinks(links),
+        level_id: level === 0 ? 1 : level,
+      };
+
+      if (vuln.uid) {
+        uniqueVulns[vuln.uid] = vuln;
+      }
+    } catch (e) {
+      errors.push(new Error(`Error: vulner id ${globalId} - ${e.message}`));
     }
   });
 
   xml.on('error', (err) => {
-    console.dir(err, { depth: null, colors: true });
-    cb(err);
+    errors.push(err);
   });
 
   xml.on('end', () => {
-    hosts.forEach((host) => {
-      if (host.vulnerabilities) {
-        const result = [];
+    // маппим уязвимости с хостами и возвращаем результат
+    hosts = hosts.map((host) => {
+      const vulnerabilities = [];
 
-        host.vulnerabilities.forEach((vuln) => {
-          const id = vuln.id;
-          let { level } = vuln;
+      if (host.vulns) {
+        for (const key in host.vulns) {
+          const vuln = host.vulns[key];
+          const uniqueVuln = uniqueVulns[key];
 
-          if (level !== 0 && vulnerabilitiesDesc[id]) {
-            const item = Object.assign({}, vulnerabilitiesDesc[id]);
+          if (uniqueVuln) {
+            let vulnerability = uniqueVuln;
 
-            item.level_id = level < 5 ? ++level : level;
-
-            if (vuln.isNetworkVulnerability) {
-              item.isNetworkVulnerability = true;
-              item.port = vuln.port;
-              item.protocol = vuln.protocol;
+            if (vuln.port) {
+              vulnerability = {
+                ...vulnerability,
+                ...vuln,
+                isNetworkVulnerability: Boolean(vuln.port),
+              };
             }
 
-            result.push(item);
+            vulnerabilities.push(vulnerability);
           }
-        });
-
-        host.vulnerabilities = result;
+        }
       }
+
+      delete host.vulns;
+      delete host.maxpatrolUid;
+      if (host.ifs && host.ifs.length) {
+        delete host.ip;
+      }
+
+      return {
+        ...host,
+        vulnerabilities,
+      };
     });
 
-    cb(null, hosts);
+    cb(null, { hosts, errors });
   });
 };

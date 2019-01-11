@@ -1,0 +1,2374 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<content xsi:schemaLocation="http://www.ptsecurity.ru/reports https://support.ptsecurity.ru/xsd/mp8/25/maxpatrol80-info-report.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://www.ptsecurity.ru/reports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<server db_guid="E4ADB012-661B-47F2-9242-EBEA2CE0F5E6" license="15749" id="1" version="28461"/>
+<report lang="en" name="juniper" comment="" created="2018-11-12T09:26:43"/>
+<tasks>
+<task name="RV_Jun" id="15" license="15749"/></tasks>
+<data>
+<host ip="172.16.101.143" host_stop_time="2018-11-10T15:47:53" host_start_time="2018-11-10T14:48:56" start_time="2018-11-10T14:48:55" task="15" host_uid="1" scan="41" fqdn="" stop_time="2018-11-10T15:47:54" primary="172.16.101.143" exitcode="0" scan_status="0" netbios="">
+<qualifier_rule>As specified</qualifier_rule>
+<scanner license="319D722B-F1C6-4222-86CD-25A62AC7B73D" version="28461" profile="RV_PA_Jun">Default Scanner on MP</scanner>
+<transport_info>LDAP:2/MML:0/NotesRPC:7/ODBC DB2:0/ODBC MSSQL:4/ODBC MySQL:0/ODBC Oracle:4/ODBC PostgreSQL:0/ODBC Sybase:0/ODBC Tibero:0/RPC Filesystem:4/RPC Registry:4/RPC:4/Remote Engine:2/SAP GUI:7/SAP HANA:0/SAP HTTP:0/SAPRFC:9/SSH2:5/TELNET:4/VMWARE vCenter:0/VMWARE:0/WMI FILESYSTEM:4/WMI REGISTRY:4/WMI:4/XEN:0/XENRPC:0/vSphere API vCenter:0/vSphere API:0</transport_info>
+<statistics/>
+<scan_objects>
+<soft port_status="0" type="3" port="22" id="1" security_object="0" protocol="6" service="1100">
+<name>SSH</name>
+<version/>
+<path/>
+<metadata>
+<soft_version id="0"/></metadata>
+<banner>
+<table index="0" name="GenBanner" description="Banner" format="key-value">
+<header>
+<column name="Banner" id="1"/></header>
+<body>
+<row>
+<field id="1">SSH-2.0-OpenSSH_6.6
+</field></row></body></table>
+<table index="2" name="GenProtocolVersions" description="Protocol versions" format="key-value">
+<header>
+<column name="Protocol versions" id="1"/></header>
+<body>
+<row>
+<field id="1">1.99,2.0</field></row></body></table></banner>
+<statistics>
+<table index="2" name="GenPortStatistics" description="" format="table">
+<header>
+<column name="scan_time" id="1"/></header>
+<body>
+<row>
+<field id="1">10 min 7 sec</field></row></body></table></statistics>
+<vulners>
+<vulner id="1092" level="0" status="0">
+<param/>
+<param_list/></vulner>
+<vulner id="8176" level="0" status="0">
+<param/>
+<param_list>
+<table index="0" name="GenProfile" description="Server configuration" format="key-value">
+<header>
+<column name="Keys exchange algorithms" id="1"/>
+<column name="Server host key algorithms" id="2"/>
+<column name="Decryption ciphers" id="3"/>
+<column name="Encryption ciphers" id="4"/>
+<column name="MAC algorithms (client to server)" id="5"/>
+<column name="MAC algorithms (server to client)" id="6"/>
+<column name="Decompression algorithms" id="7"/>
+<column name="Compression algorithms" id="8"/>
+<column name="Authentication methods" id="9"/></header>
+<body>
+<row>
+<field id="1">curve25519-sha256@libssh.org,ecdh-sha2-nistp256,ecdh-sha2-nistp384,ecdh-sha2-nistp521,diffie-hellman-group-exchange-sha256,diffie-hellman-group-exchange-sha1,diffie-hellman-group14-sha1,diffie-hellman-group1-sha1</field>
+<field id="2">ssh-rsa,ssh-dss,ssh-ed25519</field>
+<field id="3">aes128-ctr,aes192-ctr,aes256-ctr,arcfour256,arcfour128,chacha20-poly1305@openssh.com,aes128-cbc,3des-cbc,blowfish-cbc,cast128-cbc,aes192-cbc,aes256-cbc,arcfour,rijndael-cbc@lysator.liu.se</field>
+<field id="4">aes128-ctr,aes192-ctr,aes256-ctr,arcfour256,arcfour128,chacha20-poly1305@openssh.com,aes128-cbc,3des-cbc,blowfish-cbc,cast128-cbc,aes192-cbc,aes256-cbc,arcfour,rijndael-cbc@lysator.liu.se</field>
+<field id="5">hmac-md5-etm@openssh.com,hmac-sha1-etm@openssh.com,umac-64-etm@openssh.com,umac-128-etm@openssh.com,hmac-sha2-256-etm@openssh.com,hmac-sha2-512-etm@openssh.com,hmac-ripemd160-etm@openssh.com,hmac-sha1-96-etm@openssh.com,hmac-md5-96-etm@openssh.com,hmac-md5,hmac-sha1,umac-64@openssh.com,umac-128@openssh.com,hmac-sha2-256,hmac-sha2-512,hmac-ripemd160,hmac-ripemd160@openssh.com,hmac-sha1-96,hmac-md5-96</field>
+<field id="6">hmac-md5-etm@openssh.com,hmac-sha1-etm@openssh.com,umac-64-etm@openssh.com,umac-128-etm@openssh.com,hmac-sha2-256-etm@openssh.com,hmac-sha2-512-etm@openssh.com,hmac-ripemd160-etm@openssh.com,hmac-sha1-96-etm@openssh.com,hmac-md5-96-etm@openssh.com,hmac-md5,hmac-sha1,umac-64@openssh.com,umac-128@openssh.com,hmac-sha2-256,hmac-sha2-512,hmac-ripemd160,hmac-ripemd160@openssh.com,hmac-sha1-96,hmac-md5-96</field>
+<field id="7">none,zlib@openssh.com</field>
+<field id="8">none,zlib@openssh.com</field>
+<field id="9">publickey,password,keyboard-interactive</field></row></body></table></param_list></vulner>
+<vulner id="8177" level="0" status="0">
+<param/>
+<param_list>
+<table index="1" name="GenKeySSH2" description="Host keys (SSH2)" format="table">
+<header>
+<column name="Key Fingerprint" id="1"/>
+<column name="Host-Key Method" id="2"/></header>
+<body>
+<row>
+<field id="1">7d:cf:a2:36:da:82:f4:96:0f:ba:18:d8:36:c4:ce:72</field>
+<field id="2">ssh-dss</field></row>
+<row>
+<field id="1">0d:1e:09:f3:be:c4:8d:20:5f:01:b0:41:33:0c:ef:3b</field>
+<field id="2">ssh-ed25519</field></row></body></table></param_list></vulner>
+<vulner id="8350" level="3" status="0">
+<param/>
+<param_list>
+<table index="0" name="Genlogin" description="" format="table">
+<header>
+<column name="Logins" id="1"/></header>
+<body>
+<row>
+<field id="1">RO</field></row>
+<row>
+<field id="1">root</field></row></body></table></param_list></vulner>
+<vulner id="8365" level="1" status="0">
+<param/>
+<param_list>
+<table index="0" name="GenWeakCiphers" description="Encyption algorithms" format="table">
+<header>
+<column name="Weak Ciphers" id="1"/></header>
+<body>
+<row>
+<field id="1">arcfour256</field></row>
+<row>
+<field id="1">arcfour128</field></row>
+<row>
+<field id="1">aes128-cbc</field></row>
+<row>
+<field id="1">3des-cbc</field></row>
+<row>
+<field id="1">blowfish-cbc</field></row>
+<row>
+<field id="1">cast128-cbc</field></row>
+<row>
+<field id="1">aes192-cbc</field></row>
+<row>
+<field id="1">aes256-cbc</field></row>
+<row>
+<field id="1">arcfour</field></row>
+<row>
+<field id="1">rijndael-cbc@lysator.liu.se</field></row></body></table></param_list></vulner>
+<vulner id="8368" level="1" status="0">
+<param/>
+<param_list>
+<table index="0" name="GenWeakMACs" description="MAC algorithms" format="table">
+<header>
+<column name="Weak algorithms" id="1"/></header>
+<body>
+<row>
+<field id="1">hmac-md5-etm@openssh.com</field></row>
+<row>
+<field id="1">hmac-sha1-etm@openssh.com</field></row>
+<row>
+<field id="1">umac-64-etm@openssh.com</field></row>
+<row>
+<field id="1">hmac-ripemd160-etm@openssh.com</field></row>
+<row>
+<field id="1">hmac-sha1-96-etm@openssh.com</field></row>
+<row>
+<field id="1">hmac-md5-96-etm@openssh.com</field></row>
+<row>
+<field id="1">hmac-md5</field></row>
+<row>
+<field id="1">hmac-sha1</field></row>
+<row>
+<field id="1">umac-64@openssh.com</field></row>
+<row>
+<field id="1">hmac-ripemd160</field></row>
+<row>
+<field id="1">hmac-ripemd160@openssh.com</field></row>
+<row>
+<field id="1">hmac-sha1-96</field></row>
+<row>
+<field id="1">hmac-md5-96</field></row></body></table></param_list></vulner>
+<vulner id="8369" level="1" status="0">
+<param/>
+<param_list>
+<table index="0" name="GenWeakKEXs" description="Key-Exchange Algorithms" format="table">
+<header>
+<column name="Weak algorithms" id="1"/></header>
+<body>
+<row>
+<field id="1">ecdh-sha2-nistp256</field></row>
+<row>
+<field id="1">ecdh-sha2-nistp384</field></row>
+<row>
+<field id="1">ecdh-sha2-nistp521</field></row>
+<row>
+<field id="1">diffie-hellman-group-exchange-sha1</field></row>
+<row>
+<field id="1">diffie-hellman-group14-sha1</field></row>
+<row>
+<field id="1">diffie-hellman-group1-sha1</field></row></body></table></param_list></vulner>
+<vulner id="8370" level="1" status="0">
+<param/>
+<param_list>
+<table index="0" name="GenWeakKEYs" description="Host-Key Algorithms" format="table">
+<header>
+<column name="Weak algorithms" id="1"/></header>
+<body>
+<row>
+<field id="1">ssh-dss</field></row></body></table></param_list></vulner></vulners></soft>
+<soft port_status="0" type="3" port="80" id="2" security_object="0" protocol="6" service="100">
+<name>HTTP</name>
+<version/>
+<path/>
+<metadata>
+<soft_version id="0"/></metadata>
+<banner>
+<table index="3" name="GenServerName" description="Server name" format="key-value">
+<header>
+<column name="Server name" id="1"/></header>
+<body>
+<row>
+<field id="1">Embedthis-Appweb/3.2.3</field></row></body></table>
+<table index="9" name="GenHeuristicInfo" description="" format="list">
+<header>
+<column name="" id="1"/></header>
+<body>
+<row>
+<field id="1">Heuristic confirmation unavailable</field></row></body></table>
+<table index="5" name="GenServerState" description="State" format="key-value">
+<header>
+<column name="State" id="1"/></header>
+<body>
+<row>
+<field id="1">200 (OK)</field></row></body></table></banner>
+<statistics>
+<table index="2" name="GenPortStatistics" description="" format="table">
+<header>
+<column name="scan_time" id="1"/></header>
+<body>
+<row>
+<field id="1">30 min 30 sec</field></row></body></table></statistics>
+<vulners>
+<vulner id="1130" level="0" status="0">
+<param/>
+<param_list>
+<table index="0" name="Gen" description="" format="table">
+<header>
+<column name="" id="1"/></header>
+<body>
+<row>
+<field id="1">/extjs/adapter/ext/ext-base.js?ver=12.1X47-D20.7</field></row>
+<row>
+<field id="1">/extjs/ext-all-debug.js?ver=12.1X47-D20.7</field></row>
+<row>
+<field id="1">/servererror.php?code=404</field></row></body></table></param_list></vulner>
+<vulner id="1168" level="3" status="0">
+<param>172.16.101.143/Not_Found_Page (Host)</param>
+<param_list>
+<table index="0" name="GenRequest" description="" format="table">
+<header>
+<column name="Attack request" id="1"/></header>
+<body>
+<row>
+<field id="1">GET /vixjrttp.htm HTTP/1.1
+Host: hxsih&amp;lt;xscript&amp;gt;XSS&amp;lt;/xscript&amp;gt;.com
+User-Agent: Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 7.0) PTX
+Accept: text/html, image/png, image/jpeg, image/gif, image/x-xbitmap, */*;q=0.1
+Connection: Close
+
+</field></row></body></table>
+<table index="1" name="GenAnswer" description="" format="table">
+<header>
+<column name="Test details" id="1"/></header>
+<body>
+<row>
+<field id="1">&amp;lt;...&amp;gt;
+&amp;lt;!DOCTYPE html&amp;gt;
+&amp;lt;html&amp;gt;&amp;lt;head&amp;gt;&amp;lt;title&amp;gt;Moved Temporarily&amp;lt;/title&amp;gt;&amp;lt;/head&amp;gt;
+&amp;lt;body&amp;gt;&amp;lt;h1&amp;gt;Moved Temporarily&amp;lt;/h1&amp;gt;
+&amp;lt;p&amp;gt;The document has moved &amp;lt;a href=&amp;quot;http://hxsih&amp;lt;font color=#BF1C1C&amp;gt;&amp;lt;xscript&amp;gt;XSS&amp;lt;/xscript&amp;gt;&amp;lt;/font&amp;gt;.com/servererror.php?code=404&amp;quot;&amp;gt;here&amp;lt;/a&amp;gt;.&amp;lt;/p&amp;gt;
+&amp;lt;address&amp;gt;Embedthis-Appweb/3.2.3 at Juniper_vSRX Port 80&amp;lt;/address&amp;gt;&amp;lt;/body&amp;gt;
+&amp;lt;/html&amp;gt;
+
+&amp;lt;...&amp;gt;</field></row></body></table></param_list></vulner>
+<vulner id="1200" level="0" status="0">
+<param/>
+<param_list>
+<table index="0" name="Gen" description="" format="table">
+<header>
+<column name="" id="1"/></header>
+<body>
+<row>
+<field id="1">POST /login HTTP/1.1
+&amp;lt;font color=#205AC8&amp;gt;login=login&amp;lt;/font&amp;gt;&amp;amp;username=&amp;amp;&amp;lt;font color=#BF1C1C&amp;gt;password=&amp;lt;/font&amp;gt;</field></row></body></table></param_list></vulner>
+<vulner id="1262" level="0" status="0">
+<param/>
+<param_list>
+<table index="0" name="Gen" description="" format="table">
+<header>
+<column name="" id="1"/></header>
+<body>
+<row>
+<field id="1">&amp;lt;a href=&amp;quot;http://www.juniper.net&amp;quot; target=_blank&amp;gt;http://www.juniper.net&amp;lt;/a&amp;gt;</field></row>
+<row>
+<field id="1">&amp;lt;a href=&amp;quot;http://www.juniper.net/footer&amp;quot; target=_blank&amp;gt;http://www.juniper.net/footer&amp;lt;/a&amp;gt;</field></row>
+<row>
+<field id="1">&amp;lt;a href=&amp;quot;http://www.juniper.net/footerlegal.html&amp;quot; target=_blank&amp;gt;http://www.juniper.net/footerlegal.html&amp;lt;/a&amp;gt;</field></row>
+<row>
+<field id="1">&amp;lt;a href=&amp;quot;http://www.juniper.net/privacy.html&amp;quot; target=_blank&amp;gt;http://www.juniper.net/privacy.html&amp;lt;/a&amp;gt;</field></row></body></table></param_list></vulner>
+<vulner id="1265" level="3" status="0">
+<param/>
+<param_list>
+<table index="0" name="Gen" description="" format="table">
+<header>
+<column name="" id="1"/></header>
+<body>
+<row>
+<field id="1">&amp;lt;a href=&amp;quot;http://172.16.101.143/login.php&amp;quot; target=_blank&amp;gt;/login.php&amp;lt;/a&amp;gt;</field></row></body></table></param_list></vulner>
+<vulner id="1273" level="3" status="0">
+<param/>
+<param_list>
+<table index="0" name="Gen" description="" format="table">
+<header>
+<column name="" id="1"/></header>
+<body>
+<row>
+<field id="1">POST /login HTTP/1.1
+login=login&amp;amp;username=&amp;amp;&amp;lt;font color=#BF1C1C&amp;gt;password=&amp;lt;/font&amp;gt;</field></row></body></table></param_list></vulner>
+<vulner id="1304" level="3" status="0">
+<param/>
+<param_list></param_list></vulner>
+<vulner id="8375" level="0" status="0">
+<param/>
+<param_list>
+<table index="0" name="GenHeaders" description="HTTP Headers" format="table">
+<header>
+<column name="HTTP Header" id="1"/>
+<column name="Value" id="2"/></header>
+<body>
+<row>
+<field id="1">CACHE-CONTROL</field>
+<field id="2">NO-CACHE, MUST-REVALIDATE</field></row>
+<row>
+<field id="1">CONNECTION</field>
+<field id="2">CLOSE</field></row>
+<row>
+<field id="1">CONTENT-TYPE</field>
+<field id="2">TEXT/HTML</field></row>
+<row>
+<field id="1">DATE</field>
+<field id="2">SAT, 10 NOV 2018 11:57:54 GMT</field></row>
+<row>
+<field id="1">ETAG</field>
+<field id="2">&amp;quot;1F222-61CD-54F6015A&amp;quot;</field></row>
+<row>
+<field id="1">EXPIRES</field>
+<field id="2">MON, 26 JUL 1997 05:00:00 GMT</field></row>
+<row>
+<field id="1">LAST-MODIFIED</field>
+<field id="2">SAT, 10 NOV 2018 11:57:54 GMT</field></row>
+<row>
+<field id="1">SERVER</field>
+<field id="2">EMBEDTHIS-APPWEB/3.2.3</field></row>
+<row>
+<field id="1">TRANSFER-ENCODING</field>
+<field id="2">CHUNKED</field></row>
+<row>
+<field id="1">X-FRAME-OPTIONS</field>
+<field id="2">SAMEORIGIN</field></row></body></table></param_list></vulner>
+<vulner id="8376" level="0" status="0">
+<param/>
+<param_list>
+<table index="0" name="GenMethods" description="HTTP Methods" format="list">
+<header>
+<column name="" id="1"/></header>
+<body>
+<row>
+<field id="1">OPTIONS GET HEAD POST PUT DELETE</field></row></body></table></param_list></vulner></vulners></soft>
+<soft port_status="0" type="3" port="0" id="3" security_object="0" protocol="6" service="1">
+<name>System</name>
+<version/>
+<path/>
+<metadata>
+<soft_version id="0"/></metadata>
+<statistics>
+<table index="2" name="GenPortStatistics" description="" format="table">
+<header>
+<column name="scan_time" id="1"/></header>
+<body>
+<row>
+<field id="1">0 sec</field></row></body></table></statistics>
+<vulners>
+<vulner id="1222" level="0" status="0">
+<param>JUNOS 12.1X47-D20.7</param>
+<param_list>
+<table index="1" name="GenOperatingSystemsList" description="Detection methods" format="table">
+<header>
+<column name="Name" id="1"/>
+<column name="Version" id="2"/>
+<column name="Detection method" id="3"/>
+<column name="Weight" id="4"/></header>
+<body>
+<row>
+<field id="1">Juniper JUNOS</field>
+<field id="2">JUNOS 12.1X47-D20.7</field>
+<field id="3">SNMP (161/UDP)</field>
+<field id="4">30</field></row></body></table></param_list></vulner>
+<vulner id="8123" level="0" status="0">
+<param/>
+<param_list>
+<table index="0" name="Gentime_table" description="Routing information" format="table">
+<header>
+<column name="TTL" id="1"/>
+<column name="Hop address" id="2"/>
+<column name="Round Trip Time, ms" id="3"/></header>
+<body>
+<row>
+<field id="1">1</field>
+<field id="2">10.4.5.1</field>
+<field id="3">                       0.10   0.13   0.14   </field></row>
+<row>
+<field id="1">2</field>
+<field id="2">172.16.7.2</field>
+<field id="3">                       1.10   0.83   0.76   </field></row>
+<row>
+<field id="1">3</field>
+<field id="2">172.16.101.143</field>
+<field id="3">                       9.43   7.79   7.50   </field></row></body></table></param_list></vulner>
+<vulner id="8124" level="0" status="0">
+<param/>
+<param_list>
+<table index="0" name="Genuptime" description="Guess uptime" format="key-value">
+<header>
+<column name="Guess uptime" id="1"/></header>
+<body>
+<row>
+<field id="1">        11 days or more</field></row></body></table></param_list></vulner>
+<vulner id="8134" level="0" status="0">
+<param/>
+<param_list>
+<table index="0" name="Gendelta" description="Timestamp delta" format="key-value">
+<header>
+<column name="Timestamp delta" id="1"/></header>
+<body>
+<row>
+<field id="1">-34755.7 +/- 0.002 seconds</field></row></body></table></param_list></vulner></vulners></soft>
+<soft port_status="0" type="3" port="161" id="4" security_object="0" protocol="17" service="10007">
+<name>SNMP</name>
+<version/>
+<path/>
+<metadata>
+<soft_version id="0"/></metadata>
+<banner>
+<table index="2" name="GenProtocolVersions" description="Protocol versions" format="key-value">
+<header>
+<column name="Protocol versions" id="1"/></header>
+<body>
+<row>
+<field id="1">1, 2, 3</field></row></body></table></banner>
+<statistics>
+<table index="2" name="GenPortStatistics" description="" format="table">
+<header>
+<column name="scan_time" id="1"/></header>
+<body>
+<row>
+<field id="1">6 sec</field></row></body></table></statistics>
+<vulners>
+<vulner id="8166" level="0" status="0">
+<param/>
+<param_list>
+<table index="0" name="GenStaticARP" description="ARP table" format="table">
+<header>
+<column name="IP" id="1"/>
+<column name="MAC" id="2"/></header>
+<body>
+<row>
+<field id="1">172.16.101.143</field>
+<field id="2">50:00:00:08:00:00</field></row></body></table>
+<table index="1" name="GenCommunity" description="Community Strings" format="table">
+<header>
+<column name="Name" id="1"/></header>
+<body>
+<row>
+<field id="1">public</field></row></body></table></param_list></vulner>
+<vulner id="8167" level="0" status="0">
+<param/>
+<param_list>
+<table index="0" name="GenInterfaces" description="Network interface list" format="table">
+<header>
+<column name="Interface ID" id="1"/>
+<column name="Description" id="2"/>
+<column name="Type" id="3"/>
+<column name="MTU" id="4"/>
+<column name="Speed" id="5"/>
+<column name="MAC" id="6"/>
+<column name="Admin status" id="7"/>
+<column name="Operation status" id="8"/></header>
+<body>
+<row>
+<field id="1">506</field>
+<field id="2">vlan</field>
+<field id="3">6</field>
+<field id="4">1518</field>
+<field id="5">1000000000</field>
+<field id="6">00:00:00:00:00:00</field>
+<field id="7">up</field>
+<field id="8">down</field></row>
+<row>
+<field id="1">517</field>
+<field id="2">lt-0/0/0</field>
+<field id="3">131</field>
+<field id="4">2147483647</field>
+<field id="5">800000000</field>
+<field id="6">02:96:14:58:02:b3</field>
+<field id="7">up</field>
+<field id="8">up</field></row>
+<row>
+<field id="1">501</field>
+<field id="2">irb</field>
+<field id="3">1</field>
+<field id="4">1514</field>
+<field id="5">0</field>
+<field id="6">4c:96:14:58:02:b0</field>
+<field id="7">up</field>
+<field id="8">up</field></row>
+<row>
+<field id="1">507</field>
+<field id="2">ge-0/0/0</field>
+<field id="3">6</field>
+<field id="4">1514</field>
+<field id="5">1000000000</field>
+<field id="6">50:00:00:08:00:00</field>
+<field id="7">up</field>
+<field id="8">up</field></row>
+<row>
+<field id="1">511</field>
+<field id="2">ge-0/0/0.0</field>
+<field id="3">53</field>
+<field id="4">1500</field>
+<field id="5">1000000000</field>
+<field id="6">50:00:00:08:00:00</field>
+<field id="7">up</field>
+<field id="8">up</field></row>
+<row>
+<field id="1">508</field>
+<field id="2">ge-0/0/1</field>
+<field id="3">6</field>
+<field id="4">1514</field>
+<field id="5">1000000000</field>
+<field id="6">50:00:00:08:00:01</field>
+<field id="7">up</field>
+<field id="8">up</field></row>
+<row>
+<field id="1">509</field>
+<field id="2">ge-0/0/2</field>
+<field id="3">6</field>
+<field id="4">1514</field>
+<field id="5">1000000000</field>
+<field id="6">50:00:00:08:00:02</field>
+<field id="7">up</field>
+<field id="8">up</field></row>
+<row>
+<field id="1">510</field>
+<field id="2">ge-0/0/3</field>
+<field id="3">6</field>
+<field id="4">1514</field>
+<field id="5">1000000000</field>
+<field id="6">50:00:00:08:00:03</field>
+<field id="7">up</field>
+<field id="8">up</field></row>
+<row>
+<field id="1">4</field>
+<field id="2">lsi</field>
+<field id="3">150</field>
+<field id="4">1496</field>
+<field id="5">0</field>
+<field id="6">N/A</field>
+<field id="7">up</field>
+<field id="8">up</field></row>
+<row>
+<field id="1">5</field>
+<field id="2">dsc</field>
+<field id="3">1</field>
+<field id="4">2147483647</field>
+<field id="5">0</field>
+<field id="6">N/A</field>
+<field id="7">up</field>
+<field id="8">up</field></row>
+<row>
+<field id="1">6</field>
+<field id="2">lo0</field>
+<field id="3">24</field>
+<field id="4">2147483647</field>
+<field id="5">0</field>
+<field id="6">N/A</field>
+<field id="7">up</field>
+<field id="8">up</field></row>
+<row>
+<field id="1">7</field>
+<field id="2">tap</field>
+<field id="3">1</field>
+<field id="4">2147483647</field>
+<field id="5">0</field>
+<field id="6">N/A</field>
+<field id="7">up</field>
+<field id="8">up</field></row>
+<row>
+<field id="1">8</field>
+<field id="2">gre</field>
+<field id="3">131</field>
+<field id="4">2147483647</field>
+<field id="5">0</field>
+<field id="6">N/A</field>
+<field id="7">up</field>
+<field id="8">up</field></row>
+<row>
+<field id="1">9</field>
+<field id="2">ipip</field>
+<field id="3">131</field>
+<field id="4">2147483647</field>
+<field id="5">0</field>
+<field id="6">N/A</field>
+<field id="7">up</field>
+<field id="8">up</field></row>
+<row>
+<field id="1">10</field>
+<field id="2">pime</field>
+<field id="3">131</field>
+<field id="4">2147483647</field>
+<field id="5">0</field>
+<field id="6">N/A</field>
+<field id="7">up</field>
+<field id="8">up</field></row>
+<row>
+<field id="1">11</field>
+<field id="2">pimd</field>
+<field id="3">131</field>
+<field id="4">2147483647</field>
+<field id="5">0</field>
+<field id="6">N/A</field>
+<field id="7">up</field>
+<field id="8">up</field></row>
+<row>
+<field id="1">12</field>
+<field id="2">mtun</field>
+<field id="3">131</field>
+<field id="4">2147483647</field>
+<field id="5">0</field>
+<field id="6">N/A</field>
+<field id="7">up</field>
+<field id="8">up</field></row>
+<row>
+<field id="1">21</field>
+<field id="2">lo0.16384</field>
+<field id="3">24</field>
+<field id="4">2147483647</field>
+<field id="5">0</field>
+<field id="6">N/A</field>
+<field id="7">up</field>
+<field id="8">up</field></row>
+<row>
+<field id="1">22</field>
+<field id="2">lo0.16385</field>
+<field id="3">24</field>
+<field id="4">2147483647</field>
+<field id="5">0</field>
+<field id="6">N/A</field>
+<field id="7">up</field>
+<field id="8">up</field></row>
+<row>
+<field id="1">248</field>
+<field id="2">lo0.32768</field>
+<field id="3">24</field>
+<field id="4">0</field>
+<field id="5">0</field>
+<field id="6">N/A</field>
+<field id="7">up</field>
+<field id="8">up</field></row>
+<row>
+<field id="1">502</field>
+<field id="2">pp0</field>
+<field id="3">1</field>
+<field id="4">1532</field>
+<field id="5">0</field>
+<field id="6">N/A</field>
+<field id="7">up</field>
+<field id="8">up</field></row>
+<row>
+<field id="1">503</field>
+<field id="2">ppd0</field>
+<field id="3">131</field>
+<field id="4">2147483647</field>
+<field id="5">800000000</field>
+<field id="6">N/A</field>
+<field id="7">up</field>
+<field id="8">up</field></row>
+<row>
+<field id="1">504</field>
+<field id="2">ppe0</field>
+<field id="3">131</field>
+<field id="4">2147483647</field>
+<field id="5">800000000</field>
+<field id="6">N/A</field>
+<field id="7">up</field>
+<field id="8">up</field></row>
+<row>
+<field id="1">505</field>
+<field id="2">st0</field>
+<field id="3">1</field>
+<field id="4">9192</field>
+<field id="5">0</field>
+<field id="6">N/A</field>
+<field id="7">up</field>
+<field id="8">up</field></row>
+<row>
+<field id="1">512</field>
+<field id="2">sp-0/0/0</field>
+<field id="3">1</field>
+<field id="4">9192</field>
+<field id="5">800000000</field>
+<field id="6">N/A</field>
+<field id="7">up</field>
+<field id="8">up</field></row>
+<row>
+<field id="1">513</field>
+<field id="2">gr-0/0/0</field>
+<field id="3">131</field>
+<field id="4">2147483647</field>
+<field id="5">800000000</field>
+<field id="6">N/A</field>
+<field id="7">up</field>
+<field id="8">up</field></row>
+<row>
+<field id="1">514</field>
+<field id="2">ip-0/0/0</field>
+<field id="3">131</field>
+<field id="4">2147483647</field>
+<field id="5">800000000</field>
+<field id="6">N/A</field>
+<field id="7">up</field>
+<field id="8">up</field></row>
+<row>
+<field id="1">515</field>
+<field id="2">lsq-0/0/0</field>
+<field id="3">108</field>
+<field id="4">1504</field>
+<field id="5">622080000</field>
+<field id="6">N/A</field>
+<field id="7">up</field>
+<field id="8">up</field></row>
+<row>
+<field id="1">516</field>
+<field id="2">mt-0/0/0</field>
+<field id="3">131</field>
+<field id="4">2147483647</field>
+<field id="5">800000000</field>
+<field id="6">N/A</field>
+<field id="7">up</field>
+<field id="8">up</field></row>
+<row>
+<field id="1">518</field>
+<field id="2">sp-0/0/0.0</field>
+<field id="3">53</field>
+<field id="4">9192</field>
+<field id="5">800000000</field>
+<field id="6">N/A</field>
+<field id="7">up</field>
+<field id="8">up</field></row>
+<row>
+<field id="1">519</field>
+<field id="2">sp-0/0/0.16383</field>
+<field id="3">53</field>
+<field id="4">9192</field>
+<field id="5">800000000</field>
+<field id="6">N/A</field>
+<field id="7">up</field>
+<field id="8">up</field></row></body></table>
+<table index="1" name="GenCommunity" description="Community Strings" format="table">
+<header>
+<column name="Name" id="1"/></header>
+<body>
+<row>
+<field id="1">public</field></row></body></table></param_list></vulner>
+<vulner id="8168" level="0" status="0">
+<param/>
+<param_list>
+<table index="0" name="GenSysInfo" description="" format="key-value">
+<header>
+<column name="Description" id="1"/>
+<column name="Uptime" id="2"/>
+<column name="Contact" id="3"/>
+<column name="Name" id="4"/>
+<column name="Location" id="5"/></header>
+<body>
+<row>
+<field id="1">Juniper Networks, Inc. firefly-perimeter internet router, kernel JUNOS 12.1X47-D20.7 #0: 2015-03-03 21:53:50 UTC     builder@chamuth.juniper.net:/volume/build/junos/12.1/service/12.1X47-D20.7/obj-i386/junos/bsd/kernels/VSRX/kernel Build date: 2015-03-03 </field>
+<field id="2">11 days 02:49:09.46</field>
+<field id="3"> </field>
+<field id="4">Juniper_vSRX</field>
+<field id="5"> </field></row></body></table>
+<table index="1" name="GenCommunity" description="Community Strings" format="table">
+<header>
+<column name="Name" id="1"/></header>
+<body>
+<row>
+<field id="1">public</field></row></body></table></param_list></vulner>
+<vulner id="8169" level="0" status="0">
+<param/>
+<param_list>
+<table index="0" name="GenIpAddr" description="IP address list" format="table">
+<header>
+<column name="IP Address" id="1"/>
+<column name="Interface ID" id="2"/>
+<column name="Netmask" id="3"/></header>
+<body>
+<row>
+<field id="1">10.0.0.1</field>
+<field id="2">22</field>
+<field id="3">255.255.255.255</field></row>
+<row>
+<field id="1">10.0.0.6</field>
+<field id="2">519</field>
+<field id="3">255.255.255.255</field></row>
+<row>
+<field id="1">10.0.0.16</field>
+<field id="2">22</field>
+<field id="3">255.255.255.255</field></row>
+<row>
+<field id="1">127.0.0.1</field>
+<field id="2">21</field>
+<field id="3">255.255.255.255</field></row>
+<row>
+<field id="1">128.0.0.1</field>
+<field id="2">22</field>
+<field id="3">255.255.255.255</field></row>
+<row>
+<field id="1">128.0.0.4</field>
+<field id="2">22</field>
+<field id="3">255.255.255.255</field></row>
+<row>
+<field id="1">128.0.0.6</field>
+<field id="2">519</field>
+<field id="3">255.255.255.255</field></row>
+<row>
+<field id="1">128.0.1.16</field>
+<field id="2">22</field>
+<field id="3">255.255.255.255</field></row>
+<row>
+<field id="1">172.16.101.143</field>
+<field id="2">511</field>
+<field id="3">255.255.255.0</field></row></body></table>
+<table index="1" name="GenCommunity" description="Community Strings" format="table">
+<header>
+<column name="Name" id="1"/></header>
+<body>
+<row>
+<field id="1">public</field></row></body></table></param_list></vulner>
+<vulner id="8171" level="0" status="0">
+<param/>
+<param_list>
+<table index="0" name="Gentcp" description="Opened TCP ports" format="table">
+<header>
+<column name="Port No." id="1"/></header>
+<body>
+<row>
+<field id="1">22</field></row>
+<row>
+<field id="1">80</field></row>
+<row>
+<field id="1"> </field></row></body></table>
+<table index="1" name="Genudp" description="Opened UDP ports" format="table">
+<header>
+<column name="Port No." id="1"/></header>
+<body>
+<row>
+<field id="1">161</field></row>
+<row>
+<field id="1">500</field></row>
+<row>
+<field id="1">514</field></row>
+<row>
+<field id="1">3503</field></row>
+<row>
+<field id="1">3784</field></row>
+<row>
+<field id="1">4500</field></row>
+<row>
+<field id="1">4784</field></row>
+<row>
+<field id="1">6333</field></row>
+<row>
+<field id="1">31342</field></row>
+<row>
+<field id="1">49152</field></row>
+<row>
+<field id="1">49462</field></row>
+<row>
+<field id="1">61125</field></row>
+<row>
+<field id="1"> </field></row></body></table></param_list></vulner></vulners></soft>
+<soft port_status="0" type="3" port="500" id="5" security_object="0" protocol="17" service="0">
+<name/>
+<version/>
+<path/>
+<metadata>
+<soft_version id="0"/></metadata>
+<banner></banner>
+<statistics>
+<table index="2" name="GenPortStatistics" description="" format="table">
+<header>
+<column name="scan_time" id="1"/></header>
+<body>
+<row>
+<field id="1">0 sec</field></row></body></table></statistics></soft>
+<soft port_status="0" type="3" port="514" id="6" security_object="0" protocol="17" service="0">
+<name/>
+<version/>
+<path/>
+<metadata>
+<soft_version id="0"/></metadata>
+<banner></banner>
+<statistics>
+<table index="2" name="GenPortStatistics" description="" format="table">
+<header>
+<column name="scan_time" id="1"/></header>
+<body>
+<row>
+<field id="1">0 sec</field></row></body></table></statistics></soft>
+<soft port_status="0" type="3" port="3503" id="7" security_object="0" protocol="17" service="0">
+<name/>
+<version/>
+<path/>
+<metadata>
+<soft_version id="0"/></metadata>
+<statistics>
+<table index="2" name="GenPortStatistics" description="" format="table">
+<header>
+<column name="scan_time" id="1"/></header>
+<body>
+<row>
+<field id="1">0 sec</field></row></body></table></statistics></soft>
+<soft port_status="0" type="3" port="3784" id="8" security_object="0" protocol="17" service="0">
+<name/>
+<version/>
+<path/>
+<metadata>
+<soft_version id="0"/></metadata>
+<statistics>
+<table index="2" name="GenPortStatistics" description="" format="table">
+<header>
+<column name="scan_time" id="1"/></header>
+<body>
+<row>
+<field id="1">0 sec</field></row></body></table></statistics></soft>
+<soft port_status="0" type="3" port="4500" id="9" security_object="0" protocol="17" service="0">
+<name/>
+<version/>
+<path/>
+<metadata>
+<soft_version id="0"/></metadata>
+<banner></banner>
+<statistics>
+<table index="2" name="GenPortStatistics" description="" format="table">
+<header>
+<column name="scan_time" id="1"/></header>
+<body>
+<row>
+<field id="1">0 sec</field></row></body></table></statistics></soft>
+<soft port_status="0" type="3" port="4784" id="10" security_object="0" protocol="17" service="0">
+<name/>
+<version/>
+<path/>
+<metadata>
+<soft_version id="0"/></metadata>
+<statistics>
+<table index="2" name="GenPortStatistics" description="" format="table">
+<header>
+<column name="scan_time" id="1"/></header>
+<body>
+<row>
+<field id="1">0 sec</field></row></body></table></statistics></soft>
+<soft port_status="0" type="3" port="6333" id="11" security_object="0" protocol="17" service="0">
+<name/>
+<version/>
+<path/>
+<metadata>
+<soft_version id="0"/></metadata>
+<statistics>
+<table index="2" name="GenPortStatistics" description="" format="table">
+<header>
+<column name="scan_time" id="1"/></header>
+<body>
+<row>
+<field id="1">0 sec</field></row></body></table></statistics></soft>
+<soft port_status="0" type="3" port="31342" id="12" security_object="0" protocol="17" service="0">
+<name/>
+<version/>
+<path/>
+<metadata>
+<soft_version id="0"/></metadata>
+<statistics>
+<table index="2" name="GenPortStatistics" description="" format="table">
+<header>
+<column name="scan_time" id="1"/></header>
+<body>
+<row>
+<field id="1">0 sec</field></row></body></table></statistics></soft>
+<soft port_status="0" type="3" port="49152" id="13" security_object="0" protocol="17" service="0">
+<name/>
+<version/>
+<path/>
+<metadata>
+<soft_version id="0"/></metadata>
+<statistics>
+<table index="2" name="GenPortStatistics" description="" format="table">
+<header>
+<column name="scan_time" id="1"/></header>
+<body>
+<row>
+<field id="1">0 sec</field></row></body></table></statistics></soft>
+<soft port_status="0" type="3" port="49462" id="14" security_object="0" protocol="17" service="0">
+<name/>
+<version/>
+<path/>
+<metadata>
+<soft_version id="0"/></metadata>
+<statistics>
+<table index="2" name="GenPortStatistics" description="" format="table">
+<header>
+<column name="scan_time" id="1"/></header>
+<body>
+<row>
+<field id="1">0 sec</field></row></body></table></statistics></soft>
+<soft port_status="0" type="3" port="61125" id="15" security_object="0" protocol="17" service="0">
+<name/>
+<version/>
+<path/>
+<metadata>
+<soft_version id="0"/></metadata>
+<statistics>
+<table index="2" name="GenPortStatistics" description="" format="table">
+<header>
+<column name="scan_time" id="1"/></header>
+<body>
+<row>
+<field id="1">0 sec</field></row></body></table></statistics></soft>
+<soft type="0" port="22" id="16" security_object="6069174" protocol="6" service="1100">
+<name>OpenSSH Server</name>
+<version>6.6</version>
+<path/>
+<metadata>
+<soft_version id="6175703"/></metadata>
+<vulners>
+<vulner id="183773" level="4" status="1">
+<param/>
+<param_list/></vulner>
+<vulner id="184735" level="2" status="1">
+<param/>
+<param_list/></vulner>
+<vulner id="184810" level="4" status="1">
+<param/>
+<param_list/></vulner>
+<vulner id="184891" level="1" status="1">
+<param/>
+<param_list/></vulner>
+<vulner id="184892" level="2" status="1">
+<param/>
+<param_list/></vulner>
+<vulner id="185619" level="2" status="1">
+<param/>
+<param_list/></vulner>
+<vulner id="185816" level="2" status="1">
+<param/>
+<param_list/></vulner>
+<vulner id="186569" level="4" status="1">
+<param/>
+<param_list/></vulner>
+<vulner id="186616" level="4" status="1">
+<param/>
+<param_list/></vulner>
+<vulner id="187538" level="4" status="1">
+<param/>
+<param_list/></vulner>
+<vulner id="187539" level="2" status="1">
+<param/>
+<param_list/></vulner>
+<vulner id="187540" level="1" status="1">
+<param/>
+<param_list/></vulner>
+<vulner id="187541" level="4" status="1">
+<param/>
+<param_list/></vulner>
+<vulner id="188148" level="2" status="1">
+<param/>
+<param_list/></vulner>
+<vulner id="189261" level="2" status="1">
+<param/>
+<param_list/></vulner>
+<vulner id="190653" level="2" status="1">
+<param/>
+<param_list/></vulner></vulners></soft>
+<soft type="0" port="161" id="18" security_object="6079717" protocol="17" service="10007">
+<name>Juniper JUNOS Update</name>
+<version>2015-03-03</version>
+<path/>
+<metadata>
+<soft_version id="6079717"/></metadata></soft>
+<soft type="2" port="0" id="19" security_object="6076750" protocol="0" service="6076750">
+<name>Juniper JUNOS</name>
+<version>JUNOS 12.1X47-D20.7</version>
+<path/>
+<metadata>
+<soft_version id="6076750"/></metadata>
+<vulners>
+<vulner id="183847" level="2" status="1">
+<param/>
+<param_list/></vulner>
+<vulner id="184487" level="2" status="1">
+<param/>
+<param_list/></vulner>
+<vulner id="184488" level="2" status="1">
+<param/>
+<param_list/></vulner>
+<vulner id="184489" level="2" status="1">
+<param/>
+<param_list/></vulner>
+<vulner id="184490" level="2" status="1">
+<param/>
+<param_list/></vulner>
+<vulner id="184491" level="2" status="1">
+<param/>
+<param_list/></vulner>
+<vulner id="184492" level="2" status="1">
+<param/>
+<param_list/></vulner>
+<vulner id="184618" level="2" status="1">
+<param/>
+<param_list/></vulner>
+<vulner id="184619" level="2" status="1">
+<param/>
+<param_list/></vulner>
+<vulner id="184620" level="2" status="1">
+<param/>
+<param_list/></vulner>
+<vulner id="184621" level="2" status="1">
+<param/>
+<param_list/></vulner>
+<vulner id="184622" level="2" status="1">
+<param/>
+<param_list/></vulner>
+<vulner id="184679" level="2" status="1">
+<param/>
+<param_list/></vulner>
+<vulner id="184810" level="4" status="1">
+<param/>
+<param_list/></vulner>
+<vulner id="185092" level="2" status="1">
+<param/>
+<param_list/></vulner>
+<vulner id="185334" level="2" status="1">
+<param/>
+<param_list/></vulner>
+<vulner id="185348" level="4" status="1">
+<param/>
+<param_list/></vulner>
+<vulner id="185655" level="2" status="1">
+<param/>
+<param_list/></vulner>
+<vulner id="185656" level="2" status="1">
+<param/>
+<param_list/></vulner>
+<vulner id="185657" level="2" status="1">
+<param/>
+<param_list/></vulner>
+<vulner id="185775" level="2" status="1">
+<param/>
+<param_list/></vulner>
+<vulner id="185881" level="4" status="1">
+<param/>
+<param_list/></vulner>
+<vulner id="185882" level="2" status="1">
+<param/>
+<param_list/></vulner>
+<vulner id="185883" level="2" status="1">
+<param/>
+<param_list/></vulner>
+<vulner id="185884" level="2" status="1">
+<param/>
+<param_list/></vulner>
+<vulner id="186036" level="4" status="1">
+<param/>
+<param_list/></vulner>
+<vulner id="186037" level="2" status="1">
+<param/>
+<param_list/></vulner>
+<vulner id="186038" level="4" status="1">
+<param/>
+<param_list/></vulner>
+<vulner id="186039" level="2" status="1">
+<param/>
+<param_list/></vulner>
+<vulner id="186040" level="2" status="1">
+<param/>
+<param_list/></vulner>
+<vulner id="186042" level="2" status="1">
+<param/>
+<param_list/></vulner>
+<vulner id="186043" level="2" status="1">
+<param/>
+<param_list/></vulner>
+<vulner id="187483" level="2" status="1">
+<param/>
+<param_list/></vulner>
+<vulner id="187484" level="2" status="1">
+<param/>
+<param_list/></vulner>
+<vulner id="187485" level="1" status="1">
+<param/>
+<param_list/></vulner>
+<vulner id="187486" level="2" status="1">
+<param/>
+<param_list/></vulner>
+<vulner id="187487" level="2" status="1">
+<param/>
+<param_list/></vulner>
+<vulner id="187488" level="2" status="1">
+<param/>
+<param_list/></vulner>
+<vulner id="187489" level="4" status="1">
+<param/>
+<param_list/></vulner>
+<vulner id="187490" level="4" status="1">
+<param/>
+<param_list/></vulner>
+<vulner id="187491" level="4" status="1">
+<param/>
+<param_list/></vulner>
+<vulner id="187492" level="2" status="1">
+<param/>
+<param_list/></vulner>
+<vulner id="187493" level="2" status="1">
+<param/>
+<param_list/></vulner>
+<vulner id="187494" level="4" status="1">
+<param/>
+<param_list/></vulner>
+<vulner id="187495" level="4" status="1">
+<param/>
+<param_list/></vulner>
+<vulner id="187496" level="2" status="1">
+<param/>
+<param_list/></vulner>
+<vulner id="187497" level="4" status="1">
+<param/>
+<param_list/></vulner>
+<vulner id="187498" level="1" status="1">
+<param/>
+<param_list/></vulner>
+<vulner id="187500" level="2" status="1">
+<param/>
+<param_list/></vulner>
+<vulner id="187501" level="2" status="1">
+<param/>
+<param_list/></vulner>
+<vulner id="187502" level="2" status="1">
+<param/>
+<param_list/></vulner>
+<vulner id="187503" level="2" status="1">
+<param/>
+<param_list/></vulner>
+<vulner id="187504" level="2" status="1">
+<param/>
+<param_list/></vulner>
+<vulner id="187505" level="2" status="1">
+<param/>
+<param_list/></vulner>
+<vulner id="187506" level="2" status="1">
+<param/>
+<param_list/></vulner>
+<vulner id="187507" level="4" status="1">
+<param/>
+<param_list/></vulner>
+<vulner id="187508" level="4" status="1">
+<param/>
+<param_list/></vulner>
+<vulner id="187509" level="2" status="1">
+<param/>
+<param_list/></vulner>
+<vulner id="187591" level="2" status="1">
+<param/>
+<param_list/></vulner>
+<vulner id="187897" level="2" status="1">
+<param/>
+<param_list/></vulner>
+<vulner id="187906" level="1" status="1">
+<param/>
+<param_list/></vulner>
+<vulner id="187907" level="4" status="1">
+<param/>
+<param_list/></vulner>
+<vulner id="187908" level="4" status="1">
+<param/>
+<param_list/></vulner>
+<vulner id="187909" level="2" status="1">
+<param/>
+<param_list/></vulner>
+<vulner id="188189" level="4" status="1">
+<param/>
+<param_list/></vulner></vulners></soft></scan_objects></host></data>
+<vulners>
+<vulner id="1092">
+<title>Remote Control</title>
+<short_description>Start remote control service.</short_description>
+<description>Remote control service is started. An attacker can access other network hosts using vulnerabilities in the service implementation or configuration.</description>
+<how_to_fix>Disable the service access for all hosts until it is necessary.
+Pay special attention to the service configuration.
+Ensure that the service is unavailable from the Internet.</how_to_fix>
+<links/></vulner>
+<vulner id="1130">
+<title>Links with Parameters</title>
+<short_description/>
+<description>The list of links with parameters published on web-server pages.
+
+An attacker could use this information to gain knowledge of what is stored on the server and its overall structure.</description>
+<how_to_fix/>
+<links/></vulner>
+<vulner id="1168">
+<title>Cross-Site Scripting</title>
+<short_description/>
+<description>It is possible to perform Cross Site Scripting attack. Cross site scripting (also known as XSS) occurs when a web application gathers malicious data from a user. The data is usually gathered in the form of a hyperlink which contains malicious content within it. The user will most likely click on this link from another website, instant message, or simply just reading a web board or email message. Usually the attacker will encode the malicious portion of the link to the site in HEX (or other encoding methods) so the request is less suspicious looking to the user when clicked on. After the data is collected by the web application, it creates an output page for the user containing the malicious data that was originally sent to it, but in a manner to make it appear as valid content from the website.</description>
+<how_to_fix>Do not use this script or fix program code.</how_to_fix>
+<links>http://www.cgisecurity.com/articles/xss-faq.shtml
+http://www.cert.org/advisories/CA-2000-02.html
+http://support.microsoft.com/default.aspx?scid=kb;EN-US;q252985
+http://httpd.apache.org/info/css-security/apache_specific.html
+</links>
+<cvss temp_score="0.0" base_score="4.3" temp_score_decomp="" base_score_decomp="(AV:N/AC:M/Au:N/C:N/I:P/A:N)"/></vulner>
+<vulner id="1200">
+<title>List of Forms</title>
+<short_description/>
+<description>The forms (POST request) which can post data to the server detected. Variables &amp;lt;font color=#205AC8&amp;gt;HIDDEN&amp;lt;/font&amp;gt; can contain sensitive information. Variables &amp;lt;font color=#BF1C1C&amp;gt;PASSWORD&amp;lt;/font&amp;gt; used for password entering.
+
+List of forms:</description>
+<how_to_fix/>
+<links/></vulner>
+<vulner id="1222">
+<title>OS</title>
+<short_description/>
+<description>Probable Operating System.</description>
+<how_to_fix/>
+<links/></vulner>
+<vulner id="1262">
+<title>External Links Listed</title>
+<short_description/>
+<description>External links published on web-server pages:</description>
+<how_to_fix/>
+<links/></vulner>
+<vulner id="1265">
+<title>Invisible Links Listed</title>
+<short_description/>
+<description>Invisible links finded on web-server (Dictionary):</description>
+<how_to_fix>Delete files and directories if not needed.</how_to_fix>
+<links/>
+<cvss temp_score="0.0" base_score="4.3" temp_score_decomp="" base_score_decomp="(AV:N/AC:M/Au:N/C:P/I:N/A:N)"/></vulner>
+<vulner id="1273">
+<title>Unencrypted Data Transferring</title>
+<short_description/>
+<description>The forms which can post Unencrypted Sensitive data to the server detected.
+Protocol HTTP is not secure: all traffic (including passwords) between computers is not encrypted and can be intercepted using a &quot;sniffer&quot; program.
+Forms listing:</description>
+<how_to_fix>Use TLS 1.1 or TLS 1.2 protocol for transferring sensitive user information.</how_to_fix>
+<links/>
+<cvss temp_score="0.0" base_score="3.3" temp_score_decomp="" base_score_decomp="(AV:A/AC:L/Au:N/C:P/I:N/A:N)"/></vulner>
+<vulner id="1304">
+<title>Threat of Anti DNS Pinning</title>
+<short_description>The server is vulnerable to Same Origin Policy Bypassing via Anti DNS Pinning (DNS rebinding).</short_description>
+<description>Anti DNS Pinning (DNS rebinding) attack allows an attacker to manipulate the correspondence between IP address and fully qualified domain name (FQDN) with the purpose of initialising active content within the trust relationship with the vulnerable site. This technique allows an attacker to use the target browser for obtaining access to protected sites (for example, such sites that are protected by firewall or those that require authentication). Unlike Cross-Site Request Forgery (CSRF), the purpose of Anti DNS Pinning attack is to obtain sensitive data (confidentiality violation), not to perform specific actions with an application (integrity violation). However, used in combination with CSRF, Anti DNS Pinning can allow gaining full access to a web application via user browser.
+The problem is that server does not sufficiently verify Host field in HTTP request. Server should return an error if the received request includes arbitrary address in Host field.</description>
+<how_to_fix>To remove default virtual web-sites which reply to HTTP requests with arbitrary value of the HOST header, on IIS set a non-null &apos;Host header value&apos; for all web sites. On Apache, set a non-null value of ServerName for all virtual sites (even if there is only one site, it should work as Virtual Host), and ensure that the site does not point to any other sites, but returns an error.</how_to_fix>
+<links>https://www.blackhat.com/presentations/bh-usa-07/Byrne/Presentation/bh-usa-07-byrne.pdf
+http://www.servletsuite.com/servlets/hostflt.htm
+http://ha.ckers.org/blog/20060908/dns-pinning-just-got-worse/</links>
+<cvss temp_score="0.0" base_score="5.4" temp_score_decomp="" base_score_decomp="(AV:N/AC:H/Au:N/C:C/I:N/A:N)"/></vulner>
+<vulner id="8123">
+<title>Route to target host</title>
+<short_description>Route to taget host in chain of intermediate hosts.</short_description>
+<description>Knowledge of path to host can provide information about network structure. Having big number of paths to different hosts enough to build detailed map of network.</description>
+<how_to_fix/>
+<links/>
+<cvss temp_score="0.0" base_score="0.0" temp_score_decomp="" base_score_decomp=""/></vulner>
+<vulner id="8124">
+<title>Supposed host uptime</title>
+<short_description>Supposed uptime of scanned host</short_description>
+<description>Supposed host uptime might be incorrect if real host uptime is greater than a month.</description>
+<how_to_fix/>
+<links/>
+<cvss temp_score="0.0" base_score="0.0" temp_score_decomp="" base_score_decomp=""/></vulner>
+<vulner id="8134">
+<title>ICMP Timestamp Response</title>
+<short_description>Remote host timestamp received.</short_description>
+<description>The remote host responded to an ICMP timestamp request. It allows an attacker to find out what date is set on the target machine and use this information to attack cryptographic protocols with time-based parameters.</description>
+<how_to_fix/>
+<links/>
+<cvss temp_score="0.0" base_score="0.0" temp_score_decomp="" base_score_decomp=""/></vulner>
+<vulner id="8166">
+<title>ARP table</title>
+<short_description/>
+<description>ARP table static data are found. ARP table is used to determine the MAC address of a particular IP address. ARP table static data provide protection against ARP spoofing.</description>
+<how_to_fix/>
+<links/>
+<cvss temp_score="0.0" base_score="0.0" temp_score_decomp="" base_score_decomp=""/></vulner>
+<vulner id="8167">
+<title>Network interface list</title>
+<short_description/>
+<description>A network interface list is found. The network interface list may be used to gain information on the network architecture and node configuration.</description>
+<how_to_fix/>
+<links/>
+<cvss temp_score="0.0" base_score="0.0" temp_score_decomp="" base_score_decomp=""/></vulner>
+<vulner id="8168">
+<title>System information</title>
+<short_description/>
+<description/>
+<how_to_fix/>
+<links/>
+<cvss temp_score="0.0" base_score="0.0" temp_score_decomp="" base_score_decomp=""/></vulner>
+<vulner id="8169">
+<title>IP address list</title>
+<short_description/>
+<description>A network interface IP address list is found. Each network interface may be associated with several IP addresses.</description>
+<how_to_fix/>
+<links/>
+<cvss temp_score="0.0" base_score="0.0" temp_score_decomp="" base_score_decomp=""/></vulner>
+<vulner id="8171">
+<title>Opened ports list</title>
+<short_description/>
+<description>An opened ports list is obtained. This list contains only ports opened on the scanned interface or on all host&apos;s interfaces.</description>
+<how_to_fix/>
+<links/>
+<cvss temp_score="0.0" base_score="0.0" temp_score_decomp="" base_score_decomp=""/></vulner>
+<vulner id="8176">
+<title>SSH2 Configuration</title>
+<short_description/>
+<description>Information about cryptographic algorithms and authentication methods was obtained.</description>
+<how_to_fix/>
+<links/>
+<cvss temp_score="0.0" base_score="0.0" temp_score_decomp="" base_score_decomp=""/></vulner>
+<vulner id="8177">
+<title>SSH Host Key Fingerprint</title>
+<short_description/>
+<description>The key fingerprint was obtained. To prevent man-in-the-middle attacks when connecting to a host with the key the client doesn&apos;t yet know, the client software shows the fingerprint of this key to the user. It is recommended to verify the key fingerprint displayed by the client software by comparing it with the server key fingerprint received via trusted channels or by hand.</description>
+<how_to_fix/>
+<links/>
+<cvss temp_score="0.0" base_score="0.0" temp_score_decomp="" base_score_decomp=""/></vulner>
+<vulner id="8350">
+<title>OpenSSHD User Enumeration without Authentication</title>
+<short_description>Vulnerability allows remote attackers to enumerate valid usernames.</short_description>
+<description>OpenSSHD 7.2p2 and possibly other versions uses fake password hashes when authenticating non-existing users, that results in different time delays.
+The fact is that it takes much longer to calculate SHA256/SHA512 password hashes than BLOWFISH password hashes, which are used for non-existing users. If real user passwords are hashed using SHA256/SHA512, then sending 10KB passwords will result in significantly different time delays depending on the used algorithm (i.e. BLOWFISH or SHA256/SHA512), that allows to determine whether a user name exists. Exploitation of this vulnerability allows remote attackers to enumerate valid usernames.
+This vulnerability has no direct impact on the system but it facilitates guessing user logins.</description>
+<how_to_fix>To fix the vulnerability install the latest OpenSSHD version (i.e. 7.3p1 or earlier).</how_to_fix>
+<links>http://seclists.org/fulldisclosure/2016/Jul/51 
+https://access.redhat.com/security/cve/cve-2016-6210 
+https://security-tracker.debian.org/tracker/CVE-2016-6210
+http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2016-6210 </links>
+<cvss temp_score="0.0" base_score="5.0" temp_score_decomp="" base_score_decomp="(AV:N/AC:L/Au:N/C:P/I:N/A:N)"/>
+<global_id name="CVE" value="CVE-2016-6210"/>
+<global_id name="fstec" value="BDU:2016-02237"/></vulner>
+<vulner id="8365">
+<title>SSH Weak Cryptography Ciphers</title>
+<short_description>Weak encryption algorithms are enabled for the SSH protocol.</short_description>
+<description>The &apos;arcfour&apos; is the Arcfour stream cipher. The Arcfour cipher is believed to be compatible with the RC4 cipher. RFC 4253 states that Arcfour (and RC4) has problems with weak keys, and should be used with caution.
+If SSH server is configured to support Cipher Block Chaining (CBC) encryption, this may allow an attacker to recover plaintext data from the ciphertext.</description>
+<how_to_fix>Disable the listed encryption algorithms.</how_to_fix>
+<links>https://www.ietf.org/rfc/rfc4253.txt
+http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2008-5161
+http://www.openssh.com/txt/release-7.1
+http://www.openssh.com/txt/release-7.6</links>
+<publication_date>2017-12-20</publication_date>
+<cvss temp_score="0.0" base_score="0.0" temp_score_decomp="" base_score_decomp=""/>
+<global_id name="CVE" value="CVE-2008-5161"/>
+<global_id name="fstec" value="BDU:2015-09678"/></vulner>
+<vulner id="8368">
+<title>SSH Weak MAC Algorithms</title>
+<short_description>The remote SSH server is configured to allow weak MD5, 96-bit, and SHA1 MAC algorithms.</short_description>
+<description>Using the following algorithms is unsafe: md5-based, sha1-based.
+The following algorithms use weak cryptography: umac-64.
+The following algorithms are considered obsolete and removed from the standard: ripemd160, blowfish.</description>
+<how_to_fix>Disable the listed MAC algorithms.</how_to_fix>
+<links>https://shattered.io/
+https://stribika.github.io/2015/01/04/secure-secure-shell.html
+http://www.openssh.com/txt/release-7.4</links>
+<cvss temp_score="0.0" base_score="0.0" temp_score_decomp="" base_score_decomp=""/></vulner>
+<vulner id="8369">
+<title>SSH Weak Key-Exchange Algorithms</title>
+<short_description>The remote SSH server is configured to allow weak SHA1-based or weak elliptic-curves Key-Exchange algorithms.</short_description>
+<description>Using the following algorithms is unsafe: sha1-based.
+The following algorithms use weak elliptic-curve cryptography: ecdh-sha2-nistp-*.</description>
+<how_to_fix>Disable the listed Key-Exchange algorithms.</how_to_fix>
+<links>https://githubengineering.com/crypto-deprecation-notice-update-1/
+https://stribika.github.io/2015/01/04/secure-secure-shell.html
+https://shattered.io/</links>
+<cvss temp_score="0.0" base_score="0.0" temp_score_decomp="" base_score_decomp=""/></vulner>
+<vulner id="8370">
+<title>SSH Weak Host-Key Signature Algorithms</title>
+<short_description>The remote SSH server is configured to allow weak Host-Key algorithms.</short_description>
+<description>The following algorithms use weak elliptic curve cryptography: ecdsa-sha2-nistp256.</description>
+<how_to_fix>Disable the listed Host-Key algorithms.</how_to_fix>
+<links/>
+<cvss temp_score="0.0" base_score="0.0" temp_score_decomp="" base_score_decomp=""/></vulner>
+<vulner id="8375">
+<title>HTTP Headers Data</title>
+<short_description>HTTP headers are listed in the server response received to a GET request.</short_description>
+<description/>
+<how_to_fix/>
+<links>https://www.ietf.org/rfc/rfc2616.txt</links>
+<cvss temp_score="0.0" base_score="0.0" temp_score_decomp="" base_score_decomp=""/></vulner>
+<vulner id="8376">
+<title>Available HTTP Methods</title>
+<short_description>Available HTTP request methods received on the HTTP OPTIONS request in the Allow field.</short_description>
+<description/>
+<how_to_fix/>
+<links>https://www.ietf.org/rfc/rfc2616.txt</links>
+<cvss temp_score="0.0" base_score="0.0" temp_score_decomp="" base_score_decomp=""/></vulner>
+<vulner id="183773">
+<title>Arbitrary Code Execution</title>
+<short_description>Vulnerability allows attackers to execute arbitrary code.</short_description>
+<description>Vulnerability in OpenSSH allows users to access all parts of the filesystem that they have access to, and write to arbitrary memory positions. Successful exploitation may allow execution of arbitrary code.</description>
+<how_to_fix>To fix the vulnerability update your software according to the used platform. All necessary information is available here:
+http://www.openssh.com</how_to_fix>
+<links>http://www.openssh.com/txt/release-6.7 
+http://seclists.org/fulldisclosure/2014/Oct/35 
+</links>
+<publication_date>2014-10-08</publication_date>
+<cvss temp_score="5.9" base_score="7.5" temp_score_decomp="(AV:N/AC:L/Au:N/C:P/I:P/A:P/E:POC/RL:OF/RC:C)" base_score_decomp="(AV:N/AC:L/Au:N/C:P/I:P/A:P)"/></vulner>
+<vulner id="183847">
+<title>Information Disclosure</title>
+<short_description>Vulnerability allows attackers to obtain sensitive information.</short_description>
+<description>The SSL protocol 3.0, as used in OpenSSL through 1.0.1i and other products, uses nondeterministic CBC padding, which makes it easier for man-in-the-middle attackers to obtain cleartext data via a padding-oracle attack, aka the &quot;POODLE&quot; issue.</description>
+<how_to_fix>To fix the vulnerability disable SSLv3 completely.If you must maintain support for SSLv3, your next option is to enable the TLS_FALLBACK_SCSV cipher suite value, Make sure you upgrade openssl  to 1.0.1j version.</how_to_fix>
+<links>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-3566 
+http://www.openssl.org/news/secadv_20141015.txt 
+https://support.f5.com/kb/en-us/solutions/public/15000/700/sol15702.html</links>
+<publication_date>2014-10-15</publication_date>
+<cvss temp_score="3.2" base_score="4.3" temp_score_decomp="(AV:N/AC:M/Au:N/C:P/I:N/A:N/E:U/RL:OF/RC:C)" base_score_decomp="(AV:N/AC:M/Au:N/C:P/I:N/A:N)"/>
+<global_id name="CVE" value="CVE-2014-3566"/>
+<global_id name="fstec" value="BDU:2015-00642"/></vulner>
+<vulner id="184487">
+<title>Denial of Service</title>
+<short_description>Vulnerability allows remote attackers to cause a denial of service (NULL pointer dereference and daemon crash).</short_description>
+<description>The ssl23_get_client_hello function in s23_srvr.c in OpenSSL 0.9.8zc, 1.0.0o, and 1.0.1j does not properly handle attempts to use unsupported protocols, which allows remote attackers to cause a denial of service (NULL pointer dereference and daemon crash) via an unexpected handshake, as demonstrated by an SSLv3 handshake to a no-ssl3 application with certain error handling. NOTE: this issue became relevant after the CVE-2014-3568 fix.</description>
+<how_to_fix>Use vendor&apos;s advisory:
+http://kb.juniper.net/InfoCenter/index?page=content&amp;id=JSA10679</how_to_fix>
+<links>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-3569 </links>
+<cvss temp_score="0.0" base_score="5.0" temp_score_decomp="" base_score_decomp="(AV:N/AC:L/Au:N/C:N/I:N/A:P)"/>
+<global_id name="CVE" value="CVE-2014-3569"/>
+<global_id name="fstec" value="BDU:2015-09980"/></vulner>
+<vulner id="184488">
+<title>Protection Mechanism Bypass</title>
+<short_description>Vulnerability allows remote attackers to defeat cryptographic protection mechanisms.</short_description>
+<description>The BN_sqr implementation in OpenSSL before 0.9.8zd, 1.0.0 before 1.0.0p, and 1.0.1 before 1.0.1k does not properly calculate the square of a BIGNUM value, which might make it easier for remote attackers to defeat cryptographic protection mechanisms via unspecified vectors, related to crypto/bn/asm/mips.pl, crypto/bn/asm/x86_64-gcc.c, and crypto/bn/bn_asm.c.</description>
+<how_to_fix>Use vendor&apos;s advisory:
+http://kb.juniper.net/InfoCenter/index?page=content&amp;id=JSA10679</how_to_fix>
+<links>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-3570 </links>
+<cvss temp_score="0.0" base_score="5.0" temp_score_decomp="" base_score_decomp="(AV:N/AC:L/Au:N/C:P/I:N/A:N)"/>
+<global_id name="CVE" value="CVE-2014-3570"/>
+<global_id name="fstec" value="BDU:2015-06127"/>
+<global_id name="fstec" value="BDU:2015-06128"/>
+<global_id name="fstec" value="BDU:2015-06129"/>
+<global_id name="fstec" value="BDU:2015-06130"/>
+<global_id name="fstec" value="BDU:2015-06131"/>
+<global_id name="fstec" value="BDU:2015-09142"/>
+<global_id name="fstec" value="BDU:2015-09143"/>
+<global_id name="fstec" value="BDU:2015-09144"/>
+<global_id name="fstec" value="BDU:2015-09145"/>
+<global_id name="fstec" value="BDU:2015-09146"/>
+<global_id name="fstec" value="BDU:2015-09819"/>
+<global_id name="fstec" value="BDU:2015-09905"/></vulner>
+<vulner id="184489">
+<title>Downgrade Attack Vulnerability</title>
+<short_description>Vulnerability allows remote attackers to conduct ECDHE-to-ECDH downgrade attacks and trigger a loss of forward secrecy.</short_description>
+<description>The ssl3_get_key_exchange function in s3_clnt.c in OpenSSL before 0.9.8zd, 1.0.0 before 1.0.0p, and 1.0.1 before 1.0.1k allows remote SSL servers to conduct ECDHE-to-ECDH downgrade attacks and trigger a loss of forward secrecy by omitting the ServerKeyExchange message.</description>
+<how_to_fix>Use vendor&apos;s advisory:
+http://kb.juniper.net/InfoCenter/index?page=content&amp;id=JSA10679</how_to_fix>
+<links>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-3572 </links>
+<cvss temp_score="0.0" base_score="5.0" temp_score_decomp="" base_score_decomp="(AV:N/AC:L/Au:N/C:N/I:P/A:N)"/>
+<global_id name="CVE" value="CVE-2014-3572"/>
+<global_id name="fstec" value="BDU:2015-06127"/>
+<global_id name="fstec" value="BDU:2015-06128"/>
+<global_id name="fstec" value="BDU:2015-06129"/>
+<global_id name="fstec" value="BDU:2015-06130"/>
+<global_id name="fstec" value="BDU:2015-06131"/>
+<global_id name="fstec" value="BDU:2015-09142"/>
+<global_id name="fstec" value="BDU:2015-09143"/>
+<global_id name="fstec" value="BDU:2015-09144"/>
+<global_id name="fstec" value="BDU:2015-09145"/>
+<global_id name="fstec" value="BDU:2015-09146"/>
+<global_id name="fstec" value="BDU:2015-09819"/>
+<global_id name="fstec" value="BDU:2015-09905"/></vulner>
+<vulner id="184490">
+<title>Protection Mechanism Bypass</title>
+<short_description>Vulnerability allows remote attackers to defeat a fingerprint-based certificate-blacklist protection mechanism.</short_description>
+<description>OpenSSL before 0.9.8zd, 1.0.0 before 1.0.0p, and 1.0.1 before 1.0.1k does not enforce certain constraints on certificate data, which allows remote attackers to defeat a fingerprint-based certificate-blacklist protection mechanism by including crafted data within a certificate&apos;s unsigned portion, related to crypto/asn1/a_verify.c, crypto/dsa/dsa_asn1.c, crypto/ecdsa/ecs_vrf.c, and crypto/x509/x_all.c.</description>
+<how_to_fix>Use vendor&apos;s advisory:
+http://kb.juniper.net/InfoCenter/index?page=content&amp;id=JSA10679</how_to_fix>
+<links>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-8275 </links>
+<cvss temp_score="0.0" base_score="5.0" temp_score_decomp="" base_score_decomp="(AV:N/AC:L/Au:N/C:N/I:P/A:N)"/>
+<global_id name="CVE" value="CVE-2014-8275"/>
+<global_id name="fstec" value="BDU:2015-06127"/>
+<global_id name="fstec" value="BDU:2015-06128"/>
+<global_id name="fstec" value="BDU:2015-06129"/>
+<global_id name="fstec" value="BDU:2015-06130"/>
+<global_id name="fstec" value="BDU:2015-06131"/>
+<global_id name="fstec" value="BDU:2015-09142"/>
+<global_id name="fstec" value="BDU:2015-09143"/>
+<global_id name="fstec" value="BDU:2015-09144"/>
+<global_id name="fstec" value="BDU:2015-09145"/>
+<global_id name="fstec" value="BDU:2015-09146"/>
+<global_id name="fstec" value="BDU:2015-09819"/>
+<global_id name="fstec" value="BDU:2015-09905"/></vulner>
+<vulner id="184491">
+<title>Downgrade Attack Vulnerability</title>
+<short_description>Vulnerability allows remote attackers to conduct RSA-to-EXPORT_RSA downgrade attacks and facilitate brute-force decryption.</short_description>
+<description>The ssl3_get_key_exchange function in s3_clnt.c in OpenSSL before 0.9.8zd, 1.0.0 before 1.0.0p, and 1.0.1 before 1.0.1k allows remote SSL servers to conduct RSA-to-EXPORT_RSA downgrade attacks and facilitate brute-force decryption by offering a weak ephemeral RSA key in a noncompliant role, related to the &quot;FREAK&quot; issue. NOTE: the scope of this CVE is only client code based on OpenSSL, not EXPORT_RSA issues associated with servers or other TLS implementations.</description>
+<how_to_fix>Use vendor&apos;s advisory:
+http://kb.juniper.net/InfoCenter/index?page=content&amp;id=JSA10679</how_to_fix>
+<links>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2015-0204 </links>
+<cvss temp_score="0.0" base_score="4.3" temp_score_decomp="" base_score_decomp="(AV:N/AC:M/Au:N/C:N/I:P/A:N)"/>
+<global_id name="CVE" value="CVE-2015-0204"/>
+<global_id name="fstec" value="BDU:2015-06127"/>
+<global_id name="fstec" value="BDU:2015-06128"/>
+<global_id name="fstec" value="BDU:2015-06129"/>
+<global_id name="fstec" value="BDU:2015-06130"/>
+<global_id name="fstec" value="BDU:2015-06131"/>
+<global_id name="fstec" value="BDU:2015-09142"/>
+<global_id name="fstec" value="BDU:2015-09143"/>
+<global_id name="fstec" value="BDU:2015-09144"/>
+<global_id name="fstec" value="BDU:2015-09145"/>
+<global_id name="fstec" value="BDU:2015-09146"/>
+<global_id name="fstec" value="BDU:2015-09819"/>
+<global_id name="fstec" value="BDU:2015-09905"/>
+<global_id name="fstec" value="BDU:2015-09960"/>
+<global_id name="fstec" value="BDU:2015-09963"/></vulner>
+<vulner id="184492">
+<title>Unauthorized Access</title>
+<short_description>Vulnerability allows remote attackers to obtain access without knowledge of a private key.</short_description>
+<description>The ssl3_get_cert_verify function in s3_srvr.c in OpenSSL 1.0.0 before 1.0.0p and 1.0.1 before 1.0.1k accepts client authentication with a Diffie-Hellman (DH) certificate without requiring a CertificateVerify message, which allows remote attackers to obtain access without knowledge of a private key via crafted TLS Handshake Protocol traffic to a server that recognizes a Certification Authority with DH support.</description>
+<how_to_fix>Use vendor&apos;s advisory:
+http://kb.juniper.net/InfoCenter/index?page=content&amp;id=JSA10679</how_to_fix>
+<links>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2015-0205 </links>
+<cvss temp_score="0.0" base_score="5.0" temp_score_decomp="" base_score_decomp="(AV:N/AC:L/Au:N/C:N/I:P/A:N)"/>
+<global_id name="CVE" value="CVE-2015-0205"/>
+<global_id name="fstec" value="BDU:2015-06127"/>
+<global_id name="fstec" value="BDU:2015-06128"/>
+<global_id name="fstec" value="BDU:2015-06129"/>
+<global_id name="fstec" value="BDU:2015-06130"/>
+<global_id name="fstec" value="BDU:2015-06131"/>
+<global_id name="fstec" value="BDU:2015-09142"/>
+<global_id name="fstec" value="BDU:2015-09143"/>
+<global_id name="fstec" value="BDU:2015-09144"/>
+<global_id name="fstec" value="BDU:2015-09145"/>
+<global_id name="fstec" value="BDU:2015-09146"/>
+<global_id name="fstec" value="BDU:2015-09819"/>
+<global_id name="fstec" value="BDU:2015-09905"/></vulner>
+<vulner id="184618">
+<title>Denial of Service</title>
+<short_description>Vulnerability allows remote attackers to cause a denial of service (infinite loop).</short_description>
+<description>The BN_GF2m_mod_inv function in crypto/bn/bn_gf2m.c in OpenSSL before 0.9.8s, 1.0.0 before 1.0.0e, 1.0.1 before 1.0.1n, and 1.0.2 before 1.0.2b does not properly handle ECParameters structures in which the curve is over a malformed binary polynomial field, which allows remote attackers to cause a denial of service (infinite loop) via a session that uses an Elliptic Curve algorithm, as demonstrated by an attack against a server that supports client authentication.</description>
+<how_to_fix>To fix the vulnerability update your software according to the used platform. All necessary information is available here:
+https://www.openssl.org/</how_to_fix>
+<links>http://openssl.org/news/secadv_20150611.txt 
+https://kb.juniper.net/InfoCenter/index?page=content&amp;id=JSA10694&amp;cat=SIRT_1&amp;actp=LIST
+http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2015-1788 </links>
+<publication_date>2015-06-11</publication_date>
+<cvss temp_score="3.2" base_score="4.3" temp_score_decomp="(AV:N/AC:M/Au:N/C:N/I:N/A:P/E:U/RL:OF/RC:C)" base_score_decomp="(AV:N/AC:M/Au:N/C:N/I:N/A:P)"/>
+<global_id name="CVE" value="CVE-2015-1788"/>
+<global_id name="fstec" value="BDU:2015-11035"/></vulner>
+<vulner id="184619">
+<title>Denial of Service</title>
+<short_description>Vulnerability allows remote attackers to cause a denial of service (out-of-bounds read and application crash).</short_description>
+<description>The X509_cmp_time function in crypto/x509/x509_vfy.c in OpenSSL before 0.9.8zg, 1.0.0 before 1.0.0s, 1.0.1 before 1.0.1n, and 1.0.2 before 1.0.2b allows remote attackers to cause a denial of service (out-of-bounds read and application crash) via a crafted length field in ASN1_TIME data, as demonstrated by an attack against a server that supports client authentication with a custom verification callback.</description>
+<how_to_fix>To fix the vulnerability update your software according to the used platform. All necessary information is available here:
+https://www.openssl.org/</how_to_fix>
+<links>http://openssl.org/news/secadv_20150611.txt 
+https://kb.juniper.net/InfoCenter/index?page=content&amp;id=JSA10694&amp;cat=SIRT_1&amp;actp=LIST
+http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2015-1789 </links>
+<publication_date>2015-06-11</publication_date>
+<cvss temp_score="3.2" base_score="4.3" temp_score_decomp="(AV:N/AC:M/Au:N/C:N/I:N/A:P/E:U/RL:OF/RC:C)" base_score_decomp="(AV:N/AC:M/Au:N/C:N/I:N/A:P)"/>
+<global_id name="CVE" value="CVE-2015-1789"/>
+<global_id name="fstec" value="BDU:2015-11036"/></vulner>
+<vulner id="184620">
+<title>Denial of Service</title>
+<short_description>Vulnerability allows remote attackers to cause a denial of service (NULL pointer dereference and application crash).</short_description>
+<description>The PKCS7_dataDecodefunction in crypto/pkcs7/pk7_doit.c in OpenSSL before 0.9.8zg, 1.0.0 before 1.0.0s, 1.0.1 before 1.0.1n, and 1.0.2 before 1.0.2b allows remote attackers to cause a denial of service (NULL pointer dereference and application crash) via a PKCS#7 blob that uses ASN.1 encoding and lacks inner EncryptedContent data.</description>
+<how_to_fix>To fix the vulnerability update your software according to the used platform. All necessary information is available here:
+https://www.openssl.org/</how_to_fix>
+<links>http://openssl.org/news/secadv_20150611.txt 
+https://kb.juniper.net/InfoCenter/index?page=content&amp;id=JSA10694&amp;cat=SIRT_1&amp;actp=LIST
+http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2015-1790 </links>
+<publication_date>2015-06-11</publication_date>
+<cvss temp_score="3.7" base_score="5.0" temp_score_decomp="(AV:N/AC:L/Au:N/C:N/I:N/A:P/E:U/RL:OF/RC:C)" base_score_decomp="(AV:N/AC:L/Au:N/C:N/I:N/A:P)"/>
+<global_id name="CVE" value="CVE-2015-1790"/>
+<global_id name="fstec" value="BDU:2015-11037"/></vulner>
+<vulner id="184621">
+<title>Denial of Service</title>
+<short_description>Vulnerability allows remote attackers to cause a denial of service (infinite loop).</short_description>
+<description>The do_free_upto function in crypto/cms/cms_smime.c in OpenSSL before 0.9.8zg, 1.0.0 before 1.0.0s, 1.0.1 before 1.0.1n, and 1.0.2 before 1.0.2b allows remote attackers to cause a denial of service (infinite loop) via vectors that trigger a NULL value of a BIO data structure, as demonstrated by an unrecognized X.660 OID for a hash function.</description>
+<how_to_fix>To fix the vulnerability update your software according to the used platform. All necessary information is available here:
+https://www.openssl.org/</how_to_fix>
+<links>http://openssl.org/news/secadv_20150611.txt 
+https://kb.juniper.net/InfoCenter/index?page=content&amp;id=JSA10694&amp;cat=SIRT_1&amp;actp=LIST
+http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2015-1792 </links>
+<publication_date>2015-06-11</publication_date>
+<cvss temp_score="3.7" base_score="5.0" temp_score_decomp="(AV:N/AC:L/Au:N/C:N/I:N/A:P/E:U/RL:OF/RC:C)" base_score_decomp="(AV:N/AC:L/Au:N/C:N/I:N/A:P)"/>
+<global_id name="CVE" value="CVE-2015-1792"/>
+<global_id name="fstec" value="BDU:2015-11039"/></vulner>
+<vulner id="184622">
+<title>Race Condition</title>
+<short_description>Vulnerability allows remote attackers to cause a denial of service.</short_description>
+<description>Race condition in the ssl3_get_new_session_ticket function in ssl/s3_clnt.c in OpenSSL before 0.9.8zg, 1.0.0 before 1.0.0s, 1.0.1 before 1.0.1n, and 1.0.2 before 1.0.2b, when used for a multi-threaded client, allows remote attackers to cause a denial of service (double free and application crash) or possibly have unspecified other impact by providing a NewSessionTicket during an attempt to reuse a ticket that had been obtained earlier.</description>
+<how_to_fix>To fix the vulnerability update your software according to the used platform. All necessary information is available here:
+https://www.openssl.org/</how_to_fix>
+<links>http://openssl.org/news/secadv_20150611.txt 
+https://kb.juniper.net/InfoCenter/index?page=content&amp;id=JSA10694&amp;cat=SIRT_1&amp;actp=LIST
+http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2015-1791 </links>
+<publication_date>2015-06-11</publication_date>
+<cvss temp_score="5.0" base_score="6.8" temp_score_decomp="(AV:N/AC:M/Au:N/C:P/I:P/A:P/E:U/RL:OF/RC:C)" base_score_decomp="(AV:N/AC:M/Au:N/C:P/I:P/A:P)"/>
+<global_id name="CVE" value="CVE-2015-1791"/>
+<global_id name="fstec" value="BDU:2015-11038"/></vulner>
+<vulner id="184679">
+<title>Certificate Spoofing</title>
+<short_description>Vulnerability allows remote attackers to spoof a Certification Authority role and trigger unintended certificate verifications.</short_description>
+<description>The X509_verify_cert function in crypto/x509/x509_vfy.c in OpenSSL 1.0.1n, 1.0.1o, 1.0.2b, and 1.0.2c does not properly process X.509 Basic Constraints cA values during identification of alternative certificate chains, which allows remote attackers to spoof a Certification Authority role and trigger unintended certificate verifications via a valid leaf certificate.</description>
+<how_to_fix>To fix the vulnerability update your software according to the used platform. All necessary information is available here:
+https://www.openssl.org/</how_to_fix>
+<links>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2015-1793 
+https://kb.juniper.net/InfoCenter/index?page=content&amp;id=JSA10694&amp;cat=SIRT_1&amp;actp=LIST
+http://openssl.org/news/secadv_20150709.txt 
+http://www.oracle.com/technetwork/topics/security/cpuoct2015-2367953.html#AppendixMSQL </links>
+<publication_date>2015-07-09</publication_date>
+<cvss temp_score="4.3" base_score="5.8" temp_score_decomp="(AV:N/AC:M/Au:N/C:P/I:P/A:N/E:U/RL:OF/RC:C)" base_score_decomp="(AV:N/AC:M/Au:N/C:P/I:P/A:N)"/>
+<global_id name="CVE" value="CVE-2015-1793"/>
+<global_id name="fstec" value="BDU:2015-11040"/></vulner>
+<vulner id="184735">
+<title>Access Restrictions Bypass</title>
+<short_description>Vulnerability allows remote attackers to bypass intended access restrictions.</short_description>
+<description>The x11_open_helper function in channels.c in ssh in OpenSSH before 6.9, when ForwardX11Trusted mode is not used, lacks a check of the refusal deadline for X connections, which makes it easier for remote attackers to bypass intended access restrictions via a connection outside of the permitted time window.</description>
+<how_to_fix>To fix the vulnerability update your software according to the used platform. All necessary information is available here:
+http://www.openssh.com</how_to_fix>
+<links>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2015-5352 
+http://www.openssh.com/txt/release-6.9 </links>
+<publication_date>2015-07-13</publication_date>
+<cvss temp_score="4.8" base_score="6.5" temp_score_decomp="(AV:N/AC:L/Au:S/C:P/I:P/A:P/E:U/RL:OF/RC:C)" base_score_decomp="(AV:N/AC:L/Au:S/C:P/I:P/A:P)"/>
+<global_id name="CVE" value="CVE-2015-5352"/></vulner>
+<vulner id="184810">
+<title>Access Restrictions Bypass</title>
+<short_description>Vulnerability allows remote attackers to conduct brute-force attacks or cause a denial of service (CPU consumption).</short_description>
+<description>The kbdint_next_device function in auth2-chall.c in sshd in OpenSSH through 6.9 does not properly restrict the processing of keyboard-interactive devices within a single connection, which makes it easier for remote attackers to conduct brute-force attacks or cause a denial of service (CPU consumption) via a long and duplicative list in the ssh -oKbdInteractiveDevices option, as demonstrated by a modified client that provides a different password for each pam element on this list.</description>
+<how_to_fix>To fix the vulnerability update your software according to the used platform. All necessary information is available here:
+http://www.openssh.com/
+https://kb.juniper.net/InfoCenter/index?page=content&amp;id=JSA10697</how_to_fix>
+<links>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2015-5600 
+http://cvsweb.openbsd.org/cgi-bin/cvsweb/src/usr.bin/ssh/auth2-chall.c 
+https://kb.juniper.net/InfoCenter/index?page=content&amp;id=JSA10697&amp;cat=SIRT_1&amp;actp=LIST</links>
+<publication_date>2015-08-02</publication_date>
+<cvss temp_score="7.3" base_score="8.5" temp_score_decomp="(AV:N/AC:L/Au:N/C:P/I:N/A:C/E:F/RL:TF/RC:C)" base_score_decomp="(AV:N/AC:L/Au:N/C:P/I:N/A:C)"/>
+<global_id name="CVE" value="CVE-2015-5600"/></vulner>
+<vulner id="184891">
+<title>Impersonation</title>
+<short_description>Vulnerability allows local users to conduct impersonation attacks.</short_description>
+<description>The monitor component in sshd in OpenSSH before 7.0 on non-OpenBSD platforms accepts extraneous username data in MONITOR_REQ_PAM_INIT_CTX requests, which allows local users to conduct impersonation attacks by leveraging any SSH login access in conjunction with control of the sshd uid to send a crafted MONITOR_REQ_PWNAM request, related to monitor.c and monitor_wrap.c.</description>
+<how_to_fix>To fix the vulnerability update your software according to the used platform. All necessary information is available here:
+http://www.openssh.com</how_to_fix>
+<links>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2015-6563 
+http://www.openssh.com/txt/release-7.0 </links>
+<publication_date>2015-08-23</publication_date>
+<cvss temp_score="1.4" base_score="1.9" temp_score_decomp="(AV:L/AC:M/Au:N/C:N/I:P/A:N/E:U/RL:OF/RC:C)" base_score_decomp="(AV:L/AC:M/Au:N/C:N/I:P/A:N)"/>
+<global_id name="CVE" value="CVE-2015-6563"/></vulner>
+<vulner id="184892">
+<title>Use-After-Free Vulnerability</title>
+<short_description>Vulnerability allows local users to gain privileges.</short_description>
+<description>Use-after-free vulnerability in the mm_answer_pam_free_ctx function in monitor.c in sshd in OpenSSH before 7.0 on non-OpenBSD platforms might allow local users to gain privileges by leveraging control of the sshd uid to send an unexpectedly early MONITOR_REQ_PAM_FREE_CTX request.</description>
+<how_to_fix>To fix the vulnerability update your software according to the used platform. All necessary information is available here:
+http://www.openssh.com</how_to_fix>
+<links>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2015-6564 
+http://www.openssh.com/txt/release-7.0 </links>
+<publication_date>2015-08-23</publication_date>
+<cvss temp_score="5.1" base_score="6.9" temp_score_decomp="(AV:L/AC:M/Au:N/C:C/I:C/A:C/E:U/RL:OF/RC:C)" base_score_decomp="(AV:L/AC:M/Au:N/C:C/I:C/A:C)"/>
+<global_id name="CVE" value="CVE-2015-6564"/></vulner>
+<vulner id="185092">
+<title>Denial of Service</title>
+<short_description>Vulnerability allows remote attackers to cause a denial of service (buffer consumption).</short_description>
+<description>Juniper Junos OS before 12.1X44-D50, 12.1X46 before 12.1X46-D35, 12.1X47 before 12.1X47-D25, 12.3 before 12.3R10, 12.3X48 before 12.3X48-D15, 13.2 before 13.2R8, 13.3 before 13.3R7, 14.1 before 14.1R5, and 14.2 before 14.2R1 do not properly handle TCP packet reassembly, which allows remote attackers to cause a denial of service (buffer consumption) via a crafted sequence of packets &quot;destined to the device.&quot;</description>
+<how_to_fix>Use vendor&apos;s advisory:
+https://kb.juniper.net/InfoCenter/index?page=content&amp;id=JSA10696&amp;cat=SIRT_1&amp;actp=LIST</how_to_fix>
+<links>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-6449 </links>
+<cvss temp_score="0.0" base_score="5.0" temp_score_decomp="" base_score_decomp="(AV:N/AC:L/Au:N/C:N/I:N/A:P)"/>
+<global_id name="CVE" value="CVE-2014-6449"/></vulner>
+<vulner id="185334">
+<title>Privilege Gaining</title>
+<short_description>Vulnerability allows local users to gain root privileges.</short_description>
+<description>Juniper Junos OS before 12.1X44-D50, 12.1X46 before 12.1X46-D35, 12.1X47 before 12.1X47-D25, 12.3 before 12.3R9, 12.3X48 before 12.3X48-D15, 13.2 before 13.2R7, 13.2X51 before 13.2X51-D35, 13.3 before 13.3R6, 14.1 before 14.1R5, 14.1X50 before 14.1X50-D105, 14.1X51 before 14.1X51-D70, 14.1X53 before 14.1X53-D25, 14.1X55 before 14.1X55-D20, 14.2 before 14.2R1, 15.1 before 15.1F2 or 15.1R1, and 15.1X49 before 15.1X49-D10 does not require a password for the root user when pam.conf is &quot;corrupted,&quot; which allows local users to gain root privileges by modifying the file.</description>
+<how_to_fix>Use vendor&apos;s advisory:
+https://kb.juniper.net/InfoCenter/index?page=content&amp;id=JSA10707&amp;cat=SIRT_1&amp;actp=LIST</how_to_fix>
+<links>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2015-7751 </links>
+<cvss temp_score="0.0" base_score="6.9" temp_score_decomp="" base_score_decomp="(AV:L/AC:M/Au:N/C:C/I:C/A:C)"/>
+<global_id name="CVE" value="CVE-2015-7751"/>
+<global_id name="fstec" value="BDU:2015-11807"/></vulner>
+<vulner id="185348">
+<title>Denial of Service</title>
+<short_description>Vulnerability allows remote attackers to cause a denial of service.</short_description>
+<description>The SSH server in Juniper Junos OS before 12.1X44-D50, 12.1X46 before 12.1X46-D35, 12.1X47 before 12.1X47-D25, 12.3 before 12.3R10, 12.3X48 before 12.3X48-D10, 13.2 before 13.2R8, 13.2X51 before 13.2X51-D35, 13.3 before 13.3R6, 14.1 before 14.1R5, 14.1X53 before 14.1X53-D25, 14.2 before 14.2R3, 15.1 before 15.1R1, and 15.1X49 before 15.1X49-D20 allows remote attackers to cause a denial of service (CPU consumption) via unspecified SSH traffic.</description>
+<how_to_fix>Use vendor&apos;s advisory:
+https://kb.juniper.net/InfoCenter/index?page=content&amp;id=JSA10708&amp;cat=SIRT_1&amp;actp=LIST</how_to_fix>
+<links>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2015-7752 </links>
+<cvss temp_score="0.0" base_score="7.8" temp_score_decomp="" base_score_decomp="(AV:N/AC:L/Au:N/C:N/I:N/A:C)"/>
+<global_id name="CVE" value="CVE-2015-7752"/>
+<global_id name="fstec" value="BDU:2015-11806"/></vulner>
+<vulner id="185619">
+<title>Denial of Service</title>
+<short_description>Vulnerability allows remote attackers to cause a denial of service (out-of-bounds read and application crash).</short_description>
+<description>The ssh_packet_read_poll2 function in packet.c in OpenSSH before 7.1p2 allows remote attackers to cause a denial of service (out-of-bounds read and application crash) via crafted network traffic.</description>
+<how_to_fix>To fix the vulnerability update your software according to the used platform. All necessary information is available here:
+http://www.openssh.com</how_to_fix>
+<links>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2016-1907
+http://www.openssh.com/txt/release-7.1p2 </links>
+<publication_date>2016-01-19</publication_date>
+<cvss temp_score="3.7" base_score="5.0" temp_score_decomp="(AV:N/AC:L/Au:N/C:N/I:N/A:P/E:U/RL:OF/RC:C)" base_score_decomp="(AV:N/AC:L/Au:N/C:N/I:N/A:P)"/>
+<global_id name="CVE" value="CVE-2016-1907"/>
+<global_id name="fstec" value="BDU:2016-00407"/></vulner>
+<vulner id="185655">
+<title>Denial of Service</title>
+<short_description>Vulnerability allows remote attackers to cause a denial of service (J-Web crash).</short_description>
+<description>Embedthis Appweb, as used in J-Web in Juniper Junos OS before 12.1X44-D60, 12.1X46 before 12.1X46-D45, 12.1X47 before 12.1X47-D30, 12.3 before 12.3R10, 12.3X48 before 12.3X48-D20, 13.2X51 before 13.2X51-D20, 13.3 before 13.3R8, 14.1 before 14.1R6, and 14.2 before 14.2R5, allows remote attackers to cause a denial of service (J-Web crash) via unspecified vectors.</description>
+<how_to_fix>Use vendor&apos;s advisory:
+http://kb.juniper.net/InfoCenter/index?page=content&amp;id=JSA10720</how_to_fix>
+<links>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2016-1258 </links>
+<cvss temp_score="0.0" base_score="5.0" temp_score_decomp="" base_score_decomp="(AV:N/AC:L/Au:N/C:N/I:N/A:P)"/>
+<global_id name="CVE" value="CVE-2016-1258"/></vulner>
+<vulner id="185656">
+<title>Denial of Service</title>
+<short_description>Vulnerability allows remote attackers to cause a denial of service (flowd crash).</short_description>
+<description>Juniper Junos OS before 12.1X46-D45, 12.1X47 before 12.1X47-D30, 12.1X48 before 12.3X48-D20, and 15.1X49 before 15.1X49-D30 on SRX series devices, when the Real Time Streaming Protocol Application Layer Gateway (RTSP ALG) is enabled, allow remote attackers to cause a denial of service (flowd crash) via a crafted RTSP packet.</description>
+<how_to_fix>Use vendor&apos;s advisory:
+http://kb.juniper.net/InfoCenter/index?page=content&amp;id=JSA10721</how_to_fix>
+<links>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2016-1262 </links>
+<cvss temp_score="0.0" base_score="4.3" temp_score_decomp="" base_score_decomp="(AV:N/AC:M/Au:N/C:N/I:N/A:P)"/>
+<global_id name="CVE" value="CVE-2016-1262"/></vulner>
+<vulner id="185657">
+<title>Denial of Service</title>
+<short_description>Vulnerability allows remote attackers to cause a denial of service.</short_description>
+<description>Juniper Junos OS before 12.1X44-D55, 12.1X46 before 12.1X46-D40, 12.1X47 before 12.1X47-D25, 12.3 before 12.3R10, 12.3X48 before 12.3X48-D20, 13.2 before 13.2R8, 13.2X51 before 13.2X51-D40, 13.3 before 13.3R7, 14.1 before 14.1R5, 14.1X53 before 14.1X53-D18 or 14.1X53-D30, 14.1X55 before 14.1X55-D25, 14.2 before 14.2R4, 15.1 before 15.1R2, and 15.1X49 before 15.1X49-D10 allow remote attackers to cause a denial of service via a malformed IGMPv3 packet, aka a &quot;multicast denial of service.&quot;</description>
+<how_to_fix>Use vendor&apos;s advisory:
+http://kb.juniper.net/InfoCenter/index?page=content&amp;id=JSA10714</how_to_fix>
+<links>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2016-1256 </links>
+<cvss temp_score="0.0" base_score="5.0" temp_score_decomp="" base_score_decomp="(AV:N/AC:L/Au:N/C:N/I:N/A:P)"/>
+<global_id name="CVE" value="CVE-2016-1256"/></vulner>
+<vulner id="185775">
+<title>Access Restrictions Bypassing</title>
+<short_description>Vulnerability allows remote attackers to bypass access restrictions.</short_description>
+<description>Vulnerability affects all SRX Series services gateways with the FTPS Application Layer Gateway (ALG) enabled with the ftps-extensions option. The ftps-extensions option is not intended or recommended where the SRX secures the FTPS server, as the wide data channel session (gate) will allow the FTPS client temporary access to all TCP ports on the FTPS server. The data session is associated to the control channel and will be closed when the control channel session closes. Depending on the configuration of the FTPS server, supporting load-balancer, and SRX inactivity-timeout values, the server/load-balancer and SRX may keep the control channel open for an extended period of time, allowing an FTPS client access for an equal duration.​
+Note that the ftps-extensions option is not enabled by default.</description>
+<how_to_fix>Use vendor&apos;s advisory:
+https://kb.juniper.net/InfoCenter/index?page=content&amp;id=JSA10706&amp;cat=SIRT_1&amp;actp=LIST</how_to_fix>
+<links>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2015-5361
+https://kb.juniper.net/InfoCenter/index?page=content&amp;id=JSA10706&amp;cat=SIRT_1&amp;actp=LIST</links>
+<cvss temp_score="0.0" base_score="6.4" temp_score_decomp="" base_score_decomp="(AV:N/AC:L/Au:N/C:P/I:P/A:N)"/>
+<global_id name="CVE" value="CVE-2015-5361"/></vulner>
+<vulner id="185816">
+<title>Command Injection</title>
+<short_description>Vulnerability allows remote attackers to read or overwrite arbitrary files and connect to local ports.</short_description>
+<description>Vulnerability exists in OpenSSH with X11Forwarding enabled due to missing sanitization of credential data that allows remote authenticated users to inject xauth commands and read or overwrite arbitrary files or connect to local ports.</description>
+<how_to_fix>To fix the vulnerability update your software according to the used platform. All necessary information is available here:
+http://www.openssh.com</how_to_fix>
+<links>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2016-3115 
+http://www.openssh.com/txt/x11fwd.adv </links>
+<publication_date>2016-03-14</publication_date>
+<cvss temp_score="4.3" base_score="5.5" temp_score_decomp="(AV:N/AC:L/Au:S/C:P/I:P/A:N/E:POC/RL:OF/RC:C)" base_score_decomp="(AV:N/AC:L/Au:S/C:P/I:P/A:N)"/>
+<global_id name="CVE" value="CVE-2016-3115"/>
+<global_id name="fstec" value="BDU:2016-00819"/></vulner>
+<vulner id="185881">
+<title>Denial of Service</title>
+<short_description>Vulnerability allows remote attackers to cause a denial of service (REQUIRE assertion failure and daemon exit).</short_description>
+<description>named in ISC BIND 9.x before 9.9.7-P2 and 9.10.x before 9.10.2-P3 allows remote attackers to cause a denial of service (REQUIRE assertion failure and daemon exit) via TKEY queries.</description>
+<how_to_fix>Use vendor&apos;s advisory:
+https://kb.juniper.net/InfoCenter/index?page=content&amp;id=JSA10718</how_to_fix>
+<links>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2015-5477 </links>
+<cvss temp_score="0.0" base_score="7.8" temp_score_decomp="" base_score_decomp="(AV:N/AC:L/Au:N/C:N/I:N/A:C)"/>
+<global_id name="CVE" value="CVE-2015-5477"/></vulner>
+<vulner id="185882">
+<title>Denial of Service</title>
+<short_description>Vulnerability allows remote attackers to increase the polling interval and disable synchronization.</short_description>
+<description>Vulnerability in ntpd as a client due to improper checks of timestamps in Kiss-of-Death packets allows remote attackers to increase the client&apos;s polling interval, and disable synchronization with the server by sending crafted Kiss-of-Death packets to an ntpd client.</description>
+<how_to_fix>Use vendor&apos;s advisory:
+https://kb.juniper.net/InfoCenter/index?page=content&amp;id=JSA10711</how_to_fix>
+<links>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2015-7704 </links>
+<cvss temp_score="0.0" base_score="4.3" temp_score_decomp="" base_score_decomp="(AV:N/AC:M/Au:N/C:N/I:N/A:P)"/>
+<global_id name="CVE" value="CVE-2015-7704"/></vulner>
+<vulner id="185883">
+<title>Denial of Service</title>
+<short_description>Vulnerability allows remote attackers to cause clients to stop updating their clock.</short_description>
+<description>Vulnerability in NTP due to incorrect handling of rate limiting allows remote attackers to cause clients to stop updating their clock by sending crafted packets to the client&apos;s servers.</description>
+<how_to_fix>Use vendor&apos;s advisory:
+https://kb.juniper.net/InfoCenter/index?page=content&amp;id=JSA10711</how_to_fix>
+<links>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2015-7705 </links>
+<cvss temp_score="0.0" base_score="4.3" temp_score_decomp="" base_score_decomp="(AV:N/AC:M/Au:N/C:N/I:N/A:P)"/>
+<global_id name="CVE" value="CVE-2015-7705"/></vulner>
+<vulner id="185884">
+<title>Buffer Overflow</title>
+<short_description>Vulnerability allows attackers to cause a buffer overflow.</short_description>
+<description>Vulnerability in ntpd allows attackers to cause a buffer overflow by providing a negative value for the datalen parameter.</description>
+<how_to_fix>Use vendor&apos;s advisory:
+https://kb.juniper.net/InfoCenter/index?page=content&amp;id=JSA10711</how_to_fix>
+<links>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2015-7853 </links>
+<cvss temp_score="0.0" base_score="5.9" temp_score_decomp="" base_score_decomp="(AV:L/AC:H/Au:M/C:C/I:C/A:C)"/>
+<global_id name="CVE" value="CVE-2015-7853"/></vulner>
+<vulner id="186036">
+<title>Privilege Gaining</title>
+<short_description>Vulnerability allows local users to gain privileges.</short_description>
+<description>Juniper Junos OS before 12.1X46-D45, 12.1X47 before 12.1X47-D30, 12.3 before 12.3R11, 12.3X48 before 12.3X48-D25, 13.2 before 13.2R8, 13.3 before 13.3R7, 14.1 before 14.1R6, 14.2 before 14.2R4, 15.1 before 15.1R1 or 15.1F2, and 15.1X49 before 15.1X49-D15 allow local users to gain privileges via crafted combinations of CLI commands and arguments, a different vulnerability than CVE-2015-3003, CVE-2014-3816, and CVE-2014-0615.</description>
+<how_to_fix>Use vendor&apos;s advisory:
+https://kb.juniper.net/InfoCenter/index?page=content&amp;id=JSA10739&amp;actp=search</how_to_fix>
+<links>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2016-1271 </links>
+<cvss temp_score="0.0" base_score="7.2" temp_score_decomp="" base_score_decomp="(AV:L/AC:L/Au:N/C:C/I:C/A:C)"/>
+<global_id name="CVE" value="CVE-2016-1271"/>
+<global_id name="fstec" value="BDU:2016-01073"/></vulner>
+<vulner id="186037">
+<title>Denial of Service</title>
+<short_description>Vulnerability allows remote attackers to cause a denial of service (daemon restart).</short_description>
+<description>The rpd daemon in Juniper Junos OS before 12.1X44-D60, 12.1X46 before 12.1X46-D45, 12.1X47 before 12.1X47-D30, 12.3 before 12.3R9, 12.3X48 before 12.3X48-D20, 13.2 before 13.2R7, 13.2X51 before 13.2X51-D40, 13.3 before 13.3R6, 14.1 before 14.1R4, and 14.2 before 14.2R2, when configured with BGP-based L2VPN or VPLS, allows remote attackers to cause a denial of service (daemon restart) via a crafted L2VPN family BGP update.</description>
+<how_to_fix>Use vendor&apos;s advisory:
+https://kb.juniper.net/InfoCenter/index?page=content&amp;id=JSA10737&amp;actp=search</how_to_fix>
+<links>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2016-1270 </links>
+<cvss temp_score="0.0" base_score="5.0" temp_score_decomp="" base_score_decomp="(AV:N/AC:L/Au:N/C:N/I:N/A:P)"/>
+<global_id name="CVE" value="CVE-2016-1270"/>
+<global_id name="fstec" value="BDU:2016-01074"/></vulner>
+<vulner id="186038">
+<title>Denial of Service</title>
+<short_description>Vulnerability allows remote attackers to cause a denial of service (socket consumption).</short_description>
+<description>Juniper Junos OS before 12.1X44-D60, 12.1X46 before 12.1X46-D40, 12.1X47 before 12.1X47-D30, 12.3 before 12.3R11, 12.3X48 before 12.3X48-D20, 13.2 before 13.2R9, 13.2X51 before 13.2X51-D39, 13.3 before 13.3R8, 14.1 before 14.1R6, 14.1X53 before 14.1X53-D30, 14.2 before 14.2R4-S1, 15.1 before 15.1R2, 15.1X49 before 15.1X49-D30, and 16.1 before 16.1R1 allow remote attackers to cause a denial of service (socket consumption) via crafted TCP timestamps.</description>
+<how_to_fix>Use vendor&apos;s advisory:
+https://kb.juniper.net/InfoCenter/index?page=content&amp;id=JSA10736&amp;actp=search</how_to_fix>
+<links>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2016-1269 </links>
+<cvss temp_score="0.0" base_score="7.8" temp_score_decomp="" base_score_decomp="(AV:N/AC:L/Au:N/C:N/I:N/A:C)"/>
+<global_id name="CVE" value="CVE-2016-1269"/>
+<global_id name="fstec" value="BDU:2016-01075"/></vulner>
+<vulner id="186039">
+<title>Information Disclosure</title>
+<short_description>Vulnerability allows remote attackers to obtain sensitive information from process memory.</short_description>
+<description>The resend_bytes function in roaming_common.c in the client in OpenSSH 5.x, 6.x, and 7.x before 7.1p2 allows remote servers to obtain sensitive information from process memory by requesting transmission of an entire buffer, as demonstrated by reading a private key.</description>
+<how_to_fix>Use vendor&apos;s advisory:
+https://kb.juniper.net/InfoCenter/index?page=content&amp;id=JSA10734&amp;actp=search</how_to_fix>
+<links>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2016-0777 </links>
+<cvss temp_score="0.0" base_score="4.0" temp_score_decomp="" base_score_decomp="(AV:N/AC:L/Au:S/C:P/I:N/A:N)"/>
+<global_id name="CVE" value="CVE-2016-0777"/></vulner>
+<vulner id="186040">
+<title>Denial of Service</title>
+<short_description>Vulnerability allows remote attackers to cause a denial of service (heap-based buffer overflow).</short_description>
+<description>The (1) roaming_read and (2) roaming_write functions in roaming_common.c in the client in OpenSSH 5.x, 6.x, and 7.x before 7.1p2, when certain proxy and forward options are enabled, do not properly maintain connection file descriptors, which allows remote servers to cause a denial of service (heap-based buffer overflow) or possibly have unspecified other impact by requesting many forwardings.</description>
+<how_to_fix>Use vendor&apos;s advisory:
+https://kb.juniper.net/InfoCenter/index?page=content&amp;id=JSA10734&amp;actp=search</how_to_fix>
+<links>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2016-0778 </links>
+<cvss temp_score="0.0" base_score="6.5" temp_score_decomp="" base_score_decomp="(AV:N/AC:L/Au:S/C:P/I:P/A:P)"/>
+<global_id name="CVE" value="CVE-2016-0778"/></vulner>
+<vulner id="186042">
+<title>Race Condition</title>
+<short_description>Vulnerability allows local users to read, delete, or modify arbitrary files.</short_description>
+<description>Race condition in the RPC functionality in Juniper Junos OS before 12.1X44-D55, 12.1X46 before 12.1X46-D40, 12.1X47 before 12.1X47-D25, 12.3 before 12.3R11, 12.3X48 before 12.3X48-D20, 13.2 before 13.2R8, 13.2X51 before 13.2X51-D39, 13.3 before 13.3R7, 14.1 before 14.1R6, 14.1X53 before 14.1X53-D30, 14.2 before 14.2R3-S4, 15.1 before 15.1F2, or 15.1R2, 15.1X49 before 15.1X49-D20, and 16.1 before 16.1R1 allows local users to read, delete, or modify arbitrary files via unspecified vectors.</description>
+<how_to_fix>Use vendor&apos;s advisory:
+https://kb.juniper.net/InfoCenter/index?page=content&amp;id=JSA10730&amp;actp=search</how_to_fix>
+<links>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2016-1267 </links>
+<cvss temp_score="0.0" base_score="4.4" temp_score_decomp="" base_score_decomp="(AV:L/AC:M/Au:N/C:P/I:P/A:P)"/>
+<global_id name="CVE" value="CVE-2016-1267"/>
+<global_id name="fstec" value="BDU:2016-01077"/></vulner>
+<vulner id="186043">
+<title>Race Condition</title>
+<short_description>Vulnerability allows remote authenticated users to gain privileges.</short_description>
+<description>Race condition in the Op command in Juniper Junos OS before 12.1X44-D55, 12.1X46 before 12.1X46-D40, 12.1X47 before 12.1X47-D25, 12.3 before 12.3R11, 12.3X48 before 12.3X48-D20, 12.3X50 before 12.3X50-D50, 13.2 before 13.2R8, 13.2X51 before 13.2X51-D39, 13.2X52 before 13.2X52-D30, 13.3 before 13.3R7, 14.1 before 14.1R6, 14.1X53 before 14.1X53-D30, 14.2 before 14.2R4, 15.1 before 15.1F2 or 15.1R2, 15.1X49 before 15.1X49-D10 or 15.1X49-D20, and 16.1 before 16.1R1 allows remote authenticated users to gain privileges via the URL option.</description>
+<how_to_fix>Use vendor&apos;s advisory:
+https://kb.juniper.net/InfoCenter/index?page=content&amp;id=JSA10725&amp;actp=search</how_to_fix>
+<links>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2016-1264 </links>
+<cvss temp_score="0.0" base_score="6.5" temp_score_decomp="" base_score_decomp="(AV:N/AC:L/Au:S/C:P/I:P/A:P)"/>
+<global_id name="CVE" value="CVE-2016-1264"/>
+<global_id name="fstec" value="BDU:2016-01078"/></vulner>
+<vulner id="186569">
+<title>Privilege Gaining</title>
+<short_description>Vulnerability allows local users to gain privileges.</short_description>
+<description>The do_setup_env function in session.c in sshd in OpenSSH through 7.2p2, when the UseLogin feature is enabled and PAM is configured to read .pam_environment files in user home directories, allows local users to gain privileges by triggering a crafted environment for the /bin/login program, as demonstrated by an LD_PRELOAD environment variable.</description>
+<how_to_fix>To fix the vulnerability update your software according to the used platform. All necessary information is available here:
+http://www.openssh.com</how_to_fix>
+<links>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2015-8325
+http://www.openssh.com/txt/release-7.3 
+</links>
+<publication_date>2016-04-30</publication_date>
+<cvss temp_score="5.3" base_score="7.2" temp_score_decomp="(AV:L/AC:L/Au:N/C:C/I:C/A:C/E:U/RL:OF/RC:C)" base_score_decomp="(AV:L/AC:L/Au:N/C:C/I:C/A:C)"/>
+<global_id name="CVE" value="CVE-2015-8325"/></vulner>
+<vulner id="186616">
+<title>Denial of Service</title>
+<short_description>Vulnerability allows remote attackers to cause a denial of service (crypt CPU consumption).</short_description>
+<description>The auth_password function in auth-passwd.c in sshd in OpenSSH before 7.3 does not limit password lengths for password authentication, which allows remote attackers to cause a denial of service (crypt CPU consumption) via a long string.</description>
+<how_to_fix>To fix the vulnerability update your software according to the used platform. All necessary information is available here:
+http://www.openssh.com/</how_to_fix>
+<links>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2016-6515
+http://www.openssh.com/txt/release-7.3 
+</links>
+<publication_date>2016-08-07</publication_date>
+<cvss temp_score="5.8" base_score="7.8" temp_score_decomp="(AV:N/AC:L/Au:N/C:N/I:N/A:C/E:U/RL:OF/RC:C)" base_score_decomp="(AV:N/AC:L/Au:N/C:N/I:N/A:C)"/>
+<global_id name="CVE" value="CVE-2016-6515"/>
+<global_id name="fstec" value="BDU:2018-00117"/></vulner>
+<vulner id="187483">
+<title>Denial of Service</title>
+<short_description>Vulnerability allows remote attackers to cause a denial of service (memory consumption).</short_description>
+<description>The state-machine implementation in OpenSSL allocates memory before checking for an excessive length, which might allow remote attackers to cause a denial of service (memory consumption) via crafted TLS messages, related to statem/statem.c and statem/statem_lib.c.</description>
+<how_to_fix>Use vendor&apos;s advisory:
+https://kb.juniper.net/InfoCenter/index?page=content&amp;id=JSA10759&amp;cat=SIRT_1&amp;actp=LIST</how_to_fix>
+<links>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2016-6307 </links>
+<cvss temp_score="0.0" base_score="4.3" temp_score_decomp="" base_score_decomp="(AV:N/AC:M/Au:N/C:N/I:N/A:P)"/>
+<global_id name="CVE" value="CVE-2016-6307"/></vulner>
+<vulner id="187484">
+<title>Denial of Service</title>
+<short_description>Vulnerability allows remote attackers to cause a denial of service (out-of-bounds read).</short_description>
+<description>The certificate parser in OpenSSL might allow remote attackers to cause a denial of service (out-of-bounds read) via crafted certificate operations, related to s3_clnt.c and s3_srvr.c.</description>
+<how_to_fix>Use vendor&apos;s advisory:
+https://kb.juniper.net/InfoCenter/index?page=content&amp;id=JSA10759&amp;cat=SIRT_1&amp;actp=LIST</how_to_fix>
+<links>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2016-6306 </links>
+<cvss temp_score="0.0" base_score="4.3" temp_score_decomp="" base_score_decomp="(AV:N/AC:M/Au:N/C:N/I:N/A:P)"/>
+<global_id name="CVE" value="CVE-2016-6306"/></vulner>
+<vulner id="187485">
+<title>Information Disclosure</title>
+<short_description>Vulnerability allows local users to discover a DSA private key.</short_description>
+<description>The dsa_sign_setup function in crypto/dsa/dsa_ossl.c in OpenSSL does not properly ensure the use of constant-time operations, which makes it easier for local users to discover a DSA private key via a timing side-channel attack.</description>
+<how_to_fix>Use vendor&apos;s advisory:
+https://kb.juniper.net/InfoCenter/index?page=content&amp;id=JSA10759&amp;cat=SIRT_1&amp;actp=LIST</how_to_fix>
+<links>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2016-2178 </links>
+<cvss temp_score="0.0" base_score="2.1" temp_score_decomp="" base_score_decomp="(AV:L/AC:L/Au:N/C:P/I:N/A:N)"/>
+<global_id name="CVE" value="CVE-2016-2178"/></vulner>
+<vulner id="187486">
+<title>Denial of Service</title>
+<short_description>Vulnerability allows remote attackers to cause a denial of service (integer overflow and application crash).</short_description>
+<description>OpenSSL incorrectly uses pointer arithmetic for heap-buffer boundary checks, which might allow remote attackers to cause a denial of service (integer overflow and application crash) or possibly have unspecified other impact by leveraging unexpected malloc behavior, related to s3_srvr.c, ssl_sess.c, and t1_lib.c.</description>
+<how_to_fix>Use vendor&apos;s advisory:
+https://kb.juniper.net/InfoCenter/index?page=content&amp;id=JSA10759&amp;cat=SIRT_1&amp;actp=LIST</how_to_fix>
+<links>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2016-2177 </links>
+<cvss temp_score="0.0" base_score="4.3" temp_score_decomp="" base_score_decomp="(AV:N/AC:M/Au:N/C:N/I:N/A:P)"/>
+<global_id name="CVE" value="CVE-2016-2177"/></vulner>
+<vulner id="187487">
+<title>Denial of Service</title>
+<short_description>Vulnerability allows remote attackers to cause a denial of service.</short_description>
+<description>The tls_decrypt_ticket function in ssl/t1_lib.c in OpenSSL does not consider the HMAC size during validation of the ticket length, which allows remote attackers to cause a denial of service via a ticket that is too short.</description>
+<how_to_fix>Use vendor&apos;s advisory:
+https://kb.juniper.net/InfoCenter/index?page=content&amp;id=JSA10759&amp;cat=SIRT_1&amp;actp=LIST</how_to_fix>
+<links>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2016-6302 </links>
+<cvss temp_score="0.0" base_score="5.0" temp_score_decomp="" base_score_decomp="(AV:N/AC:L/Au:N/C:N/I:N/A:P)"/>
+<global_id name="CVE" value="CVE-2016-6302"/></vulner>
+<vulner id="187488">
+<title>Denial of Service</title>
+<short_description>Vulnerability allows remote attackers to cause a denial of service (out-of-bounds read and application crash).</short_description>
+<description>The TS_OBJ_print_bio function in crypto/ts/ts_lib.c in the X.509 Public Key Infrastructure Time-Stamp Protocol (TSP) implementation in OpenSSL allows remote attackers to cause a denial of service (out-of-bounds read and application crash) via a crafted time-stamp file that is mishandled by the &quot;openssl ts&quot; command.</description>
+<how_to_fix>Use vendor&apos;s advisory:
+https://kb.juniper.net/InfoCenter/index?page=content&amp;id=JSA10759&amp;cat=SIRT_1&amp;actp=LIST</how_to_fix>
+<links>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2016-2180 </links>
+<cvss temp_score="0.0" base_score="5.0" temp_score_decomp="" base_score_decomp="(AV:N/AC:L/Au:N/C:N/I:N/A:P)"/>
+<global_id name="CVE" value="CVE-2016-2180"/></vulner>
+<vulner id="187489">
+<title>Integer Overflow</title>
+<short_description>Vulnerability allows remote attackers to cause a denial of service (out-of-bounds write and application crash).</short_description>
+<description>Integer overflow in the MDC2_Update function in crypto/mdc2/mdc2dgst.c in OpenSSL allows remote attackers to cause a denial of service (out-of-bounds write and application crash) or possibly have unspecified other impact via unknown vectors.</description>
+<how_to_fix>Use vendor&apos;s advisory:
+https://kb.juniper.net/InfoCenter/index?page=content&amp;id=JSA10759&amp;cat=SIRT_1&amp;actp=LIST</how_to_fix>
+<links>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2016-6303 </links>
+<cvss temp_score="0.0" base_score="7.5" temp_score_decomp="" base_score_decomp="(AV:N/AC:L/Au:N/C:P/I:P/A:P)"/>
+<global_id name="CVE" value="CVE-2016-6303"/></vulner>
+<vulner id="187490">
+<title>Denial of Service</title>
+<short_description>Vulnerability allows remote attackers to cause a denial of service (out-of-bounds write and application crash).</short_description>
+<description>The BN_bn2dec function in crypto/bn/bn_print.c in OpenSSL does not properly validate division results, which allows remote attackers to cause a denial of service (out-of-bounds write and application crash) or possibly have unspecified other impact via unknown vectors.</description>
+<how_to_fix>Use vendor&apos;s advisory:
+https://kb.juniper.net/InfoCenter/index?page=content&amp;id=JSA10759&amp;cat=SIRT_1&amp;actp=LIST</how_to_fix>
+<links>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2016-2182 </links>
+<cvss temp_score="0.0" base_score="7.5" temp_score_decomp="" base_score_decomp="(AV:N/AC:L/Au:N/C:P/I:P/A:P)"/>
+<global_id name="CVE" value="CVE-2016-2182"/>
+<global_id name="fstec" value="BDU:2016-02167"/></vulner>
+<vulner id="187491">
+<title>Denial of Service</title>
+<short_description>Vulnerability allows remote attackers to cause a denial of service (memory consumption).</short_description>
+<description>The asn1_d2i_read_bio function in crypto/asn1/a_d2i_fp.c in the ASN.1 BIO implementation in OpenSSL allows remote attackers to cause a denial of service (memory consumption) via a short invalid encoding.</description>
+<how_to_fix>Use vendor&apos;s advisory:
+https://kb.juniper.net/InfoCenter/index?page=content&amp;id=JSA10759&amp;cat=SIRT_1&amp;actp=LIST</how_to_fix>
+<links>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2016-2109 </links>
+<cvss temp_score="0.0" base_score="7.8" temp_score_decomp="" base_score_decomp="(AV:N/AC:L/Au:N/C:N/I:N/A:C)"/>
+<global_id name="CVE" value="CVE-2016-2109"/></vulner>
+<vulner id="187492">
+<title>Integer Overflow</title>
+<short_description>Vulnerability allows remote attackers to cause a denial of service (heap memory corruption).</short_description>
+<description>Integer overflow in the EVP_EncryptUpdate function in crypto/evp/evp_enc.c in OpenSSL allows remote attackers to cause a denial of service (heap memory corruption) via a large amount of data.</description>
+<how_to_fix>Use vendor&apos;s advisory:
+https://kb.juniper.net/InfoCenter/index?page=content&amp;id=JSA10759&amp;cat=SIRT_1&amp;actp=LIST</how_to_fix>
+<links>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2016-2106 </links>
+<cvss temp_score="0.0" base_score="5.0" temp_score_decomp="" base_score_decomp="(AV:N/AC:L/Au:N/C:N/I:N/A:P)"/>
+<global_id name="CVE" value="CVE-2016-2106"/></vulner>
+<vulner id="187493">
+<title>Denial of Service</title>
+<short_description>Vulnerability allows remote attackers to cause a denial of service (heap memory corruption).</short_description>
+<description>Integer overflow in the EVP_EncodeUpdate function in crypto/evp/encode.c in OpenSSL allows remote attackers to cause a denial of service (heap memory corruption) via a large amount of binary data.</description>
+<how_to_fix>Use vendor&apos;s advisory:
+https://kb.juniper.net/InfoCenter/index?page=content&amp;id=JSA10759&amp;cat=SIRT_1&amp;actp=LIST</how_to_fix>
+<links>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2016-2105 </links>
+<cvss temp_score="0.0" base_score="5.0" temp_score_decomp="" base_score_decomp="(AV:N/AC:L/Au:N/C:N/I:N/A:P)"/>
+<global_id name="CVE" value="CVE-2016-2105"/></vulner>
+<vulner id="187494">
+<title>Denial of Service</title>
+<short_description>Vulnerability allows remote attackers to cause a denial of service (overflow and out-of-bounds read).</short_description>
+<description>The fmtstr function in crypto/bio/b_print.c in OpenSSL improperly calculates string lengths, which allows remote attackers to cause a denial of service (overflow and out-of-bounds read) or possibly have unspecified other impact via a long string, as demonstrated by a large amount of ASN.1 data, a different vulnerability than CVE-2016-2842.</description>
+<how_to_fix>Use vendor&apos;s advisory:
+https://kb.juniper.net/InfoCenter/index?page=content&amp;id=JSA10759&amp;cat=SIRT_1&amp;actp=LIST</how_to_fix>
+<links>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2016-0799 </links>
+<cvss temp_score="0.0" base_score="10.0" temp_score_decomp="" base_score_decomp="(AV:N/AC:L/Au:N/C:C/I:C/A:C)"/>
+<global_id name="CVE" value="CVE-2016-0799"/>
+<global_id name="fstec" value="BDU:2016-00634"/></vulner>
+<vulner id="187495">
+<title>Memory Leak</title>
+<short_description>Vulnerability allows remote attackers to cause a denial of service (memory consumption).</short_description>
+<description>Memory leak in the SRP_VBASE_get_by_user implementation in OpenSSL allows remote attackers to cause a denial of service (memory consumption) by providing an invalid username in a connection attempt, related to apps/s_server.c and crypto/srp/srp_vfy.c.</description>
+<how_to_fix>Use vendor&apos;s advisory:
+https://kb.juniper.net/InfoCenter/index?page=content&amp;id=JSA10759&amp;cat=SIRT_1&amp;actp=LIST</how_to_fix>
+<links>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2016-0798 </links>
+<cvss temp_score="0.0" base_score="7.8" temp_score_decomp="" base_score_decomp="(AV:N/AC:L/Au:N/C:N/I:N/A:C)"/>
+<global_id name="CVE" value="CVE-2016-0798"/>
+<global_id name="fstec" value="BDU:2016-00633"/></vulner>
+<vulner id="187496">
+<title>Denial of Service</title>
+<short_description>Vulnerability allows remote attackers to cause a denial of service (heap memory corruption or NULL pointer dereference).</short_description>
+<description>Multiple integer overflows in OpenSSL allow remote attackers to cause a denial of service (heap memory corruption or NULL pointer dereference) or possibly have unspecified other impact via a long digit string that is mishandled by the (1) BN_dec2bn or (2) BN_hex2bn function, related to crypto/bn/bn.h and crypto/bn/bn_print.c.</description>
+<how_to_fix>Use vendor&apos;s advisory:
+https://kb.juniper.net/InfoCenter/index?page=content&amp;id=JSA10759&amp;cat=SIRT_1&amp;actp=LIST</how_to_fix>
+<links>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2016-0797 </links>
+<cvss temp_score="0.0" base_score="5.0" temp_score_decomp="" base_score_decomp="(AV:N/AC:L/Au:N/C:N/I:N/A:P)"/>
+<global_id name="CVE" value="CVE-2016-0797"/>
+<global_id name="fstec" value="BDU:2016-00632"/></vulner>
+<vulner id="187497">
+<title>Double Free</title>
+<short_description>Vulnerability allows remote attackers to cause a denial of service (memory corruption).</short_description>
+<description>Double free vulnerability in the dsa_priv_decode function in crypto/dsa/dsa_ameth.c in OpenSSL allows remote attackers to cause a denial of service (memory corruption) or possibly have unspecified other impact via a malformed DSA private key.</description>
+<how_to_fix>Use vendor&apos;s advisory:
+https://kb.juniper.net/InfoCenter/index?page=content&amp;id=JSA10759&amp;cat=SIRT_1&amp;actp=LIST</how_to_fix>
+<links>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2016-0705 </links>
+<cvss temp_score="0.0" base_score="10.0" temp_score_decomp="" base_score_decomp="(AV:N/AC:L/Au:N/C:C/I:C/A:C)"/>
+<global_id name="CVE" value="CVE-2016-0705"/>
+<global_id name="fstec" value="BDU:2016-00631"/></vulner>
+<vulner id="187498">
+<title>Information Disclosure</title>
+<short_description>Vulnerability allows local users to discover RSA keys.</short_description>
+<description>The MOD_EXP_CTIME_COPY_FROM_PREBUF function in crypto/bn/bn_exp.c in OpenSSL does not properly consider cache-bank access times during modular exponentiation, which makes it easier for local users to discover RSA keys by running a crafted application on the same Intel Sandy Bridge CPU core as a victim and leveraging cache-bank conflicts, aka a &quot;CacheBleed&quot; attack.</description>
+<how_to_fix>Use vendor&apos;s advisory:
+https://kb.juniper.net/InfoCenter/index?page=content&amp;id=JSA10759&amp;cat=SIRT_1&amp;actp=LIST</how_to_fix>
+<links>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2016-0702 </links>
+<cvss temp_score="0.0" base_score="1.9" temp_score_decomp="" base_score_decomp="(AV:L/AC:M/Au:N/C:P/I:N/A:N)"/>
+<global_id name="CVE" value="CVE-2016-0702"/>
+<global_id name="fstec" value="BDU:2016-00630"/></vulner>
+<vulner id="187500">
+<title>Denial of Service</title>
+<short_description>Vulnerability allows remote attackers to cause a denial of service (race condition and double free).</short_description>
+<description>ssl/s3_clnt.c in OpenSSL, when used for a multi-threaded client, writes the PSK identity hint to an incorrect data structure, which allows remote servers to cause a denial of service (race condition and double free) via a crafted ServerKeyExchange message.</description>
+<how_to_fix>Use vendor&apos;s advisory:
+https://kb.juniper.net/InfoCenter/index?page=content&amp;id=JSA10759&amp;cat=SIRT_1&amp;actp=LIST</how_to_fix>
+<links>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2015-3196 </links>
+<cvss temp_score="0.0" base_score="4.3" temp_score_decomp="" base_score_decomp="(AV:N/AC:M/Au:N/C:N/I:N/A:P)"/>
+<global_id name="CVE" value="CVE-2015-3196"/>
+<global_id name="fstec" value="BDU:2016-01655"/></vulner>
+<vulner id="187501">
+<title>Denial of Service</title>
+<short_description>Vulnerability allows remote attackers to cause a denial of service (segmentation fault).</short_description>
+<description>The ssl3_get_key_exchange function in ssl/s3_clnt.c in OpenSSL allows remote servers to cause a denial of service (segmentation fault) via a zero p value in an anonymous Diffie-Hellman (DH) ServerKeyExchange message.</description>
+<how_to_fix>Use vendor&apos;s advisory:
+https://kb.juniper.net/InfoCenter/index?page=content&amp;id=JSA10759&amp;cat=SIRT_1&amp;actp=LIST</how_to_fix>
+<links>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2015-1794 </links>
+<cvss temp_score="0.0" base_score="5.0" temp_score_decomp="" base_score_decomp="(AV:N/AC:L/Au:N/C:N/I:N/A:P)"/>
+<global_id name="CVE" value="CVE-2015-1794"/></vulner>
+<vulner id="187502">
+<title>Denial of Service</title>
+<short_description>Vulnerability allows remote attackers to cause a denial of service (infinite loop).</short_description>
+<description>The ssl3_read_bytes function in record/rec_layer_s3.c in OpenSSL allows remote attackers to cause a denial of service (infinite loop) by triggering a zero-length record in an SSL_peek call.</description>
+<how_to_fix>Use vendor&apos;s advisory:
+https://kb.juniper.net/InfoCenter/index?page=content&amp;id=JSA10759&amp;cat=SIRT_1&amp;actp=LIST</how_to_fix>
+<links>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2016-6305 </links>
+<cvss temp_score="0.0" base_score="5.0" temp_score_decomp="" base_score_decomp="(AV:N/AC:L/Au:N/C:N/I:N/A:P)"/>
+<global_id name="CVE" value="CVE-2016-6305"/></vulner>
+<vulner id="187503">
+<title>Information Disclosure</title>
+<short_description>Vulnerability allows remote attackers to decrypt TLS ciphertext data.</short_description>
+<description>An oracle protection mechanism in the get_client_master_key function in s2_srvr.c in the SSLv2 implementation in OpenSSL overwrites incorrect MASTER-KEY bytes during use of export cipher suites, which makes it easier for remote attackers to decrypt TLS ciphertext data by leveraging a Bleichenbacher RSA padding oracle, a related issue to CVE-2016-0800.</description>
+<how_to_fix>Use vendor&apos;s advisory:
+https://kb.juniper.net/InfoCenter/index?page=content&amp;id=JSA10759&amp;cat=SIRT_1&amp;actp=LIST</how_to_fix>
+<links>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2016-0704 </links>
+<cvss temp_score="0.0" base_score="4.3" temp_score_decomp="" base_score_decomp="(AV:N/AC:M/Au:N/C:P/I:N/A:N)"/>
+<global_id name="CVE" value="CVE-2016-0704"/>
+<global_id name="fstec" value="BDU:2016-00665"/></vulner>
+<vulner id="187504">
+<title>Information Disclosure</title>
+<short_description>Vulnerability allows remote attackers to obtain sensitive information from process memory.</short_description>
+<description>The ASN1_TFLG_COMBINE implementation in crypto/asn1/tasn_dec.c in OpenSSL mishandles errors caused by malformed X509_ATTRIBUTE data, which allows remote attackers to obtain sensitive information from process memory by triggering a decoding failure in a PKCS#7 or CMS application.</description>
+<how_to_fix>Use vendor&apos;s advisory:
+https://kb.juniper.net/InfoCenter/index?page=content&amp;id=JSA10759&amp;cat=SIRT_1&amp;actp=LIST</how_to_fix>
+<links>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2015-3195 </links>
+<cvss temp_score="0.0" base_score="5.0" temp_score_decomp="" base_score_decomp="(AV:N/AC:L/Au:N/C:N/I:N/A:P)"/>
+<global_id name="CVE" value="CVE-2015-3195"/>
+<global_id name="fstec" value="BDU:2016-01654"/></vulner>
+<vulner id="187505">
+<title>Denial of Service</title>
+<short_description>Vulnerability allows remote attackers to cause a denial of service (NULL pointer dereference and application crash).</short_description>
+<description>crypto/rsa/rsa_ameth.c in OpenSSL allows remote attackers to cause a denial of service (NULL pointer dereference and application crash) via an RSA PSS ASN.1 signature that lacks a mask generation function parameter.</description>
+<how_to_fix>Use vendor&apos;s advisory:
+https://kb.juniper.net/InfoCenter/index?page=content&amp;id=JSA10759&amp;cat=SIRT_1&amp;actp=LIST</how_to_fix>
+<links>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2015-3194 </links>
+<cvss temp_score="0.0" base_score="5.0" temp_score_decomp="" base_score_decomp="(AV:N/AC:L/Au:N/C:N/I:N/A:P)"/>
+<global_id name="CVE" value="CVE-2015-3194"/>
+<global_id name="fstec" value="BDU:2016-01653"/></vulner>
+<vulner id="187506">
+<title>Information Disclosure</title>
+<short_description>Vulnerability allows remote attackers to obtain sensitive private-key information.</short_description>
+<description>The Montgomery squaring implementation in crypto/bn/asm/x86_64-mont5.pl in OpenSSL, as used by the BN_mod_exp function, mishandles carry propagation and produces incorrect output, which makes it easier for remote attackers to obtain sensitive private-key information via an attack against use of a (1) Diffie-Hellman (DH) or (2) Diffie-Hellman Ephemeral (DHE) ciphersuite.</description>
+<how_to_fix>Use vendor&apos;s advisory:
+https://kb.juniper.net/InfoCenter/index?page=content&amp;id=JSA10759&amp;cat=SIRT_1&amp;actp=LIST</how_to_fix>
+<links>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2015-3193 </links>
+<cvss temp_score="0.0" base_score="5.0" temp_score_decomp="" base_score_decomp="(AV:N/AC:L/Au:N/C:P/I:N/A:N)"/>
+<global_id name="CVE" value="CVE-2015-3193"/></vulner>
+<vulner id="187507">
+<title>Denial of Service</title>
+<short_description>Vulnerability allows remote attackers to cause a denial of service (memory consumption).</short_description>
+<description>Multiple memory leaks in t1_lib.c in OpenSSL allow remote attackers to cause a denial of service (memory consumption) via large OCSP Status Request extensions.</description>
+<how_to_fix>Use vendor&apos;s advisory:
+https://kb.juniper.net/InfoCenter/index?page=content&amp;id=JSA10759&amp;cat=SIRT_1&amp;actp=LIST</how_to_fix>
+<links>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2016-6304 </links>
+<cvss temp_score="0.0" base_score="7.8" temp_score_decomp="" base_score_decomp="(AV:N/AC:L/Au:N/C:N/I:N/A:C)"/>
+<global_id name="CVE" value="CVE-2016-6304"/></vulner>
+<vulner id="187508">
+<title>Arbitrary Code Execution</title>
+<short_description>Vulnerability allows remote attackers to execute arbitrary code or cause a denial of service (buffer underflow and memory corruption).</short_description>
+<description>The ASN.1 implementation in OpenSSL allows remote attackers to execute arbitrary code or cause a denial of service (buffer underflow and memory corruption) via an ANY field in crafted serialized data, aka the &quot;negative zero&quot; issue.</description>
+<how_to_fix>Use vendor&apos;s advisory:
+https://kb.juniper.net/InfoCenter/index?page=content&amp;id=JSA10759&amp;cat=SIRT_1&amp;actp=LIST</how_to_fix>
+<links>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2016-2108 </links>
+<cvss temp_score="0.0" base_score="10.0" temp_score_decomp="" base_score_decomp="(AV:N/AC:L/Au:N/C:C/I:C/A:C)"/>
+<global_id name="CVE" value="CVE-2016-2108"/>
+<global_id name="fstec" value="BDU:2016-01176"/></vulner>
+<vulner id="187509">
+<title>Information Disclosure</title>
+<short_description>Vulnerability allows attackers to determine the MASTER-KEY value and decrypt TLS ciphertext data.</short_description>
+<description>The get_client_master_key function in s2_srvr.c in the SSLv2 implementation in OpenSSL accepts a nonzero CLIENT-MASTER-KEY CLEAR-KEY-LENGTH value for an arbitrary cipher, which allows man-in-the-middle attackers to determine the MASTER-KEY value and decrypt TLS ciphertext data by leveraging a Bleichenbacher RSA padding oracle, a related issue to CVE-2016-0800.</description>
+<how_to_fix>Use vendor&apos;s advisory:
+https://kb.juniper.net/InfoCenter/index?page=content&amp;id=JSA10759&amp;cat=SIRT_1&amp;actp=LIST</how_to_fix>
+<links>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2016-0703 </links>
+<cvss temp_score="0.0" base_score="4.3" temp_score_decomp="" base_score_decomp="(AV:N/AC:M/Au:N/C:P/I:N/A:N)"/>
+<global_id name="CVE" value="CVE-2016-0703"/>
+<global_id name="fstec" value="BDU:2016-00629"/></vulner>
+<vulner id="187538">
+<title>Untrusted Search Path</title>
+<short_description>Vulnerability allows remote attackers to execute arbitrary local PKCS#11 modules.</short_description>
+<description>Untrusted search path vulnerability in ssh-agent.c in ssh-agent in OpenSSH before 7.4 allows remote attackers to execute arbitrary local PKCS#11 modules by leveraging control over a forwarded agent-socket.</description>
+<how_to_fix>To fix the vulnerability update your software according to the used platform. All necessary information is available here:
+http://www.openssh.com/</how_to_fix>
+<links>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2016-10009
+https://www.openssh.com/txt/release-7.4 
+</links>
+<publication_date>2017-01-04</publication_date>
+<cvss temp_score="6.2" base_score="7.5" temp_score_decomp="(AV:N/AC:L/Au:N/C:P/I:P/A:P/E:F/RL:OF/RC:C)" base_score_decomp="(AV:N/AC:L/Au:N/C:P/I:P/A:P)"/>
+<global_id name="CVE" value="CVE-2016-10009"/>
+<global_id name="fstec" value="BDU:2017-00353"/></vulner>
+<vulner id="187539">
+<title>Privilege Gaining</title>
+<short_description>Vulnerability allows local users to gain privileges.</short_description>
+<description>sshd in OpenSSH before 7.4, when privilege separation is not used, creates forwarded Unix-domain sockets as root, which might allow local users to gain privileges via unspecified vectors, related to serverloop.c.</description>
+<how_to_fix>To fix the vulnerability update your software according to the used platform. All necessary information is available here:
+http://www.openssh.com/</how_to_fix>
+<links>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2016-10010
+https://www.openssh.com/txt/release-7.4 
+</links>
+<publication_date>2017-01-04</publication_date>
+<cvss temp_score="5.7" base_score="6.9" temp_score_decomp="(AV:L/AC:M/Au:N/C:C/I:C/A:C/E:F/RL:OF/RC:C)" base_score_decomp="(AV:L/AC:M/Au:N/C:C/I:C/A:C)"/>
+<global_id name="CVE" value="CVE-2016-10010"/>
+<global_id name="fstec" value="BDU:2017-00352"/></vulner>
+<vulner id="187540">
+<title>Information Disclosure</title>
+<short_description>Vulnerability allows attackers to obtain sensitive information.</short_description>
+<description>authfile.c in sshd in OpenSSH before 7.4 does not properly consider the effects of realloc on buffer contents, which might allow local users to obtain sensitive private-key information by leveraging access to a privilege-separated child process.</description>
+<how_to_fix>To fix the vulnerability update your software according to the used platform. All necessary information is available here:
+http://www.openssh.com/</how_to_fix>
+<links>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2016-10011
+https://www.openssh.com/txt/release-7.4 
+</links>
+<publication_date>2017-01-04</publication_date>
+<cvss temp_score="1.6" base_score="2.1" temp_score_decomp="(AV:L/AC:L/Au:N/C:P/I:N/A:N/E:U/RL:OF/RC:C)" base_score_decomp="(AV:L/AC:L/Au:N/C:P/I:N/A:N)"/>
+<global_id name="CVE" value="CVE-2016-10011"/>
+<global_id name="fstec" value="BDU:2017-00351"/></vulner>
+<vulner id="187541">
+<title>Privilege Gaining</title>
+<short_description>Vulnerability allows local users to gain privileges.</short_description>
+<description>The shared memory manager (associated with pre-authentication compression) in sshd in OpenSSH before 7.4 does not ensure that a bounds check is enforced by all compilers, which might allows local users to gain privileges by leveraging access to a sandboxed privilege-separation process, related to the m_zback and m_zlib data structures.</description>
+<how_to_fix>To fix the vulnerability update your software according to the used platform. All necessary information is available here:
+http://www.openssh.com/</how_to_fix>
+<links>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2016-10012
+https://www.openssh.com/txt/release-7.4 
+</links>
+<publication_date>2017-01-04</publication_date>
+<cvss temp_score="5.3" base_score="7.2" temp_score_decomp="(AV:L/AC:L/Au:N/C:C/I:C/A:C/E:U/RL:OF/RC:C)" base_score_decomp="(AV:L/AC:L/Au:N/C:C/I:C/A:C)"/>
+<global_id name="CVE" value="CVE-2016-10012"/>
+<global_id name="fstec" value="BDU:2017-00350"/></vulner>
+<vulner id="187591">
+<title>Information Disclosure (Sweet32)</title>
+<short_description>Vulnerability allows remote attackers to obtain cleartext data.</short_description>
+<description>The DES and Triple DES ciphers, as used in the TLS, SSH, and IPSec protocols and other protocols and products, have a birthday bound of approximately four billion blocks, which makes it easier for remote attackers to obtain cleartext data via a birthday attack against a long-duration encrypted session, as demonstrated by an HTTPS session using Triple DES in CBC mode, aka a &quot;Sweet32&quot; attack.</description>
+<how_to_fix>Use vendor&apos;s advisory:
+https://kb.juniper.net/InfoCenter/index?page=content&amp;id=JSA10759&amp;cat=SIRT_1&amp;actp=LIST</how_to_fix>
+<links>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2016-2183 </links>
+<cvss temp_score="0.0" base_score="5.0" temp_score_decomp="" base_score_decomp="(AV:N/AC:L/Au:N/C:P/I:N/A:N)"/>
+<global_id name="CVE" value="CVE-2016-2183"/></vulner>
+<vulner id="187897">
+<title>Denial of Service</title>
+<short_description>Vulnerability allows attackers to cause a denial of service (RPD daemon crash).</short_description>
+<description>Vulnerability in Junos OS when RIP is enabled allows attackers to cause a denial of service (RPD daemon crash) via crafted RIP advertisements.</description>
+<how_to_fix>Use vendor&apos;s advisory:
+https://kb.juniper.net/InfoCenter/index?page=content&amp;id=JSA10772</how_to_fix>
+<links>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2017-2303 </links>
+<cvss temp_score="0.0" base_score="0.0" temp_score_decomp="" base_score_decomp=""/></vulner>
+<vulner id="187906">
+<title>Information Disclosure</title>
+<short_description>Vulnerability allows attackers to obtain sensitive information.</short_description>
+<description>Vulnerability in Junos OS due to a lack of padding for Ethernet packets allows attackers to obtain fragments of system memory or data from previous packets, aka &apos;Etherleak.&apos;</description>
+<how_to_fix>Use vendor&apos;s advisory:
+https://kb.juniper.net/InfoCenter/index?page=content&amp;id=JSA10773</how_to_fix>
+<links>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2017-2304 </links>
+<cvss temp_score="0.0" base_score="0.0" temp_score_decomp="" base_score_decomp=""/>
+<global_id name="CVE" value="CVE-2017-2304"/></vulner>
+<vulner id="187907">
+<title>Denial of Service</title>
+<short_description>Vulnerability allows attackers to cause a denial of service (rpd daemon crash and restart).</short_description>
+<description>Vulnerability in Junos OS, when the BGP add-path feature is enabled with &apos;send&apos; option, allows attackers to cause a denial of service (rpd daemon crash and restart).</description>
+<how_to_fix>Use vendor&apos;s advisory:
+https://kb.juniper.net/InfoCenter/index?page=content&amp;id=JSA10771</how_to_fix>
+<links>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2017-2302 </links>
+<cvss temp_score="0.0" base_score="0.0" temp_score_decomp="" base_score_decomp=""/></vulner>
+<vulner id="187908">
+<title>Denial of Service</title>
+<short_description>Vulnerability allows attackers to cause a denial of service (jdhcpd crash and restart).</short_description>
+<description>Vulnerability in Junos OS allows attackers to cause a denial of service (jdhcpd crash and restart) for subscribers attempting to obtain IPv6 addresses via a crafted DHCPv6 packet. IPv4 is not vulnerable to this issue.</description>
+<how_to_fix>Use vendor&apos;s advisory:
+https://kb.juniper.net/InfoCenter/index?page=content&amp;id=JSA10769</how_to_fix>
+<links>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2017-2301 </links>
+<cvss temp_score="0.0" base_score="0.0" temp_score_decomp="" base_score_decomp=""/></vulner>
+<vulner id="187909">
+<title>Denial of Service</title>
+<short_description>Vulnerability allows attackers to cause a denial of service (flowd daemon crash and restart).</short_description>
+<description>Vulnerability in Junos OS (in cluster configurations that process transit multicast traffic) allows attackers to cause a denial of service (flowd daemon crash and restart) via crafted multicast packets.</description>
+<how_to_fix>Use vendor&apos;s advisory:
+https://kb.juniper.net/InfoCenter/index?page=content&amp;id=JSA10768</how_to_fix>
+<links>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2017-2300 </links>
+<cvss temp_score="0.0" base_score="0.0" temp_score_decomp="" base_score_decomp=""/>
+<global_id name="CVE" value="CVE-2017-2300"/></vulner>
+<vulner id="188148">
+<title>User Enumeration</title>
+<short_description>Vulnerability allows remote attackers to enumerate users.</short_description>
+<description>sshd in OpenSSH before 7.3, when SHA256 or SHA512 are used for user password hashing, uses BLOWFISH hashing on a static password when the username does not exist, which allows remote attackers to enumerate users by leveraging the timing difference between responses when a large password is provided.</description>
+<how_to_fix>To fix the vulnerability update your software according to the used platform. All necessary information is available here:
+http://www.openssh.com/</how_to_fix>
+<links>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2016-6210
+https://www.openssh.com/txt/release-7.3 
+</links>
+<publication_date>2017-02-13</publication_date>
+<cvss temp_score="3.4" base_score="4.3" temp_score_decomp="(AV:N/AC:M/Au:N/C:P/I:N/A:N/E:POC/RL:OF/RC:C)" base_score_decomp="(AV:N/AC:M/Au:N/C:P/I:N/A:N)"/>
+<global_id name="CVE" value="CVE-2016-6210"/>
+<global_id name="fstec" value="BDU:2016-02237"/></vulner>
+<vulner id="188189">
+<title>Privilege Gaining</title>
+<short_description>Vulnerability allows remote attackers to obtain sensitive information and gain administrative privileges.</short_description>
+<description>J-Web in Juniper Junos OS might allow remote attackers to obtain sensitive information and consequently gain administrative privileges via unspecified vectors.</description>
+<how_to_fix>Use vendor&apos;s advisory:
+https://kb.juniper.net/InfoCenter/index?page=content&amp;id=JSA10754</how_to_fix>
+<links>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2016-1279 </links>
+<cvss temp_score="0.0" base_score="10.0" temp_score_decomp="" base_score_decomp="(AV:N/AC:L/Au:N/C:C/I:C/A:C)"/></vulner>
+<vulner id="189261">
+<title>Unauthorized Write Operations</title>
+<short_description>Vulnerability allows attackers to create zero-length files.</short_description>
+<description>The process_open function in sftp-server.c in OpenSSH before 7.6 does not properly prevent write operations in readonly mode, which allows attackers to create zero-length files.</description>
+<how_to_fix>To fix the vulnerability update your software according to the used platform. All necessary information is available here:
+https://www.openssh.com/</how_to_fix>
+<links>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2017-15906
+https://www.openssh.com/txt/release-7.6 
+</links>
+<publication_date>2017-10-25</publication_date>
+<cvss temp_score="3.7" base_score="5.0" temp_score_decomp="(AV:N/AC:L/Au:N/C:N/I:P/A:N/E:U/RL:OF/RC:C)" base_score_decomp="(AV:N/AC:L/Au:N/C:N/I:P/A:N)"/>
+<global_id name="CVE" value="CVE-2017-15906"/>
+<global_id name="fstec" value="BDU:2017-02607"/></vulner>
+<vulner id="190653">
+<title>User Enumeration</title>
+<short_description>Vulnerability allows attackers to obtain sensitive information.</short_description>
+<description>OpenSSH through 7.7 is prone to a user enumeration vulnerability due to not delaying bailout for an invalid authenticating user until after the packet containing the request has been fully parsed, related to auth2-gss.c, auth2-hostbased.c, and auth2-pubkey.c.</description>
+<how_to_fix>To fix the vulnerability update your software according to the used platform. All necessary information is available here:
+https://www.openssh.com/</how_to_fix>
+<links>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2018-15473 </links>
+<publication_date>2018-08-24</publication_date>
+<cvss temp_score="3.9" base_score="5.0" temp_score_decomp="(AV:N/AC:L/Au:N/C:P/I:N/A:N/E:F/RL:OF/RC:UR)" base_score_decomp="(AV:N/AC:L/Au:N/C:P/I:N/A:N)"/>
+<global_id name="CVE" value="CVE-2018-15473"/></vulner></vulners></content>

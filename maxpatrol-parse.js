@@ -57,10 +57,8 @@ function parseHostSoft(data, filterVulnerabilitiesPaths) {
       path,
     } = item;
 
-    const ignoreVulnerabilities = !!(
-      path && filterVulnerabilitiesPaths &&
-      filterVulnerabilitiesPaths.some(re => re.test(path))
-    );
+    const ignoreVulnerabilities = Boolean(path && filterVulnerabilitiesPaths &&
+      filterVulnerabilitiesPaths.some(re => re.test(path)));
 
     // это некруто, но другого способа найти os на cisco asa не нашел
     if (name === 'Cisco IOS') {

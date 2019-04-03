@@ -38,6 +38,7 @@ Object {
       "sn": undefined,
       "software": Array [],
       "updated_at": "2018-11-10T15:19:12+03:00",
+      "updates": Array [],
       "users": Array [],
       "vuln_discovery_date": "2018-11-10T15:19:12+03:00",
       "vuln_elimination_date": "2018-11-10T15:19:12+03:00",
@@ -1122,6 +1123,7 @@ Object {
       "sn": undefined,
       "software": Array [],
       "updated_at": "2018-11-10T15:19:12+03:00",
+      "updates": Array [],
       "users": Array [],
       "vuln_discovery_date": "2018-11-10T15:19:12+03:00",
       "vuln_elimination_date": "2018-11-10T15:19:12+03:00",
@@ -2185,6 +2187,7 @@ Object {
       ],
       "software": Array [],
       "updated_at": "2018-11-10T15:19:12+03:00",
+      "updates": Array [],
       "users": Array [],
       "vuln_discovery_date": "2018-11-10T15:19:12+03:00",
       "vuln_elimination_date": "2018-11-10T15:19:12+03:00",
@@ -2462,6 +2465,7 @@ Object {
       "sn": "FDO162523ZH",
       "software": Array [],
       "updated_at": "2018-04-19T16:20:05+03:00",
+      "updates": Array [],
       "users": Array [],
       "vuln_discovery_date": "2018-04-19T16:20:05+03:00",
       "vuln_elimination_date": "2018-04-19T16:20:05+03:00",
@@ -2633,6 +2637,7 @@ Object {
       "sn": "FDO162621HH",
       "software": Array [],
       "updated_at": "2018-04-19T16:20:05+03:00",
+      "updates": Array [],
       "users": Array [],
       "vuln_discovery_date": "2018-04-19T16:20:05+03:00",
       "vuln_elimination_date": "2018-04-19T16:20:05+03:00",
@@ -2806,6 +2811,7 @@ Object {
       "sn": "FDO162523ZY",
       "software": Array [],
       "updated_at": "2018-04-19T16:20:05+03:00",
+      "updates": Array [],
       "users": Array [],
       "vuln_discovery_date": "2018-04-19T16:20:05+03:00",
       "vuln_elimination_date": "2018-04-19T16:20:05+03:00",
@@ -2977,6 +2983,7 @@ Object {
       "sn": "FDO162621NJ",
       "software": Array [],
       "updated_at": "2018-04-19T16:20:05+03:00",
+      "updates": Array [],
       "users": Array [],
       "vuln_discovery_date": "2018-04-19T16:20:05+03:00",
       "vuln_elimination_date": "2018-04-19T16:20:05+03:00",
@@ -3148,6 +3155,7 @@ Object {
       "sn": "FDO16280QCT",
       "software": Array [],
       "updated_at": "2018-04-19T16:20:05+03:00",
+      "updates": Array [],
       "users": Array [],
       "vuln_discovery_date": "2018-04-19T16:20:05+03:00",
       "vuln_elimination_date": "2018-04-19T16:20:05+03:00",
@@ -3309,6 +3317,7 @@ Object {
       "sn": "FDO16481BFX",
       "software": Array [],
       "updated_at": "2018-04-19T16:20:05+03:00",
+      "updates": Array [],
       "users": Array [],
       "vuln_discovery_date": "2018-04-19T16:20:05+03:00",
       "vuln_elimination_date": "2018-04-19T16:20:05+03:00",
@@ -3463,6 +3472,7 @@ Object {
       "sn": "FDO16450XSP",
       "software": Array [],
       "updated_at": "2018-04-19T16:20:05+03:00",
+      "updates": Array [],
       "users": Array [],
       "vuln_discovery_date": "2018-04-19T16:20:05+03:00",
       "vuln_elimination_date": "2018-04-19T16:20:05+03:00",
@@ -3671,6 +3681,7 @@ Object {
       "sn": "FDO16481B8Y",
       "software": Array [],
       "updated_at": "2018-04-19T16:20:05+03:00",
+      "updates": Array [],
       "users": Array [],
       "vuln_discovery_date": "2018-04-19T16:20:05+03:00",
       "vuln_elimination_date": "2018-04-19T16:20:05+03:00",
@@ -3838,6 +3849,7 @@ Object {
       "sn": "FDO164529J0",
       "software": Array [],
       "updated_at": "2018-04-19T16:20:05+03:00",
+      "updates": Array [],
       "users": Array [],
       "vuln_discovery_date": "2018-04-19T16:20:05+03:00",
       "vuln_elimination_date": "2018-04-19T16:20:05+03:00",
@@ -4118,6 +4130,7 @@ Object {
       "sn": "FDO16481BDB",
       "software": Array [],
       "updated_at": "2018-04-19T16:20:05+03:00",
+      "updates": Array [],
       "users": Array [],
       "vuln_discovery_date": "2018-04-19T16:20:05+03:00",
       "vuln_elimination_date": "2018-04-19T16:20:05+03:00",
@@ -4305,6 +4318,7 @@ Object {
       "sn": "FDO16481B92",
       "software": Array [],
       "updated_at": "2018-04-19T16:20:05+03:00",
+      "updates": Array [],
       "users": Array [],
       "vuln_discovery_date": "2018-04-19T16:20:05+03:00",
       "vuln_elimination_date": "2018-04-19T16:20:05+03:00",
@@ -4496,6 +4510,7 @@ Object {
       ],
       "software": Array [],
       "updated_at": "2018-11-10T13:48:00+03:00",
+      "updates": Array [],
       "users": Array [],
       "vuln_discovery_date": "2018-11-10T13:48:00+03:00",
       "vuln_elimination_date": "2018-11-10T13:48:00+03:00",
@@ -4649,6 +4664,7 @@ Object {
       ],
       "software": Array [],
       "updated_at": "2018-11-10T15:47:54+03:00",
+      "updates": Array [],
       "users": Array [],
       "vuln_discovery_date": "2018-11-10T15:47:54+03:00",
       "vuln_elimination_date": "2018-11-10T15:47:54+03:00",
@@ -6212,6 +6228,7 @@ Object {
       ],
       "software": Array [],
       "updated_at": "2018-11-10T15:14:13+03:00",
+      "updates": Array [],
       "users": Array [],
       "vuln_discovery_date": "2018-11-10T15:14:13+03:00",
       "vuln_elimination_date": "2018-11-10T15:14:13+03:00",
@@ -6670,6 +6687,856 @@ Object {
       ],
       "software": Array [],
       "updated_at": "2018-08-04T00:13:28+03:00",
+      "updates": Array [
+        Object {
+          "name": "KB3072307",
+          "uid": "KB3072307",
+        },
+        Object {
+          "name": "KB3043812",
+          "uid": "KB3043812",
+        },
+        Object {
+          "name": "KB3014442",
+          "uid": "KB3014442",
+        },
+        Object {
+          "name": "KB3086255",
+          "uid": "KB3086255",
+        },
+        Object {
+          "name": "KB3084905",
+          "uid": "KB3084905",
+        },
+        Object {
+          "name": "KB2913270",
+          "uid": "KB2913270",
+        },
+        Object {
+          "name": "KB2939087",
+          "uid": "KB2939087",
+        },
+        Object {
+          "name": "KB3172614",
+          "uid": "KB3172614",
+        },
+        Object {
+          "name": "KB3055642",
+          "uid": "KB3055642",
+        },
+        Object {
+          "name": "KB4338424",
+          "uid": "KB4338424",
+        },
+        Object {
+          "name": "KB3045685",
+          "uid": "KB3045685",
+        },
+        Object {
+          "name": "KB3123245",
+          "uid": "KB3123245",
+        },
+        Object {
+          "name": "KB3082089",
+          "uid": "KB3082089",
+        },
+        Object {
+          "name": "KB2843630",
+          "uid": "KB2843630",
+        },
+        Object {
+          "name": "KB3096411",
+          "uid": "KB3096411",
+        },
+        Object {
+          "name": "KB3046017",
+          "uid": "KB3046017",
+        },
+        Object {
+          "name": "KB3159398",
+          "uid": "KB3159398",
+        },
+        Object {
+          "name": "KB2898871",
+          "uid": "KB2898871",
+        },
+        Object {
+          "name": "KB3094486",
+          "uid": "KB3094486",
+        },
+        Object {
+          "name": "KB3010788",
+          "uid": "KB3010788",
+        },
+        Object {
+          "name": "KB3097997",
+          "uid": "KB3097997",
+        },
+        Object {
+          "name": "KB2894029",
+          "uid": "KB2894029",
+        },
+        Object {
+          "name": "KB2908174",
+          "uid": "KB2908174",
+        },
+        Object {
+          "name": "KB2901101",
+          "uid": "KB2901101",
+        },
+        Object {
+          "name": "KB3063843",
+          "uid": "KB3063843",
+        },
+        Object {
+          "name": "KB2884846",
+          "uid": "KB2884846",
+        },
+        Object {
+          "name": "KB3054169",
+          "uid": "KB3054169",
+        },
+        Object {
+          "name": "KB3055343",
+          "uid": "KB3055343",
+        },
+        Object {
+          "name": "KB2898742",
+          "uid": "KB2898742",
+        },
+        Object {
+          "name": "KB3023219",
+          "uid": "KB3023219",
+        },
+        Object {
+          "name": "KB3032663",
+          "uid": "KB3032663",
+        },
+        Object {
+          "name": "KB3060681",
+          "uid": "KB3060681",
+        },
+        Object {
+          "name": "KB3078676",
+          "uid": "KB3078676",
+        },
+        Object {
+          "name": "KB2966828",
+          "uid": "KB2966828",
+        },
+        Object {
+          "name": "KB3091297",
+          "uid": "KB3091297",
+        },
+        Object {
+          "name": "KB3054464",
+          "uid": "KB3054464",
+        },
+        Object {
+          "name": "KB2966826",
+          "uid": "KB2966826",
+        },
+        Object {
+          "name": "KB3145432",
+          "uid": "KB3145432",
+        },
+        Object {
+          "name": "KB2911106",
+          "uid": "KB2911106",
+        },
+        Object {
+          "name": "KB2898514",
+          "uid": "KB2898514",
+        },
+        Object {
+          "name": "KB2938066",
+          "uid": "KB2938066",
+        },
+        Object {
+          "name": "KB3045634",
+          "uid": "KB3045634",
+        },
+        Object {
+          "name": "KB3013769",
+          "uid": "KB3013769",
+        },
+        Object {
+          "name": "KB4040981",
+          "uid": "KB4040981",
+        },
+        Object {
+          "name": "KB3023266",
+          "uid": "KB3023266",
+        },
+        Object {
+          "name": "KB2978041",
+          "uid": "KB2978041",
+        },
+        Object {
+          "name": "KB3035126",
+          "uid": "KB3035126",
+        },
+        Object {
+          "name": "KB2961908",
+          "uid": "KB2961908",
+        },
+        Object {
+          "name": "KB2976897",
+          "uid": "KB2976897",
+        },
+        Object {
+          "name": "KB3121461",
+          "uid": "KB3121461",
+        },
+        Object {
+          "name": "KB4033369",
+          "uid": "KB4033369",
+        },
+        Object {
+          "name": "KB3011780",
+          "uid": "KB3011780",
+        },
+        Object {
+          "name": "KB3071756",
+          "uid": "KB3071756",
+        },
+        Object {
+          "name": "KB3103709",
+          "uid": "KB3103709",
+        },
+        Object {
+          "name": "KB3162343",
+          "uid": "KB3162343",
+        },
+        Object {
+          "name": "KB3126593",
+          "uid": "KB3126593",
+        },
+        Object {
+          "name": "KB3137728",
+          "uid": "KB3137728",
+        },
+        Object {
+          "name": "KB3074228",
+          "uid": "KB3074228",
+        },
+        Object {
+          "name": "KB3080149",
+          "uid": "KB3080149",
+        },
+        Object {
+          "name": "KB3074545",
+          "uid": "KB3074545",
+        },
+        Object {
+          "name": "KB3045999",
+          "uid": "KB3045999",
+        },
+        Object {
+          "name": "KB3000850",
+          "uid": "KB3000850",
+        },
+        Object {
+          "name": "KB4054854",
+          "uid": "KB4054854",
+        },
+        Object {
+          "name": "KB4033428",
+          "uid": "KB4033428",
+        },
+        Object {
+          "name": "KB2883200",
+          "uid": "KB2883200",
+        },
+        Object {
+          "name": "KB3100473",
+          "uid": "KB3100473",
+        },
+        Object {
+          "name": "KB4096417",
+          "uid": "KB4096417",
+        },
+        Object {
+          "name": "KB3036612",
+          "uid": "KB3036612",
+        },
+        Object {
+          "name": "KB3149157",
+          "uid": "KB3149157",
+        },
+        Object {
+          "name": "KB3081320",
+          "uid": "KB3081320",
+        },
+        Object {
+          "name": "KB3110329",
+          "uid": "KB3110329",
+        },
+        Object {
+          "name": "KB3078405",
+          "uid": "KB3078405",
+        },
+        Object {
+          "name": "KB3046737",
+          "uid": "KB3046737",
+        },
+        Object {
+          "name": "KB3139164",
+          "uid": "KB3139164",
+        },
+        Object {
+          "name": "KB3118401",
+          "uid": "KB3118401",
+        },
+        Object {
+          "name": "KB3161949",
+          "uid": "KB3161949",
+        },
+        Object {
+          "name": "KB4095875",
+          "uid": "KB4095875",
+        },
+        Object {
+          "name": "KB3133043",
+          "uid": "KB3133043",
+        },
+        Object {
+          "name": "KB2887595",
+          "uid": "KB2887595",
+        },
+        Object {
+          "name": "KB3087137",
+          "uid": "KB3087137",
+        },
+        Object {
+          "name": "KB2931366",
+          "uid": "KB2931366",
+        },
+        Object {
+          "name": "KB3004545",
+          "uid": "KB3004545",
+        },
+        Object {
+          "name": "KB3155784",
+          "uid": "KB3155784",
+        },
+        Object {
+          "name": "KB2893294",
+          "uid": "KB2893294",
+        },
+        Object {
+          "name": "KB3037576",
+          "uid": "KB3037576",
+        },
+        Object {
+          "name": "KB2914218",
+          "uid": "KB2914218",
+        },
+        Object {
+          "name": "KB3146751",
+          "uid": "KB3146751",
+        },
+        Object {
+          "name": "KB3037579",
+          "uid": "KB3037579",
+        },
+        Object {
+          "name": "KB3175024",
+          "uid": "KB3175024",
+        },
+        Object {
+          "name": "KB3098779",
+          "uid": "KB3098779",
+        },
+        Object {
+          "name": "KB2975061",
+          "uid": "KB2975061",
+        },
+        Object {
+          "name": "KB3054256",
+          "uid": "KB3054256",
+        },
+        Object {
+          "name": "KB3042058",
+          "uid": "KB3042058",
+        },
+        Object {
+          "name": "KB3138602",
+          "uid": "KB3138602",
+        },
+        Object {
+          "name": "KB2954879",
+          "uid": "KB2954879",
+        },
+        Object {
+          "name": "KB2919394",
+          "uid": "KB2919394",
+        },
+        Object {
+          "name": "KB2922229",
+          "uid": "KB2922229",
+        },
+        Object {
+          "name": "KB2894856",
+          "uid": "KB2894856",
+        },
+        Object {
+          "name": "KB3054203",
+          "uid": "KB3054203",
+        },
+        Object {
+          "name": "KB3145384",
+          "uid": "KB3145384",
+        },
+        Object {
+          "name": "KB2894852",
+          "uid": "KB2894852",
+        },
+        Object {
+          "name": "KB3074548",
+          "uid": "KB3074548",
+        },
+        Object {
+          "name": "KB3003057",
+          "uid": "KB3003057",
+        },
+        Object {
+          "name": "KB3033446",
+          "uid": "KB3033446",
+        },
+        Object {
+          "name": "KB3092601",
+          "uid": "KB3092601",
+        },
+        Object {
+          "name": "KB3133690",
+          "uid": "KB3133690",
+        },
+        Object {
+          "name": "KB3146604",
+          "uid": "KB3146604",
+        },
+        Object {
+          "name": "KB3115224",
+          "uid": "KB3115224",
+        },
+        Object {
+          "name": "KB3146978",
+          "uid": "KB3146978",
+        },
+        Object {
+          "name": "KB3029603",
+          "uid": "KB3029603",
+        },
+        Object {
+          "name": "KB3179574",
+          "uid": "KB3179574",
+        },
+        Object {
+          "name": "KB3019978",
+          "uid": "KB3019978",
+        },
+        Object {
+          "name": "KB3013538",
+          "uid": "KB3013538",
+        },
+        Object {
+          "name": "KB3044673",
+          "uid": "KB3044673",
+        },
+        Object {
+          "name": "KB2892074",
+          "uid": "KB2892074",
+        },
+        Object {
+          "name": "KB2868626",
+          "uid": "KB2868626",
+        },
+        Object {
+          "name": "KB3084135",
+          "uid": "KB3084135",
+        },
+        Object {
+          "name": "KB3055323",
+          "uid": "KB3055323",
+        },
+        Object {
+          "name": "KB3061512",
+          "uid": "KB3061512",
+        },
+        Object {
+          "name": "KB3121261",
+          "uid": "KB3121261",
+        },
+        Object {
+          "name": "KB4338419",
+          "uid": "KB4338419",
+        },
+        Object {
+          "name": "KB3000483",
+          "uid": "KB3000483",
+        },
+        Object {
+          "name": "KB3103696",
+          "uid": "KB3103696",
+        },
+        Object {
+          "name": "KB3139398",
+          "uid": "KB3139398",
+        },
+        Object {
+          "name": "KB3127222",
+          "uid": "KB3127222",
+        },
+        Object {
+          "name": "KB2968296",
+          "uid": "KB2968296",
+        },
+        Object {
+          "name": "KB3139914",
+          "uid": "KB3139914",
+        },
+        Object {
+          "name": "KB3140219",
+          "uid": "KB3140219",
+        },
+        Object {
+          "name": "KB3102429",
+          "uid": "KB3102429",
+        },
+        Object {
+          "name": "KB3042085",
+          "uid": "KB3042085",
+        },
+        Object {
+          "name": "KB3021674",
+          "uid": "KB3021674",
+        },
+        Object {
+          "name": "KB2967917",
+          "uid": "KB2967917",
+        },
+        Object {
+          "name": "KB3077715",
+          "uid": "KB3077715",
+        },
+        Object {
+          "name": "KB3134179",
+          "uid": "KB3134179",
+        },
+        Object {
+          "name": "KB3102939",
+          "uid": "KB3102939",
+        },
+        Object {
+          "name": "KB3027209",
+          "uid": "KB3027209",
+        },
+        Object {
+          "name": "KB3021910",
+          "uid": "KB3021910",
+        },
+        Object {
+          "name": "KB3146723",
+          "uid": "KB3146723",
+        },
+        Object {
+          "name": "KB3156059",
+          "uid": "KB3156059",
+        },
+        Object {
+          "name": "KB2972103",
+          "uid": "KB2972103",
+        },
+        Object {
+          "name": "KB3109103",
+          "uid": "KB3109103",
+        },
+        Object {
+          "name": "KB2973114",
+          "uid": "KB2973114",
+        },
+        Object {
+          "name": "KB3013816",
+          "uid": "KB3013816",
+        },
+        Object {
+          "name": "KB3126041",
+          "uid": "KB3126041",
+        },
+        Object {
+          "name": "KB3045755",
+          "uid": "KB3045755",
+        },
+        Object {
+          "name": "KB3172729",
+          "uid": "KB3172729",
+        },
+        Object {
+          "name": "KB2978122",
+          "uid": "KB2978122",
+        },
+        Object {
+          "name": "KB3012702",
+          "uid": "KB3012702",
+        },
+        Object {
+          "name": "KB2894179",
+          "uid": "KB2894179",
+        },
+        Object {
+          "name": "KB2978126",
+          "uid": "KB2978126",
+        },
+        Object {
+          "name": "KB3147071",
+          "uid": "KB3147071",
+        },
+        Object {
+          "name": "KB3023222",
+          "uid": "KB3023222",
+        },
+        Object {
+          "name": "KB2906956",
+          "uid": "KB2906956",
+        },
+        Object {
+          "name": "KB3059317",
+          "uid": "KB3059317",
+        },
+        Object {
+          "name": "KB3178539",
+          "uid": "KB3178539",
+        },
+        Object {
+          "name": "KB3038002",
+          "uid": "KB3038002",
+        },
+        Object {
+          "name": "KB3126587",
+          "uid": "KB3126587",
+        },
+        Object {
+          "name": "KB2972213",
+          "uid": "KB2972213",
+        },
+        Object {
+          "name": "KB3126434",
+          "uid": "KB3126434",
+        },
+        Object {
+          "name": "KB3045717",
+          "uid": "KB3045717",
+        },
+        Object {
+          "name": "KB3013791",
+          "uid": "KB3013791",
+        },
+        Object {
+          "name": "KB3034348",
+          "uid": "KB3034348",
+        },
+        Object {
+          "name": "KB3013410",
+          "uid": "KB3013410",
+        },
+        Object {
+          "name": "KB2923528",
+          "uid": "KB2923528",
+        },
+        Object {
+          "name": "KB4338815",
+          "uid": "KB4338815",
+        },
+        Object {
+          "name": "KB3109976",
+          "uid": "KB3109976",
+        },
+        Object {
+          "name": "KB3162835",
+          "uid": "KB3162835",
+        },
+        Object {
+          "name": "KB3103616",
+          "uid": "KB3103616",
+        },
+        Object {
+          "name": "KB3045719",
+          "uid": "KB3045719",
+        },
+        Object {
+          "name": "KB3048043",
+          "uid": "KB3048043",
+        },
+        Object {
+          "name": "KB3060793",
+          "uid": "KB3060793",
+        },
+        Object {
+          "name": "KB3097992",
+          "uid": "KB3097992",
+        },
+        Object {
+          "name": "KB3185319",
+          "uid": "KB3185319",
+        },
+        Object {
+          "name": "KB2901128",
+          "uid": "KB2901128",
+        },
+        Object {
+          "name": "KB2989930",
+          "uid": "KB2989930",
+        },
+        Object {
+          "name": "KB3173424",
+          "uid": "KB3173424",
+        },
+        Object {
+          "name": "KB3140234",
+          "uid": "KB3140234",
+        },
+        Object {
+          "name": "KB3095701",
+          "uid": "KB3095701",
+        },
+        Object {
+          "name": "KB3099834",
+          "uid": "KB3099834",
+        },
+        Object {
+          "name": "KB3044374",
+          "uid": "KB3044374",
+        },
+        Object {
+          "name": "KB2912390",
+          "uid": "KB2912390",
+        },
+        Object {
+          "name": "KB3004365",
+          "uid": "KB3004365",
+        },
+        Object {
+          "name": "KB3013172",
+          "uid": "KB3013172",
+        },
+        Object {
+          "name": "KB2973201",
+          "uid": "KB2973201",
+        },
+        Object {
+          "name": "KB2903939",
+          "uid": "KB2903939",
+        },
+        Object {
+          "name": "KB2919355",
+          "uid": "KB2919355",
+        },
+        Object {
+          "name": "KB3122651",
+          "uid": "KB3122651",
+        },
+        Object {
+          "name": "KB2928680",
+          "uid": "KB2928680",
+        },
+        Object {
+          "name": "KB2862152",
+          "uid": "KB2862152",
+        },
+        Object {
+          "name": "KB3008242",
+          "uid": "KB3008242",
+        },
+        Object {
+          "name": "KB3030947",
+          "uid": "KB3030947",
+        },
+        Object {
+          "name": "KB2977765",
+          "uid": "KB2977765",
+        },
+        Object {
+          "name": "KB3087041",
+          "uid": "KB3087041",
+        },
+        Object {
+          "name": "KB2913152",
+          "uid": "KB2913152",
+        },
+        Object {
+          "name": "KB3037924",
+          "uid": "KB3037924",
+        },
+        Object {
+          "name": "KB3024755",
+          "uid": "KB3024755",
+        },
+        Object {
+          "name": "KB3134815",
+          "uid": "KB3134815",
+        },
+        Object {
+          "name": "KB3024751",
+          "uid": "KB3024751",
+        },
+        Object {
+          "name": "KB2468871",
+          "uid": "KB2468871",
+        },
+        Object {
+          "name": "KB2478063",
+          "uid": "KB2478063",
+        },
+        Object {
+          "name": "KB2533523",
+          "uid": "KB2533523",
+        },
+        Object {
+          "name": "KB2544514",
+          "uid": "KB2544514",
+        },
+        Object {
+          "name": "KB2600211",
+          "uid": "KB2600211",
+        },
+        Object {
+          "name": "KB2600217",
+          "uid": "KB2600217",
+        },
+        Object {
+          "name": "KB2932046",
+          "uid": "KB2932046",
+        },
+        Object {
+          "name": "KB2934018",
+          "uid": "KB2934018",
+        },
+        Object {
+          "name": "KB2937592",
+          "uid": "KB2937592",
+        },
+        Object {
+          "name": "KB2938439",
+          "uid": "KB2938439",
+        },
+        Object {
+          "name": "KB4103724",
+          "uid": "KB4103724",
+        },
+        Object {
+          "name": "KB4103725",
+          "uid": "KB4103725",
+        },
+        Object {
+          "name": "KB4284815",
+          "uid": "KB4284815",
+        },
+        Object {
+          "name": "KB4339093",
+          "uid": "KB4339093",
+        },
+      ],
       "users": Array [],
       "vuln_discovery_date": "2018-08-04T00:13:28+03:00",
       "vuln_elimination_date": "2018-08-04T00:13:28+03:00",
@@ -10886,6 +11753,68 @@ Object {
       ],
       "software": Array [],
       "updated_at": "2018-08-04T00:13:28+03:00",
+      "updates": Array [
+        Object {
+          "name": "KB3199986",
+          "uid": "KB3199986",
+        },
+        Object {
+          "name": "KB4093137",
+          "uid": "KB4093137",
+        },
+        Object {
+          "name": "KB4338814",
+          "uid": "KB4338814",
+        },
+        Object {
+          "name": "KB4132216",
+          "uid": "KB4132216",
+        },
+        Object {
+          "name": "KB2468871",
+          "uid": "KB2468871",
+        },
+        Object {
+          "name": "KB2478063",
+          "uid": "KB2478063",
+        },
+        Object {
+          "name": "KB2504637",
+          "uid": "KB2504637",
+        },
+        Object {
+          "name": "KB2533523",
+          "uid": "KB2533523",
+        },
+        Object {
+          "name": "KB2544514",
+          "uid": "KB2544514",
+        },
+        Object {
+          "name": "KB2600211",
+          "uid": "KB2600211",
+        },
+        Object {
+          "name": "KB2600217",
+          "uid": "KB2600217",
+        },
+        Object {
+          "name": "KB3095681",
+          "uid": "KB3095681",
+        },
+        Object {
+          "name": "KB3200970",
+          "uid": "KB3200970",
+        },
+        Object {
+          "name": "KB4103723",
+          "uid": "KB4103723",
+        },
+        Object {
+          "name": "KB4339093",
+          "uid": "KB4339093",
+        },
+      ],
       "users": Array [],
       "vuln_discovery_date": "2018-08-04T00:13:28+03:00",
       "vuln_elimination_date": "2018-08-04T00:13:28+03:00",
@@ -12617,6 +13546,7 @@ Object {
       "ports": Array [],
       "software": Array [],
       "updated_at": "2018-05-02T21:25:13+03:00",
+      "updates": Array [],
       "users": Array [],
       "vuln_discovery_date": "2018-05-02T21:25:13+03:00",
       "vuln_elimination_date": "2018-05-02T21:25:13+03:00",

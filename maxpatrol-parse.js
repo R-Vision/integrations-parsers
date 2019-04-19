@@ -28,6 +28,7 @@ const {
 /**
  * Парсим данные о софте хоста
  * @param {Array<Object>} data
+ * @param {Array<string>>} filterVulnerabilitiesPaths
  * @returns {{
  * software: Array,
  * ifs: Array,
@@ -37,7 +38,7 @@ const {
  * users: Array
  * }}
  */
-function parseHostSoft(data) {
+function parseHostSoft(data, filterVulnerabilitiesPaths) {
   const ifs = [];
   const users = [];
   const ports = [];
@@ -53,7 +54,11 @@ function parseHostSoft(data) {
       protocol,
       name,
       version,
+      path,
     } = item;
+
+    const ignoreVulnerabilities = Boolean(path && filterVulnerabilitiesPaths &&
+      filterVulnerabilitiesPaths.some(re => re.test(path)));
 
     // это некруто, но другого способа найти os на cisco asa не нашел
     if (name === 'Cisco IOS') {
@@ -100,6 +105,7 @@ function parseHostSoft(data) {
             vulns[vulnerId] = {
               port,
               protocol,
+              ignored_by_path: ignoreVulnerabilities,
               result: getSoftwareVulnerabilityResult(vuln),
             };
         }
@@ -273,6 +279,7 @@ function formatSoftData(softData) {
 /**
  * Форматируем данные о софте и получаем из них необходимые данные
  * @param {Array} data
+ * @param {Array} filterVulnerabilitiesPaths
  * @returns {{
  *  software: Array,
  *  os: String,
@@ -283,13 +290,13 @@ function formatSoftData(softData) {
  *  users: Array
  * }}
  */
-function parseSoftData(data) {
+function parseSoftData(data, filterVulnerabilitiesPaths) {
   const { formattedSoft, ports } = formatSoftData(data);
   const snmpData = formattedSoft.find(item => item.name === 'SNMP');
   const osData = formattedSoft.find(item => item.name === 'Operating System');
   const os = osData ? osData.version : '';
 
-  let result = parseHostSoft(formattedSoft);
+  let result = parseHostSoft(formattedSoft, filterVulnerabilitiesPaths);
 
   // если данных нет, но есть данные SNMP-сканирования - используем последние
   if ((!result.ifs || result.ifs.length === 0) &&
@@ -390,7 +397,7 @@ module.exports = function (inputStream, options = {}, cb) {
 
     try {
       const softData = typeof node.scan_objects === 'object' && node.scan_objects.soft ?
-        parseSoftData(node.scan_objects.soft) :
+        parseSoftData(node.scan_objects.soft, options.filter_vulnerabilities_paths) :
         {};
 
       const ifs = filterNetworkInterfaces(softData.ifs || []);
@@ -486,6 +493,8 @@ module.exports = function (inputStream, options = {}, cb) {
                 isNetworkVulnerability: Boolean(vuln.port),
               };
             }
+
+            vulnerability.ignored_by_path = vuln.ignored_by_path || false;
 
             vulnerabilities.push(vulnerability);
           }

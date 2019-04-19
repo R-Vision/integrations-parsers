@@ -9,6 +9,9 @@ const maxPatrolParse = require('../maxpatrol-parse');
 const parseOptions = {
   include_software: true,
   include_users: true,
+  filter_vulnerabilities_paths: [
+    /C:\\Program Files \(x86\)\\Microsoft Silverlight\\sllauncher\.exe/i,
+  ],
 };
 
 function cb(err, result) {

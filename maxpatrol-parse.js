@@ -71,6 +71,7 @@ function parseHostSoft(data, filterVulnerabilitiesPaths) {
         updates.push({
           name: version,
           uid: version,
+          description: name,
         });
         continue; // если эта запись об обновлении Windows в дальнейшей обработке нет смысла
       }

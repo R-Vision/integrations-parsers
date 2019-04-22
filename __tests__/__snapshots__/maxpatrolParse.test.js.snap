@@ -6689,850 +6689,1062 @@ Object {
       "updated_at": "2018-08-04T00:13:28+03:00",
       "updates": Array [
         Object {
+          "description": "Microsoft Updates",
           "name": "KB3072307",
           "uid": "KB3072307",
         },
         Object {
+          "description": "Microsoft Updates",
           "name": "KB3043812",
           "uid": "KB3043812",
         },
         Object {
+          "description": "Microsoft Updates",
           "name": "KB3014442",
           "uid": "KB3014442",
         },
         Object {
+          "description": "Microsoft Updates",
           "name": "KB3086255",
           "uid": "KB3086255",
         },
         Object {
+          "description": "Microsoft Updates",
           "name": "KB3084905",
           "uid": "KB3084905",
         },
         Object {
+          "description": "Microsoft Updates",
           "name": "KB2913270",
           "uid": "KB2913270",
         },
         Object {
+          "description": "Microsoft Updates",
           "name": "KB2939087",
           "uid": "KB2939087",
         },
         Object {
+          "description": "Microsoft Updates",
           "name": "KB3172614",
           "uid": "KB3172614",
         },
         Object {
+          "description": "Microsoft Updates",
           "name": "KB3055642",
           "uid": "KB3055642",
         },
         Object {
+          "description": "Microsoft Updates",
           "name": "KB4338424",
           "uid": "KB4338424",
         },
         Object {
+          "description": "Microsoft Updates",
           "name": "KB3045685",
           "uid": "KB3045685",
         },
         Object {
+          "description": "Microsoft Updates",
           "name": "KB3123245",
           "uid": "KB3123245",
         },
         Object {
+          "description": "Microsoft Updates",
           "name": "KB3082089",
           "uid": "KB3082089",
         },
         Object {
+          "description": "Microsoft Updates",
           "name": "KB2843630",
           "uid": "KB2843630",
         },
         Object {
+          "description": "Microsoft Updates",
           "name": "KB3096411",
           "uid": "KB3096411",
         },
         Object {
+          "description": "Microsoft Updates",
           "name": "KB3046017",
           "uid": "KB3046017",
         },
         Object {
+          "description": "Microsoft Updates",
           "name": "KB3159398",
           "uid": "KB3159398",
         },
         Object {
+          "description": "Microsoft Updates",
           "name": "KB2898871",
           "uid": "KB2898871",
         },
         Object {
+          "description": "Microsoft Updates",
           "name": "KB3094486",
           "uid": "KB3094486",
         },
         Object {
+          "description": "Microsoft Updates",
           "name": "KB3010788",
           "uid": "KB3010788",
         },
         Object {
+          "description": "Microsoft Updates",
           "name": "KB3097997",
           "uid": "KB3097997",
         },
         Object {
+          "description": "Microsoft Updates",
           "name": "KB2894029",
           "uid": "KB2894029",
         },
         Object {
+          "description": "Microsoft Updates",
           "name": "KB2908174",
           "uid": "KB2908174",
         },
         Object {
+          "description": "Microsoft Updates",
           "name": "KB2901101",
           "uid": "KB2901101",
         },
         Object {
+          "description": "Microsoft Updates",
           "name": "KB3063843",
           "uid": "KB3063843",
         },
         Object {
+          "description": "Microsoft Updates",
           "name": "KB2884846",
           "uid": "KB2884846",
         },
         Object {
+          "description": "Microsoft Updates",
           "name": "KB3054169",
           "uid": "KB3054169",
         },
         Object {
+          "description": "Microsoft Updates",
           "name": "KB3055343",
           "uid": "KB3055343",
         },
         Object {
+          "description": "Microsoft Updates",
           "name": "KB2898742",
           "uid": "KB2898742",
         },
         Object {
+          "description": "Microsoft Updates",
           "name": "KB3023219",
           "uid": "KB3023219",
         },
         Object {
+          "description": "Microsoft Updates",
           "name": "KB3032663",
           "uid": "KB3032663",
         },
         Object {
+          "description": "Microsoft Updates",
           "name": "KB3060681",
           "uid": "KB3060681",
         },
         Object {
+          "description": "Microsoft Updates",
           "name": "KB3078676",
           "uid": "KB3078676",
         },
         Object {
+          "description": "Microsoft Updates",
           "name": "KB2966828",
           "uid": "KB2966828",
         },
         Object {
+          "description": "Microsoft Updates",
           "name": "KB3091297",
           "uid": "KB3091297",
         },
         Object {
+          "description": "Microsoft Updates",
           "name": "KB3054464",
           "uid": "KB3054464",
         },
         Object {
+          "description": "Microsoft Updates",
           "name": "KB2966826",
           "uid": "KB2966826",
         },
         Object {
+          "description": "Microsoft Updates",
           "name": "KB3145432",
           "uid": "KB3145432",
         },
         Object {
+          "description": "Microsoft Updates",
           "name": "KB2911106",
           "uid": "KB2911106",
         },
         Object {
+          "description": "Microsoft Updates",
           "name": "KB2898514",
           "uid": "KB2898514",
         },
         Object {
+          "description": "Microsoft Updates",
           "name": "KB2938066",
           "uid": "KB2938066",
         },
         Object {
+          "description": "Microsoft Updates",
           "name": "KB3045634",
           "uid": "KB3045634",
         },
         Object {
+          "description": "Microsoft Updates",
           "name": "KB3013769",
           "uid": "KB3013769",
         },
         Object {
+          "description": "Microsoft Updates",
           "name": "KB4040981",
           "uid": "KB4040981",
         },
         Object {
+          "description": "Microsoft Updates",
           "name": "KB3023266",
           "uid": "KB3023266",
         },
         Object {
+          "description": "Microsoft Updates",
           "name": "KB2978041",
           "uid": "KB2978041",
         },
         Object {
+          "description": "Microsoft Updates",
           "name": "KB3035126",
           "uid": "KB3035126",
         },
         Object {
+          "description": "Microsoft Updates",
           "name": "KB2961908",
           "uid": "KB2961908",
         },
         Object {
+          "description": "Microsoft Updates",
           "name": "KB2976897",
           "uid": "KB2976897",
         },
         Object {
+          "description": "Microsoft Updates",
           "name": "KB3121461",
           "uid": "KB3121461",
         },
         Object {
+          "description": "Microsoft Updates",
           "name": "KB4033369",
           "uid": "KB4033369",
         },
         Object {
+          "description": "Microsoft Updates",
           "name": "KB3011780",
           "uid": "KB3011780",
         },
         Object {
+          "description": "Microsoft Updates",
           "name": "KB3071756",
           "uid": "KB3071756",
         },
         Object {
+          "description": "Microsoft Updates",
           "name": "KB3103709",
           "uid": "KB3103709",
         },
         Object {
+          "description": "Microsoft Updates",
           "name": "KB3162343",
           "uid": "KB3162343",
         },
         Object {
+          "description": "Microsoft Updates",
           "name": "KB3126593",
           "uid": "KB3126593",
         },
         Object {
+          "description": "Microsoft Updates",
           "name": "KB3137728",
           "uid": "KB3137728",
         },
         Object {
+          "description": "Microsoft Updates",
           "name": "KB3074228",
           "uid": "KB3074228",
         },
         Object {
+          "description": "Microsoft Updates",
           "name": "KB3080149",
           "uid": "KB3080149",
         },
         Object {
+          "description": "Microsoft Updates",
           "name": "KB3074545",
           "uid": "KB3074545",
         },
         Object {
+          "description": "Microsoft Updates",
           "name": "KB3045999",
           "uid": "KB3045999",
         },
         Object {
+          "description": "Microsoft Updates",
           "name": "KB3000850",
           "uid": "KB3000850",
         },
         Object {
+          "description": "Microsoft Updates",
           "name": "KB4054854",
           "uid": "KB4054854",
         },
         Object {
+          "description": "Microsoft Updates",
           "name": "KB4033428",
           "uid": "KB4033428",
         },
         Object {
+          "description": "Microsoft Updates",
           "name": "KB2883200",
           "uid": "KB2883200",
         },
         Object {
+          "description": "Microsoft Updates",
           "name": "KB3100473",
           "uid": "KB3100473",
         },
         Object {
+          "description": "Microsoft Updates",
           "name": "KB4096417",
           "uid": "KB4096417",
         },
         Object {
+          "description": "Microsoft Updates",
           "name": "KB3036612",
           "uid": "KB3036612",
         },
         Object {
+          "description": "Microsoft Updates",
           "name": "KB3149157",
           "uid": "KB3149157",
         },
         Object {
+          "description": "Microsoft Updates",
           "name": "KB3081320",
           "uid": "KB3081320",
         },
         Object {
+          "description": "Microsoft Updates",
           "name": "KB3110329",
           "uid": "KB3110329",
         },
         Object {
+          "description": "Microsoft Updates",
           "name": "KB3078405",
           "uid": "KB3078405",
         },
         Object {
+          "description": "Microsoft Updates",
           "name": "KB3046737",
           "uid": "KB3046737",
         },
         Object {
+          "description": "Microsoft Updates",
           "name": "KB3139164",
           "uid": "KB3139164",
         },
         Object {
+          "description": "Microsoft Updates",
           "name": "KB3118401",
           "uid": "KB3118401",
         },
         Object {
+          "description": "Microsoft Updates",
           "name": "KB3161949",
           "uid": "KB3161949",
         },
         Object {
+          "description": "Microsoft Updates",
           "name": "KB4095875",
           "uid": "KB4095875",
         },
         Object {
+          "description": "Microsoft Updates",
           "name": "KB3133043",
           "uid": "KB3133043",
         },
         Object {
+          "description": "Microsoft Updates",
           "name": "KB2887595",
           "uid": "KB2887595",
         },
         Object {
+          "description": "Microsoft Updates",
           "name": "KB3087137",
           "uid": "KB3087137",
         },
         Object {
+          "description": "Microsoft Updates",
           "name": "KB2931366",
           "uid": "KB2931366",
         },
         Object {
+          "description": "Microsoft Updates",
           "name": "KB3004545",
           "uid": "KB3004545",
         },
         Object {
+          "description": "Microsoft Updates",
           "name": "KB3155784",
           "uid": "KB3155784",
         },
         Object {
+          "description": "Microsoft Updates",
           "name": "KB2893294",
           "uid": "KB2893294",
         },
         Object {
+          "description": "Microsoft Updates",
           "name": "KB3037576",
           "uid": "KB3037576",
         },
         Object {
+          "description": "Microsoft Updates",
           "name": "KB2914218",
           "uid": "KB2914218",
         },
         Object {
+          "description": "Microsoft Updates",
           "name": "KB3146751",
           "uid": "KB3146751",
         },
         Object {
+          "description": "Microsoft Updates",
           "name": "KB3037579",
           "uid": "KB3037579",
         },
         Object {
+          "description": "Microsoft Updates",
           "name": "KB3175024",
           "uid": "KB3175024",
         },
         Object {
+          "description": "Microsoft Updates",
           "name": "KB3098779",
           "uid": "KB3098779",
         },
         Object {
+          "description": "Microsoft Updates",
           "name": "KB2975061",
           "uid": "KB2975061",
         },
         Object {
+          "description": "Microsoft Updates",
           "name": "KB3054256",
           "uid": "KB3054256",
         },
         Object {
+          "description": "Microsoft Updates",
           "name": "KB3042058",
           "uid": "KB3042058",
         },
         Object {
+          "description": "Microsoft Updates",
           "name": "KB3138602",
           "uid": "KB3138602",
         },
         Object {
+          "description": "Microsoft Updates",
           "name": "KB2954879",
           "uid": "KB2954879",
         },
         Object {
+          "description": "Microsoft Updates",
           "name": "KB2919394",
           "uid": "KB2919394",
         },
         Object {
+          "description": "Microsoft Updates",
           "name": "KB2922229",
           "uid": "KB2922229",
         },
         Object {
+          "description": "Microsoft Updates",
           "name": "KB2894856",
           "uid": "KB2894856",
         },
         Object {
+          "description": "Microsoft Updates",
           "name": "KB3054203",
           "uid": "KB3054203",
         },
         Object {
+          "description": "Microsoft Updates",
           "name": "KB3145384",
           "uid": "KB3145384",
         },
         Object {
+          "description": "Microsoft Updates",
           "name": "KB2894852",
           "uid": "KB2894852",
         },
         Object {
+          "description": "Microsoft Updates",
           "name": "KB3074548",
           "uid": "KB3074548",
         },
         Object {
+          "description": "Microsoft Updates",
           "name": "KB3003057",
           "uid": "KB3003057",
         },
         Object {
+          "description": "Microsoft Updates",
           "name": "KB3033446",
           "uid": "KB3033446",
         },
         Object {
+          "description": "Microsoft Updates",
           "name": "KB3092601",
           "uid": "KB3092601",
         },
         Object {
+          "description": "Microsoft Updates",
           "name": "KB3133690",
           "uid": "KB3133690",
         },
         Object {
+          "description": "Microsoft Updates",
           "name": "KB3146604",
           "uid": "KB3146604",
         },
         Object {
+          "description": "Microsoft Updates",
           "name": "KB3115224",
           "uid": "KB3115224",
         },
         Object {
+          "description": "Microsoft Updates",
           "name": "KB3146978",
           "uid": "KB3146978",
         },
         Object {
+          "description": "Microsoft Updates",
           "name": "KB3029603",
           "uid": "KB3029603",
         },
         Object {
+          "description": "Microsoft Updates",
           "name": "KB3179574",
           "uid": "KB3179574",
         },
         Object {
+          "description": "Microsoft Updates",
           "name": "KB3019978",
           "uid": "KB3019978",
         },
         Object {
+          "description": "Microsoft Updates",
           "name": "KB3013538",
           "uid": "KB3013538",
         },
         Object {
+          "description": "Microsoft Updates",
           "name": "KB3044673",
           "uid": "KB3044673",
         },
         Object {
+          "description": "Microsoft Updates",
           "name": "KB2892074",
           "uid": "KB2892074",
         },
         Object {
+          "description": "Microsoft Updates",
           "name": "KB2868626",
           "uid": "KB2868626",
         },
         Object {
+          "description": "Microsoft Updates",
           "name": "KB3084135",
           "uid": "KB3084135",
         },
         Object {
+          "description": "Microsoft Updates",
           "name": "KB3055323",
           "uid": "KB3055323",
         },
         Object {
+          "description": "Microsoft Updates",
           "name": "KB3061512",
           "uid": "KB3061512",
         },
         Object {
+          "description": "Microsoft Updates",
           "name": "KB3121261",
           "uid": "KB3121261",
         },
         Object {
+          "description": "Microsoft Updates",
           "name": "KB4338419",
           "uid": "KB4338419",
         },
         Object {
+          "description": "Microsoft Updates",
           "name": "KB3000483",
           "uid": "KB3000483",
         },
         Object {
+          "description": "Microsoft Updates",
           "name": "KB3103696",
           "uid": "KB3103696",
         },
         Object {
+          "description": "Microsoft Updates",
           "name": "KB3139398",
           "uid": "KB3139398",
         },
         Object {
+          "description": "Microsoft Updates",
           "name": "KB3127222",
           "uid": "KB3127222",
         },
         Object {
+          "description": "Microsoft Updates",
           "name": "KB2968296",
           "uid": "KB2968296",
         },
         Object {
+          "description": "Microsoft Updates",
           "name": "KB3139914",
           "uid": "KB3139914",
         },
         Object {
+          "description": "Microsoft Updates",
           "name": "KB3140219",
           "uid": "KB3140219",
         },
         Object {
+          "description": "Microsoft Updates",
           "name": "KB3102429",
           "uid": "KB3102429",
         },
         Object {
+          "description": "Microsoft Updates",
           "name": "KB3042085",
           "uid": "KB3042085",
         },
         Object {
+          "description": "Microsoft Updates",
           "name": "KB3021674",
           "uid": "KB3021674",
         },
         Object {
+          "description": "Microsoft Updates",
           "name": "KB2967917",
           "uid": "KB2967917",
         },
         Object {
+          "description": "Microsoft Updates",
           "name": "KB3077715",
           "uid": "KB3077715",
         },
         Object {
+          "description": "Microsoft Updates",
           "name": "KB3134179",
           "uid": "KB3134179",
         },
         Object {
+          "description": "Microsoft Updates",
           "name": "KB3102939",
           "uid": "KB3102939",
         },
         Object {
+          "description": "Microsoft Updates",
           "name": "KB3027209",
           "uid": "KB3027209",
         },
         Object {
+          "description": "Microsoft Updates",
           "name": "KB3021910",
           "uid": "KB3021910",
         },
         Object {
+          "description": "Microsoft Updates",
           "name": "KB3146723",
           "uid": "KB3146723",
         },
         Object {
+          "description": "Microsoft Updates",
           "name": "KB3156059",
           "uid": "KB3156059",
         },
         Object {
+          "description": "Microsoft Updates",
           "name": "KB2972103",
           "uid": "KB2972103",
         },
         Object {
+          "description": "Microsoft Updates",
           "name": "KB3109103",
           "uid": "KB3109103",
         },
         Object {
+          "description": "Microsoft Updates",
           "name": "KB2973114",
           "uid": "KB2973114",
         },
         Object {
+          "description": "Microsoft Updates",
           "name": "KB3013816",
           "uid": "KB3013816",
         },
         Object {
+          "description": "Microsoft Updates",
           "name": "KB3126041",
           "uid": "KB3126041",
         },
         Object {
+          "description": "Microsoft Updates",
           "name": "KB3045755",
           "uid": "KB3045755",
         },
         Object {
+          "description": "Microsoft Updates",
           "name": "KB3172729",
           "uid": "KB3172729",
         },
         Object {
+          "description": "Microsoft Updates",
           "name": "KB2978122",
           "uid": "KB2978122",
         },
         Object {
+          "description": "Microsoft Updates",
           "name": "KB3012702",
           "uid": "KB3012702",
         },
         Object {
+          "description": "Microsoft Updates",
           "name": "KB2894179",
           "uid": "KB2894179",
         },
         Object {
+          "description": "Microsoft Updates",
           "name": "KB2978126",
           "uid": "KB2978126",
         },
         Object {
+          "description": "Microsoft Updates",
           "name": "KB3147071",
           "uid": "KB3147071",
         },
         Object {
+          "description": "Microsoft Updates",
           "name": "KB3023222",
           "uid": "KB3023222",
         },
         Object {
+          "description": "Microsoft Updates",
           "name": "KB2906956",
           "uid": "KB2906956",
         },
         Object {
+          "description": "Microsoft Updates",
           "name": "KB3059317",
           "uid": "KB3059317",
         },
         Object {
+          "description": "Microsoft Updates",
           "name": "KB3178539",
           "uid": "KB3178539",
         },
         Object {
+          "description": "Microsoft Updates",
           "name": "KB3038002",
           "uid": "KB3038002",
         },
         Object {
+          "description": "Microsoft Updates",
           "name": "KB3126587",
           "uid": "KB3126587",
         },
         Object {
+          "description": "Microsoft Updates",
           "name": "KB2972213",
           "uid": "KB2972213",
         },
         Object {
+          "description": "Microsoft Updates",
           "name": "KB3126434",
           "uid": "KB3126434",
         },
         Object {
+          "description": "Microsoft Updates",
           "name": "KB3045717",
           "uid": "KB3045717",
         },
         Object {
+          "description": "Microsoft Updates",
           "name": "KB3013791",
           "uid": "KB3013791",
         },
         Object {
+          "description": "Microsoft Updates",
           "name": "KB3034348",
           "uid": "KB3034348",
         },
         Object {
+          "description": "Microsoft Updates",
           "name": "KB3013410",
           "uid": "KB3013410",
         },
         Object {
+          "description": "Microsoft Updates",
           "name": "KB2923528",
           "uid": "KB2923528",
         },
         Object {
+          "description": "Microsoft Updates",
           "name": "KB4338815",
           "uid": "KB4338815",
         },
         Object {
+          "description": "Microsoft Updates",
           "name": "KB3109976",
           "uid": "KB3109976",
         },
         Object {
+          "description": "Microsoft Updates",
           "name": "KB3162835",
           "uid": "KB3162835",
         },
         Object {
+          "description": "Microsoft Updates",
           "name": "KB3103616",
           "uid": "KB3103616",
         },
         Object {
+          "description": "Microsoft Updates",
           "name": "KB3045719",
           "uid": "KB3045719",
         },
         Object {
+          "description": "Microsoft Updates",
           "name": "KB3048043",
           "uid": "KB3048043",
         },
         Object {
+          "description": "Microsoft Updates",
           "name": "KB3060793",
           "uid": "KB3060793",
         },
         Object {
+          "description": "Microsoft Updates",
           "name": "KB3097992",
           "uid": "KB3097992",
         },
         Object {
+          "description": "Microsoft Updates",
           "name": "KB3185319",
           "uid": "KB3185319",
         },
         Object {
+          "description": "Microsoft Updates",
           "name": "KB2901128",
           "uid": "KB2901128",
         },
         Object {
+          "description": "Microsoft Updates",
           "name": "KB2989930",
           "uid": "KB2989930",
         },
         Object {
+          "description": "Microsoft Updates",
           "name": "KB3173424",
           "uid": "KB3173424",
         },
         Object {
+          "description": "Microsoft Updates",
           "name": "KB3140234",
           "uid": "KB3140234",
         },
         Object {
+          "description": "Microsoft Updates",
           "name": "KB3095701",
           "uid": "KB3095701",
         },
         Object {
+          "description": "Microsoft Updates",
           "name": "KB3099834",
           "uid": "KB3099834",
         },
         Object {
+          "description": "Microsoft Updates",
           "name": "KB3044374",
           "uid": "KB3044374",
         },
         Object {
+          "description": "Microsoft Updates",
           "name": "KB2912390",
           "uid": "KB2912390",
         },
         Object {
+          "description": "Microsoft Updates",
           "name": "KB3004365",
           "uid": "KB3004365",
         },
         Object {
+          "description": "Microsoft Updates",
           "name": "KB3013172",
           "uid": "KB3013172",
         },
         Object {
+          "description": "Microsoft Updates",
           "name": "KB2973201",
           "uid": "KB2973201",
         },
         Object {
+          "description": "Microsoft Updates",
           "name": "KB2903939",
           "uid": "KB2903939",
         },
         Object {
+          "description": "Microsoft Updates",
           "name": "KB2919355",
           "uid": "KB2919355",
         },
         Object {
+          "description": "Microsoft Updates",
           "name": "KB3122651",
           "uid": "KB3122651",
         },
         Object {
+          "description": "Microsoft Updates",
           "name": "KB2928680",
           "uid": "KB2928680",
         },
         Object {
+          "description": "Microsoft Updates",
           "name": "KB2862152",
           "uid": "KB2862152",
         },
         Object {
+          "description": "Microsoft Updates",
           "name": "KB3008242",
           "uid": "KB3008242",
         },
         Object {
+          "description": "Microsoft Updates",
           "name": "KB3030947",
           "uid": "KB3030947",
         },
         Object {
+          "description": "Microsoft Updates",
           "name": "KB2977765",
           "uid": "KB2977765",
         },
         Object {
+          "description": "Microsoft Updates",
           "name": "KB3087041",
           "uid": "KB3087041",
         },
         Object {
+          "description": "Microsoft Updates",
           "name": "KB2913152",
           "uid": "KB2913152",
         },
         Object {
+          "description": "Microsoft Updates",
           "name": "KB3037924",
           "uid": "KB3037924",
         },
         Object {
+          "description": "Microsoft Updates",
           "name": "KB3024755",
           "uid": "KB3024755",
         },
         Object {
+          "description": "Microsoft Updates",
           "name": "KB3134815",
           "uid": "KB3134815",
         },
         Object {
+          "description": "Microsoft Updates",
           "name": "KB3024751",
           "uid": "KB3024751",
         },
         Object {
+          "description": "Microsoft Updates",
           "name": "KB2468871",
           "uid": "KB2468871",
         },
         Object {
+          "description": "Microsoft Updates",
           "name": "KB2478063",
           "uid": "KB2478063",
         },
         Object {
+          "description": "Microsoft Updates",
           "name": "KB2533523",
           "uid": "KB2533523",
         },
         Object {
+          "description": "Microsoft Updates",
           "name": "KB2544514",
           "uid": "KB2544514",
         },
         Object {
+          "description": "Microsoft Updates",
           "name": "KB2600211",
           "uid": "KB2600211",
         },
         Object {
+          "description": "Microsoft Updates",
           "name": "KB2600217",
           "uid": "KB2600217",
         },
         Object {
+          "description": "Microsoft Updates",
           "name": "KB2932046",
           "uid": "KB2932046",
         },
         Object {
+          "description": "Microsoft Updates",
           "name": "KB2934018",
           "uid": "KB2934018",
         },
         Object {
+          "description": "Microsoft Updates",
           "name": "KB2937592",
           "uid": "KB2937592",
         },
         Object {
+          "description": "Microsoft Updates",
           "name": "KB2938439",
           "uid": "KB2938439",
         },
         Object {
+          "description": "Microsoft Updates",
           "name": "KB4103724",
           "uid": "KB4103724",
         },
         Object {
+          "description": "Microsoft Updates",
           "name": "KB4103725",
           "uid": "KB4103725",
         },
         Object {
+          "description": "Microsoft Updates",
           "name": "KB4284815",
           "uid": "KB4284815",
         },
         Object {
+          "description": "Microsoft Updates",
           "name": "KB4339093",
           "uid": "KB4339093",
         },
@@ -11755,62 +11967,77 @@ Object {
       "updated_at": "2018-08-04T00:13:28+03:00",
       "updates": Array [
         Object {
+          "description": "Microsoft Updates",
           "name": "KB3199986",
           "uid": "KB3199986",
         },
         Object {
+          "description": "Microsoft Updates",
           "name": "KB4093137",
           "uid": "KB4093137",
         },
         Object {
+          "description": "Microsoft Updates",
           "name": "KB4338814",
           "uid": "KB4338814",
         },
         Object {
+          "description": "Microsoft Updates",
           "name": "KB4132216",
           "uid": "KB4132216",
         },
         Object {
+          "description": "Microsoft Updates",
           "name": "KB2468871",
           "uid": "KB2468871",
         },
         Object {
+          "description": "Microsoft Updates",
           "name": "KB2478063",
           "uid": "KB2478063",
         },
         Object {
+          "description": "Microsoft Updates",
           "name": "KB2504637",
           "uid": "KB2504637",
         },
         Object {
+          "description": "Microsoft Updates",
           "name": "KB2533523",
           "uid": "KB2533523",
         },
         Object {
+          "description": "Microsoft Updates",
           "name": "KB2544514",
           "uid": "KB2544514",
         },
         Object {
+          "description": "Microsoft Updates",
           "name": "KB2600211",
           "uid": "KB2600211",
         },
         Object {
+          "description": "Microsoft Updates",
           "name": "KB2600217",
           "uid": "KB2600217",
         },
         Object {
+          "description": "Microsoft Updates",
           "name": "KB3095681",
           "uid": "KB3095681",
         },
         Object {
+          "description": "Microsoft Updates",
           "name": "KB3200970",
           "uid": "KB3200970",
         },
         Object {
+          "description": "Microsoft Updates",
           "name": "KB4103723",
           "uid": "KB4103723",
         },
         Object {
+          "description": "Microsoft Updates",
           "name": "KB4339093",
           "uid": "KB4339093",
         },

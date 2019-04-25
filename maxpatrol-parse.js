@@ -42,6 +42,7 @@ function parseHostSoft(data, filterVulnerabilitiesPaths) {
   const ifs = [];
   const users = [];
   const ports = [];
+  const updates = [];
   const vulns = {};
   let software = [];
   let firmware;
@@ -60,9 +61,20 @@ function parseHostSoft(data, filterVulnerabilitiesPaths) {
     const ignoreVulnerabilities = Boolean(path && filterVulnerabilitiesPaths &&
       filterVulnerabilitiesPaths.some(re => re.test(path)));
 
-    // это некруто, но другого способа найти os на cisco asa не нашел
-    if (name === 'Cisco IOS') {
-      os = `${name} ${version}`;
+    switch (name) {
+      case 'Cisco IOS': {
+        // это некруто, но другого способа найти os на cisco asa не нашел
+        os = `${name} ${version}`;
+        break;
+      }
+      case 'Microsoft Updates': {
+        updates.push({
+          name: version,
+          uid: version,
+          description: name,
+        });
+        continue; // если эта запись об обновлении Windows в дальнейшей обработке нет смысла
+      }
     }
 
     if (port > 0) {
@@ -133,6 +145,7 @@ function parseHostSoft(data, filterVulnerabilitiesPaths) {
     vulns,
     firmware,
     os,
+    updates,
   };
 }
 

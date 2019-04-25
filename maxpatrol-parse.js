@@ -365,6 +365,7 @@ function formatHostname(name) {
  * @param {Function} cb - колбэк, который должен быть вызван по завершении парсинга
  */
 module.exports = function (inputStream, options = {}, cb) {
+  const INVALID_REPORT_FORMAT_TIMEOUT = 5000;
   const errors = [];
   const { last_run: lastRun } = options;
 
@@ -392,6 +393,16 @@ module.exports = function (inputStream, options = {}, cb) {
 
   const uniqueVulns = {};
   let hosts = [];
+
+  // Если в течение таймаута не было получено ни одного хоста значит отчет имеет неправильный формат
+  setTimeout(() => {
+    if (!hosts.length) {
+      cb(null, {
+        hosts,
+        errors: ['Report has wrong format'],
+      });
+    }
+  }, INVALID_REPORT_FORMAT_TIMEOUT);
 
   xml.on('endElement: host', (node) => {
     // парсим данные хоста - тут все самое интересное

@@ -13782,3 +13782,12 @@ Object {
   ],
 }
 `;
+
+exports[`parse invalid format report matches snapshot 1`] = `
+Object {
+  "errors": Array [
+    "Report has wrong format",
+  ],
+  "hosts": Array [],
+}
+`;

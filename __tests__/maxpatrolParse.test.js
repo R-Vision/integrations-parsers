@@ -25,7 +25,7 @@ async function testReport(filename) {
   maxPatrolParse(testDataStream, parseOptions, cb);
 
   // ждем - парсинг иногда занимает время
-  await new Promise(resolve => setTimeout(resolve, 5000));
+  await new Promise(resolve => setTimeout(resolve, 6000));
 }
 
 describe('parse', () => {
@@ -55,5 +55,9 @@ describe('parse', () => {
 
   test('error handling data matches snapshot', async () => {
     await testReport('invalid_linux');
+  }, 10000);
+
+  test('invalid format report matches snapshot', async () => {
+    await testReport('audit_only_report');
   }, 10000);
 });

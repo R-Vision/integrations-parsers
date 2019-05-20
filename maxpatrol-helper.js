@@ -22,8 +22,8 @@ function getDomainName(value) {
   const domain = String(value).split('.');
   const l = domain.length;
 
-  if (l > 2) {
-    return domain.splice(l - 2, l).join('.');
+  if (l > 1) {
+    return domain.slice(1).join('.');
   }
 
   return null;

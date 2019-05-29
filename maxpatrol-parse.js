@@ -68,11 +68,14 @@ function parseHostSoft(data, filterVulnerabilitiesPaths) {
         break;
       }
       case 'Microsoft Updates': {
-        updates.push({
-          name: version,
-          uid: version,
-          description: name,
-        });
+        if (/^KB\d+$/.test(version)) {
+          updates.push({
+            name: version,
+            uid: version,
+            description: name,
+          });
+        }
+
         continue; // если эта запись об обновлении Windows в дальнейшей обработке нет смысла
       }
     }

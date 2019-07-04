@@ -536,7 +536,7 @@ function getSoftwareVulnerabilityResult(vuln) {
         });
       }
 
-      tableHTML += '</tbody>';
+      tableHTML += '</tbody></table>';
       result.push(tableHTML);
     }
   }

@@ -1,4 +1,5 @@
-'use strict';
+/* eslint-disable no-cond-assign */
+/* eslint-disable no-restricted-syntax */
 
 const csvParse = require('csv-parse');
 
@@ -10,13 +11,20 @@ const csvParse = require('csv-parse');
 function getLevel(number) {
   if (number >= 9) {
     return 5;
-  } else if (number >= 7) {
+  }
+
+  if (number >= 7) {
     return 4;
-  } else if (number >= 5) {
+  }
+
+  if (number >= 5) {
     return 3;
-  } else if (number >= 3) {
+  }
+
+  if (number >= 3) {
     return 2;
   }
+
   return 1;
 }
 
@@ -26,6 +34,7 @@ function getLevel(number) {
  * @returns {String} Источник
  */
 function getSourceFromUrl(url) {
+  // eslint-disable-next-line no-useless-escape
   return url.match(/^\w+:\/\/([^\/]+)/)[1];
 }
 
@@ -38,22 +47,12 @@ module.exports = function nessusParse(stream, cb) {
   const hosts = {};
 
   const parser = csvParse({
-    columns: () => {}
+    from_line: 2,
   });
 
   stream.pipe(parser);
 
-  parser.on('error', (err) => {
-    cb(err);
-  });
-
-  parser.on('readable', () => {
-    let record;
-
-    while (record = parser.read()) {
-      processRecord(record);
-    }
-  });
+  parser.on('error', err => cb(err));
 
   parser.on('end', () => {
     const result = [];
@@ -105,15 +104,13 @@ module.exports = function nessusParse(stream, cb) {
       if (seeAlso) {
         const urls = seeAlso.split('\n');
 
-        reference = urls.map(url => {
-          url = url.trim();
-
-          return {
+        reference = urls
+          .map(url => url.trim())
+          .map(url => ({
             ref_id: url,
             source: getSourceFromUrl(url),
             ref_url: url,
-          };
-        });
+          }));
       }
 
       if (cve) {
@@ -152,11 +149,21 @@ module.exports = function nessusParse(stream, cb) {
 
       hosts[address].vulnerabilities[`${pluginId}-${port}-${protocol}`] = item;
     } else if (cve) {
-      hosts[address].vulnerabilities[`${pluginId}-${port}-${protocol}`].reference.push({
+      hosts[address].vulnerabilities[
+        `${pluginId}-${port}-${protocol}`
+      ].reference.push({
         ref_id: cve,
         source: 'NVD',
         ref_url: `http://cve.mitre.org/cgi-bin/cvename.cgi?name=${cve}`,
       });
     }
   }
+
+  parser.on('readable', () => {
+    let record;
+
+    while ((record = parser.read())) {
+      processRecord(record);
+    }
+  });
 };

@@ -1,7 +1,5 @@
 /* eslint-disable no-restricted-syntax,no-continue */
 
-'use strict';
-
 const url = require('url');
 const _ = require('lodash');
 const ipUtils = require('ip');
@@ -17,7 +15,9 @@ const macAddressRegExp = /^([0-9a-fA-F]{2}[:.-]?){5}[0-9a-fA-F]{2}$/i;
  * @returns {String}
  */
 function getDomainName(value) {
-  if (!value || ipUtils.isV4Format(value) || ipUtils.isV6Format(value)) return null;
+  if (!value || ipUtils.isV4Format(value) || ipUtils.isV6Format(value)) {
+    return null;
+  }
 
   const domain = String(value).split('.');
   const l = domain.length;
@@ -40,10 +40,10 @@ function formatSingleDimensionParamListTable(paramList, returnFirstItem) {
   const body = _.get(paramList, 'table[0].body.row');
 
   if (body) {
-    body.forEach((row) => {
+    body.forEach(row => {
       const item = {};
 
-      row.field.forEach((field) => {
+      row.field.forEach(field => {
         item[field.$.id] = field.$text;
       });
 
@@ -93,7 +93,8 @@ function parseReferenceLinks(links) {
     return match.toString().toUpperCase();
   }
 
-  return links.replace(/[\n\t\r]/g, ' ')
+  return links
+    .replace(/[\n\t\r]/g, ' ')
     .split(' ')
     .reduce((reference, link) => {
       const uri = url.parse(link);
@@ -268,11 +269,13 @@ function getLinuxNetworkAdapterData(vuln) {
     return {
       name: vuln.param,
       mac: ifsData[MAC_KEY],
-      address: [{
-        ip: match[1],
-        mask: ipUtils.fromPrefixLen(match[2]),
-        family: 'ipv4',
-      }],
+      address: [
+        {
+          ip: match[1],
+          mask: ipUtils.fromPrefixLen(match[2]),
+          family: 'ipv4',
+        },
+      ],
     };
   }
 
@@ -295,15 +298,19 @@ function getNetworkDeviceNetworkAdapterData(vuln) {
   }
 
   const [ip, mask] = info[ADDRESS_AND_MASK_KEY].split('/');
-  const mac = info[MAC_KEY] ? info[MAC_KEY].match(/\w{1,2}/g).join(':') : undefined;
+  const mac = info[MAC_KEY]
+    ? info[MAC_KEY].match(/\w{1,2}/g).join(':')
+    : undefined;
 
   return {
     mac,
-    address: [{
-      ip,
-      mask: ipUtils.fromPrefixLen(mask),
-      family: 'ipv4',
-    }],
+    address: [
+      {
+        ip,
+        mask: ipUtils.fromPrefixLen(mask),
+        family: 'ipv4',
+      },
+    ],
   };
 }
 
@@ -315,9 +322,9 @@ function getNetworkDeviceNetworkAdapterData(vuln) {
 function getNetworkInterfaceData(vuln) {
   const tableName = _.get(vuln, 'param_list.table[0].$.name');
 
-  return tableName === 'GennetConnNew' ?
-    getLinuxNetworkAdapterData(vuln) :
-    getWindowsNetworkAdapterData(vuln);
+  return tableName === 'GennetConnNew'
+    ? getLinuxNetworkAdapterData(vuln)
+    : getWindowsNetworkAdapterData(vuln);
 }
 
 // Софт
@@ -450,7 +457,7 @@ function getSNMPNetworkInterfaces(vuln) {
   const interfaces = formatSingleDimensionParamListTable(vuln.param_list);
 
   if (interfaces) {
-    return interfaces.map((item) => {
+    return interfaces.map(item => {
       const mac = String(item[MAC_KEY]).match(macAddressRegExp);
 
       return {
@@ -486,7 +493,9 @@ function formatSNMPInterfaces(addresses, interfaces) {
   const result = [];
 
   for (const address of addresses) {
-    const networkInterface = interfaces.find(item => item.id === address.interfaceId);
+    const networkInterface = interfaces.find(
+      item => item.id === address.interfaceId,
+    );
 
     if (networkInterface) {
       delete address.interfaceId;
@@ -515,7 +524,7 @@ function getSoftwareVulnerabilityResult(vuln) {
 
       if (columns && columns.length) {
         tableHTML += '<tr>';
-        columns.forEach((column) => {
+        columns.forEach(column => {
           tableHTML += `<th>${column.$.name}</th>`;
         });
         tableHTML += '</tr>';
@@ -523,12 +532,12 @@ function getSoftwareVulnerabilityResult(vuln) {
 
       const rows = table.body.row;
       if (rows && rows.length) {
-        rows.forEach((row) => {
+        rows.forEach(row => {
           const fields = row.field;
 
           if (fields && fields.length) {
             tableHTML += '<tr>';
-            row.field.forEach((field) => {
+            row.field.forEach(field => {
               tableHTML += `<td>${field.$text}</td>`;
             });
             tableHTML += '</tr>';
@@ -543,7 +552,6 @@ function getSoftwareVulnerabilityResult(vuln) {
 
   return result;
 }
-
 
 module.exports = {
   parseReferenceLinks,

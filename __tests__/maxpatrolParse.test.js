@@ -1,10 +1,7 @@
-'use strict';
-
 const path = require('path');
 const fs = require('fs');
 
 const maxPatrolParse = require('../maxpatrol-parse');
-
 
 const parseOptions = {
   include_software: true,
@@ -14,50 +11,59 @@ const parseOptions = {
   ],
 };
 
-function cb(err, result) {
-  expect(result).toMatchSnapshot();
-}
+function parseReport(filename) {
+  return new Promise((resolve, reject) => {
+    const testFilePath = path.join(__dirname, 'testData', `${filename}.xml`);
+    const testDataStream = fs.createReadStream(testFilePath);
 
-async function testReport(filename) {
-  const testFilePath = path.join(__dirname, 'testData', `${filename}.xml`);
-  const testDataStream = fs.createReadStream(testFilePath);
-
-  maxPatrolParse(testDataStream, parseOptions, cb);
-
-  // ждем - парсинг иногда занимает время
-  await new Promise(resolve => setTimeout(resolve, 6000));
+    maxPatrolParse(testDataStream, parseOptions, (err, result) => {
+      if (err) {
+        reject(err);
+      } else {
+        resolve(result);
+      }
+    });
+  });
 }
 
 describe('parse', () => {
-  test('Windows host data matches snapshot', async () => {
-    await testReport('windows');
+  it('Windows host data matches snapshot', async () => {
+    const result = await parseReport('windows');
+    expect(result).toMatchSnapshot();
   }, 10000);
 
-  test('Linux host data matches snapshot', async () => {
-    await testReport('linux');
+  it('Linux host data matches snapshot', async () => {
+    const result = await parseReport('linux');
+    expect(result).toMatchSnapshot();
   }, 10000);
 
-  test('Cisco host data matches snapshot', async () => {
-    await testReport('cisco');
+  it('Cisco host data matches snapshot', async () => {
+    const result = await parseReport('cisco');
+    expect(result).toMatchSnapshot();
   }, 10000);
 
-  test('Cisco ASA host data matches snapshot', async () => {
-    await testReport('cisco-asa');
+  it('Cisco ASA host data matches snapshot', async () => {
+    const result = await parseReport('cisco-asa');
+    expect(result).toMatchSnapshot();
   }, 10000);
 
-  test('HP host data matches snapshot', async () => {
-    await testReport('hp');
+  it('HP host data matches snapshot', async () => {
+    const result = await parseReport('hp');
+    expect(result).toMatchSnapshot();
   }, 10000);
 
-  test('Juniper host data matches snapshot', async () => {
-    await testReport('juniper');
+  it('Juniper host data matches snapshot', async () => {
+    const result = await parseReport('juniper');
+    expect(result).toMatchSnapshot();
   }, 10000);
 
-  test('error handling data matches snapshot', async () => {
-    await testReport('invalid_linux');
+  it('error handling data matches snapshot', async () => {
+    const result = await parseReport('invalid_linux');
+    expect(result).toMatchSnapshot();
   }, 10000);
 
-  test('invalid format report matches snapshot', async () => {
-    await testReport('audit_only_report');
+  it('invalid format report matches snapshot', async () => {
+    const result = await parseReport('audit_only_report');
+    expect(result).toMatchSnapshot();
   }, 10000);
 });

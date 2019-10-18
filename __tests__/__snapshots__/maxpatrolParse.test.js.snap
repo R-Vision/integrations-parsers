@@ -2216,8 +2216,8 @@ Object {
           "reference": Array [],
           "remediation": "Install valid certificate.",
           "result": Array [
-            "<table><caption>Host ID</caption><tbody><tr><th>Type</th><th>Value</th></tr><tr><td>IP address</td><td>172.16.101.27</td></tr><tr><td>Name specified in task</td><td>172.16.101.27</td></tr></tbody>",
-            "<table><caption>Subject Name</caption><tbody><tr><th></th></tr><tr><td>asa temporary self signed certificate</td></tr></tbody>",
+            "<table><caption>Host ID</caption><tbody><tr><th>Type</th><th>Value</th></tr><tr><td>IP address</td><td>172.16.101.27</td></tr><tr><td>Name specified in task</td><td>172.16.101.27</td></tr></tbody></table>",
+            "<table><caption>Subject Name</caption><tbody><tr><th></th></tr><tr><td>asa temporary self signed certificate</td></tr></tbody></table>",
           ],
           "uid": "7029",
         },
@@ -2233,7 +2233,7 @@ Object {
           "reference": Array [],
           "remediation": "Install valid certificate for the service.",
           "result": Array [
-            "<table><caption></caption><tbody><tr><th></th></tr><tr><td>1. The certificate or certificate chain is based on an untrusted root. 2. Certificate of this service is self-signed.</td></tr></tbody>",
+            "<table><caption></caption><tbody><tr><th></th></tr><tr><td>1. The certificate or certificate chain is based on an untrusted root. 2. Certificate of this service is self-signed.</td></tr></tbody></table>",
           ],
           "uid": "7034",
         },
@@ -2301,7 +2301,7 @@ Object {
           ],
           "remediation": "Disable the listed encryption algorithms.",
           "result": Array [
-            "<table><caption>Encyption algorithms</caption><tbody><tr><th>Weak Ciphers</th></tr><tr><td>aes128-cbc</td></tr><tr><td>3des-cbc</td></tr><tr><td>aes192-cbc</td></tr><tr><td>aes256-cbc</td></tr></tbody>",
+            "<table><caption>Encyption algorithms</caption><tbody><tr><th>Weak Ciphers</th></tr><tr><td>aes128-cbc</td></tr><tr><td>3des-cbc</td></tr><tr><td>aes192-cbc</td></tr><tr><td>aes256-cbc</td></tr></tbody></table>",
           ],
           "uid": "8365",
         },
@@ -6245,7 +6245,7 @@ Object {
           "reference": Array [],
           "remediation": "",
           "result": Array [
-            "<table><caption></caption><tbody><tr><th></th></tr><tr><td>&lt;a href=&quot;http://172.16.101.201/login/&quot; target=_blank&gt;/login/&lt;/a&gt;</td></tr></tbody>",
+            "<table><caption></caption><tbody><tr><th></th></tr><tr><td>&lt;a href=&quot;http://172.16.101.201/login/&quot; target=_blank&gt;/login/&lt;/a&gt;</td></tr></tbody></table>",
           ],
           "uid": "1013",
         },
@@ -6267,8 +6267,8 @@ Object {
           ],
           "remediation": "Do not allow relaying, use authentication for all SMTP Transactions.",
           "result": Array [
-            "<table><caption></caption><tbody><tr><th>Sender</th></tr><tr><td>anybody@microsoft.com</td></tr></tbody>",
-            "<table><caption></caption><tbody><tr><th>Receiver</th></tr><tr><td>anybody@microsoft.com</td></tr></tbody>",
+            "<table><caption></caption><tbody><tr><th>Sender</th></tr><tr><td>anybody@microsoft.com</td></tr></tbody></table>",
+            "<table><caption></caption><tbody><tr><th>Receiver</th></tr><tr><td>anybody@microsoft.com</td></tr></tbody></table>",
           ],
           "uid": "1038",
         },
@@ -6283,7 +6283,7 @@ Object {
           "reference": Array [],
           "remediation": "Delete files and directories if not needed.",
           "result": Array [
-            "<table><caption></caption><tbody><tr><th></th></tr><tr><td>&lt;a href=&quot;http://172.16.101.201/login/&quot; target=_blank&gt;/login/&lt;/a&gt;</td></tr></tbody>",
+            "<table><caption></caption><tbody><tr><th></th></tr><tr><td>&lt;a href=&quot;http://172.16.101.201/login/&quot; target=_blank&gt;/login/&lt;/a&gt;</td></tr></tbody></table>",
           ],
           "uid": "1265",
         },
@@ -6300,7 +6300,7 @@ Object {
           "reference": Array [],
           "remediation": "Use TLS 1.1 or TLS 1.2 protocol for transferring sensitive user information.",
           "result": Array [
-            "<table><caption></caption><tbody><tr><th></th></tr><tr><td>POST /login HTTP/1.1 username=&amp;&lt;font color=#BF1C1C&gt;password=&lt;/font&gt;</td></tr><tr><td>POST /login/ HTTP/1.1 username=&amp;&lt;font color=#BF1C1C&gt;password=&lt;/font&gt;</td></tr></tbody>",
+            "<table><caption></caption><tbody><tr><th></th></tr><tr><td>POST /login HTTP/1.1 username=&amp;&lt;font color=#BF1C1C&gt;password=&lt;/font&gt;</td></tr><tr><td>POST /login/ HTTP/1.1 username=&amp;&lt;font color=#BF1C1C&gt;password=&lt;/font&gt;</td></tr></tbody></table>",
           ],
           "uid": "1273",
         },
@@ -6345,8 +6345,8 @@ Object {
           "reference": Array [],
           "remediation": "Install valid certificate.",
           "result": Array [
-            "<table><caption>Host ID</caption><tbody><tr><th>Type</th><th>Value</th></tr><tr><td>IP address</td><td>172.16.101.201</td></tr><tr><td>Name specified in task</td><td>172.16.101.201</td></tr></tbody>",
-            "<table><caption>Subject Name</caption><tbody><tr><th></th></tr><tr><td>localhost</td></tr></tbody>",
+            "<table><caption>Host ID</caption><tbody><tr><th>Type</th><th>Value</th></tr><tr><td>IP address</td><td>172.16.101.201</td></tr><tr><td>Name specified in task</td><td>172.16.101.201</td></tr></tbody></table>",
+            "<table><caption>Subject Name</caption><tbody><tr><th></th></tr><tr><td>localhost</td></tr></tbody></table>",
           ],
           "uid": "7029",
         },
@@ -6362,7 +6362,7 @@ Object {
           "reference": Array [],
           "remediation": "Install valid certificate for the service.",
           "result": Array [
-            "<table><caption></caption><tbody><tr><th></th></tr><tr><td>1. The certificate or certificate chain is based on an untrusted root. 2. Certificate of this service is self-signed.</td></tr></tbody>",
+            "<table><caption></caption><tbody><tr><th></th></tr><tr><td>1. The certificate or certificate chain is based on an untrusted root. 2. Certificate of this service is self-signed.</td></tr></tbody></table>",
           ],
           "uid": "7034",
         },
@@ -6400,7 +6400,7 @@ Object {
           ],
           "remediation": "To fix the vulnerability install the latest OpenSSHD version (i.e. 7.3p1 or earlier).",
           "result": Array [
-            "<table><caption></caption><tbody><tr><th>Logins</th></tr><tr><td>RO</td></tr><tr><td>tcshuser</td></tr></tbody>",
+            "<table><caption></caption><tbody><tr><th>Logins</th></tr><tr><td>RO</td></tr><tr><td>tcshuser</td></tr></tbody></table>",
           ],
           "uid": "8350",
         },
@@ -7765,7 +7765,7 @@ Object {
           "reference": Array [],
           "remediation": "",
           "result": Array [
-            "<table><caption></caption><tbody><tr><th></th></tr><tr><td>&lt;a href=&quot;http://triton.rvlab.net/&quot; target=_blank&gt;/&lt;/a&gt;</td></tr></tbody>",
+            "<table><caption></caption><tbody><tr><th></th></tr><tr><td>&lt;a href=&quot;http://triton.rvlab.net/&quot; target=_blank&gt;/&lt;/a&gt;</td></tr></tbody></table>",
           ],
           "uid": "1015",
         },
@@ -7794,7 +7794,7 @@ Object {
           "reference": Array [],
           "remediation": "Install valid certificate for the service.",
           "result": Array [
-            "<table><caption></caption><tbody><tr><th></th></tr><tr><td>1. The certificate or certificate chain is based on an untrusted root. 2. Certificate of this service is self-signed.</td></tr></tbody>",
+            "<table><caption></caption><tbody><tr><th></th></tr><tr><td>1. The certificate or certificate chain is based on an untrusted root. 2. Certificate of this service is self-signed.</td></tr></tbody></table>",
           ],
           "uid": "7034",
         },
@@ -7882,7 +7882,7 @@ Object {
           ],
           "remediation": "Replace the SSL certificate of the server with a new one which use the SHA-256 algorithm. It should be noted that intermediate certificates in the chain should not be signed using SHA-1.",
           "result": Array [
-            "<table><caption>Certificate List</caption><tbody><tr><th>Certificate</th><th>Hash Function</th></tr><tr><td>triton.rvlab.net</td><td>SHA1</td></tr></tbody>",
+            "<table><caption>Certificate List</caption><tbody><tr><th>Certificate</th><th>Hash Function</th></tr><tr><td>triton.rvlab.net</td><td>SHA1</td></tr></tbody></table>",
           ],
           "uid": "8335",
         },
@@ -12101,7 +12101,7 @@ Object {
           "reference": Array [],
           "remediation": "Install valid certificate for the service.",
           "result": Array [
-            "<table><caption></caption><tbody><tr><th></th></tr><tr><td>1. The certificate or certificate chain is based on an untrusted root. 2. Certificate of this service is self-signed.</td></tr></tbody>",
+            "<table><caption></caption><tbody><tr><th></th></tr><tr><td>1. The certificate or certificate chain is based on an untrusted root. 2. Certificate of this service is self-signed.</td></tr></tbody></table>",
           ],
           "uid": "7034",
         },

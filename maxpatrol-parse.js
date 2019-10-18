@@ -1,7 +1,5 @@
 /* eslint-disable default-case, no-continue,no-param-reassign,no-restricted-syntax */
 
-'use strict';
-
 const XmlStream = require('xml-stream');
 const ipUtils = require('ip');
 const moment = require('moment');
@@ -23,7 +21,6 @@ const {
   getDomainName,
   getSoftwareVulnerabilityResult,
 } = require('./maxpatrol-helper');
-
 
 /**
  * Парсим данные о софте хоста
@@ -49,17 +46,13 @@ function parseHostSoft(data, filterVulnerabilitiesPaths) {
   let os;
 
   for (const item of data) {
-    const {
-      vulners,
-      port,
-      protocol,
-      name,
-      version,
-      path,
-    } = item;
+    const { vulners, port, protocol, name, version, path } = item;
 
-    const ignoreVulnerabilities = Boolean(path && filterVulnerabilitiesPaths &&
-      filterVulnerabilitiesPaths.some(re => re.test(path)));
+    const ignoreVulnerabilities = Boolean(
+      path &&
+        filterVulnerabilitiesPaths &&
+        filterVulnerabilitiesPaths.some(re => re.test(path)),
+    );
 
     switch (name) {
       case 'Cisco IOS': {
@@ -116,7 +109,8 @@ function parseHostSoft(data, filterVulnerabilitiesPaths) {
           case '411401': // прошивка сетевого оборудования
             firmware = getNetworkDeviceFirmwareData(vuln);
             break;
-          default: // собственно уязвимость (внезапно)
+          default:
+            // собственно уязвимость (внезапно)
             vulns[vulnerId] = {
               port,
               protocol,
@@ -125,12 +119,18 @@ function parseHostSoft(data, filterVulnerabilitiesPaths) {
             };
         }
 
-        if (networkInterface && networkInterface.address && networkInterface.address.length) {
+        if (
+          networkInterface &&
+          networkInterface.address &&
+          networkInterface.address.length
+        ) {
           ifs.push(networkInterface);
         }
 
         if (soft) {
-          software = Array.isArray(soft) ? [...software, ...soft] : [...software, soft];
+          software = Array.isArray(soft)
+            ? [...software, ...soft]
+            : [...software, soft];
         }
 
         if (user) {
@@ -188,11 +188,7 @@ function parseSNMPData(data) {
  * @return {Object}
  */
 function parseSNMPVulners(data) {
-  const {
-    vulners,
-    port,
-    protocol,
-  } = data;
+  const { vulners, port, protocol } = data;
 
   const vulns = {};
 
@@ -315,8 +311,13 @@ function parseSoftData(data, filterVulnerabilitiesPaths) {
   let result = parseHostSoft(formattedSoft, filterVulnerabilitiesPaths);
 
   // если данных нет, но есть данные SNMP-сканирования - используем последние
-  if ((!result.ifs || result.ifs.length === 0) &&
-    (snmpData && snmpData.vulners && snmpData.vulners.vulner && snmpData.vulners.vulner.length)) {
+  if (
+    (!result.ifs || result.ifs.length === 0) &&
+    (snmpData &&
+      snmpData.vulners &&
+      snmpData.vulners.vulner &&
+      snmpData.vulners.vulner.length)
+  ) {
     // const newresult = parseSNMPScanData(formattedSoft);
     result = {
       ...result,
@@ -339,9 +340,11 @@ function parseSoftData(data, filterVulnerabilitiesPaths) {
 function filterNetworkInterfaces(interfaces) {
   return interfaces.reduce((accumulator, ifs) => {
     if (ifs && ifs.address && ifs.address.length) {
-      ifs.address = ifs.address
-        .filter(item => !['127.0.0.1', 'localhost'].includes(item.ip)
-          && ipUtils.isV4Format(item.ip));
+      ifs.address = ifs.address.filter(
+        item =>
+          !['127.0.0.1', 'localhost'].includes(item.ip) &&
+          ipUtils.isV4Format(item.ip),
+      );
 
       if (ifs.address.length) {
         accumulator.push(ifs);
@@ -367,7 +370,7 @@ function formatHostname(name) {
  * @param {Object} options
  * @param {Function} cb - колбэк, который должен быть вызван по завершении парсинга
  */
-module.exports = function (inputStream, options = {}, cb) {
+module.exports = (inputStream, options = {}, cb) => {
   const INVALID_REPORT_FORMAT_TIMEOUT = 5000;
   const errors = [];
   const { last_run: lastRun } = options;
@@ -377,14 +380,22 @@ module.exports = function (inputStream, options = {}, cb) {
   xml.collect('scan_objects > soft');
   xml.collect('scan_objects > soft > vulners > vulner');
   xml.collect('scan_objects > soft > vulners > vulner > param_list > table');
-  xml.collect('scan_objects > soft > vulners > vulner > param_list > table > header > column');
-  xml.collect('scan_objects > soft > vulners > vulner > param_list > table > body > row');
-  xml.collect('scan_objects > soft > vulners > vulner > param_list > table > body > row > field');
+  xml.collect(
+    'scan_objects > soft > vulners > vulner > param_list > table > header > column',
+  );
+  xml.collect(
+    'scan_objects > soft > vulners > vulner > param_list > table > body > row',
+  );
+  xml.collect(
+    'scan_objects > soft > vulners > vulner > param_list > table > body > row > field',
+  );
 
   // в результатах всего один ряд значений, так что остальное нас не интересует
   xml.collect('hardware > device');
   xml.collect('hardware > device > param_list > table');
-  xml.collect('hardware > device > param_list > table > body > header > column');
+  xml.collect(
+    'hardware > device > param_list > table > body > header > column',
+  );
   xml.collect('hardware > device > param_list > table > body > row');
   xml.collect('hardware > device > param_list > table > body > row > field');
 
@@ -407,7 +418,7 @@ module.exports = function (inputStream, options = {}, cb) {
     }
   }, INVALID_REPORT_FORMAT_TIMEOUT);
 
-  xml.on('endElement: host', (node) => {
+  xml.on('endElement: host', node => {
     // парсим данные хоста - тут все самое интересное
     const {
       fqdn,
@@ -423,21 +434,27 @@ module.exports = function (inputStream, options = {}, cb) {
     }
 
     try {
-      const softData = typeof node.scan_objects === 'object' && node.scan_objects.soft ?
-        parseSoftData(node.scan_objects.soft, options.filter_vulnerabilities_paths) :
-        {};
+      const softData =
+        typeof node.scan_objects === 'object' && node.scan_objects.soft
+          ? parseSoftData(
+              node.scan_objects.soft,
+              options.filter_vulnerabilities_paths,
+            )
+          : {};
 
       const ifs = filterNetworkInterfaces(softData.ifs || []);
       if ((!ifs || ifs.length === 0) && !ipUtils.isV4Format(ip)) {
         return true;
       }
 
-      const hardware = node.hardware && node.hardware.device ?
-        parseHardwareData(node.hardware.device) :
-        {};
+      const hardware =
+        node.hardware && node.hardware.device
+          ? parseHardwareData(node.hardware.device)
+          : {};
 
       const scanFinished = moment(stopTime).format();
-      const name = fqdn || netbios || softData.name || ip || ifs[0].address[0].ip;
+      const name =
+        fqdn || netbios || softData.name || ip || ifs[0].address[0].ip;
 
       hosts.push({
         ...softData,
@@ -458,7 +475,7 @@ module.exports = function (inputStream, options = {}, cb) {
     }
   });
 
-  xml.on('endElement: content > vulners > vulner', (el) => {
+  xml.on('endElement: content > vulners > vulner', el => {
     // парсим уязвимости
     const {
       description,
@@ -472,7 +489,10 @@ module.exports = function (inputStream, options = {}, cb) {
     } = el;
 
     // не учитываем уязвимости, у которых нет global_id и cvss.base_score
-    if ((!globalId || globalId.length === 0) && (!cvss || !cvss.$.base_score || cvss.$.base_score === '0.0')) {
+    if (
+      (!globalId || globalId.length === 0) &&
+      (!cvss || !cvss.$.base_score || cvss.$.base_score === '0.0')
+    ) {
       return;
     }
 
@@ -496,13 +516,13 @@ module.exports = function (inputStream, options = {}, cb) {
     }
   });
 
-  xml.on('error', (err) => {
+  xml.on('error', err => {
     errors.push(err);
   });
 
   xml.on('end', () => {
     // маппим уязвимости с хостами и возвращаем результат
-    hosts = hosts.map((host) => {
+    hosts = hosts.map(host => {
       const vulnerabilities = [];
 
       if (host.vulns) {

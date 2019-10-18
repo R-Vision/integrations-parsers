@@ -1,10 +1,10 @@
 {
   "name": "integrations-parsers",
-  "version": "2.1.12",
+  "version": "3.0.0",
   "description": "Integrations report parsers",
   "main": "index.js",
   "scripts": {
-    "test": "jest"
+    "test": "TZ=Europe/Moscow jest"
   },
   "repository": {
     "type": "git",
@@ -17,18 +17,24 @@
   },
   "homepage": "https://github.com/R-Vision/integrations-parsers#readme",
   "dependencies": {
-    "csv-parse": "2.4.1",
+    "csv-parse": "4.6.3",
     "ip": "1.1.5",
-    "lodash": "3.10.1",
-    "moment": "2.23.0",
+    "lodash": "4.17.15",
+    "moment": "2.24.0",
     "xml-stream": "0.4.5"
   },
   "devDependencies": {
-    "eslint": "4.19.1",
-    "eslint-config-airbnb": "16.1.0",
-    "eslint-plugin-import": "2.12.0",
-    "eslint-plugin-jsx-a11y": "6.0.3",
-    "eslint-plugin-react": "7.8.2",
-    "jest": "23.6.0"
+    "@types/ip": "1.1.0",
+    "@types/jest": "24.0.19",
+    "@types/lodash": "4.14.144",
+    "@types/moment": "2.13.0",
+    "eslint": "^6.5.1",
+    "eslint-config-airbnb-base": "14.0.0",
+    "eslint-config-prettier": "6.4.0",
+    "eslint-plugin-import": "2.18.2",
+    "eslint-plugin-jest": "22.19.0",
+    "eslint-plugin-prettier": "3.1.1",
+    "jest": "24.9.0",
+    "prettier": "1.18.2"
   }
 }

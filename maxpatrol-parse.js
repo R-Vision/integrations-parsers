@@ -371,7 +371,7 @@ function formatHostname(name) {
  * @param {Function} cb - колбэк, который должен быть вызван по завершении парсинга
  */
 module.exports = (inputStream, options = {}, cb) => {
-  const INVALID_REPORT_FORMAT_TIMEOUT = 5000;
+  const INVALID_REPORT_FORMAT_TIMEOUT = 3 * 60 * 1000;
   const errors = [];
   const { last_run: lastRun } = options;
 

@@ -364,6 +364,43 @@ function formatHostname(name) {
   return ipUtils.isV4Format(name) ? name : name.split('.')[0];
 }
 
+function parseMaxPatrolCVSS(cvss) {
+  const CVSSExploitRegExp = /\bE:([NDHFPOCUndhfpocu]{1,3})\b/;
+
+  const cvssV2BaseScore = Number(cvss.base_score);
+
+  const cvssV2BaseVector = cvss.base_score_decomp
+    ? cvss.base_score_decomp.replace(/^\(/, '').replace(/\)$/, '')
+    : null;
+
+  const cvssV2TemporalVector = cvss.temp_score_decomp
+    ? cvss.temp_score_decomp.replace(/^\(/, '').replace(/\)$/, '')
+    : null;
+
+  const cvssV2TemporalScore =
+    cvssV2TemporalVector || cvss.temp_score !== '0.0'
+      ? Number(cvss.temp_score)
+      : null;
+
+  let cvssExploit = null;
+  if (cvssV2TemporalVector) {
+    [, cvssExploit] = cvssV2TemporalVector.match(CVSSExploitRegExp) || [
+      null,
+      null,
+    ];
+  } else if (cvssV2BaseVector) {
+    [, cvssExploit] = cvssV2BaseVector.match(CVSSExploitRegExp) || [null, null];
+  }
+
+  return {
+    cvss_v2_base_score: cvssV2BaseScore,
+    cvss_v2_base_vector: cvssV2BaseVector,
+    cvss_v2_temporal_score: cvssV2TemporalScore,
+    cvss_v2_temporal_vector: cvssV2TemporalVector,
+    cvss_exploit: cvssExploit,
+  };
+}
+
 /**
  * Парсит xml отчет из MaxPatrol
  * @param {ReadStream} inputStream - readable поток с отчетом
@@ -499,13 +536,20 @@ module.exports = (inputStream, options = {}, cb) => {
     try {
       const level = Math.round(Number(cvss.$.base_score) / 2);
       const vulnDescription = description.$text || shortDescription.$text || '';
-      const vuln = {
+      let vuln = {
         description: vulnDescription.replace(/  +/g, ' '),
         name: title,
         remediation,
         uid: $.id,
         reference: parseReferenceLinks(links),
         level_id: level === 0 ? 1 : level,
+      };
+
+      const parsedCvssData = parseMaxPatrolCVSS(cvss.$);
+
+      vuln = {
+        ...vuln,
+        ...parsedCvssData,
       };
 
       if (vuln.uid) {

@@ -365,7 +365,7 @@ function formatHostname(name) {
 }
 
 function parseMaxPatrolCVSS(cvss) {
-  const CVSSExploitRegExp = /\bE:([NDHFPOCUndhfpocu]{1,3})\b/;
+  const CVSSExploitRegExp = /\bE:([A-Za-z])\b/;
 
   const cvssV2BaseScore = Number(cvss.base_score);
 

@@ -364,6 +364,12 @@ function formatHostname(name) {
   return ipUtils.isV4Format(name) ? name : name.split('.')[0];
 }
 
+/**
+ * Формат данных cvss
+ * MP8 показывает в отчетах только CVSSv2(base и temporal)
+ * @param {Object} cvss
+ * @param {Object}
+ */
 function parseMaxPatrolCVSS(cvss) {
   const CVSSExploitRegExp = /\bE:([A-Za-z])\b/;
 
@@ -376,6 +382,11 @@ function parseMaxPatrolCVSS(cvss) {
   const cvssV2TemporalVector = cvss.temp_score_decomp
     ? cvss.temp_score_decomp.replace(/^\(/, '').replace(/\)$/, '')
     : null;
+
+  let cvssV2Vector = cvssV2BaseVector;
+  if (cvssV2TemporalVector) {
+    cvssV2Vector += `/${cvssV2TemporalVector}`;
+  }
 
   const cvssV2TemporalScore =
     cvssV2TemporalVector || cvss.temp_score !== '0.0'
@@ -393,11 +404,13 @@ function parseMaxPatrolCVSS(cvss) {
   }
 
   return {
+    cvss_exploit: cvssExploit,
     cvss_v2_base_score: cvssV2BaseScore,
     cvss_v2_base_vector: cvssV2BaseVector,
+    cvss_v2_score: cvssV2TemporalScore || cvssV2BaseScore,
     cvss_v2_temporal_score: cvssV2TemporalScore,
     cvss_v2_temporal_vector: cvssV2TemporalVector,
-    cvss_exploit: cvssExploit,
+    cvss_v2_vector: cvssV2Vector,
   };
 }
 

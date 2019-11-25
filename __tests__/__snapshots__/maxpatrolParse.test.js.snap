@@ -151,7 +151,7 @@ Object {
           "cvss_v2_vector": "AV:N/AC:L/Au:N/C:N/I:N/A:C/E:F/RL:O/RC:C",
           "description": "The SSLVPN feature in Cisco IOS 12.3 through 12.4 allows remote attackers to cause a denial of service (device reload or hang) via a crafted HTTPS packet.",
           "ignored_by_path": false,
-          "level_id": 4,
+          "level_id": 3,
           "name": "Denial of Service",
           "reference": Array [
             Object {
@@ -183,7 +183,7 @@ Object {
           "cvss_v2_vector": "AV:N/AC:M/Au:N/C:N/I:N/A:C/AC:L/E:F/RL:O/RC:C",
           "description": "The (1) Cisco Unified Communications Manager Express; (2) SIP Gateway Signaling Support Over Transport Layer Security (TLS) Transport; (3) Secure Signaling and Media Encryption; (4) Blocks Extensible Exchange Protocol (BEEP); (5) Network Admission Control HTTP Authentication Proxy; (6) Per-user URL Redirect for EAPoUDP, Dot1x, and MAC Authentication Bypass; (7) Distributed Director with HTTP Redirects; and (8) TCP DNS features in Cisco IOS 12.0 through 12.4 do not properly handle IP sockets, which allows remote attackers to cause a denial of service (outage or resource consumption) via a series of crafted TCP packets.",
           "ignored_by_path": false,
-          "level_id": 4,
+          "level_id": 3,
           "name": "Denial of Service",
           "reference": Array [
             Object {
@@ -215,7 +215,7 @@ Object {
           "cvss_v2_vector": "AV:N/AC:M/Au:N/C:N/I:N/A:C/AC:L/E:F/RL:O/RC:C",
           "description": "Devices that are running an affected version of Cisco IOS Software and configured for Mobile IPv6 or Mobile IP NAT Traversal feature are affected by a DoS vulnerability. A successful exploitation of this vulnerability could cause an interface to stop processing traffic until the system is restarted. Offending packets need to be destined to the router for a successful exploit.",
           "ignored_by_path": false,
-          "level_id": 4,
+          "level_id": 3,
           "name": "Denial of Service",
           "reference": Array [
             Object {
@@ -247,7 +247,7 @@ Object {
           "cvss_v2_vector": "AV:N/AC:L/Au:N/C:N/I:N/A:C/E:F/RL:O/RC:C",
           "description": "Devices that are running an affected version of Cisco IOS Software and configured for Mobile IPv6 or Mobile IP NAT Traversal feature are affected by a DoS vulnerability. A successful exploitation of this vulnerability could cause an interface to stop processing traffic until the system is restarted. Offending packets need to be destined to the router for a successful exploit.",
           "ignored_by_path": false,
-          "level_id": 4,
+          "level_id": 3,
           "name": "Denial of Service",
           "reference": Array [
             Object {
@@ -274,7 +274,7 @@ Object {
           "cvss_v2_vector": "AV:N/AC:L/Au:N/C:N/I:N/A:C/E:F/RL:O/RC:C",
           "description": "Unspecified vulnerability in the NAT for SIP implementation in Cisco IOS 12.1 through 12.4 and 15.0 through 15.1 allows remote attackers to cause a denial of service (device reload) via transit traffic on UDP port 5060, aka Bug ID CSCtf17624.",
           "ignored_by_path": false,
-          "level_id": 4,
+          "level_id": 3,
           "name": "Denial of Service",
           "reference": Array [
             Object {
@@ -296,7 +296,7 @@ Object {
           "cvss_v2_vector": "AV:N/AC:L/Au:N/C:N/I:N/A:C/E:F/RL:O/RC:C",
           "description": "Unspecified vulnerability in the H.323 implementation in Cisco IOS 12.1 through 12.4 and 15.0 through 15.1, and IOS XE 2.5.x before 2.5.2 and 2.6.x before 2.6.1, allows remote attackers to cause a denial of service (device reload) via crafted H.323 packets, aka Bug ID CSCtc73759.",
           "ignored_by_path": false,
-          "level_id": 4,
+          "level_id": 3,
           "name": "Denial of Service",
           "reference": Array [
             Object {
@@ -318,7 +318,7 @@ Object {
           "cvss_v2_vector": "AV:N/AC:M/Au:N/C:N/I:N/A:C/E:F/RL:O/RC:C",
           "description": "The IGMPv3 implementation in Cisco IOS and IOS XE, when PIM is enabled, allows remote attackers to cause a denial of service (device reload) via a malformed IGMP packet, aka Bug ID CSCte14603.",
           "ignored_by_path": false,
-          "level_id": 4,
+          "level_id": 3,
           "name": "Denial of Service",
           "reference": Array [
             Object {
@@ -340,7 +340,7 @@ Object {
           "cvss_v2_vector": "AV:N/AC:L/Au:N/C:N/I:N/A:C/E:F/RL:O/RC:C",
           "description": "Unspecified vulnerability in the NAT for H.323 implementation in Cisco IOS 12.1 through 12.4 and 15.0 through 15.1 allows remote attackers to cause a denial of service (device reload) via transit traffic, aka Bug ID CSCtf91428.",
           "ignored_by_path": false,
-          "level_id": 4,
+          "level_id": 3,
           "name": "Denial of Service",
           "reference": Array [
             Object {
@@ -362,7 +362,7 @@ Object {
           "cvss_v2_vector": "AV:N/AC:L/Au:N/C:N/I:N/A:C/E:F/RL:O/RC:C",
           "description": "Unspecified vulnerability in the NAT for H.225.0 implementation in Cisco IOS 12.1 through 12.4 and 15.0 through 15.1 allows remote attackers to cause a denial of service (device reload) via transit traffic, aka Bug ID CSCtd86472.",
           "ignored_by_path": false,
-          "level_id": 4,
+          "level_id": 3,
           "name": "Denial of Service",
           "reference": Array [
             Object {
@@ -384,7 +384,7 @@ Object {
           "cvss_v2_vector": "AV:N/AC:M/Au:N/C:N/I:N/A:C/E:F/RL:O/RC:C",
           "description": "Cisco IOS 12.2 through 12.4, when certain PMTUD, SNAT, or window-size configurations are used, allows remote attackers to cause a denial of service (infinite loop, and device reload or hang) via a TCP segment with crafted options, aka Bug ID CSCsz75186.",
           "ignored_by_path": false,
-          "level_id": 4,
+          "level_id": 3,
           "name": "Denial of Service",
           "reference": Array [
             Object {
@@ -406,7 +406,7 @@ Object {
           "cvss_v2_vector": "AV:N/AC:L/Au:N/C:N/I:N/A:C/E:F/RL:O/RC:C",
           "description": "Cisco IOS and IOS XE allow remote attackers to cause a denial of service (interface queue wedge) via malformed H.323 packets.",
           "ignored_by_path": false,
-          "level_id": 4,
+          "level_id": 3,
           "name": "Denial of Service",
           "reference": Array [
             Object {
@@ -455,7 +455,7 @@ Object {
           "cvss_v2_vector": "AV:N/AC:L/Au:N/C:N/I:N/A:C/E:F/RL:O/RC:C",
           "description": "Unspecified vulnerability in Cisco IOS 12.0 through 12.4, IOS XE 2.1.x through 2.3.x before 2.3.2, and IOS XR 3.2.x through 3.4.3, when Multiprotocol Label Switching (MPLS) and Label Distribution Protocol (LDP) are enabled, allows remote attackers to cause a denial of service (device reload or process restart) via a crafted LDP packet, aka Bug IDs CSCsz45567 and CSCsj25893.",
           "ignored_by_path": false,
-          "level_id": 4,
+          "level_id": 3,
           "name": "Denial of Service",
           "reference": Array [
             Object {
@@ -477,7 +477,7 @@ Object {
           "cvss_v2_vector": "AV:N/AC:L/Au:N/C:N/I:N/A:C/E:F/RL:O/RC:C",
           "description": "The IKE implementation in Cisco IOS 12.2 through 12.4 on Cisco 7200 and 7301 routers with VAM2+ allows remote attackers to cause a denial of service (device reload) via a malformed IKE packet, aka Bug ID CSCtb13491.",
           "ignored_by_path": false,
-          "level_id": 4,
+          "level_id": 3,
           "name": "Denial of Service",
           "reference": Array [
             Object {
@@ -526,7 +526,7 @@ Object {
           "cvss_v2_vector": "AV:N/AC:L/Au:N/C:N/I:N/A:C/E:F/RL:O/RC:C",
           "description": "The NAT implementation in Cisco IOS 12.1 through 12.4 and 15.0 through 15.1, and IOS XE 3.1.xSG, allows remote attackers to cause a denial of service (device reload or hang) via malformed NetMeeting Directory (aka Internet Locator Service or ILS) LDAP traffic, aka Bug ID CSCtd10712.",
           "ignored_by_path": false,
-          "level_id": 4,
+          "level_id": 3,
           "name": "Denial of Service",
           "reference": Array [
             Object {
@@ -553,7 +553,7 @@ Object {
           "cvss_v2_vector": "AV:N/AC:L/Au:N/C:N/I:N/A:C/E:F/RL:O/RC:C",
           "description": "Unspecified vulnerability in the NAT implementation in Cisco IOS 12.1 through 12.4 and 15.0 through 15.1, and IOS XE 3.1.xSG, allows remote attackers to cause a denial of service (device reload or hang) by sending crafted SIP packets to TCP port 5060, aka Bug ID CSCso02147.",
           "ignored_by_path": false,
-          "level_id": 4,
+          "level_id": 3,
           "name": "Denial of Service",
           "reference": Array [
             Object {
@@ -580,7 +580,7 @@ Object {
           "cvss_v2_vector": "AV:N/AC:L/Au:N/C:N/I:N/A:C/E:F/RL:O/RC:C",
           "description": "The provider-edge MPLS NAT implementation in Cisco IOS 12.1 through 12.4 and 15.0 through 15.1, and IOS XE 3.1.xSG, allows remote attackers to cause a denial of service (device reload) via a malformed SIP packet to UDP port 5060, aka Bug ID CSCti98219.",
           "ignored_by_path": false,
-          "level_id": 4,
+          "level_id": 3,
           "name": "Denial of Service",
           "reference": Array [
             Object {
@@ -607,7 +607,7 @@ Object {
           "cvss_v2_vector": "AV:N/AC:L/Au:N/C:N/I:N/A:C/E:F/RL:O/RC:C",
           "description": "Unspecified vulnerability in the NAT implementation in Cisco IOS 12.1 through 12.4 and 15.0 through 15.1, and IOS XE 3.1.xSG, allows remote attackers to cause a denial of service (device reload) by sending crafted SIP packets to UDP port 5060, aka Bug ID CSCti48483.",
           "ignored_by_path": false,
-          "level_id": 4,
+          "level_id": 3,
           "name": "Denial of Service",
           "reference": Array [
             Object {
@@ -634,7 +634,7 @@ Object {
           "cvss_v2_vector": "AV:N/AC:L/Au:N/C:N/I:N/A:C/E:F/RL:O/RC:C",
           "description": "Memory leak in the NAT implementation in Cisco IOS 12.1 through 12.4 and 15.0 through 15.1, and IOS XE 3.1.xSG, allows remote attackers to cause a denial of service (memory consumption or device reload) by sending crafted SIP packets to UDP port 5060, aka Bug ID CSCtj04672.",
           "ignored_by_path": false,
-          "level_id": 4,
+          "level_id": 3,
           "name": "Denial of Service",
           "reference": Array [
             Object {
@@ -661,7 +661,7 @@ Object {
           "cvss_v2_vector": "AV:N/AC:L/Au:N/C:N/I:N/A:C/E:F/RL:O/RC:C",
           "description": "Unspecified vulnerability in the NAT implementation in Cisco IOS 12.1 through 12.4 and 15.0 through 15.1, and IOS XE 3.1.xSG, allows remote attackers to cause a denial of service (device reload) by sending crafted H.323 packets to TCP port 1720, aka Bug ID CSCth11006.",
           "ignored_by_path": false,
-          "level_id": 4,
+          "level_id": 3,
           "name": "Denial of Service",
           "reference": Array [
             Object {
@@ -688,7 +688,7 @@ Object {
           "cvss_v2_vector": "AV:N/AC:L/Au:N/C:N/I:N/A:C/E:F/RL:O/RC:C",
           "description": "Memory leak in the Data-link switching (aka DLSw) feature in Cisco IOS 12.1 through 12.4 and 15.0 through 15.1, and IOS XE 3.1.xS before 3.1.3S and 3.2.xS before 3.2.1S, when implemented over Fast Sequence Transport (FST), allows remote attackers to cause a denial of service (memory consumption and device reload or hang) via a crafted IP protocol 91 packet, aka Bug ID CSCth69364.",
           "ignored_by_path": false,
-          "level_id": 4,
+          "level_id": 3,
           "name": "Denial of Service",
           "reference": Array [
             Object {
@@ -855,7 +855,7 @@ Object {
           "cvss_v2_vector": "AV:N/AC:L/Au:N/C:N/I:N/A:C/E:F/RL:O/RC:C",
           "description": "The Protocol Translation (PT) functionality in Cisco IOS 12.3 through 12.4 and 15.0 through 15.3, when one-step port-23 translation or a Telnet-to-PAD ruleset is configured, does not properly validate TCP connection information, which allows remote attackers to cause a denial of service (device reload) via an attempted connection to a PT resource, aka Bug ID CSCtz35999.",
           "ignored_by_path": false,
-          "level_id": 4,
+          "level_id": 3,
           "name": "Denial of Service",
           "reference": Array [
             Object {
@@ -882,7 +882,7 @@ Object {
           "cvss_v2_vector": "AV:N/AC:L/Au:N/C:N/I:N/A:C/E:P/RL:O/RC:C",
           "description": "Race condition in the VRF-aware NAT feature in Cisco IOS 12.2 through 12.4 and 15.0 through 15.2 allows remote attackers to cause a denial of service (memory consumption) via IPv4 packets, aka Bug IDs CSCtg47129 and CSCtz96745.",
           "ignored_by_path": false,
-          "level_id": 4,
+          "level_id": 3,
           "name": "Race condition",
           "reference": Array [
             Object {
@@ -914,7 +914,7 @@ Object {
           "cvss_v2_vector": "AV:N/AC:M/Au:N/C:P/I:N/A:P/E:F/RL:OF/RC:C",
           "description": "The OSPF implementation in Cisco IOS, IOS-XE, ASA and PIX, FWSM, NX-OS, and StarOS does not properly validate Link State Advertisement (LSA) type 1 packets before performing operations on the LSA database, which allows remote attackers to cause a denial of service (routing disruption) or obtain sensitive packet information via a (1) unicast or (2) multicast packet, aka Bug IDs CSCug34485, CSCug34469, CSCug39762, CSCug63304, and CSCug39795.",
           "ignored_by_path": false,
-          "level_id": 3,
+          "level_id": 2,
           "name": "Information Disclosure",
           "reference": Array [
             Object {
@@ -941,7 +941,7 @@ Object {
           "cvss_v2_vector": "AV:N/AC:L/Au:N/C:N/I:N/A:C/E:F/RL:OF/RC:C",
           "description": "Cisco IOS and IOS XE allows remote attackers to cause a denial of service (device reload) via crafted DHCP packets that are processed locally by a (1) server or (2) relay agent, aka Bug ID CSCug31561.",
           "ignored_by_path": false,
-          "level_id": 4,
+          "level_id": 3,
           "name": "Denial of Service",
           "reference": Array [
             Object {
@@ -968,7 +968,7 @@ Object {
           "cvss_v2_vector": "AV:N/AC:L/Au:N/C:N/I:N/A:C/E:F/RL:OF/RC:C",
           "description": "Race condition in the IPv6 virtual fragmentation reassembly (VFR) implementation in Cisco IOS 12.2 through 12.4 and 15.0 through 15.3 allows remote attackers to cause a denial of service (device reload or hang) via fragmented IPv6 packets, aka Bug ID CSCud64812.",
           "ignored_by_path": false,
-          "level_id": 4,
+          "level_id": 3,
           "name": "Race condition",
           "reference": Array [
             Object {
@@ -995,7 +995,7 @@ Object {
           "cvss_v2_vector": "AV:N/AC:M/Au:N/C:N/I:N/A:C/E:F/RL:OF/RC:C",
           "description": "The Application Layer Gateway (ALG) module in Cisco IOS 12.2 through 12.4 and 15.0 through 15.4, when NAT is used, allows remote attackers to cause a denial of service (device reload) via crafted DNS packets, aka Bug ID CSCue00996.",
           "ignored_by_path": false,
-          "level_id": 4,
+          "level_id": 3,
           "name": "Denial of Service",
           "reference": Array [
             Object {
@@ -1022,7 +1022,7 @@ Object {
           "cvss_v2_vector": "AV:N/AC:L/Au:N/C:N/I:N/A:C/E:F/RL:OF/RC:C",
           "description": "The TCP Input module in Cisco IOS 12.2 through 12.4 and 15.0 through 15.4, when NAT is used, allows remote attackers to cause a denial of service (memory consumption or device reload) via crafted TCP packets, aka Bug IDs CSCuh33843 and CSCuj41494.",
           "ignored_by_path": false,
-          "level_id": 4,
+          "level_id": 3,
           "name": "Denial of Service",
           "reference": Array [
             Object {
@@ -1049,7 +1049,7 @@ Object {
           "cvss_v2_vector": "AV:N/AC:L/Au:N/C:N/I:N/A:C/E:F/RL:OF/RC:C",
           "description": "Memory leak in the TCP input module in Cisco and IOS XE allows remote attackers to cause a denial of service (memory consumption or device reload) by sending crafted TCP packets over (1) IPv4 or (2) IPv6, aka Bug ID CSCum94811.",
           "ignored_by_path": false,
-          "level_id": 4,
+          "level_id": 3,
           "name": "Memory Leak",
           "reference": Array [
             Object {
@@ -1125,7 +1125,7 @@ Object {
           "cvss_v2_vector": "AV:N/AC:L/Au:N/C:P/I:N/A:N/E:F/RL:U/RC:C",
           "description": "The server IKEv1 implementation in Cisco IOS, IOS XE, IOS XR and PIX allows remote attackers to obtain sensitive information from device memory via a Security Association (SA) negotiation request, aka Bug IDs CSCvb29204 and CSCvb36055 or BENIGNCERTAIN.",
           "ignored_by_path": false,
-          "level_id": 3,
+          "level_id": 4,
           "name": "Information Disclosure",
           "reference": Array [
             Object {
@@ -1152,7 +1152,7 @@ Object {
           "cvss_v2_vector": "AV:N/AC:M/Au:N/C:P/I:P/A:C/E:F/RL:OF/RC:C",
           "description": "The DNS forwarder in Cisco IOS and IOS XE allows remote attackers to obtain sensitive information from process memory or cause a denial of service (data corruption or device reload) via a crafted DNS response, aka Bug ID CSCup90532.",
           "ignored_by_path": false,
-          "level_id": 4,
+          "level_id": 3,
           "name": "Information Disclosure",
           "reference": Array [
             Object {
@@ -1179,7 +1179,7 @@ Object {
           "cvss_v2_vector": "AV:N/AC:L/Au:N/C:N/I:N/A:C/E:F/RL:OF/RC:C",
           "description": "Cisco IOS and IOS XE allow remote attackers to cause a denial of service (device reload) via crafted fields in an H.323 message, aka Bug ID CSCux04257.",
           "ignored_by_path": false,
-          "level_id": 4,
+          "level_id": 3,
           "name": "Denial of Service",
           "reference": Array [
             Object {
@@ -1450,7 +1450,7 @@ Object {
           "description": "These services can be leveraged by attackers to launch denial-of-service (DoS) and other attacks that would be prevented by packet inspection filters provided these services are disabled. Services that are not needed should be turned off because they present potential avenues of attack and may provide information that could be useful for gaining unauthorized access.
 ",
           "ignored_by_path": false,
-          "level_id": 3,
+          "level_id": 2,
           "name": "Rarely used services",
           "reference": Array [],
           "remediation": "Disable unused services. hostname(config)#no {service}",
@@ -1621,7 +1621,7 @@ Object {
           "cvss_v2_vector": "AV:N/AC:L/Au:N/C:N/I:N/A:C/E:F/RL:O/RC:C",
           "description": "The SSLVPN feature in Cisco IOS 12.3 through 12.4 allows remote attackers to cause a denial of service (device reload or hang) via a crafted HTTPS packet.",
           "ignored_by_path": false,
-          "level_id": 4,
+          "level_id": 3,
           "name": "Denial of Service",
           "reference": Array [
             Object {
@@ -1653,7 +1653,7 @@ Object {
           "cvss_v2_vector": "AV:N/AC:M/Au:N/C:N/I:N/A:C/AC:L/E:F/RL:O/RC:C",
           "description": "The (1) Cisco Unified Communications Manager Express; (2) SIP Gateway Signaling Support Over Transport Layer Security (TLS) Transport; (3) Secure Signaling and Media Encryption; (4) Blocks Extensible Exchange Protocol (BEEP); (5) Network Admission Control HTTP Authentication Proxy; (6) Per-user URL Redirect for EAPoUDP, Dot1x, and MAC Authentication Bypass; (7) Distributed Director with HTTP Redirects; and (8) TCP DNS features in Cisco IOS 12.0 through 12.4 do not properly handle IP sockets, which allows remote attackers to cause a denial of service (outage or resource consumption) via a series of crafted TCP packets.",
           "ignored_by_path": false,
-          "level_id": 4,
+          "level_id": 3,
           "name": "Denial of Service",
           "reference": Array [
             Object {
@@ -1685,7 +1685,7 @@ Object {
           "cvss_v2_vector": "AV:N/AC:M/Au:N/C:N/I:N/A:C/AC:L/E:F/RL:O/RC:C",
           "description": "Devices that are running an affected version of Cisco IOS Software and configured for Mobile IPv6 or Mobile IP NAT Traversal feature are affected by a DoS vulnerability. A successful exploitation of this vulnerability could cause an interface to stop processing traffic until the system is restarted. Offending packets need to be destined to the router for a successful exploit.",
           "ignored_by_path": false,
-          "level_id": 4,
+          "level_id": 3,
           "name": "Denial of Service",
           "reference": Array [
             Object {
@@ -1717,7 +1717,7 @@ Object {
           "cvss_v2_vector": "AV:N/AC:L/Au:N/C:N/I:N/A:C/E:F/RL:O/RC:C",
           "description": "Devices that are running an affected version of Cisco IOS Software and configured for Mobile IPv6 or Mobile IP NAT Traversal feature are affected by a DoS vulnerability. A successful exploitation of this vulnerability could cause an interface to stop processing traffic until the system is restarted. Offending packets need to be destined to the router for a successful exploit.",
           "ignored_by_path": false,
-          "level_id": 4,
+          "level_id": 3,
           "name": "Denial of Service",
           "reference": Array [
             Object {
@@ -1744,7 +1744,7 @@ Object {
           "cvss_v2_vector": "AV:N/AC:L/Au:N/C:N/I:N/A:C/E:F/RL:O/RC:C",
           "description": "Unspecified vulnerability in the NAT for SIP implementation in Cisco IOS 12.1 through 12.4 and 15.0 through 15.1 allows remote attackers to cause a denial of service (device reload) via transit traffic on UDP port 5060, aka Bug ID CSCtf17624.",
           "ignored_by_path": false,
-          "level_id": 4,
+          "level_id": 3,
           "name": "Denial of Service",
           "reference": Array [
             Object {
@@ -1766,7 +1766,7 @@ Object {
           "cvss_v2_vector": "AV:N/AC:L/Au:N/C:N/I:N/A:C/E:F/RL:O/RC:C",
           "description": "Unspecified vulnerability in the H.323 implementation in Cisco IOS 12.1 through 12.4 and 15.0 through 15.1, and IOS XE 2.5.x before 2.5.2 and 2.6.x before 2.6.1, allows remote attackers to cause a denial of service (device reload) via crafted H.323 packets, aka Bug ID CSCtc73759.",
           "ignored_by_path": false,
-          "level_id": 4,
+          "level_id": 3,
           "name": "Denial of Service",
           "reference": Array [
             Object {
@@ -1788,7 +1788,7 @@ Object {
           "cvss_v2_vector": "AV:N/AC:M/Au:N/C:N/I:N/A:C/E:F/RL:O/RC:C",
           "description": "The IGMPv3 implementation in Cisco IOS and IOS XE, when PIM is enabled, allows remote attackers to cause a denial of service (device reload) via a malformed IGMP packet, aka Bug ID CSCte14603.",
           "ignored_by_path": false,
-          "level_id": 4,
+          "level_id": 3,
           "name": "Denial of Service",
           "reference": Array [
             Object {
@@ -1810,7 +1810,7 @@ Object {
           "cvss_v2_vector": "AV:N/AC:L/Au:N/C:N/I:N/A:C/E:F/RL:O/RC:C",
           "description": "Unspecified vulnerability in the NAT for H.323 implementation in Cisco IOS 12.1 through 12.4 and 15.0 through 15.1 allows remote attackers to cause a denial of service (device reload) via transit traffic, aka Bug ID CSCtf91428.",
           "ignored_by_path": false,
-          "level_id": 4,
+          "level_id": 3,
           "name": "Denial of Service",
           "reference": Array [
             Object {
@@ -1832,7 +1832,7 @@ Object {
           "cvss_v2_vector": "AV:N/AC:L/Au:N/C:N/I:N/A:C/E:F/RL:O/RC:C",
           "description": "Unspecified vulnerability in the NAT for H.225.0 implementation in Cisco IOS 12.1 through 12.4 and 15.0 through 15.1 allows remote attackers to cause a denial of service (device reload) via transit traffic, aka Bug ID CSCtd86472.",
           "ignored_by_path": false,
-          "level_id": 4,
+          "level_id": 3,
           "name": "Denial of Service",
           "reference": Array [
             Object {
@@ -1854,7 +1854,7 @@ Object {
           "cvss_v2_vector": "AV:N/AC:M/Au:N/C:N/I:N/A:C/E:F/RL:O/RC:C",
           "description": "Cisco IOS 12.2 through 12.4, when certain PMTUD, SNAT, or window-size configurations are used, allows remote attackers to cause a denial of service (infinite loop, and device reload or hang) via a TCP segment with crafted options, aka Bug ID CSCsz75186.",
           "ignored_by_path": false,
-          "level_id": 4,
+          "level_id": 3,
           "name": "Denial of Service",
           "reference": Array [
             Object {
@@ -1876,7 +1876,7 @@ Object {
           "cvss_v2_vector": "AV:N/AC:L/Au:N/C:N/I:N/A:C/E:F/RL:O/RC:C",
           "description": "Cisco IOS and IOS XE allow remote attackers to cause a denial of service (interface queue wedge) via malformed H.323 packets.",
           "ignored_by_path": false,
-          "level_id": 4,
+          "level_id": 3,
           "name": "Denial of Service",
           "reference": Array [
             Object {
@@ -1925,7 +1925,7 @@ Object {
           "cvss_v2_vector": "AV:N/AC:L/Au:N/C:N/I:N/A:C/E:F/RL:O/RC:C",
           "description": "Unspecified vulnerability in Cisco IOS 12.0 through 12.4, IOS XE 2.1.x through 2.3.x before 2.3.2, and IOS XR 3.2.x through 3.4.3, when Multiprotocol Label Switching (MPLS) and Label Distribution Protocol (LDP) are enabled, allows remote attackers to cause a denial of service (device reload or process restart) via a crafted LDP packet, aka Bug IDs CSCsz45567 and CSCsj25893.",
           "ignored_by_path": false,
-          "level_id": 4,
+          "level_id": 3,
           "name": "Denial of Service",
           "reference": Array [
             Object {
@@ -1947,7 +1947,7 @@ Object {
           "cvss_v2_vector": "AV:N/AC:L/Au:N/C:N/I:N/A:C/E:F/RL:O/RC:C",
           "description": "The IKE implementation in Cisco IOS 12.2 through 12.4 on Cisco 7200 and 7301 routers with VAM2+ allows remote attackers to cause a denial of service (device reload) via a malformed IKE packet, aka Bug ID CSCtb13491.",
           "ignored_by_path": false,
-          "level_id": 4,
+          "level_id": 3,
           "name": "Denial of Service",
           "reference": Array [
             Object {
@@ -1996,7 +1996,7 @@ Object {
           "cvss_v2_vector": "AV:N/AC:L/Au:N/C:N/I:N/A:C/E:F/RL:O/RC:C",
           "description": "The NAT implementation in Cisco IOS 12.1 through 12.4 and 15.0 through 15.1, and IOS XE 3.1.xSG, allows remote attackers to cause a denial of service (device reload or hang) via malformed NetMeeting Directory (aka Internet Locator Service or ILS) LDAP traffic, aka Bug ID CSCtd10712.",
           "ignored_by_path": false,
-          "level_id": 4,
+          "level_id": 3,
           "name": "Denial of Service",
           "reference": Array [
             Object {
@@ -2023,7 +2023,7 @@ Object {
           "cvss_v2_vector": "AV:N/AC:L/Au:N/C:N/I:N/A:C/E:F/RL:O/RC:C",
           "description": "Unspecified vulnerability in the NAT implementation in Cisco IOS 12.1 through 12.4 and 15.0 through 15.1, and IOS XE 3.1.xSG, allows remote attackers to cause a denial of service (device reload or hang) by sending crafted SIP packets to TCP port 5060, aka Bug ID CSCso02147.",
           "ignored_by_path": false,
-          "level_id": 4,
+          "level_id": 3,
           "name": "Denial of Service",
           "reference": Array [
             Object {
@@ -2050,7 +2050,7 @@ Object {
           "cvss_v2_vector": "AV:N/AC:L/Au:N/C:N/I:N/A:C/E:F/RL:O/RC:C",
           "description": "The provider-edge MPLS NAT implementation in Cisco IOS 12.1 through 12.4 and 15.0 through 15.1, and IOS XE 3.1.xSG, allows remote attackers to cause a denial of service (device reload) via a malformed SIP packet to UDP port 5060, aka Bug ID CSCti98219.",
           "ignored_by_path": false,
-          "level_id": 4,
+          "level_id": 3,
           "name": "Denial of Service",
           "reference": Array [
             Object {
@@ -2077,7 +2077,7 @@ Object {
           "cvss_v2_vector": "AV:N/AC:L/Au:N/C:N/I:N/A:C/E:F/RL:O/RC:C",
           "description": "Unspecified vulnerability in the NAT implementation in Cisco IOS 12.1 through 12.4 and 15.0 through 15.1, and IOS XE 3.1.xSG, allows remote attackers to cause a denial of service (device reload) by sending crafted SIP packets to UDP port 5060, aka Bug ID CSCti48483.",
           "ignored_by_path": false,
-          "level_id": 4,
+          "level_id": 3,
           "name": "Denial of Service",
           "reference": Array [
             Object {
@@ -2104,7 +2104,7 @@ Object {
           "cvss_v2_vector": "AV:N/AC:L/Au:N/C:N/I:N/A:C/E:F/RL:O/RC:C",
           "description": "Memory leak in the NAT implementation in Cisco IOS 12.1 through 12.4 and 15.0 through 15.1, and IOS XE 3.1.xSG, allows remote attackers to cause a denial of service (memory consumption or device reload) by sending crafted SIP packets to UDP port 5060, aka Bug ID CSCtj04672.",
           "ignored_by_path": false,
-          "level_id": 4,
+          "level_id": 3,
           "name": "Denial of Service",
           "reference": Array [
             Object {
@@ -2131,7 +2131,7 @@ Object {
           "cvss_v2_vector": "AV:N/AC:L/Au:N/C:N/I:N/A:C/E:F/RL:O/RC:C",
           "description": "Unspecified vulnerability in the NAT implementation in Cisco IOS 12.1 through 12.4 and 15.0 through 15.1, and IOS XE 3.1.xSG, allows remote attackers to cause a denial of service (device reload) by sending crafted H.323 packets to TCP port 1720, aka Bug ID CSCth11006.",
           "ignored_by_path": false,
-          "level_id": 4,
+          "level_id": 3,
           "name": "Denial of Service",
           "reference": Array [
             Object {
@@ -2158,7 +2158,7 @@ Object {
           "cvss_v2_vector": "AV:N/AC:L/Au:N/C:N/I:N/A:C/E:F/RL:O/RC:C",
           "description": "Memory leak in the Data-link switching (aka DLSw) feature in Cisco IOS 12.1 through 12.4 and 15.0 through 15.1, and IOS XE 3.1.xS before 3.1.3S and 3.2.xS before 3.2.1S, when implemented over Fast Sequence Transport (FST), allows remote attackers to cause a denial of service (memory consumption and device reload or hang) via a crafted IP protocol 91 packet, aka Bug ID CSCth69364.",
           "ignored_by_path": false,
-          "level_id": 4,
+          "level_id": 3,
           "name": "Denial of Service",
           "reference": Array [
             Object {
@@ -2325,7 +2325,7 @@ Object {
           "cvss_v2_vector": "AV:N/AC:L/Au:N/C:N/I:N/A:C/E:F/RL:O/RC:C",
           "description": "The Protocol Translation (PT) functionality in Cisco IOS 12.3 through 12.4 and 15.0 through 15.3, when one-step port-23 translation or a Telnet-to-PAD ruleset is configured, does not properly validate TCP connection information, which allows remote attackers to cause a denial of service (device reload) via an attempted connection to a PT resource, aka Bug ID CSCtz35999.",
           "ignored_by_path": false,
-          "level_id": 4,
+          "level_id": 3,
           "name": "Denial of Service",
           "reference": Array [
             Object {
@@ -2352,7 +2352,7 @@ Object {
           "cvss_v2_vector": "AV:N/AC:L/Au:N/C:N/I:N/A:C/E:P/RL:O/RC:C",
           "description": "Race condition in the VRF-aware NAT feature in Cisco IOS 12.2 through 12.4 and 15.0 through 15.2 allows remote attackers to cause a denial of service (memory consumption) via IPv4 packets, aka Bug IDs CSCtg47129 and CSCtz96745.",
           "ignored_by_path": false,
-          "level_id": 4,
+          "level_id": 3,
           "name": "Race condition",
           "reference": Array [
             Object {
@@ -2384,7 +2384,7 @@ Object {
           "cvss_v2_vector": "AV:N/AC:M/Au:N/C:P/I:N/A:P/E:F/RL:OF/RC:C",
           "description": "The OSPF implementation in Cisco IOS, IOS-XE, ASA and PIX, FWSM, NX-OS, and StarOS does not properly validate Link State Advertisement (LSA) type 1 packets before performing operations on the LSA database, which allows remote attackers to cause a denial of service (routing disruption) or obtain sensitive packet information via a (1) unicast or (2) multicast packet, aka Bug IDs CSCug34485, CSCug34469, CSCug39762, CSCug63304, and CSCug39795.",
           "ignored_by_path": false,
-          "level_id": 3,
+          "level_id": 2,
           "name": "Information Disclosure",
           "reference": Array [
             Object {
@@ -2411,7 +2411,7 @@ Object {
           "cvss_v2_vector": "AV:N/AC:L/Au:N/C:N/I:N/A:C/E:F/RL:OF/RC:C",
           "description": "Cisco IOS and IOS XE allows remote attackers to cause a denial of service (device reload) via crafted DHCP packets that are processed locally by a (1) server or (2) relay agent, aka Bug ID CSCug31561.",
           "ignored_by_path": false,
-          "level_id": 4,
+          "level_id": 3,
           "name": "Denial of Service",
           "reference": Array [
             Object {
@@ -2438,7 +2438,7 @@ Object {
           "cvss_v2_vector": "AV:N/AC:L/Au:N/C:N/I:N/A:C/E:F/RL:OF/RC:C",
           "description": "Race condition in the IPv6 virtual fragmentation reassembly (VFR) implementation in Cisco IOS 12.2 through 12.4 and 15.0 through 15.3 allows remote attackers to cause a denial of service (device reload or hang) via fragmented IPv6 packets, aka Bug ID CSCud64812.",
           "ignored_by_path": false,
-          "level_id": 4,
+          "level_id": 3,
           "name": "Race condition",
           "reference": Array [
             Object {
@@ -2465,7 +2465,7 @@ Object {
           "cvss_v2_vector": "AV:N/AC:M/Au:N/C:N/I:N/A:C/E:F/RL:OF/RC:C",
           "description": "The Application Layer Gateway (ALG) module in Cisco IOS 12.2 through 12.4 and 15.0 through 15.4, when NAT is used, allows remote attackers to cause a denial of service (device reload) via crafted DNS packets, aka Bug ID CSCue00996.",
           "ignored_by_path": false,
-          "level_id": 4,
+          "level_id": 3,
           "name": "Denial of Service",
           "reference": Array [
             Object {
@@ -2492,7 +2492,7 @@ Object {
           "cvss_v2_vector": "AV:N/AC:L/Au:N/C:N/I:N/A:C/E:F/RL:OF/RC:C",
           "description": "The TCP Input module in Cisco IOS 12.2 through 12.4 and 15.0 through 15.4, when NAT is used, allows remote attackers to cause a denial of service (memory consumption or device reload) via crafted TCP packets, aka Bug IDs CSCuh33843 and CSCuj41494.",
           "ignored_by_path": false,
-          "level_id": 4,
+          "level_id": 3,
           "name": "Denial of Service",
           "reference": Array [
             Object {
@@ -2519,7 +2519,7 @@ Object {
           "cvss_v2_vector": "AV:N/AC:L/Au:N/C:N/I:N/A:C/E:F/RL:OF/RC:C",
           "description": "Memory leak in the TCP input module in Cisco and IOS XE allows remote attackers to cause a denial of service (memory consumption or device reload) by sending crafted TCP packets over (1) IPv4 or (2) IPv6, aka Bug ID CSCum94811.",
           "ignored_by_path": false,
-          "level_id": 4,
+          "level_id": 3,
           "name": "Memory Leak",
           "reference": Array [
             Object {
@@ -2595,7 +2595,7 @@ Object {
           "cvss_v2_vector": "AV:N/AC:L/Au:N/C:P/I:N/A:N/E:F/RL:U/RC:C",
           "description": "The server IKEv1 implementation in Cisco IOS, IOS XE, IOS XR and PIX allows remote attackers to obtain sensitive information from device memory via a Security Association (SA) negotiation request, aka Bug IDs CSCvb29204 and CSCvb36055 or BENIGNCERTAIN.",
           "ignored_by_path": false,
-          "level_id": 3,
+          "level_id": 4,
           "name": "Information Disclosure",
           "reference": Array [
             Object {
@@ -2622,7 +2622,7 @@ Object {
           "cvss_v2_vector": "AV:N/AC:M/Au:N/C:P/I:P/A:C/E:F/RL:OF/RC:C",
           "description": "The DNS forwarder in Cisco IOS and IOS XE allows remote attackers to obtain sensitive information from process memory or cause a denial of service (data corruption or device reload) via a crafted DNS response, aka Bug ID CSCup90532.",
           "ignored_by_path": false,
-          "level_id": 4,
+          "level_id": 3,
           "name": "Information Disclosure",
           "reference": Array [
             Object {
@@ -2649,7 +2649,7 @@ Object {
           "cvss_v2_vector": "AV:N/AC:L/Au:N/C:N/I:N/A:C/E:F/RL:OF/RC:C",
           "description": "Cisco IOS and IOS XE allow remote attackers to cause a denial of service (device reload) via crafted fields in an H.323 message, aka Bug ID CSCux04257.",
           "ignored_by_path": false,
-          "level_id": 4,
+          "level_id": 3,
           "name": "Denial of Service",
           "reference": Array [
             Object {
@@ -2920,7 +2920,7 @@ Object {
           "description": "These services can be leveraged by attackers to launch denial-of-service (DoS) and other attacks that would be prevented by packet inspection filters provided these services are disabled. Services that are not needed should be turned off because they present potential avenues of attack and may provide information that could be useful for gaining unauthorized access.
 ",
           "ignored_by_path": false,
-          "level_id": 3,
+          "level_id": 2,
           "name": "Rarely used services",
           "reference": Array [],
           "remediation": "Disable unused services. hostname(config)#no {service}",
@@ -3448,7 +3448,7 @@ Object {
           "cvss_v2_vector": "AV:N/AC:L/Au:N/C:N/I:N/A:C/E:F/RL:OF/RC:C",
           "description": "Утечка памяти в реализации клиента Smart Install для Cisco IOS и IOS XE позволяет злоумышленникам, действующим удаленно, вызвать отказ в обслуживании (чрезмерное потребление ресурсов памяти), используя специально сформированные параметры списка образов.",
           "ignored_by_path": false,
-          "level_id": 4,
+          "level_id": 3,
           "name": "Утечка памяти",
           "reference": Array [
             Object {
@@ -3502,7 +3502,7 @@ Object {
           "cvss_v2_vector": "AV:N/AC:L/Au:N/C:N/I:N/A:P/E:F/RL:O/RC:C",
           "description": "Эти сервисы могут быть использованы злоумышленниками для вызова отказа в обслуживании и других атак, которые можно предотвратить фильтрацией пакетов, при условии, что эти сервисы включены. Необходимо отключить ненужные сервисы, поскольку они обеспечивают потенциальные векторы атак и могут предоставить информацию, которая может быть использована для получения неавторизованного доступа.",
           "ignored_by_path": false,
-          "level_id": 3,
+          "level_id": 2,
           "name": "Редко используемые сервисы",
           "reference": Array [],
           "remediation": "Необходимо отключить неиспользуемые сервисы. hostname(config)#no {название службы}",
@@ -3690,7 +3690,7 @@ Object {
           "cvss_v2_vector": "AV:N/AC:L/Au:N/C:N/I:N/A:C/E:F/RL:OF/RC:C",
           "description": "Утечка памяти в реализации клиента Smart Install для Cisco IOS и IOS XE позволяет злоумышленникам, действующим удаленно, вызвать отказ в обслуживании (чрезмерное потребление ресурсов памяти), используя специально сформированные параметры списка образов.",
           "ignored_by_path": false,
-          "level_id": 4,
+          "level_id": 3,
           "name": "Утечка памяти",
           "reference": Array [
             Object {
@@ -3747,7 +3747,7 @@ Object {
  \\"+\\" - строка присутствует в сохраненной конфигурации, но отсутствует в текущей.
  \\"-\\" - строка присутствует в текущей конфигурации, но отсутствует в сохраненной.",
           "ignored_by_path": false,
-          "level_id": 3,
+          "level_id": 2,
           "name": "Текущая и сохраненная конфигурации не совпадают",
           "reference": Array [],
           "remediation": "Просмотрите и  сохраните текущую конфигурацию.",
@@ -3763,7 +3763,7 @@ Object {
           "cvss_v2_vector": "AV:N/AC:L/Au:N/C:N/I:N/A:P/E:F/RL:O/RC:C",
           "description": "Эти сервисы могут быть использованы злоумышленниками для вызова отказа в обслуживании и других атак, которые можно предотвратить фильтрацией пакетов, при условии, что эти сервисы включены. Необходимо отключить ненужные сервисы, поскольку они обеспечивают потенциальные векторы атак и могут предоставить информацию, которая может быть использована для получения неавторизованного доступа.",
           "ignored_by_path": false,
-          "level_id": 3,
+          "level_id": 2,
           "name": "Редко используемые сервисы",
           "reference": Array [],
           "remediation": "Необходимо отключить неиспользуемые сервисы. hostname(config)#no {название службы}",
@@ -3941,7 +3941,7 @@ Object {
           "cvss_v2_vector": "AV:N/AC:L/Au:N/C:N/I:N/A:C/E:F/RL:OF/RC:C",
           "description": "Утечка памяти в реализации клиента Smart Install для Cisco IOS и IOS XE позволяет злоумышленникам, действующим удаленно, вызвать отказ в обслуживании (чрезмерное потребление ресурсов памяти), используя специально сформированные параметры списка образов.",
           "ignored_by_path": false,
-          "level_id": 4,
+          "level_id": 3,
           "name": "Утечка памяти",
           "reference": Array [
             Object {
@@ -3995,7 +3995,7 @@ Object {
           "cvss_v2_vector": "AV:N/AC:L/Au:N/C:N/I:N/A:P/E:F/RL:O/RC:C",
           "description": "Эти сервисы могут быть использованы злоумышленниками для вызова отказа в обслуживании и других атак, которые можно предотвратить фильтрацией пакетов, при условии, что эти сервисы включены. Необходимо отключить ненужные сервисы, поскольку они обеспечивают потенциальные векторы атак и могут предоставить информацию, которая может быть использована для получения неавторизованного доступа.",
           "ignored_by_path": false,
-          "level_id": 3,
+          "level_id": 2,
           "name": "Редко используемые сервисы",
           "reference": Array [],
           "remediation": "Необходимо отключить неиспользуемые сервисы. hostname(config)#no {название службы}",
@@ -4183,7 +4183,7 @@ Object {
           "cvss_v2_vector": "AV:N/AC:L/Au:N/C:N/I:N/A:C/E:F/RL:OF/RC:C",
           "description": "Утечка памяти в реализации клиента Smart Install для Cisco IOS и IOS XE позволяет злоумышленникам, действующим удаленно, вызвать отказ в обслуживании (чрезмерное потребление ресурсов памяти), используя специально сформированные параметры списка образов.",
           "ignored_by_path": false,
-          "level_id": 4,
+          "level_id": 3,
           "name": "Утечка памяти",
           "reference": Array [
             Object {
@@ -4237,7 +4237,7 @@ Object {
           "cvss_v2_vector": "AV:N/AC:L/Au:N/C:N/I:N/A:P/E:F/RL:O/RC:C",
           "description": "Эти сервисы могут быть использованы злоумышленниками для вызова отказа в обслуживании и других атак, которые можно предотвратить фильтрацией пакетов, при условии, что эти сервисы включены. Необходимо отключить ненужные сервисы, поскольку они обеспечивают потенциальные векторы атак и могут предоставить информацию, которая может быть использована для получения неавторизованного доступа.",
           "ignored_by_path": false,
-          "level_id": 3,
+          "level_id": 2,
           "name": "Редко используемые сервисы",
           "reference": Array [],
           "remediation": "Необходимо отключить неиспользуемые сервисы. hostname(config)#no {название службы}",
@@ -4425,7 +4425,7 @@ Object {
           "cvss_v2_vector": "AV:N/AC:L/Au:N/C:N/I:N/A:C/E:F/RL:OF/RC:C",
           "description": "Утечка памяти в реализации клиента Smart Install для Cisco IOS и IOS XE позволяет злоумышленникам, действующим удаленно, вызвать отказ в обслуживании (чрезмерное потребление ресурсов памяти), используя специально сформированные параметры списка образов.",
           "ignored_by_path": false,
-          "level_id": 4,
+          "level_id": 3,
           "name": "Утечка памяти",
           "reference": Array [
             Object {
@@ -4479,7 +4479,7 @@ Object {
           "cvss_v2_vector": "AV:N/AC:L/Au:N/C:N/I:N/A:P/E:F/RL:O/RC:C",
           "description": "Эти сервисы могут быть использованы злоумышленниками для вызова отказа в обслуживании и других атак, которые можно предотвратить фильтрацией пакетов, при условии, что эти сервисы включены. Необходимо отключить ненужные сервисы, поскольку они обеспечивают потенциальные векторы атак и могут предоставить информацию, которая может быть использована для получения неавторизованного доступа.",
           "ignored_by_path": false,
-          "level_id": 3,
+          "level_id": 2,
           "name": "Редко используемые сервисы",
           "reference": Array [],
           "remediation": "Необходимо отключить неиспользуемые сервисы. hostname(config)#no {название службы}",
@@ -4657,7 +4657,7 @@ Object {
           "cvss_v2_vector": "AV:N/AC:L/Au:N/C:N/I:N/A:C/E:F/RL:OF/RC:C",
           "description": "Утечка памяти в реализации клиента Smart Install для Cisco IOS и IOS XE позволяет злоумышленникам, действующим удаленно, вызвать отказ в обслуживании (чрезмерное потребление ресурсов памяти), используя специально сформированные параметры списка образов.",
           "ignored_by_path": false,
-          "level_id": 4,
+          "level_id": 3,
           "name": "Утечка памяти",
           "reference": Array [
             Object {
@@ -4704,7 +4704,7 @@ Object {
           "cvss_v2_vector": "AV:N/AC:L/Au:N/C:N/I:N/A:P/E:F/RL:O/RC:C",
           "description": "Эти сервисы могут быть использованы злоумышленниками для вызова отказа в обслуживании и других атак, которые можно предотвратить фильтрацией пакетов, при условии, что эти сервисы включены. Необходимо отключить ненужные сервисы, поскольку они обеспечивают потенциальные векторы атак и могут предоставить информацию, которая может быть использована для получения неавторизованного доступа.",
           "ignored_by_path": false,
-          "level_id": 3,
+          "level_id": 2,
           "name": "Редко используемые сервисы",
           "reference": Array [],
           "remediation": "Необходимо отключить неиспользуемые сервисы. hostname(config)#no {название службы}",
@@ -4882,7 +4882,7 @@ Object {
           "cvss_v2_vector": "AV:N/AC:L/Au:N/C:N/I:N/A:C/E:F/RL:OF/RC:C",
           "description": "Утечка памяти в реализации клиента Smart Install для Cisco IOS и IOS XE позволяет злоумышленникам, действующим удаленно, вызвать отказ в обслуживании (чрезмерное потребление ресурсов памяти), используя специально сформированные параметры списка образов.",
           "ignored_by_path": false,
-          "level_id": 4,
+          "level_id": 3,
           "name": "Утечка памяти",
           "reference": Array [
             Object {
@@ -4912,7 +4912,7 @@ Object {
  \\"+\\" - строка присутствует в сохраненной конфигурации, но отсутствует в текущей.
  \\"-\\" - строка присутствует в текущей конфигурации, но отсутствует в сохраненной.",
           "ignored_by_path": false,
-          "level_id": 3,
+          "level_id": 2,
           "name": "Текущая и сохраненная конфигурации не совпадают",
           "reference": Array [],
           "remediation": "Просмотрите и  сохраните текущую конфигурацию.",
@@ -4948,7 +4948,7 @@ Object {
           "cvss_v2_vector": "AV:N/AC:L/Au:N/C:N/I:N/A:P/E:F/RL:O/RC:C",
           "description": "Эти сервисы могут быть использованы злоумышленниками для вызова отказа в обслуживании и других атак, которые можно предотвратить фильтрацией пакетов, при условии, что эти сервисы включены. Необходимо отключить ненужные сервисы, поскольку они обеспечивают потенциальные векторы атак и могут предоставить информацию, которая может быть использована для получения неавторизованного доступа.",
           "ignored_by_path": false,
-          "level_id": 3,
+          "level_id": 2,
           "name": "Редко используемые сервисы",
           "reference": Array [],
           "remediation": "Необходимо отключить неиспользуемые сервисы. hostname(config)#no {название службы}",
@@ -5182,7 +5182,7 @@ Object {
           "cvss_v2_vector": "AV:N/AC:L/Au:N/C:N/I:N/A:C/E:F/RL:OF/RC:C",
           "description": "Утечка памяти в реализации клиента Smart Install для Cisco IOS и IOS XE позволяет злоумышленникам, действующим удаленно, вызвать отказ в обслуживании (чрезмерное потребление ресурсов памяти), используя специально сформированные параметры списка образов.",
           "ignored_by_path": false,
-          "level_id": 4,
+          "level_id": 3,
           "name": "Утечка памяти",
           "reference": Array [
             Object {
@@ -5229,7 +5229,7 @@ Object {
           "cvss_v2_vector": "AV:N/AC:L/Au:N/C:N/I:N/A:P/E:F/RL:O/RC:C",
           "description": "Эти сервисы могут быть использованы злоумышленниками для вызова отказа в обслуживании и других атак, которые можно предотвратить фильтрацией пакетов, при условии, что эти сервисы включены. Необходимо отключить ненужные сервисы, поскольку они обеспечивают потенциальные векторы атак и могут предоставить информацию, которая может быть использована для получения неавторизованного доступа.",
           "ignored_by_path": false,
-          "level_id": 3,
+          "level_id": 2,
           "name": "Редко используемые сервисы",
           "reference": Array [],
           "remediation": "Необходимо отключить неиспользуемые сервисы. hostname(config)#no {название службы}",
@@ -5427,7 +5427,7 @@ Object {
           "cvss_v2_vector": "AV:N/AC:L/Au:N/C:N/I:N/A:C/E:F/RL:OF/RC:C",
           "description": "Утечка памяти в реализации клиента Smart Install для Cisco IOS и IOS XE позволяет злоумышленникам, действующим удаленно, вызвать отказ в обслуживании (чрезмерное потребление ресурсов памяти), используя специально сформированные параметры списка образов.",
           "ignored_by_path": false,
-          "level_id": 4,
+          "level_id": 3,
           "name": "Утечка памяти",
           "reference": Array [
             Object {
@@ -5592,7 +5592,7 @@ Object {
  \\"+\\" - строка присутствует в сохраненной конфигурации, но отсутствует в текущей.
  \\"-\\" - строка присутствует в текущей конфигурации, но отсутствует в сохраненной.",
           "ignored_by_path": false,
-          "level_id": 3,
+          "level_id": 2,
           "name": "Текущая и сохраненная конфигурации не совпадают",
           "reference": Array [],
           "remediation": "Просмотрите и  сохраните текущую конфигурацию.",
@@ -5628,7 +5628,7 @@ Object {
           "cvss_v2_vector": "AV:N/AC:L/Au:N/C:N/I:N/A:P/E:F/RL:O/RC:C",
           "description": "Эти сервисы могут быть использованы злоумышленниками для вызова отказа в обслуживании и других атак, которые можно предотвратить фильтрацией пакетов, при условии, что эти сервисы включены. Необходимо отключить ненужные сервисы, поскольку они обеспечивают потенциальные векторы атак и могут предоставить информацию, которая может быть использована для получения неавторизованного доступа.",
           "ignored_by_path": false,
-          "level_id": 3,
+          "level_id": 2,
           "name": "Редко используемые сервисы",
           "reference": Array [],
           "remediation": "Необходимо отключить неиспользуемые сервисы. hostname(config)#no {название службы}",
@@ -5820,7 +5820,7 @@ Object {
           "cvss_v2_vector": "AV:N/AC:L/Au:N/C:N/I:N/A:C/E:F/RL:OF/RC:C",
           "description": "Утечка памяти в реализации клиента Smart Install для Cisco IOS и IOS XE позволяет злоумышленникам, действующим удаленно, вызвать отказ в обслуживании (чрезмерное потребление ресурсов памяти), используя специально сформированные параметры списка образов.",
           "ignored_by_path": false,
-          "level_id": 4,
+          "level_id": 3,
           "name": "Утечка памяти",
           "reference": Array [
             Object {
@@ -5894,7 +5894,7 @@ Object {
           "cvss_v2_vector": "AV:N/AC:L/Au:N/C:N/I:N/A:P/E:F/RL:O/RC:C",
           "description": "Эти сервисы могут быть использованы злоумышленниками для вызова отказа в обслуживании и других атак, которые можно предотвратить фильтрацией пакетов, при условии, что эти сервисы включены. Необходимо отключить ненужные сервисы, поскольку они обеспечивают потенциальные векторы атак и могут предоставить информацию, которая может быть использована для получения неавторизованного доступа.",
           "ignored_by_path": false,
-          "level_id": 3,
+          "level_id": 2,
           "name": "Редко используемые сервисы",
           "reference": Array [],
           "remediation": "Необходимо отключить неиспользуемые сервисы. hostname(config)#no {название службы}",
@@ -6092,7 +6092,7 @@ Object {
           "cvss_v2_vector": "AV:N/AC:L/Au:N/C:N/I:N/A:C/E:F/RL:OF/RC:C",
           "description": "Утечка памяти в реализации клиента Smart Install для Cisco IOS и IOS XE позволяет злоумышленникам, действующим удаленно, вызвать отказ в обслуживании (чрезмерное потребление ресурсов памяти), используя специально сформированные параметры списка образов.",
           "ignored_by_path": false,
-          "level_id": 4,
+          "level_id": 3,
           "name": "Утечка памяти",
           "reference": Array [
             Object {
@@ -6166,7 +6166,7 @@ Object {
           "cvss_v2_vector": "AV:N/AC:L/Au:N/C:N/I:N/A:P/E:F/RL:O/RC:C",
           "description": "Эти сервисы могут быть использованы злоумышленниками для вызова отказа в обслуживании и других атак, которые можно предотвратить фильтрацией пакетов, при условии, что эти сервисы включены. Необходимо отключить ненужные сервисы, поскольку они обеспечивают потенциальные векторы атак и могут предоставить информацию, которая может быть использована для получения неавторизованного доступа.",
           "ignored_by_path": false,
-          "level_id": 3,
+          "level_id": 2,
           "name": "Редко используемые сервисы",
           "reference": Array [],
           "remediation": "Необходимо отключить неиспользуемые сервисы. hostname(config)#no {название службы}",
@@ -6608,7 +6608,7 @@ Object {
           "description": "Vulnerability in OpenSSH allows users to access all parts of the filesystem that they have access to, and write to arbitrary memory positions. Successful exploitation may allow execution of arbitrary code.",
           "ignored_by_path": false,
           "isNetworkVulnerability": true,
-          "level_id": 4,
+          "level_id": 3,
           "name": "Arbitrary Code Execution",
           "port": 22,
           "protocol": "tcp",
@@ -6865,7 +6865,7 @@ Object {
           "cvss_v2_vector": "AV:N/AC:L/Au:N/C:N/I:N/A:P/E:U/RL:OF/RC:C",
           "description": "The PKCS7_dataDecodefunction in crypto/pkcs7/pk7_doit.c in OpenSSL before 0.9.8zg, 1.0.0 before 1.0.0s, 1.0.1 before 1.0.1n, and 1.0.2 before 1.0.2b allows remote attackers to cause a denial of service (NULL pointer dereference and application crash) via a PKCS#7 blob that uses ASN.1 encoding and lacks inner EncryptedContent data.",
           "ignored_by_path": false,
-          "level_id": 3,
+          "level_id": 2,
           "name": "Denial of Service",
           "reference": Array [
             Object {
@@ -6897,7 +6897,7 @@ Object {
           "cvss_v2_vector": "AV:N/AC:L/Au:N/C:N/I:N/A:P/E:U/RL:OF/RC:C",
           "description": "The do_free_upto function in crypto/cms/cms_smime.c in OpenSSL before 0.9.8zg, 1.0.0 before 1.0.0s, 1.0.1 before 1.0.1n, and 1.0.2 before 1.0.2b allows remote attackers to cause a denial of service (infinite loop) via vectors that trigger a NULL value of a BIO data structure, as demonstrated by an unrecognized X.660 OID for a hash function.",
           "ignored_by_path": false,
-          "level_id": 3,
+          "level_id": 2,
           "name": "Denial of Service",
           "reference": Array [
             Object {
@@ -6961,7 +6961,7 @@ Object {
           "cvss_v2_vector": "AV:N/AC:M/Au:N/C:P/I:P/A:N/E:U/RL:OF/RC:C",
           "description": "The X509_verify_cert function in crypto/x509/x509_vfy.c in OpenSSL 1.0.1n, 1.0.1o, 1.0.2b, and 1.0.2c does not properly process X.509 Basic Constraints cA values during identification of alternative certificate chains, which allows remote attackers to spoof a Certification Authority role and trigger unintended certificate verifications via a valid leaf certificate.",
           "ignored_by_path": false,
-          "level_id": 3,
+          "level_id": 2,
           "name": "Certificate Spoofing",
           "reference": Array [
             Object {
@@ -6999,7 +6999,7 @@ Object {
           "description": "The x11_open_helper function in channels.c in ssh in OpenSSH before 6.9, when ForwardX11Trusted mode is not used, lacks a check of the refusal deadline for X connections, which makes it easier for remote attackers to bypass intended access restrictions via a connection outside of the permitted time window.",
           "ignored_by_path": false,
           "isNetworkVulnerability": true,
-          "level_id": 3,
+          "level_id": 2,
           "name": "Access Restrictions Bypass",
           "port": 22,
           "protocol": "tcp",
@@ -7190,7 +7190,7 @@ Object {
           "description": "The ssh_packet_read_poll2 function in packet.c in OpenSSH before 7.1p2 allows remote attackers to cause a denial of service (out-of-bounds read and application crash) via crafted network traffic.",
           "ignored_by_path": false,
           "isNetworkVulnerability": true,
-          "level_id": 3,
+          "level_id": 2,
           "name": "Denial of Service",
           "port": 22,
           "protocol": "tcp",
@@ -7314,7 +7314,7 @@ Object {
           "description": "Vulnerability exists in OpenSSH with X11Forwarding enabled due to missing sanitization of credential data that allows remote authenticated users to inject xauth commands and read or overwrite arbitrary files or connect to local ports.",
           "ignored_by_path": false,
           "isNetworkVulnerability": true,
-          "level_id": 3,
+          "level_id": 2,
           "name": "Command Injection",
           "port": 22,
           "protocol": "tcp",
@@ -7586,7 +7586,7 @@ Object {
           "description": "The do_setup_env function in session.c in sshd in OpenSSH through 7.2p2, when the UseLogin feature is enabled and PAM is configured to read .pam_environment files in user home directories, allows local users to gain privileges by triggering a crafted environment for the /bin/login program, as demonstrated by an LD_PRELOAD environment variable.",
           "ignored_by_path": false,
           "isNetworkVulnerability": true,
-          "level_id": 4,
+          "level_id": 3,
           "name": "Privilege Gaining",
           "port": 22,
           "protocol": "tcp",
@@ -7616,7 +7616,7 @@ Object {
           "description": "The auth_password function in auth-passwd.c in sshd in OpenSSH before 7.3 does not limit password lengths for password authentication, which allows remote attackers to cause a denial of service (crypt CPU consumption) via a long string.",
           "ignored_by_path": false,
           "isNetworkVulnerability": true,
-          "level_id": 4,
+          "level_id": 3,
           "name": "Denial of Service",
           "port": 22,
           "protocol": "tcp",
@@ -8218,7 +8218,7 @@ Object {
           "description": "Untrusted search path vulnerability in ssh-agent.c in ssh-agent in OpenSSH before 7.4 allows remote attackers to execute arbitrary local PKCS#11 modules by leveraging control over a forwarded agent-socket.",
           "ignored_by_path": false,
           "isNetworkVulnerability": true,
-          "level_id": 4,
+          "level_id": 3,
           "name": "Untrusted Search Path",
           "port": 22,
           "protocol": "tcp",
@@ -8308,7 +8308,7 @@ Object {
           "description": "The shared memory manager (associated with pre-authentication compression) in sshd in OpenSSH before 7.4 does not ensure that a bounds check is enforced by all compilers, which might allows local users to gain privileges by leveraging access to a sandboxed privilege-separation process, related to the m_zback and m_zlib data structures.",
           "ignored_by_path": false,
           "isNetworkVulnerability": true,
-          "level_id": 4,
+          "level_id": 3,
           "name": "Privilege Gaining",
           "port": 22,
           "protocol": "tcp",
@@ -8456,7 +8456,7 @@ Object {
           "description": "The process_open function in sftp-server.c in OpenSSH before 7.6 does not properly prevent write operations in readonly mode, which allows attackers to create zero-length files.",
           "ignored_by_path": false,
           "isNetworkVulnerability": true,
-          "level_id": 3,
+          "level_id": 2,
           "name": "Unauthorized Write Operations",
           "port": 22,
           "protocol": "tcp",
@@ -8486,7 +8486,7 @@ Object {
           "description": "OpenSSH through 7.7 is prone to a user enumeration vulnerability due to not delaying bailout for an invalid authenticating user until after the packet containing the request has been fully parsed, related to auth2-gss.c, auth2-hostbased.c, and auth2-pubkey.c.",
           "ignored_by_path": false,
           "isNetworkVulnerability": true,
-          "level_id": 3,
+          "level_id": 2,
           "name": "User Enumeration",
           "port": 22,
           "protocol": "tcp",
@@ -8781,7 +8781,7 @@ Object {
           "description": "The process_open function in sftp-server.c in OpenSSH before 7.6 does not properly prevent write operations in readonly mode, which allows attackers to create zero-length files.",
           "ignored_by_path": false,
           "isNetworkVulnerability": true,
-          "level_id": 3,
+          "level_id": 2,
           "name": "Unauthorized Write Operations",
           "port": 22,
           "protocol": "tcp",
@@ -8812,7 +8812,7 @@ Object {
           "description": "OpenSSH through 7.7 is prone to a user enumeration vulnerability due to not delaying bailout for an invalid authenticating user until after the packet containing the request has been fully parsed, related to auth2-gss.c, auth2-hostbased.c, and auth2-pubkey.c.",
           "ignored_by_path": false,
           "isNetworkVulnerability": true,
-          "level_id": 3,
+          "level_id": 2,
           "name": "User Enumeration",
           "port": 22,
           "protocol": "tcp",
@@ -10391,7 +10391,7 @@ Object {
           "cvss_v2_vector": "AV:N/AC:M/Au:N/C:P/I:N/A:C/E:U/RL:OF/RC:C",
           "description": "Memory leak in d1_srtp.c in the DTLS SRTP extension in OpenSSL 1.0.1 before 1.0.1j allows remote attackers to cause a denial of service (memory consumption) via a crafted handshake message.",
           "ignored_by_path": false,
-          "level_id": 4,
+          "level_id": 3,
           "name": "Memory Leak",
           "reference": Array [
             Object {
@@ -10418,7 +10418,7 @@ Object {
           "cvss_v2_vector": "AV:N/AC:L/Au:N/C:N/I:N/A:P/E:U/RL:OF/RC:C",
           "description": "Memory leak in the tls_decrypt_ticket function in t1_lib.c in OpenSSL before 0.9.8zc, 1.0.0 before 1.0.0o, and 1.0.1 before 1.0.1j allows remote attackers to cause a denial of service (memory consumption) via a crafted session ticket that triggers an integrity-check failure.",
           "ignored_by_path": false,
-          "level_id": 3,
+          "level_id": 2,
           "name": "Memory Leak",
           "reference": Array [
             Object {
@@ -10504,7 +10504,7 @@ Object {
           "cvss_v2_vector": "AV:N/AC:L/Au:N/C:N/I:N/A:P/E:U/RL:OF/RC:C",
           "description": "OpenSSL before 0.9.8zd, 1.0.0 before 1.0.0p, and 1.0.1 before 1.0.1k allows remote attackers to cause a denial of service (NULL pointer dereference and application crash) via a crafted DTLS message that is processed with a different read operation for the handshake header than for the handshake body, related to the dtls1_get_record function in d1_pkt.c and the ssl3_read_n function in s3_pkt.c.",
           "ignored_by_path": false,
-          "level_id": 3,
+          "level_id": 2,
           "name": "Denial of Service",
           "reference": Array [
             Object {
@@ -10531,7 +10531,7 @@ Object {
           "cvss_v2_vector": "AV:N/AC:L/Au:N/C:N/I:N/A:P/E:U/RL:OF/RC:C",
           "description": "Memory leak in the dtls1_buffer_record function in d1_pkt.c in OpenSSL 1.0.0 before 1.0.0p and 1.0.1 before 1.0.1k allows remote attackers to cause a denial of service (memory consumption) by sending many duplicate records for the next epoch, leading to failure of replay detection.",
           "ignored_by_path": false,
-          "level_id": 3,
+          "level_id": 2,
           "name": "Memory Leak",
           "reference": Array [
             Object {
@@ -10558,7 +10558,7 @@ Object {
           "cvss_v2_vector": "AV:N/AC:L/Au:N/C:N/I:N/A:P/E:U/RL:OF/RC:C",
           "description": "The ssl23_get_client_hello function in s23_srvr.c in OpenSSL 0.9.8zc, 1.0.0o, and 1.0.1j does not properly handle attempts to use unsupported protocols, which allows remote attackers to cause a denial of service (NULL pointer dereference and daemon crash) via an unexpected handshake, as demonstrated by an SSLv3 handshake to a no-ssl3 application with certain error handling. NOTE: this issue became relevant after the CVE-2014-3568 fix.",
           "ignored_by_path": false,
-          "level_id": 3,
+          "level_id": 2,
           "name": "Denial of Service",
           "reference": Array [
             Object {
@@ -10585,7 +10585,7 @@ Object {
           "cvss_v2_vector": "AV:N/AC:L/Au:N/C:N/I:P/A:N/E:U/RL:ND/RC:C",
           "description": "The ssl3_get_key_exchange function in s3_clnt.c in OpenSSL before 0.9.8zd, 1.0.0 before 1.0.0p, and 1.0.1 before 1.0.1k allows remote SSL servers to conduct ECDHE-to-ECDH downgrade attacks and trigger a loss of forward secrecy by omitting the ServerKeyExchange message.",
           "ignored_by_path": false,
-          "level_id": 3,
+          "level_id": 2,
           "name": "Security Bypassing",
           "reference": Array [
             Object {
@@ -10639,7 +10639,7 @@ Object {
           "cvss_v2_vector": "AV:N/AC:L/Au:N/C:N/I:P/A:N/E:U/RL:OF/RC:C",
           "description": "The ssl3_get_cert_verify function in s3_srvr.c in OpenSSL 1.0.0 before 1.0.0p and 1.0.1 before 1.0.1k accepts client authentication with a Diffie-Hellman (DH) certificate without requiring a CertificateVerify message, which allows remote attackers to obtain access without knowledge of a private key via crafted TLS Handshake Protocol traffic to a server that recognizes a Certification Authority with DH support.",
           "ignored_by_path": false,
-          "level_id": 3,
+          "level_id": 2,
           "name": "Security Bypassing",
           "reference": Array [
             Object {
@@ -10666,7 +10666,7 @@ Object {
           "cvss_v2_vector": "AV:N/AC:L/Au:N/C:N/I:P/A:N/E:U/RL:OF/RC:C",
           "description": "OpenSSL before 0.9.8zd, 1.0.0 before 1.0.0p, and 1.0.1 before 1.0.1k does not enforce certain constraints on certificate data, which allows remote attackers to defeat a fingerprint-based certificate-blacklist protection mechanism by including crafted data within a certificate's unsigned portion, related to crypto/asn1/a_verify.c, crypto/dsa/dsa_asn1.c, crypto/ecdsa/ecs_vrf.c, and crypto/x509/x_all.c.",
           "ignored_by_path": false,
-          "level_id": 3,
+          "level_id": 2,
           "name": "Protection Mechanism Bypassing",
           "reference": Array [
             Object {
@@ -10693,7 +10693,7 @@ Object {
           "cvss_v2_vector": "AV:N/AC:L/Au:N/C:P/I:N/A:N/E:U/RL:OF/RC:C",
           "description": "The BN_sqr implementation in OpenSSL before 0.9.8zd, 1.0.0 before 1.0.0p, and 1.0.1 before 1.0.1k does not properly calculate the square of a BIGNUM value, which might make it easier for remote attackers to defeat cryptographic protection mechanisms via unspecified vectors, related to crypto/bn/asm/mips.pl, crypto/bn/asm/x86_64-gcc.c, and crypto/bn/bn_asm.c.",
           "ignored_by_path": false,
-          "level_id": 3,
+          "level_id": 2,
           "name": "Protection Mechanism Bypassing",
           "reference": Array [
             Object {
@@ -10747,7 +10747,7 @@ Object {
           "cvss_v2_vector": "AV:N/AC:L/Au:N/C:N/I:N/A:P/E:U/RL:ND/RC:C",
           "description": "The X509_to_X509_REQ function in crypto/x509/x509_req.c in OpenSSL before 0.9.8zf, 1.0.0 before 1.0.0r, 1.0.1 before 1.0.1m, and 1.0.2 before 1.0.2a might allow attackers to cause a denial of service (NULL pointer dereference and application crash) via an invalid certificate key.",
           "ignored_by_path": false,
-          "level_id": 3,
+          "level_id": 2,
           "name": "Denial of Service",
           "reference": Array [
             Object {
@@ -10774,7 +10774,7 @@ Object {
           "cvss_v2_vector": "AV:N/AC:L/Au:N/C:N/I:N/A:P/E:U/RL:OF/RC:C",
           "description": "The ASN1_TYPE_cmp function in crypto/asn1/a_type.c in OpenSSL before 0.9.8zf, 1.0.0 before 1.0.0r, 1.0.1 before 1.0.1m, and 1.0.2 before 1.0.2a does not properly perform boolean-type comparisons, which allows remote attackers to cause a denial of service (invalid read operation and application crash) via a crafted X.509 certificate to an endpoint that uses the certificate-verification feature.",
           "ignored_by_path": false,
-          "level_id": 3,
+          "level_id": 2,
           "name": "Denial of Service",
           "reference": Array [
             Object {
@@ -10801,7 +10801,7 @@ Object {
           "cvss_v2_vector": "AV:N/AC:L/Au:N/C:N/I:N/A:P/E:U/RL:OF/RC:C",
           "description": "The ASN1_item_ex_d2i function in crypto/asn1/tasn_dec.c in OpenSSL before 0.9.8zf, 1.0.0 before 1.0.0r, 1.0.1 before 1.0.1m, and 1.0.2 before 1.0.2a does not reinitialize CHOICE and ADB data structures, which might allow attackers to cause a denial of service (invalid write operation and memory corruption) by leveraging an application that relies on ASN.1 structure reuse.",
           "ignored_by_path": false,
-          "level_id": 3,
+          "level_id": 2,
           "name": "Denial of Service",
           "reference": Array [
             Object {
@@ -10828,7 +10828,7 @@ Object {
           "cvss_v2_vector": "AV:N/AC:L/Au:N/C:N/I:N/A:P/E:U/RL:OF/RC:C",
           "description": "The PKCS#7 implementation in OpenSSL before 0.9.8zf, 1.0.0 before 1.0.0r, 1.0.1 before 1.0.1m, and 1.0.2 before 1.0.2a does not properly handle a lack of outer ContentInfo, which allows attackers to cause a denial of service (NULL pointer dereference and application crash) by leveraging an application that processes arbitrary PKCS#7 data and providing malformed data with ASN.1 encoding, related to crypto/pkcs7/pk7_doit.c and crypto/pkcs7/pk7_lib.c.",
           "ignored_by_path": false,
-          "level_id": 3,
+          "level_id": 2,
           "name": "Denial of Service",
           "reference": Array [
             Object {
@@ -10855,7 +10855,7 @@ Object {
           "cvss_v2_vector": "AV:N/AC:L/Au:N/C:N/I:N/A:P/E:U/RL:OF/RC:C",
           "description": "The SSLv2 implementation in OpenSSL before 0.9.8zf, 1.0.0 before 1.0.0r, 1.0.1 before 1.0.1m, and 1.0.2 before 1.0.2a allows remote attackers to cause a denial of service (s2_lib.c assertion failure and daemon exit) via a crafted CLIENT-MASTER-KEY message.",
           "ignored_by_path": false,
-          "level_id": 3,
+          "level_id": 2,
           "name": "Denial of Service",
           "reference": Array [
             Object {
@@ -10983,7 +10983,7 @@ Object {
           "cvss_v2_vector": "AV:N/AC:L/Au:N/C:N/I:N/A:P/E:U/RL:OF/RC:C",
           "description": "The PKCS7_dataDecodefunction in crypto/pkcs7/pk7_doit.c in OpenSSL before 0.9.8zg, 1.0.0 before 1.0.0s, 1.0.1 before 1.0.1n, and 1.0.2 before 1.0.2b allows remote attackers to cause a denial of service (NULL pointer dereference and application crash) via a PKCS#7 blob that uses ASN.1 encoding and lacks inner EncryptedContent data.",
           "ignored_by_path": false,
-          "level_id": 3,
+          "level_id": 2,
           "name": "Denial of Service",
           "reference": Array [
             Object {
@@ -11015,7 +11015,7 @@ Object {
           "cvss_v2_vector": "AV:N/AC:L/Au:N/C:N/I:N/A:P/E:U/RL:OF/RC:C",
           "description": "The do_free_upto function in crypto/cms/cms_smime.c in OpenSSL before 0.9.8zg, 1.0.0 before 1.0.0s, 1.0.1 before 1.0.1n, and 1.0.2 before 1.0.2b allows remote attackers to cause a denial of service (infinite loop) via vectors that trigger a NULL value of a BIO data structure, as demonstrated by an unrecognized X.660 OID for a hash function.",
           "ignored_by_path": false,
-          "level_id": 3,
+          "level_id": 2,
           "name": "Denial of Service",
           "reference": Array [
             Object {
@@ -11079,7 +11079,7 @@ Object {
           "cvss_v2_vector": "AV:N/AC:L/Au:N/C:N/I:N/A:P/E:U/RL:OF/RC:C",
           "description": "crypto/rsa/rsa_ameth.c in OpenSSL 1.0.1 before 1.0.1q and 1.0.2 before 1.0.2e allows remote attackers to cause a denial of service (NULL pointer dereference and application crash) via an RSA PSS ASN.1 signature that lacks a mask generation function parameter.",
           "ignored_by_path": false,
-          "level_id": 3,
+          "level_id": 2,
           "name": "Denial of Service",
           "reference": Array [
             Object {
@@ -11111,7 +11111,7 @@ Object {
           "cvss_v2_vector": "AV:N/AC:L/Au:N/C:P/I:N/A:N/E:U/RL:OF/RC:C",
           "description": "The ASN1_TFLG_COMBINE implementation in crypto/asn1/tasn_dec.c in OpenSSL before 0.9.8zh, 1.0.0 before 1.0.0t, 1.0.1 before 1.0.1q, and 1.0.2 before 1.0.2e mishandles errors caused by malformed X509_ATTRIBUTE data, which allows remote attackers to obtain sensitive information from process memory by triggering a decoding failure in a PKCS#7 or CMS application.",
           "ignored_by_path": false,
-          "level_id": 3,
+          "level_id": 2,
           "name": "Information Disclosure",
           "reference": Array [
             Object {
@@ -11241,7 +11241,7 @@ Object {
           "cvss_v2_vector": "AV:N/AC:L/Au:N/C:C/I:C/A:C/E:U/RL:OF/RC:C",
           "description": "Double free vulnerability in OpenSSL allows attackers to cause a denial of service (memory corruption) by sending crafted DSA private keys.",
           "ignored_by_path": false,
-          "level_id": 5,
+          "level_id": 4,
           "name": "Double Free",
           "reference": Array [
             Object {
@@ -11273,7 +11273,7 @@ Object {
           "cvss_v2_vector": "AV:N/AC:L/Au:N/C:N/I:N/A:C/E:U/RL:OF/RC:C",
           "description": "Vulnerability in the SRP_VBASE_get_by_user method in OpenSSL allows an attacker connecting with an invalid username to cause a memory leak of around 300 bytes per connection.",
           "ignored_by_path": false,
-          "level_id": 4,
+          "level_id": 3,
           "name": "Memory Leak",
           "reference": Array [
             Object {
@@ -11300,7 +11300,7 @@ Object {
           "cvss_v2_vector": "AV:N/AC:L/Au:N/C:N/I:N/A:P/E:U/RL:OF/RC:C",
           "description": "Vulnerability in the BN_hex2bn and BN_dec2bn functions in OpenSSL allows attackers to cause a denial of service (NULL pointer dereference or heap memory corruption) via large hex/dec data.",
           "ignored_by_path": false,
-          "level_id": 3,
+          "level_id": 2,
           "name": "Denial of Service",
           "reference": Array [
             Object {
@@ -11327,7 +11327,7 @@ Object {
           "cvss_v2_vector": "AV:N/AC:L/Au:N/C:C/I:C/A:C/E:U/RL:OF/RC:C",
           "description": "Vulnerability in the BIO_*printf functions in OpenSSL allows attackers to obtain sensitive information or cause a denial of service (out-of-bounds read or write) via a long \\"%s\\" format string.",
           "ignored_by_path": false,
-          "level_id": 5,
+          "level_id": 4,
           "name": "Information Disclosure",
           "reference": Array [
             Object {
@@ -11435,7 +11435,7 @@ Object {
           "cvss_v2_vector": "AV:N/AC:L/Au:N/C:C/I:C/A:C/E:U/RL:OF/RC:UC",
           "description": "The doapr_outch function in crypto/bio/b_print.c in OpenSSL 1.0.1 before 1.0.1s and 1.0.2 before 1.0.2g does not verify that a certain memory allocation succeeds, which allows remote attackers to cause a denial of service (out-of-bounds write or memory consumption) or possibly have unspecified other impact via a long string, as demonstrated by a large amount of ASN.1 data, a different vulnerability than CVE-2016-0799.",
           "ignored_by_path": false,
-          "level_id": 5,
+          "level_id": 3,
           "name": "Denial of Service",
           "reference": Array [
             Object {
@@ -11457,7 +11457,7 @@ Object {
           "cvss_v2_vector": "AV:N/AC:L/Au:N/C:N/I:N/A:P/E:U/RL:OF/RC:C",
           "description": "Integer overflow in the EVP_EncodeUpdate function in crypto/evp/encode.c in OpenSSL before 1.0.1t and 1.0.2 before 1.0.2h allows remote attackers to cause a denial of service (heap memory corruption) via a large amount of binary data.",
           "ignored_by_path": false,
-          "level_id": 3,
+          "level_id": 2,
           "name": "Integer Overflow",
           "reference": Array [
             Object {
@@ -11489,7 +11489,7 @@ Object {
           "cvss_v2_vector": "AV:N/AC:L/Au:N/C:N/I:N/A:P/E:U/RL:OF/RC:C",
           "description": "Integer overflow in the EVP_EncryptUpdate function in crypto/evp/evp_enc.c in OpenSSL before 1.0.1t and 1.0.2 before 1.0.2h allows remote attackers to cause a denial of service (heap memory corruption) via a large amount of data.",
           "ignored_by_path": false,
-          "level_id": 3,
+          "level_id": 2,
           "name": "Integer Overflow",
           "reference": Array [
             Object {
@@ -11597,7 +11597,7 @@ Object {
           "cvss_v2_vector": "AV:N/AC:M/Au:N/C:P/I:N/A:P/E:U/RL:OF/RC:C",
           "description": "The X509_NAME_oneline function in crypto/x509/x509_obj.c in OpenSSL before 1.0.1t and 1.0.2 before 1.0.2h allows remote attackers to obtain sensitive information from process stack memory or cause a denial of service (buffer over-read) via crafted EBCDIC ASN.1 data.",
           "ignored_by_path": false,
-          "level_id": 3,
+          "level_id": 2,
           "name": "Information Disclosure",
           "reference": Array [
             Object {
@@ -11624,7 +11624,7 @@ Object {
           "cvss_v2_vector": "AV:N/AC:L/Au:N/C:N/I:N/A:P/E:U/RL:OF/RC:C",
           "description": "The TS_OBJ_print_bio function in crypto/ts/ts_lib.c in the X.509 Public Key Infrastructure Time-Stamp Protocol (TSP) implementation in OpenSSL through 1.0.2h allows remote attackers to cause a denial of service (out-of-bounds read and application crash) via a crafted time-stamp file that is mishandled by the \\"openssl ts\\" command.",
           "ignored_by_path": false,
-          "level_id": 3,
+          "level_id": 2,
           "name": "Denial of Service",
           "reference": Array [
             Object {
@@ -11656,7 +11656,7 @@ Object {
           "cvss_v2_vector": "AV:N/AC:L/Au:N/C:N/I:N/A:P/E:U/RL:OF/RC:C",
           "description": "The DTLS implementation in OpenSSL before 1.1.0 does not properly restrict the lifetime of queue entries associated with unused out-of-order messages, which allows remote attackers to cause a denial of service (memory consumption) by maintaining many crafted DTLS sessions simultaneously, related to d1_lib.c, statem_dtls.c, statem_lib.c, and statem_srvr.c.",
           "ignored_by_path": false,
-          "level_id": 3,
+          "level_id": 2,
           "name": "Denial of Service",
           "reference": Array [
             Object {
@@ -11688,7 +11688,7 @@ Object {
           "cvss_v2_vector": "AV:N/AC:L/Au:N/C:N/I:N/A:P/E:U/RL:OF/RC:C",
           "description": "The Anti-Replay feature in the DTLS implementation in OpenSSL before 1.1.0 mishandles early use of a new epoch number in conjunction with a large sequence number, which allows remote attackers to cause a denial of service (false-positive packet drops) via spoofed DTLS records, related to rec_layer_d1.c and ssl3_record.c.",
           "ignored_by_path": false,
-          "level_id": 3,
+          "level_id": 2,
           "name": "Denial of Service",
           "reference": Array [
             Object {
@@ -11720,7 +11720,7 @@ Object {
           "cvss_v2_vector": "AV:N/AC:L/Au:N/C:P/I:P/A:P/E:U/RL:OF/RC:C",
           "description": "The BN_bn2dec function in crypto/bn/bn_print.c in OpenSSL before 1.1.0 does not properly validate division results, which allows remote attackers to cause a denial of service (out-of-bounds write and application crash) or possibly have unspecified other impact via unknown vectors.",
           "ignored_by_path": false,
-          "level_id": 4,
+          "level_id": 3,
           "name": "Denial of Service",
           "reference": Array [
             Object {
@@ -11752,7 +11752,7 @@ Object {
           "cvss_v2_vector": "AV:N/AC:L/Au:N/C:N/I:N/A:P/E:U/RL:OF/RC:C",
           "description": "The tls_decrypt_ticket function in ssl/t1_lib.c in OpenSSL before 1.1.0 does not consider the HMAC size during validation of the ticket length, which allows remote attackers to cause a denial of service via a ticket that is too short.",
           "ignored_by_path": false,
-          "level_id": 3,
+          "level_id": 2,
           "name": "Denial of Service",
           "reference": Array [
             Object {
@@ -11784,7 +11784,7 @@ Object {
           "cvss_v2_vector": "AV:N/AC:L/Au:N/C:P/I:P/A:P/E:U/RL:OF/RC:C",
           "description": "Integer overflow in the MDC2_Update function in crypto/mdc2/mdc2dgst.c in OpenSSL before 1.1.0 allows remote attackers to cause a denial of service (out-of-bounds write and application crash) or possibly have unspecified other impact via unknown vectors.",
           "ignored_by_path": false,
-          "level_id": 4,
+          "level_id": 3,
           "name": "Integer Overflow",
           "reference": Array [
             Object {
@@ -11880,7 +11880,7 @@ Object {
           "cvss_v2_vector": "AV:N/AC:L/Au:N/C:P/I:N/A:N/E:U/RL:OF/RC:C",
           "description": "The DES and Triple DES ciphers, as used in the TLS, SSH, and IPSec protocols and other protocols and products, have a birthday bound of approximately four billion blocks, which makes it easier for remote attackers to obtain cleartext data via a birthday attack against a long-duration encrypted session, as demonstrated by an HTTPS session using Triple DES in CBC mode, aka a \\"Sweet32\\" attack.",
           "ignored_by_path": false,
-          "level_id": 3,
+          "level_id": 2,
           "name": "Information Disclosure",
           "reference": Array [
             Object {
@@ -11912,7 +11912,7 @@ Object {
           "cvss_v2_vector": "AV:N/AC:L/Au:N/C:N/I:N/A:C/E:U/RL:OF/RC:C",
           "description": "Multiple memory leaks in t1_lib.c in OpenSSL before 1.0.1u, 1.0.2 before 1.0.2i, and 1.1.0 before 1.1.0a allow remote attackers to cause a denial of service (memory consumption) via large OCSP Status Request extensions.",
           "ignored_by_path": false,
-          "level_id": 4,
+          "level_id": 3,
           "name": "Memory Leak",
           "reference": Array [
             Object {
@@ -11981,7 +11981,7 @@ Object {
           "cvss_v2_vector": "AV:N/AC:M/Au:N/C:C/I:C/A:C/E:U/RL:OF/RC:C",
           "description": "Unspecified vulnerability in Oracle Java SE 6u121, 7u111, and 8u102 allows remote attackers to affect confidentiality, integrity, and availability via vectors related to AWT.",
           "ignored_by_path": false,
-          "level_id": 5,
+          "level_id": 3,
           "name": "Oracle Java SE Vulnerability (AWT)",
           "reference": Array [
             Object {
@@ -12089,7 +12089,7 @@ Object {
           "cvss_v2_vector": "AV:N/AC:M/Au:N/C:C/I:C/A:C/E:U/RL:OF/RC:C",
           "description": "Unspecified vulnerability in Oracle Java SE 6u121, 7u111, and 8u102 allows remote attackers to affect confidentiality, integrity, and availability via vectors related to 2D.",
           "ignored_by_path": false,
-          "level_id": 5,
+          "level_id": 3,
           "name": "Java SE Vulnerability (2D)",
           "reference": Array [
             Object {
@@ -12116,7 +12116,7 @@ Object {
           "cvss_v2_vector": "AV:N/AC:M/Au:N/C:C/I:C/A:C/E:U/RL:OF/RC:C",
           "description": "Unspecified vulnerability in Oracle Java SE 6u121, 7u111, 8u102; and Java SE Embedded 8u101 allows remote attackers to affect confidentiality, integrity, and availability via vectors related to Hotspot, a different vulnerability than CVE-2016-5573.",
           "ignored_by_path": false,
-          "level_id": 5,
+          "level_id": 3,
           "name": "Java SE Vulnerability (Hotspot)",
           "reference": Array [
             Object {
@@ -12170,7 +12170,7 @@ Object {
           "cvss_v2_vector": "AV:N/AC:L/Au:S/C:P/I:P/A:P/E:U/RL:OF/RC:C",
           "description": "PostgreSQL before 9.1.23, 9.2.x before 9.2.18, 9.3.x before 9.3.14, 9.4.x before 9.4.9, and 9.5.x before 9.5.4 allow remote authenticated users to cause a denial of service (NULL pointer dereference and server crash), obtain sensitive memory information, or possibly execute arbitrary code via (1) a CASE expression within the test value subexpression of another CASE or (2) inlining of an SQL function that implements the equality operator used for a CASE expression involving values of different types.",
           "ignored_by_path": false,
-          "level_id": 3,
+          "level_id": 2,
           "name": "Denial of Service",
           "reference": Array [
             Object {
@@ -12224,7 +12224,7 @@ Object {
           "cvss_v2_vector": "AV:N/AC:L/Au:N/C:N/I:P/A:N/E:U/RL:OF/RC:C",
           "description": "Vulnerability in the Java SE, Java SE Embedded, JRockit component of Oracle Java SE (subcomponent: Networking). Supported versions that are affected are Java SE: 6u131, 7u121 and 8u112; Java SE Embedded: 8u111; JRockit: R28.3.12. Easily exploitable vulnerability allows unauthenticated attacker with network access via multiple protocols to compromise Java SE, Java SE Embedded, JRockit. Successful attacks of this vulnerability can result in unauthorized update, insert or delete access to some of Java SE, Java SE Embedded, JRockit accessible data. Note: Applies to client and server deployment of Java. This vulnerability can be exploited through sandboxed Java Web Start applications and sandboxed Java applets. It can also be exploited by supplying data to APIs in the specified Component without using sandboxed Java Web Start applications or sandboxed Java applets, such as through a web service.",
           "ignored_by_path": false,
-          "level_id": 3,
+          "level_id": 2,
           "name": "Unauthorized Modifications",
           "reference": Array [
             Object {
@@ -12332,7 +12332,7 @@ Object {
           "cvss_v2_vector": "AV:N/AC:L/Au:N/C:N/I:N/A:P/E:U/RL:OF/RC:C",
           "description": "Vulnerability in the Java SE, Java SE Embedded, JRockit component of Oracle Java SE (subcomponent: 2D). Supported versions that are affected are Java SE: 6u131, 7u121 and 8u112; Java SE Embedded: 8u111; JRockit: R28.3.12. Easily exploitable vulnerability allows unauthenticated attacker with network access via multiple protocols to compromise Java SE, Java SE Embedded, JRockit. Successful attacks of this vulnerability can result in unauthorized ability to cause a hang or frequently repeatable crash (complete DOS) of Java SE, Java SE Embedded, JRockit. Note: Applies to client and server deployment of Java. This vulnerability can be exploited through sandboxed Java Web Start applications and sandboxed Java applets. It can also be exploited by supplying data to APIs in the specified Component without using sandboxed Java Web Start applications or sandboxed Java applets, such as through a web service.",
           "ignored_by_path": false,
-          "level_id": 3,
+          "level_id": 2,
           "name": "Denial of Service",
           "reference": Array [
             Object {
@@ -12386,7 +12386,7 @@ Object {
           "cvss_v2_vector": "AV:N/AC:H/Au:N/C:P/I:P/A:P/E:U/RL:OF/RC:C",
           "description": "Vulnerability in the Java SE component of Oracle Java SE (subcomponent: AWT). Supported versions that are affected are Java SE: 7u121 and 8u112. Difficult to exploit vulnerability allows unauthenticated attacker with network access via multiple protocols to compromise Java SE. Successful attacks require human interaction from a person other than the attacker and while the vulnerability is in Java SE, attacks may significantly impact additional products. Successful attacks of this vulnerability can result in takeover of Java SE. Note: This vulnerability applies to Java deployments, typically in clients running sandboxed Java Web Start applications or sandboxed Java applets, that load and run untrusted code (e.g., code that comes from the internet) and rely on the Java sandbox for security. This vulnerability does not apply to Java deployments, typically in servers, that load and run only trusted code (e.g., code installed by an administrator).",
           "ignored_by_path": false,
-          "level_id": 3,
+          "level_id": 2,
           "name": "Vulnerability in Java SE (AWT)",
           "reference": Array [
             Object {
@@ -12440,7 +12440,7 @@ Object {
           "cvss_v2_vector": "AV:N/AC:L/Au:N/C:P/I:N/A:N/E:U/RL:OF/RC:C",
           "description": "Vulnerability in the Java SE component of Oracle Java SE (subcomponent: Java Mission Control). The supported version that is affected is Java SE: 8u112. Easily exploitable vulnerability allows unauthenticated attacker with network access via multiple protocols to compromise Java SE. Successful attacks of this vulnerability can result in unauthorized read access to a subset of Java SE accessible data. Note: Applies to Java Mission Control Installation.",
           "ignored_by_path": false,
-          "level_id": 3,
+          "level_id": 2,
           "name": "Unauthorized Read Access",
           "reference": Array [
             Object {
@@ -12521,7 +12521,7 @@ Object {
           "cvss_v2_vector": "AV:N/AC:L/Au:N/C:N/I:P/A:N/E:U/RL:OF/RC:C",
           "description": "Vulnerability in the Java SE, Java SE Embedded, JRockit component of Oracle Java SE (subcomponent: Libraries). Supported versions that are affected are Java SE: 6u131, 7u121 and 8u112; Java SE Embedded: 8u111; JRockit: R28.3.12. Easily exploitable vulnerability allows unauthenticated attacker with network access via multiple protocols to compromise Java SE, Java SE Embedded, JRockit. Successful attacks of this vulnerability can result in unauthorized creation, deletion or modification access to critical data or all Java SE, Java SE Embedded, JRockit accessible data. Note: Applies to client and server deployment of Java. This vulnerability can be exploited through sandboxed Java Web Start applications and sandboxed Java applets. It can also be exploited by supplying data to APIs in the specified Component without using sandboxed Java Web Start applications or sandboxed Java applets, such as through a web service.",
           "ignored_by_path": false,
-          "level_id": 3,
+          "level_id": 2,
           "name": "Unauthorized Access",
           "reference": Array [
             Object {
@@ -12548,7 +12548,7 @@ Object {
           "cvss_v2_vector": "AV:N/AC:L/Au:N/C:N/I:N/A:P/E:U/RL:OF/RC:C",
           "description": "Vulnerability in the Java SE, Java SE Embedded, JRockit component of Oracle Java SE (subcomponent: Libraries). Supported versions that are affected are Java SE: 7u121 and 8u112; Java SE Embedded: 8u111; JRockit: R28.3.12. Easily exploitable vulnerability allows unauthenticated attacker with network access via multiple protocols to compromise Java SE, Java SE Embedded, JRockit. Successful attacks of this vulnerability can result in unauthorized ability to cause a partial denial of service (partial DOS) of Java SE, Java SE Embedded, JRockit. Note: Applies to client and server deployment of Java. This vulnerability can be exploited through sandboxed Java Web Start applications and sandboxed Java applets. It can also be exploited by supplying data to APIs in the specified Component without using sandboxed Java Web Start applications or sandboxed Java applets, such as through a web service.",
           "ignored_by_path": false,
-          "level_id": 3,
+          "level_id": 2,
           "name": "Denial of Service",
           "reference": Array [
             Object {
@@ -12656,7 +12656,7 @@ Object {
           "cvss_v2_vector": "AV:N/AC:L/Au:N/C:N/I:N/A:P/E:U/RL:OF/RC:C",
           "description": "Vulnerability in OpenSSL, when used on a 32-bit host, allows attackers to cause a denial of service (out-of-bounds read and crash) via a truncated packet.",
           "ignored_by_path": false,
-          "level_id": 3,
+          "level_id": 2,
           "name": "Denial of Service",
           "reference": Array [
             Object {
@@ -12747,7 +12747,7 @@ Object {
           "cvss_v2_vector": "AV:N/AC:H/Au:N/C:P/I:P/A:P/E:U/RL:OF/RC:C",
           "description": "Vulnerability in the Java SE component of Oracle Java SE (subcomponent: AWT). Supported versions that are affected are Java SE: 7u131 and 8u121. Difficult to exploit vulnerability allows unauthenticated attacker with network access via multiple protocols to compromise Java SE. Successful attacks require human interaction from a person other than the attacker and while the vulnerability is in Java SE, attacks may significantly impact additional products. Successful attacks of this vulnerability can result in takeover of Java SE. Note: This vulnerability applies to Java deployments, typically in clients running sandboxed Java Web Start applications or sandboxed Java applets, that load and run untrusted code (e.g., code that comes from the internet) and rely on the Java sandbox for security. This vulnerability does not apply to Java deployments, typically in servers, that load and run only trusted code (e.g., code installed by an administrator).",
           "ignored_by_path": false,
-          "level_id": 3,
+          "level_id": 2,
           "name": "Java SE Vulnerability",
           "reference": Array [
             Object {
@@ -12774,7 +12774,7 @@ Object {
           "cvss_v2_vector": "AV:N/AC:H/Au:N/C:P/I:P/A:P/E:U/RL:OF/RC:C",
           "description": "Vulnerability in the Java SE component of Oracle Java SE (subcomponent: AWT). Supported versions that are affected are Java SE: 6u141, 7u131 and 8u121. Difficult to exploit vulnerability allows unauthenticated attacker with network access via multiple protocols to compromise Java SE. Successful attacks require human interaction from a person other than the attacker and while the vulnerability is in Java SE, attacks may significantly impact additional products. Successful attacks of this vulnerability can result in takeover of Java SE. Note: This vulnerability applies to Java deployments, typically in clients running sandboxed Java Web Start applications or sandboxed Java applets, that load and run untrusted code (e.g., code that comes from the internet) and rely on the Java sandbox for security. This vulnerability does not apply to Java deployments, typically in servers, that load and run only trusted code (e.g., code installed by an administrator).",
           "ignored_by_path": false,
-          "level_id": 3,
+          "level_id": 2,
           "name": "Java SE Vulnerability",
           "reference": Array [
             Object {
@@ -12828,7 +12828,7 @@ Object {
           "cvss_v2_vector": "AV:L/AC:H/Au:N/C:P/I:P/A:P/E:U/RL:OF/RC:C",
           "description": "Vulnerability in the Java SE, Java SE Embedded, JRockit component of Oracle Java SE (subcomponent: JCE). Supported versions that are affected are Java SE: 7u131 and 8u121; Java SE Embedded: 8u121; JRockit: R28.3.13. Difficult to exploit vulnerability allows unauthenticated attacker with logon to the infrastructure where Java SE, Java SE Embedded, JRockit executes to compromise Java SE, Java SE Embedded, JRockit. Successful attacks require human interaction from a person other than the attacker and while the vulnerability is in Java SE, Java SE Embedded, JRockit, attacks may significantly impact additional products. Successful attacks of this vulnerability can result in takeover of Java SE, Java SE Embedded, JRockit. Note: Applies to client and server deployment of Java. This vulnerability can be exploited through sandboxed Java Web Start applications and sandboxed Java applets. It can also be exploited by supplying data to APIs in the specified Component without using sandboxed Java Web Start applications or sandboxed Java applets, such as through a web service.",
           "ignored_by_path": false,
-          "level_id": 2,
+          "level_id": 1,
           "name": "Java Vulnerability",
           "reference": Array [
             Object {
@@ -12855,7 +12855,7 @@ Object {
           "cvss_v2_vector": "AV:N/AC:M/Au:N/C:N/I:N/A:C/E:U/RL:OF/RC:C",
           "description": "Vulnerability in the Java SE, Java SE Embedded, JRockit component of Oracle Java SE (subcomponent: JAXP). Supported versions that are affected are Java SE: 6u141, 7u131 and 8u121; Java SE Embedded: 8u121; JRockit: R28.3.13. Difficult to exploit vulnerability allows unauthenticated attacker with network access via multiple protocols to compromise Java SE, Java SE Embedded, JRockit. Successful attacks of this vulnerability can result in unauthorized ability to cause a hang or frequently repeatable crash (complete DOS) of Java SE, Java SE Embedded, JRockit. Note: Applies to client and server deployment of Java. This vulnerability can be exploited through sandboxed Java Web Start applications and sandboxed Java applets. It can also be exploited by supplying data to APIs in the specified Component without using sandboxed Java Web Start applications or sandboxed Java applets, such as through a web service.",
           "ignored_by_path": false,
-          "level_id": 4,
+          "level_id": 3,
           "name": "Denial of Service",
           "reference": Array [
             Object {
@@ -12963,7 +12963,7 @@ Object {
           "cvss_v2_vector": "AV:N/AC:L/Au:N/C:P/I:N/A:N/E:U/RL:OF/RC:C",
           "description": "It was found that some selectivity estimation functions in PostgreSQL before 9.2.21, 9.3.x before 9.3.17, 9.4.x before 9.4.12, 9.5.x before 9.5.7, and 9.6.x before 9.6.3 did not check user privileges before providing information from pg_statistic, possibly leaking information. An unprivileged attacker could use this flaw to steal some information from tables they are otherwise not allowed to access.",
           "ignored_by_path": false,
-          "level_id": 3,
+          "level_id": 2,
           "name": "Information Disclosure",
           "reference": Array [
             Object {
@@ -13007,7 +13007,7 @@ Object {
           "cvss_v2_vector": "AV:N/AC:L/Au:N/C:P/I:N/A:N/E:U/RL:OF/RC:C",
           "description": "PostgreSQL versions 8.4 - 9.6 are vulnerable to information leak in pg_user_mappings view which discloses foreign server passwords to any user having USAGE privilege on the associated foreign server.",
           "ignored_by_path": false,
-          "level_id": 3,
+          "level_id": 2,
           "name": "Information Disclosure",
           "reference": Array [
             Object {
@@ -13164,7 +13164,7 @@ Object {
           "cvss_v2_vector": "AV:N/AC:L/Au:N/C:N/I:N/A:P/E:U/RL:OF/RC:C",
           "description": "Vulnerability in the Java SE, Java SE Embedded, JRockit component of Oracle Java SE (subcomponent: Serialization). Supported versions that are affected are Java SE: 6u151, 7u141 and 8u131; Java SE Embedded: 8u131; JRockit: R28.3.14. Easily exploitable vulnerability allows unauthenticated attacker with network access via multiple protocols to compromise Java SE, Java SE Embedded, JRockit. Successful attacks of this vulnerability can result in unauthorized ability to cause a partial denial of service (partial DOS) of Java SE, Java SE Embedded, JRockit. Note: This vulnerability can be exploited through sandboxed Java Web Start applications and sandboxed Java applets. It can also be exploited by supplying data to APIs in the specified Component without using sandboxed Java Web Start applications or sandboxed Java applets, such as through a web service.",
           "ignored_by_path": false,
-          "level_id": 3,
+          "level_id": 2,
           "name": "Denial of Service",
           "reference": Array [
             Object {
@@ -13191,7 +13191,7 @@ Object {
           "cvss_v2_vector": "AV:N/AC:L/Au:N/C:N/I:N/A:P/E:U/RL:OF/RC:C",
           "description": "Vulnerability in the Java SE, Java SE Embedded, JRockit component of Oracle Java SE (subcomponent: Serialization). Supported versions that are affected are Java SE: 6u151, 7u141 and 8u131; Java SE Embedded: 8u131; JRockit: R28.3.14. Easily exploitable vulnerability allows unauthenticated attacker with network access via multiple protocols to compromise Java SE, Java SE Embedded, JRockit. Successful attacks of this vulnerability can result in unauthorized ability to cause a partial denial of service (partial DOS) of Java SE, Java SE Embedded, JRockit. Note: This vulnerability applies to Java deployments, typically in clients running sandboxed Java Web Start applications or sandboxed Java applets, that load and run untrusted code (e.g., code that comes from the internet) and rely on the Java sandbox for security. This vulnerability does not apply to Java deployments, typically in servers, that load and run only trusted code (e.g., code installed by an administrator).",
           "ignored_by_path": false,
-          "level_id": 3,
+          "level_id": 2,
           "name": "Denial of Service",
           "reference": Array [
             Object {
@@ -13272,7 +13272,7 @@ Object {
           "cvss_v2_vector": "AV:N/AC:H/Au:N/C:P/I:P/A:P/E:U/RL:OF/RC:C",
           "description": "Vulnerability in the Java SE component of Oracle Java SE (subcomponent: JavaFX). Supported versions that are affected are Java SE: 7u141 and 8u131. Difficult to exploit vulnerability allows unauthenticated attacker with network access via multiple protocols to compromise Java SE. Successful attacks require human interaction from a person other than the attacker and while the vulnerability is in Java SE, attacks may significantly impact additional products. Successful attacks of this vulnerability can result in takeover of Java SE. Note: This vulnerability applies to Java deployments, typically in clients running sandboxed Java Web Start applications or sandboxed Java applets, that load and run untrusted code (e.g., code that comes from the internet) and rely on the Java sandbox for security. This vulnerability does not apply to Java deployments, typically in servers, that load and run only trusted code (e.g., code installed by an administrator).",
           "ignored_by_path": false,
-          "level_id": 3,
+          "level_id": 2,
           "name": "Java SE Takeover",
           "reference": Array [
             Object {
@@ -13299,7 +13299,7 @@ Object {
           "cvss_v2_vector": "AV:N/AC:L/Au:N/C:P/I:N/A:N/E:U/RL:OF/RC:C",
           "description": "Vulnerability in the Java SE, Java SE Embedded, JRockit component of Oracle Java SE (subcomponent: JCE). Supported versions that are affected are Java SE: 6u151, 7u141 and 8u131; Java SE Embedded: 8u131; JRockit: R28.3.14. Easily exploitable vulnerability allows unauthenticated attacker with network access via multiple protocols to compromise Java SE, Java SE Embedded, JRockit. Successful attacks of this vulnerability can result in unauthorized access to critical data or complete access to all Java SE, Java SE Embedded, JRockit accessible data. Note: This vulnerability can be exploited through sandboxed Java Web Start applications and sandboxed Java applets. It can also be exploited by supplying data to APIs in the specified Component without using sandboxed Java Web Start applications or sandboxed Java applets, such as through a web service.",
           "ignored_by_path": false,
-          "level_id": 3,
+          "level_id": 2,
           "name": "Unauthorized Access",
           "reference": Array [
             Object {
@@ -13326,7 +13326,7 @@ Object {
           "cvss_v2_vector": "AV:N/AC:H/Au:N/C:P/I:P/A:P/E:U/RL:OF/RC:C",
           "description": "Vulnerability in the Java SE, Java SE Embedded, JRockit component of Oracle Java SE (subcomponent: Security). Supported versions that are affected are Java SE: 6u151, 7u141 and 8u131; Java SE Embedded: 8u131; JRockit: R28.3.14. Difficult to exploit vulnerability allows unauthenticated attacker with network access via multiple protocols to compromise Java SE, Java SE Embedded, JRockit. Successful attacks require human interaction from a person other than the attacker and while the vulnerability is in Java SE, Java SE Embedded, JRockit, attacks may significantly impact additional products. Successful attacks of this vulnerability can result in takeover of Java SE, Java SE Embedded, JRockit. Note: This vulnerability can be exploited through sandboxed Java Web Start applications and sandboxed Java applets. It can also be exploited by supplying data to APIs in the specified Component without using sandboxed Java Web Start applications or sandboxed Java applets, such as through a web service.",
           "ignored_by_path": false,
-          "level_id": 3,
+          "level_id": 2,
           "name": "Java SE Takeover",
           "reference": Array [
             Object {
@@ -13353,7 +13353,7 @@ Object {
           "cvss_v2_vector": "AV:N/AC:L/Au:N/C:P/I:N/A:N/E:U/RL:OF/RC:C",
           "description": "Vulnerability in the Java SE, Java SE Embedded, JRockit component of Oracle Java SE (subcomponent: JCE). Supported versions that are affected are Java SE: 7u141 and 8u131; Java SE Embedded: 8u131; JRockit: R28.3.14. Easily exploitable vulnerability allows unauthenticated attacker with network access via multiple protocols to compromise Java SE, Java SE Embedded, JRockit. Successful attacks of this vulnerability can result in unauthorized access to critical data or complete access to all Java SE, Java SE Embedded, JRockit accessible data. Note: This vulnerability can be exploited through sandboxed Java Web Start applications and sandboxed Java applets. It can also be exploited by supplying data to APIs in the specified Component without using sandboxed Java Web Start applications or sandboxed Java applets, such as through a web service.",
           "ignored_by_path": false,
-          "level_id": 3,
+          "level_id": 2,
           "name": "Unauthorized Access",
           "reference": Array [
             Object {
@@ -13434,7 +13434,7 @@ Object {
           "cvss_v2_vector": "AV:N/AC:L/Au:N/C:N/I:N/A:P/E:U/RL:OF/RC:C",
           "description": "Vulnerability in the Java SE, Java SE Embedded, JRockit component of Oracle Java SE (subcomponent: 2D). Supported versions that are affected are Java SE: 6u151, 7u141 and 8u131; Java SE Embedded: 8u131; JRockit: R28.3.14. Easily exploitable vulnerability allows unauthenticated attacker with network access via multiple protocols to compromise Java SE, Java SE Embedded, JRockit. Successful attacks of this vulnerability can result in unauthorized ability to cause a partial denial of service (partial DOS) of Java SE, Java SE Embedded, JRockit. Note: This vulnerability can be exploited through sandboxed Java Web Start applications and sandboxed Java applets. It can also be exploited by supplying data to APIs in the specified Component without using sandboxed Java Web Start applications or sandboxed Java applets, such as through a web service.",
           "ignored_by_path": false,
-          "level_id": 3,
+          "level_id": 2,
           "name": "Denial of Service",
           "reference": Array [
             Object {
@@ -13461,7 +13461,7 @@ Object {
           "cvss_v2_vector": "AV:N/AC:H/Au:N/C:P/I:P/A:P/E:U/RL:OF/RC:C",
           "description": "Vulnerability in the Java SE component of Oracle Java SE (subcomponent: Security). Supported versions that are affected are Java SE: 6u151, 7u141 and 8u131. Difficult to exploit vulnerability allows unauthenticated attacker with network access via multiple protocols to compromise Java SE. Successful attacks require human interaction from a person other than the attacker. Successful attacks of this vulnerability can result in takeover of Java SE. Note: This vulnerability applies to Java deployments, typically in clients running sandboxed Java Web Start applications or sandboxed Java applets, that load and run untrusted code (e.g., code that comes from the internet) and rely on the Java sandbox for security. This vulnerability does not apply to Java deployments, typically in servers, that load and run only trusted code (e.g., code installed by an administrator).",
           "ignored_by_path": false,
-          "level_id": 3,
+          "level_id": 2,
           "name": "Java SE Takeover",
           "reference": Array [
             Object {
@@ -13488,7 +13488,7 @@ Object {
           "cvss_v2_vector": "AV:N/AC:H/Au:N/C:P/I:P/A:P/E:U/RL:OF/RC:C",
           "description": "Vulnerability in the Java SE, Java SE Embedded component of Oracle Java SE (subcomponent: Hotspot). Supported versions that are affected are Java SE: 6u151, 7u141 and 8u131; Java SE Embedded: 8u131. Difficult to exploit vulnerability allows unauthenticated attacker with network access via multiple protocols to compromise Java SE, Java SE Embedded. Successful attacks require human interaction from a person other than the attacker and while the vulnerability is in Java SE, Java SE Embedded, attacks may significantly impact additional products. Successful attacks of this vulnerability can result in takeover of Java SE, Java SE Embedded. Note: This vulnerability applies to Java deployments, typically in clients running sandboxed Java Web Start applications or sandboxed Java applets, that load and run untrusted code (e.g., code that comes from the internet) and rely on the Java sandbox for security. This vulnerability does not apply to Java deployments, typically in servers, that load and run only trusted code (e.g., code installed by an administrator).",
           "ignored_by_path": false,
-          "level_id": 3,
+          "level_id": 2,
           "name": "Java SE Takeover",
           "reference": Array [
             Object {
@@ -13515,7 +13515,7 @@ Object {
           "cvss_v2_vector": "AV:N/AC:L/Au:S/C:P/I:P/A:N/E:U/RL:OF/RC:C",
           "description": "Vulnerability in the Java SE component of Oracle Java SE (subcomponent: Scripting). The supported version that is affected is Java SE: 8u131. Easily exploitable vulnerability allows low privileged attacker with network access via multiple protocols to compromise Java SE. Successful attacks of this vulnerability can result in unauthorized creation, deletion or modification access to critical data or all Java SE accessible data as well as unauthorized access to critical data or complete access to all Java SE accessible data. Note: This vulnerability can be exploited through sandboxed Java Web Start applications and sandboxed Java applets. It can also be exploited by supplying data to APIs in the specified Component without using sandboxed Java Web Start applications or sandboxed Java applets, such as through a web service.",
           "ignored_by_path": false,
-          "level_id": 3,
+          "level_id": 2,
           "name": "Unauthorized Access",
           "reference": Array [
             Object {
@@ -13677,7 +13677,7 @@ Object {
           "cvss_v2_vector": "AV:N/AC:L/Au:N/C:P/I:N/A:N/E:U/RL:OF/RC:C",
           "description": "Vulnerability in the Java SE, Java SE Embedded, JRockit component of Oracle Java SE (subcomponent: Security). Supported versions that are affected are Java SE: 7u141 and 8u131; Java SE Embedded: 8u131; JRockit: R28.3.14. Easily exploitable vulnerability allows unauthenticated attacker with network access via multiple protocols to compromise Java SE, Java SE Embedded, JRockit. Successful attacks of this vulnerability can result in unauthorized access to critical data or complete access to all Java SE, Java SE Embedded, JRockit accessible data. Note: This vulnerability can be exploited through sandboxed Java Web Start applications and sandboxed Java applets. It can also be exploited by supplying data to APIs in the specified Component without using sandboxed Java Web Start applications or sandboxed Java applets, such as through a web service.",
           "ignored_by_path": false,
-          "level_id": 3,
+          "level_id": 2,
           "name": "Unauthorized Access",
           "reference": Array [
             Object {
@@ -13758,7 +13758,7 @@ Object {
           "cvss_v2_vector": "AV:N/AC:L/Au:N/C:P/I:P/A:P/E:U/RL:OF/RC:C",
           "description": "PostgreSQL versions before 9.2.22, 9.3.18, 9.4.13, 9.5.8 and 9.6.4 are vulnerable to incorrect authentication flaw allowing remote attackers to gain access to database accounts with an empty password.",
           "ignored_by_path": false,
-          "level_id": 4,
+          "level_id": 3,
           "name": "Unauthorized Access",
           "reference": Array [
             Object {
@@ -13780,7 +13780,7 @@ Object {
           "cvss_v2_vector": "AV:N/AC:L/Au:N/C:P/I:N/A:P/E:U/RL:OF/RC:C",
           "description": "Vulnerability in the Java SE, Java SE Embedded, JRockit component of Oracle Java SE (subcomponent: JAX-WS). Supported versions that are affected are Java SE: 6u151, 7u141 and 8u131; Java SE Embedded: 8u131; JRockit: R28.3.14. Easily exploitable vulnerability allows unauthenticated attacker with network access via multiple protocols to compromise Java SE, Java SE Embedded, JRockit. Successful attacks of this vulnerability can result in unauthorized read access to a subset of Java SE, Java SE Embedded, JRockit accessible data and unauthorized ability to cause a partial denial of service (partial DOS) of Java SE, Java SE Embedded, JRockit. Note: This vulnerability can be exploited through sandboxed Java Web Start applications and sandboxed Java applets. It can also be exploited by supplying data to APIs in the specified Component without using sandboxed Java Web Start applications or sandboxed Java applets, such as through a web service.",
           "ignored_by_path": false,
-          "level_id": 3,
+          "level_id": 2,
           "name": "Unauthorized Read Access",
           "reference": Array [
             Object {
@@ -13851,7 +13851,7 @@ Object {
           "cvss_v2_vector": "AV:N/AC:L/Au:N/C:N/I:P/A:N/E:U/RL:OF/RC:C",
           "description": "While parsing an IPAddressFamily extension in an X.509 certificate, it is possible to do a one-byte overread. This would result in an incorrect text display of the certificate. This bug has been present since 2006 and is present in all versions of OpenSSL before 1.0.2m and 1.1.0g.",
           "ignored_by_path": false,
-          "level_id": 3,
+          "level_id": 2,
           "name": "Out-of-Bounds Read",
           "reference": Array [
             Object {
@@ -13883,7 +13883,7 @@ Object {
           "cvss_v2_vector": "AV:N/AC:H/Au:N/C:P/I:P/A:P/E:U/RL:OF/RC:C",
           "description": "Vulnerability in the Java SE, Java SE Embedded component of Oracle Java SE (subcomponent: Libraries). Supported versions that are affected are Java SE: 6u161, 7u151, 8u144 and 9; Java SE Embedded: 8u144. Difficult to exploit vulnerability allows unauthenticated attacker with network access via Kerberos to compromise Java SE, Java SE Embedded. Successful attacks require human interaction from a person other than the attacker. Successful attacks of this vulnerability can result in takeover of Java SE, Java SE Embedded. Note: Applies to the Java SE Kerberos client.",
           "ignored_by_path": false,
-          "level_id": 3,
+          "level_id": 2,
           "name": "Takeover",
           "reference": Array [
             Object {
@@ -13937,7 +13937,7 @@ Object {
           "cvss_v2_vector": "AV:N/AC:L/Au:N/C:N/I:N/A:P/E:U/RL:OF/RC:C",
           "description": "Vulnerability in the Java SE, Java SE Embedded, JRockit component of Oracle Java SE (subcomponent: Serialization). Supported versions that are affected are Java SE: 6u161, 7u151, 8u144 and 9; Java SE Embedded: 8u144; JRockit: R28.3.15. Easily exploitable vulnerability allows unauthenticated attacker with network access via multiple protocols to compromise Java SE, Java SE Embedded, JRockit. Successful attacks of this vulnerability can result in unauthorized ability to cause a partial denial of service (partial DOS) of Java SE, Java SE Embedded, JRockit. Note: This vulnerability can be exploited through sandboxed Java Web Start applications and sandboxed Java applets. It can also be exploited by supplying data to APIs in the specified Component without using sandboxed Java Web Start applications or sandboxed Java applets, such as through a web service.",
           "ignored_by_path": false,
-          "level_id": 3,
+          "level_id": 2,
           "name": "Denial of Service",
           "reference": Array [
             Object {
@@ -13991,7 +13991,7 @@ Object {
           "cvss_v2_vector": "AV:N/AC:M/Au:N/C:P/I:P/A:N/E:U/RL:OF/RC:C",
           "description": "Vulnerability in the Java SE component of Oracle Java SE (subcomponent: Javadoc). Supported versions that are affected are Java SE: 6u161, 7u151, 8u144 and 9. Easily exploitable vulnerability allows unauthenticated attacker with network access via HTTP to compromise Java SE. Successful attacks require human interaction from a person other than the attacker and while the vulnerability is in Java SE, attacks may significantly impact additional products. Successful attacks of this vulnerability can result in unauthorized update, insert or delete access to some of Java SE accessible data as well as unauthorized read access to a subset of Java SE accessible data. Note: This vulnerability applies to Java deployments, typically in clients running sandboxed Java Web Start applications or sandboxed Java applets, that load and run untrusted code (e.g., code that comes from the internet) and rely on the Java sandbox for security. This vulnerability does not apply to Java deployments, typically in servers, that load and run only trusted code (e.g., code installed by an administrator).",
           "ignored_by_path": false,
-          "level_id": 3,
+          "level_id": 2,
           "name": "Unauthorized Access",
           "reference": Array [
             Object {
@@ -14126,7 +14126,7 @@ Object {
           "cvss_v2_vector": "AV:N/AC:L/Au:N/C:N/I:N/A:P/E:U/RL:OF/RC:C",
           "description": "Vulnerability in the Java SE, JRockit component of Oracle Java SE (subcomponent: Serialization). Supported versions that are affected are Java SE: 6u161, 7u151, 8u144 and 9; Java SE Embedded: 8u144. Easily exploitable vulnerability allows unauthenticated attacker with network access via multiple protocols to compromise Java SE, JRockit. Successful attacks of this vulnerability can result in unauthorized ability to cause a partial denial of service (partial DOS) of Java SE, JRockit. Note: This vulnerability applies to Java deployments, typically in clients running sandboxed Java Web Start applications or sandboxed Java applets, that load and run untrusted code (e.g., code that comes from the internet) and rely on the Java sandbox for security. This vulnerability does not apply to Java deployments, typically in servers, that load and run only trusted code (e.g., code installed by an administrator).",
           "ignored_by_path": false,
-          "level_id": 3,
+          "level_id": 2,
           "name": "Denial of Service",
           "reference": Array [
             Object {
@@ -14153,7 +14153,7 @@ Object {
           "cvss_v2_vector": "AV:N/AC:L/Au:N/C:N/I:N/A:P/E:U/RL:OF/RC:C",
           "description": "Vulnerability in the Java SE, Java SE Embedded component of Oracle Java SE (subcomponent: Libraries). Supported versions that are affected are Java SE: 6u161, 7u151, 8u144 and 9; Java SE Embedded: 8u144. Easily exploitable vulnerability allows unauthenticated attacker with network access via multiple protocols to compromise Java SE, Java SE Embedded. Successful attacks of this vulnerability can result in unauthorized ability to cause a partial denial of service (partial DOS) of Java SE, Java SE Embedded. Note: This vulnerability applies to Java deployments, typically in clients running sandboxed Java Web Start applications or sandboxed Java applets, that load and run untrusted code (e.g., code that comes from the internet) and rely on the Java sandbox for security. This vulnerability does not apply to Java deployments, typically in servers, that load and run only trusted code (e.g., code installed by an administrator).",
           "ignored_by_path": false,
-          "level_id": 3,
+          "level_id": 2,
           "name": "Denial of Service",
           "reference": Array [
             Object {
@@ -14180,7 +14180,7 @@ Object {
           "cvss_v2_vector": "AV:N/AC:L/Au:N/C:N/I:N/A:P/E:U/RL:OF/RC:C",
           "description": "Vulnerability in the Java SE, Java SE Embedded component of Oracle Java SE (subcomponent: JAXP). Supported versions that are affected are Java SE: 6u161, 7u151, 8u144 and 9; Java SE Embedded: 8u144. Easily exploitable vulnerability allows unauthenticated attacker with network access via multiple protocols to compromise Java SE, Java SE Embedded. Successful attacks of this vulnerability can result in unauthorized ability to cause a partial denial of service (partial DOS) of Java SE, Java SE Embedded. Note: This vulnerability applies to Java deployments, typically in clients running sandboxed Java Web Start applications or sandboxed Java applets, that load and run untrusted code (e.g., code that comes from the internet) and rely on the Java sandbox for security. This vulnerability does not apply to Java deployments, typically in servers, that load and run only trusted code (e.g., code installed by an administrator).",
           "ignored_by_path": false,
-          "level_id": 3,
+          "level_id": 2,
           "name": "Denial of Service",
           "reference": Array [
             Object {
@@ -14207,7 +14207,7 @@ Object {
           "cvss_v2_vector": "AV:N/AC:L/Au:N/C:N/I:N/A:P/E:U/RL:OF/RC:C",
           "description": "Vulnerability in the Java SE, Java SE Embedded component of Oracle Java SE (subcomponent: JAX-WS). Supported versions that are affected are Java SE: 7u151, 8u144 and 9; Java SE Embedded: 8u144. Easily exploitable vulnerability allows unauthenticated attacker with network access via multiple protocols to compromise Java SE, Java SE Embedded. Successful attacks of this vulnerability can result in unauthorized ability to cause a partial denial of service (partial DOS) of Java SE, Java SE Embedded. Note: This vulnerability applies to Java deployments, typically in clients running sandboxed Java Web Start applications or sandboxed Java applets, that load and run untrusted code (e.g., code that comes from the internet) and rely on the Java sandbox for security. This vulnerability does not apply to Java deployments, typically in servers, that load and run only trusted code (e.g., code installed by an administrator).",
           "ignored_by_path": false,
-          "level_id": 3,
+          "level_id": 2,
           "name": "Denial of Service",
           "reference": Array [
             Object {
@@ -14234,7 +14234,7 @@ Object {
           "cvss_v2_vector": "AV:N/AC:L/Au:N/C:N/I:N/A:P/E:U/RL:OF/RC:C",
           "description": "Vulnerability in the Java SE, Java SE Embedded, JRockit component of Oracle Java SE (subcomponent: Networking). Supported versions that are affected are Java SE: 6u161, 7u151, 8u144 and 9; Java SE Embedded: 8u144; JRockit: R28.3.15. Easily exploitable vulnerability allows unauthenticated attacker with network access via multiple protocols to compromise Java SE, Java SE Embedded, JRockit. Successful attacks of this vulnerability can result in unauthorized ability to cause a partial denial of service (partial DOS) of Java SE, Java SE Embedded, JRockit. Note: This vulnerability can be exploited through sandboxed Java Web Start applications and sandboxed Java applets. It can also be exploited by supplying data to APIs in the specified Component without using sandboxed Java Web Start applications or sandboxed Java applets, such as through a web service.",
           "ignored_by_path": false,
-          "level_id": 3,
+          "level_id": 2,
           "name": "Denial of Service",
           "reference": Array [
             Object {
@@ -14288,7 +14288,7 @@ Object {
           "cvss_v2_vector": "AV:N/AC:L/Au:N/C:N/I:N/A:P/E:U/RL:OF/RC:C",
           "description": "Vulnerability in the Java SE, Java SE Embedded component of Oracle Java SE (subcomponent: Serialization). Supported versions that are affected are Java SE: 6u161, 7u151, 8u144 and 9; Java SE Embedded: 8u144. Easily exploitable vulnerability allows unauthenticated attacker with network access via multiple protocols to compromise Java SE, Java SE Embedded. Successful attacks of this vulnerability can result in unauthorized ability to cause a partial denial of service (partial DOS) of Java SE, Java SE Embedded. Note: This vulnerability applies to Java deployments, typically in clients running sandboxed Java Web Start applications or sandboxed Java applets, that load and run untrusted code (e.g., code that comes from the internet) and rely on the Java sandbox for security. This vulnerability does not apply to Java deployments, typically in servers, that load and run only trusted code (e.g., code installed by an administrator).",
           "ignored_by_path": false,
-          "level_id": 3,
+          "level_id": 2,
           "name": "Denial of Service",
           "reference": Array [
             Object {
@@ -14315,7 +14315,7 @@ Object {
           "cvss_v2_vector": "AV:N/AC:L/Au:N/C:P/I:P/A:P/E:U/RL:OF/RC:C",
           "description": "inffast.c in zlib 1.2.8 might allow context-dependent attackers to have unspecified impact by leveraging improper pointer arithmetic.",
           "ignored_by_path": false,
-          "level_id": 4,
+          "level_id": 3,
           "name": "Vulnerability in zlib",
           "reference": Array [
             Object {
@@ -14342,7 +14342,7 @@ Object {
           "cvss_v2_vector": "AV:N/AC:M/Au:N/C:P/I:N/A:P/E:U/RL:OF/RC:C",
           "description": "The Type_MLU_Read function in cmstypes.c in Little CMS (aka lcms2) allows remote attackers to obtain sensitive information or cause a denial of service via an image with a crafted ICC profile, which triggers an out-of-bounds heap read.",
           "ignored_by_path": false,
-          "level_id": 3,
+          "level_id": 2,
           "name": "Information Disclosure",
           "reference": Array [
             Object {
@@ -14396,7 +14396,7 @@ Object {
           "cvss_v2_vector": "AV:L/AC:L/Au:N/C:C/I:C/A:C/E:U/RL:OF/RC:C",
           "description": "PostgreSQL 10.x before 10.1, 9.6.x before 9.6.6, 9.5.x before 9.5.10, 9.4.x before 9.4.15, 9.3.x before 9.3.20, and 9.2.x before 9.2.24 runs under a non-root operating system account, and database superusers have effective ability to run arbitrary code under that system account. PostgreSQL provides a script for starting the database server during system boot. Packages of PostgreSQL for many operating systems provide their own, packager-authored startup implementations. Several implementations use a log file name that the database superuser can replace with a symbolic link. As root, they open(), chmod() and/or chown() this log file name. This often suffices for the database superuser to escalate to root privileges when root starts the server.",
           "ignored_by_path": false,
-          "level_id": 4,
+          "level_id": 3,
           "name": "Privilege Escalation",
           "reference": Array [
             Object {
@@ -14418,7 +14418,7 @@ Object {
           "cvss_v2_vector": "AV:N/AC:L/Au:S/C:P/I:N/A:P/E:U/RL:OF/RC:C",
           "description": "Invalid json_populate_recordset or jsonb_populate_recordset function calls in PostgreSQL 10.x before 10.1, 9.6.x before 9.6.6, 9.5.x before 9.5.10, 9.4.x before 9.4.15, and 9.3.x before 9.3.20 can crash the server or disclose a few bytes of server memory.",
           "ignored_by_path": false,
-          "level_id": 3,
+          "level_id": 2,
           "name": "Denial of Service",
           "reference": Array [
             Object {
@@ -14462,7 +14462,7 @@ Object {
           "cvss_v2_vector": "AV:N/AC:L/Au:N/C:N/I:N/A:P/E:U/RL:OF/RC:C",
           "description": "A denial of service flaw was found in OpenSSL 0.9.8, 1.0.1, 1.0.2 through 1.0.2h, and 1.1.0 in the way the TLS/SSL protocol defined processing of ALERT packets during a connection handshake. A remote attacker could use this flaw to make a TLS/SSL server consume an excessive amount of CPU and fail to accept connections from other clients.",
           "ignored_by_path": false,
-          "level_id": 3,
+          "level_id": 2,
           "name": "Denial of Service",
           "reference": Array [
             Object {
@@ -14656,7 +14656,7 @@ Object {
           "cvss_v2_vector": "AV:N/AC:M/Au:N/C:N/I:P/A:P/E:U/RL:OF/RC:C",
           "description": "Vulnerability in the Java SE, Java SE Embedded, JRockit component of Oracle Java SE (subcomponent: JNDI). Supported versions that are affected are Java SE: 6u171, 7u161, 8u152 and 9.0.1; Java SE Embedded: 8u151; JRockit: R28.3.16. Difficult to exploit vulnerability allows unauthenticated attacker with network access via multiple protocols to compromise Java SE, Java SE Embedded, JRockit. Successful attacks of this vulnerability can result in unauthorized update, insert or delete access to some of Java SE, Java SE Embedded, JRockit accessible data and unauthorized ability to cause a partial denial of service (partial DOS) of Java SE, Java SE Embedded, JRockit. Note: This vulnerability applies to client and server deployment of Java. This vulnerability can be exploited through sandboxed Java Web Start applications and sandboxed Java applets. It can also be exploited by supplying data to APIs in the specified Component without using sandboxed Java Web Start applications or sandboxed Java applets, such as through a web service.",
           "ignored_by_path": false,
-          "level_id": 3,
+          "level_id": 2,
           "name": "Unauthorized Access",
           "reference": Array [
             Object {
@@ -14683,7 +14683,7 @@ Object {
           "cvss_v2_vector": "AV:L/AC:H/Au:N/C:P/I:P/A:P/E:U/RL:OF/RC:C",
           "description": "Vulnerability in the Java SE, Java SE Embedded component of Oracle Java SE (subcomponent: I18n). Supported versions that are affected are Java SE: 6u171, 7u161, 8u152 and 9.0.1; Java SE Embedded: 8u151. Difficult to exploit vulnerability allows unauthenticated attacker with logon to the infrastructure where Java SE, Java SE Embedded executes to compromise Java SE, Java SE Embedded. Successful attacks require human interaction from a person other than the attacker. Successful attacks of this vulnerability can result in unauthorized update, insert or delete access to some of Java SE, Java SE Embedded accessible data as well as unauthorized read access to a subset of Java SE, Java SE Embedded accessible data and unauthorized ability to cause a partial denial of service (partial DOS) of Java SE, Java SE Embedded. Note: This vulnerability applies to Java deployments, typically in clients running sandboxed Java Web Start applications or sandboxed Java applets, that load and run untrusted code (e.g., code that comes from the internet) and rely on the Java sandbox for security. This vulnerability does not apply to Java deployments, typically in servers, that load and run only trusted code (e.g., code installed by an administrator).",
           "ignored_by_path": false,
-          "level_id": 2,
+          "level_id": 1,
           "name": "Unauthorized Access",
           "reference": Array [
             Object {
@@ -14710,7 +14710,7 @@ Object {
           "cvss_v2_vector": "AV:N/AC:L/Au:N/C:N/I:N/A:P/E:U/RL:OF/RC:C",
           "description": "Vulnerability in the Java SE, Java SE Embedded, JRockit component of Oracle Java SE (subcomponent: Libraries). Supported versions that are affected are Java SE: 6u171, 7u161, 8u152 and 9.0.1; Java SE Embedded: 8u151; JRockit: R28.3.16. Easily exploitable vulnerability allows unauthenticated attacker with network access via multiple protocols to compromise Java SE, Java SE Embedded, JRockit. Successful attacks of this vulnerability can result in unauthorized ability to cause a partial denial of service (partial DOS) of Java SE, Java SE Embedded, JRockit. Note: This vulnerability applies to client and server deployment of Java. This vulnerability can be exploited through sandboxed Java Web Start applications and sandboxed Java applets. It can also be exploited by supplying data to APIs in the specified Component without using sandboxed Java Web Start applications or sandboxed Java applets, such as through a web service.",
           "ignored_by_path": false,
-          "level_id": 3,
+          "level_id": 2,
           "name": "Denial of Service",
           "reference": Array [
             Object {
@@ -14764,7 +14764,7 @@ Object {
           "cvss_v2_vector": "AV:L/AC:H/Au:N/C:P/I:P/A:P/E:U/RL:OF/RC:C",
           "description": "Vulnerability in the Java SE component of Oracle Java SE (subcomponent: Installer). Supported versions that are affected are Java SE: 8u152 and 9.0.1. Difficult to exploit vulnerability allows low privileged attacker with logon to the infrastructure where Java SE executes to compromise Java SE. Successful attacks require human interaction from a person other than the attacker and while the vulnerability is in Java SE, attacks may significantly impact additional products. Successful attacks of this vulnerability can result in takeover of Java SE. Note: This vulnerability applies to the Windows installer only.",
           "ignored_by_path": false,
-          "level_id": 2,
+          "level_id": 1,
           "name": "Takeover",
           "reference": Array [
             Object {
@@ -14818,7 +14818,7 @@ Object {
           "cvss_v2_vector": "AV:N/AC:H/Au:N/C:P/I:P/A:P/E:U/RL:OF/RC:C",
           "description": "Vulnerability in the Java SE, Java SE Embedded, JRockit component of Oracle Java SE (subcomponent: JNDI). Supported versions that are affected are Java SE: 6u171, 7u161, 8u152 and 9.0.1; Java SE Embedded: 8u151; JRockit: R28.3.16. Difficult to exploit vulnerability allows unauthenticated attacker with network access via multiple protocols to compromise Java SE, Java SE Embedded, JRockit. Successful attacks require human interaction from a person other than the attacker and while the vulnerability is in Java SE, Java SE Embedded, JRockit, attacks may significantly impact additional products. Successful attacks of this vulnerability can result in takeover of Java SE, Java SE Embedded, JRockit. Note: This vulnerability applies to client and server deployment of Java. This vulnerability can be exploited through sandboxed Java Web Start applications and sandboxed Java applets. It can also be exploited by supplying data to APIs in the specified Component without using sandboxed Java Web Start applications or sandboxed Java applets, such as through a web service.",
           "ignored_by_path": false,
-          "level_id": 3,
+          "level_id": 2,
           "name": "Takeover",
           "reference": Array [
             Object {
@@ -14872,7 +14872,7 @@ Object {
           "cvss_v2_vector": "AV:N/AC:M/Au:N/C:P/I:P/A:N/E:U/RL:OF/RC:C",
           "description": "Vulnerability in the Java SE, Java SE Embedded, JRockit component of Oracle Java SE (subcomponent: JMX). Supported versions that are affected are Java SE: 6u171, 7u161, 8u152 and 9.0.1; Java SE Embedded: 8u151; JRockit: R28.3.16. Difficult to exploit vulnerability allows unauthenticated attacker with network access via multiple protocols to compromise Java SE, Java SE Embedded, JRockit. Successful attacks of this vulnerability can result in unauthorized creation, deletion or modification access to critical data or all Java SE, Java SE Embedded, JRockit accessible data as well as unauthorized access to critical data or complete access to all Java SE, Java SE Embedded, JRockit accessible data. Note: This vulnerability can only be exploited by supplying data to APIs in the specified Component without using Untrusted Java Web Start applications or Untrusted Java applets, such as through a web service.",
           "ignored_by_path": false,
-          "level_id": 3,
+          "level_id": 2,
           "name": "Unauthorized Access",
           "reference": Array [
             Object {
@@ -14899,7 +14899,7 @@ Object {
           "cvss_v2_vector": "AV:N/AC:H/Au:N/C:P/I:P/A:P/E:U/RL:OF/RC:C",
           "description": "Vulnerability in the Java SE component of Oracle Java SE (subcomponent: Deployment). Supported versions that are affected are Java SE: 8u152 and 9.0.1. Difficult to exploit vulnerability allows unauthenticated attacker with network access via multiple protocols to compromise Java SE. Successful attacks require human interaction from a person other than the attacker and while the vulnerability is in Java SE, attacks may significantly impact additional products. Successful attacks of this vulnerability can result in takeover of Java SE. Note: This vulnerability applies to Java deployments, typically in clients running sandboxed Java Web Start applications or sandboxed Java applets, that load and run untrusted code (e.g., code that comes from the internet) and rely on the Java sandbox for security. This vulnerability does not apply to Java deployments, typically in servers, that load and run only trusted code (e.g., code installed by an administrator).",
           "ignored_by_path": false,
-          "level_id": 3,
+          "level_id": 2,
           "name": "Takeover",
           "reference": Array [
             Object {
@@ -15061,7 +15061,7 @@ Object {
           "cvss_v2_vector": "AV:L/AC:M/Au:N/C:P/I:P/A:N/E:U/RL:OF/RC:C",
           "description": "In postgresql 9.3.x before 9.3.21, 9.4.x before 9.4.16, 9.5.x before 9.5.11, 9.6.x before 9.6.7 and 10.x before 10.2, pg_upgrade creates file in current working directory containing the output of \`pg_dumpall -g\` under umask which was in effect when the user invoked pg_upgrade, and not under 0077 which is normally used for other temporary files. This can allow an authenticated attacker to read or modify the one file, which may contain encrypted or unencrypted database passwords. The attack is infeasible if a directory mode blocks the attacker searching the current working directory or if the prevailing umask blocks the attacker opening the file.",
           "ignored_by_path": false,
-          "level_id": 2,
+          "level_id": 1,
           "name": "Information Disclosure",
           "reference": Array [
             Object {
@@ -15083,7 +15083,7 @@ Object {
           "cvss_v2_vector": "AV:N/AC:H/Au:N/C:C/I:C/A:C/E:U/RL:OF/RC:C",
           "description": "Vulnerability in the Java SE, Java SE Embedded component of Oracle Java SE (subcomponent: Hotspot). Supported versions that are affected are Java SE: 6u181, 7u171, 8u162 and 10; Java SE Embedded: 8u161. Difficult to exploit vulnerability allows unauthenticated attacker with network access via multiple protocols to compromise Java SE, Java SE Embedded. Successful attacks require human interaction from a person other than the attacker and while the vulnerability is in Java SE, Java SE Embedded, attacks may significantly impact additional products. Successful attacks of this vulnerability can result in takeover of Java SE, Java SE Embedded. Note: This vulnerability applies to Java deployments, typically in clients running sandboxed Java Web Start applications or sandboxed Java applets, that load and run untrusted code (e.g., code that comes from the internet) and rely on the Java sandbox for security. This vulnerability does not apply to Java deployments, typically in servers, that load and run only trusted code (e.g., code installed by an administrator).",
           "ignored_by_path": false,
-          "level_id": 4,
+          "level_id": 3,
           "name": "Java SE Takeover",
           "reference": Array [
             Object {
@@ -15110,7 +15110,7 @@ Object {
           "cvss_v2_vector": "AV:L/AC:H/Au:N/C:C/I:C/A:C/E:U/RL:OF/RC:C",
           "description": "Vulnerability in the Java SE component of Oracle Java SE (subcomponent: Install). Supported versions that are affected are Java SE: 8u162 and 10. Difficult to exploit vulnerability allows unauthenticated attacker with logon to the infrastructure where Java SE executes to compromise Java SE. Successful attacks require human interaction from a person other than the attacker and while the vulnerability is in Java SE, attacks may significantly impact additional products. Successful attacks of this vulnerability can result in takeover of Java SE. Note: Applies to installation process on client deployment of Java.",
           "ignored_by_path": false,
-          "level_id": 3,
+          "level_id": 2,
           "name": "Java SE Takeover",
           "reference": Array [
             Object {
@@ -15137,7 +15137,7 @@ Object {
           "cvss_v2_vector": "AV:L/AC:H/Au:N/C:C/I:C/A:C/E:U/RL:OF/RC:C",
           "description": "Vulnerability in the Java SE, JRockit component of Oracle Java SE (subcomponent: Security). Supported versions that are affected are Java SE: 6u181, 7u171, 8u162, 10 and JRockit: R28.3.17. Difficult to exploit vulnerability allows unauthenticated attacker with logon to the infrastructure where Java SE, JRockit executes to compromise Java SE, JRockit. Successful attacks require human interaction from a person other than the attacker and while the vulnerability is in Java SE, JRockit, attacks may significantly impact additional products. Successful attacks of this vulnerability can result in takeover of Java SE, JRockit. Note: Applies to client and server deployment of Java. This vulnerability can be exploited through sandboxed Java Web Start applications and sandboxed Java applets. It can also be exploited by supplying data to APIs in the specified Component without using sandboxed Java Web Start applications or sandboxed Java applets, such as through a web service.",
           "ignored_by_path": false,
-          "level_id": 3,
+          "level_id": 2,
           "name": "Java Takeover",
           "reference": Array [
             Object {
@@ -15164,7 +15164,7 @@ Object {
           "cvss_v2_vector": "AV:N/AC:H/Au:N/C:C/I:C/A:N/E:U/RL:OF/RC:C",
           "description": "Vulnerability in the Java SE, Java SE Embedded, JRockit component of Oracle Java SE (subcomponent: Security). Supported versions that are affected are Java SE: 6u181, 7u161 and 8u152; Java SE Embedded: 8u152; JRockit: R28.3.17. Difficult to exploit vulnerability allows unauthenticated attacker with network access via multiple protocols to compromise Java SE, Java SE Embedded, JRockit. Successful attacks of this vulnerability can result in unauthorized creation, deletion or modification access to critical data or all Java SE, Java SE Embedded, JRockit accessible data as well as unauthorized access to critical data or complete access to all Java SE, Java SE Embedded, JRockit accessible data. Note: Applies to client and server deployment of Java. This vulnerability can be exploited through sandboxed Java Web Start applications and sandboxed Java applets. It can also be exploited by supplying data to APIs in the specified Component without using sandboxed Java Web Start applications or sandboxed Java applets, such as through a web service.",
           "ignored_by_path": false,
-          "level_id": 4,
+          "level_id": 3,
           "name": "Unauthorized Access",
           "reference": Array [
             Object {
@@ -15407,7 +15407,7 @@ Object {
           "cvss_v2_vector": "AV:N/AC:L/Au:S/C:P/I:P/A:P/E:U/RL:OF/RC:C",
           "description": "A flaw was found in the way Postgresql allowed a user to modify the behavior of a query for other users. An attacker with a user account could use this flaw to execute code with the permissions of superuser in the database. Versions 9.3 through 10 are affected.",
           "ignored_by_path": false,
-          "level_id": 3,
+          "level_id": 2,
           "name": "Code Execution",
           "reference": Array [
             Object {
@@ -15429,7 +15429,7 @@ Object {
           "cvss_v2_vector": "AV:N/AC:L/Au:N/C:P/I:N/A:N/E:U/RL:OF/RC:C",
           "description": "An out-of-bounds read vulnerability in Adobe Flash Player allows attackers to obtain sensitive information.",
           "ignored_by_path": false,
-          "level_id": 3,
+          "level_id": 2,
           "name": "Out-of-Bounds Read",
           "reference": Array [
             Object {
@@ -15456,7 +15456,7 @@ Object {
           "cvss_v2_vector": "AV:N/AC:L/Au:N/C:C/I:C/A:C/E:U/RL:OF/RC:C",
           "description": "A type confusion vulnerability in Adobe Flash Player allows attackers to execute arbitrary code in the context of the current user.",
           "ignored_by_path": false,
-          "level_id": 5,
+          "level_id": 4,
           "name": "Type Confusion",
           "reference": Array [
             Object {
@@ -15618,7 +15618,7 @@ Object {
           "cvss_v2_vector": "AV:N/AC:M/Au:N/C:C/I:C/A:C/E:U/RL:OF/RC:C",
           "description": "A remote code execution vulnerability exists when Microsoft Silverlight improperly allows applications to access objects in memory. The vulnerability could corrupt system memory, which could allow an attacker to execute arbitrary code. An attacker who successfully exploited this vulnerability could obtain the same permissions as the currently logged-on user. If a user is logged on with administrative user rights, an attacker could take complete control of the affected system. An attacker could then install programs; view, change, or delete data; or create new accounts with full user rights. Users whose accounts are configured to have fewer user rights on the system could be less impacted than users who operate with administrative user rights.",
           "ignored_by_path": true,
-          "level_id": 5,
+          "level_id": 3,
           "name": "Microsoft Silverlight Memory Corruption Vulnerability",
           "reference": Array [
             Object {
@@ -15646,7 +15646,7 @@ Object {
           "description": "Information disclosure vulnerability exists in the way that the Windows Graphics Device Interface (GDI) handles objects in memory, allowing an attacker to retrieve information from a targeted system. An attacker who successfully exploited this vulnerability could use the retrieved information to circumvent Address Space Layout Randomization (ASLR) in Windows, which helps guard against a broad class of vulnerabilities. By itself, the information disclosure does not allow arbitrary code execution; however, it could allow arbitrary code to be run if the attacker uses it in combination with another vulnerability.
  To exploit the vulnerability, an attacker would have to log on to an affected system.",
           "ignored_by_path": true,
-          "level_id": 3,
+          "level_id": 2,
           "name": "True Type Font Parsing Information Disclosure Vulnerability",
           "reference": Array [
             Object {
@@ -15673,7 +15673,7 @@ Object {
           "cvss_v2_vector": "AV:N/AC:M/Au:N/C:C/I:C/A:C/E:U/RL:OF/RC:C",
           "description": "Remote code execution vulnerabilities exist due to the way the Windows Graphics Component handles objects in memory. An attacker who successfully exploited these vulnerabilities could take control of the affected system. An attacker could then install programs; view, change, or delete data; or create new accounts with full user rights. Users whose accounts are configured to have fewer user rights on the system could be less impacted than users who operate with administrative user rights.",
           "ignored_by_path": true,
-          "level_id": 5,
+          "level_id": 3,
           "name": "Graphics Component Remote Code Execution Vulnerability",
           "reference": Array [
             Object {
@@ -15701,7 +15701,7 @@ Object {
           "description": "An information disclosure vulnerability exists within the open-source libjpeg image-processing library where it fails to properly handle objects in memory, allowing an attacker to retrieve information that could lead to an Address Space Layout Randomization (ASLR) bypass. An attacker who successfully exploited this vulnerability could cause information to be disclosed that could allow for bypassing the ASLR security feature that protects users from a broad class of vulnerabilities.
  The security feature bypass itself does not allow arbitrary code execution. However, an attacker could use the ASLR bypass vulnerability in conjunction with another vulnerability, such as a remote code execution vulnerability, that could take advantage of the ASLR bypass to run arbitrary code.",
           "ignored_by_path": true,
-          "level_id": 3,
+          "level_id": 2,
           "name": "libjpeg Information Disclosure Vulnerability",
           "reference": Array [
             Object {
@@ -15723,7 +15723,7 @@ Object {
           "cvss_v2_vector": "AV:N/AC:M/Au:N/C:C/I:C/A:C/E:U/RL:OF/RC:C",
           "description": "A remote code execution vulnerability exists due to the way Windows Uniscribe handles objects in memory. An attacker who successfully exploited this vulnerability could take control of the affected system. An attacker could then install programs; view, change, or delete data; or create new accounts with full user rights. Users whose accounts are configured to have fewer user rights on the system could be less impacted than users who operate with administrative user rights.",
           "ignored_by_path": true,
-          "level_id": 5,
+          "level_id": 3,
           "name": "Remote Code Execution",
           "reference": Array [
             Object {
@@ -15745,7 +15745,7 @@ Object {
           "cvss_v2_vector": "AV:N/AC:M/Au:N/C:C/I:C/A:C/E:U/RL:OF/RC:C",
           "description": "A remote code execution vulnerability exist when the Windows font library improperly handles specially crafted embedded fonts. An attacker who successfully exploited this vulnerability could take control of the affected system. An attacker could then install programs; view, change, or delete data; or create new accounts with full user rights. Users whose accounts are configured to have fewer user rights on the system could be less impacted than users who operate with administrative user rights.",
           "ignored_by_path": true,
-          "level_id": 5,
+          "level_id": 3,
           "name": "Remote Code Execution",
           "reference": Array [
             Object {
@@ -16027,7 +16027,7 @@ Object {
           "cvss_v2_vector": "AV:N/AC:L/Au:N/C:N/I:N/A:P/E:U/RL:OF/RC:C",
           "description": "Vulnerability in OpenSSL, when used on a 32-bit host, allows attackers to cause a denial of service (out-of-bounds read and crash) via a truncated packet.",
           "ignored_by_path": false,
-          "level_id": 3,
+          "level_id": 2,
           "name": "Denial of Service",
           "reference": Array [
             Object {
@@ -16118,7 +16118,7 @@ Object {
           "cvss_v2_vector": "AV:N/AC:L/Au:N/C:P/I:N/A:P/E:U/RL:OF/RC:C",
           "description": "In Apache httpd before 2.2.34 and 2.4.x before 2.4.27, the value placeholder in [Proxy-]Authorization headers of type 'Digest' was not initialized or reset before or between successive key=value assignments by mod_auth_digest. Providing an initial key with no '=' assignment could reflect the stale value of uninitialized pool memory used by the prior request, leading to leakage of potentially confidential information, and a segfault in other cases resulting in denial of service.",
           "ignored_by_path": false,
-          "level_id": 3,
+          "level_id": 2,
           "name": "Information Disclosure",
           "reference": Array [
             Object {
@@ -16150,7 +16150,7 @@ Object {
           "cvss_v2_vector": "AV:N/AC:L/Au:N/C:N/I:N/A:P/E:U/RL:OF/RC:C",
           "description": "When under stress, closing many connections, the HTTP/2 handling code in Apache httpd 2.4.26 would sometimes access memory after it has been freed, resulting in potentially erratic behaviour.",
           "ignored_by_path": false,
-          "level_id": 3,
+          "level_id": 2,
           "name": "Use After Free",
           "reference": Array [
             Object {
@@ -16177,7 +16177,7 @@ Object {
           "cvss_v2_vector": "AV:N/AC:L/Au:N/C:N/I:P/A:N/E:U/RL:OF/RC:C",
           "description": "While parsing an IPAddressFamily extension in an X.509 certificate, it is possible to do a one-byte overread. This would result in an incorrect text display of the certificate. This bug has been present since 2006 and is present in all versions of OpenSSL before 1.0.2m and 1.1.0g.",
           "ignored_by_path": false,
-          "level_id": 3,
+          "level_id": 2,
           "name": "Out-of-Bounds Read",
           "reference": Array [
             Object {
@@ -16209,7 +16209,7 @@ Object {
           "cvss_v2_vector": "AV:N/AC:L/Au:N/C:P/I:N/A:N/E:F/RL:OF/RC:C",
           "description": "Apache httpd allows remote attackers to read secret data from process memory if the Limit directive can be set in a user's .htaccess file, or if httpd.conf has certain misconfigurations, aka Optionsbleed. This affects the Apache HTTP Server through 2.2.34 and 2.4.x through 2.4.27. The attacker sends an unauthenticated OPTIONS HTTP request when attempting to read secret data. This is a use-after-free issue and thus secret data is not always sent, and the specific data depends on many factors including configuration. Exploitation with .htaccess can be blocked with a patch to the ap_limit_section function in server/core.c.",
           "ignored_by_path": false,
-          "level_id": 3,
+          "level_id": 2,
           "name": "Use After Free",
           "reference": Array [
             Object {
@@ -16241,7 +16241,7 @@ Object {
           "cvss_v2_vector": "AV:N/AC:L/Au:N/C:P/I:P/A:P/E:U/RL:OF/RC:C",
           "description": "The pcre_compile2 function in pcre_compile.c in PCRE 8.38 mishandles the /((?:F?+(?:^(?(R)a+\\\\\\"){99}-))(?J)(?'R'(?'R'&lt;((?'RR'(?'R'\\\\){97)?J)?J)(?'R'(?'R'\\\\){99|(:(?|(?'R')(\\\\k'R')|((?'R')))H'R'R)(H'R))))))/ pattern and related patterns with named subgroups, which allows remote attackers to cause a denial of service (heap-based buffer overflow) or possibly have unspecified other impact via a crafted regular expression, as demonstrated by a JavaScript RegExp object encountered by Konqueror.",
           "ignored_by_path": false,
-          "level_id": 4,
+          "level_id": 3,
           "name": "Denial of Service",
           "reference": Array [
             Object {
@@ -16305,7 +16305,7 @@ Object {
           "cvss_v2_vector": "AV:N/AC:L/Au:N/C:P/I:N/A:N/E:U/RL:OF/RC:C",
           "description": "In PHP before 5.6.32, 7.x before 7.0.25, and 7.1.x before 7.1.11, an error in the date extension's timelib_meridian handling of 'front of' and 'back of' directives could be used by attackers able to supply date strings to leak information from the interpreter, related to ext/date/lib/parse_date.c out-of-bounds reads affecting the php_parse_date function.",
           "ignored_by_path": false,
-          "level_id": 3,
+          "level_id": 2,
           "name": "Information Disclosure",
           "reference": Array [
             Object {
@@ -16593,7 +16593,7 @@ Object {
           "cvss_v2_vector": "AV:N/AC:M/Au:N/C:N/I:P/A:P/E:U/RL:OF/RC:C",
           "description": "Vulnerability in the Java SE, Java SE Embedded, JRockit component of Oracle Java SE (subcomponent: JNDI). Supported versions that are affected are Java SE: 6u171, 7u161, 8u152 and 9.0.1; Java SE Embedded: 8u151; JRockit: R28.3.16. Difficult to exploit vulnerability allows unauthenticated attacker with network access via multiple protocols to compromise Java SE, Java SE Embedded, JRockit. Successful attacks of this vulnerability can result in unauthorized update, insert or delete access to some of Java SE, Java SE Embedded, JRockit accessible data and unauthorized ability to cause a partial denial of service (partial DOS) of Java SE, Java SE Embedded, JRockit. Note: This vulnerability applies to client and server deployment of Java. This vulnerability can be exploited through sandboxed Java Web Start applications and sandboxed Java applets. It can also be exploited by supplying data to APIs in the specified Component without using sandboxed Java Web Start applications or sandboxed Java applets, such as through a web service.",
           "ignored_by_path": false,
-          "level_id": 3,
+          "level_id": 2,
           "name": "Unauthorized Access",
           "reference": Array [
             Object {
@@ -16620,7 +16620,7 @@ Object {
           "cvss_v2_vector": "AV:L/AC:H/Au:N/C:P/I:P/A:P/E:U/RL:OF/RC:C",
           "description": "Vulnerability in the Java SE, Java SE Embedded component of Oracle Java SE (subcomponent: I18n). Supported versions that are affected are Java SE: 6u171, 7u161, 8u152 and 9.0.1; Java SE Embedded: 8u151. Difficult to exploit vulnerability allows unauthenticated attacker with logon to the infrastructure where Java SE, Java SE Embedded executes to compromise Java SE, Java SE Embedded. Successful attacks require human interaction from a person other than the attacker. Successful attacks of this vulnerability can result in unauthorized update, insert or delete access to some of Java SE, Java SE Embedded accessible data as well as unauthorized read access to a subset of Java SE, Java SE Embedded accessible data and unauthorized ability to cause a partial denial of service (partial DOS) of Java SE, Java SE Embedded. Note: This vulnerability applies to Java deployments, typically in clients running sandboxed Java Web Start applications or sandboxed Java applets, that load and run untrusted code (e.g., code that comes from the internet) and rely on the Java sandbox for security. This vulnerability does not apply to Java deployments, typically in servers, that load and run only trusted code (e.g., code installed by an administrator).",
           "ignored_by_path": false,
-          "level_id": 2,
+          "level_id": 1,
           "name": "Unauthorized Access",
           "reference": Array [
             Object {
@@ -16647,7 +16647,7 @@ Object {
           "cvss_v2_vector": "AV:N/AC:L/Au:N/C:N/I:N/A:P/E:U/RL:OF/RC:C",
           "description": "Vulnerability in the Java SE, Java SE Embedded, JRockit component of Oracle Java SE (subcomponent: Libraries). Supported versions that are affected are Java SE: 6u171, 7u161, 8u152 and 9.0.1; Java SE Embedded: 8u151; JRockit: R28.3.16. Easily exploitable vulnerability allows unauthenticated attacker with network access via multiple protocols to compromise Java SE, Java SE Embedded, JRockit. Successful attacks of this vulnerability can result in unauthorized ability to cause a partial denial of service (partial DOS) of Java SE, Java SE Embedded, JRockit. Note: This vulnerability applies to client and server deployment of Java. This vulnerability can be exploited through sandboxed Java Web Start applications and sandboxed Java applets. It can also be exploited by supplying data to APIs in the specified Component without using sandboxed Java Web Start applications or sandboxed Java applets, such as through a web service.",
           "ignored_by_path": false,
-          "level_id": 3,
+          "level_id": 2,
           "name": "Denial of Service",
           "reference": Array [
             Object {
@@ -16701,7 +16701,7 @@ Object {
           "cvss_v2_vector": "AV:L/AC:H/Au:N/C:P/I:P/A:P/E:U/RL:OF/RC:C",
           "description": "Vulnerability in the Java SE component of Oracle Java SE (subcomponent: Installer). Supported versions that are affected are Java SE: 8u152 and 9.0.1. Difficult to exploit vulnerability allows low privileged attacker with logon to the infrastructure where Java SE executes to compromise Java SE. Successful attacks require human interaction from a person other than the attacker and while the vulnerability is in Java SE, attacks may significantly impact additional products. Successful attacks of this vulnerability can result in takeover of Java SE. Note: This vulnerability applies to the Windows installer only.",
           "ignored_by_path": false,
-          "level_id": 2,
+          "level_id": 1,
           "name": "Takeover",
           "reference": Array [
             Object {
@@ -16755,7 +16755,7 @@ Object {
           "cvss_v2_vector": "AV:N/AC:H/Au:N/C:P/I:P/A:P/E:U/RL:OF/RC:C",
           "description": "Vulnerability in the Java SE, Java SE Embedded, JRockit component of Oracle Java SE (subcomponent: JNDI). Supported versions that are affected are Java SE: 6u171, 7u161, 8u152 and 9.0.1; Java SE Embedded: 8u151; JRockit: R28.3.16. Difficult to exploit vulnerability allows unauthenticated attacker with network access via multiple protocols to compromise Java SE, Java SE Embedded, JRockit. Successful attacks require human interaction from a person other than the attacker and while the vulnerability is in Java SE, Java SE Embedded, JRockit, attacks may significantly impact additional products. Successful attacks of this vulnerability can result in takeover of Java SE, Java SE Embedded, JRockit. Note: This vulnerability applies to client and server deployment of Java. This vulnerability can be exploited through sandboxed Java Web Start applications and sandboxed Java applets. It can also be exploited by supplying data to APIs in the specified Component without using sandboxed Java Web Start applications or sandboxed Java applets, such as through a web service.",
           "ignored_by_path": false,
-          "level_id": 3,
+          "level_id": 2,
           "name": "Takeover",
           "reference": Array [
             Object {
@@ -16809,7 +16809,7 @@ Object {
           "cvss_v2_vector": "AV:N/AC:M/Au:N/C:P/I:P/A:N/E:U/RL:OF/RC:C",
           "description": "Vulnerability in the Java SE, Java SE Embedded, JRockit component of Oracle Java SE (subcomponent: JMX). Supported versions that are affected are Java SE: 6u171, 7u161, 8u152 and 9.0.1; Java SE Embedded: 8u151; JRockit: R28.3.16. Difficult to exploit vulnerability allows unauthenticated attacker with network access via multiple protocols to compromise Java SE, Java SE Embedded, JRockit. Successful attacks of this vulnerability can result in unauthorized creation, deletion or modification access to critical data or all Java SE, Java SE Embedded, JRockit accessible data as well as unauthorized access to critical data or complete access to all Java SE, Java SE Embedded, JRockit accessible data. Note: This vulnerability can only be exploited by supplying data to APIs in the specified Component without using Untrusted Java Web Start applications or Untrusted Java applets, such as through a web service.",
           "ignored_by_path": false,
-          "level_id": 3,
+          "level_id": 2,
           "name": "Unauthorized Access",
           "reference": Array [
             Object {
@@ -16836,7 +16836,7 @@ Object {
           "cvss_v2_vector": "AV:N/AC:H/Au:N/C:P/I:P/A:P/E:U/RL:OF/RC:C",
           "description": "Vulnerability in the Java SE component of Oracle Java SE (subcomponent: Deployment). Supported versions that are affected are Java SE: 8u152 and 9.0.1. Difficult to exploit vulnerability allows unauthenticated attacker with network access via multiple protocols to compromise Java SE. Successful attacks require human interaction from a person other than the attacker and while the vulnerability is in Java SE, attacks may significantly impact additional products. Successful attacks of this vulnerability can result in takeover of Java SE. Note: This vulnerability applies to Java deployments, typically in clients running sandboxed Java Web Start applications or sandboxed Java applets, that load and run untrusted code (e.g., code that comes from the internet) and rely on the Java sandbox for security. This vulnerability does not apply to Java deployments, typically in servers, that load and run only trusted code (e.g., code installed by an administrator).",
           "ignored_by_path": false,
-          "level_id": 3,
+          "level_id": 2,
           "name": "Takeover",
           "reference": Array [
             Object {
@@ -16998,7 +16998,7 @@ Object {
           "cvss_v2_vector": "AV:N/AC:M/Au:S/C:N/I:P/A:N/E:U/RL:OF/RC:C",
           "description": "In Apache httpd 2.4.0 to 2.4.29, when mod_session is configured to forward its session data to CGI applications (SessionEnv on, not the default), a remote user may influence their content by using a \\"Session\\" header. This comes from the \\"HTTP_SESSION\\" variable name used by mod_session to forward its data to CGIs, since the prefix \\"HTTP_\\" is also used by the Apache HTTP Server to pass HTTP header fields, per CGI specifications.",
           "ignored_by_path": false,
-          "level_id": 2,
+          "level_id": 1,
           "name": "Tampering",
           "reference": Array [
             Object {
@@ -17025,7 +17025,7 @@ Object {
           "cvss_v2_vector": "AV:N/AC:L/Au:N/C:N/I:N/A:P/E:U/RL:OF/RC:C",
           "description": "In Apache httpd 2.0.23 to 2.0.65, 2.2.0 to 2.2.34, and 2.4.0 to 2.4.29, mod_authnz_ldap, if configured with AuthLDAPCharsetConfig, uses the Accept-Language header value to lookup the right charset encoding when verifying the user's credentials. If the header value is not present in the charset conversion table, a fallback mechanism is used to truncate it to a two characters value to allow a quick retry (for example, 'en-US' is truncated to 'en'). A header value of less than two characters forces an out of bound write of one NUL byte to a memory location that is not part of the string. In the worst case, quite unlikely, the process would crash which could be used as a Denial of Service attack.",
           "ignored_by_path": false,
-          "level_id": 3,
+          "level_id": 2,
           "name": "Out-of-Bounds Write",
           "reference": Array [
             Object {
@@ -17133,7 +17133,7 @@ Object {
           "cvss_v2_vector": "AV:N/AC:L/Au:N/C:N/I:N/A:P/E:U/RL:OF/RC:C",
           "description": "A specially crafted HTTP request header could have crashed the Apache HTTP Server prior to version 2.4.30 due to an out of bound read while preparing data to be cached in shared memory. It could be used as a Denial of Service attack against users of mod_cache_socache.",
           "ignored_by_path": false,
-          "level_id": 3,
+          "level_id": 2,
           "name": "Out-of-Bounds Read",
           "reference": Array [
             Object {
@@ -17187,7 +17187,7 @@ Object {
           "cvss_v2_vector": "AV:N/AC:H/Au:N/C:C/I:C/A:C/E:U/RL:OF/RC:C",
           "description": "Vulnerability in the Java SE, Java SE Embedded component of Oracle Java SE (subcomponent: Hotspot). Supported versions that are affected are Java SE: 6u181, 7u171, 8u162 and 10; Java SE Embedded: 8u161. Difficult to exploit vulnerability allows unauthenticated attacker with network access via multiple protocols to compromise Java SE, Java SE Embedded. Successful attacks require human interaction from a person other than the attacker and while the vulnerability is in Java SE, Java SE Embedded, attacks may significantly impact additional products. Successful attacks of this vulnerability can result in takeover of Java SE, Java SE Embedded. Note: This vulnerability applies to Java deployments, typically in clients running sandboxed Java Web Start applications or sandboxed Java applets, that load and run untrusted code (e.g., code that comes from the internet) and rely on the Java sandbox for security. This vulnerability does not apply to Java deployments, typically in servers, that load and run only trusted code (e.g., code installed by an administrator).",
           "ignored_by_path": false,
-          "level_id": 4,
+          "level_id": 3,
           "name": "Java SE Takeover",
           "reference": Array [
             Object {
@@ -17214,7 +17214,7 @@ Object {
           "cvss_v2_vector": "AV:L/AC:H/Au:N/C:C/I:C/A:C/E:U/RL:OF/RC:C",
           "description": "Vulnerability in the Java SE component of Oracle Java SE (subcomponent: Install). Supported versions that are affected are Java SE: 8u162 and 10. Difficult to exploit vulnerability allows unauthenticated attacker with logon to the infrastructure where Java SE executes to compromise Java SE. Successful attacks require human interaction from a person other than the attacker and while the vulnerability is in Java SE, attacks may significantly impact additional products. Successful attacks of this vulnerability can result in takeover of Java SE. Note: Applies to installation process on client deployment of Java.",
           "ignored_by_path": false,
-          "level_id": 3,
+          "level_id": 2,
           "name": "Java SE Takeover",
           "reference": Array [
             Object {
@@ -17241,7 +17241,7 @@ Object {
           "cvss_v2_vector": "AV:L/AC:H/Au:N/C:C/I:C/A:C/E:U/RL:OF/RC:C",
           "description": "Vulnerability in the Java SE, JRockit component of Oracle Java SE (subcomponent: Security). Supported versions that are affected are Java SE: 6u181, 7u171, 8u162, 10 and JRockit: R28.3.17. Difficult to exploit vulnerability allows unauthenticated attacker with logon to the infrastructure where Java SE, JRockit executes to compromise Java SE, JRockit. Successful attacks require human interaction from a person other than the attacker and while the vulnerability is in Java SE, JRockit, attacks may significantly impact additional products. Successful attacks of this vulnerability can result in takeover of Java SE, JRockit. Note: Applies to client and server deployment of Java. This vulnerability can be exploited through sandboxed Java Web Start applications and sandboxed Java applets. It can also be exploited by supplying data to APIs in the specified Component without using sandboxed Java Web Start applications or sandboxed Java applets, such as through a web service.",
           "ignored_by_path": false,
-          "level_id": 3,
+          "level_id": 2,
           "name": "Java Takeover",
           "reference": Array [
             Object {
@@ -17268,7 +17268,7 @@ Object {
           "cvss_v2_vector": "AV:N/AC:H/Au:N/C:C/I:C/A:N/E:U/RL:OF/RC:C",
           "description": "Vulnerability in the Java SE, Java SE Embedded, JRockit component of Oracle Java SE (subcomponent: Security). Supported versions that are affected are Java SE: 6u181, 7u161 and 8u152; Java SE Embedded: 8u152; JRockit: R28.3.17. Difficult to exploit vulnerability allows unauthenticated attacker with network access via multiple protocols to compromise Java SE, Java SE Embedded, JRockit. Successful attacks of this vulnerability can result in unauthorized creation, deletion or modification access to critical data or all Java SE, Java SE Embedded, JRockit accessible data as well as unauthorized access to critical data or complete access to all Java SE, Java SE Embedded, JRockit accessible data. Note: Applies to client and server deployment of Java. This vulnerability can be exploited through sandboxed Java Web Start applications and sandboxed Java applets. It can also be exploited by supplying data to APIs in the specified Component without using sandboxed Java Web Start applications or sandboxed Java applets, such as through a web service.",
           "ignored_by_path": false,
-          "level_id": 4,
+          "level_id": 3,
           "name": "Unauthorized Access",
           "reference": Array [
             Object {
@@ -17511,7 +17511,7 @@ Object {
           "cvss_v2_vector": "AV:N/AC:L/Au:N/C:P/I:P/A:P/E:U/RL:OF/RC:C",
           "description": "In PHP through 5.6.33, 7.0.x before 7.0.28, 7.1.x through 7.1.14, and 7.2.x through 7.2.2, there is a stack-based buffer under-read while parsing an HTTP response in the php_stream_url_wrap_http_ex function in ext/standard/http_fopen_wrapper.c. This subsequently results in copying a large string.",
           "ignored_by_path": false,
-          "level_id": 4,
+          "level_id": 3,
           "name": "Stack-based Buffer Underread",
           "reference": Array [
             Object {
@@ -17632,7 +17632,7 @@ Object {
           "cvss_v2_vector": "AV:N/AC:L/Au:N/C:N/I:N/A:P/E:U/RL:OF/RC:C",
           "description": "An issue was discovered in PHP before 5.6.36, 7.0.x before 7.0.30, 7.1.x before 7.1.17, and 7.2.x before 7.2.5. An infinite loop exists in ext/iconv/iconv.c because the iconv stream filter does not reject invalid multibyte sequences.",
           "ignored_by_path": false,
-          "level_id": 3,
+          "level_id": 2,
           "name": "Infinite Loop",
           "reference": Array [
             Object {
@@ -17674,7 +17674,7 @@ Object {
           "cvss_v2_vector": "AV:N/AC:L/Au:N/C:N/I:N/A:P/E:U/RL:OF/RC:C",
           "description": "An issue was discovered in PHP before 5.6.36, 7.0.x before 7.0.30, 7.1.x before 7.1.17, and 7.2.x before 7.2.5. ext/ldap/ldap.c allows remote LDAP servers to cause a denial of service (NULL pointer dereference and application crash) because of mishandling of the ldap_get_dn return value.",
           "ignored_by_path": false,
-          "level_id": 3,
+          "level_id": 2,
           "name": "Denial of Service",
           "reference": Array [
             Object {
@@ -17758,7 +17758,7 @@ Object {
           "cvss_v2_vector": "AV:N/AC:L/Au:N/C:P/I:N/A:N/E:U/RL:OF/RC:C",
           "description": "An out-of-bounds read vulnerability in Adobe Flash Player allows attackers to obtain sensitive information.",
           "ignored_by_path": false,
-          "level_id": 3,
+          "level_id": 2,
           "name": "Out-of-Bounds Read",
           "reference": Array [
             Object {
@@ -17785,7 +17785,7 @@ Object {
           "cvss_v2_vector": "AV:N/AC:L/Au:N/C:C/I:C/A:C/E:U/RL:OF/RC:C",
           "description": "A type confusion vulnerability in Adobe Flash Player allows attackers to execute arbitrary code in the context of the current user.",
           "ignored_by_path": false,
-          "level_id": 5,
+          "level_id": 4,
           "name": "Type Confusion",
           "reference": Array [
             Object {
@@ -17812,7 +17812,7 @@ Object {
           "cvss_v2_vector": "AV:N/AC:L/Au:N/C:N/I:N/A:P/E:U/RL:OF/RC:C",
           "description": "By specially crafting HTTP/2 requests, workers would be allocated 60 seconds longer than necessary, leading to worker exhaustion and a denial of service.",
           "ignored_by_path": false,
-          "level_id": 3,
+          "level_id": 2,
           "name": "Denial of Service",
           "reference": Array [
             Object {
@@ -17974,7 +17974,7 @@ Object {
           "cvss_v2_vector": "AV:N/AC:M/Au:N/C:C/I:C/A:C/E:U/RL:OF/RC:C",
           "description": "A remote code execution vulnerability exists when Microsoft Silverlight improperly allows applications to access objects in memory. The vulnerability could corrupt system memory, which could allow an attacker to execute arbitrary code. An attacker who successfully exploited this vulnerability could obtain the same permissions as the currently logged-on user. If a user is logged on with administrative user rights, an attacker could take complete control of the affected system. An attacker could then install programs; view, change, or delete data; or create new accounts with full user rights. Users whose accounts are configured to have fewer user rights on the system could be less impacted than users who operate with administrative user rights.",
           "ignored_by_path": true,
-          "level_id": 5,
+          "level_id": 3,
           "name": "Microsoft Silverlight Memory Corruption Vulnerability",
           "reference": Array [
             Object {
@@ -18002,7 +18002,7 @@ Object {
           "description": "Information disclosure vulnerability exists in the way that the Windows Graphics Device Interface (GDI) handles objects in memory, allowing an attacker to retrieve information from a targeted system. An attacker who successfully exploited this vulnerability could use the retrieved information to circumvent Address Space Layout Randomization (ASLR) in Windows, which helps guard against a broad class of vulnerabilities. By itself, the information disclosure does not allow arbitrary code execution; however, it could allow arbitrary code to be run if the attacker uses it in combination with another vulnerability.
  To exploit the vulnerability, an attacker would have to log on to an affected system.",
           "ignored_by_path": true,
-          "level_id": 3,
+          "level_id": 2,
           "name": "True Type Font Parsing Information Disclosure Vulnerability",
           "reference": Array [
             Object {
@@ -18029,7 +18029,7 @@ Object {
           "cvss_v2_vector": "AV:N/AC:M/Au:N/C:C/I:C/A:C/E:U/RL:OF/RC:C",
           "description": "Remote code execution vulnerabilities exist due to the way the Windows Graphics Component handles objects in memory. An attacker who successfully exploited these vulnerabilities could take control of the affected system. An attacker could then install programs; view, change, or delete data; or create new accounts with full user rights. Users whose accounts are configured to have fewer user rights on the system could be less impacted than users who operate with administrative user rights.",
           "ignored_by_path": true,
-          "level_id": 5,
+          "level_id": 3,
           "name": "Graphics Component Remote Code Execution Vulnerability",
           "reference": Array [
             Object {
@@ -18057,7 +18057,7 @@ Object {
           "description": "An information disclosure vulnerability exists within the open-source libjpeg image-processing library where it fails to properly handle objects in memory, allowing an attacker to retrieve information that could lead to an Address Space Layout Randomization (ASLR) bypass. An attacker who successfully exploited this vulnerability could cause information to be disclosed that could allow for bypassing the ASLR security feature that protects users from a broad class of vulnerabilities.
  The security feature bypass itself does not allow arbitrary code execution. However, an attacker could use the ASLR bypass vulnerability in conjunction with another vulnerability, such as a remote code execution vulnerability, that could take advantage of the ASLR bypass to run arbitrary code.",
           "ignored_by_path": true,
-          "level_id": 3,
+          "level_id": 2,
           "name": "libjpeg Information Disclosure Vulnerability",
           "reference": Array [
             Object {
@@ -18079,7 +18079,7 @@ Object {
           "cvss_v2_vector": "AV:N/AC:M/Au:N/C:C/I:C/A:C/E:U/RL:OF/RC:C",
           "description": "A remote code execution vulnerability exists due to the way Windows Uniscribe handles objects in memory. An attacker who successfully exploited this vulnerability could take control of the affected system. An attacker could then install programs; view, change, or delete data; or create new accounts with full user rights. Users whose accounts are configured to have fewer user rights on the system could be less impacted than users who operate with administrative user rights.",
           "ignored_by_path": true,
-          "level_id": 5,
+          "level_id": 3,
           "name": "Remote Code Execution",
           "reference": Array [
             Object {
@@ -18101,7 +18101,7 @@ Object {
           "cvss_v2_vector": "AV:N/AC:M/Au:N/C:C/I:C/A:C/E:U/RL:OF/RC:C",
           "description": "A remote code execution vulnerability exist when the Windows font library improperly handles specially crafted embedded fonts. An attacker who successfully exploited this vulnerability could take control of the affected system. An attacker could then install programs; view, change, or delete data; or create new accounts with full user rights. Users whose accounts are configured to have fewer user rights on the system could be less impacted than users who operate with administrative user rights.",
           "ignored_by_path": true,
-          "level_id": 5,
+          "level_id": 3,
           "name": "Remote Code Execution",
           "reference": Array [
             Object {

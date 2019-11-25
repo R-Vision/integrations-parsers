@@ -550,7 +550,9 @@ module.exports = (inputStream, options = {}, cb) => {
     }
 
     try {
-      const level = Math.round(Number(cvss.$.base_score) / 2);
+      const parsedCvssData = parseMaxPatrolCVSS(cvss.$);
+
+      const level = Math.round(parsedCvssData.cvss_v2_score / 2);
       const vulnDescription = description.$text || shortDescription.$text || '';
       let vuln = {
         description: vulnDescription.replace(/  +/g, ' '),
@@ -560,8 +562,6 @@ module.exports = (inputStream, options = {}, cb) => {
         reference: parseReferenceLinks(links),
         level_id: level === 0 ? 1 : level,
       };
-
-      const parsedCvssData = parseMaxPatrolCVSS(cvss.$);
 
       vuln = {
         ...vuln,

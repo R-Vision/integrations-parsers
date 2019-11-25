@@ -371,7 +371,7 @@ function formatHostname(name) {
  * @param {Object}
  */
 function parseMaxPatrolCVSS(cvss) {
-  const CVSSExploitRegExp = /\bE:([A-Za-z])\b/;
+  const CVSSExploitRegExp = /\bE:([A-Za-z]+)\b/;
 
   const cvssV2BaseScore = Number(cvss.base_score);
 
@@ -385,7 +385,10 @@ function parseMaxPatrolCVSS(cvss) {
 
   let cvssV2Vector = cvssV2BaseVector;
   if (cvssV2TemporalVector) {
-    cvssV2Vector += `/${cvssV2TemporalVector}`;
+    cvssV2Vector = `${cvssV2Vector}/${cvssV2TemporalVector}`
+      .split('/')
+      .filter((value, index, array) => array.indexOf(value) === index)
+      .join('/');
   }
 
   const cvssV2TemporalScore =

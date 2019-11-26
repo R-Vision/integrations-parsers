@@ -149,7 +149,6 @@ module.exports = function nessusParse(stream, cb) {
 
       if (cvss) {
         item.cvss_v2_base_score = parseFloat(cvss);
-        item.cvss_v2_score = parseFloat(cvss);
       }
 
       hosts[address].vulnerabilities[`${pluginId}-${port}-${protocol}`] = item;

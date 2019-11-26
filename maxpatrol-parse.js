@@ -371,8 +371,6 @@ function formatHostname(name) {
  * @param {Object}
  */
 function parseMaxPatrolCVSS(cvss) {
-  const CVSSExploitRegExp = /\bE:([A-Za-z]+)\b/;
-
   const cvssV2BaseScore = Number(cvss.base_score);
 
   const cvssV2BaseVector = cvss.base_score_decomp
@@ -383,37 +381,16 @@ function parseMaxPatrolCVSS(cvss) {
     ? cvss.temp_score_decomp.replace(/^\(/, '').replace(/\)$/, '')
     : null;
 
-  let cvssV2Vector = cvssV2BaseVector;
-  if (cvssV2TemporalVector) {
-    cvssV2Vector = `${cvssV2Vector}/${cvssV2TemporalVector}`
-      .split('/')
-      .filter((value, index, array) => array.indexOf(value) === index)
-      .join('/');
-  }
-
   const cvssV2TemporalScore =
     cvssV2TemporalVector || cvss.temp_score !== '0.0'
       ? Number(cvss.temp_score)
       : null;
 
-  let cvssExploit = null;
-  if (cvssV2TemporalVector) {
-    [, cvssExploit] = cvssV2TemporalVector.match(CVSSExploitRegExp) || [
-      null,
-      null,
-    ];
-  } else if (cvssV2BaseVector) {
-    [, cvssExploit] = cvssV2BaseVector.match(CVSSExploitRegExp) || [null, null];
-  }
-
   return {
-    cvss_exploit: cvssExploit,
     cvss_v2_base_score: cvssV2BaseScore,
     cvss_v2_base_vector: cvssV2BaseVector,
-    cvss_v2_score: cvssV2TemporalScore || cvssV2BaseScore,
     cvss_v2_temporal_score: cvssV2TemporalScore,
     cvss_v2_temporal_vector: cvssV2TemporalVector,
-    cvss_v2_vector: cvssV2Vector,
   };
 }
 
@@ -552,7 +529,7 @@ module.exports = (inputStream, options = {}, cb) => {
     try {
       const parsedCvssData = parseMaxPatrolCVSS(cvss.$);
 
-      const level = Math.round(parsedCvssData.cvss_v2_score / 2);
+      const level = Math.round(Number(cvss.$.base_score) / 2);
       const vulnDescription = description.$text || shortDescription.$text || '';
       let vuln = {
         description: vulnDescription.replace(/  +/g, ' '),

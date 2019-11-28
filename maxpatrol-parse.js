@@ -371,7 +371,10 @@ function formatHostname(name) {
  * @param {Object}
  */
 function parseMaxPatrolCVSS(cvss) {
-  const cvssV2BaseScore = Number(cvss.base_score);
+  let cvssV2BaseScore = Number.parseFloat(cvss.base_score);
+  if (Number.isNaN(cvssV2BaseScore)) {
+    cvssV2BaseScore = null;
+  }
 
   const cvssV2BaseVector = cvss.base_score_decomp
     ? cvss.base_score_decomp.replace(/^\(/, '').replace(/\)$/, '')
@@ -381,10 +384,10 @@ function parseMaxPatrolCVSS(cvss) {
     ? cvss.temp_score_decomp.replace(/^\(/, '').replace(/\)$/, '')
     : null;
 
-  const cvssV2TemporalScore =
-    cvssV2TemporalVector || cvss.temp_score !== '0.0'
-      ? Number(cvss.temp_score)
-      : null;
+  let cvssV2TemporalScore = Number.parseFloat(cvss.temp_score);
+  if (Number.isNaN(cvssV2TemporalScore)) {
+    cvssV2TemporalScore = null;
+  }
 
   return {
     cvss_v2_base_score: cvssV2BaseScore,

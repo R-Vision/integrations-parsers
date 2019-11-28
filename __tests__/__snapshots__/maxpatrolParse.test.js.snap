@@ -46,7 +46,7 @@ Object {
         Object {
           "cvss_v2_base_score": 4.3,
           "cvss_v2_base_vector": "AV:A/AC:M/Au:N/C:P/I:P/A:N",
-          "cvss_v2_temporal_score": null,
+          "cvss_v2_temporal_score": 0,
           "cvss_v2_temporal_vector": null,
           "description": "Versions 1.33 and 1.5 have insufficient cryptographic security.",
           "ignored_by_path": false,
@@ -62,7 +62,7 @@ Object {
         Object {
           "cvss_v2_base_score": 0,
           "cvss_v2_base_vector": null,
-          "cvss_v2_temporal_score": null,
+          "cvss_v2_temporal_score": 0,
           "cvss_v2_temporal_vector": null,
           "description": "The 'arcfour' is the Arcfour stream cipher. The Arcfour cipher is believed to be compatible with the RC4 cipher. RFC 4253 states that Arcfour (and RC4) has problems with weak keys, and should be used with caution.
  If SSH server is configured to support Cipher Block Chaining (CBC) encryption, this may allow an attacker to recover plaintext data from the ciphertext.",
@@ -100,7 +100,7 @@ Object {
         Object {
           "cvss_v2_base_score": 4.3,
           "cvss_v2_base_vector": "AV:N/AC:M/Au:N/C:N/I:P/A:N",
-          "cvss_v2_temporal_score": null,
+          "cvss_v2_temporal_score": 0,
           "cvss_v2_temporal_vector": null,
           "description": "Multiple cross-site scripting (XSS) vulnerabilities in the HTTP server in Cisco IOS 12.4(23) allow remote attackers to inject arbitrary web script or HTML via the PATH_INFO to the default URI under (1) level/15/exec/-/ or (2) exec/, a different vulnerability than CVE-2008-3821.",
           "ignored_by_path": false,
@@ -119,7 +119,7 @@ Object {
         Object {
           "cvss_v2_base_score": 6.8,
           "cvss_v2_base_vector": "AV:N/AC:M/Au:N/C:P/I:P/A:P",
-          "cvss_v2_temporal_score": null,
+          "cvss_v2_temporal_score": 0,
           "cvss_v2_temporal_vector": null,
           "description": "Cross-site request forgery (CSRF) vulnerability in the HTTP server in Cisco IOS 12.4(23) allows remote attackers to execute arbitrary commands, as demonstrated by executing the hostname command with a level/15/configure/-/hostname request.",
           "ignored_by_path": false,
@@ -438,7 +438,7 @@ Object {
         Object {
           "cvss_v2_base_score": 7.8,
           "cvss_v2_base_vector": "AV:N/AC:L/Au:N/C:N/I:N/A:C",
-          "cvss_v2_temporal_score": null,
+          "cvss_v2_temporal_score": 0,
           "cvss_v2_temporal_vector": null,
           "description": "Cisco IOS 12.1 through 12.4, when Cisco Unified Communications Manager Express (CME) or Cisco Unified Survivable Remote Site Telephony (SRST) is enabled, allows remote attackers to cause a denial of service (device reload) via a malformed Skinny Client Control Protocol (SCCP) message, aka Bug ID CSCsz48614, the \\"SCCP Packet Processing Denial of Service Vulnerability.\\"",
           "ignored_by_path": false,
@@ -630,7 +630,7 @@ Object {
         Object {
           "cvss_v2_base_score": 7.8,
           "cvss_v2_base_vector": "AV:N/AC:L/Au:N/C:N/I:N/A:C",
-          "cvss_v2_temporal_score": null,
+          "cvss_v2_temporal_score": 0,
           "cvss_v2_temporal_vector": null,
           "description": "The IKEv1 implementation in Cisco IOS 12.2 through 12.4 and 15.0 through 15.2 and IOS XE 2.1.x through 2.6.x and 3.1.xS through 3.4.xS before 3.4.2S, 3.5.xS before 3.5.1S, and 3.2.xSG before 3.2.2SG allows remote attackers to cause a denial of service (device reload) by sending IKE UDP packets over (1) IPv4 or (2) IPv6, aka Bug ID CSCts38429.",
           "ignored_by_path": false,
@@ -654,7 +654,7 @@ Object {
         Object {
           "cvss_v2_base_score": 7.1,
           "cvss_v2_base_vector": "AV:N/AC:M/Au:N/C:N/I:N/A:C",
-          "cvss_v2_temporal_score": null,
+          "cvss_v2_temporal_score": 0,
           "cvss_v2_temporal_vector": null,
           "description": "The Multicast Source Discovery Protocol (MSDP) implementation in Cisco IOS 12.0, 12.2 through 12.4, and 15.0 through 15.2 and IOS XE 2.1.x through 2.6.x and 3.1.xS through 3.4.xS before 3.4.1S and 3.1.xSG and 3.2.xSG before 3.2.2SG allows remote attackers to cause a denial of service (device reload) via encapsulated IGMP data in an MSDP packet, aka Bug ID CSCtr28857.",
           "ignored_by_path": false,
@@ -678,7 +678,7 @@ Object {
         Object {
           "cvss_v2_base_score": 8.5,
           "cvss_v2_base_vector": "AV:N/AC:M/Au:S/C:C/I:C/A:C",
-          "cvss_v2_temporal_score": null,
+          "cvss_v2_temporal_score": 0,
           "cvss_v2_temporal_vector": null,
           "description": "Cisco IOS 12.2 through 12.4 and 15.0 through 15.2 and IOS XE 2.1.x through 2.6.x and 3.1.xS before 3.1.2S, 3.2.xS through 3.4.xS before 3.4.2S, 3.5.xS before 3.5.1S, and 3.1.xSG and 3.2.xSG before 3.2.2SG, when AAA authorization is enabled, allow remote authenticated users to bypass intended access restrictions and execute commands via a (1) HTTP or (2) HTTPS session, aka Bug ID CSCtr91106.",
           "ignored_by_path": false,
@@ -702,7 +702,7 @@ Object {
         Object {
           "cvss_v2_base_score": 7.8,
           "cvss_v2_base_vector": "AV:N/AC:L/Au:N/C:N/I:N/A:C",
-          "cvss_v2_temporal_score": null,
+          "cvss_v2_temporal_score": 0,
           "cvss_v2_temporal_vector": null,
           "description": "The DHCPv6 server in Cisco IOS 12.2 through 12.4 and 15.0 through 15.2 and IOS XE 2.1.x through 2.6.x, 3.1.xS before 3.1.4S, 3.1.xSG and 3.2.xSG before 3.2.5SG, 3.2.xS, 3.2.xXO, 3.3.xS, and 3.3.xSG before 3.3.1SG allows remote attackers to cause a denial of service (device reload) via a malformed DHCPv6 packet, aka Bug ID CSCto57723.",
           "ignored_by_path": false,
@@ -726,7 +726,7 @@ Object {
         Object {
           "cvss_v2_base_score": 7.8,
           "cvss_v2_base_vector": "AV:N/AC:L/Au:N/C:N/I:N/A:C",
-          "cvss_v2_temporal_score": null,
+          "cvss_v2_temporal_score": 0,
           "cvss_v2_temporal_vector": null,
           "description": "The SIP implementation in Cisco Unified Communications Manager (CUCM) 6.x and 7.x before 7.1(5b)su5, 8.x before 8.5(1)su4, and 8.6 before 8.6(2a)su1; Cisco IOS 12.2 through 12.4 and 15.0 through 15.2; and Cisco IOS XE 3.3.xSG before 3.3.1SG, 3.4.xS, and 3.5.xS allows remote attackers to cause a denial of service (service crash or device reload) via a crafted SIP message containing an SDP session description, aka Bug IDs CSCtw66721, CSCtj33003, and CSCtw84664.",
           "ignored_by_path": false,
@@ -952,7 +952,7 @@ Object {
         Object {
           "cvss_v2_base_score": 1.8,
           "cvss_v2_base_vector": "AV:A/AC:H/Au:N/C:N/I:P/A:N",
-          "cvss_v2_temporal_score": null,
+          "cvss_v2_temporal_score": 0,
           "cvss_v2_temporal_vector": null,
           "description": "The symmetric-key feature in the receive function in ntp_proto.c in ntpd in NTP 4.x before 4.2.8p2 requires a correct MAC only if the MAC field has a nonzero length, which makes it easier for man-in-the-middle attackers to spoof packets by omitting the MAC.",
           "ignored_by_path": false,
@@ -976,7 +976,7 @@ Object {
         Object {
           "cvss_v2_base_score": 4.3,
           "cvss_v2_base_vector": "AV:A/AC:M/Au:N/C:N/I:P/A:P",
-          "cvss_v2_temporal_score": null,
+          "cvss_v2_temporal_score": 0,
           "cvss_v2_temporal_vector": null,
           "description": "The symmetric-key feature in the receive function in ntp_proto.c in ntpd in NTP 3.x and 4.x before 4.2.8p2 performs state-variable updates upon receiving certain invalid packets, which makes it easier for man-in-the-middle attackers to cause a denial of service (synchronization loss) by spoofing the source IP address of a peer.",
           "ignored_by_path": false,
@@ -1067,7 +1067,7 @@ Object {
         Object {
           "cvss_v2_base_score": 4,
           "cvss_v2_base_vector": "AV:N/AC:L/Au:S/C:N/I:N/A:P",
-          "cvss_v2_temporal_score": null,
+          "cvss_v2_temporal_score": 0,
           "cvss_v2_temporal_vector": null,
           "description": "Vulnerability in ntpd allows local authenticated users to cause a denial of service via a specially crafted packet.",
           "ignored_by_path": false,
@@ -1091,7 +1091,7 @@ Object {
         Object {
           "cvss_v2_base_score": 5.8,
           "cvss_v2_base_vector": "AV:N/AC:M/Au:N/C:N/I:P/A:P",
-          "cvss_v2_temporal_score": null,
+          "cvss_v2_temporal_score": 0,
           "cvss_v2_temporal_vector": null,
           "description": "NTP, when configured in broadcast mode, allows man-in-the-middle attackers to conduct replay attacks by sniffing the network.",
           "ignored_by_path": false,
@@ -1115,7 +1115,7 @@ Object {
         Object {
           "cvss_v2_base_score": 2.1,
           "cvss_v2_base_vector": "AV:N/AC:H/Au:S/C:N/I:P/A:N",
-          "cvss_v2_temporal_score": null,
+          "cvss_v2_temporal_score": 0,
           "cvss_v2_temporal_vector": null,
           "description": "NTP does not verify peer associations of symmetric keys when authenticating packets, which might allow remote attackers to conduct impersonation attacks via an arbitrary trusted key, aka a \\"skeleton key.\\"",
           "ignored_by_path": false,
@@ -1139,7 +1139,7 @@ Object {
         Object {
           "cvss_v2_base_score": 5,
           "cvss_v2_base_vector": "AV:N/AC:L/Au:N/C:N/I:N/A:P",
-          "cvss_v2_temporal_score": null,
+          "cvss_v2_temporal_score": 0,
           "cvss_v2_temporal_vector": null,
           "description": "NTP allows remote attackers to cause a denial of service (client-server association tear down) by sending broadcast packets with invalid authentication to a broadcast client.",
           "ignored_by_path": false,
@@ -1163,7 +1163,7 @@ Object {
         Object {
           "cvss_v2_base_score": 5,
           "cvss_v2_base_vector": "AV:N/AC:L/Au:N/C:N/I:P/A:N",
-          "cvss_v2_temporal_score": null,
+          "cvss_v2_temporal_score": 0,
           "cvss_v2_temporal_vector": null,
           "description": "ntpq in NTP allows remote attackers to obtain origin timestamps and then impersonate peers via unspecified vectors.",
           "ignored_by_path": false,
@@ -1187,7 +1187,7 @@ Object {
         Object {
           "cvss_v2_base_score": 5,
           "cvss_v2_base_vector": "AV:N/AC:L/Au:N/C:N/I:P/A:N",
-          "cvss_v2_temporal_score": null,
+          "cvss_v2_temporal_score": 0,
           "cvss_v2_temporal_vector": null,
           "description": "NTP allows remote attackers to bypass the origin timestamp validation via a packet with an origin timestamp set to zero.",
           "ignored_by_path": false,
@@ -1211,7 +1211,7 @@ Object {
         Object {
           "cvss_v2_base_score": 5.8,
           "cvss_v2_base_vector": "AV:N/AC:M/Au:N/C:N/I:P/A:P",
-          "cvss_v2_temporal_score": null,
+          "cvss_v2_temporal_score": 0,
           "cvss_v2_temporal_vector": null,
           "description": "The ntpq protocol in NTP allows remote attackers to conduct replay attacks by sniffing the network.",
           "ignored_by_path": false,
@@ -1235,7 +1235,7 @@ Object {
         Object {
           "cvss_v2_base_score": 4.3,
           "cvss_v2_base_vector": "AV:N/AC:M/Au:N/C:N/I:N/A:P",
-          "cvss_v2_temporal_score": null,
+          "cvss_v2_temporal_score": 0,
           "cvss_v2_temporal_vector": null,
           "description": "The getresponse function in ntpq in NTP allows remote attackers to cause a denial of service (infinite loop) via crafted packets with incorrect values.",
           "ignored_by_path": false,
@@ -1259,7 +1259,7 @@ Object {
         Object {
           "cvss_v2_base_score": 2.1,
           "cvss_v2_base_vector": "AV:L/AC:L/Au:N/C:P/I:N/A:N",
-          "cvss_v2_temporal_score": null,
+          "cvss_v2_temporal_score": 0,
           "cvss_v2_temporal_vector": null,
           "description": "The debug-logging (aka debug cns) feature in Cisco Networking Services (CNS) for IOS allows local users to obtain sensitive information by reading an unspecified file.",
           "ignored_by_path": false,
@@ -1297,7 +1297,7 @@ Object {
         Object {
           "cvss_v2_base_score": 4.3,
           "cvss_v2_base_vector": "AV:A/AC:M/Au:N/C:P/I:P/A:N",
-          "cvss_v2_temporal_score": null,
+          "cvss_v2_temporal_score": 0,
           "cvss_v2_temporal_vector": null,
           "description": "There are some defects in SSHv1 in encryption algorithms as well as in programs that use it. So if you use SSH service to manage devices install SSHv2.",
           "ignored_by_path": false,
@@ -1351,7 +1351,7 @@ Object {
         Object {
           "cvss_v2_base_score": 4.3,
           "cvss_v2_base_vector": "AV:A/AC:M/Au:N/C:P/I:P/A:N",
-          "cvss_v2_temporal_score": null,
+          "cvss_v2_temporal_score": 0,
           "cvss_v2_temporal_vector": null,
           "description": "Versions 1.33 and 1.5 have insufficient cryptographic security.",
           "ignored_by_path": false,
@@ -1367,7 +1367,7 @@ Object {
         Object {
           "cvss_v2_base_score": 0,
           "cvss_v2_base_vector": null,
-          "cvss_v2_temporal_score": null,
+          "cvss_v2_temporal_score": 0,
           "cvss_v2_temporal_vector": null,
           "description": "The 'arcfour' is the Arcfour stream cipher. The Arcfour cipher is believed to be compatible with the RC4 cipher. RFC 4253 states that Arcfour (and RC4) has problems with weak keys, and should be used with caution.
  If SSH server is configured to support Cipher Block Chaining (CBC) encryption, this may allow an attacker to recover plaintext data from the ciphertext.",
@@ -1405,7 +1405,7 @@ Object {
         Object {
           "cvss_v2_base_score": 4.3,
           "cvss_v2_base_vector": "AV:N/AC:M/Au:N/C:N/I:P/A:N",
-          "cvss_v2_temporal_score": null,
+          "cvss_v2_temporal_score": 0,
           "cvss_v2_temporal_vector": null,
           "description": "Multiple cross-site scripting (XSS) vulnerabilities in the HTTP server in Cisco IOS 12.4(23) allow remote attackers to inject arbitrary web script or HTML via the PATH_INFO to the default URI under (1) level/15/exec/-/ or (2) exec/, a different vulnerability than CVE-2008-3821.",
           "ignored_by_path": false,
@@ -1424,7 +1424,7 @@ Object {
         Object {
           "cvss_v2_base_score": 6.8,
           "cvss_v2_base_vector": "AV:N/AC:M/Au:N/C:P/I:P/A:P",
-          "cvss_v2_temporal_score": null,
+          "cvss_v2_temporal_score": 0,
           "cvss_v2_temporal_vector": null,
           "description": "Cross-site request forgery (CSRF) vulnerability in the HTTP server in Cisco IOS 12.4(23) allows remote attackers to execute arbitrary commands, as demonstrated by executing the hostname command with a level/15/configure/-/hostname request.",
           "ignored_by_path": false,
@@ -1743,7 +1743,7 @@ Object {
         Object {
           "cvss_v2_base_score": 7.8,
           "cvss_v2_base_vector": "AV:N/AC:L/Au:N/C:N/I:N/A:C",
-          "cvss_v2_temporal_score": null,
+          "cvss_v2_temporal_score": 0,
           "cvss_v2_temporal_vector": null,
           "description": "Cisco IOS 12.1 through 12.4, when Cisco Unified Communications Manager Express (CME) or Cisco Unified Survivable Remote Site Telephony (SRST) is enabled, allows remote attackers to cause a denial of service (device reload) via a malformed Skinny Client Control Protocol (SCCP) message, aka Bug ID CSCsz48614, the \\"SCCP Packet Processing Denial of Service Vulnerability.\\"",
           "ignored_by_path": false,
@@ -1935,7 +1935,7 @@ Object {
         Object {
           "cvss_v2_base_score": 7.8,
           "cvss_v2_base_vector": "AV:N/AC:L/Au:N/C:N/I:N/A:C",
-          "cvss_v2_temporal_score": null,
+          "cvss_v2_temporal_score": 0,
           "cvss_v2_temporal_vector": null,
           "description": "The IKEv1 implementation in Cisco IOS 12.2 through 12.4 and 15.0 through 15.2 and IOS XE 2.1.x through 2.6.x and 3.1.xS through 3.4.xS before 3.4.2S, 3.5.xS before 3.5.1S, and 3.2.xSG before 3.2.2SG allows remote attackers to cause a denial of service (device reload) by sending IKE UDP packets over (1) IPv4 or (2) IPv6, aka Bug ID CSCts38429.",
           "ignored_by_path": false,
@@ -1959,7 +1959,7 @@ Object {
         Object {
           "cvss_v2_base_score": 7.1,
           "cvss_v2_base_vector": "AV:N/AC:M/Au:N/C:N/I:N/A:C",
-          "cvss_v2_temporal_score": null,
+          "cvss_v2_temporal_score": 0,
           "cvss_v2_temporal_vector": null,
           "description": "The Multicast Source Discovery Protocol (MSDP) implementation in Cisco IOS 12.0, 12.2 through 12.4, and 15.0 through 15.2 and IOS XE 2.1.x through 2.6.x and 3.1.xS through 3.4.xS before 3.4.1S and 3.1.xSG and 3.2.xSG before 3.2.2SG allows remote attackers to cause a denial of service (device reload) via encapsulated IGMP data in an MSDP packet, aka Bug ID CSCtr28857.",
           "ignored_by_path": false,
@@ -1983,7 +1983,7 @@ Object {
         Object {
           "cvss_v2_base_score": 8.5,
           "cvss_v2_base_vector": "AV:N/AC:M/Au:S/C:C/I:C/A:C",
-          "cvss_v2_temporal_score": null,
+          "cvss_v2_temporal_score": 0,
           "cvss_v2_temporal_vector": null,
           "description": "Cisco IOS 12.2 through 12.4 and 15.0 through 15.2 and IOS XE 2.1.x through 2.6.x and 3.1.xS before 3.1.2S, 3.2.xS through 3.4.xS before 3.4.2S, 3.5.xS before 3.5.1S, and 3.1.xSG and 3.2.xSG before 3.2.2SG, when AAA authorization is enabled, allow remote authenticated users to bypass intended access restrictions and execute commands via a (1) HTTP or (2) HTTPS session, aka Bug ID CSCtr91106.",
           "ignored_by_path": false,
@@ -2007,7 +2007,7 @@ Object {
         Object {
           "cvss_v2_base_score": 7.8,
           "cvss_v2_base_vector": "AV:N/AC:L/Au:N/C:N/I:N/A:C",
-          "cvss_v2_temporal_score": null,
+          "cvss_v2_temporal_score": 0,
           "cvss_v2_temporal_vector": null,
           "description": "The DHCPv6 server in Cisco IOS 12.2 through 12.4 and 15.0 through 15.2 and IOS XE 2.1.x through 2.6.x, 3.1.xS before 3.1.4S, 3.1.xSG and 3.2.xSG before 3.2.5SG, 3.2.xS, 3.2.xXO, 3.3.xS, and 3.3.xSG before 3.3.1SG allows remote attackers to cause a denial of service (device reload) via a malformed DHCPv6 packet, aka Bug ID CSCto57723.",
           "ignored_by_path": false,
@@ -2031,7 +2031,7 @@ Object {
         Object {
           "cvss_v2_base_score": 7.8,
           "cvss_v2_base_vector": "AV:N/AC:L/Au:N/C:N/I:N/A:C",
-          "cvss_v2_temporal_score": null,
+          "cvss_v2_temporal_score": 0,
           "cvss_v2_temporal_vector": null,
           "description": "The SIP implementation in Cisco Unified Communications Manager (CUCM) 6.x and 7.x before 7.1(5b)su5, 8.x before 8.5(1)su4, and 8.6 before 8.6(2a)su1; Cisco IOS 12.2 through 12.4 and 15.0 through 15.2; and Cisco IOS XE 3.3.xSG before 3.3.1SG, 3.4.xS, and 3.5.xS allows remote attackers to cause a denial of service (service crash or device reload) via a crafted SIP message containing an SDP session description, aka Bug IDs CSCtw66721, CSCtj33003, and CSCtw84664.",
           "ignored_by_path": false,
@@ -2257,7 +2257,7 @@ Object {
         Object {
           "cvss_v2_base_score": 1.8,
           "cvss_v2_base_vector": "AV:A/AC:H/Au:N/C:N/I:P/A:N",
-          "cvss_v2_temporal_score": null,
+          "cvss_v2_temporal_score": 0,
           "cvss_v2_temporal_vector": null,
           "description": "The symmetric-key feature in the receive function in ntp_proto.c in ntpd in NTP 4.x before 4.2.8p2 requires a correct MAC only if the MAC field has a nonzero length, which makes it easier for man-in-the-middle attackers to spoof packets by omitting the MAC.",
           "ignored_by_path": false,
@@ -2281,7 +2281,7 @@ Object {
         Object {
           "cvss_v2_base_score": 4.3,
           "cvss_v2_base_vector": "AV:A/AC:M/Au:N/C:N/I:P/A:P",
-          "cvss_v2_temporal_score": null,
+          "cvss_v2_temporal_score": 0,
           "cvss_v2_temporal_vector": null,
           "description": "The symmetric-key feature in the receive function in ntp_proto.c in ntpd in NTP 3.x and 4.x before 4.2.8p2 performs state-variable updates upon receiving certain invalid packets, which makes it easier for man-in-the-middle attackers to cause a denial of service (synchronization loss) by spoofing the source IP address of a peer.",
           "ignored_by_path": false,
@@ -2372,7 +2372,7 @@ Object {
         Object {
           "cvss_v2_base_score": 4,
           "cvss_v2_base_vector": "AV:N/AC:L/Au:S/C:N/I:N/A:P",
-          "cvss_v2_temporal_score": null,
+          "cvss_v2_temporal_score": 0,
           "cvss_v2_temporal_vector": null,
           "description": "Vulnerability in ntpd allows local authenticated users to cause a denial of service via a specially crafted packet.",
           "ignored_by_path": false,
@@ -2396,7 +2396,7 @@ Object {
         Object {
           "cvss_v2_base_score": 5.8,
           "cvss_v2_base_vector": "AV:N/AC:M/Au:N/C:N/I:P/A:P",
-          "cvss_v2_temporal_score": null,
+          "cvss_v2_temporal_score": 0,
           "cvss_v2_temporal_vector": null,
           "description": "NTP, when configured in broadcast mode, allows man-in-the-middle attackers to conduct replay attacks by sniffing the network.",
           "ignored_by_path": false,
@@ -2420,7 +2420,7 @@ Object {
         Object {
           "cvss_v2_base_score": 2.1,
           "cvss_v2_base_vector": "AV:N/AC:H/Au:S/C:N/I:P/A:N",
-          "cvss_v2_temporal_score": null,
+          "cvss_v2_temporal_score": 0,
           "cvss_v2_temporal_vector": null,
           "description": "NTP does not verify peer associations of symmetric keys when authenticating packets, which might allow remote attackers to conduct impersonation attacks via an arbitrary trusted key, aka a \\"skeleton key.\\"",
           "ignored_by_path": false,
@@ -2444,7 +2444,7 @@ Object {
         Object {
           "cvss_v2_base_score": 5,
           "cvss_v2_base_vector": "AV:N/AC:L/Au:N/C:N/I:N/A:P",
-          "cvss_v2_temporal_score": null,
+          "cvss_v2_temporal_score": 0,
           "cvss_v2_temporal_vector": null,
           "description": "NTP allows remote attackers to cause a denial of service (client-server association tear down) by sending broadcast packets with invalid authentication to a broadcast client.",
           "ignored_by_path": false,
@@ -2468,7 +2468,7 @@ Object {
         Object {
           "cvss_v2_base_score": 5,
           "cvss_v2_base_vector": "AV:N/AC:L/Au:N/C:N/I:P/A:N",
-          "cvss_v2_temporal_score": null,
+          "cvss_v2_temporal_score": 0,
           "cvss_v2_temporal_vector": null,
           "description": "ntpq in NTP allows remote attackers to obtain origin timestamps and then impersonate peers via unspecified vectors.",
           "ignored_by_path": false,
@@ -2492,7 +2492,7 @@ Object {
         Object {
           "cvss_v2_base_score": 5,
           "cvss_v2_base_vector": "AV:N/AC:L/Au:N/C:N/I:P/A:N",
-          "cvss_v2_temporal_score": null,
+          "cvss_v2_temporal_score": 0,
           "cvss_v2_temporal_vector": null,
           "description": "NTP allows remote attackers to bypass the origin timestamp validation via a packet with an origin timestamp set to zero.",
           "ignored_by_path": false,
@@ -2516,7 +2516,7 @@ Object {
         Object {
           "cvss_v2_base_score": 5.8,
           "cvss_v2_base_vector": "AV:N/AC:M/Au:N/C:N/I:P/A:P",
-          "cvss_v2_temporal_score": null,
+          "cvss_v2_temporal_score": 0,
           "cvss_v2_temporal_vector": null,
           "description": "The ntpq protocol in NTP allows remote attackers to conduct replay attacks by sniffing the network.",
           "ignored_by_path": false,
@@ -2540,7 +2540,7 @@ Object {
         Object {
           "cvss_v2_base_score": 4.3,
           "cvss_v2_base_vector": "AV:N/AC:M/Au:N/C:N/I:N/A:P",
-          "cvss_v2_temporal_score": null,
+          "cvss_v2_temporal_score": 0,
           "cvss_v2_temporal_vector": null,
           "description": "The getresponse function in ntpq in NTP allows remote attackers to cause a denial of service (infinite loop) via crafted packets with incorrect values.",
           "ignored_by_path": false,
@@ -2564,7 +2564,7 @@ Object {
         Object {
           "cvss_v2_base_score": 2.1,
           "cvss_v2_base_vector": "AV:L/AC:L/Au:N/C:P/I:N/A:N",
-          "cvss_v2_temporal_score": null,
+          "cvss_v2_temporal_score": 0,
           "cvss_v2_temporal_vector": null,
           "description": "The debug-logging (aka debug cns) feature in Cisco Networking Services (CNS) for IOS allows local users to obtain sensitive information by reading an unspecified file.",
           "ignored_by_path": false,
@@ -2602,7 +2602,7 @@ Object {
         Object {
           "cvss_v2_base_score": 4.3,
           "cvss_v2_base_vector": "AV:A/AC:M/Au:N/C:P/I:P/A:N",
-          "cvss_v2_temporal_score": null,
+          "cvss_v2_temporal_score": 0,
           "cvss_v2_temporal_vector": null,
           "description": "There are some defects in SSHv1 in encryption algorithms as well as in programs that use it. So if you use SSH service to manage devices install SSHv2.",
           "ignored_by_path": false,
@@ -2635,7 +2635,7 @@ Object {
         Object {
           "cvss_v2_base_score": 4.3,
           "cvss_v2_base_vector": "AV:A/AC:M/Au:N/C:P/I:P/A:N",
-          "cvss_v2_temporal_score": null,
+          "cvss_v2_temporal_score": 0,
           "cvss_v2_temporal_vector": null,
           "description": "Versions 1.33 and 1.5 have insufficient cryptographic security.",
           "ignored_by_path": false,
@@ -2652,7 +2652,7 @@ Object {
         Object {
           "cvss_v2_base_score": 5,
           "cvss_v2_base_vector": "AV:N/AC:L/Au:N/C:P/I:N/A:N",
-          "cvss_v2_temporal_score": null,
+          "cvss_v2_temporal_score": 0,
           "cvss_v2_temporal_vector": null,
           "description": "Subject Name and Alternative Subject Names do not match domain name. This certificate could be misused.",
           "ignored_by_path": false,
@@ -2672,7 +2672,7 @@ Object {
         Object {
           "cvss_v2_base_score": 5,
           "cvss_v2_base_vector": "AV:N/AC:L/Au:N/C:P/I:N/A:N",
-          "cvss_v2_temporal_score": null,
+          "cvss_v2_temporal_score": 0,
           "cvss_v2_temporal_vector": null,
           "description": "During verification of the service certificate chain, the following errors were detected
 ",
@@ -2692,7 +2692,7 @@ Object {
         Object {
           "cvss_v2_base_score": 5,
           "cvss_v2_base_vector": "AV:N/AC:L/Au:N/C:P/I:N/A:N",
-          "cvss_v2_temporal_score": null,
+          "cvss_v2_temporal_score": 0,
           "cvss_v2_temporal_vector": null,
           "description": "Vulnerability allows MITM attackers, having ability to sniff the network traffic (e.g. in public Wi-Fi networks), to recover some identifiers like HTTPS session cookies transmitted via a 3DES-encrypted connection.
  Successful exploitation of this vulnerability requires a web site to support connections encrypted with the Triple DES symmetric-key block cipher and transmission of huge number of requests via the same session.
@@ -2727,7 +2727,7 @@ Object {
         Object {
           "cvss_v2_base_score": 0,
           "cvss_v2_base_vector": null,
-          "cvss_v2_temporal_score": null,
+          "cvss_v2_temporal_score": 0,
           "cvss_v2_temporal_vector": null,
           "description": "The 'arcfour' is the Arcfour stream cipher. The Arcfour cipher is believed to be compatible with the RC4 cipher. RFC 4253 states that Arcfour (and RC4) has problems with weak keys, and should be used with caution.
  If SSH server is configured to support Cipher Block Chaining (CBC) encryption, this may allow an attacker to recover plaintext data from the ciphertext.",
@@ -2768,7 +2768,7 @@ Object {
         Object {
           "cvss_v2_base_score": 5,
           "cvss_v2_base_vector": "AV:N/AC:L/Au:N/C:N/I:N/A:P",
-          "cvss_v2_temporal_score": null,
+          "cvss_v2_temporal_score": 0,
           "cvss_v2_temporal_vector": null,
           "description": "crypto/rsa/rsa_ameth.c in OpenSSL 1.0.1 before 1.0.1q and 1.0.2 before 1.0.2e allows remote attackers to cause a denial of service (NULL pointer dereference and application crash) via an RSA PSS ASN.1 signature that lacks a mask generation function parameter.",
           "ignored_by_path": false,
@@ -2787,7 +2787,7 @@ Object {
         Object {
           "cvss_v2_base_score": 4.3,
           "cvss_v2_base_vector": "AV:N/AC:M/Au:N/C:N/I:N/A:P",
-          "cvss_v2_temporal_score": null,
+          "cvss_v2_temporal_score": 0,
           "cvss_v2_temporal_vector": null,
           "description": "ssl/s3_clnt.c in OpenSSL 1.0.0 before 1.0.0t, 1.0.1 before 1.0.1p, and 1.0.2 before 1.0.2d, when used for a multi-threaded client, writes the PSK identity hint to an incorrect data structure, which allows remote servers to cause a denial of service (race condition and double free) via a crafted ServerKeyExchange message.",
           "ignored_by_path": false,
@@ -2806,7 +2806,7 @@ Object {
         Object {
           "cvss_v2_base_score": 10,
           "cvss_v2_base_vector": "AV:N/AC:L/Au:N/C:C/I:C/A:C",
-          "cvss_v2_temporal_score": null,
+          "cvss_v2_temporal_score": 0,
           "cvss_v2_temporal_vector": null,
           "description": "A vulnerability in the Secure Sockets Layer (SSL) VPN functionality of the Cisco Adaptive Security Appliance (ASA) Software could allow an unauthenticated, remote attacker to cause a reload of the affected system or to remotely execute code. The vulnerability is due to an attempt to double free a region of memory when the webvpn feature is enabled on the Cisco ASA device. An attacker could exploit this vulnerability by sending multiple, crafted XML packets to a webvpn-configured interface on the affected system. An exploit could allow the attacker to execute arbitrary code and obtain full control of the system, or cause a reload of the affected device. This vulnerability affects Cisco ASA Software that is running on the following Cisco products: 3000 Series Industrial Security Appliance (ISA), ASA 5500 Series Adaptive Security Appliances, ASA 5500-X Series Next-Generation Firewalls, ASA Services Module for Cisco Catalyst 6500 Series Switches and Cisco 7600 Series Routers, ASA 1000V Cloud Firewall, Adaptive Security Virtual Appliance (ASAv), Firepower 2100 Series Security Appliance, Firepower 4110 Security Appliance, Firepower 9300 ASA Security Module, Firepower Threat Defense Software (FTD).",
           "ignored_by_path": false,
@@ -2825,7 +2825,7 @@ Object {
         Object {
           "cvss_v2_base_score": 5,
           "cvss_v2_base_vector": "AV:N/AC:L/Au:N/C:N/I:N/A:P",
-          "cvss_v2_temporal_score": null,
+          "cvss_v2_temporal_score": 0,
           "cvss_v2_temporal_vector": null,
           "description": "A vulnerability in the ingress flow creation functionality of Cisco Adaptive Security Appliance (ASA) could allow an unauthenticated, remote attacker to cause the CPU to increase upwards of 100% utilization, causing a denial of service (DoS) condition on an affected system. The vulnerability is due to incorrect handling of an internal software lock that could prevent other system processes from getting CPU cycles, causing a high CPU condition. An attacker could exploit this vulnerability by sending a steady stream of malicious IP packets that can cause connections to be created on the targeted device. A successful exploit could allow the attacker to exhaust CPU resources, resulting in a DoS condition during which traffic through the device could be delayed. This vulnerability applies to either IPv4 or IPv6 ingress traffic.",
           "ignored_by_path": false,
@@ -2844,7 +2844,7 @@ Object {
         Object {
           "cvss_v2_base_score": 8.5,
           "cvss_v2_base_vector": "AV:N/AC:L/Au:N/C:N/I:P/A:C",
-          "cvss_v2_temporal_score": null,
+          "cvss_v2_temporal_score": 0,
           "cvss_v2_temporal_vector": null,
           "description": "A vulnerability in the Transport Layer Security (TLS) library of Cisco Adaptive Security Appliance (ASA) Software and Cisco Firepower Threat Defense (FTD) Software could allow an unauthenticated, remote attacker to trigger a reload of the affected device, resulting in a denial of service (DoS) condition. The vulnerability is due to insufficient validation of user-supplied input. An attacker could exploit this vulnerability by sending a malicious TLS message to an interface enabled for Secure Layer Socket (SSL) services on an affected device. Messages using SSL Version 3 (SSLv3) or SSL Version 2 (SSLv2) cannot be be used to exploit this vulnerability. An exploit could allow the attacker to cause a buffer underflow, triggering a crash on an affected device.",
           "ignored_by_path": false,
@@ -2863,7 +2863,7 @@ Object {
         Object {
           "cvss_v2_base_score": 8.7,
           "cvss_v2_base_vector": "AV:N/AC:L/Au:S/C:C/I:C/A:P",
-          "cvss_v2_temporal_score": null,
+          "cvss_v2_temporal_score": 0,
           "cvss_v2_temporal_vector": null,
           "description": "A vulnerability in the web interface of the Cisco Adaptive Security Appliance (ASA) could allow an unauthenticated, remote attacker to cause an affected device to reload unexpectedly, resulting in a denial of service (DoS) condition. It is also possible on certain software releases that the ASA will not reload, but an attacker could view sensitive system information without authentication by using directory traversal techniques. The vulnerability is due to lack of proper input validation of the HTTP URL. An attacker could exploit this vulnerability by sending a crafted HTTP request to an affected device. An exploit could allow the attacker to cause a DoS condition or unauthenticated disclosure of information. This vulnerability applies to IPv4 and IPv6 HTTP traffic.",
           "ignored_by_path": false,
@@ -2882,7 +2882,7 @@ Object {
         Object {
           "cvss_v2_base_score": 5,
           "cvss_v2_base_vector": "AV:N/AC:L/Au:N/C:N/I:N/A:P",
-          "cvss_v2_temporal_score": null,
+          "cvss_v2_temporal_score": 0,
           "cvss_v2_temporal_vector": null,
           "description": "A vulnerability in the IPsec driver code of multiple Cisco IOS XE Software platforms and the Cisco ASA 5500-X Series Adaptive Security Appliance (ASA) allows an unauthenticated, remote attacker to cause a denial of service (device reload) by sending malformed IPsec packets to an affected device.",
           "ignored_by_path": false,
@@ -2961,7 +2961,7 @@ Object {
         Object {
           "cvss_v2_base_score": 4.3,
           "cvss_v2_base_vector": "AV:A/AC:M/Au:N/C:P/I:P/A:N",
-          "cvss_v2_temporal_score": null,
+          "cvss_v2_temporal_score": 0,
           "cvss_v2_temporal_vector": null,
           "description": "Протокол HTTP используется для предоставления различных, часто критически важных веб-служб, таких как информационные службы, службы управления устройствами по сети и пр. Протокол HTTP не обеспечивает шифрование данных, в том числе аутентификационных, при передаче их по соединению между клиентом и сервером.
  Так как протокол HTTP не обеспечивает шифрование данных, злоумышленник, прослушивающий HTTP-сессию, сможет получить всю информацию и все учетные данные аутентификации, передаваемые в рамках данной сессии. После этого злоумышленник может попытаться получить доступ к устройству с помощью перехваченных данных аутентификации. В случае успеха атакующий получит доступ к системе в контексте пользователя, чьи учетные данные были использованы. Поскольку протокол HTTP часто применяется для управления сетевыми устройствами, подобная атака может позволить злоумышленнику получить права доступа администратора.",
@@ -2993,7 +2993,7 @@ Object {
         Object {
           "cvss_v2_base_score": 3.6,
           "cvss_v2_base_vector": "AV:N/AC:H/Au:S/C:P/I:P/A:N",
-          "cvss_v2_temporal_score": null,
+          "cvss_v2_temporal_score": 0,
           "cvss_v2_temporal_vector": null,
           "description": "Списки контроля доступа по VTY используются для того, чтобы ограничить круг адресов, с которых могут осуществляться попытки входа на маршрутизатор. Если настроить список контроля доступа для линий VTY, то тем самым будут ограничены источники, с которых пользователь сможет управлять устройством. Необходимо ограничить перечень узлов и/или сетей, которым разрешается подключаться к устройству по определенному протоколу для задания параметров конфигурации устройства. Доступ должен быть разрешен только тем лицам или системам, которые имеют право на администрирование устройства. Например, можно ограничить доступ, определив список разрешенных узлов; таким образом, администраторы сети смогут настраивать устройства, используя только определенные рабочие станции, предназначенные для сетевого управления. Убедитесь, что все линии VTY настроены на использование одного и того же списка контроля доступа.",
           "ignored_by_path": false,
@@ -3006,7 +3006,7 @@ Object {
         Object {
           "cvss_v2_base_score": 2.1,
           "cvss_v2_base_vector": "AV:N/AC:H/Au:S/C:P/I:N/A:N",
-          "cvss_v2_temporal_score": null,
+          "cvss_v2_temporal_score": 0,
           "cvss_v2_temporal_vector": null,
           "description": "Списки контроля доступа по протоколу SNMP используются для того, чтобы ограничить круг адресов, с которых разрешено управлять устройством и следить за его работой по протоколу SNMP. Если списки контроля доступа не используются, то любой пользователь, зная SNMP community string, сможет управлять и следить за маршрутизатором.
  Следует задать список контроля доступа для всех SNMP community string, чтобы доступ к устройству по протоколу SNMP был разрешен только с некоторых рабочих станций, предназначенных для управления устройством и расположенных в соответствующей доверенной зоне.",
@@ -3020,7 +3020,7 @@ Object {
         Object {
           "cvss_v2_base_score": 10,
           "cvss_v2_base_vector": "AV:N/AC:L/Au:N/C:C/I:C/A:C",
-          "cvss_v2_temporal_score": null,
+          "cvss_v2_temporal_score": 0,
           "cvss_v2_temporal_vector": null,
           "description": "",
           "ignored_by_path": false,
@@ -3033,7 +3033,7 @@ Object {
         Object {
           "cvss_v2_base_score": 7.8,
           "cvss_v2_base_vector": "AV:N/AC:L/Au:N/C:N/I:N/A:C",
-          "cvss_v2_temporal_score": null,
+          "cvss_v2_temporal_score": 0,
           "cvss_v2_temporal_vector": null,
           "description": "Уязвимость в реализации клиента Smart Install для Cisco IOS и IOS XE позволяет злоумышленникам, действующим удаленно, вызвать отказ в обслуживании (перезагрузку устройства), используя специально сформированные параметры списка образов в пакете Smart Install.",
           "ignored_by_path": false,
@@ -3081,7 +3081,7 @@ Object {
         Object {
           "cvss_v2_base_score": 7.8,
           "cvss_v2_base_vector": "AV:N/AC:L/Au:N/C:N/I:N/A:C",
-          "cvss_v2_temporal_score": null,
+          "cvss_v2_temporal_score": 0,
           "cvss_v2_temporal_vector": null,
           "description": "Уязвимость в клиенте Smart Install в Cisco IOS коммутаторов Catalyst позволяет злоумышленникам, действующим удаленно, вызвать отказ в обслуживании (перезагрузку устройства) при помощи специально сформированных параметров списка образов в пакетах Smart Install.",
           "ignored_by_path": false,
@@ -3118,7 +3118,7 @@ Object {
         Object {
           "cvss_v2_base_score": 4.3,
           "cvss_v2_base_vector": "AV:A/AC:M/Au:N/C:P/I:P/A:N",
-          "cvss_v2_temporal_score": null,
+          "cvss_v2_temporal_score": 0,
           "cvss_v2_temporal_vector": null,
           "description": "В версии 1 протокола SSH были обнаружены недостатки, как в алгоритмах шифрования, так и в программах, которые его используют. Таким образом, если для управления устройством используется сервис SSH, установите версию 2.",
           "ignored_by_path": false,
@@ -3173,7 +3173,7 @@ Object {
         Object {
           "cvss_v2_base_score": 4.3,
           "cvss_v2_base_vector": "AV:A/AC:M/Au:N/C:P/I:P/A:N",
-          "cvss_v2_temporal_score": null,
+          "cvss_v2_temporal_score": 0,
           "cvss_v2_temporal_vector": null,
           "description": "Протокол HTTP используется для предоставления различных, часто критически важных веб-служб, таких как информационные службы, службы управления устройствами по сети и пр. Протокол HTTP не обеспечивает шифрование данных, в том числе аутентификационных, при передаче их по соединению между клиентом и сервером.
  Так как протокол HTTP не обеспечивает шифрование данных, злоумышленник, прослушивающий HTTP-сессию, сможет получить всю информацию и все учетные данные аутентификации, передаваемые в рамках данной сессии. После этого злоумышленник может попытаться получить доступ к устройству с помощью перехваченных данных аутентификации. В случае успеха атакующий получит доступ к системе в контексте пользователя, чьи учетные данные были использованы. Поскольку протокол HTTP часто применяется для управления сетевыми устройствами, подобная атака может позволить злоумышленнику получить права доступа администратора.",
@@ -3205,7 +3205,7 @@ Object {
         Object {
           "cvss_v2_base_score": 3.6,
           "cvss_v2_base_vector": "AV:N/AC:H/Au:S/C:P/I:P/A:N",
-          "cvss_v2_temporal_score": null,
+          "cvss_v2_temporal_score": 0,
           "cvss_v2_temporal_vector": null,
           "description": "Списки контроля доступа по VTY используются для того, чтобы ограничить круг адресов, с которых могут осуществляться попытки входа на маршрутизатор. Если настроить список контроля доступа для линий VTY, то тем самым будут ограничены источники, с которых пользователь сможет управлять устройством. Необходимо ограничить перечень узлов и/или сетей, которым разрешается подключаться к устройству по определенному протоколу для задания параметров конфигурации устройства. Доступ должен быть разрешен только тем лицам или системам, которые имеют право на администрирование устройства. Например, можно ограничить доступ, определив список разрешенных узлов; таким образом, администраторы сети смогут настраивать устройства, используя только определенные рабочие станции, предназначенные для сетевого управления. Убедитесь, что все линии VTY настроены на использование одного и того же списка контроля доступа.",
           "ignored_by_path": false,
@@ -3218,7 +3218,7 @@ Object {
         Object {
           "cvss_v2_base_score": 2.1,
           "cvss_v2_base_vector": "AV:N/AC:H/Au:S/C:P/I:N/A:N",
-          "cvss_v2_temporal_score": null,
+          "cvss_v2_temporal_score": 0,
           "cvss_v2_temporal_vector": null,
           "description": "Списки контроля доступа по протоколу SNMP используются для того, чтобы ограничить круг адресов, с которых разрешено управлять устройством и следить за его работой по протоколу SNMP. Если списки контроля доступа не используются, то любой пользователь, зная SNMP community string, сможет управлять и следить за маршрутизатором.
  Следует задать список контроля доступа для всех SNMP community string, чтобы доступ к устройству по протоколу SNMP был разрешен только с некоторых рабочих станций, предназначенных для управления устройством и расположенных в соответствующей доверенной зоне.",
@@ -3232,7 +3232,7 @@ Object {
         Object {
           "cvss_v2_base_score": 10,
           "cvss_v2_base_vector": "AV:N/AC:L/Au:N/C:C/I:C/A:C",
-          "cvss_v2_temporal_score": null,
+          "cvss_v2_temporal_score": 0,
           "cvss_v2_temporal_vector": null,
           "description": "",
           "ignored_by_path": false,
@@ -3245,7 +3245,7 @@ Object {
         Object {
           "cvss_v2_base_score": 7.8,
           "cvss_v2_base_vector": "AV:N/AC:L/Au:N/C:N/I:N/A:C",
-          "cvss_v2_temporal_score": null,
+          "cvss_v2_temporal_score": 0,
           "cvss_v2_temporal_vector": null,
           "description": "Уязвимость в реализации клиента Smart Install для Cisco IOS и IOS XE позволяет злоумышленникам, действующим удаленно, вызвать отказ в обслуживании (перезагрузку устройства), используя специально сформированные параметры списка образов в пакете Smart Install.",
           "ignored_by_path": false,
@@ -3293,7 +3293,7 @@ Object {
         Object {
           "cvss_v2_base_score": 7.8,
           "cvss_v2_base_vector": "AV:N/AC:L/Au:N/C:N/I:N/A:C",
-          "cvss_v2_temporal_score": null,
+          "cvss_v2_temporal_score": 0,
           "cvss_v2_temporal_vector": null,
           "description": "Уязвимость в клиенте Smart Install в Cisco IOS коммутаторов Catalyst позволяет злоумышленникам, действующим удаленно, вызвать отказ в обслуживании (перезагрузку устройства) при помощи специально сформированных параметров списка образов в пакетах Smart Install.",
           "ignored_by_path": false,
@@ -3346,7 +3346,7 @@ Object {
         Object {
           "cvss_v2_base_score": 4.3,
           "cvss_v2_base_vector": "AV:A/AC:M/Au:N/C:P/I:P/A:N",
-          "cvss_v2_temporal_score": null,
+          "cvss_v2_temporal_score": 0,
           "cvss_v2_temporal_vector": null,
           "description": "В версии 1 протокола SSH были обнаружены недостатки, как в алгоритмах шифрования, так и в программах, которые его используют. Таким образом, если для управления устройством используется сервис SSH, установите версию 2.",
           "ignored_by_path": false,
@@ -3391,7 +3391,7 @@ Object {
         Object {
           "cvss_v2_base_score": 4.3,
           "cvss_v2_base_vector": "AV:A/AC:M/Au:N/C:P/I:P/A:N",
-          "cvss_v2_temporal_score": null,
+          "cvss_v2_temporal_score": 0,
           "cvss_v2_temporal_vector": null,
           "description": "Протокол HTTP используется для предоставления различных, часто критически важных веб-служб, таких как информационные службы, службы управления устройствами по сети и пр. Протокол HTTP не обеспечивает шифрование данных, в том числе аутентификационных, при передаче их по соединению между клиентом и сервером.
  Так как протокол HTTP не обеспечивает шифрование данных, злоумышленник, прослушивающий HTTP-сессию, сможет получить всю информацию и все учетные данные аутентификации, передаваемые в рамках данной сессии. После этого злоумышленник может попытаться получить доступ к устройству с помощью перехваченных данных аутентификации. В случае успеха атакующий получит доступ к системе в контексте пользователя, чьи учетные данные были использованы. Поскольку протокол HTTP часто применяется для управления сетевыми устройствами, подобная атака может позволить злоумышленнику получить права доступа администратора.",
@@ -3423,7 +3423,7 @@ Object {
         Object {
           "cvss_v2_base_score": 3.6,
           "cvss_v2_base_vector": "AV:N/AC:H/Au:S/C:P/I:P/A:N",
-          "cvss_v2_temporal_score": null,
+          "cvss_v2_temporal_score": 0,
           "cvss_v2_temporal_vector": null,
           "description": "Списки контроля доступа по VTY используются для того, чтобы ограничить круг адресов, с которых могут осуществляться попытки входа на маршрутизатор. Если настроить список контроля доступа для линий VTY, то тем самым будут ограничены источники, с которых пользователь сможет управлять устройством. Необходимо ограничить перечень узлов и/или сетей, которым разрешается подключаться к устройству по определенному протоколу для задания параметров конфигурации устройства. Доступ должен быть разрешен только тем лицам или системам, которые имеют право на администрирование устройства. Например, можно ограничить доступ, определив список разрешенных узлов; таким образом, администраторы сети смогут настраивать устройства, используя только определенные рабочие станции, предназначенные для сетевого управления. Убедитесь, что все линии VTY настроены на использование одного и того же списка контроля доступа.",
           "ignored_by_path": false,
@@ -3436,7 +3436,7 @@ Object {
         Object {
           "cvss_v2_base_score": 2.1,
           "cvss_v2_base_vector": "AV:N/AC:H/Au:S/C:P/I:N/A:N",
-          "cvss_v2_temporal_score": null,
+          "cvss_v2_temporal_score": 0,
           "cvss_v2_temporal_vector": null,
           "description": "Списки контроля доступа по протоколу SNMP используются для того, чтобы ограничить круг адресов, с которых разрешено управлять устройством и следить за его работой по протоколу SNMP. Если списки контроля доступа не используются, то любой пользователь, зная SNMP community string, сможет управлять и следить за маршрутизатором.
  Следует задать список контроля доступа для всех SNMP community string, чтобы доступ к устройству по протоколу SNMP был разрешен только с некоторых рабочих станций, предназначенных для управления устройством и расположенных в соответствующей доверенной зоне.",
@@ -3450,7 +3450,7 @@ Object {
         Object {
           "cvss_v2_base_score": 10,
           "cvss_v2_base_vector": "AV:N/AC:L/Au:N/C:C/I:C/A:C",
-          "cvss_v2_temporal_score": null,
+          "cvss_v2_temporal_score": 0,
           "cvss_v2_temporal_vector": null,
           "description": "",
           "ignored_by_path": false,
@@ -3463,7 +3463,7 @@ Object {
         Object {
           "cvss_v2_base_score": 7.8,
           "cvss_v2_base_vector": "AV:N/AC:L/Au:N/C:N/I:N/A:C",
-          "cvss_v2_temporal_score": null,
+          "cvss_v2_temporal_score": 0,
           "cvss_v2_temporal_vector": null,
           "description": "Уязвимость в реализации клиента Smart Install для Cisco IOS и IOS XE позволяет злоумышленникам, действующим удаленно, вызвать отказ в обслуживании (перезагрузку устройства), используя специально сформированные параметры списка образов в пакете Smart Install.",
           "ignored_by_path": false,
@@ -3511,7 +3511,7 @@ Object {
         Object {
           "cvss_v2_base_score": 7.8,
           "cvss_v2_base_vector": "AV:N/AC:L/Au:N/C:N/I:N/A:C",
-          "cvss_v2_temporal_score": null,
+          "cvss_v2_temporal_score": 0,
           "cvss_v2_temporal_vector": null,
           "description": "Уязвимость в клиенте Smart Install в Cisco IOS коммутаторов Catalyst позволяет злоумышленникам, действующим удаленно, вызвать отказ в обслуживании (перезагрузку устройства) при помощи специально сформированных параметров списка образов в пакетах Smart Install.",
           "ignored_by_path": false,
@@ -3548,7 +3548,7 @@ Object {
         Object {
           "cvss_v2_base_score": 4.3,
           "cvss_v2_base_vector": "AV:A/AC:M/Au:N/C:P/I:P/A:N",
-          "cvss_v2_temporal_score": null,
+          "cvss_v2_temporal_score": 0,
           "cvss_v2_temporal_vector": null,
           "description": "В версии 1 протокола SSH были обнаружены недостатки, как в алгоритмах шифрования, так и в программах, которые его используют. Таким образом, если для управления устройством используется сервис SSH, установите версию 2.",
           "ignored_by_path": false,
@@ -3603,7 +3603,7 @@ Object {
         Object {
           "cvss_v2_base_score": 4.3,
           "cvss_v2_base_vector": "AV:A/AC:M/Au:N/C:P/I:P/A:N",
-          "cvss_v2_temporal_score": null,
+          "cvss_v2_temporal_score": 0,
           "cvss_v2_temporal_vector": null,
           "description": "Протокол HTTP используется для предоставления различных, часто критически важных веб-служб, таких как информационные службы, службы управления устройствами по сети и пр. Протокол HTTP не обеспечивает шифрование данных, в том числе аутентификационных, при передаче их по соединению между клиентом и сервером.
  Так как протокол HTTP не обеспечивает шифрование данных, злоумышленник, прослушивающий HTTP-сессию, сможет получить всю информацию и все учетные данные аутентификации, передаваемые в рамках данной сессии. После этого злоумышленник может попытаться получить доступ к устройству с помощью перехваченных данных аутентификации. В случае успеха атакующий получит доступ к системе в контексте пользователя, чьи учетные данные были использованы. Поскольку протокол HTTP часто применяется для управления сетевыми устройствами, подобная атака может позволить злоумышленнику получить права доступа администратора.",
@@ -3635,7 +3635,7 @@ Object {
         Object {
           "cvss_v2_base_score": 3.6,
           "cvss_v2_base_vector": "AV:N/AC:H/Au:S/C:P/I:P/A:N",
-          "cvss_v2_temporal_score": null,
+          "cvss_v2_temporal_score": 0,
           "cvss_v2_temporal_vector": null,
           "description": "Списки контроля доступа по VTY используются для того, чтобы ограничить круг адресов, с которых могут осуществляться попытки входа на маршрутизатор. Если настроить список контроля доступа для линий VTY, то тем самым будут ограничены источники, с которых пользователь сможет управлять устройством. Необходимо ограничить перечень узлов и/или сетей, которым разрешается подключаться к устройству по определенному протоколу для задания параметров конфигурации устройства. Доступ должен быть разрешен только тем лицам или системам, которые имеют право на администрирование устройства. Например, можно ограничить доступ, определив список разрешенных узлов; таким образом, администраторы сети смогут настраивать устройства, используя только определенные рабочие станции, предназначенные для сетевого управления. Убедитесь, что все линии VTY настроены на использование одного и того же списка контроля доступа.",
           "ignored_by_path": false,
@@ -3648,7 +3648,7 @@ Object {
         Object {
           "cvss_v2_base_score": 2.1,
           "cvss_v2_base_vector": "AV:N/AC:H/Au:S/C:P/I:N/A:N",
-          "cvss_v2_temporal_score": null,
+          "cvss_v2_temporal_score": 0,
           "cvss_v2_temporal_vector": null,
           "description": "Списки контроля доступа по протоколу SNMP используются для того, чтобы ограничить круг адресов, с которых разрешено управлять устройством и следить за его работой по протоколу SNMP. Если списки контроля доступа не используются, то любой пользователь, зная SNMP community string, сможет управлять и следить за маршрутизатором.
  Следует задать список контроля доступа для всех SNMP community string, чтобы доступ к устройству по протоколу SNMP был разрешен только с некоторых рабочих станций, предназначенных для управления устройством и расположенных в соответствующей доверенной зоне.",
@@ -3662,7 +3662,7 @@ Object {
         Object {
           "cvss_v2_base_score": 10,
           "cvss_v2_base_vector": "AV:N/AC:L/Au:N/C:C/I:C/A:C",
-          "cvss_v2_temporal_score": null,
+          "cvss_v2_temporal_score": 0,
           "cvss_v2_temporal_vector": null,
           "description": "",
           "ignored_by_path": false,
@@ -3675,7 +3675,7 @@ Object {
         Object {
           "cvss_v2_base_score": 7.8,
           "cvss_v2_base_vector": "AV:N/AC:L/Au:N/C:N/I:N/A:C",
-          "cvss_v2_temporal_score": null,
+          "cvss_v2_temporal_score": 0,
           "cvss_v2_temporal_vector": null,
           "description": "Уязвимость в реализации клиента Smart Install для Cisco IOS и IOS XE позволяет злоумышленникам, действующим удаленно, вызвать отказ в обслуживании (перезагрузку устройства), используя специально сформированные параметры списка образов в пакете Smart Install.",
           "ignored_by_path": false,
@@ -3723,7 +3723,7 @@ Object {
         Object {
           "cvss_v2_base_score": 7.8,
           "cvss_v2_base_vector": "AV:N/AC:L/Au:N/C:N/I:N/A:C",
-          "cvss_v2_temporal_score": null,
+          "cvss_v2_temporal_score": 0,
           "cvss_v2_temporal_vector": null,
           "description": "Уязвимость в клиенте Smart Install в Cisco IOS коммутаторов Catalyst позволяет злоумышленникам, действующим удаленно, вызвать отказ в обслуживании (перезагрузку устройства) при помощи специально сформированных параметров списка образов в пакетах Smart Install.",
           "ignored_by_path": false,
@@ -3760,7 +3760,7 @@ Object {
         Object {
           "cvss_v2_base_score": 4.3,
           "cvss_v2_base_vector": "AV:A/AC:M/Au:N/C:P/I:P/A:N",
-          "cvss_v2_temporal_score": null,
+          "cvss_v2_temporal_score": 0,
           "cvss_v2_temporal_vector": null,
           "description": "В версии 1 протокола SSH были обнаружены недостатки, как в алгоритмах шифрования, так и в программах, которые его используют. Таким образом, если для управления устройством используется сервис SSH, установите версию 2.",
           "ignored_by_path": false,
@@ -3815,7 +3815,7 @@ Object {
         Object {
           "cvss_v2_base_score": 4.3,
           "cvss_v2_base_vector": "AV:A/AC:M/Au:N/C:P/I:P/A:N",
-          "cvss_v2_temporal_score": null,
+          "cvss_v2_temporal_score": 0,
           "cvss_v2_temporal_vector": null,
           "description": "Протокол HTTP используется для предоставления различных, часто критически важных веб-служб, таких как информационные службы, службы управления устройствами по сети и пр. Протокол HTTP не обеспечивает шифрование данных, в том числе аутентификационных, при передаче их по соединению между клиентом и сервером.
  Так как протокол HTTP не обеспечивает шифрование данных, злоумышленник, прослушивающий HTTP-сессию, сможет получить всю информацию и все учетные данные аутентификации, передаваемые в рамках данной сессии. После этого злоумышленник может попытаться получить доступ к устройству с помощью перехваченных данных аутентификации. В случае успеха атакующий получит доступ к системе в контексте пользователя, чьи учетные данные были использованы. Поскольку протокол HTTP часто применяется для управления сетевыми устройствами, подобная атака может позволить злоумышленнику получить права доступа администратора.",
@@ -3847,7 +3847,7 @@ Object {
         Object {
           "cvss_v2_base_score": 3.6,
           "cvss_v2_base_vector": "AV:N/AC:H/Au:S/C:P/I:P/A:N",
-          "cvss_v2_temporal_score": null,
+          "cvss_v2_temporal_score": 0,
           "cvss_v2_temporal_vector": null,
           "description": "Списки контроля доступа по VTY используются для того, чтобы ограничить круг адресов, с которых могут осуществляться попытки входа на маршрутизатор. Если настроить список контроля доступа для линий VTY, то тем самым будут ограничены источники, с которых пользователь сможет управлять устройством. Необходимо ограничить перечень узлов и/или сетей, которым разрешается подключаться к устройству по определенному протоколу для задания параметров конфигурации устройства. Доступ должен быть разрешен только тем лицам или системам, которые имеют право на администрирование устройства. Например, можно ограничить доступ, определив список разрешенных узлов; таким образом, администраторы сети смогут настраивать устройства, используя только определенные рабочие станции, предназначенные для сетевого управления. Убедитесь, что все линии VTY настроены на использование одного и того же списка контроля доступа.",
           "ignored_by_path": false,
@@ -3860,7 +3860,7 @@ Object {
         Object {
           "cvss_v2_base_score": 2.1,
           "cvss_v2_base_vector": "AV:N/AC:H/Au:S/C:P/I:N/A:N",
-          "cvss_v2_temporal_score": null,
+          "cvss_v2_temporal_score": 0,
           "cvss_v2_temporal_vector": null,
           "description": "Списки контроля доступа по протоколу SNMP используются для того, чтобы ограничить круг адресов, с которых разрешено управлять устройством и следить за его работой по протоколу SNMP. Если списки контроля доступа не используются, то любой пользователь, зная SNMP community string, сможет управлять и следить за маршрутизатором.
  Следует задать список контроля доступа для всех SNMP community string, чтобы доступ к устройству по протоколу SNMP был разрешен только с некоторых рабочих станций, предназначенных для управления устройством и расположенных в соответствующей доверенной зоне.",
@@ -3874,7 +3874,7 @@ Object {
         Object {
           "cvss_v2_base_score": 10,
           "cvss_v2_base_vector": "AV:N/AC:L/Au:N/C:C/I:C/A:C",
-          "cvss_v2_temporal_score": null,
+          "cvss_v2_temporal_score": 0,
           "cvss_v2_temporal_vector": null,
           "description": "",
           "ignored_by_path": false,
@@ -3887,7 +3887,7 @@ Object {
         Object {
           "cvss_v2_base_score": 7.8,
           "cvss_v2_base_vector": "AV:N/AC:L/Au:N/C:N/I:N/A:C",
-          "cvss_v2_temporal_score": null,
+          "cvss_v2_temporal_score": 0,
           "cvss_v2_temporal_vector": null,
           "description": "Уязвимость в реализации клиента Smart Install для Cisco IOS и IOS XE позволяет злоумышленникам, действующим удаленно, вызвать отказ в обслуживании (перезагрузку устройства), используя специально сформированные параметры списка образов в пакете Smart Install.",
           "ignored_by_path": false,
@@ -3935,7 +3935,7 @@ Object {
         Object {
           "cvss_v2_base_score": 7.8,
           "cvss_v2_base_vector": "AV:N/AC:L/Au:N/C:N/I:N/A:C",
-          "cvss_v2_temporal_score": null,
+          "cvss_v2_temporal_score": 0,
           "cvss_v2_temporal_vector": null,
           "description": "Уязвимость в клиенте Smart Install в Cisco IOS коммутаторов Catalyst позволяет злоумышленникам, действующим удаленно, вызвать отказ в обслуживании (перезагрузку устройства) при помощи специально сформированных параметров списка образов в пакетах Smart Install.",
           "ignored_by_path": false,
@@ -3972,7 +3972,7 @@ Object {
         Object {
           "cvss_v2_base_score": 4.3,
           "cvss_v2_base_vector": "AV:A/AC:M/Au:N/C:P/I:P/A:N",
-          "cvss_v2_temporal_score": null,
+          "cvss_v2_temporal_score": 0,
           "cvss_v2_temporal_vector": null,
           "description": "В версии 1 протокола SSH были обнаружены недостатки, как в алгоритмах шифрования, так и в программах, которые его используют. Таким образом, если для управления устройством используется сервис SSH, установите версию 2.",
           "ignored_by_path": false,
@@ -4017,7 +4017,7 @@ Object {
         Object {
           "cvss_v2_base_score": 4.3,
           "cvss_v2_base_vector": "AV:A/AC:M/Au:N/C:P/I:P/A:N",
-          "cvss_v2_temporal_score": null,
+          "cvss_v2_temporal_score": 0,
           "cvss_v2_temporal_vector": null,
           "description": "Протокол HTTP используется для предоставления различных, часто критически важных веб-служб, таких как информационные службы, службы управления устройствами по сети и пр. Протокол HTTP не обеспечивает шифрование данных, в том числе аутентификационных, при передаче их по соединению между клиентом и сервером.
  Так как протокол HTTP не обеспечивает шифрование данных, злоумышленник, прослушивающий HTTP-сессию, сможет получить всю информацию и все учетные данные аутентификации, передаваемые в рамках данной сессии. После этого злоумышленник может попытаться получить доступ к устройству с помощью перехваченных данных аутентификации. В случае успеха атакующий получит доступ к системе в контексте пользователя, чьи учетные данные были использованы. Поскольку протокол HTTP часто применяется для управления сетевыми устройствами, подобная атака может позволить злоумышленнику получить права доступа администратора.",
@@ -4049,7 +4049,7 @@ Object {
         Object {
           "cvss_v2_base_score": 3.6,
           "cvss_v2_base_vector": "AV:N/AC:H/Au:S/C:P/I:P/A:N",
-          "cvss_v2_temporal_score": null,
+          "cvss_v2_temporal_score": 0,
           "cvss_v2_temporal_vector": null,
           "description": "Списки контроля доступа по VTY используются для того, чтобы ограничить круг адресов, с которых могут осуществляться попытки входа на маршрутизатор. Если настроить список контроля доступа для линий VTY, то тем самым будут ограничены источники, с которых пользователь сможет управлять устройством. Необходимо ограничить перечень узлов и/или сетей, которым разрешается подключаться к устройству по определенному протоколу для задания параметров конфигурации устройства. Доступ должен быть разрешен только тем лицам или системам, которые имеют право на администрирование устройства. Например, можно ограничить доступ, определив список разрешенных узлов; таким образом, администраторы сети смогут настраивать устройства, используя только определенные рабочие станции, предназначенные для сетевого управления. Убедитесь, что все линии VTY настроены на использование одного и того же списка контроля доступа.",
           "ignored_by_path": false,
@@ -4062,7 +4062,7 @@ Object {
         Object {
           "cvss_v2_base_score": 2.1,
           "cvss_v2_base_vector": "AV:N/AC:H/Au:S/C:P/I:N/A:N",
-          "cvss_v2_temporal_score": null,
+          "cvss_v2_temporal_score": 0,
           "cvss_v2_temporal_vector": null,
           "description": "Списки контроля доступа по протоколу SNMP используются для того, чтобы ограничить круг адресов, с которых разрешено управлять устройством и следить за его работой по протоколу SNMP. Если списки контроля доступа не используются, то любой пользователь, зная SNMP community string, сможет управлять и следить за маршрутизатором.
  Следует задать список контроля доступа для всех SNMP community string, чтобы доступ к устройству по протоколу SNMP был разрешен только с некоторых рабочих станций, предназначенных для управления устройством и расположенных в соответствующей доверенной зоне.",
@@ -4076,7 +4076,7 @@ Object {
         Object {
           "cvss_v2_base_score": 10,
           "cvss_v2_base_vector": "AV:N/AC:L/Au:N/C:C/I:C/A:C",
-          "cvss_v2_temporal_score": null,
+          "cvss_v2_temporal_score": 0,
           "cvss_v2_temporal_vector": null,
           "description": "",
           "ignored_by_path": false,
@@ -4089,7 +4089,7 @@ Object {
         Object {
           "cvss_v2_base_score": 7.8,
           "cvss_v2_base_vector": "AV:N/AC:L/Au:N/C:N/I:N/A:C",
-          "cvss_v2_temporal_score": null,
+          "cvss_v2_temporal_score": 0,
           "cvss_v2_temporal_vector": null,
           "description": "Уязвимость в реализации клиента Smart Install для Cisco IOS и IOS XE позволяет злоумышленникам, действующим удаленно, вызвать отказ в обслуживании (перезагрузку устройства), используя специально сформированные параметры списка образов в пакете Smart Install.",
           "ignored_by_path": false,
@@ -4167,7 +4167,7 @@ Object {
         Object {
           "cvss_v2_base_score": 4.6,
           "cvss_v2_base_vector": "AV:L/AC:L/Au:N/C:P/I:P/A:P",
-          "cvss_v2_temporal_score": null,
+          "cvss_v2_temporal_score": 0,
           "cvss_v2_temporal_vector": null,
           "description": "Устройство настроено так, что для доступа по некоторым линиям не используется аутентификация. Такие параметры позволяют злоумышленнику, локально изменить конфигурацию, перезагрузить или выключить устройство подключившись к нему без ввода каких-либо данных (логин/пароль).",
           "ignored_by_path": false,
@@ -4212,7 +4212,7 @@ Object {
         Object {
           "cvss_v2_base_score": 4.3,
           "cvss_v2_base_vector": "AV:A/AC:M/Au:N/C:P/I:P/A:N",
-          "cvss_v2_temporal_score": null,
+          "cvss_v2_temporal_score": 0,
           "cvss_v2_temporal_vector": null,
           "description": "Протокол HTTP используется для предоставления различных, часто критически важных веб-служб, таких как информационные службы, службы управления устройствами по сети и пр. Протокол HTTP не обеспечивает шифрование данных, в том числе аутентификационных, при передаче их по соединению между клиентом и сервером.
  Так как протокол HTTP не обеспечивает шифрование данных, злоумышленник, прослушивающий HTTP-сессию, сможет получить всю информацию и все учетные данные аутентификации, передаваемые в рамках данной сессии. После этого злоумышленник может попытаться получить доступ к устройству с помощью перехваченных данных аутентификации. В случае успеха атакующий получит доступ к системе в контексте пользователя, чьи учетные данные были использованы. Поскольку протокол HTTP часто применяется для управления сетевыми устройствами, подобная атака может позволить злоумышленнику получить права доступа администратора.",
@@ -4244,7 +4244,7 @@ Object {
         Object {
           "cvss_v2_base_score": 3.6,
           "cvss_v2_base_vector": "AV:N/AC:H/Au:S/C:P/I:P/A:N",
-          "cvss_v2_temporal_score": null,
+          "cvss_v2_temporal_score": 0,
           "cvss_v2_temporal_vector": null,
           "description": "Списки контроля доступа по VTY используются для того, чтобы ограничить круг адресов, с которых могут осуществляться попытки входа на маршрутизатор. Если настроить список контроля доступа для линий VTY, то тем самым будут ограничены источники, с которых пользователь сможет управлять устройством. Необходимо ограничить перечень узлов и/или сетей, которым разрешается подключаться к устройству по определенному протоколу для задания параметров конфигурации устройства. Доступ должен быть разрешен только тем лицам или системам, которые имеют право на администрирование устройства. Например, можно ограничить доступ, определив список разрешенных узлов; таким образом, администраторы сети смогут настраивать устройства, используя только определенные рабочие станции, предназначенные для сетевого управления. Убедитесь, что все линии VTY настроены на использование одного и того же списка контроля доступа.",
           "ignored_by_path": false,
@@ -4257,7 +4257,7 @@ Object {
         Object {
           "cvss_v2_base_score": 2.1,
           "cvss_v2_base_vector": "AV:N/AC:H/Au:S/C:P/I:N/A:N",
-          "cvss_v2_temporal_score": null,
+          "cvss_v2_temporal_score": 0,
           "cvss_v2_temporal_vector": null,
           "description": "Списки контроля доступа по протоколу SNMP используются для того, чтобы ограничить круг адресов, с которых разрешено управлять устройством и следить за его работой по протоколу SNMP. Если списки контроля доступа не используются, то любой пользователь, зная SNMP community string, сможет управлять и следить за маршрутизатором.
  Следует задать список контроля доступа для всех SNMP community string, чтобы доступ к устройству по протоколу SNMP был разрешен только с некоторых рабочих станций, предназначенных для управления устройством и расположенных в соответствующей доверенной зоне.",
@@ -4271,7 +4271,7 @@ Object {
         Object {
           "cvss_v2_base_score": 10,
           "cvss_v2_base_vector": "AV:N/AC:L/Au:N/C:C/I:C/A:C",
-          "cvss_v2_temporal_score": null,
+          "cvss_v2_temporal_score": 0,
           "cvss_v2_temporal_vector": null,
           "description": "",
           "ignored_by_path": false,
@@ -4284,7 +4284,7 @@ Object {
         Object {
           "cvss_v2_base_score": 7.8,
           "cvss_v2_base_vector": "AV:N/AC:L/Au:N/C:N/I:N/A:C",
-          "cvss_v2_temporal_score": null,
+          "cvss_v2_temporal_score": 0,
           "cvss_v2_temporal_vector": null,
           "description": "Уязвимость в реализации клиента Smart Install для Cisco IOS и IOS XE позволяет злоумышленникам, действующим удаленно, вызвать отказ в обслуживании (перезагрузку устройства), используя специально сформированные параметры списка образов в пакете Smart Install.",
           "ignored_by_path": false,
@@ -4378,7 +4378,7 @@ Object {
         Object {
           "cvss_v2_base_score": 4.3,
           "cvss_v2_base_vector": "AV:A/AC:M/Au:N/C:P/I:P/A:N",
-          "cvss_v2_temporal_score": null,
+          "cvss_v2_temporal_score": 0,
           "cvss_v2_temporal_vector": null,
           "description": "В версии 1 протокола SSH были обнаружены недостатки, как в алгоритмах шифрования, так и в программах, которые его используют. Таким образом, если для управления устройством используется сервис SSH, установите версию 2.",
           "ignored_by_path": false,
@@ -4391,7 +4391,7 @@ Object {
         Object {
           "cvss_v2_base_score": 3.6,
           "cvss_v2_base_vector": "AV:L/AC:L/Au:N/C:P/I:P/A:N",
-          "cvss_v2_temporal_score": null,
+          "cvss_v2_temporal_score": 0,
           "cvss_v2_temporal_vector": null,
           "description": "В сетях ЛВС рекомендуется закрепить каждый узел за отдельным портом коммутатора.
  Если это правило не соблюдается, возможно возникновение следующих ситуаций:
@@ -4408,7 +4408,7 @@ Object {
         Object {
           "cvss_v2_base_score": 4.6,
           "cvss_v2_base_vector": "AV:L/AC:L/Au:N/C:P/I:P/A:P",
-          "cvss_v2_temporal_score": null,
+          "cvss_v2_temporal_score": 0,
           "cvss_v2_temporal_vector": null,
           "description": "Устройство настроено так, что для доступа по некоторым линиям не используется аутентификация. Такие параметры позволяют злоумышленнику, локально изменить конфигурацию, перезагрузить или выключить устройство подключившись к нему без ввода каких-либо данных (логин/пароль).",
           "ignored_by_path": false,
@@ -4473,7 +4473,7 @@ Object {
         Object {
           "cvss_v2_base_score": 4.3,
           "cvss_v2_base_vector": "AV:A/AC:M/Au:N/C:P/I:P/A:N",
-          "cvss_v2_temporal_score": null,
+          "cvss_v2_temporal_score": 0,
           "cvss_v2_temporal_vector": null,
           "description": "Протокол HTTP используется для предоставления различных, часто критически важных веб-служб, таких как информационные службы, службы управления устройствами по сети и пр. Протокол HTTP не обеспечивает шифрование данных, в том числе аутентификационных, при передаче их по соединению между клиентом и сервером.
  Так как протокол HTTP не обеспечивает шифрование данных, злоумышленник, прослушивающий HTTP-сессию, сможет получить всю информацию и все учетные данные аутентификации, передаваемые в рамках данной сессии. После этого злоумышленник может попытаться получить доступ к устройству с помощью перехваченных данных аутентификации. В случае успеха атакующий получит доступ к системе в контексте пользователя, чьи учетные данные были использованы. Поскольку протокол HTTP часто применяется для управления сетевыми устройствами, подобная атака может позволить злоумышленнику получить права доступа администратора.",
@@ -4505,7 +4505,7 @@ Object {
         Object {
           "cvss_v2_base_score": 3.6,
           "cvss_v2_base_vector": "AV:N/AC:H/Au:S/C:P/I:P/A:N",
-          "cvss_v2_temporal_score": null,
+          "cvss_v2_temporal_score": 0,
           "cvss_v2_temporal_vector": null,
           "description": "Списки контроля доступа по VTY используются для того, чтобы ограничить круг адресов, с которых могут осуществляться попытки входа на маршрутизатор. Если настроить список контроля доступа для линий VTY, то тем самым будут ограничены источники, с которых пользователь сможет управлять устройством. Необходимо ограничить перечень узлов и/или сетей, которым разрешается подключаться к устройству по определенному протоколу для задания параметров конфигурации устройства. Доступ должен быть разрешен только тем лицам или системам, которые имеют право на администрирование устройства. Например, можно ограничить доступ, определив список разрешенных узлов; таким образом, администраторы сети смогут настраивать устройства, используя только определенные рабочие станции, предназначенные для сетевого управления. Убедитесь, что все линии VTY настроены на использование одного и того же списка контроля доступа.",
           "ignored_by_path": false,
@@ -4518,7 +4518,7 @@ Object {
         Object {
           "cvss_v2_base_score": 2.1,
           "cvss_v2_base_vector": "AV:N/AC:H/Au:S/C:P/I:N/A:N",
-          "cvss_v2_temporal_score": null,
+          "cvss_v2_temporal_score": 0,
           "cvss_v2_temporal_vector": null,
           "description": "Списки контроля доступа по протоколу SNMP используются для того, чтобы ограничить круг адресов, с которых разрешено управлять устройством и следить за его работой по протоколу SNMP. Если списки контроля доступа не используются, то любой пользователь, зная SNMP community string, сможет управлять и следить за маршрутизатором.
  Следует задать список контроля доступа для всех SNMP community string, чтобы доступ к устройству по протоколу SNMP был разрешен только с некоторых рабочих станций, предназначенных для управления устройством и расположенных в соответствующей доверенной зоне.",
@@ -4532,7 +4532,7 @@ Object {
         Object {
           "cvss_v2_base_score": 10,
           "cvss_v2_base_vector": "AV:N/AC:L/Au:N/C:C/I:C/A:C",
-          "cvss_v2_temporal_score": null,
+          "cvss_v2_temporal_score": 0,
           "cvss_v2_temporal_vector": null,
           "description": "",
           "ignored_by_path": false,
@@ -4545,7 +4545,7 @@ Object {
         Object {
           "cvss_v2_base_score": 7.8,
           "cvss_v2_base_vector": "AV:N/AC:L/Au:N/C:N/I:N/A:C",
-          "cvss_v2_temporal_score": null,
+          "cvss_v2_temporal_score": 0,
           "cvss_v2_temporal_vector": null,
           "description": "Уязвимость в реализации клиента Smart Install для Cisco IOS и IOS XE позволяет злоумышленникам, действующим удаленно, вызвать отказ в обслуживании (перезагрузку устройства), используя специально сформированные параметры списка образов в пакете Smart Install.",
           "ignored_by_path": false,
@@ -4623,7 +4623,7 @@ Object {
         Object {
           "cvss_v2_base_score": 4.3,
           "cvss_v2_base_vector": "AV:A/AC:M/Au:N/C:P/I:P/A:N",
-          "cvss_v2_temporal_score": null,
+          "cvss_v2_temporal_score": 0,
           "cvss_v2_temporal_vector": null,
           "description": "В версии 1 протокола SSH были обнаружены недостатки, как в алгоритмах шифрования, так и в программах, которые его используют. Таким образом, если для управления устройством используется сервис SSH, установите версию 2.",
           "ignored_by_path": false,
@@ -4636,7 +4636,7 @@ Object {
         Object {
           "cvss_v2_base_score": 3.6,
           "cvss_v2_base_vector": "AV:L/AC:L/Au:N/C:P/I:P/A:N",
-          "cvss_v2_temporal_score": null,
+          "cvss_v2_temporal_score": 0,
           "cvss_v2_temporal_vector": null,
           "description": "В сетях ЛВС рекомендуется закрепить каждый узел за отдельным портом коммутатора.
  Если это правило не соблюдается, возможно возникновение следующих ситуаций:
@@ -4685,7 +4685,7 @@ Object {
         Object {
           "cvss_v2_base_score": 4.3,
           "cvss_v2_base_vector": "AV:A/AC:M/Au:N/C:P/I:P/A:N",
-          "cvss_v2_temporal_score": null,
+          "cvss_v2_temporal_score": 0,
           "cvss_v2_temporal_vector": null,
           "description": "Протокол HTTP используется для предоставления различных, часто критически важных веб-служб, таких как информационные службы, службы управления устройствами по сети и пр. Протокол HTTP не обеспечивает шифрование данных, в том числе аутентификационных, при передаче их по соединению между клиентом и сервером.
  Так как протокол HTTP не обеспечивает шифрование данных, злоумышленник, прослушивающий HTTP-сессию, сможет получить всю информацию и все учетные данные аутентификации, передаваемые в рамках данной сессии. После этого злоумышленник может попытаться получить доступ к устройству с помощью перехваченных данных аутентификации. В случае успеха атакующий получит доступ к системе в контексте пользователя, чьи учетные данные были использованы. Поскольку протокол HTTP часто применяется для управления сетевыми устройствами, подобная атака может позволить злоумышленнику получить права доступа администратора.",
@@ -4717,7 +4717,7 @@ Object {
         Object {
           "cvss_v2_base_score": 3.6,
           "cvss_v2_base_vector": "AV:N/AC:H/Au:S/C:P/I:P/A:N",
-          "cvss_v2_temporal_score": null,
+          "cvss_v2_temporal_score": 0,
           "cvss_v2_temporal_vector": null,
           "description": "Списки контроля доступа по VTY используются для того, чтобы ограничить круг адресов, с которых могут осуществляться попытки входа на маршрутизатор. Если настроить список контроля доступа для линий VTY, то тем самым будут ограничены источники, с которых пользователь сможет управлять устройством. Необходимо ограничить перечень узлов и/или сетей, которым разрешается подключаться к устройству по определенному протоколу для задания параметров конфигурации устройства. Доступ должен быть разрешен только тем лицам или системам, которые имеют право на администрирование устройства. Например, можно ограничить доступ, определив список разрешенных узлов; таким образом, администраторы сети смогут настраивать устройства, используя только определенные рабочие станции, предназначенные для сетевого управления. Убедитесь, что все линии VTY настроены на использование одного и того же списка контроля доступа.",
           "ignored_by_path": false,
@@ -4730,7 +4730,7 @@ Object {
         Object {
           "cvss_v2_base_score": 2.1,
           "cvss_v2_base_vector": "AV:N/AC:H/Au:S/C:P/I:N/A:N",
-          "cvss_v2_temporal_score": null,
+          "cvss_v2_temporal_score": 0,
           "cvss_v2_temporal_vector": null,
           "description": "Списки контроля доступа по протоколу SNMP используются для того, чтобы ограничить круг адресов, с которых разрешено управлять устройством и следить за его работой по протоколу SNMP. Если списки контроля доступа не используются, то любой пользователь, зная SNMP community string, сможет управлять и следить за маршрутизатором.
  Следует задать список контроля доступа для всех SNMP community string, чтобы доступ к устройству по протоколу SNMP был разрешен только с некоторых рабочих станций, предназначенных для управления устройством и расположенных в соответствующей доверенной зоне.",
@@ -4744,7 +4744,7 @@ Object {
         Object {
           "cvss_v2_base_score": 10,
           "cvss_v2_base_vector": "AV:N/AC:L/Au:N/C:C/I:C/A:C",
-          "cvss_v2_temporal_score": null,
+          "cvss_v2_temporal_score": 0,
           "cvss_v2_temporal_vector": null,
           "description": "",
           "ignored_by_path": false,
@@ -4757,7 +4757,7 @@ Object {
         Object {
           "cvss_v2_base_score": 7.8,
           "cvss_v2_base_vector": "AV:N/AC:L/Au:N/C:N/I:N/A:C",
-          "cvss_v2_temporal_score": null,
+          "cvss_v2_temporal_score": 0,
           "cvss_v2_temporal_vector": null,
           "description": "Уязвимость в реализации клиента Smart Install для Cisco IOS и IOS XE позволяет злоумышленникам, действующим удаленно, вызвать отказ в обслуживании (перезагрузку устройства), используя специально сформированные параметры списка образов в пакете Smart Install.",
           "ignored_by_path": false,
@@ -4805,7 +4805,7 @@ Object {
         Object {
           "cvss_v2_base_score": 7.8,
           "cvss_v2_base_vector": "AV:N/AC:L/Au:N/C:N/I:N/A:C",
-          "cvss_v2_temporal_score": null,
+          "cvss_v2_temporal_score": 0,
           "cvss_v2_temporal_vector": null,
           "description": "Уязвимости в модуле EnergyWise из Cisco IOS и Cisco IOS XE позволяют злоумышленникам, действующим удаленно, вызвать отказ в обслуживании (переполнение буфера и перезагрузку устройства), отправив специально сформированные пакеты EnergyWise уязвимому устройству. Cisco IOS и Cisco IOS XE поддерживают EnergyWise только для IPv4, поэтому IPv6-пакеты не могут быть использованы для эксплуатации уязвимостей.",
           "ignored_by_path": false,
@@ -4829,7 +4829,7 @@ Object {
         Object {
           "cvss_v2_base_score": 7.8,
           "cvss_v2_base_vector": "AV:N/AC:L/Au:N/C:N/I:N/A:C",
-          "cvss_v2_temporal_score": null,
+          "cvss_v2_temporal_score": 0,
           "cvss_v2_temporal_vector": null,
           "description": "Уязвимости в модуле EnergyWise из Cisco IOS и Cisco IOS XE позволяют злоумышленникам, действующим удаленно, вызвать отказ в обслуживании (переполнение буфера и перезагрузку устройства), отправив специально сформированные пакеты EnergyWise уязвимому устройству. Cisco IOS и Cisco IOS XE поддерживают EnergyWise только для IPv4, поэтому IPv6-пакеты не могут быть использованы для эксплуатации уязвимостей.",
           "ignored_by_path": false,
@@ -4853,7 +4853,7 @@ Object {
         Object {
           "cvss_v2_base_score": 7.8,
           "cvss_v2_base_vector": "AV:N/AC:L/Au:N/C:N/I:N/A:C",
-          "cvss_v2_temporal_score": null,
+          "cvss_v2_temporal_score": 0,
           "cvss_v2_temporal_vector": null,
           "description": "Уязвимости в модуле EnergyWise из Cisco IOS и Cisco IOS XE позволяют злоумышленникам, действующим удаленно, вызвать отказ в обслуживании (переполнение буфера и перезагрузку устройства), отправив специально сформированные пакеты EnergyWise уязвимому устройству. Cisco IOS и Cisco IOS XE поддерживают EnergyWise только для IPv4, поэтому IPv6-пакеты не могут быть использованы для эксплуатации уязвимостей.",
           "ignored_by_path": false,
@@ -4877,7 +4877,7 @@ Object {
         Object {
           "cvss_v2_base_score": 7.8,
           "cvss_v2_base_vector": "AV:N/AC:L/Au:N/C:N/I:N/A:C",
-          "cvss_v2_temporal_score": null,
+          "cvss_v2_temporal_score": 0,
           "cvss_v2_temporal_vector": null,
           "description": "Уязвимости в модуле EnergyWise из Cisco IOS и Cisco IOS XE позволяют злоумышленникам, действующим удаленно, вызвать отказ в обслуживании (переполнение буфера и перезагрузку устройства), отправив специально сформированные пакеты EnergyWise уязвимому устройству. Cisco IOS и Cisco IOS XE поддерживают EnergyWise только для IPv4, поэтому IPv6-пакеты не могут быть использованы для эксплуатации уязвимостей.",
           "ignored_by_path": false,
@@ -4901,7 +4901,7 @@ Object {
         Object {
           "cvss_v2_base_score": 7.8,
           "cvss_v2_base_vector": "AV:N/AC:L/Au:N/C:N/I:N/A:C",
-          "cvss_v2_temporal_score": null,
+          "cvss_v2_temporal_score": 0,
           "cvss_v2_temporal_vector": null,
           "description": "Уязвимость в клиенте Smart Install в Cisco IOS коммутаторов Catalyst позволяет злоумышленникам, действующим удаленно, вызвать отказ в обслуживании (перезагрузку устройства) при помощи специально сформированных параметров списка образов в пакетах Smart Install.",
           "ignored_by_path": false,
@@ -4971,7 +4971,7 @@ Object {
         Object {
           "cvss_v2_base_score": 3.6,
           "cvss_v2_base_vector": "AV:L/AC:L/Au:N/C:P/I:P/A:N",
-          "cvss_v2_temporal_score": null,
+          "cvss_v2_temporal_score": 0,
           "cvss_v2_temporal_vector": null,
           "description": "В сетях ЛВС рекомендуется закрепить каждый узел за отдельным портом коммутатора.
  Если это правило не соблюдается, возможно возникновение следующих ситуаций:
@@ -5030,7 +5030,7 @@ Object {
         Object {
           "cvss_v2_base_score": 4.3,
           "cvss_v2_base_vector": "AV:A/AC:M/Au:N/C:P/I:P/A:N",
-          "cvss_v2_temporal_score": null,
+          "cvss_v2_temporal_score": 0,
           "cvss_v2_temporal_vector": null,
           "description": "Протокол HTTP используется для предоставления различных, часто критически важных веб-служб, таких как информационные службы, службы управления устройствами по сети и пр. Протокол HTTP не обеспечивает шифрование данных, в том числе аутентификационных, при передаче их по соединению между клиентом и сервером.
  Так как протокол HTTP не обеспечивает шифрование данных, злоумышленник, прослушивающий HTTP-сессию, сможет получить всю информацию и все учетные данные аутентификации, передаваемые в рамках данной сессии. После этого злоумышленник может попытаться получить доступ к устройству с помощью перехваченных данных аутентификации. В случае успеха атакующий получит доступ к системе в контексте пользователя, чьи учетные данные были использованы. Поскольку протокол HTTP часто применяется для управления сетевыми устройствами, подобная атака может позволить злоумышленнику получить права доступа администратора.",
@@ -5062,7 +5062,7 @@ Object {
         Object {
           "cvss_v2_base_score": 3.6,
           "cvss_v2_base_vector": "AV:N/AC:H/Au:S/C:P/I:P/A:N",
-          "cvss_v2_temporal_score": null,
+          "cvss_v2_temporal_score": 0,
           "cvss_v2_temporal_vector": null,
           "description": "Списки контроля доступа по VTY используются для того, чтобы ограничить круг адресов, с которых могут осуществляться попытки входа на маршрутизатор. Если настроить список контроля доступа для линий VTY, то тем самым будут ограничены источники, с которых пользователь сможет управлять устройством. Необходимо ограничить перечень узлов и/или сетей, которым разрешается подключаться к устройству по определенному протоколу для задания параметров конфигурации устройства. Доступ должен быть разрешен только тем лицам или системам, которые имеют право на администрирование устройства. Например, можно ограничить доступ, определив список разрешенных узлов; таким образом, администраторы сети смогут настраивать устройства, используя только определенные рабочие станции, предназначенные для сетевого управления. Убедитесь, что все линии VTY настроены на использование одного и того же списка контроля доступа.",
           "ignored_by_path": false,
@@ -5075,7 +5075,7 @@ Object {
         Object {
           "cvss_v2_base_score": 2.1,
           "cvss_v2_base_vector": "AV:N/AC:H/Au:S/C:P/I:N/A:N",
-          "cvss_v2_temporal_score": null,
+          "cvss_v2_temporal_score": 0,
           "cvss_v2_temporal_vector": null,
           "description": "Списки контроля доступа по протоколу SNMP используются для того, чтобы ограничить круг адресов, с которых разрешено управлять устройством и следить за его работой по протоколу SNMP. Если списки контроля доступа не используются, то любой пользователь, зная SNMP community string, сможет управлять и следить за маршрутизатором.
  Следует задать список контроля доступа для всех SNMP community string, чтобы доступ к устройству по протоколу SNMP был разрешен только с некоторых рабочих станций, предназначенных для управления устройством и расположенных в соответствующей доверенной зоне.",
@@ -5089,7 +5089,7 @@ Object {
         Object {
           "cvss_v2_base_score": 10,
           "cvss_v2_base_vector": "AV:N/AC:L/Au:N/C:C/I:C/A:C",
-          "cvss_v2_temporal_score": null,
+          "cvss_v2_temporal_score": 0,
           "cvss_v2_temporal_vector": null,
           "description": "",
           "ignored_by_path": false,
@@ -5102,7 +5102,7 @@ Object {
         Object {
           "cvss_v2_base_score": 7.8,
           "cvss_v2_base_vector": "AV:N/AC:L/Au:N/C:N/I:N/A:C",
-          "cvss_v2_temporal_score": null,
+          "cvss_v2_temporal_score": 0,
           "cvss_v2_temporal_vector": null,
           "description": "Уязвимость в реализации клиента Smart Install для Cisco IOS и IOS XE позволяет злоумышленникам, действующим удаленно, вызвать отказ в обслуживании (перезагрузку устройства), используя специально сформированные параметры списка образов в пакете Smart Install.",
           "ignored_by_path": false,
@@ -5150,7 +5150,7 @@ Object {
         Object {
           "cvss_v2_base_score": 7.8,
           "cvss_v2_base_vector": "AV:N/AC:L/Au:N/C:N/I:N/A:C",
-          "cvss_v2_temporal_score": null,
+          "cvss_v2_temporal_score": 0,
           "cvss_v2_temporal_vector": null,
           "description": "Уязвимость в клиенте Smart Install в Cisco IOS коммутаторов Catalyst позволяет злоумышленникам, действующим удаленно, вызвать отказ в обслуживании (перезагрузку устройства) при помощи специально сформированных параметров списка образов в пакетах Smart Install.",
           "ignored_by_path": false,
@@ -5204,7 +5204,7 @@ Object {
         Object {
           "cvss_v2_base_score": 4.3,
           "cvss_v2_base_vector": "AV:A/AC:M/Au:N/C:P/I:P/A:N",
-          "cvss_v2_temporal_score": null,
+          "cvss_v2_temporal_score": 0,
           "cvss_v2_temporal_vector": null,
           "description": "В версии 1 протокола SSH были обнаружены недостатки, как в алгоритмах шифрования, так и в программах, которые его используют. Таким образом, если для управления устройством используется сервис SSH, установите версию 2.",
           "ignored_by_path": false,
@@ -5217,7 +5217,7 @@ Object {
         Object {
           "cvss_v2_base_score": 3.6,
           "cvss_v2_base_vector": "AV:L/AC:L/Au:N/C:P/I:P/A:N",
-          "cvss_v2_temporal_score": null,
+          "cvss_v2_temporal_score": 0,
           "cvss_v2_temporal_vector": null,
           "description": "В сетях ЛВС рекомендуется закрепить каждый узел за отдельным портом коммутатора.
  Если это правило не соблюдается, возможно возникновение следующих ситуаций:
@@ -5266,7 +5266,7 @@ Object {
         Object {
           "cvss_v2_base_score": 4.3,
           "cvss_v2_base_vector": "AV:A/AC:M/Au:N/C:P/I:P/A:N",
-          "cvss_v2_temporal_score": null,
+          "cvss_v2_temporal_score": 0,
           "cvss_v2_temporal_vector": null,
           "description": "Протокол HTTP используется для предоставления различных, часто критически важных веб-служб, таких как информационные службы, службы управления устройствами по сети и пр. Протокол HTTP не обеспечивает шифрование данных, в том числе аутентификационных, при передаче их по соединению между клиентом и сервером.
  Так как протокол HTTP не обеспечивает шифрование данных, злоумышленник, прослушивающий HTTP-сессию, сможет получить всю информацию и все учетные данные аутентификации, передаваемые в рамках данной сессии. После этого злоумышленник может попытаться получить доступ к устройству с помощью перехваченных данных аутентификации. В случае успеха атакующий получит доступ к системе в контексте пользователя, чьи учетные данные были использованы. Поскольку протокол HTTP часто применяется для управления сетевыми устройствами, подобная атака может позволить злоумышленнику получить права доступа администратора.",
@@ -5298,7 +5298,7 @@ Object {
         Object {
           "cvss_v2_base_score": 3.6,
           "cvss_v2_base_vector": "AV:N/AC:H/Au:S/C:P/I:P/A:N",
-          "cvss_v2_temporal_score": null,
+          "cvss_v2_temporal_score": 0,
           "cvss_v2_temporal_vector": null,
           "description": "Списки контроля доступа по VTY используются для того, чтобы ограничить круг адресов, с которых могут осуществляться попытки входа на маршрутизатор. Если настроить список контроля доступа для линий VTY, то тем самым будут ограничены источники, с которых пользователь сможет управлять устройством. Необходимо ограничить перечень узлов и/или сетей, которым разрешается подключаться к устройству по определенному протоколу для задания параметров конфигурации устройства. Доступ должен быть разрешен только тем лицам или системам, которые имеют право на администрирование устройства. Например, можно ограничить доступ, определив список разрешенных узлов; таким образом, администраторы сети смогут настраивать устройства, используя только определенные рабочие станции, предназначенные для сетевого управления. Убедитесь, что все линии VTY настроены на использование одного и того же списка контроля доступа.",
           "ignored_by_path": false,
@@ -5311,7 +5311,7 @@ Object {
         Object {
           "cvss_v2_base_score": 2.1,
           "cvss_v2_base_vector": "AV:N/AC:H/Au:S/C:P/I:N/A:N",
-          "cvss_v2_temporal_score": null,
+          "cvss_v2_temporal_score": 0,
           "cvss_v2_temporal_vector": null,
           "description": "Списки контроля доступа по протоколу SNMP используются для того, чтобы ограничить круг адресов, с которых разрешено управлять устройством и следить за его работой по протоколу SNMP. Если списки контроля доступа не используются, то любой пользователь, зная SNMP community string, сможет управлять и следить за маршрутизатором.
  Следует задать список контроля доступа для всех SNMP community string, чтобы доступ к устройству по протоколу SNMP был разрешен только с некоторых рабочих станций, предназначенных для управления устройством и расположенных в соответствующей доверенной зоне.",
@@ -5325,7 +5325,7 @@ Object {
         Object {
           "cvss_v2_base_score": 10,
           "cvss_v2_base_vector": "AV:N/AC:L/Au:N/C:C/I:C/A:C",
-          "cvss_v2_temporal_score": null,
+          "cvss_v2_temporal_score": 0,
           "cvss_v2_temporal_vector": null,
           "description": "",
           "ignored_by_path": false,
@@ -5338,7 +5338,7 @@ Object {
         Object {
           "cvss_v2_base_score": 7.8,
           "cvss_v2_base_vector": "AV:N/AC:L/Au:N/C:N/I:N/A:C",
-          "cvss_v2_temporal_score": null,
+          "cvss_v2_temporal_score": 0,
           "cvss_v2_temporal_vector": null,
           "description": "Уязвимость в реализации клиента Smart Install для Cisco IOS и IOS XE позволяет злоумышленникам, действующим удаленно, вызвать отказ в обслуживании (перезагрузку устройства), используя специально сформированные параметры списка образов в пакете Smart Install.",
           "ignored_by_path": false,
@@ -5386,7 +5386,7 @@ Object {
         Object {
           "cvss_v2_base_score": 7.8,
           "cvss_v2_base_vector": "AV:N/AC:L/Au:N/C:N/I:N/A:C",
-          "cvss_v2_temporal_score": null,
+          "cvss_v2_temporal_score": 0,
           "cvss_v2_temporal_vector": null,
           "description": "Уязвимость в клиенте Smart Install в Cisco IOS коммутаторов Catalyst позволяет злоумышленникам, действующим удаленно, вызвать отказ в обслуживании (перезагрузку устройства) при помощи специально сформированных параметров списка образов в пакетах Smart Install.",
           "ignored_by_path": false,
@@ -5440,7 +5440,7 @@ Object {
         Object {
           "cvss_v2_base_score": 4.3,
           "cvss_v2_base_vector": "AV:A/AC:M/Au:N/C:P/I:P/A:N",
-          "cvss_v2_temporal_score": null,
+          "cvss_v2_temporal_score": 0,
           "cvss_v2_temporal_vector": null,
           "description": "В версии 1 протокола SSH были обнаружены недостатки, как в алгоритмах шифрования, так и в программах, которые его используют. Таким образом, если для управления устройством используется сервис SSH, установите версию 2.",
           "ignored_by_path": false,
@@ -5502,7 +5502,7 @@ Object {
         Object {
           "cvss_v2_base_score": 0,
           "cvss_v2_base_vector": null,
-          "cvss_v2_temporal_score": null,
+          "cvss_v2_temporal_score": 0,
           "cvss_v2_temporal_vector": null,
           "description": "The 'arcfour' is the Arcfour stream cipher. The Arcfour cipher is believed to be compatible with the RC4 cipher. RFC 4253 states that Arcfour (and RC4) has problems with weak keys, and should be used with caution.
  If SSH server is configured to support Cipher Block Chaining (CBC) encryption, this may allow an attacker to recover plaintext data from the ciphertext.",
@@ -5660,7 +5660,7 @@ Object {
         Object {
           "cvss_v2_base_score": 4.3,
           "cvss_v2_base_vector": "AV:N/AC:M/Au:N/C:N/I:P/A:N",
-          "cvss_v2_temporal_score": null,
+          "cvss_v2_temporal_score": 0,
           "cvss_v2_temporal_vector": null,
           "description": "It is possible to perform Cross Site Scripting attack. Cross site scripting (also known as XSS) occurs when a web application gathers malicious data from a user. The data is usually gathered in the form of a hyperlink which contains malicious content within it. The user will most likely click on this link from another website, instant message, or simply just reading a web board or email message. Usually the attacker will encode the malicious portion of the link to the site in HEX (or other encoding methods) so the request is less suspicious looking to the user when clicked on. After the data is collected by the web application, it creates an output page for the user containing the malicious data that was originally sent to it, but in a manner to make it appear as valid content from the website.",
           "ignored_by_path": false,
@@ -5697,7 +5697,7 @@ Object {
         Object {
           "cvss_v2_base_score": 4.3,
           "cvss_v2_base_vector": "AV:N/AC:M/Au:N/C:P/I:N/A:N",
-          "cvss_v2_temporal_score": null,
+          "cvss_v2_temporal_score": 0,
           "cvss_v2_temporal_vector": null,
           "description": "Invisible links finded on web-server (Dictionary):",
           "ignored_by_path": false,
@@ -5713,7 +5713,7 @@ Object {
         Object {
           "cvss_v2_base_score": 3.3,
           "cvss_v2_base_vector": "AV:A/AC:L/Au:N/C:P/I:N/A:N",
-          "cvss_v2_temporal_score": null,
+          "cvss_v2_temporal_score": 0,
           "cvss_v2_temporal_vector": null,
           "description": "The forms which can post Unencrypted Sensitive data to the server detected.
  Protocol HTTP is not secure: all traffic (including passwords) between computers is not encrypted and can be intercepted using a \\"sniffer\\" program.
@@ -5731,7 +5731,7 @@ Object {
         Object {
           "cvss_v2_base_score": 5.4,
           "cvss_v2_base_vector": "AV:N/AC:H/Au:N/C:C/I:N/A:N",
-          "cvss_v2_temporal_score": null,
+          "cvss_v2_temporal_score": 0,
           "cvss_v2_temporal_vector": null,
           "description": "Anti DNS Pinning (DNS rebinding) attack allows an attacker to manipulate the correspondence between IP address and fully qualified domain name (FQDN) with the purpose of initialising active content within the trust relationship with the vulnerable site. This technique allows an attacker to use the target browser for obtaining access to protected sites (for example, such sites that are protected by firewall or those that require authentication). Unlike Cross-Site Request Forgery (CSRF), the purpose of Anti DNS Pinning attack is to obtain sensitive data (confidentiality violation), not to perform specific actions with an application (integrity violation). However, used in combination with CSRF, Anti DNS Pinning can allow gaining full access to a web application via user browser.
  The problem is that server does not sufficiently verify Host field in HTTP request. Server should return an error if the received request includes arbitrary address in Host field.",
@@ -5764,7 +5764,7 @@ Object {
         Object {
           "cvss_v2_base_score": 5,
           "cvss_v2_base_vector": "AV:N/AC:L/Au:N/C:P/I:N/A:N",
-          "cvss_v2_temporal_score": null,
+          "cvss_v2_temporal_score": 0,
           "cvss_v2_temporal_vector": null,
           "description": "OpenSSHD 7.2p2 and possibly other versions uses fake password hashes when authenticating non-existing users, that results in different time delays.
  The fact is that it takes much longer to calculate SHA256/SHA512 password hashes than BLOWFISH password hashes, which are used for non-existing users. If real user passwords are hashed using SHA256/SHA512, then sending 10KB passwords will result in significantly different time delays depending on the used algorithm (i.e. BLOWFISH or SHA256/SHA512), that allows to determine whether a user name exists. Exploitation of this vulnerability allows remote attackers to enumerate valid usernames.
@@ -5803,7 +5803,7 @@ Object {
         Object {
           "cvss_v2_base_score": 0,
           "cvss_v2_base_vector": null,
-          "cvss_v2_temporal_score": null,
+          "cvss_v2_temporal_score": 0,
           "cvss_v2_temporal_vector": null,
           "description": "The 'arcfour' is the Arcfour stream cipher. The Arcfour cipher is believed to be compatible with the RC4 cipher. RFC 4253 states that Arcfour (and RC4) has problems with weak keys, and should be used with caution.
  If SSH server is configured to support Cipher Block Chaining (CBC) encryption, this may allow an attacker to recover plaintext data from the ciphertext.",
@@ -5897,7 +5897,7 @@ Object {
         Object {
           "cvss_v2_base_score": 5,
           "cvss_v2_base_vector": "AV:N/AC:L/Au:N/C:N/I:N/A:P",
-          "cvss_v2_temporal_score": null,
+          "cvss_v2_temporal_score": 0,
           "cvss_v2_temporal_vector": null,
           "description": "The ssl23_get_client_hello function in s23_srvr.c in OpenSSL 0.9.8zc, 1.0.0o, and 1.0.1j does not properly handle attempts to use unsupported protocols, which allows remote attackers to cause a denial of service (NULL pointer dereference and daemon crash) via an unexpected handshake, as demonstrated by an SSLv3 handshake to a no-ssl3 application with certain error handling. NOTE: this issue became relevant after the CVE-2014-3568 fix.",
           "ignored_by_path": false,
@@ -5916,7 +5916,7 @@ Object {
         Object {
           "cvss_v2_base_score": 5,
           "cvss_v2_base_vector": "AV:N/AC:L/Au:N/C:P/I:N/A:N",
-          "cvss_v2_temporal_score": null,
+          "cvss_v2_temporal_score": 0,
           "cvss_v2_temporal_vector": null,
           "description": "The BN_sqr implementation in OpenSSL before 0.9.8zd, 1.0.0 before 1.0.0p, and 1.0.1 before 1.0.1k does not properly calculate the square of a BIGNUM value, which might make it easier for remote attackers to defeat cryptographic protection mechanisms via unspecified vectors, related to crypto/bn/asm/mips.pl, crypto/bn/asm/x86_64-gcc.c, and crypto/bn/bn_asm.c.",
           "ignored_by_path": false,
@@ -5935,7 +5935,7 @@ Object {
         Object {
           "cvss_v2_base_score": 5,
           "cvss_v2_base_vector": "AV:N/AC:L/Au:N/C:N/I:P/A:N",
-          "cvss_v2_temporal_score": null,
+          "cvss_v2_temporal_score": 0,
           "cvss_v2_temporal_vector": null,
           "description": "The ssl3_get_key_exchange function in s3_clnt.c in OpenSSL before 0.9.8zd, 1.0.0 before 1.0.0p, and 1.0.1 before 1.0.1k allows remote SSL servers to conduct ECDHE-to-ECDH downgrade attacks and trigger a loss of forward secrecy by omitting the ServerKeyExchange message.",
           "ignored_by_path": false,
@@ -5954,7 +5954,7 @@ Object {
         Object {
           "cvss_v2_base_score": 5,
           "cvss_v2_base_vector": "AV:N/AC:L/Au:N/C:N/I:P/A:N",
-          "cvss_v2_temporal_score": null,
+          "cvss_v2_temporal_score": 0,
           "cvss_v2_temporal_vector": null,
           "description": "OpenSSL before 0.9.8zd, 1.0.0 before 1.0.0p, and 1.0.1 before 1.0.1k does not enforce certain constraints on certificate data, which allows remote attackers to defeat a fingerprint-based certificate-blacklist protection mechanism by including crafted data within a certificate's unsigned portion, related to crypto/asn1/a_verify.c, crypto/dsa/dsa_asn1.c, crypto/ecdsa/ecs_vrf.c, and crypto/x509/x_all.c.",
           "ignored_by_path": false,
@@ -5973,7 +5973,7 @@ Object {
         Object {
           "cvss_v2_base_score": 4.3,
           "cvss_v2_base_vector": "AV:N/AC:M/Au:N/C:N/I:P/A:N",
-          "cvss_v2_temporal_score": null,
+          "cvss_v2_temporal_score": 0,
           "cvss_v2_temporal_vector": null,
           "description": "The ssl3_get_key_exchange function in s3_clnt.c in OpenSSL before 0.9.8zd, 1.0.0 before 1.0.0p, and 1.0.1 before 1.0.1k allows remote SSL servers to conduct RSA-to-EXPORT_RSA downgrade attacks and facilitate brute-force decryption by offering a weak ephemeral RSA key in a noncompliant role, related to the \\"FREAK\\" issue. NOTE: the scope of this CVE is only client code based on OpenSSL, not EXPORT_RSA issues associated with servers or other TLS implementations.",
           "ignored_by_path": false,
@@ -5992,7 +5992,7 @@ Object {
         Object {
           "cvss_v2_base_score": 5,
           "cvss_v2_base_vector": "AV:N/AC:L/Au:N/C:N/I:P/A:N",
-          "cvss_v2_temporal_score": null,
+          "cvss_v2_temporal_score": 0,
           "cvss_v2_temporal_vector": null,
           "description": "The ssl3_get_cert_verify function in s3_srvr.c in OpenSSL 1.0.0 before 1.0.0p and 1.0.1 before 1.0.1k accepts client authentication with a Diffie-Hellman (DH) certificate without requiring a CertificateVerify message, which allows remote attackers to obtain access without knowledge of a private key via crafted TLS Handshake Protocol traffic to a server that recognizes a Certification Authority with DH support.",
           "ignored_by_path": false,
@@ -6303,7 +6303,7 @@ Object {
         Object {
           "cvss_v2_base_score": 5,
           "cvss_v2_base_vector": "AV:N/AC:L/Au:N/C:N/I:N/A:P",
-          "cvss_v2_temporal_score": null,
+          "cvss_v2_temporal_score": 0,
           "cvss_v2_temporal_vector": null,
           "description": "Juniper Junos OS before 12.1X44-D50, 12.1X46 before 12.1X46-D35, 12.1X47 before 12.1X47-D25, 12.3 before 12.3R10, 12.3X48 before 12.3X48-D15, 13.2 before 13.2R8, 13.3 before 13.3R7, 14.1 before 14.1R5, and 14.2 before 14.2R1 do not properly handle TCP packet reassembly, which allows remote attackers to cause a denial of service (buffer consumption) via a crafted sequence of packets \\"destined to the device.\\"",
           "ignored_by_path": false,
@@ -6322,7 +6322,7 @@ Object {
         Object {
           "cvss_v2_base_score": 6.9,
           "cvss_v2_base_vector": "AV:L/AC:M/Au:N/C:C/I:C/A:C",
-          "cvss_v2_temporal_score": null,
+          "cvss_v2_temporal_score": 0,
           "cvss_v2_temporal_vector": null,
           "description": "Juniper Junos OS before 12.1X44-D50, 12.1X46 before 12.1X46-D35, 12.1X47 before 12.1X47-D25, 12.3 before 12.3R9, 12.3X48 before 12.3X48-D15, 13.2 before 13.2R7, 13.2X51 before 13.2X51-D35, 13.3 before 13.3R6, 14.1 before 14.1R5, 14.1X50 before 14.1X50-D105, 14.1X51 before 14.1X51-D70, 14.1X53 before 14.1X53-D25, 14.1X55 before 14.1X55-D20, 14.2 before 14.2R1, 15.1 before 15.1F2 or 15.1R1, and 15.1X49 before 15.1X49-D10 does not require a password for the root user when pam.conf is \\"corrupted,\\" which allows local users to gain root privileges by modifying the file.",
           "ignored_by_path": false,
@@ -6341,7 +6341,7 @@ Object {
         Object {
           "cvss_v2_base_score": 7.8,
           "cvss_v2_base_vector": "AV:N/AC:L/Au:N/C:N/I:N/A:C",
-          "cvss_v2_temporal_score": null,
+          "cvss_v2_temporal_score": 0,
           "cvss_v2_temporal_vector": null,
           "description": "The SSH server in Juniper Junos OS before 12.1X44-D50, 12.1X46 before 12.1X46-D35, 12.1X47 before 12.1X47-D25, 12.3 before 12.3R10, 12.3X48 before 12.3X48-D10, 13.2 before 13.2R8, 13.2X51 before 13.2X51-D35, 13.3 before 13.3R6, 14.1 before 14.1R5, 14.1X53 before 14.1X53-D25, 14.2 before 14.2R3, 15.1 before 15.1R1, and 15.1X49 before 15.1X49-D20 allows remote attackers to cause a denial of service (CPU consumption) via unspecified SSH traffic.",
           "ignored_by_path": false,
@@ -6387,7 +6387,7 @@ Object {
         Object {
           "cvss_v2_base_score": 5,
           "cvss_v2_base_vector": "AV:N/AC:L/Au:N/C:N/I:N/A:P",
-          "cvss_v2_temporal_score": null,
+          "cvss_v2_temporal_score": 0,
           "cvss_v2_temporal_vector": null,
           "description": "Embedthis Appweb, as used in J-Web in Juniper Junos OS before 12.1X44-D60, 12.1X46 before 12.1X46-D45, 12.1X47 before 12.1X47-D30, 12.3 before 12.3R10, 12.3X48 before 12.3X48-D20, 13.2X51 before 13.2X51-D20, 13.3 before 13.3R8, 14.1 before 14.1R6, and 14.2 before 14.2R5, allows remote attackers to cause a denial of service (J-Web crash) via unspecified vectors.",
           "ignored_by_path": false,
@@ -6406,7 +6406,7 @@ Object {
         Object {
           "cvss_v2_base_score": 4.3,
           "cvss_v2_base_vector": "AV:N/AC:M/Au:N/C:N/I:N/A:P",
-          "cvss_v2_temporal_score": null,
+          "cvss_v2_temporal_score": 0,
           "cvss_v2_temporal_vector": null,
           "description": "Juniper Junos OS before 12.1X46-D45, 12.1X47 before 12.1X47-D30, 12.1X48 before 12.3X48-D20, and 15.1X49 before 15.1X49-D30 on SRX series devices, when the Real Time Streaming Protocol Application Layer Gateway (RTSP ALG) is enabled, allow remote attackers to cause a denial of service (flowd crash) via a crafted RTSP packet.",
           "ignored_by_path": false,
@@ -6425,7 +6425,7 @@ Object {
         Object {
           "cvss_v2_base_score": 5,
           "cvss_v2_base_vector": "AV:N/AC:L/Au:N/C:N/I:N/A:P",
-          "cvss_v2_temporal_score": null,
+          "cvss_v2_temporal_score": 0,
           "cvss_v2_temporal_vector": null,
           "description": "Juniper Junos OS before 12.1X44-D55, 12.1X46 before 12.1X46-D40, 12.1X47 before 12.1X47-D25, 12.3 before 12.3R10, 12.3X48 before 12.3X48-D20, 13.2 before 13.2R8, 13.2X51 before 13.2X51-D40, 13.3 before 13.3R7, 14.1 before 14.1R5, 14.1X53 before 14.1X53-D18 or 14.1X53-D30, 14.1X55 before 14.1X55-D25, 14.2 before 14.2R4, 15.1 before 15.1R2, and 15.1X49 before 15.1X49-D10 allow remote attackers to cause a denial of service via a malformed IGMPv3 packet, aka a \\"multicast denial of service.\\"",
           "ignored_by_path": false,
@@ -6444,7 +6444,7 @@ Object {
         Object {
           "cvss_v2_base_score": 6.4,
           "cvss_v2_base_vector": "AV:N/AC:L/Au:N/C:P/I:P/A:N",
-          "cvss_v2_temporal_score": null,
+          "cvss_v2_temporal_score": 0,
           "cvss_v2_temporal_vector": null,
           "description": "Vulnerability affects all SRX Series services gateways with the FTPS Application Layer Gateway (ALG) enabled with the ftps-extensions option. The ftps-extensions option is not intended or recommended where the SRX secures the FTPS server, as the wide data channel session (gate) will allow the FTPS client temporary access to all TCP ports on the FTPS server. The data session is associated to the control channel and will be closed when the control channel session closes. Depending on the configuration of the FTPS server, supporting load-balancer, and SRX inactivity-timeout values, the server/load-balancer and SRX may keep the control channel open for an extended period of time, allowing an FTPS client access for an equal duration.​
  Note that the ftps-extensions option is not enabled by default.",
@@ -6496,7 +6496,7 @@ Object {
         Object {
           "cvss_v2_base_score": 7.8,
           "cvss_v2_base_vector": "AV:N/AC:L/Au:N/C:N/I:N/A:C",
-          "cvss_v2_temporal_score": null,
+          "cvss_v2_temporal_score": 0,
           "cvss_v2_temporal_vector": null,
           "description": "named in ISC BIND 9.x before 9.9.7-P2 and 9.10.x before 9.10.2-P3 allows remote attackers to cause a denial of service (REQUIRE assertion failure and daemon exit) via TKEY queries.",
           "ignored_by_path": false,
@@ -6515,7 +6515,7 @@ Object {
         Object {
           "cvss_v2_base_score": 4.3,
           "cvss_v2_base_vector": "AV:N/AC:M/Au:N/C:N/I:N/A:P",
-          "cvss_v2_temporal_score": null,
+          "cvss_v2_temporal_score": 0,
           "cvss_v2_temporal_vector": null,
           "description": "Vulnerability in ntpd as a client due to improper checks of timestamps in Kiss-of-Death packets allows remote attackers to increase the client's polling interval, and disable synchronization with the server by sending crafted Kiss-of-Death packets to an ntpd client.",
           "ignored_by_path": false,
@@ -6534,7 +6534,7 @@ Object {
         Object {
           "cvss_v2_base_score": 4.3,
           "cvss_v2_base_vector": "AV:N/AC:M/Au:N/C:N/I:N/A:P",
-          "cvss_v2_temporal_score": null,
+          "cvss_v2_temporal_score": 0,
           "cvss_v2_temporal_vector": null,
           "description": "Vulnerability in NTP due to incorrect handling of rate limiting allows remote attackers to cause clients to stop updating their clock by sending crafted packets to the client's servers.",
           "ignored_by_path": false,
@@ -6553,7 +6553,7 @@ Object {
         Object {
           "cvss_v2_base_score": 5.9,
           "cvss_v2_base_vector": "AV:L/AC:H/Au:M/C:C/I:C/A:C",
-          "cvss_v2_temporal_score": null,
+          "cvss_v2_temporal_score": 0,
           "cvss_v2_temporal_vector": null,
           "description": "Vulnerability in ntpd allows attackers to cause a buffer overflow by providing a negative value for the datalen parameter.",
           "ignored_by_path": false,
@@ -6572,7 +6572,7 @@ Object {
         Object {
           "cvss_v2_base_score": 7.2,
           "cvss_v2_base_vector": "AV:L/AC:L/Au:N/C:C/I:C/A:C",
-          "cvss_v2_temporal_score": null,
+          "cvss_v2_temporal_score": 0,
           "cvss_v2_temporal_vector": null,
           "description": "Juniper Junos OS before 12.1X46-D45, 12.1X47 before 12.1X47-D30, 12.3 before 12.3R11, 12.3X48 before 12.3X48-D25, 13.2 before 13.2R8, 13.3 before 13.3R7, 14.1 before 14.1R6, 14.2 before 14.2R4, 15.1 before 15.1R1 or 15.1F2, and 15.1X49 before 15.1X49-D15 allow local users to gain privileges via crafted combinations of CLI commands and arguments, a different vulnerability than CVE-2015-3003, CVE-2014-3816, and CVE-2014-0615.",
           "ignored_by_path": false,
@@ -6591,7 +6591,7 @@ Object {
         Object {
           "cvss_v2_base_score": 5,
           "cvss_v2_base_vector": "AV:N/AC:L/Au:N/C:N/I:N/A:P",
-          "cvss_v2_temporal_score": null,
+          "cvss_v2_temporal_score": 0,
           "cvss_v2_temporal_vector": null,
           "description": "The rpd daemon in Juniper Junos OS before 12.1X44-D60, 12.1X46 before 12.1X46-D45, 12.1X47 before 12.1X47-D30, 12.3 before 12.3R9, 12.3X48 before 12.3X48-D20, 13.2 before 13.2R7, 13.2X51 before 13.2X51-D40, 13.3 before 13.3R6, 14.1 before 14.1R4, and 14.2 before 14.2R2, when configured with BGP-based L2VPN or VPLS, allows remote attackers to cause a denial of service (daemon restart) via a crafted L2VPN family BGP update.",
           "ignored_by_path": false,
@@ -6610,7 +6610,7 @@ Object {
         Object {
           "cvss_v2_base_score": 7.8,
           "cvss_v2_base_vector": "AV:N/AC:L/Au:N/C:N/I:N/A:C",
-          "cvss_v2_temporal_score": null,
+          "cvss_v2_temporal_score": 0,
           "cvss_v2_temporal_vector": null,
           "description": "Juniper Junos OS before 12.1X44-D60, 12.1X46 before 12.1X46-D40, 12.1X47 before 12.1X47-D30, 12.3 before 12.3R11, 12.3X48 before 12.3X48-D20, 13.2 before 13.2R9, 13.2X51 before 13.2X51-D39, 13.3 before 13.3R8, 14.1 before 14.1R6, 14.1X53 before 14.1X53-D30, 14.2 before 14.2R4-S1, 15.1 before 15.1R2, 15.1X49 before 15.1X49-D30, and 16.1 before 16.1R1 allow remote attackers to cause a denial of service (socket consumption) via crafted TCP timestamps.",
           "ignored_by_path": false,
@@ -6629,7 +6629,7 @@ Object {
         Object {
           "cvss_v2_base_score": 4,
           "cvss_v2_base_vector": "AV:N/AC:L/Au:S/C:P/I:N/A:N",
-          "cvss_v2_temporal_score": null,
+          "cvss_v2_temporal_score": 0,
           "cvss_v2_temporal_vector": null,
           "description": "The resend_bytes function in roaming_common.c in the client in OpenSSH 5.x, 6.x, and 7.x before 7.1p2 allows remote servers to obtain sensitive information from process memory by requesting transmission of an entire buffer, as demonstrated by reading a private key.",
           "ignored_by_path": false,
@@ -6648,7 +6648,7 @@ Object {
         Object {
           "cvss_v2_base_score": 6.5,
           "cvss_v2_base_vector": "AV:N/AC:L/Au:S/C:P/I:P/A:P",
-          "cvss_v2_temporal_score": null,
+          "cvss_v2_temporal_score": 0,
           "cvss_v2_temporal_vector": null,
           "description": "The (1) roaming_read and (2) roaming_write functions in roaming_common.c in the client in OpenSSH 5.x, 6.x, and 7.x before 7.1p2, when certain proxy and forward options are enabled, do not properly maintain connection file descriptors, which allows remote servers to cause a denial of service (heap-based buffer overflow) or possibly have unspecified other impact by requesting many forwardings.",
           "ignored_by_path": false,
@@ -6667,7 +6667,7 @@ Object {
         Object {
           "cvss_v2_base_score": 4.4,
           "cvss_v2_base_vector": "AV:L/AC:M/Au:N/C:P/I:P/A:P",
-          "cvss_v2_temporal_score": null,
+          "cvss_v2_temporal_score": 0,
           "cvss_v2_temporal_vector": null,
           "description": "Race condition in the RPC functionality in Juniper Junos OS before 12.1X44-D55, 12.1X46 before 12.1X46-D40, 12.1X47 before 12.1X47-D25, 12.3 before 12.3R11, 12.3X48 before 12.3X48-D20, 13.2 before 13.2R8, 13.2X51 before 13.2X51-D39, 13.3 before 13.3R7, 14.1 before 14.1R6, 14.1X53 before 14.1X53-D30, 14.2 before 14.2R3-S4, 15.1 before 15.1F2, or 15.1R2, 15.1X49 before 15.1X49-D20, and 16.1 before 16.1R1 allows local users to read, delete, or modify arbitrary files via unspecified vectors.",
           "ignored_by_path": false,
@@ -6686,7 +6686,7 @@ Object {
         Object {
           "cvss_v2_base_score": 6.5,
           "cvss_v2_base_vector": "AV:N/AC:L/Au:S/C:P/I:P/A:P",
-          "cvss_v2_temporal_score": null,
+          "cvss_v2_temporal_score": 0,
           "cvss_v2_temporal_vector": null,
           "description": "Race condition in the Op command in Juniper Junos OS before 12.1X44-D55, 12.1X46 before 12.1X46-D40, 12.1X47 before 12.1X47-D25, 12.3 before 12.3R11, 12.3X48 before 12.3X48-D20, 12.3X50 before 12.3X50-D50, 13.2 before 13.2R8, 13.2X51 before 13.2X51-D39, 13.2X52 before 13.2X52-D30, 13.3 before 13.3R7, 14.1 before 14.1R6, 14.1X53 before 14.1X53-D30, 14.2 before 14.2R4, 15.1 before 15.1F2 or 15.1R2, 15.1X49 before 15.1X49-D10 or 15.1X49-D20, and 16.1 before 16.1R1 allows remote authenticated users to gain privileges via the URL option.",
           "ignored_by_path": false,
@@ -6759,7 +6759,7 @@ Object {
         Object {
           "cvss_v2_base_score": 4.3,
           "cvss_v2_base_vector": "AV:N/AC:M/Au:N/C:N/I:N/A:P",
-          "cvss_v2_temporal_score": null,
+          "cvss_v2_temporal_score": 0,
           "cvss_v2_temporal_vector": null,
           "description": "The state-machine implementation in OpenSSL allocates memory before checking for an excessive length, which might allow remote attackers to cause a denial of service (memory consumption) via crafted TLS messages, related to statem/statem.c and statem/statem_lib.c.",
           "ignored_by_path": false,
@@ -6778,7 +6778,7 @@ Object {
         Object {
           "cvss_v2_base_score": 4.3,
           "cvss_v2_base_vector": "AV:N/AC:M/Au:N/C:N/I:N/A:P",
-          "cvss_v2_temporal_score": null,
+          "cvss_v2_temporal_score": 0,
           "cvss_v2_temporal_vector": null,
           "description": "The certificate parser in OpenSSL might allow remote attackers to cause a denial of service (out-of-bounds read) via crafted certificate operations, related to s3_clnt.c and s3_srvr.c.",
           "ignored_by_path": false,
@@ -6797,7 +6797,7 @@ Object {
         Object {
           "cvss_v2_base_score": 2.1,
           "cvss_v2_base_vector": "AV:L/AC:L/Au:N/C:P/I:N/A:N",
-          "cvss_v2_temporal_score": null,
+          "cvss_v2_temporal_score": 0,
           "cvss_v2_temporal_vector": null,
           "description": "The dsa_sign_setup function in crypto/dsa/dsa_ossl.c in OpenSSL does not properly ensure the use of constant-time operations, which makes it easier for local users to discover a DSA private key via a timing side-channel attack.",
           "ignored_by_path": false,
@@ -6816,7 +6816,7 @@ Object {
         Object {
           "cvss_v2_base_score": 4.3,
           "cvss_v2_base_vector": "AV:N/AC:M/Au:N/C:N/I:N/A:P",
-          "cvss_v2_temporal_score": null,
+          "cvss_v2_temporal_score": 0,
           "cvss_v2_temporal_vector": null,
           "description": "OpenSSL incorrectly uses pointer arithmetic for heap-buffer boundary checks, which might allow remote attackers to cause a denial of service (integer overflow and application crash) or possibly have unspecified other impact by leveraging unexpected malloc behavior, related to s3_srvr.c, ssl_sess.c, and t1_lib.c.",
           "ignored_by_path": false,
@@ -6835,7 +6835,7 @@ Object {
         Object {
           "cvss_v2_base_score": 5,
           "cvss_v2_base_vector": "AV:N/AC:L/Au:N/C:N/I:N/A:P",
-          "cvss_v2_temporal_score": null,
+          "cvss_v2_temporal_score": 0,
           "cvss_v2_temporal_vector": null,
           "description": "The tls_decrypt_ticket function in ssl/t1_lib.c in OpenSSL does not consider the HMAC size during validation of the ticket length, which allows remote attackers to cause a denial of service via a ticket that is too short.",
           "ignored_by_path": false,
@@ -6854,7 +6854,7 @@ Object {
         Object {
           "cvss_v2_base_score": 5,
           "cvss_v2_base_vector": "AV:N/AC:L/Au:N/C:N/I:N/A:P",
-          "cvss_v2_temporal_score": null,
+          "cvss_v2_temporal_score": 0,
           "cvss_v2_temporal_vector": null,
           "description": "The TS_OBJ_print_bio function in crypto/ts/ts_lib.c in the X.509 Public Key Infrastructure Time-Stamp Protocol (TSP) implementation in OpenSSL allows remote attackers to cause a denial of service (out-of-bounds read and application crash) via a crafted time-stamp file that is mishandled by the \\"openssl ts\\" command.",
           "ignored_by_path": false,
@@ -6873,7 +6873,7 @@ Object {
         Object {
           "cvss_v2_base_score": 7.5,
           "cvss_v2_base_vector": "AV:N/AC:L/Au:N/C:P/I:P/A:P",
-          "cvss_v2_temporal_score": null,
+          "cvss_v2_temporal_score": 0,
           "cvss_v2_temporal_vector": null,
           "description": "Integer overflow in the MDC2_Update function in crypto/mdc2/mdc2dgst.c in OpenSSL allows remote attackers to cause a denial of service (out-of-bounds write and application crash) or possibly have unspecified other impact via unknown vectors.",
           "ignored_by_path": false,
@@ -6892,7 +6892,7 @@ Object {
         Object {
           "cvss_v2_base_score": 7.5,
           "cvss_v2_base_vector": "AV:N/AC:L/Au:N/C:P/I:P/A:P",
-          "cvss_v2_temporal_score": null,
+          "cvss_v2_temporal_score": 0,
           "cvss_v2_temporal_vector": null,
           "description": "The BN_bn2dec function in crypto/bn/bn_print.c in OpenSSL does not properly validate division results, which allows remote attackers to cause a denial of service (out-of-bounds write and application crash) or possibly have unspecified other impact via unknown vectors.",
           "ignored_by_path": false,
@@ -6911,7 +6911,7 @@ Object {
         Object {
           "cvss_v2_base_score": 7.8,
           "cvss_v2_base_vector": "AV:N/AC:L/Au:N/C:N/I:N/A:C",
-          "cvss_v2_temporal_score": null,
+          "cvss_v2_temporal_score": 0,
           "cvss_v2_temporal_vector": null,
           "description": "The asn1_d2i_read_bio function in crypto/asn1/a_d2i_fp.c in the ASN.1 BIO implementation in OpenSSL allows remote attackers to cause a denial of service (memory consumption) via a short invalid encoding.",
           "ignored_by_path": false,
@@ -6930,7 +6930,7 @@ Object {
         Object {
           "cvss_v2_base_score": 5,
           "cvss_v2_base_vector": "AV:N/AC:L/Au:N/C:N/I:N/A:P",
-          "cvss_v2_temporal_score": null,
+          "cvss_v2_temporal_score": 0,
           "cvss_v2_temporal_vector": null,
           "description": "Integer overflow in the EVP_EncryptUpdate function in crypto/evp/evp_enc.c in OpenSSL allows remote attackers to cause a denial of service (heap memory corruption) via a large amount of data.",
           "ignored_by_path": false,
@@ -6949,7 +6949,7 @@ Object {
         Object {
           "cvss_v2_base_score": 5,
           "cvss_v2_base_vector": "AV:N/AC:L/Au:N/C:N/I:N/A:P",
-          "cvss_v2_temporal_score": null,
+          "cvss_v2_temporal_score": 0,
           "cvss_v2_temporal_vector": null,
           "description": "Integer overflow in the EVP_EncodeUpdate function in crypto/evp/encode.c in OpenSSL allows remote attackers to cause a denial of service (heap memory corruption) via a large amount of binary data.",
           "ignored_by_path": false,
@@ -6968,7 +6968,7 @@ Object {
         Object {
           "cvss_v2_base_score": 10,
           "cvss_v2_base_vector": "AV:N/AC:L/Au:N/C:C/I:C/A:C",
-          "cvss_v2_temporal_score": null,
+          "cvss_v2_temporal_score": 0,
           "cvss_v2_temporal_vector": null,
           "description": "The fmtstr function in crypto/bio/b_print.c in OpenSSL improperly calculates string lengths, which allows remote attackers to cause a denial of service (overflow and out-of-bounds read) or possibly have unspecified other impact via a long string, as demonstrated by a large amount of ASN.1 data, a different vulnerability than CVE-2016-2842.",
           "ignored_by_path": false,
@@ -6987,7 +6987,7 @@ Object {
         Object {
           "cvss_v2_base_score": 7.8,
           "cvss_v2_base_vector": "AV:N/AC:L/Au:N/C:N/I:N/A:C",
-          "cvss_v2_temporal_score": null,
+          "cvss_v2_temporal_score": 0,
           "cvss_v2_temporal_vector": null,
           "description": "Memory leak in the SRP_VBASE_get_by_user implementation in OpenSSL allows remote attackers to cause a denial of service (memory consumption) by providing an invalid username in a connection attempt, related to apps/s_server.c and crypto/srp/srp_vfy.c.",
           "ignored_by_path": false,
@@ -7006,7 +7006,7 @@ Object {
         Object {
           "cvss_v2_base_score": 5,
           "cvss_v2_base_vector": "AV:N/AC:L/Au:N/C:N/I:N/A:P",
-          "cvss_v2_temporal_score": null,
+          "cvss_v2_temporal_score": 0,
           "cvss_v2_temporal_vector": null,
           "description": "Multiple integer overflows in OpenSSL allow remote attackers to cause a denial of service (heap memory corruption or NULL pointer dereference) or possibly have unspecified other impact via a long digit string that is mishandled by the (1) BN_dec2bn or (2) BN_hex2bn function, related to crypto/bn/bn.h and crypto/bn/bn_print.c.",
           "ignored_by_path": false,
@@ -7025,7 +7025,7 @@ Object {
         Object {
           "cvss_v2_base_score": 10,
           "cvss_v2_base_vector": "AV:N/AC:L/Au:N/C:C/I:C/A:C",
-          "cvss_v2_temporal_score": null,
+          "cvss_v2_temporal_score": 0,
           "cvss_v2_temporal_vector": null,
           "description": "Double free vulnerability in the dsa_priv_decode function in crypto/dsa/dsa_ameth.c in OpenSSL allows remote attackers to cause a denial of service (memory corruption) or possibly have unspecified other impact via a malformed DSA private key.",
           "ignored_by_path": false,
@@ -7044,7 +7044,7 @@ Object {
         Object {
           "cvss_v2_base_score": 1.9,
           "cvss_v2_base_vector": "AV:L/AC:M/Au:N/C:P/I:N/A:N",
-          "cvss_v2_temporal_score": null,
+          "cvss_v2_temporal_score": 0,
           "cvss_v2_temporal_vector": null,
           "description": "The MOD_EXP_CTIME_COPY_FROM_PREBUF function in crypto/bn/bn_exp.c in OpenSSL does not properly consider cache-bank access times during modular exponentiation, which makes it easier for local users to discover RSA keys by running a crafted application on the same Intel Sandy Bridge CPU core as a victim and leveraging cache-bank conflicts, aka a \\"CacheBleed\\" attack.",
           "ignored_by_path": false,
@@ -7063,7 +7063,7 @@ Object {
         Object {
           "cvss_v2_base_score": 4.3,
           "cvss_v2_base_vector": "AV:N/AC:M/Au:N/C:N/I:N/A:P",
-          "cvss_v2_temporal_score": null,
+          "cvss_v2_temporal_score": 0,
           "cvss_v2_temporal_vector": null,
           "description": "ssl/s3_clnt.c in OpenSSL, when used for a multi-threaded client, writes the PSK identity hint to an incorrect data structure, which allows remote servers to cause a denial of service (race condition and double free) via a crafted ServerKeyExchange message.",
           "ignored_by_path": false,
@@ -7082,7 +7082,7 @@ Object {
         Object {
           "cvss_v2_base_score": 5,
           "cvss_v2_base_vector": "AV:N/AC:L/Au:N/C:N/I:N/A:P",
-          "cvss_v2_temporal_score": null,
+          "cvss_v2_temporal_score": 0,
           "cvss_v2_temporal_vector": null,
           "description": "The ssl3_get_key_exchange function in ssl/s3_clnt.c in OpenSSL allows remote servers to cause a denial of service (segmentation fault) via a zero p value in an anonymous Diffie-Hellman (DH) ServerKeyExchange message.",
           "ignored_by_path": false,
@@ -7101,7 +7101,7 @@ Object {
         Object {
           "cvss_v2_base_score": 5,
           "cvss_v2_base_vector": "AV:N/AC:L/Au:N/C:N/I:N/A:P",
-          "cvss_v2_temporal_score": null,
+          "cvss_v2_temporal_score": 0,
           "cvss_v2_temporal_vector": null,
           "description": "The ssl3_read_bytes function in record/rec_layer_s3.c in OpenSSL allows remote attackers to cause a denial of service (infinite loop) by triggering a zero-length record in an SSL_peek call.",
           "ignored_by_path": false,
@@ -7120,7 +7120,7 @@ Object {
         Object {
           "cvss_v2_base_score": 4.3,
           "cvss_v2_base_vector": "AV:N/AC:M/Au:N/C:P/I:N/A:N",
-          "cvss_v2_temporal_score": null,
+          "cvss_v2_temporal_score": 0,
           "cvss_v2_temporal_vector": null,
           "description": "An oracle protection mechanism in the get_client_master_key function in s2_srvr.c in the SSLv2 implementation in OpenSSL overwrites incorrect MASTER-KEY bytes during use of export cipher suites, which makes it easier for remote attackers to decrypt TLS ciphertext data by leveraging a Bleichenbacher RSA padding oracle, a related issue to CVE-2016-0800.",
           "ignored_by_path": false,
@@ -7139,7 +7139,7 @@ Object {
         Object {
           "cvss_v2_base_score": 5,
           "cvss_v2_base_vector": "AV:N/AC:L/Au:N/C:N/I:N/A:P",
-          "cvss_v2_temporal_score": null,
+          "cvss_v2_temporal_score": 0,
           "cvss_v2_temporal_vector": null,
           "description": "The ASN1_TFLG_COMBINE implementation in crypto/asn1/tasn_dec.c in OpenSSL mishandles errors caused by malformed X509_ATTRIBUTE data, which allows remote attackers to obtain sensitive information from process memory by triggering a decoding failure in a PKCS#7 or CMS application.",
           "ignored_by_path": false,
@@ -7158,7 +7158,7 @@ Object {
         Object {
           "cvss_v2_base_score": 5,
           "cvss_v2_base_vector": "AV:N/AC:L/Au:N/C:N/I:N/A:P",
-          "cvss_v2_temporal_score": null,
+          "cvss_v2_temporal_score": 0,
           "cvss_v2_temporal_vector": null,
           "description": "crypto/rsa/rsa_ameth.c in OpenSSL allows remote attackers to cause a denial of service (NULL pointer dereference and application crash) via an RSA PSS ASN.1 signature that lacks a mask generation function parameter.",
           "ignored_by_path": false,
@@ -7177,7 +7177,7 @@ Object {
         Object {
           "cvss_v2_base_score": 5,
           "cvss_v2_base_vector": "AV:N/AC:L/Au:N/C:P/I:N/A:N",
-          "cvss_v2_temporal_score": null,
+          "cvss_v2_temporal_score": 0,
           "cvss_v2_temporal_vector": null,
           "description": "The Montgomery squaring implementation in crypto/bn/asm/x86_64-mont5.pl in OpenSSL, as used by the BN_mod_exp function, mishandles carry propagation and produces incorrect output, which makes it easier for remote attackers to obtain sensitive private-key information via an attack against use of a (1) Diffie-Hellman (DH) or (2) Diffie-Hellman Ephemeral (DHE) ciphersuite.",
           "ignored_by_path": false,
@@ -7196,7 +7196,7 @@ Object {
         Object {
           "cvss_v2_base_score": 7.8,
           "cvss_v2_base_vector": "AV:N/AC:L/Au:N/C:N/I:N/A:C",
-          "cvss_v2_temporal_score": null,
+          "cvss_v2_temporal_score": 0,
           "cvss_v2_temporal_vector": null,
           "description": "Multiple memory leaks in t1_lib.c in OpenSSL allow remote attackers to cause a denial of service (memory consumption) via large OCSP Status Request extensions.",
           "ignored_by_path": false,
@@ -7215,7 +7215,7 @@ Object {
         Object {
           "cvss_v2_base_score": 10,
           "cvss_v2_base_vector": "AV:N/AC:L/Au:N/C:C/I:C/A:C",
-          "cvss_v2_temporal_score": null,
+          "cvss_v2_temporal_score": 0,
           "cvss_v2_temporal_vector": null,
           "description": "The ASN.1 implementation in OpenSSL allows remote attackers to execute arbitrary code or cause a denial of service (buffer underflow and memory corruption) via an ANY field in crafted serialized data, aka the \\"negative zero\\" issue.",
           "ignored_by_path": false,
@@ -7234,7 +7234,7 @@ Object {
         Object {
           "cvss_v2_base_score": 4.3,
           "cvss_v2_base_vector": "AV:N/AC:M/Au:N/C:P/I:N/A:N",
-          "cvss_v2_temporal_score": null,
+          "cvss_v2_temporal_score": 0,
           "cvss_v2_temporal_vector": null,
           "description": "The get_client_master_key function in s2_srvr.c in the SSLv2 implementation in OpenSSL accepts a nonzero CLIENT-MASTER-KEY CLEAR-KEY-LENGTH value for an arbitrary cipher, which allows man-in-the-middle attackers to determine the MASTER-KEY value and decrypt TLS ciphertext data by leveraging a Bleichenbacher RSA padding oracle, a related issue to CVE-2016-0800.",
           "ignored_by_path": false,
@@ -7361,7 +7361,7 @@ Object {
         Object {
           "cvss_v2_base_score": 5,
           "cvss_v2_base_vector": "AV:N/AC:L/Au:N/C:P/I:N/A:N",
-          "cvss_v2_temporal_score": null,
+          "cvss_v2_temporal_score": 0,
           "cvss_v2_temporal_vector": null,
           "description": "The DES and Triple DES ciphers, as used in the TLS, SSH, and IPSec protocols and other protocols and products, have a birthday bound of approximately four billion blocks, which makes it easier for remote attackers to obtain cleartext data via a birthday attack against a long-duration encrypted session, as demonstrated by an HTTPS session using Triple DES in CBC mode, aka a \\"Sweet32\\" attack.",
           "ignored_by_path": false,
@@ -7380,7 +7380,7 @@ Object {
         Object {
           "cvss_v2_base_score": 0,
           "cvss_v2_base_vector": null,
-          "cvss_v2_temporal_score": null,
+          "cvss_v2_temporal_score": 0,
           "cvss_v2_temporal_vector": null,
           "description": "Vulnerability in Junos OS due to a lack of padding for Ethernet packets allows attackers to obtain fragments of system memory or data from previous packets, aka 'Etherleak.'",
           "ignored_by_path": false,
@@ -7399,7 +7399,7 @@ Object {
         Object {
           "cvss_v2_base_score": 0,
           "cvss_v2_base_vector": null,
-          "cvss_v2_temporal_score": null,
+          "cvss_v2_temporal_score": 0,
           "cvss_v2_temporal_vector": null,
           "description": "Vulnerability in Junos OS (in cluster configurations that process transit multicast traffic) allows attackers to cause a denial of service (flowd daemon crash and restart) via crafted multicast packets.",
           "ignored_by_path": false,
@@ -7445,7 +7445,7 @@ Object {
         Object {
           "cvss_v2_base_score": 10,
           "cvss_v2_base_vector": "AV:N/AC:L/Au:N/C:C/I:C/A:C",
-          "cvss_v2_temporal_score": null,
+          "cvss_v2_temporal_score": 0,
           "cvss_v2_temporal_vector": null,
           "description": "J-Web in Juniper Junos OS might allow remote attackers to obtain sensitive information and consequently gain administrative privileges via unspecified vectors.",
           "ignored_by_path": false,
@@ -7556,7 +7556,7 @@ Object {
         Object {
           "cvss_v2_base_score": 2.6,
           "cvss_v2_base_vector": "AV:N/AC:H/Au:N/C:P/I:N/A:N",
-          "cvss_v2_temporal_score": null,
+          "cvss_v2_temporal_score": 0,
           "cvss_v2_temporal_vector": null,
           "description": "The following directories were identified:
 ",
@@ -7576,7 +7576,7 @@ Object {
         Object {
           "cvss_v2_base_score": 4.3,
           "cvss_v2_base_vector": "AV:N/AC:M/Au:N/C:P/I:N/A:N",
-          "cvss_v2_temporal_score": null,
+          "cvss_v2_temporal_score": 0,
           "cvss_v2_temporal_vector": null,
           "description": "Unauthorized sending of email.
  A mail server is explicitly configured to allow SMTP mail relay, which allows abuse by spammers.",
@@ -7603,7 +7603,7 @@ Object {
         Object {
           "cvss_v2_base_score": 4.3,
           "cvss_v2_base_vector": "AV:N/AC:M/Au:N/C:P/I:N/A:N",
-          "cvss_v2_temporal_score": null,
+          "cvss_v2_temporal_score": 0,
           "cvss_v2_temporal_vector": null,
           "description": "Invisible links finded on web-server (Dictionary):",
           "ignored_by_path": false,
@@ -7622,7 +7622,7 @@ Object {
         Object {
           "cvss_v2_base_score": 3.3,
           "cvss_v2_base_vector": "AV:A/AC:L/Au:N/C:P/I:N/A:N",
-          "cvss_v2_temporal_score": null,
+          "cvss_v2_temporal_score": 0,
           "cvss_v2_temporal_vector": null,
           "description": "The forms which can post Unencrypted Sensitive data to the server detected.
  Protocol HTTP is not secure: all traffic (including passwords) between computers is not encrypted and can be intercepted using a \\"sniffer\\" program.
@@ -7643,7 +7643,7 @@ Object {
         Object {
           "cvss_v2_base_score": 5.4,
           "cvss_v2_base_vector": "AV:N/AC:H/Au:N/C:C/I:N/A:N",
-          "cvss_v2_temporal_score": null,
+          "cvss_v2_temporal_score": 0,
           "cvss_v2_temporal_vector": null,
           "description": "Anti DNS Pinning (DNS rebinding) attack allows an attacker to manipulate the correspondence between IP address and fully qualified domain name (FQDN) with the purpose of initialising active content within the trust relationship with the vulnerable site. This technique allows an attacker to use the target browser for obtaining access to protected sites (for example, such sites that are protected by firewall or those that require authentication). Unlike Cross-Site Request Forgery (CSRF), the purpose of Anti DNS Pinning attack is to obtain sensitive data (confidentiality violation), not to perform specific actions with an application (integrity violation). However, used in combination with CSRF, Anti DNS Pinning can allow gaining full access to a web application via user browser.
  The problem is that server does not sufficiently verify Host field in HTTP request. Server should return an error if the received request includes arbitrary address in Host field.",
@@ -7677,7 +7677,7 @@ Object {
         Object {
           "cvss_v2_base_score": 5,
           "cvss_v2_base_vector": "AV:N/AC:L/Au:N/C:P/I:N/A:N",
-          "cvss_v2_temporal_score": null,
+          "cvss_v2_temporal_score": 0,
           "cvss_v2_temporal_vector": null,
           "description": "Subject Name and Alternative Subject Names do not match domain name. This certificate could be misused.",
           "ignored_by_path": false,
@@ -7697,7 +7697,7 @@ Object {
         Object {
           "cvss_v2_base_score": 5,
           "cvss_v2_base_vector": "AV:N/AC:L/Au:N/C:P/I:N/A:N",
-          "cvss_v2_temporal_score": null,
+          "cvss_v2_temporal_score": 0,
           "cvss_v2_temporal_vector": null,
           "description": "During verification of the service certificate chain, the following errors were detected
 ",
@@ -7717,7 +7717,7 @@ Object {
         Object {
           "cvss_v2_base_score": 5,
           "cvss_v2_base_vector": "AV:N/AC:L/Au:N/C:P/I:N/A:N",
-          "cvss_v2_temporal_score": null,
+          "cvss_v2_temporal_score": 0,
           "cvss_v2_temporal_vector": null,
           "description": "OpenSSHD 7.2p2 and possibly other versions uses fake password hashes when authenticating non-existing users, that results in different time delays.
  The fact is that it takes much longer to calculate SHA256/SHA512 password hashes than BLOWFISH password hashes, which are used for non-existing users. If real user passwords are hashed using SHA256/SHA512, then sending 10KB passwords will result in significantly different time delays depending on the used algorithm (i.e. BLOWFISH or SHA256/SHA512), that allows to determine whether a user name exists. Exploitation of this vulnerability allows remote attackers to enumerate valid usernames.
@@ -7810,7 +7810,7 @@ Object {
         Object {
           "cvss_v2_base_score": 0,
           "cvss_v2_base_vector": null,
-          "cvss_v2_temporal_score": null,
+          "cvss_v2_temporal_score": 0,
           "cvss_v2_temporal_vector": null,
           "description": "Following packages are affected: kernel-headers, kernel, kernel-tools-libs-devel, perf, kernel-abi-whitelists, kernel-debug, kernel-tools-libs, kernel-devel, kernel-doc, kernel-debug-devel, python-perf, kernel-tools
  Follow RedHat RHSA-2018-1629 for details.",
@@ -7840,7 +7840,7 @@ Object {
         Object {
           "cvss_v2_base_score": 7.2,
           "cvss_v2_base_vector": "AV:L/AC:L/Au:N/C:C/I:C/A:C",
-          "cvss_v2_temporal_score": null,
+          "cvss_v2_temporal_score": 0,
           "cvss_v2_temporal_vector": null,
           "description": "Following packages are affected: kernel-headers, kernel, kernel-tools-libs-devel, perf, kernel-abi-whitelists, kernel-debug, kernel-tools-libs, kernel-devel, kernel-doc, kernel-debug-devel, python-perf, kernel-tools
  Follow RedHat RHSA-2018-1318 for details.",
@@ -7895,7 +7895,7 @@ Object {
         Object {
           "cvss_v2_base_score": 0,
           "cvss_v2_base_vector": null,
-          "cvss_v2_temporal_score": null,
+          "cvss_v2_temporal_score": 0,
           "cvss_v2_temporal_vector": null,
           "description": "Following packages are affected: kernel-headers, kernel, kernel-tools-libs-devel, perf, kernel-doc, python-perf, kernel-tools-libs, kernel-devel, kernel-abi-whitelists, kernel-debug-devel, kernel-debug, kernel-tools
  Follow RedHat RHSA-2018-1852 for details.",
@@ -7925,7 +7925,7 @@ Object {
         Object {
           "cvss_v2_base_score": 6.9,
           "cvss_v2_base_vector": "AV:L/AC:M/Au:N/C:C/I:C/A:C",
-          "cvss_v2_temporal_score": null,
+          "cvss_v2_temporal_score": 0,
           "cvss_v2_temporal_vector": null,
           "description": "Following packages are affected: kernel-headers, kernel, kernel-tools-libs-devel, perf, kernel-doc, python-perf, kernel-tools-libs, kernel-devel, kernel-abi-whitelists, kernel-debug-devel, kernel-debug, kernel-tools
  Follow RedHat RHSA-2018-1965 for details.",
@@ -7960,7 +7960,7 @@ Object {
         Object {
           "cvss_v2_base_score": 7.2,
           "cvss_v2_base_vector": "AV:L/AC:L/Au:N/C:C/I:C/A:C",
-          "cvss_v2_temporal_score": null,
+          "cvss_v2_temporal_score": 0,
           "cvss_v2_temporal_vector": null,
           "description": "Following packages are affected: kernel-headers, kernel, kernel-tools-libs-devel, perf, kernel-abi-whitelists, python-perf, kernel-tools-libs, kernel-devel, kernel-doc, kernel-debug-devel, kernel-debug, kernel-tools
  Follow RedHat RHSA-2018-2384 for details.",
@@ -9136,7 +9136,7 @@ Object {
         Object {
           "cvss_v2_base_score": 2.1,
           "cvss_v2_base_vector": "AV:N/AC:H/Au:S/C:P/I:N/A:N",
-          "cvss_v2_temporal_score": null,
+          "cvss_v2_temporal_score": 0,
           "cvss_v2_temporal_vector": null,
           "description": "The following directories exist in the directory structure, but were unreachable at the time the scan was run:
 ",
@@ -9156,7 +9156,7 @@ Object {
         Object {
           "cvss_v2_base_score": 3.5,
           "cvss_v2_base_vector": "AV:L/AC:H/Au:S/C:P/I:P/A:P",
-          "cvss_v2_temporal_score": null,
+          "cvss_v2_temporal_score": 0,
           "cvss_v2_temporal_vector": null,
           "description": "Disable Scheduler service if it is not necessary. This service is often used by attackers to run harmful code.",
           "ignored_by_path": false,
@@ -9173,7 +9173,7 @@ Object {
         Object {
           "cvss_v2_base_score": 5,
           "cvss_v2_base_vector": "AV:N/AC:L/Au:N/C:P/I:N/A:N",
-          "cvss_v2_temporal_score": null,
+          "cvss_v2_temporal_score": 0,
           "cvss_v2_temporal_vector": null,
           "description": "During verification of the service certificate chain, the following errors were detected
 ",
@@ -9193,7 +9193,7 @@ Object {
         Object {
           "cvss_v2_base_score": 5,
           "cvss_v2_base_vector": "AV:N/AC:L/Au:N/C:N/I:P/A:N",
-          "cvss_v2_temporal_score": null,
+          "cvss_v2_temporal_score": 0,
           "cvss_v2_temporal_vector": null,
           "description": "SMB signing is not mandatory on the host. It allows a malicious person to conduct a \\"man in the middle\\" attack against the SMB server.
  There are three options concerning SMB signing in the SMB server configuration:
@@ -9231,7 +9231,7 @@ Object {
         Object {
           "cvss_v2_base_score": 4.3,
           "cvss_v2_base_vector": "AV:N/AC:M/Au:N/C:P/I:N/A:N",
-          "cvss_v2_temporal_score": null,
+          "cvss_v2_temporal_score": 0,
           "cvss_v2_temporal_vector": null,
           "description": "The RC4 algorithm, as used in the TLS protocol and SSL protocol, has many single-byte biases, which makes it easier for remote attackers to conduct plaintext-recovery attacks via statistical analysis of ciphertext in a large number of sessions that use the same plaintext.",
           "ignored_by_path": false,
@@ -9254,7 +9254,7 @@ Object {
         Object {
           "cvss_v2_base_score": 2.6,
           "cvss_v2_base_vector": "AV:N/AC:H/Au:N/C:P/I:N/A:N",
-          "cvss_v2_temporal_score": null,
+          "cvss_v2_temporal_score": 0,
           "cvss_v2_temporal_vector": null,
           "description": "Nowadays there are well known collision attacks against SHA-1, which allow attackers to compromise a target certificate, as well as man-in-the-middle and phishing attacks.
 
@@ -9293,7 +9293,7 @@ Object {
         Object {
           "cvss_v2_base_score": 5,
           "cvss_v2_base_vector": "AV:N/AC:L/Au:N/C:P/I:N/A:N",
-          "cvss_v2_temporal_score": null,
+          "cvss_v2_temporal_score": 0,
           "cvss_v2_temporal_vector": null,
           "description": "Vulnerability allows MITM attackers, having ability to sniff the network traffic (e.g. in public Wi-Fi networks), to recover some identifiers like HTTPS session cookies transmitted via a 3DES-encrypted connection.
  Successful exploitation of this vulnerability requires a web site to support connections encrypted with the Triple DES symmetric-key block cipher and transmission of huge number of requests via the same session.
@@ -10021,7 +10021,7 @@ Object {
         Object {
           "cvss_v2_base_score": 10,
           "cvss_v2_base_vector": "AV:N/AC:L/Au:N/C:C/I:C/A:C",
-          "cvss_v2_temporal_score": null,
+          "cvss_v2_temporal_score": 0,
           "cvss_v2_temporal_vector": null,
           "description": "This product version contains critical vulnerabilities, but its lifetime has expired (it is not supported anymore) and developers do not release security updates.",
           "ignored_by_path": false,
@@ -13603,7 +13603,7 @@ Object {
         Object {
           "cvss_v2_base_score": 0,
           "cvss_v2_base_vector": null,
-          "cvss_v2_temporal_score": null,
+          "cvss_v2_temporal_score": 0,
           "cvss_v2_temporal_vector": null,
           "description": "Vulnerability in the Java SE, Java SE Embedded, JRockit component of Oracle Java SE (subcomponent: AWT). Supported versions that are affected are Java SE: 6u181, 7u171, 8u162 and 10; Java SE Embedded: 8u161; JRockit: R28.3.17. Easily exploitable vulnerability allows unauthenticated attacker with network access via multiple protocols to compromise Java SE, Java SE Embedded, JRockit. Successful attacks of this vulnerability can result in unauthorized ability to cause a partial denial of service (partial DOS) of Java SE, Java SE Embedded, JRockit. Note: Applies to client and server deployment of Java. This vulnerability can be exploited through sandboxed Java Web Start applications and sandboxed Java applets. It can also be exploited by supplying data to APIs in the specified Component without using sandboxed Java Web Start applications or sandboxed Java applets, such as through a web service.",
           "ignored_by_path": false,
@@ -13627,7 +13627,7 @@ Object {
         Object {
           "cvss_v2_base_score": 0,
           "cvss_v2_base_vector": null,
-          "cvss_v2_temporal_score": null,
+          "cvss_v2_temporal_score": 0,
           "cvss_v2_temporal_vector": null,
           "description": "Vulnerability in the Java SE, Java SE Embedded, JRockit component of Oracle Java SE (subcomponent: Concurrency). Supported versions that are affected are Java SE: 7u171, 8u162 and 10; Java SE Embedded: 8u161; JRockit: R28.3.17. Easily exploitable vulnerability allows unauthenticated attacker with network access via multiple protocols to compromise Java SE, Java SE Embedded, JRockit. Successful attacks of this vulnerability can result in unauthorized ability to cause a partial denial of service (partial DOS) of Java SE, Java SE Embedded, JRockit. Note: Applies to client and server deployment of Java. This vulnerability can be exploited through sandboxed Java Web Start applications and sandboxed Java applets. It can also be exploited by supplying data to APIs in the specified Component without using sandboxed Java Web Start applications or sandboxed Java applets, such as through a web service.",
           "ignored_by_path": false,
@@ -13651,7 +13651,7 @@ Object {
         Object {
           "cvss_v2_base_score": 0,
           "cvss_v2_base_vector": null,
-          "cvss_v2_temporal_score": null,
+          "cvss_v2_temporal_score": 0,
           "cvss_v2_temporal_vector": null,
           "description": "Vulnerability in the Java SE, Java SE Embedded, JRockit component of Oracle Java SE (subcomponent: JAXP). Supported versions that are affected are Java SE: 7u171, 8u162 and 10; Java SE Embedded: 8u161; JRockit: R28.3.17. Easily exploitable vulnerability allows unauthenticated attacker with network access via multiple protocols to compromise Java SE, Java SE Embedded, JRockit. Successful attacks of this vulnerability can result in unauthorized ability to cause a partial denial of service (partial DOS) of Java SE, Java SE Embedded, JRockit. Note: Applies to client and server deployment of Java. This vulnerability can be exploited through sandboxed Java Web Start applications and sandboxed Java applets. It can also be exploited by supplying data to APIs in the specified Component without using sandboxed Java Web Start applications or sandboxed Java applets, such as through a web service.",
           "ignored_by_path": false,
@@ -13675,7 +13675,7 @@ Object {
         Object {
           "cvss_v2_base_score": 0,
           "cvss_v2_base_vector": null,
-          "cvss_v2_temporal_score": null,
+          "cvss_v2_temporal_score": 0,
           "cvss_v2_temporal_vector": null,
           "description": "Vulnerability in the Java SE, Java SE Embedded, JRockit component of Oracle Java SE (subcomponent: JMX). Supported versions that are affected are Java SE: 6u181, 7u171, 8u162 and 10; Java SE Embedded: 8u161; JRockit: R28.3.17. Easily exploitable vulnerability allows unauthenticated attacker with network access via multiple protocols to compromise Java SE, Java SE Embedded, JRockit. Successful attacks of this vulnerability can result in unauthorized ability to cause a partial denial of service (partial DOS) of Java SE, Java SE Embedded, JRockit. Note: Applies to client and server deployment of Java. This vulnerability can be exploited through sandboxed Java Web Start applications and sandboxed Java applets. It can also be exploited by supplying data to APIs in the specified Component without using sandboxed Java Web Start applications or sandboxed Java applets, such as through a web service.",
           "ignored_by_path": false,
@@ -13699,7 +13699,7 @@ Object {
         Object {
           "cvss_v2_base_score": 0,
           "cvss_v2_base_vector": null,
-          "cvss_v2_temporal_score": null,
+          "cvss_v2_temporal_score": 0,
           "cvss_v2_temporal_vector": null,
           "description": "Vulnerability in the Java SE, Java SE Embedded, JRockit component of Oracle Java SE (subcomponent: Security). Supported versions that are affected are Java SE: 6u181, 7u171, 8u162 and 10; Java SE Embedded: 8u161; JRockit: R28.3.17. Easily exploitable vulnerability allows unauthenticated attacker with network access via multiple protocols to compromise Java SE, Java SE Embedded, JRockit. Successful attacks of this vulnerability can result in unauthorized ability to cause a partial denial of service (partial DOS) of Java SE, Java SE Embedded, JRockit. Note: Applies to client and server deployment of Java. This vulnerability can be exploited through sandboxed Java Web Start applications and sandboxed Java applets. It can also be exploited by supplying data to APIs in the specified Component without using sandboxed Java Web Start applications or sandboxed Java applets, such as through a web service.",
           "ignored_by_path": false,
@@ -13723,7 +13723,7 @@ Object {
         Object {
           "cvss_v2_base_score": 0,
           "cvss_v2_base_vector": null,
-          "cvss_v2_temporal_score": null,
+          "cvss_v2_temporal_score": 0,
           "cvss_v2_temporal_vector": null,
           "description": "Vulnerability in the Java SE, Java SE Embedded, JRockit component of Oracle Java SE (subcomponent: Serialization). Supported versions that are affected are Java SE: 6u181, 7u171, 8u162 and 10; Java SE Embedded: 8u161; JRockit: R28.3.17. Easily exploitable vulnerability allows unauthenticated attacker with network access via multiple protocols to compromise Java SE, Java SE Embedded, JRockit. Successful attacks of this vulnerability can result in unauthorized ability to cause a partial denial of service (partial DOS) of Java SE, Java SE Embedded, JRockit. Note: Applies to client and server deployment of Java. This vulnerability can be exploited through sandboxed Java Web Start applications and sandboxed Java applets. It can also be exploited by supplying data to APIs in the specified Component without using sandboxed Java Web Start applications or sandboxed Java applets, such as through a web service.",
           "ignored_by_path": false,
@@ -13747,7 +13747,7 @@ Object {
         Object {
           "cvss_v2_base_score": 0,
           "cvss_v2_base_vector": null,
-          "cvss_v2_temporal_score": null,
+          "cvss_v2_temporal_score": 0,
           "cvss_v2_temporal_vector": null,
           "description": "Vulnerability in the Java SE, JRockit component of Oracle Java SE (subcomponent: RMI). Supported versions that are affected are Java SE: 6u181, 7u171 and 8u162; JRockit: R28.3.17. Difficult to exploit vulnerability allows unauthenticated attacker with network access via multiple protocols to compromise Java SE, JRockit. Successful attacks require human interaction from a person other than the attacker. Successful attacks of this vulnerability can result in unauthorized update, insert or delete access to some of Java SE, JRockit accessible data as well as unauthorized read access to a subset of Java SE, JRockit accessible data. Note: This vulnerability can only be exploited by supplying data to APIs in the specified Component without using Untrusted Java Web Start applications or Untrusted Java applets, such as through a web service.",
           "ignored_by_path": false,
@@ -13771,7 +13771,7 @@ Object {
         Object {
           "cvss_v2_base_score": 0,
           "cvss_v2_base_vector": null,
-          "cvss_v2_temporal_score": null,
+          "cvss_v2_temporal_score": 0,
           "cvss_v2_temporal_vector": null,
           "description": "Vulnerability in the Java SE, Java SE Embedded component of Oracle Java SE (subcomponent: Security). Supported versions that are affected are Java SE: 6u181, 7u171, 8u162 and 10; Java SE Embedded: 8u161. Difficult to exploit vulnerability allows unauthenticated attacker with network access via multiple protocols to compromise Java SE, Java SE Embedded. Successful attacks require human interaction from a person other than the attacker. Successful attacks of this vulnerability can result in unauthorized update, insert or delete access to some of Java SE, Java SE Embedded accessible data. Note: This vulnerability applies to Java deployments, typically in clients running sandboxed Java Web Start applications or sandboxed Java applets, that load and run untrusted code (e.g., code that comes from the internet) and rely on the Java sandbox for security. This vulnerability does not apply to Java deployments, typically in servers, that load and run only trusted code (e.g., code installed by an administrator).",
           "ignored_by_path": false,
@@ -14113,7 +14113,7 @@ Object {
         Object {
           "cvss_v2_base_score": 10,
           "cvss_v2_base_vector": "AV:N/AC:L/Au:N/C:C/I:C/A:C",
-          "cvss_v2_temporal_score": null,
+          "cvss_v2_temporal_score": 0,
           "cvss_v2_temporal_vector": null,
           "description": "Security updates installed on this computer require system restart. The vulnerabilities which are going to be fixed with the updates are not displayed.",
           "ignored_by_path": false,
@@ -14249,7 +14249,7 @@ Object {
         Object {
           "cvss_v2_base_score": 3.5,
           "cvss_v2_base_vector": "AV:L/AC:H/Au:S/C:P/I:P/A:P",
-          "cvss_v2_temporal_score": null,
+          "cvss_v2_temporal_score": 0,
           "cvss_v2_temporal_vector": null,
           "description": "Disable Scheduler service if it is not necessary. This service is often used by attackers to run harmful code.",
           "ignored_by_path": false,
@@ -14266,7 +14266,7 @@ Object {
         Object {
           "cvss_v2_base_score": 5.4,
           "cvss_v2_base_vector": "AV:N/AC:H/Au:N/C:C/I:N/A:N",
-          "cvss_v2_temporal_score": null,
+          "cvss_v2_temporal_score": 0,
           "cvss_v2_temporal_vector": null,
           "description": "Anti DNS Pinning (DNS rebinding) attack allows an attacker to manipulate the correspondence between IP address and fully qualified domain name (FQDN) with the purpose of initialising active content within the trust relationship with the vulnerable site. This technique allows an attacker to use the target browser for obtaining access to protected sites (for example, such sites that are protected by firewall or those that require authentication). Unlike Cross-Site Request Forgery (CSRF), the purpose of Anti DNS Pinning attack is to obtain sensitive data (confidentiality violation), not to perform specific actions with an application (integrity violation). However, used in combination with CSRF, Anti DNS Pinning can allow gaining full access to a web application via user browser.
  The problem is that server does not sufficiently verify Host field in HTTP request. Server should return an error if the received request includes arbitrary address in Host field.",
@@ -14300,7 +14300,7 @@ Object {
         Object {
           "cvss_v2_base_score": 5,
           "cvss_v2_base_vector": "AV:N/AC:L/Au:N/C:P/I:N/A:N",
-          "cvss_v2_temporal_score": null,
+          "cvss_v2_temporal_score": 0,
           "cvss_v2_temporal_vector": null,
           "description": "During verification of the service certificate chain, the following errors were detected
 ",
@@ -14320,7 +14320,7 @@ Object {
         Object {
           "cvss_v2_base_score": 5,
           "cvss_v2_base_vector": "AV:N/AC:L/Au:N/C:N/I:P/A:N",
-          "cvss_v2_temporal_score": null,
+          "cvss_v2_temporal_score": 0,
           "cvss_v2_temporal_vector": null,
           "description": "SMB signing is not mandatory on the host. It allows a malicious person to conduct a \\"man in the middle\\" attack against the SMB server.
  There are three options concerning SMB signing in the SMB server configuration:
@@ -15494,7 +15494,7 @@ Object {
         Object {
           "cvss_v2_base_score": 0,
           "cvss_v2_base_vector": null,
-          "cvss_v2_temporal_score": null,
+          "cvss_v2_temporal_score": 0,
           "cvss_v2_temporal_vector": null,
           "description": "Vulnerability in the Java SE, Java SE Embedded, JRockit component of Oracle Java SE (subcomponent: AWT). Supported versions that are affected are Java SE: 6u181, 7u171, 8u162 and 10; Java SE Embedded: 8u161; JRockit: R28.3.17. Easily exploitable vulnerability allows unauthenticated attacker with network access via multiple protocols to compromise Java SE, Java SE Embedded, JRockit. Successful attacks of this vulnerability can result in unauthorized ability to cause a partial denial of service (partial DOS) of Java SE, Java SE Embedded, JRockit. Note: Applies to client and server deployment of Java. This vulnerability can be exploited through sandboxed Java Web Start applications and sandboxed Java applets. It can also be exploited by supplying data to APIs in the specified Component without using sandboxed Java Web Start applications or sandboxed Java applets, such as through a web service.",
           "ignored_by_path": false,
@@ -15518,7 +15518,7 @@ Object {
         Object {
           "cvss_v2_base_score": 0,
           "cvss_v2_base_vector": null,
-          "cvss_v2_temporal_score": null,
+          "cvss_v2_temporal_score": 0,
           "cvss_v2_temporal_vector": null,
           "description": "Vulnerability in the Java SE, Java SE Embedded, JRockit component of Oracle Java SE (subcomponent: Concurrency). Supported versions that are affected are Java SE: 7u171, 8u162 and 10; Java SE Embedded: 8u161; JRockit: R28.3.17. Easily exploitable vulnerability allows unauthenticated attacker with network access via multiple protocols to compromise Java SE, Java SE Embedded, JRockit. Successful attacks of this vulnerability can result in unauthorized ability to cause a partial denial of service (partial DOS) of Java SE, Java SE Embedded, JRockit. Note: Applies to client and server deployment of Java. This vulnerability can be exploited through sandboxed Java Web Start applications and sandboxed Java applets. It can also be exploited by supplying data to APIs in the specified Component without using sandboxed Java Web Start applications or sandboxed Java applets, such as through a web service.",
           "ignored_by_path": false,
@@ -15542,7 +15542,7 @@ Object {
         Object {
           "cvss_v2_base_score": 0,
           "cvss_v2_base_vector": null,
-          "cvss_v2_temporal_score": null,
+          "cvss_v2_temporal_score": 0,
           "cvss_v2_temporal_vector": null,
           "description": "Vulnerability in the Java SE, Java SE Embedded, JRockit component of Oracle Java SE (subcomponent: JAXP). Supported versions that are affected are Java SE: 7u171, 8u162 and 10; Java SE Embedded: 8u161; JRockit: R28.3.17. Easily exploitable vulnerability allows unauthenticated attacker with network access via multiple protocols to compromise Java SE, Java SE Embedded, JRockit. Successful attacks of this vulnerability can result in unauthorized ability to cause a partial denial of service (partial DOS) of Java SE, Java SE Embedded, JRockit. Note: Applies to client and server deployment of Java. This vulnerability can be exploited through sandboxed Java Web Start applications and sandboxed Java applets. It can also be exploited by supplying data to APIs in the specified Component without using sandboxed Java Web Start applications or sandboxed Java applets, such as through a web service.",
           "ignored_by_path": false,
@@ -15566,7 +15566,7 @@ Object {
         Object {
           "cvss_v2_base_score": 0,
           "cvss_v2_base_vector": null,
-          "cvss_v2_temporal_score": null,
+          "cvss_v2_temporal_score": 0,
           "cvss_v2_temporal_vector": null,
           "description": "Vulnerability in the Java SE, Java SE Embedded, JRockit component of Oracle Java SE (subcomponent: JMX). Supported versions that are affected are Java SE: 6u181, 7u171, 8u162 and 10; Java SE Embedded: 8u161; JRockit: R28.3.17. Easily exploitable vulnerability allows unauthenticated attacker with network access via multiple protocols to compromise Java SE, Java SE Embedded, JRockit. Successful attacks of this vulnerability can result in unauthorized ability to cause a partial denial of service (partial DOS) of Java SE, Java SE Embedded, JRockit. Note: Applies to client and server deployment of Java. This vulnerability can be exploited through sandboxed Java Web Start applications and sandboxed Java applets. It can also be exploited by supplying data to APIs in the specified Component without using sandboxed Java Web Start applications or sandboxed Java applets, such as through a web service.",
           "ignored_by_path": false,
@@ -15590,7 +15590,7 @@ Object {
         Object {
           "cvss_v2_base_score": 0,
           "cvss_v2_base_vector": null,
-          "cvss_v2_temporal_score": null,
+          "cvss_v2_temporal_score": 0,
           "cvss_v2_temporal_vector": null,
           "description": "Vulnerability in the Java SE, Java SE Embedded, JRockit component of Oracle Java SE (subcomponent: Security). Supported versions that are affected are Java SE: 6u181, 7u171, 8u162 and 10; Java SE Embedded: 8u161; JRockit: R28.3.17. Easily exploitable vulnerability allows unauthenticated attacker with network access via multiple protocols to compromise Java SE, Java SE Embedded, JRockit. Successful attacks of this vulnerability can result in unauthorized ability to cause a partial denial of service (partial DOS) of Java SE, Java SE Embedded, JRockit. Note: Applies to client and server deployment of Java. This vulnerability can be exploited through sandboxed Java Web Start applications and sandboxed Java applets. It can also be exploited by supplying data to APIs in the specified Component without using sandboxed Java Web Start applications or sandboxed Java applets, such as through a web service.",
           "ignored_by_path": false,
@@ -15614,7 +15614,7 @@ Object {
         Object {
           "cvss_v2_base_score": 0,
           "cvss_v2_base_vector": null,
-          "cvss_v2_temporal_score": null,
+          "cvss_v2_temporal_score": 0,
           "cvss_v2_temporal_vector": null,
           "description": "Vulnerability in the Java SE, Java SE Embedded, JRockit component of Oracle Java SE (subcomponent: Serialization). Supported versions that are affected are Java SE: 6u181, 7u171, 8u162 and 10; Java SE Embedded: 8u161; JRockit: R28.3.17. Easily exploitable vulnerability allows unauthenticated attacker with network access via multiple protocols to compromise Java SE, Java SE Embedded, JRockit. Successful attacks of this vulnerability can result in unauthorized ability to cause a partial denial of service (partial DOS) of Java SE, Java SE Embedded, JRockit. Note: Applies to client and server deployment of Java. This vulnerability can be exploited through sandboxed Java Web Start applications and sandboxed Java applets. It can also be exploited by supplying data to APIs in the specified Component without using sandboxed Java Web Start applications or sandboxed Java applets, such as through a web service.",
           "ignored_by_path": false,
@@ -15638,7 +15638,7 @@ Object {
         Object {
           "cvss_v2_base_score": 0,
           "cvss_v2_base_vector": null,
-          "cvss_v2_temporal_score": null,
+          "cvss_v2_temporal_score": 0,
           "cvss_v2_temporal_vector": null,
           "description": "Vulnerability in the Java SE, JRockit component of Oracle Java SE (subcomponent: RMI). Supported versions that are affected are Java SE: 6u181, 7u171 and 8u162; JRockit: R28.3.17. Difficult to exploit vulnerability allows unauthenticated attacker with network access via multiple protocols to compromise Java SE, JRockit. Successful attacks require human interaction from a person other than the attacker. Successful attacks of this vulnerability can result in unauthorized update, insert or delete access to some of Java SE, JRockit accessible data as well as unauthorized read access to a subset of Java SE, JRockit accessible data. Note: This vulnerability can only be exploited by supplying data to APIs in the specified Component without using Untrusted Java Web Start applications or Untrusted Java applets, such as through a web service.",
           "ignored_by_path": false,
@@ -15662,7 +15662,7 @@ Object {
         Object {
           "cvss_v2_base_score": 0,
           "cvss_v2_base_vector": null,
-          "cvss_v2_temporal_score": null,
+          "cvss_v2_temporal_score": 0,
           "cvss_v2_temporal_vector": null,
           "description": "Vulnerability in the Java SE, Java SE Embedded component of Oracle Java SE (subcomponent: Security). Supported versions that are affected are Java SE: 6u181, 7u171, 8u162 and 10; Java SE Embedded: 8u161. Difficult to exploit vulnerability allows unauthenticated attacker with network access via multiple protocols to compromise Java SE, Java SE Embedded. Successful attacks require human interaction from a person other than the attacker. Successful attacks of this vulnerability can result in unauthorized update, insert or delete access to some of Java SE, Java SE Embedded accessible data. Note: This vulnerability applies to Java deployments, typically in clients running sandboxed Java Web Start applications or sandboxed Java applets, that load and run untrusted code (e.g., code that comes from the internet) and rely on the Java sandbox for security. This vulnerability does not apply to Java deployments, typically in servers, that load and run only trusted code (e.g., code installed by an administrator).",
           "ignored_by_path": false,
@@ -16238,7 +16238,7 @@ Object {
         Object {
           "cvss_v2_base_score": 10,
           "cvss_v2_base_vector": "AV:N/AC:L/Au:N/C:C/I:C/A:C",
-          "cvss_v2_temporal_score": null,
+          "cvss_v2_temporal_score": 0,
           "cvss_v2_temporal_vector": null,
           "description": "Security updates installed on this computer require system restart. The vulnerabilities which are going to be fixed with the updates are not displayed.",
           "ignored_by_path": false,

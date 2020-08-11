@@ -66,4 +66,30 @@ describe('parse', () => {
     const result = await parseReport('audit_only_report');
     expect(result).toMatchSnapshot();
   }, 10000);
+
+  describe('parse affected software', () => {
+    it('silverlight', async () => {
+      const result = await parseReport('windows');
+
+      const silverlightVulns = result.hosts[0].affectedSoftware.find(soft => soft.name === 'Microsoft Silverlight');
+      expect(silverlightVulns).toEqual({
+        installPath:
+          'C:\\Program Files (x86)\\Microsoft Silverlight\\sllauncher.exe',
+        name: 'Microsoft Silverlight',
+        version: '5.1.50428.0',
+        vulnsUids: ['414284', '414339', '414475', '414565', '414677', '414767'],
+      });
+    }, 10000);
+
+    it('all properties must be defined', async () => {
+      const result = await parseReport('windows');
+
+      for (const affectedSoftware of result.hosts[0].affectedSoftware) {
+        expect(affectedSoftware).toHaveProperty('installPath');
+        expect(typeof affectedSoftware.name).toBe('string');
+        expect(typeof affectedSoftware.version).toBe('string');
+        expect(Array.isArray(affectedSoftware.vulnsUids)).toBeTruthy();
+      }
+    }, 10000);
+  });
 });

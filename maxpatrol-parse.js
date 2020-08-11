@@ -22,6 +22,8 @@ const {
   getSoftwareVulnerabilityResult,
 } = require('./maxpatrol-helper');
 
+const APPLICATION_SOFTWARE_TYPE = 0;
+
 /**
  * Парсим данные о софте хоста
  * @param {Array<Object>} data
@@ -36,6 +38,7 @@ const {
  * }}
  */
 function parseHostSoft(data, filterVulnerabilitiesPaths) {
+  const affectedSoftware = [];
   const ifs = [];
   const users = [];
   const ports = [];
@@ -78,6 +81,8 @@ function parseHostSoft(data, filterVulnerabilitiesPaths) {
     }
 
     if (vulners && vulners.vulner) {
+      const softVulnUids = new Set();
+
       for (const vuln of vulners.vulner) {
         const { id: vulnerId } = vuln.$;
         let user;
@@ -117,6 +122,7 @@ function parseHostSoft(data, filterVulnerabilitiesPaths) {
               ignored_by_path: ignoreVulnerabilities,
               result: getSoftwareVulnerabilityResult(vuln),
             };
+            softVulnUids.add(vulnerId);
         }
 
         if (
@@ -137,10 +143,20 @@ function parseHostSoft(data, filterVulnerabilitiesPaths) {
           users.push(user);
         }
       }
+
+      if (softVulnUids.size && item.$.type === APPLICATION_SOFTWARE_TYPE.toString()) {
+        affectedSoftware.push({
+          installPath: path || null,
+          name,
+          version,
+          vulnsUids: Array.from(softVulnUids),
+        });
+      }
     }
   }
 
   return {
+    affectedSoftware,
     ifs,
     software,
     users,
